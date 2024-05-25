@@ -1,0 +1,25 @@
+\begin{table}[!t]
+\caption{$\GPRatio$ on Cityscapes.(Backbone: Swin-T)}
+\centering
+\begin{minipage}{0.495\textwidth}
+    \resizebox{\columnwidth}{!}{
+\begin{tabular}{lcccccccc}
+\toprule
+ & \multicolumn{3}{c}{\textbf{Performance} ($\uparrow$)} && \multicolumn{2}{c}{\textbf{GFLOPs} ($\downarrow$), (\% decrement)} \\ \cline{2-4} \cline{6-7}
+\multirow{-2}{*}{\textbf{Model}} & \textbf{PQ} & \textbf{mIoU}$_p$ & \textbf{AP}$_p$ && \textbf{Total} & \textbf{Tx. Enc.} \\ 
+\midrule
+
+M2F \cite{cheng2021mask2former} & 64.00 & 80.77 & 39.26 && 537.85 & 281.13 \\
+{\ours}($\GPRatio=0$) & 64.58 & 80.35 & 40.31 && 536.09(-0.33)  & 279.37(-) \\
+{\ours}($\GPRatio=0.003$) & 64.18 & 80.49 & 39.64 && 507.51(-)  & 250.80(-) \\
+{\ours}($\GPRatio=0.005$) & 63.24 & 79.73 & 37.97 && 469.38(-)  & 212.66(-) \\
+{\ours}($\GPRatio=0.01$) & 62.09 & 79.58 & 36.04 && 439.67(-)  & 182.95(-) \\
+{\ours}($\GPRatio=0.1$) & 60.71 & 78.15 & 33.86 && 411.98(-)  & 155.26(-) \\
+
+\bottomrule
+\end{tabular}
+}  
+\label{tab:result_beta_cs}
+\end{minipage}
+
+\end{table}

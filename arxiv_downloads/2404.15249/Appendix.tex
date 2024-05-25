@@ -1,0 +1,84 @@
+
+\section{Appendix}
+\subsection{KFBI method for Neumann boundary condition}\label{appen::neumann::condition}
+The Dirichlet BVP has been introduced in $\ref{introduce_kfbi}$ for the sake of clarity. In this section, the modified Helmholtz equation $\eqref{one_GPU:modified_helmholtz}$ subject to Neumann boundary condition is considered as:
+\begin{equation}
+    \partial_{\mathbf{n}}u(\mathbf{x}) = g_{N}(\mathbf{x}). \label{Neumann}
+\end{equation}
+Similarly to the Dirichlet boundary condition, the single layer potential is defined as
+\begin{equation}
+    (S\psi)(\mathbf{x}) := \int_{\Gamma} G(\mathbf{y}, \mathbf{x}) \psi(\mathbf{y}) d s_{\mathbf{y}} ~\text { for } ~\mathbf{x} \in \Omega \cup \Omega^{c}. \label{single}
+\end{equation}
+
+Owing to detonations defined above, the BIE $\eqref{one_GPU:modified_helmholtz}$ and $\eqref{Neumann}$ also can be reformulated as a Fredholm boundary integral equation of the second kind\cite{kress1989linear,hsiao2008boundary}, which follows
+\begin{equation}
+    \frac{1}{2}\psi(\mathbf{x}) -\partial_{\mathbf{n}} (S\psi)(\mathbf{x}) + \partial_{\mathbf{n}} (Yf)(\mathbf{x}) = g_{N}(\mathbf{x}).
+    \label{fredholm:neumann}
+\end{equation}
+The solution $u(\mathbf{x})$ to Neumann BVP $\eqref{one_GPU:modified_helmholtz}$ and $\eqref{Neumann}$ is given by 
+\begin{equation}
+    u(\mathbf{x}) = (Yf)(\mathbf{x}) - (S\psi)(\mathbf{x}), \quad x \in \Omega.
+\end{equation}
+Numerically, the boundary integral equation $\eqref{fredholm:neumann}$ can be solved by simply fixed point iteration: given the artificial initial guess $\psi_{0}(\mathbf{x})$, for $k \in \left\{0, 1, 2, 3, \cdots \right\}$, do as follows:
+\begin{align}
+    \partial_{\mathbf{n}} u_{k}^{+}(\mathbf{x}_{m}) = \frac{1}{2}\psi(\mathbf{x}_{m}) - \partial_{\mathbf{n}}(S\psi)(\mathbf{x}_{m}), & \quad \mathbf{x}_{m} \in \Gamma,\label{neumann:richardson1} \\
+    \psi_{k+1}(\mathbf{x}_{m}) = \psi_{k}(\mathbf{x}_{m}) + \gamma[\hat{g}_{N}(\mathbf{x}_{m}) - \partial_{\mathbf{n}} u_{k}^{+}(\mathbf{x}_{m})], & \quad \mathbf{x}_{m} \in \Gamma.\label{neumann:richardson2}
+\end{align}
+Here, $\hat{g}_{N}(\mathbf{x}_{m}) = g_{N}(\mathbf{x}_{m})-\partial_{\mathbf{n}}(Yf)(\mathbf{x}_{m}),\text{ for } \mathbf{x}_{m} \in \Gamma$. $\mathbf{x}_{m}$ is the control node located on interface. Suppose $w(\mathbf{x})$ is an arbitrary piecewise smooth function with derivative  discontinuities on the interface $\Gamma$: 
+\begin{equation}
+    \partial_{\mathbf{n}} w^{+}(\mathbf{x}) = \lim_{z \longrightarrow x, z \in \Omega} \partial _{\mathbf{n}} w(\mathbf{z}),
+\end{equation}
+$\partial_{\mathbf{n}} w^{-}(\mathbf{x})$ can be defined in the same way. 
+
+As for Neumann BVP, the single layer boundary integral $\eqref{fredholm:neumann}$  $u(\mathbf{x}{x})$ can be considered as a solution to the following interface problem:
+\begin{equation}
+\begin{array}{ll}
+\Delta v(\mathbf{x})-\kappa v(\mathbf{x})=0, &\text { for } \mathbf{x} \in \Omega \cup \Omega^{c},\\
+{[v(\mathbf{x})]=0}, & \text { for } \mathbf{x} \in \Gamma,\\
+{\left[\partial_{\mathbf{n}} v(\mathbf{x})\right]=\psi(\mathbf{x})}, & \text { for } \mathbf{x} \in \Gamma,\\
+v(\mathbf{x})=0. & \text { for } \mathbf{x} \in \partial \mathcal{B}.
+\end{array}
+\label{single:interface}
+\end{equation}
+
+The KFBI method is characterized by the transformation of the integral  $\eqref{single}$  into the solution of the interface problem $\eqref{single:interface}$. In contrast to the Dirichlet problem, the Neumann problem also goes through the three steps of correction, fast solving interface problem, and boundary interpolation. The difference is that the Neumann problem requires interpolation of normal derivatives in $\eqref{neumann:richardson2}$ instead of boundary values in $\eqref{one_GPU:richardson2}$. In addition to this, the main steps of GMRES iteration are the same for both boundary condition except $\mathcal{K}_{N}(\varphi)(\mathbf{x})$ is replaced by 
+\begin{equation}
+    \mathcal{K}_{N}(\psi)(\mathbf{x}) := \frac{1}{2}\psi(\mathbf{x}) - \partial_{\mathbf{n}}(S\psi)(\mathbf{x}), \quad \mathbf{x} \in \Gamma.
+\end{equation}
+\iffalse
+\subsection{Calculation of jumps}\label{appen:jumps}
+This section, we introduce the calculation of the jumps of the function $w(\mathbf{x})$ and its partial derivatives across the interface, 
+ which are required not only for the correction of the finite difference equation, but also for the extraction of boundary data from the discrete finite difference decomposition.
+  %\cite{xie2019fourth,xie2021cartesian,ying2007kernel,ying2013kernel,ying2014kernel}.
+ 
+Assume $w(\mathbf{x})$ be a piecewise smooth function defined in $\mathcal{B}$, shown in the $\ref{kfbi domain}$, whose normal derivative $\partial_{\mathbf{n}} w(\mathbf{x})$ and $w(\mathbf{x})$ itself may be discontinuous across the interface. Computation of the jumps for $w$ on $\Gamma$ can be reiterated below
+\begin{align}
+\Delta w- \kappa w =\tilde{f}, & \quad \text { in }  \mathcal{B} \backslash \Gamma \label{jump::1},\\
+[w] =\varphi, & \quad \text { on } \Gamma \label{jump::2},\\
+\left[\partial_{\mathbf{n}}w\right] =\psi, & \quad \text { on } \label{jump::3}.\Gamma
+\end{align}
+\label{interface2}
+
+Let $s$ be the arc length parameter of the curve $\Gamma$, $\mathbf{t}=(\tau_{1}(s), \tau_{2}(s))^{\mathrm{T}}$ be a unit tangent vector at a point on the interface. Thus, $\mathbf{x}{n}=\left(\tau_{2}(s),-\tau_{1}(s)\right)^{\mathrm{T}}=\mathbf{t}^{\perp}$ be the unit outward normal vector on $\Gamma$. Suppose $\varphi = \varphi(s)$ and $\psi = \psi(s)$ are two at least twice differentiable functions defined on $\Gamma$.
+
+Differentiating $\eqref{jump::2}$ with respect to $s$, together with $\eqref{jump::3}$:
+\begin{equation}
+    \begin{cases}
+    \tau_{1}[w_{x}] + \tau_{2}[w_{y}] = \varphi_{s}\\
+    \tau_{2}[w_{x}] - \tau_{1}[w_{y}] = \psi_{s} .
+    \end{cases}
+    \label{jump::firstorder}
+\end{equation}
+
+First-order partial derivatives of $u$ on $\Gamma$ can be obtained by solving this simple linear system. Continue to differentiate the $\eqref{jump::firstorder}$ with respect to s, together with identity $\eqref{jump::1}$, we get
+\begin{equation}
+    \begin{cases}
+    \tau_{1}^{2}[w_{x x}] + 2\tau_{1}\tau_{2}[w_{x y}] + \tau_{2}^{2}[w_{y y}] = \varphi_{s s} - ( \tau_{1}'[w_{x}] + \tau_{2}'[w_{y}]),\\
+    \tau_{1}\tau_{2}[w_{x x}] + (\tau_{2}^{2}-\tau_{1}^{2})[w_{x y}] - \tau_{1}\tau_{2}[w_{y y}] = \psi_{s} - \tau_{2}'[w_{x}] + \tau_{1}'[w_{y}],\\
+    [w_{x x}] + [w_{y y}] = f + \kappa [w].
+    \end{cases}
+    \label{jump::secondorder}
+\end{equation}
+
+Solving this three-by-three linear system by any direct method or iterative method yields the jumps of second derivatives of $w$ on $\Gamma$.
+\fi

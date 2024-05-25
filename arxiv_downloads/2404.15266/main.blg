@@ -1,0 +1,81 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+The style file: apsrev4-2.bst
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: mainNotes.bib
+Database file #2: refs.bib
+Warning--entry type for "rep:QON" isn't style-file defined
+--line 1 of file refs.bib
+Warning--entry type for "soft:TensorFlow" isn't style-file defined
+--line 444 of file refs.bib
+control{REVTEX42Control}, control.key{N/A}, control.author{N/A}, control.editor{N/A}, control.title{N/A}, control.pages{N/A}, control.year{N/A}, control.eprint{N/A}, 
+control{apsrev42Control}, control.key{N/A}, control.author{08}, control.editor{1}, control.title{0}, control.pages{0}, control.year{1}, control.eprint{N/A}, 
+Warning--jnrlst (dependency: not reversed) set 1
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
+Control: key (0) 
+Control: author (8) initials jnrlst
+Control: editor formatted (1) identically to author
+Control: production of article title (0) allowed
+Control: page (0) single
+Control: year (1) truncated
+Control: production of eprint (0) enabled
+Warning--empty year in art:ResNet
+Warning--empty year in art:ViT
+Warning--empty year in art:Bengio
+Warning--empty year in rep:QON
+You've used 41 entries,
+            6079 wiz_defined-function locations,
+            1971 strings with 23982 characters,
+and the built_in function-call counts, 46258 in all, are:
+= -- 3024
+> -- 1351
+< -- 272
++ -- 422
+- -- 342
+* -- 7345
+:= -- 4255
+add.period$ -- 39
+call.type$ -- 41
+change.case$ -- 195
+chr.to.int$ -- 51
+cite$ -- 45
+duplicate$ -- 4271
+empty$ -- 3300
+format.name$ -- 767
+if$ -- 9382
+int.to.chr$ -- 1
+int.to.str$ -- 48
+missing$ -- 628
+newline$ -- 169
+num.names$ -- 117
+pop$ -- 1625
+preamble$ -- 1
+purify$ -- 191
+quote$ -- 0
+skip$ -- 1885
+stack$ -- 0
+substring$ -- 1030
+swap$ -- 4172
+text.length$ -- 164
+text.prefix$ -- 0
+top$ -- 10
+type$ -- 600
+warning$ -- 5
+while$ -- 122
+width$ -- 0
+write$ -- 388
+(There were 7 warnings)

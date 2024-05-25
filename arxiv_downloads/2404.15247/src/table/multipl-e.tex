@@ -1,0 +1,16 @@
+\begin{table*}[h]
+\centering
+\begin{tabular}{@{}lcrrrrrrr@{}}
+\toprule
+\multirow{2}{*}{Model} & \multirow{2}{*}{Size} & \multicolumn{6}{c}{Programming Language}                                                      & \multirow{2}{*}{\textbf{Average}} \\ \cmidrule(lr){3-8}
+                       &                       & C++           & PHP           & Java          & \multicolumn{1}{c}{JS}    & Swift         & Rust          &                          \\ \midrule
+\dscoderbase    & 1.3B                  & 28.1          & 22.9         & 27.2          & 28.7           & 10.9          & 18.0          & 22.6                     \\ \midrule
+\baselineds                 & 1.3B                  & 40.4          & 38.5          & \textbf{40.2} & 46.2          & 16.4          & 27.7          & 34.9                     \\
+\ewads                    & 1.3B                  &     39.4      &     38.4      &      37.3     &      45.2     &     20.9      &   28.6   &    35.0                 \\ \midrule
+\oursmoe                  & 8$\times$1.3B                & 42.2          & 42.2 & 35.4          & 49.8          & 24.7          & 30.6          & 37.5                     \\
+\oursmerge                  & 1.3B                  & \textbf{42.7} & \textbf{41.5} & 36.0          & \textbf{49.7} & \textbf{25.3} & \textbf{32.1}          & \textbf{37.9}            \\ \bottomrule
+\end{tabular}
+\caption{\label{tab:multilang}
+\Passat{1} results on \multiple~\cite{cassano2022multiple} following the same hyperparameter settings as prior works~\cite{wei2023magicoder, luo2023wizardcoder}: $\temperature=0.2$, $\topp=0.95$, $\maxLen=512$, and $\nsamples=50$. All models are evaluated using   \bigcodeharness{}~\cite{bigcode-evaluation-harness}.
+}
+\end{table*}

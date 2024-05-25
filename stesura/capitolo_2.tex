@@ -1,0 +1,50 @@
+\chapter{Il codice e l'algoritmo di matching}
+
+\section{Linguaggio e risorse utilizzate}
+	L'algoritmo che verrà ora presentato è stato scritto in Python 3.10 con l'aiuto di alcune librerie e moduli esterni.
+
+\section{Classi}
+	Il codice presenta quattro classi distinte:
+	\begin{itemize}
+		\item La classe WebScraper, per l'ottenimento dei file dal database online Arxiv.
+		\item La classe latexData, per il parsing e l'analisi del file LaTeX.
+		\item La classe PDFData, per il parsing e l'analisi del file pdf.
+		\item La classe MatchingTool, che contiene il vero e proprio algoritmo di matching.
+	\end{itemize}
+
+	\subsection{WebScraper}
+		La classe \textit{WebScraper}, tramite la libreria \textit{request}, accede all'archivio online di documenti scientifici Arxiv e tenta
+		di effettuare il download delle coppie LaTeX-pdf per ogni articolo il cui codice identificativo rientra in un intervallo
+		predeterminato dall'utente.
+		Poiché il file sorgente LaTeX non è disponibile per tutti gli articoli nel database, vengono mantenute solo le 
+		coppie che presentano entrambi i file. Per questi articoli, la cartella compressa contenente i file sorgente viene 
+		estratta, il file sorgente principale viene individuato e, insieme al pdf, sono rinominati e organizzati in cartelle
+		in modo da facilitare l'indicizzazione e il reperimento successivi.
+
+	\subsection{LatexData}
+		La classe \textit{LatexData} si occupa di processare il file sorgente e di prepararne il contenuto
+		per il matching. I passi includono:
+		\begin{itemize}
+			\item Sostituzione dei comandi "include" e "input" con il contenuto dei file chiamati
+			\item Parsing e preprocessamento del documento
+			\item Creazione di un albero gerarchico del contenuto
+			\item Enumerazione e delle foglie di tale albero, corrispondenti ai singoli blocchi di contenuto (paragrafi, formule, tabelle, ecc.)
+		\end{itemize}
+
+	\subsection{PDFData}
+		La classe \textit{PDFData} si occupa di processare, tramite l'utilizzo della libreria pdfminer, il file
+		di output. Dopo aver estratto tutti gli elementi (linee di testo, immagini, ecc.), questi vengono salvati in una struttura dati
+		che contiene, tra gli altri, il contenuto testuale, se sono di tipo \textit{pdfminer.LTTextBox}, le coordinate della bounding box e la pagina 
+		di appartenenza.
+
+	\subsection{MatchingTool}
+		La classe \textit{MatchingTool} è responsabile dell'accoppiamento tra i due file e contiene l'algoritmo vero e proprio.
+		Questo si basa principalmente sull'algoritmo LCS, per la comparazione delle caselle di testo del pdf e le porzioni del file LaTeX.
+
+\section{L'algoritmo di matching}
+	\subsection{}
+
+
+
+
+

@@ -1,0 +1,887 @@
+\section{Appendix}\label{Appendix}
+In this appendix, we give all proofs for our new results and observations, and present an
+additional rule removal processor for our ADP framework (\Cref{thm:RelRRP}) that results
+from a straightforward adaption of the corresponding processor from the classical DP
+framework \cite{gieslLPAR04dpframework}.
+
+Before we start with the proof of the chain criterion,
+for any infinite rewrite sequence $t_0 \to_{\R\cup \R^{=}} t_1 \to_{\R\cup \R^{=}} \ldots$
+we define \emph{origin graphs} 
+that indicate
+which subterm of $t_{i+1}$ ``originates'' from which subterm of $t_i$. Therefore, these
+graphs also indicate how annotations can move in the chains that correspond to this
+rewrite sequence.
+Note that due to the choice of the VRF and due to the fact that at most two defined symbols
+are annotated in the right-hand sides of ADPs,
+there are multiple possibilities 
+for the annotations to move in a chain.
+Each origin graph corresponds to one possible way that the annotations can move.
+
+\begin{definition}[Origin Graph]\label{def:orig}
+    Let $\R$ and $\R^{=}$ be two TRSs 
+    and let $\Theta: t_0 \to_{\R \cup \R^{=}} t_1 \to_{\R \cup \R^{=}} \ldots$ be a rewrite sequence.
+    A graph with the nodes $(i,\pi)$ for all $i \in \IN$ and all $\pi \in \pos(t_i)$
+    is called an \defemph{origin graph} for $\Theta$
+    if the edges are defined as follows:
+    For $i \in \IN$,
+    let
+the rewrite step  $t_i \to_{\R \cup \R^{=}} t_{i+1}$ be performed using the rule
+$\ell \to r \in \R\cup \R^{=}$, the position $\tau$, and the substitution $\sigma$,
+i.e., $t_i|_\tau = \ell \sigma$ and $t_{i+1} = t_i[r \sigma]_\tau$.
+    Furthermore, let $\pi \in \pos(t_i)$.
+    \begin{itemize}
+        \item[(a)] If $\pi < \tau$ or $\pi \bot \tau$ (i.e., $\pi$ is above or parallel to $\tau$),        
+          then there is an edge from $(i,\pi)$ to $(i+1,\pi)$. The reason is that
+          if position $\pi$ is annotated in $t_i$,
+        then in a chain it would remain annotated in $t_{i+1}$.
+      \item[(b)] For $\pi=\tau$,
+        there are at most two outgoing edges from $(i,\pi)$ if
+        the rule is in $\R^{=}$ and at most one edge if the rule is in $\R$. These edges
+        lead to nodes of the
+        form
+        $(i+1,\pi.\alpha)$ for $\alpha \in \pos_{\Sigma}(r)$.
+        The reason is that rules in $\ADPairMain{\R}$ contain at most one annotation and
+        rules in $\ADPairBase{\R}$ contain at most two annotations in their right-hand sides. Moreover, 
+        if $\pi$ is annotated in $t_{i}$, then we may create annotations
+        at the positions $\pi.\alpha$ in the right-hand side 
+        of the used ADP.
+      \item[(c)] For every variable position
+$\alpha_\ell \in \pos_\VSet(\ell)$, either there are no outgoing edges from any node of
+        the form $(i,\tau.\alpha_\ell.\beta)$ with
+ $\beta \in \NN^*$, or there is a 
+        position $\alpha_r \in \pos_{\VSet}(r)$ with
+        $r|_{\alpha_r} = \ell|_{\alpha_\ell}$ and for all $\beta \in \NN^*$ with
+        $\alpha_\ell.\beta \in \pos(\ell\sigma)$, there is an edge from 
+        $(i,\tau.\alpha_\ell.\beta)$ to $(i+1,\tau.\alpha_r.\beta)$. This captures the
+        behavior of VRFs.
+        \item[(d)] For all other positions $\pi \in \pos(t_i)$, there is no outgoing edge from the node $(i, \pi)$.
+    \end{itemize}
+\end{definition}
+
+Due to \Cref{def:orig}, we have the following connection between origin graphs and
+chains. For every origin graph for a
+rewrite sequence $t_0 \to_{\R \cup \R^{=}} t_1 \to_{\R \cup \R^{=}} \ldots$ and every
+$\tilde{t}_0$ such that $\flat(\tilde{t}_0) = t_0$, there is a chain
+ $\tilde{t}_0 \tored{}{}{\ADPairMain{\R} \cup \ADPairBase{\R^{=}}} \tilde{t}_{1}
+\tored{}{}{\ADPairMain{\R} \cup \ADPairBase{\R^{=}}} \ldots$ with
+$\flat(\tilde{t}_i) = t_i$ for all $i \in \NN$ such that:
+\[ \begin{array}{c}
+\text{$\pi \in 
+\posT(\tilde{t}_i)$}\\
+\text{iff}\\
+\text{there is a path in the origin graph
+from $(0,\tau)$ to $(i,\pi)$ for some $\tau
+\in \posT(\tilde{t}_0)$}
+  \end{array}\]
+
+\begin{example}\label{graph1}
+    Let $\R \cup \R^{=}$ have 
+    the rules $\ta(x) \to \tb(x)$, $\tg(x,x) \to \ta(x)$,   $\tb(x) \to \tb(x)$, and
+    consider
+    the rewrite sequence
+    $\Theta:\tg(\underline{\ta(\O)}, \tb(\O)) \to_{\R\cup \R^{=}} \underline{\tg(\tb(\O), \tb(\O))} \to_{\R\cup \R^{=}} \ta(\tb(\O)) \to_{\R\cup \R^{=}} \ldots$. So here we
+    have $t_0 = \tg(\ta(\O), \tb(\O))$, $t_1 = \tg(\tb(\O), \tb(\O))$, and $t_2 =
+    \ta(\tb(\O))$.
+    The following is a possible origin graph for $\Theta$.
+    \[ \xymatrix @-1.5pc {
+        t_0=&\tg \ar@{-}[d] &(& \ta \ar@{-}[d]&(&\O\ar@{-}[d]&), & \tb\ar@{-}[d] & (&\O\ar@{-}[d]&)) \\
+        t_1=&\tg \ar@{-}[d] &(    & \tb \ar@{-}[d]&(&\O\ar@{-}[d]&), & \tb\ar@{-}[dllll] & (&\O\ar@{-}[dllll]&)) \\
+        t_2=&\ta            &( & \tb           &(&\O          &)) &                   &  &  &
+    }
+    \]
+\end{example}
+
+We can now prove the chain criterion in the relative setting.
+In the following,
+we often use the notation $\pos_{f}(t)$ instead of $\pos_{\{f\}}(t)$
+for a term $t$ and a single symbol or variable $f \in \Sigma \cup \VSet$.
+
+\RelChainCriterion*
+
+\begin{myproof}
+    \underline{Completeness}:
+    Assume that the ADP problem $(\ADPairMain{\R}, \ADPairBase{\R^{=}})$ is not SN.
+    Then, there exists an infinite $(\ADPairMain{\R}, \ADPairBase{\R^{=}})$-chain,
+    i.e., an infinite rewrite sequence $t_0 \tored{}{}{\ADPairMain{\R} \cup \ADPairBase{\R^{=}}} t_{1} \tored{}{}{\ADPairMain{\R} \cup \ADPairBase{\R^{=}}} \ldots$
+    that uses an infinite number of rewrite steps with $\ADPairMain{\R}$ and Case $(\mathbf{pr})$.
+    
+    By removing all annotations we obtain the rewrite sequence
+    $\flat(t_0) \to_{\R \cup \R^{=}} \flat(t_1) \to_{\R \cup \R^{=}} \ldots$
+    that uses an infinite number of rewrite steps with $\R$.
+    Hence, $\R / \R^{=}$ is not SN either.
+
+    \smallskip
+
+    \noindent
+    \underline{Soundness}:
+    Assume that $\R / \R^{=}$ is not SN.
+    Then there exists an infinite sequence $\Theta: t_0 \to_{\R \cup \R^{=}} t_1 \to_{\R \cup \R^{=}} \ldots$ 
+    that uses an infinite number of $\R$-rewrite steps.
+
+    We will define a sequence $\tilde{t}_0, \tilde{t}_1, \ldots$ of annotated terms 
+    such that $\flat(\tilde{t}_i) = t_i$ and
+    $\tilde{t}_i \tored{}{}{\ADPairMain{\R} \cup \ADPairBase{\R^{=}}} \tilde{t}_{i+1}$ for all
+    $i \in \IN$, 
+    where we use an infinite number of rewrite steps with $\ADPairMain{\R}$ and Case $(\mathbf{pr})$.
+    This is an infinite $(\ADPairMain{\R}, \ADPairBase{\R^{=}})$-chain, and hence, $(\ADPairMain{\R}, \ADPairBase{\R^{=}})$ is not SN either.
+
+    W.l.o.g., let $t_0$ be a minimal term that is
+    non-terminating w.r.t.\ $\R/\R^{=}$, i.e., there exists no proper subterm of $t_0$ that starts 
+    a rewrite sequence which uses an infinite number of $\R$-steps.
+    Such a minimal term exists, since there are only finitely many subterms of $t_0$.
+    Next, we prove that there exists an origin graph for $\Theta$ with a path from
+    $(0,\varepsilon)$ to some node $(i,\pi)$
+    and a path  from  $(0,\varepsilon)$ to some node  $(i+1,\pi')$ with $i \in \IN$ such that
+    the rewrite step $t_i \to_\R t_{i+1}$ takes place at position $\pi$, and
+    $t_{i+1}|_{\pi'}$ is a minimal non-terminating term w.r.t.\ $\R/\R^{=}$.
+    Then, according to the definition of the origin graph, there exists a chain
+    $\tilde{t}_0, \ldots, \tilde{t}_i,
+    \tilde{t}_{i+1}$ with $\flat(\tilde{t}_j) = t_j$ for all $1 \leq j \leq i+1$
+    such that the positions $\pi$ in $\tilde{t}_i$ and $\pi'$ in $\tilde{t}_{i+1}$ are annotated.
+    Hence, the  rewrite step
+ $\tilde{t}_i \tored{}{}{\ADPairMain{\R} \cup \ADPairBase{\R^{=}}} \tilde{t}_{i+1}$ 
+    is performed with $\ADPairMain{\R}$ and Case $(\mathbf{pr})$.
+    Furthermore, there is a minimal non-terminating subterm of $\tilde{t}_{i+1}$ whose root is annotated.
+    Thus, we can perform the whole construction again to create another chain
+    starting in $\tilde{t}_{i+1}$
+    that ends in a rewrite step with $\ADPairMain{\R}$ and Case $(\mathbf{pr})$.
+    By repeating this construction infinitely often, we generate our desired infinite chain.
+
+
+
+    It remains to prove that such an origin graph exists for
+    every minimal non-terminating term $t_0$.
+Let $k$ be the arity of 
+$t_0$'s root symbol.
+Then for $i \in \NN$, by induction we  now define
+$t_i^1,\ldots,t_i^k$ such that $t_i^1,\ldots,t_i^k \triangleleft t_i$ at parallel
+positions and such that $t_0^j \to_{\R \cup \R^=}^{\leq 1} t_1^j \to_{\R \cup \R^=}^{\leq
+  1} \ldots$ for all $1 \leq j \leq k$, where $\to_{\R \cup \R^=}^{\leq 1} = (\to_{\R \cup \R^=} \cup =)$, i.e., 
+$\to_{\R \cup \R^=}^{\leq 1}$ is the reflexive closure of $\to_{\R \cup \R^=}$. In addition, for $i \in \NN$ we define 
+a non-empty context $C_i$
+such that $t_i = C_i[q_{1,1},\ldots,q_{1,h_1}, \ldots, q_{k,1}, \ldots, q_{k, h_k}]$ for
+subterms $q_{j,1},\ldots,q_{j,h_j} \trianglelefteq t_i^j$ at parallel positions for all $1
+\leq j \leq k$.
+Moreover, if $i > 0$, then for all pairs of positions $\pi_1, \pi_2 \in \pos_\Sigma(C_i)$
+    we show that one
+    can construct an origin graph with paths from $(0,\varepsilon)$ to $(i, \pi_1)$ and
+from $(0,\varepsilon)$ to
+    $(i, \pi_2)$.
+
+  Note that there exists an $i \in \NN$ such that the rewrite
+    step from $t_i$ to $t_{i+1}$ is done with an $\R$-rule at a position in $C_i$. 
+    The reason is that otherwise,
+infinitely many $\R$-steps would be applied on terms of the form $q_{j,b}$. But this would
+mean that there exists a $t_0^j$ such that the sequence 
+ $t_0^j \to_{\R \cup \R^=}^{\leq 1} t_1^j \to_{\R \cup \R^=}^{\leq
+  1} \ldots$ has infinitely many $\R$-steps. However, this 
+would be a contradiction to the minimality of $t_0$ because
+ $t_0^j$ is a proper subterm of $t_0$.
+So we define $t_i^1,\ldots,t_i^k$ and $C_i$ for all $i \geq 0$ until we reach the first $i$
+where
+an $\R$-step is performed with a redex at a position in $C_i$.
+
+
+
+    We start with the case $i=0$. 
+Let
+    $t_0^{1}, \ldots, t_0^{k}$ be the subterms of $t_0$ at positions $1, \ldots, k$
+    (i.e., $t_0^j = t_0|_j$ for all $1 \leq j \leq k$).
+    Then, we have $t_0 = C_0[t_0^{1}, \ldots, t_0^{k}]$ for the context $C_0$ that only consists
+    of $t_0$'s root symbol applied to $k$ holes.
+
+
+
+
+    In the induction step, we have
+    $t_i \to_{\R \cup \R^{=}} t_{i+1}$ using a position $\pi$, a substitution $\sigma$, and a
+    rule $\ell \to r$ with $t_i|_{\pi} = \ell \sigma$ and $t_{i+1} = t_i[r
+    \sigma]_{\pi}$. Here, we have two cases:
+    \begin{itemize}
+        \item If $\pi \notin \pos(C_i) \setminus \pos_{\Box}(C_i)$, 
+          then $\pi$ must be in some $q_{j,b} \trianglelefteq t_{i}^{j}$.
+          So there is an $\alpha \in \pos_{\Box}(C_i)$
+such that $\pi =  \alpha.\beta$ for some  $\beta \in \IN^*$.
+Hence, we have $t_i|_\pi = 
+C_i[q_{1,1},\ldots,q_{1,h_1}, \ldots, q_{k,1}, \ldots, q_{k, h_k}]|_\pi = q_{j,b}|_\beta$
+for some $q_{j,b} = t_i^j|_\gamma$. 
+     Here, we simply perform the rewrite step on this term, and the context and the other terms remain the same.
+        Hence, we have $C_{i+1} = C_{i}$, $t_{i+1}^{j} = t_i^{j}[r \sigma]_{\gamma.\beta}$ and
+        $t_{i+1}^{j'} = t_i^{j'}$ for all $1 \leq j \leq k$ with $j' \neq j$.
+        Using the subterms $q'_{1,1}, \ldots, q'_{1, h_1'}, \ldots,
+        q'_{k,1}, \ldots, q'_{k, h_k'}$ with $q'_{j,b} = q_{j,b}[r \sigma]_{\beta}$ and
+        %JG You wrote $\gamma$, but here it should be $\beta$.
+        $q'_{c,d} = q_{c,d}$ for all $1 \leq c \leq k$ and $1 \leq d \leq h_c$
+        %JG You wrote $h_a$, but it should be $h_c$.
+        with $(c,d) \neq (j,b)$,
+        we finally get $t_{i+1} = C_{i+1}[q'_{1,1}, \ldots, q'_{1, h_1'}, \ldots,
+        q'_{k,1}, \ldots, q'_{k, h_k'}]$, as desired.
+        
+        It remains to prove that our claim on the paths in the origin graph is still satisfied.
+        For all $\tau_1, \tau_2 \in \pos_\Sigma(C_{i+1}) = \pos_\Sigma(C_{i})$, by the induction
+        hypothesis there
+        exists an origin graph with
+        paths from $(0,\varepsilon)$ to $(i, \tau_1)$ and from
+$(0,\varepsilon)$ to $(i, \tau_2)$. Since the origin graph has  edges from
+        $(i, \tau_1)$ to $(i+1,\tau_1)$ and from
+        $(i, \tau_2)$ to $(i+1,\tau_2)$
+        by \Cref{def:orig} since $\tau_1$ and $\tau_2$ are above or parallel to $\pi$, 
+        there are also paths from $(0,\varepsilon)$ to $(i+1, \tau_1)$ and from
+        $(0,\varepsilon)$ to $(i+1, \tau_2)$.
+        % Furthermore, by the induction hypothesis
+        % there exists a subterm of $t_{i}$ that is minimally non-terminating, and by the
+        % minimality of $t_0$, this subterm is at a position in $C_i$.
+        % Hence, there is also a subterm of $t_{i+1}$ at a position $\pi'$ in
+        % $C_{i+1}$
+        % that is minimally non-terminating and thus, there is also a path from $(0,\varepsilon)$ to
+        % $(i+1, \pi')$.\oldcomment{JG Here, there is something wrong. In the induction step we would
+        % have to prove this for $(i+2,\pi')$.}
+
+        \item Now we consider the case $\pi \in \pos(C_i) \setminus \pos_{\Box}(C_i)$.
+        If the step $t_i \to_{\R \cup \R^{=}} t_{i+1}$ is an $\R$-step, then we stop, because
+        we reached the first $\R$-step where the redex is at a position in $C_i$.
+
+        So we now have $t_i \to_{ \R^{=}} t_{i+1}$. We define $t_{i+1}^j = t_i^j$ for all
+        $1 \leq j \leq k$, but we still need to define the context and the subterms for
+        each $t_{i+1}^j$. We will now define a suitable VRF
+        $\varphi:\pos_{\VSet}(\ell)\to \pos_{\VSet}(r) \cup \{ \bot \}$ step by step, where we initialize
+        $\varphi$ to yield $\bot$ for all arguments.
+        %% Let $\Delta = 
+        %% \{\rho_1, \ldots, \rho_w\} \subseteq \pos_{\VSet}(\ell)$ be the set of all positions
+        %% of variables in $\ell$ such that $\rho_z \in \pos(C_i)\setminus \pos_{\Box}(C_i)$
+        %% for all $1 \leq z \leq
+        %% w$, i.e., the positions
+        %% of these variables are still in the context $C_i$.
+        %% All positions from $\pos_{\VSet}(\ell) \setminus \Delta$ are outside the context
+        %% (or holes $\Box$).
+        %%
+        For every $\rho \in \pos_{\VSet}(\ell)$,
+        % JCK Nevermind, this should work.
+        % \comment{JG I simplified this, because
+        %   $\Delta$ was no longer needed to define $\varphi$.\\ JCK We have to prioritize $\Delta$ before we move to
+        %   the other positions. Hence, we need to introduce it again.}
+        if possible,
+        we let
+        $\varphi(\rho) \in \pos_{\VSet}(r)$ be a position of $r$ that is not yet in the
+        image of $\varphi$ and where
+        $\ell|_{\rho} = r|_{\varphi(\rho)}$. If there is no such position
+        of $r$, then we keep $\varphi(\rho) = \bot$.
+        %% Here, if possible,
+        %% we choose $\varphi(\rho_z)$ to be a position from $\pos_{\VSet}(r)$ that was not yet
+        %% in the image of $\varphi$, otherwise, we keep $\varphi(\rho_z) = \bot$.
+        %% Afterwards, we do the same for all $\alpha_\ell \in \pos_{\VSet}(\ell) \setminus \Delta$. 
+        %% Let $\varphi(\alpha_\ell) \in \pos_{\VSet}(r)$ be a position 
+        %% with $\ell|_{\alpha_\ell} = r|_{\varphi(\alpha_\ell)}$. Again, if possible,
+        %% we choose $\varphi(\alpha_\ell)$ to be a position from $\pos_{\VSet}(r)$ that was not yet
+        %% in the image of $\varphi$, otherwise, we keep $\varphi(\rho_z) = \bot$.
+ 
+        Let $\varphi|^{\pos_{\VSet}(r)}$
+denote the restriction of $\varphi$ to the codomain $\pos_{\VSet}(r)$ (i.e.,
+$\varphi|^{\pos_{\VSet}(r)}$
+is only defined on those $\rho \in \pos_{\VSet}(\ell)$ where
+$\varphi(\rho) \neq \bot$). Then 
+ $\varphi|^{\pos_{\VSet}(r)}$ is surjective, since
+        rules of $\R^=$ must not be duplicating, and injective, since we only extend the
+        function $\varphi$ if a position of a variable in $r$ was not already in the image
+        of $\varphi$.
+        %JG I changed this again, because the notation $\pi.(\pos(C_i)\setminus
+        %   \pos_{\Box}(C_i))$ is not standard and we would have to explain it.
+        Let $\{\rho_1, \ldots, \rho_w\} \subseteq \pos_{\VSet}(\ell)$
+        be those positions
+        of variables from $\ell$  in the context $C_i$ that are no holes
+        (i.e., where $\pi.\rho_z \in
+        \pos(C_i)\setminus
+        \pos_{\Box}(C_i)$)
+        and where 
+        $\varphi(\rho_z) \neq \bot$ for all $1 \leq z \leq w$.
+        Then we define the new context $C_{i+1}$ as 
+        $C_{i+1} = C_i[r \delta_{\Box}]_{\pi}[C_i|_{\pi.\rho_1}]_{\pi.\varphi(\rho_1)} \ldots [C_i|_{\pi.\rho_{w}}]_{\pi.\varphi(\rho_{w'})}$ 
+        using the substitution $\delta_{\Box}$ that maps every variable to $\Box$.
+        So $C_{i+1}$ results from $C_i$ by replacing the subterm at position $\pi$ by $r$
+        where all variables are substituted with $\Box$, and then restoring
+        the part of the context that was inside the substitution.
+        
+       
+        Next, we need to define the subterms
+        $q'_{j,1}, \ldots, q'_{j, h_j'}$ of $t_{i+1}^j$ 
+        such that $t_{i+1} = C_{i+1}[q'_{1,1}, \ldots, q'_{1, h_1'}, \ldots,
+          q'_{k,1}, \ldots, q'_{k, h_k'}]$.
+        Let $\kappa$ be the position of some $q_{j,b}$ in $t_i$.
+        First, consider the case that
+        for some $\alpha_{\ell} \in \pos_{\VSet}(\ell)$ and $\beta \in \IN^*$ we have $\pi.\alpha_{\ell}.\beta = \kappa$, 
+        i.e., $q_{j,b}$ is completely inside the substitution.
+        If $\varphi(\alpha_{\ell}) = \bot$, then we remove the subterm $q_{j,b}$ in $t_{i+1}$.
+        Otherwise, $q_{j,b}$ is one of the subterms $q'_{j,b'}$ and it moves from position $\pi.\alpha_{\ell}.\beta$
+        in $t_i$ to position $\pi.\varphi(\alpha_{\ell}).\beta$ in $t_{i+1}$.
+        Note that there are no two such $q_{j_1,b_1}$, $q_{j_2,b_2}$ that move to the same position,
+        due to injectivity of $\varphi$.
+        Second, $q_{j,b}$ is also one of the subterms $q'_{j,b'}$ if the
+        position $\kappa$ is parallel to $\pi$.
+        Here, the position of $q_{j,b}$ in $t_{i+1}$ remains the same as in $t_i$.
+        Third, we consider the case that 
+        there exist some $\alpha_{\ell} \in \pos_{\VSet}(\ell)$ such that $\kappa < \pi.\alpha_{\ell}$,
+        i.e., $q_{j,b}$ is a subterm of the redex but not completely inside the substitution.
+        For all such $\alpha_{\ell}$, let $\chi_{\alpha_\ell} \in \IN^*$ such that
+        $\kappa.\chi_{\alpha_\ell} = \pi.\alpha_{\ell}$.
+        Instead of the subterm $q_{j,b}$, we now 
+        use the subterms $q_{j,b}|_{\chi_{\alpha_\ell}}$ for all those $\alpha_\ell$ with $\varphi(\alpha_{\ell}) \neq \bot$. 
+        Now $q_{j,b}|_{\chi_{\alpha_\ell}}$ is a subterm of $t_{i+1}$ at position $\pi.\varphi(\alpha_{\ell})$.
+        All in all, we get $t_{i+1} = C_{i+1}[q'_{1,1}, \ldots, q'_{1, h_1'}, \ldots,
+        q'_{k,1}, \ldots, q'_{k, h_k'}]$ and $q'_{j,1},\ldots,q'_{j,h_j'} \trianglelefteq t_{i+1}^j$ at parallel positions for all $1
+        \leq j \leq k$.
+
+        Finally, we prove that our claim on the paths in the origin graph is
+        still satisfied.
+        Consider two positions $\tau_1, \tau_2 \in \pos_\Sigma(C_{i+1})$, and let $\tau \in \{\tau_1, \tau_2\}$.
+        If $\tau$ is above or parallel to $\pi$, then by the induction
+        hypothesis there exists an origin graph with
+        a path from $(0,\varepsilon)$ to $(i, \tau)$. Since the origin graph has an edge from
+        $(i, \tau)$ to $(i+1,\tau)$ by \Cref{def:orig}, 
+        there is a path from $(0,\varepsilon)$ to $(i+1, \tau)$.
+        If $\tau$ has the form $\pi.\alpha$ with $\alpha \in \pos_\Sigma(r)$ in $C_{i+1}$,
+        then by the induction
+        hypothesis there is an origin graph with
+        a path from $(0,\varepsilon)$ to $(i, \pi)$. Since the origin graph can be chosen to
+        have an edge from
+        $(i, \pi)$ to $(i+1,\pi.\alpha)$ by \Cref{def:orig}, 
+        there is a path from $(0,\varepsilon)$ to $(i+1,\pi.\alpha)$.
+        Note that if both $\tau_1$ and $\tau_2$ have such a form (i.e., $\tau_1 =
+        \pi.\alpha_1$ and $\tau_2 = \pi.\alpha_2$ with $\alpha_1, \alpha_2 \in
+        \pos_\Sigma(r)$),
+        then the origin graph can be chosen to have edges from $(i,\pi)$ to both 
+        $(i+1,\pi.\alpha_1)$ and $(i+1,\pi.\alpha_2)$, as we can have  two such edges for
+        a rewrite step with a relative rule from $\R^=$.
+        Finally, if $\tau$ has the form $\pi.\alpha_r.\beta$ with
+        $\alpha_r \in \pos_\VV(r)$ in $C_{i+1}$,
+        then since the image of $\varphi$ consists of all variable positions from
+         $\pos_\VV(r)$ (due to non-duplication of $\R^=$),
+        there is a $\rho \in \pos_\VV(\ell)$ with
+        $\ell|_{\rho} = r|_{\varphi(\rho)}$ where $\varphi(\rho)
+        = \alpha_r$.
+        By the induction hypothesis, there is an origin graph with
+        a path from $(0,\varepsilon)$ to $(i, \pi.\rho.\beta)$ and by 
+        \Cref{def:orig}, the origin graph can be chosen to have an edge from
+        $(i, \pi.\rho.\beta)$ to $(i+1, \pi.\alpha_r.\beta)$.
+        All in all, there exists an origin graph with paths from $(0,\varepsilon)$ to $(i, \tau_1)$
+        and from $(0,\varepsilon)$ to $(i, \tau_2)$.
+    \end{itemize}
+
+
+So we have shown that 
+    there exists an origin graph for $\Theta$ with a path from
+    $(0,\varepsilon)$ to some node $(i,\pi)$
+    such that
+    the rewrite step $t_i \to_\R t_{i+1}$ takes place at position $\pi$ in the context
+    $C_i$. Moreover, for any further position $\pi' \in \pos_\Sigma(C_i)$, in this origin
+    graph there is also a path from   $(0,\varepsilon)$ to some node $(i,\pi')$.
+In a similar way, one can also extend the construction one step further to define 
+$t_{i+1}^1,\ldots,t_{i+1}^k$ and a non-empty context $C_{i+1}$ such that
+ $t_{i+1} = C_{i+1}[q_{1,1},\ldots,q_{1,h_1}, \ldots, q_{k,1}, \ldots, q_{k, h_k}]$ for
+subterms $q_{j,1},\ldots,q_{j,h_j} \trianglelefteq t_{i+1}^j$ (not necessarily at parallel positions, 
+since the used $\R$-step may be duplicating).
+%  JCK The statement below may not true anymore, as this last step may be duplicating. 
+%  But it does not matter as the requirement of being parallel is not needed for the last step. 
+%  It was only needed for guaranteeing that we have an $\R$-redex in the context, which is already
+%  satisfied.
+%
+%  at parallel positions for all $1 \leq j \leq k$
+Moreover,  for all  positions $\pi_1 \in \pos_\Sigma(C_i)$ and  $\pi_2 \in \pos_\Sigma(C_{i+1})$
+   one
+    can construct an origin graph with paths from $(0,\varepsilon)$ to $(i, \pi_1)$ and
+from $(0,\varepsilon)$ to
+    $(i+1, \pi_2)$.
+For this last step,
+ the cases of the proof are exactly the same, the only difference is that from node $(i,\pi)$,
+    there may only be a single outgoing edge (since the used rule was in $\R$).
+    But as we are only looking for a single position $\pi_2$ in $\pos_\Sigma(C_{i+1})$
+    (and no pairs of positions anymore), 
+    this suffices for the construction.
+
+Then we have shown that the desired origin graph exists, by choosing $\pi_1$ to be $\pi$
+(the position of the redex in the $\R$-step from $t_i$ to $t_{i+1}$)
+and by choosing $\pi_2$ to be the position of a minimal non-terminating subterm of
+$t_{i+1}$. Note that this position must be in $\pos_\Sigma(C_{i+1})$, because all subterms
+$q_{j,b}$ are terminating w.r.t.\ $\R/\R^=$.    
+\end{myproof}
+
+
+For the following proof,
+recall that $t \trianglelefteq_{\#}^{\tau} s$ if
+$\tau \in \posT(s)$ and $t = \flat(s|_\tau)$.
+
+\DerelProcOne*
+
+\begin{myproof}
+Completeness of any processor that yields the empty set is trivial. So we only have to
+consider soundness.
+  
+    \underline{Only if}:
+    Assume that $(\DP{\C{P}},\flat(\C{P} \cup \C{P}^{=}))$ is not SN.
+    Then
+there exists an infinite sequence $t_0, t_1, t_2, \ldots$ 
+    with $t_i \rootto_{\DP{\C{P}}} \circ \to_{\flat(\C{P} \cup \C{P}^{=})}^* t_{i+1}$ for all $i \in \IN$.
+    We now create a sequence $s_0, s_1, \ldots$ of annotated terms such that 
+    $s_i \tored{}{(\mathbf{pr})}{\C{P}} \circ \tored{}{(\mathbf{r}) \, *}{\C{P} \cup
+      \C{P}^{=}} s_{i+1}$
+and $\flat(t_i) \trianglelefteq_{\#} s_i$    
+    for all $i \in \IN$, which  by \Cref{theorem:relative-chain-crit} implies that $(\C{P},\C{P}^{=})$ is not SN, i.e., the
+    processor is not sound.
+    Initially, we start with the term $s_0 = t_0$.
+    We have 
+    \[
+        t_0 \rootto_{\DP{\C{P}}} t_{0,1} \to_{\flat(\C{P} \cup \C{P}^{=})} t_{0,2} \to_{\flat(\C{P} \cup \C{P}^{=})} \ldots \to_{\flat(\C{P} \cup \C{P}^{=})} t_{1}
+    \]
+    In the first rewrite step, there is a DP $\ell^\# \to t^\# \in \DP{\C{P}}$ and a substitution $\sigma$
+    such that $t_0 = \ell^\# \sigma$ and $t_{0,1} = t^\# \sigma$.
+    This DP $\ell^\# \to t^\#$ results from some ADP $\ell \to r \in \C{P}$ with
+    $t \trianglelefteq_{\#}^{\tau} r$
+    for some position $\tau \in \pos(r)$.
+    We can rewrite $s_0$ with $\ell \to r$ and the substitution $\sigma$ at the root
+    resulting in $s_{0,1} = r\sigma$ with
+    $\flat(t_{0,1}) \trianglelefteq_{\#}^{\tau}
+    r\sigma = s_{0,1}$. 
+    Then, we mirror each step that takes place at position $\pi$ in $t_{0,i}$ at position $\tau.\pi$ in $s_{0,i}$.
+    To be precise, if we have $t_{0,i+1} = t_{0,i}[r' \sigma']_{\pi}$ using a rule $\ell' \to \flat(r') \in \flat(\C{P} \cup \C{P}^{=})$, the substitution $\sigma'$, and the position $\pi$, then we have $\flat(t_{0,i}) \trianglelefteq_{\#}^{\tau} s_{0,i}$, and can rewrite $s_{0,i}$
+    with the ADP $\ell' \to r'$, the substitution $\sigma'$, and the position $\tau.\pi$.
+    We get $\flat(s_{0,i+1}) = \flat(s_{0,i}[r' \sigma']_{\tau.\pi})$
+    with $\flat(t_{0,i+1}) = \flat(t_{0,i}[r' \sigma']_{\pi}) \trianglelefteq_{\#}^{\tau}  s_{0,i+1}$.
+    In the end, we have $\flat(t_1) \trianglelefteq_{\#}^{\tau} s_1$.
+
+    We can now repeat this for each $i \in \IN$ and result in our desired chain.
+    
+    \smallskip
+
+    \noindent
+    \underline{If}:
+    Assume that the processor is not sound and that $(\C{P},\C{P}^{=})$ is not SN.
+    Then,  by \Cref{theorem:relative-chain-crit} there exists an infinite sequence $t_0, t_1, t_2, \ldots$ 
+    of annotated terms such that 
+    $t_i \tored{}{(\mathbf{pr})}{\C{P}} \circ \tored{}{*}{\C{P} \cup \C{P}^{=}} t_{i+1}$ 
+    for all $i \in \IN$.
+    W.l.o.g., let $t_0$ contain only a single annotation (we only need the annotation for the position that leads to infinitely many $\C{P}$-steps with Case $(\mathbf{pr})$).
+    We now create a sequence $s_0, s_1, \ldots$ such that 
+    $s_i \rootto_{\DP{\C{P}}} \circ \to_{\flat(\C{P} \cup \C{P}^{=})}^* s_{i+1}$
+    and $\flat(s_i) \trianglelefteq_{\#} t_i$
+    for all $i \in \IN$, 
+    which implies that $(\DP{\C{P}},\flat(\C{P} \cup \C{P}^{=}))$ is not SN.
+    Due to the condition $\flat(\C{P}^=) = \C{P}^=$, we have 
+    \[  
+        t_0 \tored{}{(\mathbf{pr})}{\C{P}} t_{0,1} \tored{}{(\mathbf{r})}{\C{P} \cup \C{P}^{=}}  t_{0,2} \tored{}{(\mathbf{r})}{\C{P} \cup \C{P}^{=}} \ldots \tored{}{(\mathbf{r})}{\C{P} \cup \C{P}^{=}} t_{1}
+    \]
+    The reason that we have no $\tored{}{(\mathbf{pr})}{\C{P}^{=}}$-steps is that
+all terms $t_i$ and $t_{i,j}$ 
+only contain a single annotation.
+  Since $\flat(\C{P}^=) = \C{P}^=$, we only have annotations in $\C{P}$, where every
+  right-hand side of a rule only has at most a single annotation.
+  Thus, no term $t_i$ or $t_{i,j}$ can have more than one annotation.
+    If we would rewrite at the position of this annotation with a rule without
+    annotations (e.g., from $\C{P}^{=}$), then we would not have any annotation left 
+    and there would be no future $\tored{}{(\mathbf{pr})}{\C{P}}$-step possible anymore.
+
+    In the first rewrite step, there is an ADP $\ell \to r \in \C{P}$, a substitution $\sigma$, and a position $\pi$
+    such that $t_0|_{\pi} = \ell^\# \sigma$ and $t_{0,1} = t_{0}[\anno_{\rho}(r \sigma)]_{\pi}$
+    for some $\rho \in \pos(r)$.
+    Initially, we start with the term $s_0 = \ell^\# \sigma$.
+    We can rewrite $s_0$ with $\ell^\# \to t^\# \in \DP{\C{P}}$ for
+    $t \trianglelefteq_{\#}^{\rho} r$ and the substitution $\sigma$
+    resulting in $s_{0,1} = t^\# \sigma$
+    with $\flat(s_{0,1}) = t\sigma  \trianglelefteq_{\#}^{\rho}
+    \anno_{\rho}(r \sigma)$, i.e.,
+    $\flat(s_{0,1}) \trianglelefteq_{\#}^{\kappa}
+    t_{0}[\anno_{\rho}(r \sigma)]_{\pi}
+     = t_{0,1}$ for $\kappa = \pi.\rho$.
+    Then, each rewrite step in $t_{0,i}$
+    is mirrored  in $s_{0,i}$.
+    
+    To be precise, let
+    $\flat(t_{0,i+1}) = \flat(t_{0,i}[r' \sigma']_{\tau})$ using a rule $\ell' \to r' \in \flat(\C{P} \cup
+    \C{P}^{=})$, the substitution $\sigma'$, and the position $\tau$.
+    If $\tau$ is above or parallel to the position $\kappa$ of the
+    subterm that corresponds to our
+    classical chain, then we do nothing and set $s_{0,i} =
+    s_{0,i+1}$.
+    However, a rewrite step on or above $\kappa$ might change the position of this subterm,
+    i.e., the position that we denoted with $\kappa$ may be modified in each such step. Note
+    however, that this subterm cannot be erased by such a step because then we would remove
+    the only annotated symbol and the chain would become finite.
+    If $\tau$ is below $\kappa$ (i.e., we have $\tau = \kappa.\pi'$ for some position $\pi'$), then we have $\flat(s_{0,i}) \trianglelefteq_{\#}^{\kappa} t_{0,i}$, and can rewrite $s_{0,i}$
+    with the rule $\ell' \to \flat(r')$, the substitution $\sigma'$, and the position $\pi'$.
+    If $\kappa$ denotes the current (possibly changed) position of the corresponding subterm,
+    then
+    we get $\flat(s_{0,i+1}) = \flat(s_{0,i}[r' \sigma']_{\pi'}) \trianglelefteq_{\#}^{\kappa}
+    t_{0,i+1}$.
+    Finally, $\tau$ cannot be $\kappa$, since then this would not be a $(\mathbf{r})$-rewrite step but a $(\mathbf{pr})$-rewrite step.
+    In the end, we obtain $\flat(s_1) \trianglelefteq_{\#} t_1$.
+
+    We can now repeat this for each $i \in \IN$ and result in our desired chain.
+\end{myproof}
+
+\DerelProcTwo*
+
+\begin{myproof}
+    \underline{Soundness}:
+    By \Cref{def:relative-rewrite-chain}, $(\C{P},
+    \C{P}^{=})$ is not SN iff there exists an infinite $(\C{P}, \C{P}^{=})$-chain. Such a
+    chain would also be an infinite $(\C{P}\cup \C{P}^{=}_a, \C{P}^{=}_b)$-chain.
+    There is an infinite $(\C{P}\cup \C{P}^{=}_a, \C{P}^{=}_b)$-chain iff there is an infinite
+    $(\C{P}\cup \mathtt{split}(\C{P}^{=}_a), \C{P}^{=}_b)$-chain as we only need at most a single annotation in the main ADPs. 
+    By \Cref{def:relative-rewrite-chain}, this is
+    equivalent to non-termination of $(\C{P}\cup \mathtt{split}(\C{P}^{=}_a), \C{P}^{=}_b)$.
+\end{myproof}
+
+Before we prove the soundness and completeness of the dependency graph processor, we
+present
+another definition regarding origin graphs.
+In \Cref{def:orig} we 
+have seen that for a \emph{non-annotated} rewrite sequence $t_0 \to_{\R \cup \R^{=}} \ldots$ one
+can obtain
+several different origin graphs.
+Now, we define the \emph{canonical} origin graph for an \emph{annotated} rewrite sequence
+$t_0 \tored{}{}{\C{P} \cup \C{P}^{=}} \ldots$\
+This graph 
+represents the flow of the annotations in this sequence.
+
+\begin{definition}[Canonical Origin Graph]\label{def:can_orig}
+    Let $(\C{P}, \C{P}^=)$ be an ADP problem
+    and let $\Theta: t_0 \tored{}{}{\C{P} \cup \C{P}^{=}} t_1 \tored{}{}{\C{P} \cup
+      \C{P}^{=}} \ldots$\
+    The \defemph{canonical origin graph} for $\Theta$
+    has the nodes $(i,\pi)$  for all $i \in \IN$ and all $\pi \in \pos(t_i)$,
+    and its edges are defined as follows:
+  For $i \in \IN$,
+    let
+    the step  $t_i \tored{}{}{\C{P} \cup \C{P}^{=}} t_{i+1}$
+ be performed using the rule
+   $\ell \to r \in \C{P} \cup \C{P}^{=}$, the position $\tau$, the substitution $\sigma$, and the VRF $\varphi$.
+    Furthermore, let $\pi \in \pos(t_i)$.
+    \begin{itemize}
+        \item[(a)] If $\pi < \tau$ or $\pi \bot \tau$ (i.e., $\pi$ is above or parallel to $\tau$),        
+        then there is an edge from $(i,\pi)$ to $(i+1,\pi)$.
+        \item[(b)] For $\pi=\tau$,
+        there is an edge from $(i,\pi)$ to $(i+1,\pi.\alpha)$ for all $\alpha \in \posT(r)$.
+        \item[(c)] If $\pi=\tau.\alpha_\ell.\beta$
+        for a variable position $\alpha_\ell \in \pos_\VSet(\ell)$ and $\beta \in \NN^*$, then
+        there is an edge from $(i,\tau.\alpha_\ell.\beta)$ to 
+        $(i+1,\tau.\varphi(\alpha_\ell).\beta)$ if $\varphi(\alpha_\ell) \neq \bot$.
+        \item[(d)] For all other positions $\pi \in \pos(t_i)$, there is no outgoing edge from the node $(i, \pi)$.
+    \end{itemize}
+    Moreover, if an ADP is applied with Case $(\mathbf{pr})$ at position $\tau$ in
+   $t_i$ in   $\Theta$, then all edges originating in $(i, \tau)$ are labeled with this ADP. All other
+    edges are not labeled.
+\end{definition}
+
+    So for $\R_2$ from \Cref{example:redex-creating}
+    where $\ADPairMain{\R_2}$ consists of
+    \begin{equation}\label{mainR2} 
+        \ta \to \tb
+    \end{equation}
+    and $\ADPairBase{\R_2^{=}}$ consists of
+    \begin{equation}\label{baseR2}
+        \tf \to \tc(\tF,\tA),
+    \end{equation}
+    the chain from \Cref{ex:ADPs-for-redex-creation-1} yields the following canonical origin graph:
+    \[ \xymatrix @-1.5pc @C=1pc{
+    t_0=&   & &   & &\tF\phantom{,}\ar@{-}[dllll]_{\eqref{baseR2}}\ar@{-}[d]^{\eqref{baseR2}}\ar@{-}[drr]^{\eqref{baseR2}}     & &  \\
+    t_1=&\td\ar@{-}[d]&(&   & &\tF,\ar@{-}[d] &    &\tA\ar@{-}[d]^{\eqref{mainR2}})\\
+    t_2= &\td\ar@{-}[d]&(&   & &\tF\ar@{-}[dll]_{\eqref{baseR2}}\ar@{-}[d]_{\eqref{baseR2}}\ar@{-}[dr]^{\eqref{baseR2}},    & &\tb\ar@{-}[d])\\
+    t_3=&\td\ar@{-}[d]&(&\td\ar@{-}[d]&(&\tF,\ar@{-}[d],&\tA\ar@{-}[d]^{\eqref{mainR2}})&\tb\ar@{-}[d])\\
+    t_4=&\td&(&\td&(&\tF,&\tb),&\tb)
+    }
+    \]
+
+    For $\R_3$ from \Cref{example:redex-creatingAbove}
+    where $\ADPairMain{\R_3}$ consists of
+    \begin{equation}\label{mainR3} 
+        \ta(x) \to \tb(x)
+    \end{equation}
+    and $\ADPairBase{\R_2^{=}}$ consists of
+    \begin{equation}\label{baseR3}
+        \tf \to \tA(\tF),
+    \end{equation}
+    the chain from \Cref{ex:ADPs-for-redex-creation-2} yields the following canonical origin graph:
+    \[ \xymatrix @-1.5pc @C=1pc{
+    t_0= &  &  &  & & \tF\ar@{-}[dllll]_{\eqref{baseR3}}\ar@{-}[d]^{\eqref{baseR3}} &  \\
+    t_1= & \tA\ar@{-}[d]_{\eqref{mainR3}} & ( &  & & \tF\ar@{-}[d] & ) \\
+    t_2= & \tb\ar@{-}[d] & ( &  & & \tF\ar@{-}[dll]_{\eqref{baseR3}}\ar@{-}[d]^{\eqref{baseR3}} & ) \\
+    t_3= & \tb\ar@{-}[d] & ( & \tA\ar@{-}[d]_{\eqref{mainR3}} & ( & \tF\ar@{-}[d] & )) \\
+    t_4= & \tb & ( & \tb & ( & \tF & ))
+    }
+    \]
+
+
+\RelativeDepGraphProc*
+
+\begin{myproof}
+    \underline{Completeness}:
+    For every $(\C{P}', {\C{P}^{=}}')$-chain with $(\C{P}', {\C{P}^{=}}') \in
+    \Proc_{\mathtt{DG}}(\C{P},\C{P}^{=})$ there exists a $(\C{P}, \C{P}^{=})$-chain with
+    the same terms and possibly more annotations.
+    Hence, if some ADP problem in $\Proc_{\mathtt{DG}}(\C{P},\C{P}^{=})$ is not SN, then
+    $(\C{P}, \C{P}^{=})$ is
+    not SN either.
+
+    \smallskip
+
+    \noindent
+    \underline{Soundness}:
+    By the definition of $\tored{}{}{}$, whenever there is a path from an edge labeled with
+    an ADP $\ell \to r$ to an edge labeled with an ADP 
+    $\ell' \to r'$ in the canonical origin graph, then there is a path from 
+    $\ell \to r$ to
+    $\ell' \to r'$ in the dependency graph. Since there only exist finitely many ADPs and the
+    chain uses ADPs from $\PP$ with Case $(\mathbf{pr})$ infinitely many times, there are
+    two cases:
+
+    Either there exists a path in the canonical origin graph where infinitely many edges are labeled
+    with an ADP from $\PP$. Then after finitely many steps, this path only uses edges
+    labeled with ADPs from an SCC $\QQ$ of the dependency graph that contains an ADP from $\PP$
+    (i.e., from a $\QQ
+    \in \mathtt{SCC}_{\C{P}}^{(\C{P}, \C{P}^{=})}$).
+
+    Otherwise, there is no such path in the canonical origin graph, but then there is a path in the
+    canonical origin graph where infinitely many edges are labeled with ADPs from $\PP^=$ and this path
+    generates infinitely many paths that lead to an edge labeled with an ADP from $\PP$. 
+    Then after finitely many steps,
+    this path only uses edges
+    labeled with ADPs from a minimal lasso of the dependency graph (i.e., from a
+    $\QQ \in \mathtt{Lasso}$).
+
+    So in both cases, there exists a $\QQ \in \mathtt{SCC}_{\C{P}}^{(\C{P}, \C{P}^{=})} \cup \mathtt{Lasso}$
+    such that the infinite path gives rise to an infinite $(\,(\C{P} \cap \QQ) \cup \flat(\C{P} \setminus \QQ), (\C{P}^= \cap \QQ) \cup \flat(\C{P}^{=} \setminus \QQ \,)\,)$-chain.
+    Since the ADPs $\flat(\PP \setminus \QQ)$ are never used for steps with 
+    Case $(\mathbf{pr})$ in this infinite chain, they can also be moved to the base ADPs. Thus, this is also an
+    infinite $(\,\C{P} \cap \QQ, (\C{P}^= \cap \QQ)\cup \flat( \,(\C{P} \cup \C{P}^{=}) \setminus \QQ \,)\,)$-chain, 
+    i.e., $(\,\C{P} \cap \QQ, (\C{P}^= \cap \QQ)\cup \flat( \,(\C{P} \cup \C{P}^{=}) \setminus \QQ \,)\,)$ is not SN either.
+\end{myproof}
+
+\RelRPP*
+
+\begin{myproof}
+    \underline{Completeness}:
+    For every $(\C{P} \setminus \PP_{\succ}, (\C{P}^{=} \setminus \PP_{\succ}) \cup
+        \flat(\PP_{\succ}))$-chain there exists a $(\C{P}, \C{P}^{=})$-chain with the same
+        terms and possibly
+        more annotations.
+        Hence, if
+$(\C{P} \setminus \PP_{\succ}, (\C{P}^{=} \setminus \PP_{\succ}) \cup
+        \flat(\PP_{\succ}))$
+ is not SN, then $(\C{P}, \C{P}^{=})$ is not SN either.
+
+    \smallskip
+
+    \noindent
+    \underline{Soundness}:
+    We start by showing that the conditions of the theorem extend to rewrite steps instead of just ADPs:
+    \begin{enumerate}
+        \item[(a)] If $s,t \in \TSet{\Sigma^\#}{\VSet}$ with $s \tored{}{}{\C{P} \cup \C{P}^{=}} t$, then $\subA(s) \succsim \subA(t)$.
+        \item[(b)] If $s,t \in \TSet{\Sigma^\#}{\VSet}$ with $s \tored{}{}{\PP_{\succ}} t$ using Case $(\mathbf{pr})$, then $\subA(s) \succ \subA(t)$.
+    \end{enumerate}
+    For this, we extend $\subA(t)$ to terms with possibly more than two annotations by defining
+    $\subA(t) = \Com{2}(r_1^\#,\ldots,\Com{2}(r_{n-1}^\#,r_n^\#)\ldots)$ 
+    if $r_i \trianglelefteq_{\#}^{\pi_i} r$ for $n \geq 2$ and the
+    positions $\pi_1, \ldots, \pi_n$ with $\pi_i <_{lex} \pi_{i+1}$ for all $1 \leq i < n$.
+   
+
+    \begin{itemize}
+        \item[(a)] Assume that we have $s \tored{}{}{\C{P} \cup \C{P}^{=}} t$ using the
+        ADP $\ell \to r$, the VRF $\varphi$, the position $\pi$, and the substitution
+        $\sigma$. So we have $\flat(s|_{\pi}) = \ell \sigma$.
+        Furthermore, let $\subA(s)$ contain the terms $s_1^\#, \ldots, s_n^\#$
+        with annotated root symbols. If $n=0$, then we have $\subA(s) = \Com{0} = \subA(t)$ which
+        proves the claim.
+
+        Otherwise, 
+        we partition $s_1,\ldots,s_n$ into several disjoint groups:
+
+        Let $s_{i_1}, \ldots, s_{i_{n_1}}$ be all those $s_{i}$ that are at
+        positions above $\pi$ in $s$ (i.e., these are those $s_i$ where  $\pi_{i} < \pi$).
+        Let $s_{i_{n_1 + 1}}, \ldots, s_{i_{n_2}}$ be all those $s_{i}$
+        that are at positions parallel to $\pi$ or on or below a variable position of $\ell$ that
+        is ``considered'' by the VRF (i.e., those $s_i$ where
+        $\pi_{i} \bot \pi$ or $\pi.\alpha \leq \pi_{i}$ for some $\alpha \in \pos_{\VSet}(\ell)$ with $\varphi(\alpha) \neq \bot$).
+        Finally, let $s_{i_{n_2 + 1}}, \ldots, s_{i_{n_3}}$ be all those $s_{i}$
+        that are below position $\pi$, but not on or below a variable position of $\ell$ that
+        is ``considered'' by the VRF (i.e., those $s_i$ where
+        $\pi_i = \pi.\alpha$ for some $\alpha \in \pos_{\Sigma}(\ell)$ with $\alpha \neq \epsilon$
+        or $\pi.\alpha \leq \pi_{i}$ for some $\alpha \in \pos_{\VSet}(\ell)$ with $\varphi(\alpha) = \bot$).
+
+        If the rewrite step takes place at a position that is not annotated (i.e., the symbol at
+        position $\pi$ in $s$ is not annotated), then we have $n_3 =
+        n$ and $\{ i_1, \ldots, i_{n_3}\} = \{1,\ldots, n\}$. 
+        Otherwise, we have $n_3 = n-1$ and $\{s_{i_1},
+        \ldots, s_{i_{n_3}}, \ell^\#\sigma\} = \{s_1, \ldots, s_n \}$.
+
+        After the rewrite step with $\tored{}{}{\C{P} \cup \C{P}^{=}}$,
+        $\subA(t)$
+        contains the following terms with annotated root symbols:
+        The terms
+        $s_{i_{n_1 + 1}}, \ldots, s_{i_{n_2}}$ are unchanged and still contained in 
+        $\subA(t)$. The terms $s_{i_{n_2 + 1}}, \ldots, s_{i_{n_3}}$ are removed, i.e., they are
+        no longer in $\subA(t)$. 
+        The terms $s_{i_1}, \ldots, s_{i_{n_1}}$ are replaced by 
+        $s_{i_1}[\flat(r) \sigma]_{\tau_{1}}, \ldots, s_{i_{n_1}}[\flat(r) \sigma]_{\tau_{n_1}}$
+        for appropriate positions $\tau_i \neq \varepsilon$.
+        Furthermore, if
+        the symbol at position $\pi$ in $s$ was annotated, then in addition, $\subA(t)$ contains
+        the terms $r_1^\#\sigma, \ldots, r_m^\#\sigma$ where $r_j$ for $1 \leq j
+        \leq m$ are all terms with $r_j \trianglelefteq_{\#} r$.
+        Hence, if the symbol at position $\pi$ in $s$ was annotated, then there exist contexts $C, C', C''$
+        containing no function symbol except $\Com{2}$ such that
+
+
+\vspace*{-.2cm}
+        
+        {\small\[
+            \begin{array}{lcl}
+              \subA(s) & = & C[s_{i_1}, \ldots, s_{i_{n_1}},s_{i_{n_1 + 1}}, \ldots,
+                s_{i_{n_2}},s_{i_{n_2 + 1}}, \ldots, s_{i_{n_3}},\ell^\#\sigma]\\
+              & \succsim & C'[s_{i_1}, \ldots, s_{i_{n_1}},s_{i_{n_1 + 1}}, \ldots,
+                s_{i_{n_2}},s_{i_{n_2 + 1}}, \ldots, s_{i_{n_3}},r_1^\#\sigma, \ldots,
+                r_m^\#\sigma]\\
+              &&\qquad\qquad \text{by $\ell^\# \succsim \subA(r)$, $\Com{}$-invariance, and $\Com{}$-monotonicity}\\
+              & \succsim & C''[s_{i_1}, \ldots, s_{i_{n_1}},s_{i_{n_1 + 1}}, \ldots,
+                s_{i_{n_2}},r_1^\#\sigma, \ldots,
+                r_m^\#\sigma]\\
+               & \succsim & C''[s_{i_1}[\flat(r) \sigma]_{\tau_{1}}, \ldots, s_{i_{n_1}}[\flat(r) \sigma]_{\tau_{n_1}},s_{i_{n_1 + 1}}, \ldots,
+                s_{i_{n_2}},r_1^\#\sigma, \ldots,
+                r_m^\#\sigma]\\
+              &&\qquad\qquad \text{by $\ell \succsim \flat(r)$,
+                $\Com{}$-invariance, and $\Com{}$-monotonicity}\\
+                            & = & \subA(t)\!    
+            \end{array}
+            \]}
+
+
+\vspace*{-.2cm}
+
+        
+        \noindent
+        If the symbol at position $\pi$ in $s$ was not annotated, then we obtain
+
+
+\vspace*{-.2cm}
+
+        
+        {\small\[
+          \begin{array}{lcl}
+    \subA(s) & = & C[s_{i_1}, \ldots, s_{i_{n_1}},s_{i_{n_1 + 1}}, \ldots,
+                s_{i_{n_2}},s_{i_{n_2 + 1}}, \ldots, s_{i_{n_3}}]\\
+                & \succsim & C'[s_{i_1}, \ldots, s_{i_{n_1}},s_{i_{n_1 + 1}}, \ldots,
+                s_{i_{n_2}}]\\
+               & \succsim & C'[s_{i_1}[\flat(r) \sigma]_{\tau_{1}}, \ldots, s_{i_{n_1}}[\flat(r) \sigma]_{\tau_{n_1}},s_{i_{n_1 + 1}}, \ldots,
+                s_{i_{n_2}}]\\
+              &&\qquad\qquad \text{by $\ell \succsim \flat(r)$, $\Com{}$-invariance, and $\Com{}$-monotonicity}\\
+                            & = & \subA(t)\!    
+            \end{array}
+          \]}
+
+
+        
+        \item[(b)] Assume that we have $s \tored{}{}{\PP_{\succ}} t$ using the ADP $\ell \to r$, the VRF $\varphi$, the position $\pi$, the substitution $\sigma$, and we rewrite at an annotated position.
+          So here, $\subA(s) \neq \Com{0}$.   Using the same notations as in (a), we get
+          
+
+\vspace*{-.2cm}
+
+          {\small\[
+            \begin{array}{lcl}
+              \subA(s) & = & C[s_{i_1}, \ldots, s_{i_{n_1}},s_{i_{n_1 + 1}}, \ldots,
+                s_{i_{n_2}},s_{i_{n_2 + 1}}, \ldots, s_{i_{n_3}},\ell^\#\sigma]\\
+              & \succ & C'[s_{i_1}, \ldots, s_{i_{n_1}},s_{i_{n_1 + 1}}, \ldots,
+                s_{i_{n_2}},s_{i_{n_2 + 1}}, \ldots, s_{i_{n_3}},r_1^\#\sigma, \ldots,
+                r_m^\#\sigma]\\
+              &&\qquad\qquad \text{by $\ell^\# \succ \subA(r)$, $\Com{}$-invariance, and $\Com{}$-monotonicity}\\
+              & \succsim & C''[s_{i_1}, \ldots, s_{i_{n_1}},s_{i_{n_1 + 1}}, \ldots,
+                s_{i_{n_2}},r_1^\#\sigma, \ldots,
+                r_m^\#\sigma]\\
+               & \succsim & C''[s_{i_1}[\flat(r) \sigma]_{\tau_{1}}, \ldots, s_{i_{n_1}}[\flat(r) \sigma]_{\tau_{n_1}},s_{i_{n_1 + 1}}, \ldots,
+                s_{i_{n_2}},r_1^\#\sigma, \ldots,
+                r_m^\#\sigma]\\
+              &&\qquad\qquad \text{by $\ell \succsim \flat(r)$, $\Com{}$-invariance, and
+                $\Com{}$-monotonicity}\\
+                            & = & \subA(t)\!    
+            \end{array}
+        \]}
+    \end{itemize}
+
+    We can now prove soundness.
+    Assume that $(\C{P}, \C{P}^{=})$ is not SN.
+    Then there exists an infinite $(\C{P}, \C{P}^{=})$-chain $t_0 \tored{}{}{\C{P} \cup \C{P}^{=}} t_1 \tored{}{}{\C{P} \cup \C{P}^{=}} t_2 \ldots$
+    If the chain uses an infinite number of rewrite steps with rules from $\PP_{\succ}$ and Case $(\mathbf{pr})$, 
+    then $\subA(t_0) \succsim \subA(t_1) \succsim \subA(t_2) \succsim \ldots$
+    would contain an infinite number of steps where the
+    strict relation $\succ$ holds, which is a contradiction to well-foundedness of $\succ$, 
+    as $\succ$ is compatible with $\succsim$.
+
+    Hence, the chain only contains a finite number of $\tored{}{}{\PP_{\succ}}$-steps with
+    Case $(\mathbf{pr})$. So there is an infinite suffix of the chain where only
+    ADPs from $(\C{P} \setminus \PP_{\succ}) \cup (\C{P}^{=} \setminus \PP_{\succ})$ are
+    used with
+    Case $(\mathbf{pr})$.
+    This means that $t_i \tored{}{}{\C{P} \cup \C{P}^{=}} t_{i+1} \tored{}{}{\C{P} \cup
+      \C{P}^{=}} t_{i+2} \ldots$ is an infinite $((\C{P} \setminus \PP_{\succ}) \cup
+        \flat(\PP \cap \PP_{\succ}), (\C{P}^{=} \setminus \PP_{\succ}) \cup
+        \flat(\C{P}^{=} \cap \PP_{\succ}))$-chain, as ADPs that are only used for steps
+        with Case $(\mathbf{r})$ do not need annotations.
+Since the ADPs  $\flat(\PP \cap \PP_{\succ})$ are never used for steps with 
+Case $(\mathbf{pr})$, they can also be moved to the base ADPs. Thus, this is also an
+infinite $(\C{P} \setminus \PP_{\succ}, (\C{P}^{=} \setminus \PP_{\succ}) \cup
+        \flat(\PP_{\succ}))$-chain, i.e., 
+$(\C{P} \setminus \PP_{\succ}, (\C{P}^{=} \setminus \PP_{\succ}) \cup
+        \flat(\PP_{\succ}))$ is not SN either.
+\end{myproof}
+
+
+Since ADPs are ordinary rewrite rules with annotations, we can also use
+ordinary reduction orderings (that are closed under contexts)
+to remove rules from an ADP problem completely.
+
+\begin{restatable}[Rule Removal Processor]{theorem}{RelRRP}\label{thm:RelRRP}
+    Let $(\C{P},\C{P}^{=})$ be an ADP problem, and let
+    $(\succsim, \succ)$ be a
+ reduction pair where $\succ$ is closed under contexts
+    such that $\flat(\C{P} \cup \C{P}^{=}) \subseteq {\succsim}$.
+  Moreover, let $\PP_{\succ} \subseteq \C{P} \cup \C{P}^{=}$ 
+  such that $\flat(\C{P}_{\succ}) \subseteq {\succ}$.
+Then
+    $\Proc_{\mathtt{RR}}(\C{P},\C{P}^{=}) = \{(\C{P} \setminus \PP_{\succ}, \C{P}^{=} \setminus \PP_{\succ})\}$
+ is sound and complete.
+\end{restatable}
+
+\begin{myproof}
+    \underline{Completeness}:
+    Every $(\C{P} \setminus \PP_{\succ}, \C{P}^{=} \setminus \PP_{\succ})$-chain 
+    is also a $(\C{P},\C{P}^{=})$-chain.
+    Hence, if $(\C{P} \setminus \PP_{\succ}, \C{P}^{=} \setminus \PP_{\succ})$ is not SN, then
+    $(\C{P},\C{P}^{=})$ is not SN either.
+
+    \smallskip
+
+    \noindent
+    \underline{Soundness}:
+    Assume that $(\C{P},\C{P}^{=})$ is not SN.
+    Let $t_0, t_1, \ldots$ be an infinite $(\C{P},\C{P}^{=})$-chain.
+    Then, $t_i \tored{}{}{\C{P} \cup \C{P}^{=}} t_{i+1}$ for all $i \in \IN$.
+    Since $\flat(\C{P} \cup \C{P}^{=}) \subseteq  {\succsim}$ and
+    $\succsim$ is closed under contexts and substitutions, we obtain
+     $\flat(t_0) \succsim \flat(t_1) \succsim \ldots$
+    Assume for a contradiction that we use infinitely many steps with
+$\tored{}{}{\C{P}_{\succ}}$.
+    Then, $\flat(t_0) \succsim \flat(t_1) \succsim \ldots$
+ would contain an infinite number of steps where the
+ strict relation $\succ$ holds, because 
+$\flat(\C{P}_{\succ}) \subseteq {\succ}$ and $\succ$  is also closed under contexts and
+ substitutions. This
+is a contradiction to well-foundedness of $\succ$, 
+    as $\succ$ is compatible with $\succsim$.
+
+  Hence, the chain only contains a finite number of $\tored{}{}{\PP_{\succ}}$-steps. So there is an infinite suffix of the chain where only
+  ADPs from
+$(\C{P} \cup \C{P}^{=})\setminus \PP_{\succ}$ are
+  used.
+      This means that $t_i \tored{}{}{\C{P} \cup \C{P}^{=}} t_{i+1} \tored{}{}{\C{P} \cup
+        \C{P}^{=}} t_{i+2} \ldots$ is an infinite
+      $(\C{P} \setminus \PP_{\succ}, \C{P}^{=} \setminus \PP_{\succ})$-chain.
+Hence,
+$(\C{P} \setminus \PP_{\succ}, \C{P}^{=} \setminus \PP_{\succ})$ is not SN either.
+\end{myproof}

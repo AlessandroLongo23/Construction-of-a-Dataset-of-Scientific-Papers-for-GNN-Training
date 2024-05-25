@@ -1,0 +1,13 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Model                           & \multicolumn{1}{c}{HumanEval} & \multicolumn{1}{c}{HumanEval+} \\ \midrule
+\begin{tabular}[c]{@{}l@{}}\baselineds\\ \ \ \scalebox{0.9}{w/ same steps} \end{tabular}  & 61.6                          & 57.3                           \\
+\begin{tabular}[c]{@{}l@{}}\baselineds\\ \ \ \scalebox{0.9}{w/ same budget} \end{tabular} & 62.2                          & 57.3                           \\ \midrule
+\oursmerge                        & \textbf{67.1}                 & \textbf{64.6}                  \\ \bottomrule
+\end{tabular}
+\caption{\label{tab:discussion-overhead}
+Experiments on the effect of training overhead. For our two SFT baselines, "w/ same steps" refers to one SFT baseline using the same training steps as \ours while "w/ same budget" refers to the other SFT baseline using the same training budget as \ours. \ours can consistently outperform both SFT baselines to a large extent, further demonstrating the ability of \ours to unlock the power of code instruction tuning.
+}
+\end{table}

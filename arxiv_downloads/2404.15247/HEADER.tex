@@ -1,0 +1,214 @@
+\usepackage{caption}
+
+\usepackage{mdframed}
+\usepackage{listings}
+\usepackage{caption}
+\captionsetup[figure]{skip=2.5pt}%
+\captionsetup[table]{skip=2.5pt}%
+\newcommand{\distance}{7pt}
+\setlength{\textfloatsep}{\distance}%
+\setlength{\floatsep}{\distance}%
+\setlength{\intextsep}{\distance}%
+\setlength{\dbltextfloatsep}{\distance} %
+\setlength{\dblfloatsep}{\distance} %
+
+\newcommand\uiuclogo{\includegraphics[width=5pt]{assets/uiuc.png}}
+\newcommand\thulogo{\includegraphics[width=8pt]{assets/thu.png}}
+\newcommand{\uiuc}[1]{{#1\textsuperscript{\textnormal{1}}}}
+\newcommand{\uiucfront}[1]{{\textsuperscript{1}#1}}
+\newcommand{\thu}[1]{{#1\textsuperscript{\textnormal{2}}}}
+\newcommand{\thufront}[1]{{\textsuperscript{2}#1}}
+
+\usepackage{tabularray}
+\UseTblrLibrary{booktabs}
+\SetTblrInner[booktabs]{abovesep=0pt, belowsep=0pt, rowsep=0.2pt}
+\SetTblrInner[booktabs]{cells = {cmd=\small}}
+\renewcommand\aboverulesep{2pt}
+\renewcommand\belowrulesep{2pt}
+\NewTableCommand\seprule{\specialrule{\lightrulewidth,gray8}{2pt}{2pt}}
+\NewTableCommand\uniquerule{\specialrule{\lightrulewidth,gray7,dashed}{2pt}{2pt}}
+\definecolor{lightb}{RGB}{235,245,255}
+
+\usepackage{graphicx}
+
+\usepackage{pifont}%
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+\usepackage[nointegrals]{wasysym}
+\usepackage{enumitem} %
+\setlist[itemize]{leftmargin=*}
+
+\usepackage{xspace}
+\usepackage{xcolor}
+\usepackage{mathtools}
+
+\usepackage[capitalise, noabbrev]{cleveref}
+\crefformat{section}{\S#2#1#3}
+\Crefformat{section}{\S#2#1#3}
+
+\usepackage{fontawesome}
+
+\newcommand\COMMENT[1]{}
+
+\usepackage[commandnameprefix=always]{changes}
+\newcommand{\revisionComment}[1]{\textcolor{blue}{\textit{[#1]}}}
+\setanonymousname{Yuxiang}
+\setauthormarkuptext{name}
+\setcommentmarkup{\revisionComment{Yuxiang: #1}}
+
+\newcommand{\lingming}[1]{\textcolor{orange}{[Lingming: #1]}}
+\newcommand{\yifeng}[1]{\textcolor{purple}{[Yifeng: #1]}}
+\newcommand{\jiawei}[1]{\textcolor{green}{[Jiawei: #1]}}
+\newcommand{\TextOrMathSimple}[1]{\TextOrMath{$#1$}{#1}}
+\usepackage[normalem]{ulem}
+\definecolor{applegreen}{rgb}{0.55, 0.71, 0.0}
+\newcommand{\changebars}[2]{%
+   [{\color{magenta}\sout{#1}}]
+   [{\color{applegreen}\begingroup{\textbf{#2}}\endgroup}]}
+
+\newcommand\passat[1]{\mbox{pass@{#1}}}
+\newcommand\Passat[1]{\mbox{Pass@{#1}}}
+
+
+\newcommand\hflink{https://huggingface.co/ise-uiuc}
+\newcommand\githubLink{https://github.com/ise-uiuc/magicoder}
+\newcommand\ossinstruct{\textsc{OSS-Instruct}\xspace}
+\newcommand\ours{${\mathcal X}$FT\xspace}
+\newcommand\oursmoe{MoE$_{\small \textsc{DS}}$\xspace}
+\newcommand\oursmerge{${\mathcal X}$FT$_{\small \textsc{DS}}$\xspace}
+\newcommand\stablemoe{MoE$_{\small \textsc{STABLE}}$\xspace}
+\newcommand\stablemerge{${\mathcal X}$FT$_{\small \textsc{STABLE}}$\xspace}
+\newcommand\baselineds{SFT$_{\small \textsc{DS}}$\xspace}
+\newcommand\baselinestable{SFT$_{\small \textsc{STABLE}}$\xspace}
+\newcommand\baselinetinyllama{SFT$_{\small \textsc{TL}}$\xspace}
+\newcommand\tinyllamamoe{MoE$_{\small \textsc{TL}}$\xspace}
+\newcommand\tinyllamamerge{${\mathcal X}$FT$_{\small \textsc{TL}}$\xspace}
+\newcommand\ewads{EWA$_{\small \textsc{DS}}$\xspace}
+\newcommand\codellamaPyAbbrev{CL}
+\newcommand\starcoderAbbrev{SC}
+\newcommand\dscoderAbbrev{DS}
+\newcommand\model{\mbox{Magicoder}\xspace}
+\newcommand\modelc{Magicoder-\codellamaPyAbbrev{}\xspace}
+\newcommand\modeld{Magicoder-\dscoderAbbrev{}\xspace}
+\newcommand\modelx{\mbox{Magicoder$\mathcal{S}$}\xspace}
+\newcommand\modelxd{\modelx{}-\dscoderAbbrev\xspace}
+\newcommand\modelxc{\modelx{}-\codellamaPyAbbrev\xspace}
+\newcommand\evolinstruct{Evol-Instruct\xspace}
+\newcommand\evolcode{\texttt{evol-codealpaca-v1}\xspace}
+\newcommand\evolgeneral{\texttt{evol-instruct-70k}\xspace}
+\newcommand\selfinstruct{\textsc{Self-Instruct}\xspace}
+\newcommand\octopack{OctoPack}
+\newcommand\llm{LLM\xspace}
+\newcommand\llmfull{Large Language Model\xspace}
+\newcommand\moe{MoE\xspace}
+\newcommand\moefull{Mixture-of-Experts\xspace}
+\newcommand\ewafull{Experts Weights Averaging\xspace}
+\newcommand\sparseupcycle{sparse upcycling\xspace}
+\newcommand\deepseekmoe{DeepSeekMoE\xspace}
+\newcommand\mocle{MoCLE\xspace}
+\newcommand\loramoe{LoRAMoE\xspace}
+\newcommand\pesc{PESC\xspace}
+\newcommand\lora{LoRA\xspace}
+\newcommand\modelsoup{Model Soups\xspace}
+\newcommand\ewa{EWA\xspace}
+\newcommand\github{GitHub\xspace}
+\newcommand\codealpaca{Code Alpaca\xspace}
+\newcommand\codesearchnet{CodeSearchNet\xspace}
+\newcommand{\bleu}{BLEU\xspace}
+\newcommand\sharegpt{ShareGPT\xspace}
+\newcommand\swebench{SWE-bench\xspace}
+\newcommand\repoeval{RepoEval\xspace}
+\newcommand\crosscodeeval{\textsc{CrossCodeEval}\xspace}
+\newcommand\seedcorpus{\texttt{starcoderdata}\xspace}
+\newcommand\thestack{The Stack\xspace}
+\newcommand\hugging{Hugging~Face\xspace}
+\newcommand\oai{OpenAI\xspace}
+\newcommand\google{Google\xspace}
+\newcommand\meta{Meta\xspace}
+\newcommand\anthr{Anthropic\xspace}
+\newcommand\mathdash{\hbox{-}}
+\newcommand\adafactor{Adafactor\xspace}
+\newcommand\bigcodeharness{\texttt{bigcode-evaluation-harness}}
+\newcommand\tfidf{TF-IDF\xspace}
+\newcommand\tfidffull{Term Frequency–Inverse Document Frequency\xspace}
+\newcommand\rouge{ROUGE\xspace}
+\newcommand\instructor{INSTRUCTOR\xspace}
+\newcommand\nsamples{\texttt{num\_samples}}
+\newcommand\temperature{\texttt{temperature}}
+\newcommand\topp{\texttt{top\_p}}
+\newcommand\maxLen{\texttt{max\_length}}
+\newcommand\maxNewTok{\texttt{max\_new\_tokens}}
+
+
+\newcommand{\eg}{\emph{e.g.,}\xspace}
+\newcommand{\ie}{\emph{i.e.,}\xspace}
+
+\newcommand\llama{\textsc{LlaMa}}
+\newcommand\codellamapy{\textsc{\codellamaTerm\codellamaSpacing{}\codellamaHyphen{}Python}}
+\newcommand\codellamainst{\textsc{\codellamaTerm\codellamaHyphen{}Instruct}}
+    \newcommand\codellamaSpacing{}
+    \newcommand\codellamaTerm{Code\codellamaSpacing{}Llama}
+    \newcommand\codellamaHyphen{\codellamaSpacing{}-\codellamaSpacing{}}
+    \newcommand\codellama{\textsc{\codellamaTerm}}
+\newcommand{\starcoderbase}{StarCoderBase}
+\newcommand{\starcoder}{StarCoder}
+\newcommand{\wizardcoder}{WizardCoder}
+\newcommand{\wizardcoderc}{WizardCoder-\codellamaPyAbbrev}
+\newcommand{\wizardcodersc}{WizardCoder-\starcoderAbbrev}
+\newcommand\palm{PaLM}
+\newcommand\chinchilla{Chinchilla}
+\newcommand\chatgpt{ChatGPT\xspace}
+\newcommand\gptthreefive{GPT-3.5\xspace}
+\newcommand\gptthreefiveturb{\gptthreefive~Turbo}
+\newcommand\gptfour{GPT-4}
+\newcommand\gptfourturb{GPT-4~Turbo}
+\newcommand\gopher{Gopher}
+\newcommand\claude{Claude}
+\newcommand\grok{Grok}
+\newcommand\codex{Codex}
+\newcommand\codetf{CodeT5}
+\newcommand\polycoder{PolyCoder}
+\newcommand\incoder{\textsc{InCoder}}
+\newcommand\codegen{CodeGen}
+\newcommand\santacoder{SantaCoder}
+\newcommand\gptthree{GPT-3}
+\newcommand\alpaca{Alpaca}
+\newcommand\vicuna{Vicuna}
+\newcommand\wizardlm{WizardLM}
+\newcommand\phind{Phind}
+\newcommand\dscoder{DeepSeek-Coder}
+\newcommand\dscoderbase{DeepSeek-Coder-Base\xspace}
+\newcommand\dscoderinst{DeepSeek-Coder-Instruct\xspace}
+\newcommand\stablecoder{\textsc{stable-code}\xspace}
+\newcommand\tinyllama{TinyLlama\xspace}
+\newcommand\codegenmono{CodeGen-Mono}
+\newcommand\codecush{Code-Cushman-001}
+\newcommand\mistral{Mistral}
+
+\newcommand\datagenmodel{\texttt{gpt-3.5-turbo-1106}}
+
+\newcommand\humaneval{HumanEval\xspace}
+\newcommand\humanevalp{HumanEval+\xspace}
+\newcommand\evalplus{EvalPlus\xspace}
+\newcommand\mbpp{MBPP\xspace}
+\newcommand\mbppp{MBPP+\xspace}
+\newcommand\apps{APPS}
+\newcommand\codecontests{CodeContests}
+\newcommand\dsonek{DS-1000\xspace}
+    \newcommand\tensorflow{TensorFlow}
+    \newcommand\torch{PyTorch}
+    \newcommand\matplotlib{Matplotlib}
+    \newcommand\numpy{NumPy}
+    \newcommand\scipy{SciPy}
+    \newcommand\sklearn{Sklearn}
+    \newcommand\pandas{Pandas}
+\newcommand\gsm{GSM8K}
+\newcommand\multiple{MultiPL-E\xspace}
+\newcommand\python{Python}
+\newcommand\js{JavaScript}
+\newcommand\java{Java}
+\newcommand\cxx{C++}
+\newcommand\swift{Swift}
+\newcommand\php{PHP}
+\newcommand\rust{Rust}

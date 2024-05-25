@@ -1,0 +1,14 @@
+\vspace{-5pt}
+
+\section{Conclusion}
+\label{sec:conclusion}
+We have introduced FlowMap, a simple, robust, and scalable first-order method for estimating camera parameters from video.
+Our model outperforms existing gradient-descent based methods for estimating camera parameters. 
+FlowMap's depth and camera parameters enable subsequent reconstruction via Gaussian Splatting of comparable quality to COLMAP.
+FlowMap is written in PyTorch and achieves runtimes of 3 minutes for short sequences and 20 minutes for long sequences, and we anticipate that concerted engineering efforts could accelerate FlowMap by an order of magnitude.
+Perhaps most excitingly, FlowMap is fully differentiable with respect to per-frame depth estimates.
+FlowMap can thus serve as a building block for a new generation of self-supervised monocular depth estimators, deep-learning-based multi-view-geometry methods, and methods for generalizable novel view synthesis~\cite{pixelnerf,tewari2023diffusion,charatan23pixelsplat,wang2021ibrnet,du2023cross,suhail2022generalizable}, unlocking training on internet-scale datasets of unposed videos.
+
+
+
+\small\myparagraph{Acknowledgements.} This work was supported by the National Science Foundation under Grant No. 2211259, by the Singapore DSTA under DST00OECI20300823 (New Representations for Vision and 3D Self-Supervised Learning for Label-Efficient Vision), by the Intelligence Advanced Research Projects Activity (IARPA) via Department of Interior/ Interior Business Center (DOI/IBC) under 140D0423C0075, by the Amazon Science Hub, and by IBM. The Toyota Research Institute also partially supported this work. The views and conclusions contained herein reflect the opinions and conclusions of its authors and no other entity.

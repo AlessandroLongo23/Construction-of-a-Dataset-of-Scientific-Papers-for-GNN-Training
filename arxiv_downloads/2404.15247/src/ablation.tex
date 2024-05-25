@@ -1,0 +1,32 @@
+\section{Ablation Study}
+
+\subsection{Effect of Shared Expert with Routing Weight Normalization}
+\input{src/table/ablation_moe}
+
+We demonstrate the importance of the shared expert of \ours by comparing its performance with
+the \sparseupcycle~\cite{komatsuzaki2023sparse} baseline that does not employ any shared expert. As shown in Table \ref{tab:ablation-moe}, the performance of the original \sparseupcycle (with the "- Shared Expert" label) drops greatly compared with \oursmoe. Notably, the \sparseupcycle model even performs worse than \baselineds on \humanevalp, showing its ineffectiveness for instruction tuning.
+
+While the shared expert setting is also employed in most recent works~\cite{dai2024deepseekmoe, gou2024mixture}, their routing strategy will cause performance degradation due to the scale mismatch between the outputs of the upcycled \moe layer and the original FFN layer. To understand the importance of routing weight normalization, we conduct an ablation by excluding it from \ours.
+Table \ref{tab:ablation-moe} shows that, after removing routing weight normalization, the performance substantially decreases, despite being still better than the original \sparseupcycle that does not use the shared expert setting.
+
+\subsection{Effect of Merging Strategy}\label{sec:ablation_merging}
+\input{src/table/ablation_merge}
+
+In this section, we demonstrate the effectiveness of our learnable merging technique by comparing it with (1) directly merging experts with initialized mixing coefficients, and (2) the learnable merging technique without the shared rate setting, which is the same setting as the learned soup in \modelsoup~\cite{wortsman2022model} and is described in Eq. (\ref{formula:merging1}) and Eq. (\ref{formula:merging2}). 
+Specifically, we initialize the learnable mixing coefficient of the shared expert as 0.75 and that of the other 7 normal experts as $\frac{1}{28}$ for fair comparison. As shown in Table \ref{tab:ablation-merge}, trained mixing coefficients outperform the initialized mixing coefficients for merging. Furthermore, removing the shared rate setting will largely degrade the performance of \oursmerge on both \humaneval and \humanevalp, demonstrating its importance.
+
+\input{src/table/ablation_shared_expert_rate}
+
+We further study the effect of the shared expert rate $\lambda$ on the performance of the final merged dense model. We evenly choose five shared expert rates, including 0.00, 0.25, 0.50, 0.75, and 1.00, to perform the learnable merging process and evaluate each merged dense model accordingly. Note that 0.75 is the default shared expert rate used in our main experiments. If the shared expert rate is 0.00, it means that the shared expert is ignored when constructing the merged dense model from the upcycled \moe model; if the shared expert rate is 1.00, it means that the final dense model is built by simply extracting the shared expert from the upcycled \moe model. As shown in Table \ref{tab:ablation-shared-expert-rate}, there are mainly three interesting observations:
+\begin{itemize}[leftmargin=1em]
+    \setlength{\parskip}{2pt}
+    \setlength\itemsep{0pt}
+    \item The performance of the final merged dense model improves gradually when the shared expert rate grows from 0.00 to 0.75, indicating that \textbf{general knowledge learned by the shared expert is important for better performance}.
+    \item The performance of the final merged dense model drops significantly when the shared expert rate grows from 0.75 to 1.00, showing that \textbf{specific knowledge learned by other experts is also irreplaceable} and ignoring them will lead to a significant performance drop.
+    \item All the final merged dense models \textbf{consistently outperform the normal SFT baseline regardless of their shared expert rate}, further demonstrating the effectiveness of \ours.
+\end{itemize}
+
+\subsection{Effect of Base Code \llm}
+In this section, we demonstrate that the effectiveness of \ours is not dependent on the choice of base code \llm{s}. To show this, we conduct an ablation experiment by applying \ours to \stablecoder 3B~\cite{stable-code-3b}, whose architecture is different from \dscoderbase 1.3B~\cite{guo2024deepseekcoder}, and see whether it can still improve its performance. Hyperparameter settings are detailed in Appendix \ref{sec:stable_setting}. As is shown in Table \ref{tab:ablation-stable}, \stablemerge significantly improves \baselinestable by 10\% on \humaneval and 11\% on \humanevalp respectively. Furthermore, \stablemerge consistently boosts the performance of \stablemoe while only using $\sfrac{1}{4}\times$ parameters and $\sfrac{1}{2}\times$ computations. These results show that the effectiveness of \ours does not depend on any specific choice of base code \llm{s}, demonstrating the generalizability of \ours across different model architectures.
+
+\input{src/table/ablation_stable}

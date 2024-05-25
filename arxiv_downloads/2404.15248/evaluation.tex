@@ -1,0 +1,134 @@
+\section{Evaluation and Conclusion}\label{Evaluation and Conclusion}
+
+In this paper, we introduced the first
+notion of (annotated) dependency pairs
+and the first DP framework
+for relative termination, which also features suitable
+dependency graph and reduction pair processors for relative ADPs.
+Of course, 
+further classical DP processors can be adapted to our relative ADP framework as well. For
+example, in our implementation of the novel ADP framework in our tool \aprove{} \cite{JAR-AProVE2017},
+we also included a
+straightforward adaption of the classical \emph{rule removal processor}
+\cite{gieslLPAR04dpframework}, see 
+\Cref{Appendix}.\footnote{This processor works
+analogously to the preprocessing
+at the beginning
+of \Cref{Relative DP Framework}
+which can be used to remove duplicating rules: For an  ADP problem $(\C{P},\C{P}^{=})$, it tries to find
+a reduction pair 
+$(\succsim, \succ)$ 
+where $\succ$ is closed under contexts
+such that $\flat(\C{P} \cup \C{P}^{=}) \subseteq {\succsim}$.
+Then for $\PP_{\succ} \subseteq \C{P} \cup \C{P}^{=}$ 
+with $\flat(\C{P}_{\succ}) \subseteq {\succ}$, the processor replaces the ADP by 
+$(\C{P} \setminus \PP_{\succ}, \C{P}^{=} \setminus \PP_{\succ})$.}
+In future work, we will investigate how to use our new form of 
+ADPs for full (instead of innermost) rewriting also in the probabilistic setting 
+and for complexity analysis.
+
+
+
+To evaluate the new relative ADP framework, we compared its implementation in 
+``\emph{new} \aprove{}'' 
+to all other tools that participated
+in the most recent \emph{termination competition (TermComp 2023)} \cite{termcomp}
+on relative rewriting, i.e.,
+\natt{} \cite{natt_sys_2014},  \ttttwo{} \cite{ttt2_sys}, \mnm{} \cite{FSCD19}, and ``\emph{old} \aprove{}'' which did
+not yet contain the contributions of the current paper.
+In \emph{TermComp 2023}, 
+98 benchmarks were used for relative termination. However, these benchmarks only consist
+of
+examples where the main TRS
+$\R$ dominates the base TRS $\R^{=}$ (i.e., which can be handled by \Cref{theorem:main-relative-rewrite-corollary-yamada-1} from
+\cite{iborra2017relative})
+or which can already
+be solved via simplification orders directly.
+Therefore, we extended the collection by
+17 new examples,
+including both
+$\R_{\tdivl}/\R^{=}_{\tset}$ from \Cref{ex:divlTRS,ex:mset1},
+and our leading example $\R_{\tdivl} / \R^{=}_{\tset 2}$ 
+from \Cref{ex:mainExample} (where only \emph{new} \aprove{} can prove SN).
+Except for $\R_{\tdivl}/\R^{=}_{\tset}$, in these examples
+$\R$ does not dominate $\R^{=}$. 
+Most of these examples adapt well-known classical TRSs from the
+\emph{Termination Problem Data Base} \cite{tpdb} used at \emph{TermComp}
+to the relative setting.
+In the following table,
+the number in the ``YES'' (``NO'') row indicates for how many of the 115
+examples the respective
+tool could prove (disprove) relative termination and ``MAYBE'' refers to the benchmarks
+where the tool could not solve the problem within the timeout of 300~s per example. The numbers in
+brackets are the respective results when only considering our new 17 examples.
+``AVG(s)'' gives the average runtime of the tool
+on solved examples in seconds.
+
+\begin{center}
+{\small    \begin{tabular}{||c | c | c | c | c | c||}
+     \hline
+      & \emph{new} \aprove & \natt & \emph{old} \aprove & \ttttwo & \mnm  \\ [0.5ex] 
+     \hline
+     YES & 78 (17) & 65 (7) & 47 (4) & 39 (3) & 0 (0)  \\ 
+     \hline
+     NO & 13 (0)& 5 (0)& 13 (0)& 7 (0)& 13 (0)\\ 
+     \hline
+     MAYBE & 24 (0)& 45 (10)& 55 (13)& 69 (14) & 102 (17) \\ 
+     \hline
+      AVG(s) & 6.68 & 0.38 & 3.67 & 1.61 & 1.28  \\ 
+     \hline
+    \end{tabular}}
+\end{center}
+
+
+
+The table clearly shows that while \emph{old} \aprove{} was already the second most powerful
+tool for relative termination, the integration of the ADP framework in \emph{new} \aprove{}
+yields a substantial advance in power (i.e., it only fails on 24 of the examples, compared
+to 45 and 55 failures of \natt{} and \emph{old} \aprove, respectively).
+In particular,  previous tools (including 
+\emph{old} \aprove{}) often have problems with
+relative TRSs where the main TRS does
+ not dominate the base TRS, whereas the ADP framework can handle
+ such examples.
+
+
+A special form of relative TRSs are \emph{relative string rewrite systems (SRSs)}, where all function
+symbols have arity 1.
+Due to the base ADPs with two annotated
+symbols on the right-hand side, 
+here the ADP framework is less powerful
+than dedicated techniques for string rewriting.
+For the 403 relative SRSs at \emph{TermComp 2023},
+the ADP framework only finds 71 proofs, mostly due to the dependency graph and the rule removal processor, 
+while termination analysis via \aprove's
+standard strategy for relative SRSs
+succeeds on 209 examples, and the two most powerful tools for relative SRSs at
+\emph{TermComp 2023} (\mnm{} and \matchbox{} \cite{matchbox})
+succeed on 274 and 269 examples, respectively.
+
+
+Another special form of relative rewriting is \emph{equational rewriting}, where one has
+a set of equations $E$ which correspond to relative rules that can be applied in both directions.
+In \cite{RTA01}, DPs were adapted to equational rewriting.
+However, this approach requires
+$E$-unification to be decidable and finitary
+(i.e., for (certain) pairs of terms, 
+it has to compute  finite complete sets of $E$-unifiers).
+This works well if $E$
+are AC- or C-axioms, and for this special case, dedicated techniques like
+\cite{RTA01} are more powerful than our new ADP framework for relative termination.
+For example, on the 76 AC- and C-benchmarks  for equational rewriting at \emph{TermComp 2023},
+the  relative ADP framework  finds 36 proofs, while dedicated
+tools for AC-rewriting like \aprove's equational strategy or \muterm{} \cite{gutierrez_mu-term_2020} succeed on
+66 and 64 examples, respectively.
+However, in general, the requirement of a finitary
+$E$-unification algorithm is a  hard restriction.
+In contrast to existing tools for equational rewriting,
+our new ADP framework can be used for arbitrary
+(non-duplicating) relative rules.
+
+For details on our experiments, our collection of examples,
+and for instructions on how to run our implementation
+in \textsf{AProVE} via its \emph{web interface} or locally, see
+\url{https://aprove-developers.github.io/RelativeDTFramework/}

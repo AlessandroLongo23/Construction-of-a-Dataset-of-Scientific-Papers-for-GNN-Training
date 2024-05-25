@@ -1,0 +1,38 @@
+% \begin{table}[!t]
+\centering
+\caption{\textbf{COCO evaluation.} {\hlours{Our method}}, {\hltask{Task-specific architectures}}}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{lcccccccc}
+\toprule
+ & \multicolumn{3}{c}{\textbf{Performance} ($\uparrow$)} && \multicolumn{2}{c}{\textbf{GFLOPs} ($\downarrow$)} \\ \cline{2-4} \cline{6-7}
+\multirow{-2}{*}{\textbf{Model}} & \textbf{PQ} & \textbf{mIoU}$_p$ & \textbf{AP}$_p$ && \textbf{Total} & \textbf{Tx. Enc.} \\ 
+\midrule
+
+\multicolumn{7}{c}{\textbf{Backbone}: SWIN-T}\\
+\hline
+RT-M2F \cite{lv2023detrs} & 41.36 & 61.54 & 24.68 && 158.30 & 59.66 \\
+Lite-M2F \cite{li2023lite} & 52.70 & 63.08 & 41.10 && 188.00 & 79.78 \\
+M2F \cite{cheng2021mask2former}  & 52.03 & 62.49 & 42.18 && 235.57  & 121.69 \\
+\rowcolor{eccvblue!20}
+{\ours}($\GPRatio=0.0005$) & 52.06 & 62.76 & 41.51 && 202.39 & 88.47 \\
+\rowcolor{eccvblue!20}
+{\ours}($\GPRatio=0.02$) & 50.79 & 62.25 & 39.71 && 181.64 & 67.71 \\
+\rowcolor{eccvblue!20}
+Lite-{\ours} & 52.84 & 63.23 & 42.18 && 178.43 & 64.42 \\
+\hline
+\multicolumn{7}{c}{\textbf{Backbone}: Res50}\\
+\hline
+M2F \cite{cheng2021mask2former} & 51.73 & 61.94  & 41.72 && 229.10 & 135.00 \\
+MF \cite{cheng2021per} & 46.50 & 57.80 & 33.00  && 181.00 & --  \\
+\rowcolor{gray!20}
+YOSO \cite{hu2023you} & 48.40 & 58.74 & 36.87 && 114.50 & --  \\
+\rowcolor{gray!20}
+RAP-SAM\cite{xu2024rap} & 46.90 & -- & -- && 123.00 & --  \\
+\rowcolor{gray!20}
+ReMax \cite{sun2023remax} & 53.50 & -- & -- && --  & --  \\
+\rowcolor{eccvblue!20}
+{\ours} & 51.89 & 61.07 & 41.25 && 195.55 & 92.37 \\
+
+\bottomrule
+\end{tabular}}  
+\label{tab:result_coco}

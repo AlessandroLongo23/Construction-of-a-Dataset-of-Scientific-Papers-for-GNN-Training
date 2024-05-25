@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{@{}lcrr@{}}
+\toprule
+Model                       & \multicolumn{1}{c}{$\lambda$} & \multicolumn{1}{c}{HumanEval} & \multicolumn{1}{c}{HumenEval+} \\ \midrule
+\baselineds                 & -                             & 61.6                          & 57.3                           \\ \midrule
+\multirow{5}{*}{\oursmerge} & 0.00                          & 62.8                          & 59.8                           \\
+                                           & 0.25                          & 64.6                          & 61.0                           \\
+                                           & 0.50                          & 65.9                          & 62.8                           \\
+                                           & \textbf{0.75}                          & \textbf{67.1}                 & \textbf{64.6}                  \\
+                                           & 1.00                          & 63.4                          & 60.4                           \\ \bottomrule
+\end{tabular}
+\caption{\label{tab:ablation-shared-expert-rate}
+Ablation over the effect of the shared expert rate $\lambda$ in our learnable merging technique. \ours can consistently outperform the normal SFT baseline regardless of the shared expert rate, while $\lambda=0.75$ is the optimal setting in our experiments.
+}
+\end{table}

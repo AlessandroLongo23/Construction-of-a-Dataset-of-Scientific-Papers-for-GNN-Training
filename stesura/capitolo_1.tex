@@ -1,0 +1,31 @@
+\chapter{Il problema del DLA}
+
+\section{Spiegazione del problema}
+Il problema affrontato in questa tesi è l'annotazione dei documenti scientifici, in particolare dell'Analisi del Layout 
+dei Documenti, o DLA, ovvero l'identificazione e classificazione delle parti di un documento, come testi, immagini,
+tabelle, e altri, per codificarne la struttura logica dei contenuti.
+
+\section{I problemi dei metodi attuali}
+	\subsection{Dipendenza dall'apprendimento supervisionato}
+	Il primo problema riscontrato nella DLA è che le metodologie attualmente utilizzate si basano fortemente 
+	sull'apprendimento supervisionato, il che rende il processo di raccolta dei dati molto lungo e dispendioso.
+
+	\subsection{Disponibilità limitata dei documenti}
+	Inoltre, non tutti i tipi di documenti sono accessibili pubblicamente a causa di problemi di policy, quindi
+	molti dataset sono principalmente composti da articoli scientifici: questo limita la varietà di dati utilizzati
+	per l'addestramento di modelli che risolvono la DLA e, di conseguenza, ne riduce le performance con documenti
+	di altra natura.
+
+	\subsection{Assenza del file sorgente}
+	Anche i documenti liberamente accessibili online non sempre rendono disponibile anche 
+	il codice sorgente, per cui ci si trova a dover scegliere addestrare un modello con pochi dati 
+	etichettati manualmente o con molti non etichettati: nel primo caso il dataset ottenuto è molto
+	ridotto e relativamente lento da costruire; nel secondo, invece, va a scapito della robustezza
+	e affidabilità delle predizioni.
+
+\section{Soluzioni impiegate}
+	\subsection{Utilizzo di dati sintetici}
+		Una soluzione per ovviare a questi problemi consiste nella generazione di un dataset sintetico, ovvero utilizzare 
+		per l'addestramento un insieme di documenti generati anch'essi artificialmente, e quindi già etichettati.
+		Il vantaggio di questo metodo risiede nella quantità di dati disponibili, che può essere determinata a priori, e
+		l'impiego di poche risorse; lo svantaggio, d'altra parte, è la variabilità ridotta e le basse performance con dati reali.

@@ -1,0 +1,168 @@
+\providecommand{\noopsort}[1]{}
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{https://doi.org/#1}
+
+\bibitem{arts2000termination}
+Arts, T., Giesl, J.: Termination of term rewriting using dependency pairs.
+  Theoretical Computer Science  \textbf{236}(1-2),  133--178 (2000).
+  \doi{10.1016/S0304-3975(99)00207-8}
+
+\bibitem{baader_nipkow_1999}
+Baader, F., Nipkow, T.: Term Rewriting and All That. Cambridge University Press
+  (1998). \doi{10.1017/CBO9781139172752}
+
+\bibitem{dershowitz_termination_1987}
+Dershowitz, N.: Termination of rewriting. Journal of Symbolic Computation
+  \textbf{3}(1),  69--115 (1987).
+  \doi{https://doi.org/10.1016/S0747-7171(87)80022-6}
+
+\bibitem{RTALoop}
+Dershowitz, N., Treinen, R.: The {RTA} list of open problems,
+  \url{https://www.win.tue.nl/rtaloop/}
+
+\bibitem{fuhs2019DerivToRuntime}
+Fuhs, C.: Transforming derivational complexity of term rewriting to runtime
+  complexity. In: Proc.\ FroCoS~'19. pp. 348--364. LNCS 11715 (2019).
+  \doi{10.1007/978-3-030-29007-8\_20}
+
+\bibitem{DBLP:phd/dnb/Geser90}
+Geser, A.: Relative Termination. Ph.D. thesis, University of Passau, Germany
+  (1990),
+  \url{https://www.uni-ulm.de/fileadmin/website\_uni\_ulm/iui/Ulmer\_Informatik\_Berichte/1991/UIB-1991-03.pdf}
+
+\bibitem{FSCD19}
+Geser, A., Hofbauer, D., Waldmann, J.: Sparse tiling through overlap closures
+  for termination of string rewriting. In: Proc.\ FSCD~'19. pp. 21:1--21:21.
+  LIPIcs 131 (2019). \doi{10.4230/LIPICS.FSCD.2019.21}
+
+\bibitem{RTA01}
+Giesl, J., Kapur, D.: Dependency pairs for equational rewriting. In: Proc.\
+  RTA~'01. pp. 93--108. LNCS 2051 (2001). \doi{10.1007/3-540-45127-7\_9}
+
+\bibitem{gieslLPAR04dpframework}
+Giesl, J., Thiemann, R., Schneider-Kamp, P.: The dependency pair framework:
+  Combining techniques for automated termination proofs. In: Proc.\ LPAR~'04.
+  pp. 301--331. LNCS 3452 (2004). \doi{10.1007/978-3-540-32275-7\_21}
+
+\bibitem{giesl2006mechanizing}
+Giesl, J., Thiemann, R., Schneider-Kamp, P., Falke, S.: Mechanizing and
+  improving dependency pairs. Journal of Automated Reasoning  \textbf{37}(3),
+  155--203 (2006). \doi{10.1007/s10817-006-9057-7}
+
+\bibitem{JAR-AProVE2017}
+Giesl\noopsort{4}, J., Aschermann, C., Brockschmidt, M., Emmes, F., Frohn, F.,
+  Fuhs, C., Hensel, J., Otto, C., Pl{\"{u}}cker, M., Schneider{-}Kamp, P.,
+  Str{\"{o}}der, T., Swiderski, S., Thiemann, R.: Analyzing program termination
+  and complexity automatically with {{\textsf{AProVE}}}. Journal of Automated
+  Reasoning  \textbf{58}(1),  3--31 (2017). \doi{10.1007/s10817-016-9388-y}
+
+\bibitem{termcomp}
+Giesl\noopsort{4}, J., Rubio, A., Sternagel, C., Waldmann, J., Yamada, A.: The
+  termination and complexity competition. In: Proc.\ TACAS~'19. pp. 156--166.
+  LNCS 11429 (2019). \doi{10.1007/978-3-030-17502-3\_10}, website of
+  \emph{TermComp}:
+  \url{https://termination-portal.org/wiki/Termination\_Competition}
+
+\bibitem{gutierrez_mu-term_2020}
+Guti{\'{e}}rrez, R., Lucas, S.: {\textsf{MU-TERM}}: {Verify} {Termination}
+  {Properties} {Automatically} ({System} {Description}). In: Proc.\ IJCAR~'20.
+  pp. 436--447. LNCS 12167 (2020). \doi{10.1007/978-3-030-51054-1\_28}
+
+\bibitem{hirokawa2005automating}
+Hirokawa, N., Middeldorp, A.: Automating the dependency pair method.
+  Information and Computation  \textbf{199}(1-2),  172--199 (2005).
+  \doi{10.1016/j.ic.2004.10.004}
+
+\bibitem{DBLP:journals/iandc/HirokawaM07}
+Hirokawa, N., Middeldorp, A.: Tyrolean termination tool: Techniques and
+  features. Information and Computation  \textbf{205}(4),  474--511 (2007).
+  \doi{10.1016/J.IC.2006.08.010}
+
+\bibitem{DBLP:journals/jar/HirokawaM11}
+Hirokawa\noopsort{1}, N., Middeldorp, A.: Decreasing diagrams and relative
+  termination. Journal of Automated Reasoning  \textbf{47}(4),  481--501
+  (2011). \doi{10.1007/S10817-011-9238-X}
+
+\bibitem{DBLP:conf/lopstr/IborraNV09}
+Iborra, J., Nishida, N., Vidal, G.: Goal-directed and relative dependency pairs
+  for proving the termination of narrowing. In: Proc.\ LOPSTR~'09. pp. 52--66.
+  LNCS 6037 (2009). \doi{10.1007/978-3-642-12592-8\_5}
+
+\bibitem{iborra2017relative}
+Iborra, J., Nishida, N., Vidal, G., Yamada, A.: Relative termination via
+  dependency pairs. Journal of Automated Reasoning  \textbf{58}(3),  391--411
+  (2017). \doi{10.1007/S10817-016-9373-5}
+
+\bibitem{kassinggiesl2023iAST}
+Kassing, J.C., Giesl, J.: Proving almost-sure innermost termination of
+  probabilistic term rewriting using dependency pairs. In: Proc.\ CADE~'23. pp.
+  344--364. LNCS 14132 (2023). \doi{10.1007/978-3-031-38499-8\_20}
+
+\bibitem{FLOPS2024}
+Kassing\noopsort{5}, J.C., Dollase, S., Giesl, J.: A complete dependency pair
+  framework for almost-sure innermost termination of probabilistic term
+  rewriting. In: Proc.\ FLOPS~'24. LNCS (2024).
+  \doi{10.48550/arXiv.2309.00344}, to appear. Long version at \emph{CoRR}
+  abs/2309.00344
+
+\bibitem{DBLP:conf/lpar/KleinH12}
+Klein, D., Hirokawa, N.: Confluence of non-left-linear trss via relative
+  termination. In: Proc.\ LPAR~'18. pp. 258--273. LNCS 7180 (2012).
+  \doi{10.1007/978-3-642-28717-6\_21}
+
+\bibitem{koprowskiZantema2005LivenessRelRew}
+Koprowski, A., Zantema, H.: Proving liveness with fairness using rewriting. In:
+  Proc.\ FroCoS~'05. pp. 232--247. LNCS 3717 (2005). \doi{10.1007/11559306\_13}
+
+\bibitem{ttt2_sys}
+Korp, M., Sternagel, C., Zankl, H., Middeldorp, A.: Tyrolean termination tool
+  2. In: Proc.\ RTA~'09. pp. 295--304. LNCS 5595 (2009).
+  \doi{10.1007/978-3-642-02348-4\_21}
+
+\bibitem{lankford1979proving}
+Lankford, D.S.: On proving term rewriting systems are {N}oetherian. Memo mtp-3,
+  math.\ dept.,, Louisiana Technical University, Ruston, LA (1979),
+  \url{http://www.ens-lyon.fr/LIP/REWRITING/TERMINATION/Lankford\_Poly\_Term.pdf}
+
+\bibitem{DBLP:journals/lmcs/NageleFZ17}
+Nagele, J., Felgenhauer, B., Zankl, H.: Certifying confluence proofs via
+  relative termination and rule labeling. Logical Methods in Computer Science
+  \textbf{13}(2) (2017). \doi{10.23638/LMCS-13(2:4)2017}
+
+\bibitem{DBLP:journals/aaecc/NishidaV10}
+Nishida, N., Vidal, G.: Termination of narrowing via termination of rewriting.
+  Applicable Algebra in Engineering, Communication and Computing
+  \textbf{21}(3),  177--225 (2010). \doi{10.1007/S00200-010-0122-4}
+
+\bibitem{noschinski2013analyzing}
+Noschinski, L., Emmes, F., Giesl, J.: Analyzing innermost runtime complexity of
+  term rewriting by dependency pairs. Journal of Automated Reasoning
+  \textbf{51},  27--56 (2013). \doi{10.1007/978-3-642-22438-6\_32}
+
+\bibitem{tpdb}
+{\normalfont TPDB (Termination Problem Data Base)},
+  \url{https://github.com/TermCOMP/TPDB}
+
+\bibitem{DBLP:conf/flops/Vidal08}
+Vidal, G.: Termination of narrowing in left-linear constructor systems. In:
+  Proc.\ FLOPS~'08. pp. 113--129. LNCS 4989 (2008).
+  \doi{10.1007/978-3-540-78969-7\_10}
+
+\bibitem{matchbox}
+Waldmann, J.: {\textsf{Matchbox}}: {A} tool for match-bounded string rewriting.
+  In: Proc.\ RTA~'04. pp. 85--94. LNCS 3091 (2004).
+  \doi{10.1007/978-3-540-25979-4\_6}
+
+\bibitem{natt_sys_2014}
+Yamada, A., Kusakari, K., Sakabe, T.: Nagoya {Termination} {Tool}. In: Proc.\
+  RTA-TLCA~'14. pp. 466--475. LNCS 8560 (2014).
+  \doi{10.1007/978-3-319-08918-8\_32}
+
+\bibitem{DBLP:journals/corr/ZanklK14}
+Zankl, H., Korp, M.: Modular complexity analysis for term rewriting. Logical
+  Methods in Computer Science  \textbf{10}(1) (2014).
+  \doi{10.2168/LMCS-10(1:19)2014}
+
+\end{thebibliography}

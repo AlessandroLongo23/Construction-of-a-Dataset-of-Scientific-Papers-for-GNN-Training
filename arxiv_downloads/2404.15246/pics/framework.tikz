@@ -1,0 +1,51 @@
+\begin{tikzpicture}
+	
+    \node[anchor=center] at (60pt,0pt) {\textit{BSP schedule}};
+
+    \draw (40pt,35pt) rectangle (80pt,20pt);
+    \node[anchor=center] at (60pt,27.5pt) {\texttt{ILPcs}};
+
+    \draw (8pt,65pt) rectangle (112pt,50pt);
+    \node[anchor=center] at (60pt,57.5pt) {\texttt{ILPfull} / \texttt{ILPpart}};
+
+    \node[anchor=center] at (60pt,81pt) {select best};
+
+    \draw (35pt,105pt) rectangle (85pt,120pt);
+    \node[anchor=center] at (60pt,112.5pt) {\texttt{HC}$+$\texttt{HCcs}};
+
+    \draw (-25pt,105pt) rectangle (25pt,120pt);
+    \node[anchor=center] at (0pt,112.5pt) {\texttt{HC}$+$\texttt{HCcs}};
+
+    \draw (95pt,105pt) rectangle (145pt,120pt);
+    \node[anchor=center] at (120pt,112.5pt) {\texttt{HC}$+$\texttt{HCcs}};
+
+    \draw (38pt,135pt) rectangle (82pt,150pt);
+    \node[anchor=center] at (60pt,142.5pt) {\texttt{Source}};
+
+    \draw (-18pt,135pt) rectangle (18pt,150pt);
+    \node[anchor=center] at (0pt,142pt) {\texttt{BSPg}};
+
+    \draw (96pt,135pt) rectangle (144pt,150pt);
+    \node[anchor=center] at (120pt,142.5pt) {\texttt{ILPinit}};
+
+    \node[anchor=center] at (60pt,189pt) {\textit{scheduling problem}};
+    \node[anchor=center] at (60pt,178pt) {\small (DAG$_{\,}+_{\,}$parameters)};
+
+
+    \begin{scope}[thick, arrows=-stealth]
+    \draw (60pt,20pt) -- (60pt,5pt);
+    \draw (60pt,50pt) -- (60pt,35pt);
+    \draw (60pt,76pt) -- (60pt,65pt);
+    \draw (60pt,105pt) -- (60pt,85pt);
+    \draw (0pt,105pt) -- (0pt,95pt) -- (52pt,95pt) -- (52pt,85pt);
+    \draw (120pt,105pt) -- (120pt,95pt) -- (68pt,95pt) -- (68pt,85pt);
+    \draw (0pt,135pt) -- (0pt,120pt);
+    \draw (60pt,135pt) -- (60pt,120pt);
+    \draw (120pt,135pt) -- (120pt,120pt);
+    \draw (60pt,170pt) -- (60pt,150pt);
+    \draw (52pt,170pt) -- (52pt,160pt) -- (0pt,160pt) -- (0pt,150pt);
+    \draw (68pt,170pt) -- (68pt,160pt) -- (120pt,160pt) -- (120pt,150pt);
+    \end{scope}
+
+
+\end{tikzpicture}

@@ -1,0 +1,14 @@
+\begin{abstract}
+We introduce \textbf{\ours}, a simple yet powerful training scheme, by simply merging upcycled \moefull (\moe) to unleash the performance limit of instruction-tuned code \llmfull{s} (\llm{s}). 
+While vanilla \sparseupcycle fails to improve instruction tuning, \ours introduces a shared expert mechanism with a novel routing weight normalization strategy into \sparseupcycle, 
+which significantly boosts instruction tuning.
+After fine-tuning the upcycled \moe model, 
+\ours introduces a learnable model merging mechanism to compile the upcycled \moe back to a dense model,
+achieving upcycled \moe{-level} performance with only dense-model compute.
+By applying \ours to a 1.3B model, 
+we create a new state-of-the-art tiny code \llm{} (<3B) with 67.1 and 64.6 \passat{1} on \humaneval and \humanevalp{} respectively.
+With the same data and model architecture,
+\ours improves supervised fine-tuning (SFT) by 13\% on \humanevalp, along with consistent improvements from 2\% to 13\% on \mbppp, \multiple, and \dsonek, demonstrating its generalizability.
+\ours is fully orthogonal to existing techniques such as \evolinstruct{} and \ossinstruct{}, opening a new dimension for improving code instruction tuning. Codes are available at \url{https://github.com/ise-uiuc/xft}.
+
+\end{abstract}

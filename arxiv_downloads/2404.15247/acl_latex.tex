@@ -1,0 +1,57 @@
+\pdfoutput=1
+
+\documentclass[11pt]{article}
+
+\usepackage[preprint]{acl}
+
+\usepackage{times}
+\usepackage{latexsym}
+
+\usepackage[T1]{fontenc}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{microtype}
+
+\usepackage{inconsolata}
+
+
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{xfrac}
+
+
+\renewcommand\cite{\citep}
+\input{HEADER}
+\title{
+\ours: Unlocking the Power of Code Instruction Tuning \\
+by Simply Merging Upcycled Mixture-of-Experts}
+
+
+
+\author{Yifeng Ding, Jiawei Liu, Yuxiang Wei, Terry Yue Zhuo, Lingming Zhang \\
+  University of Illinois Urbana-Champaign \\
+  \texttt{\{yifeng6, lingming\}@illinois.edu} \\}
+
+\begin{document}
+\maketitle
+
+\input{src/abstract}
+
+\input{src/introduction}
+\input{src/related-work}
+\input{src/method}
+\input{src/experiment}
+\input{src/ablation}
+\input{src/discussion}
+\input{src/conclusion}
+
+\input{src/limitation}
+
+\bibliography{custom}
+
+\appendix
+
+\input{src/appendix}
+
+\end{document}

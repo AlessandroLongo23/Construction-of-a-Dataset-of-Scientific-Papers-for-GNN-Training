@@ -1,0 +1,50 @@
+\section{Related Work}
+\label{sec:related}
+
+\myparagraph{Conventional Structure-from-Motion (SfM) and SLAM.}
+Modern SfM methods perform offline optimization using a multi-stage process of descriptor extraction, correspondence estimation, and subsequent incremental bundle adjustment.
+In bundle adjustment, corresponding 2D pixels are coalesced into single 3D points, and estimated camera parameters are optimized alongside these points' 3D positions to minimize 3D-to-2D reprojection error.
+COLMAP~\cite{schonberger2016structure} is the de-facto standard for accurate, offline camera parameter estimation.
+Meanwhile, simultaneous localization and mapping (SLAM) usually refers to real-time, online methods. These generally assume that the camera's intrinsic parameters are known.
+Similar to SfM, SLAM usually relies on minimizing reprojection error~\cite{mur2015orb,mur2017orb,campos_orb3,rosinol2020kimera}, but some methods investigate direct minimization of a photometric error~\cite{engel2014lsd,engel2017direct}.
+While deep learning has not fundamentally transformed SfM and SLAM, it has been leveraged for correspondence prediction \cite{choy2016universal,mishchuk2017working,luo2018geodesc,ono2018lf}, either via graph neural networks~\cite{sarlin2020superglue} or via particle tracking~\cite{zhao2022particlesfm, harley2022particle, doersch2023tapir}.
+
+FlowMap is a departure from conventional SfM and SLAM techniques.
+While we rely on correspondence from optical flow and particle tracking, we do not coalesce sets of 2D correspondences into single 3D points.
+Instead, we use per-frame depth estimates as our geometry representation.
+Additionally, rather than relying on conventional correspondence matching and RANSAC filtering, we leverage neural point tracking~\cite{karaev2023cotracker} and optical flow estimators~\cite{raft} to establish correspondence, jointly enabling dense geometry reconstruction without a seperate multi-view stereo stage.
+Finally, FlowMap is end-to-end differentiable and introduces feed-forward estimators of depth, poses, and intrinsics, making it compatible with other learned methods.
+
+\myparagraph{Deep-Learning Based SfM.}
+Prior work has attempted to embed the full SLAM pipeline into a deep learning framework~\cite{tang2018ba,czarnowski2020deepfactors,zhou2018deeptam,clark2018learning,ummenhofer2017demon,liu2019neural,teed2018deepv2d,wang2021tartanvo,bloesch2018codeslam}, usually by training black-box neural networks to directly output camera poses. 
+However, these methods are constrained to short videos of 5 to 10 frames and are not competitive with conventional SLAM and SfM for real-world 3D reconstruction.
+Bowen et al.\cite{bowen2022dimensions} elegantly leverage optical flow supervision for self-supervised monocular depth prediction.
+More recently, DROID-SLAM~\cite{teed2021droid} has yielded high-quality camera poses and depth.
+However, it requires known intrinsics, is trained fully supervised with ground-truth camera poses, and fails to approach COLMAP on in-the-wild performance and robustness.
+Concurrent work to FlowMap explores an end-to-differentiable, point-tracking-based SfM framework~\cite{wang2023visual}.
+Key differences are that their method is fully supervised with camera poses, point clouds, and intrinsics; requires large-scale, multi-stage training; solves only for sparse depth; and is built around the philosophy of making each part of the conventional SfM pipeline differentiable.
+Our method is a complete departure from the conventional SfM pipeline---it does not require a training set of known intrinsics, ground-truth poses, or 3D points, and it provides quality gradients for dense depth, poses, and intrinsics.
+Critically, FlowMap is the first gradient-descent based method to rival the performance of conventional SfM on the novel view synthesis task.
+
+\myparagraph{Novel View Synthesis via Differentiable Rendering.}
+Advances in differentiable rendering have enabled photo-realistic novel view synthesis and fine-grained geometry reconstruction using camera poses and intrinsics obtained via SfM~\cite{mildenhall2020nerf, li2023neuralangelo, mueller2022instant, sitzmann2019deepvoxels, sitzmann2019scene, niemeyer2020differentiable}. 
+3D Gaussian Splatting~\cite{kerbl20233d} goes further, directly leveraging the 3D points provided by SfM as an initialization.
+It follows previous methods like~\cite{dsnerf}, which used 3D geometry from depth to supervise neural radiance field (NeRF) reconstructions.
+We show that when initializing Gaussian Splatting with poses, intrinsics, and 3D points from FlowMap, we generally perform on par with conventional SfM and sometimes even outperform it.
+
+\myparagraph{Camera Pose Optimization via Differentiable Rendering.}
+A recent line of work in bundle-adjusting radiance fields \cite{lin2021barf,bian2022nopenerf,yugay2023gaussian,keetha2023splatam,jeong2021self,fu2023cbarf,wu2023scanerf,fu2023colmapfree,yen2021inerf,xia2022sinerf,wang2021nerf,chng2022garf,cheng2023lu} attempts to jointly optimize unknown camera poses and radiance fields.
+Jeong et al.~\cite{jeong2021self} additionally solve for camera intrinsic parameters.
+However, these methods only succeed when given forward-facing scenes or roughly correct pose initializations.
+More recent work incorporates optical flow and monocular depth priors \cite{bian2022nopenerf,meuleman2023localrf,liu2023robust} but requires known intrinsics and only works robustly on forward-facing scenes.
+Concurrent work \cite{fu2023colmapfree} somewhat accelerates optimization compared to earlier NeRF-based approaches, but still requires intrinsics and yields significantly worse poses than COLMAP on 360-degree sequences.
+Further concurrent work proposes real-time SLAM via gradient descent on 3D Gaussians~\cite{Matsuki:Murai:etal:CVPR2024}, but requires known intrinsics and does not show robustness on a variety of real-world scenes.
+In contrast, our method is robust and easily succeeds on object-centric scenes where the camera trajectory covers a full $360^{\circ}$ of rotation, yielding photo-realistic novel view synthesis when combined with Gaussian Splatting.
+
+\myparagraph{Learning Priors over Optimization of NeRF and Poses.}
+Our method is inspired by recent methods which learn priors over pose estimation and 3D radiance fields~\cite{Chen_2023_CVPR, lai2021video, smith2023flowcam, fu2022mononerf}. 
+However, these approaches require known camera intrinsics, are constrained to scenes with simple motion, and do not approach the accuracy of conventional SfM. 
+Like our method, FlowCam~\cite{smith2023flowcam} uses a pose-induced flow loss and a least-squares solver for camera pose.
+However, our method has several key differences: we estimate camera intrinsics, enabling optimization on any raw video; we replace 3D rendering with a simple depth estimator, which reduces training costs and allows us to reuse pre-trained depth estimators; and we introduce point tracks for supervision to improve global consistency and reduce drift.
+FlowCam did not approach conventional SfM's accuracy on real sequences.
+We demonstrate that optimizing the pose-induced flow objective on a single scene, akin to a test-time optimization, yields pose and geometry estimates which, for the first time, approach COLMAP on full $360^\circ$ sequences.

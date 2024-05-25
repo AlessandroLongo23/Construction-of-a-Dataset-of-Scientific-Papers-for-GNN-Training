@@ -1,0 +1,29 @@
+\begin{figure}[!ht]
+\begin{tcbraster}[enhanced,
+    blank, 
+    raster columns=3,
+    raster equal height,
+    ]
+    \tcbincludegraphics[]{figures/qual_result_images/coco/exp10/000000297427.jpg}
+    \tcbincludegraphics[]{figures/qual_result_images/coco/exp10/000000297427_m2f.jpg}
+    \tcbincludegraphics[flip title={boxsep=0.75mm}]{figures/qual_result_images/coco/exp10/000000297427_ours.jpg}
+    \vspace*{-2\baselineskip}
+    %
+    \tcbincludegraphics[]{figures/qual_result_images/coco/exp11/000000300913.jpg}
+    \tcbincludegraphics[]{figures/qual_result_images/coco/exp11/000000300913_m2f.jpg}
+    \tcbincludegraphics[flip title={boxsep=0.75mm}]{figures/qual_result_images/coco/exp11/000000300913_ours.jpg}
+    \vspace*{-3\baselineskip}
+    %
+    \tcbincludegraphics[]{figures/qual_result_images/cityscapes/exp1/frankfurt_000000_016286_leftImg8bit.png}
+    \tcbincludegraphics[]{figures/qual_result_images/cityscapes/exp1/frankfurt_000000_016286_leftImg8bit_m2f.png}
+    \tcbincludegraphics[flip title={boxsep=0.75mm}]{figures/qual_result_images/cityscapes/exp1/frankfurt_000000_016286_leftImg8bit_ours.png}
+    \vspace*{-6.25\baselineskip}
+    %
+    \tcbincludegraphics[]{figures/qual_result_images/cityscapes/exp2/frankfurt_000001_004327_leftImg8bit.png}
+    \tcbincludegraphics[]{figures/qual_result_images/cityscapes/exp2/frankfurt_000001_004327_leftImg8bit_m2f.png}
+    \tcbincludegraphics[flip title={boxsep=0.75mm}]{figures/qual_result_images/cityscapes/exp2/frankfurt_000001_004327_leftImg8bit_ours.png}
+    \vspace*{-2\baselineskip}
+   \end{tcbraster} 
+    \caption{\textbf{Qualitative visualizations.} We illustrate few examples of predicted segmentation maps from M2F \cite{cheng2021mask2former} (\textit{middle} column) and \ours (\textit{last} column). \textit{Top} two rows are from the COCO dataset, whereas \textit{bottom} two rows are from the Cityscapes dataset. (Backbone: Swin-T) \textit{Zoom-in for best view}.}
+    \label{fig:qual_result}
+\end{figure}

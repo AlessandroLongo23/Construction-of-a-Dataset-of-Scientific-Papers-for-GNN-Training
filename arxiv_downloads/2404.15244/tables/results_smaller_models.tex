@@ -1,0 +1,19 @@
+\caption{\textbf{Impact of $\NGlayer$}. The baseline M2F \cite{cheng2021mask2former} refers to the complete M2F model trained with 6/5/4 layers for 50 epochs. {\ours} pertains to the training of only the gating network for 2 epochs by setting $\NGlayer=6,5,4$ respectively. (Dataset: COCO; Backbone: SWIN-T)}
+\centering
+    \resizebox{\columnwidth}{!}{
+\begin{tabular}{llcccccccc}
+\toprule
+ && \multicolumn{3}{c}{\textbf{Performance} ($\uparrow$)} && \multicolumn{2}{c}{\textbf{GFLOPs} ($\downarrow$)} \\ \cline{3-5} \cline{7-8}
+\multirow{-2}{*}{$\NGlayer$} & \multirow{-2}{*}{\textbf{Model}} & \textbf{PQ} & \textbf{mIOU}$_p$ & \textbf{AP}$_p$ && \textbf{Total} & \textbf{Tx. Enc.} \\ 
+\midrule
+\multirow{2}{*}{6} & M2F \cite{cheng2021mask2former}  & 52.03 & 62.49 & 42.18 && 235.57  & 121.69 \\
+& {\ours} & 52.06 & 62.76 & 41.51 && 202.39 & 88.47 \\
+\hline
+\multirow{2}{*}{5} & M2F\cite{cheng2021mask2former}  & 51.61 & 61.93 & 41.55 && 221.95 & 108.07 \\
+& {\ours} & 52.26 & 62.67 & 41.56 && 208.82 & 94.59 \\
+\hline
+\multirow{2}{*}{4} & M2F\cite{cheng2021mask2former} & 51.38 & 62.30 & 41.11 && 208.33 & 94.45 \\
+& {\ours} & 52.20 & 62.58 & 41.55 && 202.47 & 88.65 \\
+\bottomrule
+\end{tabular}}  
+\label{tab:result_smaller_models}

@@ -1,0 +1,41 @@
+\setlength{\tabcolsep}{8pt}
+\begin{table*}[t]
+
+\newcommand{\first}{\cellcolor{red!40}}
+\newcommand{\second}{\cellcolor{orange!40}}
+\newcommand{\third}{\cellcolor{yellow!40}}
+\setlength{\tabcolsep}{4pt}
+
+\centering
+\resizebox{\textwidth}{!}{
+
+\begin{tabular}{l|rrrrr|rrrrr}
+\toprule
+\multicolumn{1}{c|}{} & \multicolumn{5}{|c|}{MipNeRF 360 (3 scenes)} & \multicolumn{5}{|c}{LLFF (7 scenes)} \\
+\midrule
+Method       & PSNR $\uparrow$ & SSIM $\uparrow$ & LPIPS $\downarrow$ & Time (min.) $\downarrow$ & ATE     & PSNR $\uparrow$ & SSIM $\uparrow$ & LPIPS $\downarrow$ & Time (min.) $\downarrow$ & ATE     \\
+\midrule
+FlowMap      &   \third{29.84} &   \third{0.916} &      \third{0.073} &             \third{19.8} & 0.00055 &  \second{27.23} &   \third{0.849} &     \second{0.079} &              \third{7.5} & 0.00209 \\
+COLMAP       &  \second{29.95} &  \second{0.928} &              0.074 &             \second{4.8} &     N/A &           25.73 &  \second{0.851} &              0.098 &             \second{1.1} &     N/A \\
+COLMAP (MVS) &   \first{31.03} &   \first{0.938} &      \first{0.060} &                     42.5 &     N/A &   \first{27.99} &   \first{0.867} &      \first{0.072} &                     13.4 &     N/A \\
+DROID-SLAM*  &           29.83 &           0.913 &     \second{0.066} &              \first{0.6} & 0.00017 &   \third{26.21} &           0.818 &      \third{0.094} &              \first{0.3} & 0.00074 \\
+NoPE-NeRF*   &           13.60 &           0.377 &              0.750 &                   1913.1 & 0.04429 &           17.35 &           0.490 &              0.591 &                   1804.0 & 0.03920 \\
+\midrule
+\multicolumn{1}{c|}{} & \multicolumn{5}{|c|}{Tanks \& Temples (14 scenes)} & \multicolumn{5}{|c}{CO3D (2 scenes)} \\
+\midrule
+Method       & PSNR $\uparrow$ & SSIM $\uparrow$ & LPIPS $\downarrow$ & Time (min.) $\downarrow$ & ATE     & PSNR $\uparrow$ & SSIM $\uparrow$ & LPIPS $\downarrow$ & Time (min.) $\downarrow$ & ATE     \\
+\midrule
+FlowMap      &  \second{27.00} &  \second{0.854} &     \second{0.101} &             \third{22.3} & 0.00124 &   \first{31.11} &   \first{0.896} &      \first{0.064} &             \third{22.1} & 0.01589 \\
+COLMAP       &   \third{26.74} &   \third{0.848} &      \third{0.130} &             \second{5.5} &     N/A &           25.17 &           0.750 &              0.190 &            \second{12.6} &     N/A \\
+COLMAP (MVS) &   \first{27.43} &   \first{0.863} &      \first{0.097} &                     51.4 &     N/A &   \third{25.35} &   \third{0.762} &      \third{0.175} &                     52.0 &     N/A \\
+DROID-SLAM*  &           25.70 &           0.824 &              0.133 &              \first{0.8} & 0.00122 &  \second{25.97} &  \second{0.790} &     \second{0.139} &              \first{0.8} & 0.01728 \\
+NoPE-NeRF*   &           13.38 &           0.449 &              0.706 &                   2432.9 & 0.03709 &           14.97 &           0.400 &              0.770 &                   2604.9 & 0.03648 \\
+\bottomrule
+\end{tabular}
+}
+
+\vspace{5pt}
+\caption{Camera parameter and geometry intializations from FlowMap produce 3D Gaussian reconstruction results that far outperform prior gradient-based baselines and are generally on par with those produced by COLMAP. Methods marked with an asterisk require ground-truth intrinsics. We report ATE with respect to COLMAP's pose estimates for reference, since no ground-truth trajectories exist for common view synthesis datasets. We exclude scenes where COLMAP or FlowMap fail entirely; each fails on 4 scenes. See the supplementary document for more details.}
+\label{tab:recon}
+\vspace{-11pt}
+\end{table*}

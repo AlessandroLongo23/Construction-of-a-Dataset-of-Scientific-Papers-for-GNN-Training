@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Model                                                                     & \multicolumn{1}{l}{HumanEval} & \multicolumn{1}{l}{HumanEval+} \\ \midrule
+\baselineds                                                                     & 61.6                 & 57.3                  \\
+\oursmoe                                                                     & \textbf{65.2}                 & \textbf{62.2}                  \\ \midrule
+\begin{tabular}[c]{@{}l@{}}\oursmoe \\ \ \ - \scalebox{0.8}{Normalization}\end{tabular}                                                           & 63.4                          & 59.1                           \\ \midrule
+\begin{tabular}[c]{@{}l@{}}\oursmoe \\ \ \ - \scalebox{0.8}{Shared Expert}\end{tabular} & 61.6                          & 56.7                           \\ \bottomrule
+\end{tabular}
+\caption{\label{tab:ablation-moe}
+Ablation over the design of \oursmoe. "- Normalization" removes the routing weight normalization from the router, making it the same design as \mocle~\cite{gou2024mixture}. "- Shared Expert" removes the shared expert setting, making \oursmoe the same architecture as original \sparseupcycle~\cite{komatsuzaki2023sparse}.
+}
+\end{table}

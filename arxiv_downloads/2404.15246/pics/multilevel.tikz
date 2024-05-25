@@ -1,0 +1,39 @@
+\begin{tikzpicture}
+	
+    \node[anchor=center] at (60pt,0pt) {\textit{BSP schedule}};
+
+    \draw (27pt,35pt) rectangle (93pt,20pt);
+    \node[anchor=center] at (60pt,27.5pt) {\texttt{HCcs}$+$\texttt{ILPcs}};
+
+    \draw (25pt,75pt) rectangle (95pt,50pt);
+    \node[anchor=center] at (60pt,67.5pt) {uncoarsen and};
+    \node[anchor=center] at (60pt,57.5pt) {refine};
+
+    \draw (120pt,70pt) rectangle (140pt,55pt);
+    \node[anchor=center] at (130pt,62.5pt) {\texttt{HC}};
+
+    \node[anchor=center] at (60pt,100pt) {\small \textit{schedule for}};
+    \node[anchor=center] at (60pt,92pt) {\small \textit{coarse DAG}};
+
+    \draw (18pt,150pt) rectangle (102pt,120pt);
+    \node[anchor=center] at (60pt,135pt) {\textbf{base scheduler}};
+
+    \draw (28pt,180pt) rectangle (92pt,165pt);
+    \node[anchor=center] at (60pt,172.5pt) {coarsen DAG};
+
+    \node[anchor=center] at (60pt,214pt) {\textit{scheduling problem}};
+    \node[anchor=center] at (60pt,203pt) {\small (DAG$_{\,}+_{\,}$parameters)};
+
+
+    \begin{scope}[thick, arrows=-stealth]
+    \draw (60pt,20pt) -- (60pt,5pt);
+    \draw (60pt,50pt) -- (60pt,35pt);
+    \draw (60pt,87pt) -- (60pt,75pt);
+    \draw (60pt,120pt) -- (60pt,106pt);
+    \draw (60pt,165pt) -- (60pt,150pt);
+    \draw (60pt,195pt) -- (60pt,180pt);
+    \draw[densely dashed] (120pt,62.5pt) -- (95pt,62.5pt);
+    \end{scope}
+
+
+\end{tikzpicture}

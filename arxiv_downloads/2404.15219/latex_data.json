@@ -1,0 +1,1152 @@
+{
+    "key": "doc",
+    "block_type": "document",
+    "children": [
+        {
+            "leaf id": 0,
+            "key": "doc/tit",
+            "block type": "title",
+            "content": "The Power of the Noisy Channel: Unsupervised End-to-End Task-Oriented Dialogue with LLMs"
+        },
+        {
+            "leaf id": 1,
+            "key": "doc/aut0",
+            "block type": "author",
+            "content": "\\author{Brendan King \\and Jeffrey Flanigan\\\\   University of California, Santa Cruz \\\\   \\texttt{\\{bking2,jmflanig\\}@ucsc.edu}}"
+        },
+        {
+            "leaf id": 2,
+            "key": "doc/abs",
+            "block type": "abstract",
+            "content": "  Training task-oriented dialogue systems typically requires turn-level annotations for interacting with their APIs: e.g. a dialogue state and the system actions taken at each step.  These annotations can be costly to produce, error-prone, and require both domain and annotation expertise.  With advances in LLMs, we hypothesize unlabelled data and a schema definition are sufficient for building a working task-oriented dialogue system, completely unsupervised. Using only (1) a well-defined API schema (2) a set of unlabelled dialogues between a user and agent, we develop a novel approach for inferring turn-level annotations as latent variables using a noisy channel model. We iteratively improve these pseudo-labels with expectation-maximization (EM), and use the inferred labels to train an end-to-end dialogue agent. Evaluating our approach on the MultiWOZ benchmark, our method more than doubles the dialogue success rate of a strong GPT-3.5 baseline.\\footnote{Our code will be available at \\href{https://github.com/jlab-nlp/nc\\_latent\\_tod}{https://github.com/jlab-nlp/nc\\_latent\\_tod}}    "
+        },
+        {
+            "key": "doc/body",
+            "block_type": "body",
+            "children": [
+                {
+                    "leaf id": 3,
+                    "key": "doc/body/sec0/tit",
+                    "block type": "section",
+                    "content": "Introduction"
+                },
+                {
+                    "key": "doc/body/sec0",
+                    "block_type": "sec",
+                    "children": [
+                        {
+                            "leaf id": 4,
+                            "key": "doc/body/sec0/par0",
+                            "block type": "par",
+                            "content": "Recent advances in large language models (LLMs) have further stimulated interest in task-oriented systems and LLMs which can use APIs as tools. To facilitate API use, successful task-oriented dialogue systems usually employ a modular approach:"
+                        },
+                        {
+                            "leaf id": 5,
+                            "key": "doc/body/sec0/par1",
+                            "block type": "par",
+                            "content": "predicting a dialogue state which includes arguments to API calls, and dialogue acts for planning an appropriate response, before finally producing a natural language reply. Training such systems typically requires expert annotation of these structured intermediates for every dialogue turn. Even in settings where human-human dialogues are abundantly available, the high cost and expertise required to annotate the dialogues poses a significant hurdle to system development."
+                        },
+                        {
+                            "leaf id": 6,
+                            "key": "doc/body/sec0/figure2",
+                            "block type": "figure",
+                            "content": "[t]     \\centering     \\includegraphics[width=\\columnwidth]{imgs/fig_1_problem_v3.pdf}     An overview of our unsupervised dialogue problem. We assume 1) unlabelled goal-oriented dialogues between a user and agent and 2) a well-defined schema  with APIs suitable for fulfilling goals. We infer the unseen interactions between the agent and API, and use this to produce an end-to-end dialogue agent.     \\label{fig:problem}"
+                        },
+                        {
+                            "leaf id": 7,
+                            "key": "doc/body/sec0/par3",
+                            "block type": "par",
+                            "content": "Recent work has shown that LLMs can accomplish a broad set of useful tasks without any structured labels for a task \\cite{brown_language_2020}. These include `zero-shot' approaches to task-oriented dialogue sub-tasks such as Dialogue State Tracking (DST) \\cite{hu_-context_2022, king-flanigan-2023-diverse, heck-etal-2023-chatgpt}, intent detection \\cite{pan_preliminary_2023}, grounded response generation \\cite{li2023guiding-fix-arxiv}, and even zero-shot end-to-end dialogue systems \\cite{hudecek-dusek-2023-large}.  Still, existing approaches generally do not perform well enough for real-world use, and none are able to make effective use of in-domain unlabelled dialogues."
+                        },
+                        {
+                            "leaf id": 8,
+                            "key": "doc/body/sec0/par4",
+                            "block type": "par",
+                            "content": "We ask: can we use existing unlabelled dialogues (without any labels or API calls annotated) along with an API specification, to build a working dialogue agent, without needing an expert to annotate data? This addresses a common real-world scenario.  Many high value dialogue tasks are currently carried out by human agents, who interface a user with some software system.  These conversations can be recorded and transcribed, and the API(s) supporting the agent typically have well-formed specifications. However, annotating the API calls and system acts needed for aligning the two is time consuming and requires annotation expertise. In lieu of this, `zero-shot' systems have been proposed, but these still require an expert to annotate a `formatting example' \\cite{hu_-context_2022, king-flanigan-2023-diverse}, or a more detailed `policy skeleton' \\cite{zhang-etal-2023-sgp}."
+                        },
+                        {
+                            "leaf id": 9,
+                            "key": "doc/body/sec0/par5",
+                            "block type": "par",
+                            "content": "We instead propose the following setting: we assume an API schema definition , and plenty of available human-human dialogues in natural language, but no annotations on these dialogues (\\autoref{fig:problem}). To the best of our knowledge, we are the first to consider this setting. We demonstrate that one can develop a conversational agent for the API schema in this setting without any assistance from an expert annotator.   Our contributions are as follows:"
+                        },
+                        {
+                            "leaf id": 10,
+                            "key": "doc/body/sec0/itemize6",
+                            "block type": "itemize",
+                            "content": "\\item We construct an end-to-end task-oriented dialogue agent with an LLM solely from unlabelled dialogues and an API definition, without any turn-level labels or supervision from de-lexicalized utterances.          \\item We accomplish this by inferring all the pseudo-labels necessary (API calls, system actions) to train a traditional end-to-end dialogue system from unlabelled dialogues, using prompts which are automatically generated from the API schema.     \\item We propose a noisy-channel `code-to-text' re-ranking method, which is instrumental to our pseudo-label quality and final system.          \\item We devise a novel Hard-EM \\cite{dempster_maximum_1977_fixed}\\jmf{fix for camera-ready} approach which uses predictions as in-context examples for the LLM, and additionally as data for iteratively fine-tuning a final model."
+                        },
+                        {
+                            "leaf id": 11,
+                            "key": "doc/body/sec0/sec7/tit",
+                            "block type": "section",
+                            "content": "Preliminaries"
+                        },
+                        {
+                            "key": "doc/body/sec0/sec7",
+                            "block_type": "sec",
+                            "children": [
+                                {
+                                    "leaf id": 12,
+                                    "key": "doc/body/sec0/sec7/par0",
+                                    "block type": "par",
+                                    "content": "A task-oriented dialogue consists of turns of utterances between a user and an agent which interfaces the user with a programmable system or API to accomplish a task. Typically the system response utterance follows the user's utterance. We denote u_t as the user's utterance at turn t, and r_t as the system's response.  We assume the APIs supported by the system are defined in a schema , which gives names and descriptions for all arguments supported in each API, as well as the possible values any categorical arguments may take \\cite{rastogi_towards_2020}.  This is analogous to standardized formats for API documentation, many of which could be easily converted to a schema definition."
+                                },
+                                {
+                                    "leaf id": 13,
+                                    "key": "doc/body/sec0/sec7/par1",
+                                    "block type": "par",
+                                    "content": "Task-oriented systems require some method for interacting with the APIs in .  Modular approaches use a Dialogue State Tracking (DST) module, which predicts a belief state b_t\\jmf{should we call this API call(s) instead?}: a collection of arguments to API call(s) needed to satisfy the user's goal.  A belief state is commonly represented with a set of slot-value pairs: \n    \n b_t = \\{(s_1, v_1), (s_2, v_2), ... (s_n, v_n)\\} \n    \n For example, if a user says `I'm looking for a restaurant south of town', a DST system might produce the belief state \\{(restaurant-area, south)\\}, which can be used to query a restaurant API. We assume zero labeled belief states and infer them from unlabelled dialogues using the space of possible states supported by the schema definition ."
+                                },
+                                {
+                                    "leaf id": 14,
+                                    "key": "doc/body/sec0/sec7/par2",
+                                    "block type": "par",
+                                    "content": "We also make use of system dialogue acts to structure our agent's communicative intents with a policy module.  Given a dialogue state and context for a turn t, the policy predicts set of dialogue acts to be communicated in the system response r_t.  For instance, the policy might determine that we should ask the user to narrow their search to a price range: A_t = {Request(restaurant-area=?)}. An appropriate system response might be: ``Sure, are you looking for a particular price range?\" Like belief states, we assume zero supervised examples of A_t and infer them from unlabelled dialogues."
+                                },
+                                {
+                                    "leaf id": 15,
+                                    "key": "doc/body/sec0/sec7/sec3/tit",
+                                    "block type": "section",
+                                    "content": "Method Overview"
+                                },
+                                {
+                                    "key": "doc/body/sec0/sec7/sec3",
+                                    "block_type": "sec",
+                                    "children": [
+                                        {
+                                            "leaf id": 16,
+                                            "key": "doc/body/sec0/sec7/sec3/figure*0",
+                                            "block type": "figure*",
+                                            "content": "\\centering     \\includegraphics[width=\\textwidth]{imgs/figure_2_latents_v4.pdf}     An overview of the latent variables annotated in our unsupervised labeling process which are used to train the dialogue model. Our \\dstcolor{DST Module (\\autoref{sec:methods-dst}) infers the API call(s) with arguments at each turn, from which we can derive the dialogue state change. Our \\datcolor{DAT or Act Tagging module} (\\autoref{sec:methods-tagging}) predicts the dialogue acts communicated in the observed system response, which can be used to infer de-lexicalized responses for training a response generator.\\jmf{We could remove the dialogue state change column, and in the text say that we convert an API call to a dialogue state for evaluation (and give an example)} \\bdk{Switched positions so its API -> dialogue state. Left it in as a column to make sure people who know MWoZ can very quickly understand the API call/state mapping}}     \\label{fig:latents-overview}"
+                                        },
+                                        {
+                                            "leaf id": 17,
+                                            "key": "doc/body/sec0/sec7/sec3/par1",
+                                            "block type": "par",
+                                            "content": "We treat the turn-level labels needed for training an end-to-end dialogue system as a latent variables, and infer them from unlabelled dialogues. We assume only the fully-lexicalized sequence of user and system utterances u_1, r_1, ... u_T, r_T, and the schema  defining the system's capabilities, which defines the space of valid dialogue state and act labels.  Importantly, our prompts are automatically generated from the API schema."
+                                        },
+                                        {
+                                            "leaf id": 18,
+                                            "key": "doc/body/sec0/sec7/sec3/par2",
+                                            "block type": "par",
+                                            "content": "In \\autoref{sec:methods-offline-label}, we outline our noisy-channel prompting method for inferring the turn-level labels necessary for training our dialogue agent. We give an overview of the latent variables we infer in \\autoref{fig:latents-overview}. We assume we cannot query the APIs or observe results while labeling dialogues offline, as the obtained API results may have changed. In \\autoref{sec:methods-online-system}, we train a complete dialogue agent by fine-tuning on prompts derived from our inferred pseudo-labels."
+                                        },
+                                        {
+                                            "leaf id": 19,
+                                            "key": "doc/body/sec0/sec7/sec3/sec3/tit",
+                                            "block type": "section",
+                                            "content": "Inferring Latents via Noisy Channel"
+                                        },
+                                        {
+                                            "key": "doc/body/sec0/sec7/sec3/sec3",
+                                            "block_type": "sec",
+                                            "children": [
+                                                {
+                                                    "leaf id": 20,
+                                                    "key": "doc/body/sec0/sec7/sec3/sec3/par0",
+                                                    "block type": "par",
+                                                    "content": "In this section, we present our method for inferring latent annotations for the dialogue states b_1...b_T\\jmf{API calls?} and dialogue acts A_1...A_T for each dialogue turn t given only the unlabelled user and system utterances (u_1, r_1, u_2, r_2, ... u_T, r_T)."
+                                                },
+                                                {
+                                                    "leaf id": 21,
+                                                    "key": "doc/body/sec0/sec7/sec3/sec3/par1",
+                                                    "block type": "par",
+                                                    "content": "To do this, we devise a noisy-channel prompting approach for DST and dialogue act tagging (DAT) using StarCoder \\cite{li2023starcoder}, a code-based LLM. First, we use a text-to-code prompt to infer the API call(s) made by the system in each dialogue, and build the dialogue state from inferred API call arguments (\\autoref{sec:methods-dst}). We use a similar text-to-code prompt to infer the latent act(s) communicated in each agent response, so that we can reverse-engineer an agent's policy (\\autoref{sec:methods-tagging}). For both tasks, we find much better performance when re-ranking latent predictions according to a noisy-channel model, in which we condition the observed utterance on a predicted latent in a code-to-text prompt (\\autoref{sec:methods-nc-prompting}). Finally, we leverage the in-context learning ability of LLMs by re-using our predictions as exemplars (\\autoref{sec:methods-retriever}). Given these initial pseudo-labels, we iteratively improve their quality using Hard-EM \\cite{dempster_maximum_1977_fixed} (\\autoref{sec:methods-re-labeling})."
+                                                },
+                                                {
+                                                    "leaf id": 22,
+                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/tit",
+                                                    "block type": "subsection",
+                                                    "content": "Inferring API Calls and Dialogue State"
+                                                },
+                                                {
+                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2",
+                                                    "block_type": "sub",
+                                                    "children": [
+                                                        {
+                                                            "leaf id": 23,
+                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/par0",
+                                                            "block type": "par",
+                                                            "content": "We prompt the LLM with a text-to-code prompt for inferring the latent dialogue state as an API call."
+                                                        },
+                                                        {
+                                                            "leaf id": 24,
+                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/par1",
+                                                            "block type": "par",
+                                                            "content": "We generate a prompt enumerating the intents available in the schema  as APIs callable by our agent. Following \\citet{hu_-context_2022}, we predict the appropriate function call conditioned on the prior system response r_t-1, the current user utterance u_t, and the previous belief state prediction b\u0302_t-1.  We then extract a dialogue state \\textit{change} \u0394b\u0302_t from the arguments to the call, and compute the next dialogue state as b\u0302_t = \u0394b\u0302_t + b\u0302_t-1. While used offline here, this DST method is causal with respect to dialogue inputs and is the same as our method in online inference."
+                                                        },
+                                                        {
+                                                            "leaf id": 25,
+                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/tit",
+                                                            "block type": "subsection",
+                                                            "content": "Inferring System Acts"
+                                                        },
+                                                        {
+                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2",
+                                                            "block_type": "sub",
+                                                            "children": [
+                                                                {
+                                                                    "leaf id": 26,
+                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/par0",
+                                                                    "block type": "par",
+                                                                    "content": "For inferring system acts, we use a similar text-to-code prompt for predicting the set of dialogue acts A_t communicated in a given system response r_t. See \\autoref{fig:direct-act-tag-prompt} in \\autoref{app:prompt-examples} for an example of our prompt. We define each act our system could take in the prompt instructions. For input from each turn, we find best performance when conditioning only on the response to tag, r_t. For our set of supported acts, we use a subset of the universal dialogue acts proposed in \\citet{paul19b_interspeech}, where some acts such as ``Inform'' or ``Offer'' may use slots defined in . For example, an agent choosing to offer to book a user at a hotel named `acorn guest house' might be represented as Offer(hotel\\_name=`acorn guest house').  See \\autoref{app:dialogue_acts} for our complete dialogue act set.  Importantly, we use the schema definition  and our act set to validate each act prediction, removing predicted keys which do not belong to , or acts which are not in the set. For example, the `text' key is not valid for a `ThankYou' act, so a prediction of ``ThankYou(text=`thanks, have a good day')\" would be normalized to only ``ThankYou()''. Using the inferred system acts, we use a rule-based method to delexicalize the system responses for training the response generator (\\autoref{fig:latents-overview}, right)."
+                                                                },
+                                                                {
+                                                                    "leaf id": 27,
+                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/tit",
+                                                                    "block type": "subsection",
+                                                                    "content": "Noisy Channel LLM Prompting"
+                                                                },
+                                                                {
+                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1",
+                                                                    "block_type": "sub",
+                                                                    "children": [
+                                                                        {
+                                                                            "leaf id": 28,
+                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/par0",
+                                                                            "block type": "par",
+                                                                            "content": "We find that a noisy channel prompting method \\cite{min-etal-2022-noisy} significantly the quality of our inferred dialogue states and acts. Here we describe noisy channel prompting using a simple example, and then describe its application to dialogue state tracking and system act tagging."
+                                                                        },
+                                                                        {
+                                                                            "leaf id": 29,
+                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/par1",
+                                                                            "block type": "par",
+                                                                            "content": "A typical prompt for machine reading comprehension might be:"
+                                                                        },
+                                                                        {
+                                                                            "leaf id": 30,
+                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/Verbatim2",
+                                                                            "block type": "Verbatim",
+                                                                            "content": "[fontsize=\\small]     <Optional in-context examples (c)>     Passage: <Passage (z)>     Question: <Question (x)>     Answer:"
+                                                                        },
+                                                                        {
+                                                                            "leaf id": 31,
+                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/par3",
+                                                                            "block type": "par",
+                                                                            "content": "Given this prompt of the in-context examples c, passage z, question x, an answer y completion is found with the language model by maximizing or sampling from Pr(y|x,z,c).  We call this the direct prompt."
+                                                                        },
+                                                                        {
+                                                                            "leaf id": 32,
+                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/par4",
+                                                                            "block type": "par",
+                                                                            "content": "The ``noisy channel'' prompt is:"
+                                                                        },
+                                                                        {
+                                                                            "leaf id": 33,
+                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/Verbatim5",
+                                                                            "block type": "Verbatim",
+                                                                            "content": "[fontsize=\\small]     <Optional in-context examples (c)>     Passage: <Passage (z)>     Answer: <Answer (y)>     Question: <Question (x)>"
+                                                                        },
+                                                                        {
+                                                                            "leaf id": 34,
+                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/par6",
+                                                                            "block type": "par",
+                                                                            "content": "where the likelihood of the question now depends on the answer.  To use the noisy channel LLM prompt, we first sample k samples from the direct prompt, and then pick the best output answer y according to the noisy channel prompt probability.  One can choose to score the joint probability of the answer followed by the question, i.e. Pr(x|y,z,c)Pr(y|z,c), or only the conditional Pr(x|y,z,c), following \\citet{min-etal-2022-noisy}.\\footnote{In the latter case, the prior Pr(y|z, c) is uniformly 1/k for the k samples from the direct prompt.}"
+                                                                        },
+                                                                        {
+                                                                            "leaf id": 35,
+                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/par7",
+                                                                            "block type": "par",
+                                                                            "content": "To apply this method to inferring dialogue states, we first sample a set of possible belief state changes using top-p sampling \\cite{holtzman_curious_2020} from the direct DST prompt, and then pick the best dialogue state according to the noisy channel prompt (see \\autoref{fig:compare-direct-channel-dst}).   We use an analogous procedure for inferring system acts. For DST, we find scoring with the joint Pr(x|y,z,c)Pr(y|z,c) to perform best, and scoring with the conditional Pr(x|y,z,c) best for act tagging."
+                                                                        },
+                                                                        {
+                                                                            "leaf id": 36,
+                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/tit",
+                                                                            "block type": "subsection",
+                                                                            "content": "Retrieval-Augmented In-context Learning"
+                                                                        },
+                                                                        {
+                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8",
+                                                                            "block_type": "sub",
+                                                                            "children": [
+                                                                                {
+                                                                                    "leaf id": 37,
+                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/par0",
+                                                                                    "block type": "par",
+                                                                                    "content": "To leverage the in-context learning abilities of LLMs, we retrieve from a pool of examples from our predictions. Because we assume no labeled examples, this pool starts with zero examples and is filled incrementally."
+                                                                                },
+                                                                                {
+                                                                                    "leaf id": 38,
+                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/par1",
+                                                                                    "block type": "par",
+                                                                                    "content": "We retrieve up to k examples for in-context learning from this pool using an unsupervised dense retriever, with examples ranked by embedding cosine distance.\\footnote{We use MPNet \\cite{song_mpnet_2020}, available on Huggingface as \\texttt{sentence-transformers/all-mpnet-base-v2}}  We use k=8 and k=6 for DST, DAT respectively.  For retriever inputs, we use (b\u0302_t-1 r_t-1 u_t) and (u_t  r_t) for DST and DAT respectively, where  indicates concatenation. Applied naively, this in-context learning approach can suffer a majority label bias \\cite{pmlr-v139-zhao21c}. We adjust for biases introduced in the initially small example pool by 1) not using any in-context examples until we have a minimum of n=32 examples in the pool and 2) using our API schema  to require at least 4 distinct labels in each set of in-context examples.\\footnote{We consider two dialogue state change labels to be distinct if they update different \\textit{slots}, and two act labels to be distinct if they embody different acts or different slots} Our algorithm for producing initial pseudo-labels is in \\autoref{app:offline_algorithm}."
+                                                                                },
+                                                                                {
+                                                                                    "leaf id": 39,
+                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/figure2",
+                                                                                    "block type": "figure",
+                                                                                    "content": "\\centering     \\includegraphics[width=\\columnwidth]{imgs/fig_direct_vs_channel_dst_v2.pdf}     Instances from our `direct' and `noisy channel' prompts for DST. Best viewed in color. After sampling a \\dstcolor{\\textit{DST completion} from the `direct' prompt, we score it by the likelihood of the input \\coloruser{user utterance} conditioned on it in the `noisy channel' prompt.}      \\label{fig:compare-direct-channel-dst}"
+                                                                                },
+                                                                                {
+                                                                                    "leaf id": 40,
+                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/tit",
+                                                                                    "block type": "subsection",
+                                                                                    "content": "Refining the Labels with Hard-EM"
+                                                                                },
+                                                                                {
+                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3",
+                                                                                    "block_type": "sub",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "leaf id": 41,
+                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/par0",
+                                                                                            "block type": "par",
+                                                                                            "content": "While the labels we produce in \\autoref{sec:methods-dst}-\\autoref{sec:methods-retriever} can be used directly for training an end-to-end dialogue system, we find their quality can be improved through expectation-maximization \\cite{dempster_maximum_1977_fixed}. For every dialogue turn in our dataset, our initial pseudo-labels provide the expected dialogue state and system dialogue acts according to our zero-shot system. We then jointly fine-tune an LLM as a noisy-channel DST \\& DAT system to maximize the likelihood of these expected labels. We use smaller version of our prompted LLM, StarCoder 3B \\cite{li2023starcoder}."
+                                                                                        },
+                                                                                        {
+                                                                                            "leaf id": 42,
+                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/par1",
+                                                                                            "block type": "par",
+                                                                                            "content": "For each turn, we derive (prompt, completion) pairs for `direct' text-to-code and `channel' code-to-text DST and DAT modules, as defined in \\autoref{sec:methods-offline-label}. We then combine and shuffle these pairs into a single training set for joint fine-tuning. For efficient training, we shorten our prompts by removing in-context examples as well as the function definitions used in the in-context learning setting.  We find up-sampling the `channel' prompts so that there is a 2:1 ratio of `channel' to `direct' instances for training improves performance."
+                                                                                        },
+                                                                                        {
+                                                                                            "leaf id": 43,
+                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/par2",
+                                                                                            "block type": "par",
+                                                                                            "content": "After fine-tuning, the model can be used to produce improved pseudo-labels by re-labeling each dialogue, using the same noisy-channel inference methods. Following this, we can repeat the fine-tuning process. This train and re-label process can be repeated for any number of iterations, though we find a single re-labeling is sufficient."
+                                                                                        },
+                                                                                        {
+                                                                                            "leaf id": 44,
+                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/tit",
+                                                                                            "block type": "section",
+                                                                                            "content": "End-to-End System"
+                                                                                        },
+                                                                                        {
+                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3",
+                                                                                            "block_type": "sec",
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "leaf id": 45,
+                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/par0",
+                                                                                                    "block type": "par",
+                                                                                                    "content": "Following \\cite{su-etal-2022-multi}, we utilize a multi-task fine-tuning method for training a single LLM as a complete dialogue system, consisting of a dialogue state tracker, policy, and response generator."
+                                                                                                },
+                                                                                                {
+                                                                                                    "leaf id": 46,
+                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/par1",
+                                                                                                    "block type": "par",
+                                                                                                    "content": "This allows us to use the same noisy-channel inference method presented in \\autoref{sec:methods-offline-label}."
+                                                                                                },
+                                                                                                {
+                                                                                                    "leaf id": 47,
+                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/par2",
+                                                                                                    "block type": "par",
+                                                                                                    "content": "The completion is the current turn's system acts A_t, which will be used to ground the next response r_t.  We do not use a noisy-channel variant for Policy, and greedily decode an act prediction at inference time:"
+                                                                                                },
+                                                                                                {
+                                                                                                    "leaf id": 48,
+                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/par3",
+                                                                                                    "block type": "par",
+                                                                                                    "content": "\n    \n"
+                                                                                                },
+                                                                                                {
+                                                                                                    "leaf id": 49,
+                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/par4",
+                                                                                                    "block type": "par",
+                                                                                                    "content": "Following prior works, we predict \\textit{delexicalized} responses, where values for slots in the system response are replaced with placeholders for the slot name.  For example, instead of generating ``The phone number for acorn guest house is 555-5309\" directly, we would predict ``The phone number for the [hotel\\_name] is [hotel\\_phone]'', where values could be filled in. Importantly, we never presume access to gold delexicalized responses. Instead, we use our predicted acts, e.g. ``Inform(name=`acorn guest house', phone=`555-8309')'', to delexicalize the observed response for training."
+                                                                                                },
+                                                                                                {
+                                                                                                    "leaf id": 50,
+                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/par5",
+                                                                                                    "block type": "par",
+                                                                                                    "content": "For each turn, we derive (prompt, completion) pairs for `direct' and `channel' DST,  and direct Policy, and Response Generation prompts. We then combine and shuffle these pairs into a single training set for joint fine-tuning. For efficient training, we shorten our prompts by removing in-context examples as well as the function definitions used in the in-context learning setting.  We find up-sampling the `channel' prompts so that there is a 2:1 ratio of `channel' to `direct' instances for training improves performance.  Finally, we fine-tune StarCoder 3B using cross-entropy loss and AdamW with default hyperparameters."
+                                                                                                },
+                                                                                                {
+                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/table*6",
+                                                                                                    "block_type": "table*",
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "leaf id": 51,
+                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/table*6/par0",
+                                                                                                            "block type": "par",
+                                                                                                            "content": "[h!]"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/table*6/tabular1",
+                                                                                                            "block_type": "tabular",
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "leaf id": 52,
+                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/table*6/tabular1/par0",
+                                                                                                                    "block type": "par",
+                                                                                                                    "content": "{lrrr|rrrr}"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "leaf id": 53,
+                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/table*6/tabular1/par1",
+                                                                                                                    "block type": "par",
+                                                                                                                    "content": "PPTOD \\cite{su-etal-2022-multi} & \\ding{51} & \\ding{51} & \\ding{51} & 82.6 & 72.2 & 18.2 & 95.6 \\\\ DiactTOD \\cite{wu-etal-2023-diacttod} & \\ding{51} & \\ding{51} & \\ding{51} & 89.5 & 84.2 & 17.5 & 104.4 \\\\ Our (supervised) & \\ding{51} & \\ding{51} & \\ding{51} & 67.9 & 61.7 & 14.6 & 79.4 \\\\"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "leaf id": 54,
+                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/table*6/tabular1/par2",
+                                                                                                                    "block type": "par",
+                                                                                                                    "content": "SGP-TOD-GPT3.5 \\cite{zhang-etal-2023-sgp} & \\ding{51} & Few (\\ddag) & \\ding{55} & 82.0 & 72.5 & 9.22 & 86.5 \\\\"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "leaf id": 55,
+                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/table*6/tabular1/par3",
+                                                                                                                    "block type": "par",
+                                                                                                                    "content": "LLaMa\\textsuperscript{\\textdagger} & \\ding{51} & \\ding{55} & \\ding{55} & - & 4 & 1.61 & - \\\\ GPT 3.5 Turbo\\textsuperscript{\\dag} & \\ding{51} & \\ding{55} & \\ding{55} & 44.8 & 31.2 & 3.3 & 41.3 \\\\"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "leaf id": 56,
+                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/table*6/tabular1/par4",
+                                                                                                                    "block type": "par",
+                                                                                                                    "content": "GPT 3.5 Turbo (- gold delex.) & \\ding{51} & \\ding{55} & \\ding{55} & 40.7 & 26.7 & 3.7 & 37.4 \\\\"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "leaf id": 57,
+                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/table*6/tabular1/par5",
+                                                                                                                    "block type": "par",
+                                                                                                                    "content": "Ours (StarCoder 15B - no EM) & \\ding{51} & \\ding{55} & \\ding{55} & 50.0 & 19.6 & 3.2 & 38 \\\\"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "leaf id": 58,
+                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/table*6/tabular1/par6",
+                                                                                                                    "block type": "par",
+                                                                                                                    "content": "Ours (StarCoder 3B - w/ EM) & \\ding{51} & \\ding{55} & \\ding{51} & 78.1 & 68.3 & 13.6 & 86.8 \\\\"
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "leaf id": 59,
+                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/table*6/par2",
+                                                                                                            "block type": "par",
+                                                                                                            "content": "}"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "leaf id": 60,
+                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/table*6/par3",
+                                                                                                            "block type": "par",
+                                                                                                            "content": "(\\ddag) SGP-TOD uses a prompt with both a formatting example and a ``Policy Skeleton'', which contains an additional 10-20 hand-crafted instances of the correct system acts and response for an input user utterance or returned DB result. For fairer comparison in our fully unsupervised setting, we re-run the GPT 3.5 baseline without the supervision of de-lexicalized responses provided in the conversation history (- gold delex.). Despite far fewer parameters, we find substantial improvements in our methods which leverage unlabelled dialogues"
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "leaf id": 61,
+                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/tit",
+                                                                                                    "block type": "section",
+                                                                                                    "content": "Experiments"
+                                                                                                },
+                                                                                                {
+                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7",
+                                                                                                    "block_type": "sec",
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "leaf id": 62,
+                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/par0",
+                                                                                                            "block type": "par",
+                                                                                                            "content": "We conduct unsupervised end-to-end dialogue (E2E) and dialogue state tracking (DST) experiments on the MultiWOZ 2.2 dataset \\cite{zang_multiwoz_2020, budzianowski2018large}, containing over ten thousand multi-domain task-oriented dialogues crowd-sourced in a wizard-of-oz setup. We use the fully lexicalized, unlabelled dialogues from the training set to build our system, and evaluate on the test set. First, we demonstrate the value of our approach in an end-to-end dialogue evaluation, following prior works on task-oriented dialogue (\\autoref{sec:expts-e2e}).  Second, we conduct a dialogue state tracking evaluation to more carefully evaluate the quality of our pseudo-annotations (\\autoref{sec:expts-dst})."
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "leaf id": 63,
+                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/tit",
+                                                                                                            "block type": "subsection",
+                                                                                                            "content": "End-to-End (E2E) Experiments"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1",
+                                                                                                            "block_type": "sub",
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "leaf id": 64,
+                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/par0",
+                                                                                                                    "block type": "par",
+                                                                                                                    "content": "In E2E experiments, we use our complete system to both predict API call arguments and generate a next system response in natural language.  We evaluate our generated responses with Inform rate, Success rate, and BLEU, as well as a Combined score of 0.5(Inform + Success) + BLEU, following prior works. We provide details on these metrics in \\autoref{app:metric_details}."
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "leaf id": 65,
+                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/par1",
+                                                                                                                    "block type": "par",
+                                                                                                                    "content": "We compare our approach to the previous state-of-the-art unsupervised methods, a GPT-3.5 zero-shot baseline \\cite{hudecek-dusek-2023-large}, and SGP-TOD \\cite{zhang-etal-2023-sgp}.  Where possible, we report results for both the original approach and modifications required to fit our fully unsupervised setting. For reference, we also run our own method in the fully-supervised setting.  We train a model using the procedure in <ref> using the annotations sourced from crowd-workers in the MultiWOZ 2.2 corpus \\cite{budzianowski2018large, zang_multiwoz_2020}, rather than the pseudo-labels predicted in \\autoref{sec:methods-offline-label}. We also compare with existing supervised approaches as a reference point.  We include DiactTOD \\cite{wu-etal-2023-diacttod}, which to our knowledge is the supervised state-of-the-art, and PPTOD \\cite{su-etal-2022-multi}, which uses a multi-task fine-tuning approach similar to our own in \\autoref{sec:methods-online-system}, for T5 encoder-decoder models \\cite{raffel_exploring_2020}."
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "leaf id": 66,
+                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/tit",
+                                                                                                                    "block type": "subsection",
+                                                                                                                    "content": "DST Experiments"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2",
+                                                                                                                    "block_type": "sub",
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "leaf id": 67,
+                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/par0",
+                                                                                                                            "block type": "par",
+                                                                                                                            "content": "We conduct multi-domain DST experiments on the MultiWOZ Dataset in order to evaluate the quality of our pseudo-annotations. We use our DST Module to predict and evaluate only latent dialogue states, which collect the arguments required for unseen API calls."
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "leaf id": 68,
+                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/par1",
+                                                                                                                            "block type": "par",
+                                                                                                                            "content": "Following prior works, we evaluate DST performance with joint-goal accuracy (JGA), or whether a given dialogue state is completely accurate. More details are available in \\autoref{app:metric_details}."
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "leaf id": 69,
+                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/par2",
+                                                                                                                            "block type": "par",
+                                                                                                                            "content": "We compare to our ChatGPT 3.5 Turbo baseline \\cite{hudecek-dusek-2023-large}, as well as prior zero-shot DST methods. These include IC-DST \\cite{hu_-context_2022}, which re-frames DST as text-to-SQL, and RefPyDST which re-frames DST as text-to-python \\cite{king-flanigan-2023-diverse}. By default, both of these works use OpenAI Codex \\cite{chen_evaluating_2021}, and we apply their prompting approaches to StarCoder 15B for clearer comparison."
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/table3",
+                                                                                                                            "block_type": "table",
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "leaf id": 70,
+                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/table3/par0",
+                                                                                                                                    "block type": "par",
+                                                                                                                                    "content": "[]     \\centering     \\resizebox{\\columnwidth}{!}{     \\begin{tabular}{l|r}         \\hline          \\multicolumn{2}{c}{With One Formatting Example} \\\\          \\hline          IC-DST (StarCoder 15B) & 24.58 \\\\          RefPyDST (StarCoder 15B) & 17.17 \\\\          IC-DST (Codex) & 35.02 \\\\          RefPyDST (Codex) & 40.88 \\\\          \\hline          \\multicolumn{2}{c}{Fully Unsupervised} \\\\          \\hline          IC-DST (StarCoder 15B) & 15.66 \\\\          RefPyDST (StarCoder 15B) & 13.88 \\\\          GPT 3.5 Turbo \\cite{hudecek-dusek-2023-large} &  13.05 \\\\          Ours (StarCoder 15B \u2192 3B) & 39.70 \\\\"
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "leaf id": 71,
+                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/tit",
+                                                                                                                            "block type": "section",
+                                                                                                                            "content": "Results"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4",
+                                                                                                                            "block_type": "sec",
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "leaf id": 72,
+                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/par0",
+                                                                                                                                    "block type": "par",
+                                                                                                                                    "content": "We present E2E results for our unsupervised dialogue agent in \\autoref{tab:main-results}.  We find that our method achieves state-of-the-art performance in our fully unsupervised setting, more than doubling the Success Rate and Combined score of the GPT 3.5 Turbo baseline of \\citet{hudecek-dusek-2023-large}. When we remove the supervision of delexicalization for fairer comparison (- gold delex.), we find even greater improvement across all end-to-end metrics. As discussed in \\autoref{sec:related-work}, SGP-TOD uses both a supervised formatting example and a `Policy Skeleton', containing additional supervision for Policy and Response Generation. With no implementation publicly available, we were unable to run a modified version of their experiments without this supervision for fair comparison.  Despite a less-supervised setting, our method is able to perform comparably, even slightly out-performing SGP-TOD in Combined score."
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                    "leaf id": 73,
+                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/par1",
+                                                                                                                                    "block type": "par",
+                                                                                                                                    "content": "Remarkably, our unsupervised EM approach also outperforms the supervised variant of our model due to improvements in Inform and Success rate, suggesting the Dialogue acts we infer are of high quality."
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                    "leaf id": 74,
+                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/par2",
+                                                                                                                                    "block type": "par",
+                                                                                                                                    "content": "We find that our method significantly outperforms our GPT 3.5 Turbo baseline by 26\\% joint goal accuracy.  Our approach performs nearly as well as the best method using OpenAI Codex with a supervised formatting example, using less than 10\\% of the parameters at any time (175B vs. 15B).  When applying the IC-DST and RefPyDST prompting methods to StarCoder, our method significantly outperforms both, with and without a formatting example."
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                    "leaf id": 75,
+                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/par3",
+                                                                                                                                    "block type": "par",
+                                                                                                                                    "content": "We compare our proposed system to one in which each module is replaced by only greedily sampling from its `direct' variant, at both labeling and end-to-end inference time. We plot our Combined end-to-end performance across iterations of EM, with `0' indicating our zero-shot system. We find that EM improves our end-to-end performance in both our noisy-channel approach and greedy ablation, and that our noisy-channel inference methods are important to dialogue success, with a 30 and 33 point improvement over our greedy baseline with 1 and 2 EM steps, respectively.  Ablations across Inform, Success, BLEU, and joint goal accuracy are in \\autoref{app:additional-ablations}."
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                    "leaf id": 76,
+                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/figure4",
+                                                                                                                                    "block type": "figure",
+                                                                                                                                    "content": "\\centering     \\includegraphics[width=\\columnwidth]{imgs/step_plots_v3/combined_vs_steps.png}     Combined score (0.5(Inform + Success) + BLEU) vs. the number of steps of expectation-maximization in our Noisy Channel method vs. a Greedy Ablation. `0' is zero-shot inference}     \\label{fig:success-v-steps}"
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                    "leaf id": 77,
+                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/tit",
+                                                                                                                                    "block type": "section",
+                                                                                                                                    "content": "Contamination Analysis"
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5",
+                                                                                                                                    "block_type": "sec",
+                                                                                                                                    "children": [
+                                                                                                                                        {
+                                                                                                                                            "leaf id": 78,
+                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/par0",
+                                                                                                                                            "block type": "par",
+                                                                                                                                            "content": "Evaluation of unsupervised methods, such as ours, that use LLMs has the potential issue of task contamination, where supervised examples are seen in pretraining data \\cite{li_task_2024}.  Inclusion of supervised examples of the task in LLM pretraining data would render the model no longer unsupervised and the evaluation potentially biased: tasks for which the training data has been seen may have a higher performance than truly unsupervised tasks."
+                                                                                                                                        },
+                                                                                                                                        {
+                                                                                                                                            "leaf id": 79,
+                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/par1",
+                                                                                                                                            "block type": "par",
+                                                                                                                                            "content": "To address this issue, we quantify the presence of contamination in LLM pre-training data, and then estimate the potential impact on our results. Fortunately, the StarCoder family of models that we use has the complete pre-training corpus publicly available for analysis.\\footnote{\\href{https://huggingface.co/datasets/bigcode/starcoderdata}{https://huggingface.co/datasets/bigcode/starcoderdata}}"
+                                                                                                                                        },
+                                                                                                                                        {
+                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/table2",
+                                                                                                                                            "block_type": "table",
+                                                                                                                                            "children": [
+                                                                                                                                                {
+                                                                                                                                                    "leaf id": 80,
+                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/table2/tabular0",
+                                                                                                                                                    "block type": "tabular",
+                                                                                                                                                    "content": "{l|r:rr}          Task & Turns & Correct & Authentic \\\\          \\hline          Act Tagging & 42 & 21 & 5 \\\\            DST & 42 & 36 & 19 \\\\"
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                    "leaf id": 81,
+                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/table2/par1",
+                                                                                                                                                    "block type": "par",
+                                                                                                                                                    "content": "[]     \\centering"
+                                                                                                                                                }
+                                                                                                                                            ]
+                                                                                                                                        },
+                                                                                                                                        {
+                                                                                                                                            "leaf id": 82,
+                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/par3",
+                                                                                                                                            "block type": "par",
+                                                                                                                                            "content": "We conduct an exhaustive search for supervised pairs of our dialogue subtasks in the StarCoder pretraining data using a semi-automated search with manual review.  Details of our search procedure are in \\autoref{app:contamination_details}.  We find no complete dialogues with supervised labels.  We do find 42 turns labeled with act tagging, and 42 turns labeled with DST in the pre-training corpus, categorized in \\autoref{tab:contamination}.\\footnote{The average dialogue length in MultiWOZ is 13.9 turns. Put together, the set of contaminated turns would be roughly the length of 6 dialogues} We consider a (x, y) pair to be `Correct' if the state change/dialogue act y is actually correct for the utterance x, and to be `Authentic' if the (x,y) pair is found verbatim in the MultiWOZ corpus.\\footnote{A `Correct' pair might arise from printing training data, and an incorrect pair from discussion of a failure case.} Astonishingly, we find half of the found Act Tagging pairs are incorrect, and could possibly mislead a pre-trained model if the model learned from them. We also find that less than half of the turns are authentic for either task, and find a number of them derive from Github issues discussing problems with dialogue simulators."
+                                                                                                                                        },
+                                                                                                                                        {
+                                                                                                                                            "leaf id": 83,
+                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/par4",
+                                                                                                                                            "block type": "par",
+                                                                                                                                            "content": "Additionally, we estimate the degree to which the contamination we discover could exaggerate expected performance of our method on an unseen schema, by using contaminated (x, y) pairs as in-context examples.\\footnote{Ideally, one would pre-train an identical StarCoder model on a corpus \\textit{without} contamination, this is computationally impractical. Additionally, we are not aware of any available LLM that can be verified as not contaminated for this task.}"
+                                                                                                                                        },
+                                                                                                                                        {
+                                                                                                                                            "leaf id": 84,
+                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/par5",
+                                                                                                                                            "block type": "par",
+                                                                                                                                            "content": "In \\autoref{tab:contaminated_experiment}, we compare our zero-shot prompt, which receives no examples of any kind, with a `contaminated' variant which uses k=3 in-context examples derived from contamination in the pre-training corpus. The `contaminated' model retrieves the most relevant contaminated fragments from a pool using the dense retrieval approach described in \\autoref{sec:methods-retriever}.  These are inserted as a triple-quoted string block, so that the prompt remains syntactically valid python. By leaving contaminated examples in their original format, we test whether their inclusion elicits memorized knowledge rather than providing guidance on input/output formatting."
+                                                                                                                                        },
+                                                                                                                                        {
+                                                                                                                                            "leaf id": 85,
+                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/par6",
+                                                                                                                                            "block type": "par",
+                                                                                                                                            "content": "Surprisingly, we find including this supervision via contaminated fragments \\textit{hurts} performance, indicating that these examples do not provide meaningful supervision for our task. Further, the substantial gains in our noisy-channel EM approach suggest our method is doing more than simply eliciting schema-specific knowledge memorized in pre-training."
+                                                                                                                                        },
+                                                                                                                                        {
+                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/table7",
+                                                                                                                                            "block_type": "table",
+                                                                                                                                            "children": [
+                                                                                                                                                {
+                                                                                                                                                    "leaf id": 86,
+                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/table7/tabular0",
+                                                                                                                                                    "block type": "tabular",
+                                                                                                                                                    "content": "{l|rrrr}     Method & Inform & Success & BLEU & Combined \\\\        \\hline        Ours (zero-shot) & 49.0 & 15.0 & 3.0 & 35.0 \\\\        Ours (k=3 contam ex.) & 44.5 & 14.0 & 3.8 & 33.1 \\\\        \\hline        Ours (Full EM) & 80.5 & 69.0 & 13.7 & 88.5 \\\\"
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                    "leaf id": 87,
+                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/table7/par1",
+                                                                                                                                                    "block type": "par",
+                                                                                                                                                    "content": "[]     \\centering      \\resizebox{\\columnwidth}{!}{"
+                                                                                                                                                }
+                                                                                                                                            ]
+                                                                                                                                        },
+                                                                                                                                        {
+                                                                                                                                            "leaf id": 88,
+                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/tit",
+                                                                                                                                            "block type": "section",
+                                                                                                                                            "content": "Related Work"
+                                                                                                                                        },
+                                                                                                                                        {
+                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8",
+                                                                                                                                            "block_type": "sec",
+                                                                                                                                            "children": [
+                                                                                                                                                {
+                                                                                                                                                    "leaf id": 89,
+                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/par0",
+                                                                                                                                                    "block type": "par",
+                                                                                                                                                    "content": "These methods rely on prompts tailored to the schema and the use of a supervised `formatting' example, which requires annotation expertise."
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                    "leaf id": 90,
+                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/par1",
+                                                                                                                                                    "block type": "par",
+                                                                                                                                                    "content": "In addition to a formatting example, their policy prompt requires a hand-crafted `policy-skeleton' consisting of examples of the appropriate system act and reply in response to different user utterances or database results. Our approach differs in that we require zero labeled examples of any kind."
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                    "leaf id": 91,
+                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/par2",
+                                                                                                                                                    "block type": "par",
+                                                                                                                                                    "content": "However, this method presumes \\textit{delexicalized} system responses r_1 ... r_t-1 in the conversation history as input, where entities are replaced with placeholders.  Producing these inputs requires ground-truth annotations and gives a form of supervision about the entities and their attributes within a dialogue (see \\autoref{tab:main-results} for a comparison for  GPT 3.5 Turbo with and without delex supervision). In contrast, we only assume fully-lexicalized dialogues, which do not provide this supervision and require no human annotation. We adapt the method of \\citet{hudecek-dusek-2023-large} to use lexicalized dialogues as inputs, and use this approach as our baseline."
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                    "leaf id": 92,
+                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/par3",
+                                                                                                                                                    "block type": "par",
+                                                                                                                                                    "content": "While successful, these approaches require a non-trivial amount of supervised data. Other semi-supervised works also evaluate their method in an unsupervised setting \\cite{jin_explicit_2018, liu_unsupervised_2023}.  However, these works also assume delexicalized training dialogues, which requires ground-truth annotation and gives a form a supervision to the model."
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                    "leaf id": 93,
+                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/par4",
+                                                                                                                                                    "block type": "par",
+                                                                                                                                                    "content": "A few previous works have utilized noisy channel methods for task-oriented dialogue or prompting methods. \\citet{liu_pretraining_2021} pre-train a noisy channel for task-oriented dialogues as a sequence to sequence model, however their method requires significant labelled training data. \\citet{min-etal-2022-noisy} propose noisy channel prompting for few-shot classification tasks, which inspires our generalization to the generative setting."
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                    "leaf id": 94,
+                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/tit",
+                                                                                                                                                    "block type": "section",
+                                                                                                                                                    "content": "Conclusion"
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5",
+                                                                                                                                                    "block_type": "sec",
+                                                                                                                                                    "children": [
+                                                                                                                                                        {
+                                                                                                                                                            "leaf id": 95,
+                                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/par0",
+                                                                                                                                                            "block type": "par",
+                                                                                                                                                            "content": "We present a novel approach for constructing an end-to-end task-oriented dialogue system by leveraging pre-trained language models to infer labels from unlabeled dialogues."
+                                                                                                                                                        },
+                                                                                                                                                        {
+                                                                                                                                                            "leaf id": 96,
+                                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/tit",
+                                                                                                                                                            "block type": "section",
+                                                                                                                                                            "content": "Limitations"
+                                                                                                                                                        },
+                                                                                                                                                        {
+                                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1",
+                                                                                                                                                            "block_type": "sec",
+                                                                                                                                                            "children": [
+                                                                                                                                                                {
+                                                                                                                                                                    "leaf id": 97,
+                                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/par0",
+                                                                                                                                                                    "block type": "par",
+                                                                                                                                                                    "content": "Data contamination in LLM pre-training poses a hurdle for accurate benchmarking across NLP, and particularly for unsupervised methods. In an idealized setting, there would be a suitably strong task-oriented dialogue benchmark that could be verified as not belonging to the pre-training corpus of each new and more capable LLM. This is not the case for our setting or for many others, and warrants careful attention from the NLP community. For our setting, we were able to properly define problematic contamination and search for it in our LLM's pre-training corpus, thanks to the open release of the pre-training data. We found limited contamination and demonstrated that the contamination we found was not helpful in eliciting task knowledge that might have been memorized in pre-training."
+                                                                                                                                                                },
+                                                                                                                                                                {
+                                                                                                                                                                    "leaf id": 98,
+                                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/par1",
+                                                                                                                                                                    "block type": "par",
+                                                                                                                                                                    "content": "All experiments in this paper were conducted on pre-existing public dialogue corpora, collected explicitly for training task-oriented dialogue agents with the knowledge of all participants \\cite{budzianowski2018large}.  Our use of the StarCoder model also falls within the terms of it's Responsible AI License. It is important that subsequent applications of our method also adhere to any fair-use policies governing collected dialogues or transcripts."
+                                                                                                                                                                },
+                                                                                                                                                                {
+                                                                                                                                                                    "leaf id": 99,
+                                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/tit",
+                                                                                                                                                                    "block type": "section",
+                                                                                                                                                                    "content": "Prompt Examples"
+                                                                                                                                                                },
+                                                                                                                                                                {
+                                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2",
+                                                                                                                                                                    "block_type": "sec",
+                                                                                                                                                                    "children": [
+                                                                                                                                                                        {
+                                                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/figure*0",
+                                                                                                                                                                            "block_type": "figure*",
+                                                                                                                                                                            "children": [
+                                                                                                                                                                                {
+                                                                                                                                                                                    "leaf id": 100,
+                                                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/figure*0/subfigure0",
+                                                                                                                                                                                    "block type": "subfigure",
+                                                                                                                                                                                    "content": "[b]{0.49\\textwidth}         \\centering         \\includegraphics[width=\\textwidth]{imgs/direct_dst_prompt_v6.pdf}          Our `direct' DST prompt with italicized \\dstcolor{\\textit{completion}}         \\label{fig:direct-dst-prompt}"
+                                                                                                                                                                                },
+                                                                                                                                                                                {
+                                                                                                                                                                                    "leaf id": 101,
+                                                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/figure*0/par1",
+                                                                                                                                                                                    "block type": "par",
+                                                                                                                                                                                    "content": "[h]     \\centering"
+                                                                                                                                                                                },
+                                                                                                                                                                                {
+                                                                                                                                                                                    "leaf id": 102,
+                                                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/figure*0/subfigure2",
+                                                                                                                                                                                    "block type": "subfigure",
+                                                                                                                                                                                    "content": "[b]{0.49\\textwidth}         \\centering         \\includegraphics[width=\\textwidth]{imgs/direct_dat_prompt_v4.pdf}          Our `direct' act tagging prompt, with italicized \\dstcolor{\\textit{completion}}         \\label{fig:direct-act-tag-prompt}"
+                                                                                                                                                                                }
+                                                                                                                                                                            ]
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                            "leaf id": 103,
+                                                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/tit",
+                                                                                                                                                                            "block type": "section",
+                                                                                                                                                                            "content": "Metric Details"
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1",
+                                                                                                                                                                            "block_type": "sec",
+                                                                                                                                                                            "children": [
+                                                                                                                                                                                {
+                                                                                                                                                                                    "leaf id": 104,
+                                                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/par0",
+                                                                                                                                                                                    "block type": "par",
+                                                                                                                                                                                    "content": "We measure end-to-end dialogue performance using the Inform rate, Success rate, and BLEU, following prior works, using the automatic evaluation provided by \\citet{nekvinda-dusek-2021-shades}.\\footnote{\\href{https://github.com/Tomiinek/MultiWOZ_Evaluation}{https://github.com/Tomiinek/MultiWOZ\\_Evaluation}}"
+                                                                                                                                                                                },
+                                                                                                                                                                                {
+                                                                                                                                                                                    "leaf id": 105,
+                                                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/par1",
+                                                                                                                                                                                    "block type": "par",
+                                                                                                                                                                                    "content": "A dialogue is considered Informed if the most recently mentioned result for each domain meets the user's goal constraints, and is considered Successful if it is Informed and all values for requested slots are presented to the user.  For example, if a user were to ask `Can you give me the phone number of a cheap hotel in the east part of town?', the dialogue would be Informed if we refer them to a hotel that is actually in the cheap price range and in the east, and Successful if we additionally provide the phone number, as requested.  BLEU is computed against a single reference response, and the Combined score is 0.5(Inform + Success) + BLEU."
+                                                                                                                                                                                },
+                                                                                                                                                                                {
+                                                                                                                                                                                    "leaf id": 106,
+                                                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/sec2/tit",
+                                                                                                                                                                                    "block type": "section",
+                                                                                                                                                                                    "content": "Dialogue Acts"
+                                                                                                                                                                                },
+                                                                                                                                                                                {
+                                                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/sec2",
+                                                                                                                                                                                    "block_type": "sec",
+                                                                                                                                                                                    "children": [
+                                                                                                                                                                                        {
+                                                                                                                                                                                            "leaf id": 107,
+                                                                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/sec2/par0",
+                                                                                                                                                                                            "block type": "par",
+                                                                                                                                                                                            "content": "Following \\citet{paul19b_interspeech}, we use a universal set of dialogue acts for managing our agents communicative intents. We omit some acts for simplicity and to reduce the context length required to enumerate them in a prompt. \\autoref{tab:dialogue_acts} lists each act and a description. Since our dialogue set is not directly comparable to prior works, we do not directly evaluate act tagging or policy accuracy. Instead, acts serve only as an intermediate representation for planning responses in our end-to-end system."
+                                                                                                                                                                                        },
+                                                                                                                                                                                        {
+                                                                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/sec2/table*1",
+                                                                                                                                                                                            "block_type": "table*",
+                                                                                                                                                                                            "children": [
+                                                                                                                                                                                                {
+                                                                                                                                                                                                    "leaf id": 108,
+                                                                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/sec2/table*1/par0",
+                                                                                                                                                                                                    "block type": "par",
+                                                                                                                                                                                                    "content": "[]     \\centering"
+                                                                                                                                                                                                },
+                                                                                                                                                                                                {
+                                                                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/sec2/table*1/tabular1",
+                                                                                                                                                                                                    "block_type": "tabular",
+                                                                                                                                                                                                    "children": [
+                                                                                                                                                                                                        {
+                                                                                                                                                                                                            "leaf id": 109,
+                                                                                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/sec2/table*1/tabular1/par0",
+                                                                                                                                                                                                            "block type": "par",
+                                                                                                                                                                                                            "content": "{l p{12cm}}         Act & Description (as used in our prompt) \\\\         \\hline          Inform(x=y) &  Provide information. \\\\          Offer(x=y) &  System provides an offer or suggestion based on results. \\\\          Confirm(x=y) &  Seek confirmation of something. \\\\          Affirm(x=y) &  Express agreement or confirmation. \\\\          Negate(x=y) & User or System denies or negates. \\\\          NotifySuccess(x=y) & Notify of a successful action or result. \\\\          NotifyFailure(x=y) & Notify of an error or failure. \\\\          Acknowledge & Acknowledge. \\\\          Goodbye & Goodbye. \\\\          Greeting & Greeting. \\\\          ThankYou & ThankYou. \\\\          RequestAlternatives & Ask for other options, alternatives, or any additional user goals. \\\\          Request(x=?) & Ask for specific information or action. \\\\"
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                    ]
+                                                                                                                                                                                                }
+                                                                                                                                                                                            ]
+                                                                                                                                                                                        },
+                                                                                                                                                                                        {
+                                                                                                                                                                                            "leaf id": 110,
+                                                                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/sec2/sec2/tit",
+                                                                                                                                                                                            "block type": "section",
+                                                                                                                                                                                            "content": "Offline Labeling Algorithm"
+                                                                                                                                                                                        },
+                                                                                                                                                                                        {
+                                                                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/sec2/sec2",
+                                                                                                                                                                                            "block_type": "sec",
+                                                                                                                                                                                            "children": [
+                                                                                                                                                                                                {
+                                                                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/sec2/sec2/algorithm*0",
+                                                                                                                                                                                                    "block_type": "algorithm*",
+                                                                                                                                                                                                    "children": [
+                                                                                                                                                                                                        {
+                                                                                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/sec2/sec2/algorithm*0/algorithmic0",
+                                                                                                                                                                                                            "block_type": "algorithmic",
+                                                                                                                                                                                                            "children": [
+                                                                                                                                                                                                                {
+                                                                                                                                                                                                                    "leaf id": 111,
+                                                                                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/sec2/sec2/algorithm*0/algorithmic0/par0",
+                                                                                                                                                                                                                    "block type": "par",
+                                                                                                                                                                                                                    "content": "[1]"
+                                                                                                                                                                                                                }
+                                                                                                                                                                                                            ]
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                    ]
+                                                                                                                                                                                                },
+                                                                                                                                                                                                {
+                                                                                                                                                                                                    "leaf id": 112,
+                                                                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/sec2/sec2/sec1/tit",
+                                                                                                                                                                                                    "block type": "section",
+                                                                                                                                                                                                    "content": "Further results across EM Steps"
+                                                                                                                                                                                                },
+                                                                                                                                                                                                {
+                                                                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/sec2/sec2/sec1",
+                                                                                                                                                                                                    "block_type": "sec",
+                                                                                                                                                                                                    "children": [
+                                                                                                                                                                                                        {
+                                                                                                                                                                                                            "leaf id": 113,
+                                                                                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/sec2/sec2/sec1/par0",
+                                                                                                                                                                                                            "block type": "par",
+                                                                                                                                                                                                            "content": "Here we expand on our ablations in \\autoref{sec:results}, which evaluates our method with and without our proposed noisy-channel prompting across iterations of expectation-maximization (EM). In \\autoref{fig:app-step-plots-grouped}, we break down the performance gains we observed in our `Combined' metric into Inform rate, Success rate, and BLEU, where Combined = 0.5(Inform + Success) + BLEU. `0' iterations of EM indicates our zero-shot prompting system, without any in-context examples or EM. We find that EM substantially improves performance in all cases, and particularly for our noisy-channel prompting approach. We find the noisy channel prompting approach improves performance on all metrics, with the most substantial gains over the greedy baseline in Inform and Success rates.  This suggests that within our algorithm, noisy-channel inference may be particularly important when inferring the system's dialogue acts in order to reverse-engineer an accurate policy."
+                                                                                                                                                                                                        },
+                                                                                                                                                                                                        {
+                                                                                                                                                                                                            "leaf id": 114,
+                                                                                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/sec2/sec2/sec1/par1",
+                                                                                                                                                                                                            "block type": "par",
+                                                                                                                                                                                                            "content": "In \\autoref{fig:app-jga-over-steps}, we analyze dialogue state tracking performance across iterations of EM using Joint Goal Accuracy (JGA). We find our noisy-channel prompting approach improves the accuracy of our dialogue state tracking predictions across iterations of EM when compared to a greedy, direct prompting approach."
+                                                                                                                                                                                                        },
+                                                                                                                                                                                                        {
+                                                                                                                                                                                                            "leaf id": 115,
+                                                                                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/sec2/sec2/sec1/figure*2",
+                                                                                                                                                                                                            "block type": "figure*",
+                                                                                                                                                                                                            "content": "\\includegraphics[width=\\textwidth]{imgs/step_plots_v2/inform_success_bleu_combined_multi_plot.png}     Breaking down Combined = 0.5(Inform + Success) + BLEU into components Inform Rate, Success Rate, and BLEU across iterations of EM between our proposed noisy-channel approach and a greedy ablation, which omits noisy-channel prompting at inference time and when labeling dialogue states \\& system acts in the expectation step. We find improvement across all components, and particularly our Inform and Success Rates}     \\label{fig:app-step-plots-grouped}"
+                                                                                                                                                                                                        },
+                                                                                                                                                                                                        {
+                                                                                                                                                                                                            "leaf id": 116,
+                                                                                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/sec2/sec2/sec1/figure*3",
+                                                                                                                                                                                                            "block type": "figure*",
+                                                                                                                                                                                                            "content": "\\centering     \\includegraphics[width=0.5\\textwidth]{imgs/step_plots_v3/jga_vs_steps.png}     Joint Goal Accuracy (JGA) of our inferred API call(s)/Dialogue states across iterations of EM. We find improved dialogue state tracking performance when using our noisy-channel method at inference time and when labeling dialogue states offline in the expectation step for training, compared to a greedy direct prompting approach     \\label{fig:app-jga-over-steps}"
+                                                                                                                                                                                                        },
+                                                                                                                                                                                                        {
+                                                                                                                                                                                                            "leaf id": 117,
+                                                                                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/sec2/sec2/sec1/sec4/tit",
+                                                                                                                                                                                                            "block type": "section",
+                                                                                                                                                                                                            "content": "Contamination Search \\& Result Details"
+                                                                                                                                                                                                        },
+                                                                                                                                                                                                        {
+                                                                                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/sec2/sec2/sec1/sec4",
+                                                                                                                                                                                                            "block_type": "sec",
+                                                                                                                                                                                                            "children": [
+                                                                                                                                                                                                                {
+                                                                                                                                                                                                                    "leaf id": 118,
+                                                                                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/sec2/sec2/sec1/sec4/sub0/tit",
+                                                                                                                                                                                                                    "block type": "subsection",
+                                                                                                                                                                                                                    "content": "Procedure"
+                                                                                                                                                                                                                },
+                                                                                                                                                                                                                {
+                                                                                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/sec2/sec2/sec1/sec4/sub0",
+                                                                                                                                                                                                                    "block_type": "sub",
+                                                                                                                                                                                                                    "children": [
+                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                            "leaf id": 119,
+                                                                                                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/sec2/sec2/sec1/sec4/sub0/par0",
+                                                                                                                                                                                                                            "block type": "par",
+                                                                                                                                                                                                                            "content": "We detail our method for finding instances of task contamination within the StarCoder pre-training set. We are particularly interested in \\textit{supervised pairs (x, y)} where y belongs to our schema of interest , for any of the dialogue sub-tasks used in our system.  We devise a method for searching the complete pre-training corpus for contaminated (x, y) pairs, where x is an utterance we might observe from either the system or user, and y is the latent dialogue state change or dialogue act supporting .  For each utterance x from either the system or user, we collect all documents from the pre-training corpus which contain the complete utterance.  We use the elastic search index provided for the StarCoder pre-training data, which accounts for differences in capitalization, punctuation, and interrupting white-space.\\footnote{\\href{https://github.com/bigcode-project/search/blob/main/index.py}{https://github.com/bigcode-project/search/blob/main/index.py}}  Following this, we search matching documents for keywords from y (e.g. slot names and values) to determine which of these documents may plausibly contain a supervised label and warrant manual review.  For dialogue states, these are the slot names and values, discarding extremely generic keywords like `name'. For act tags, these are the act names, slots, and values. We then consider a document to need manual review if 40\\% or more of the keywords are found in the 500 characters before or after a matching x in a document. Finally, we hand-check the remaining documents and extract contaminated (x, y) pairs."
+                                                                                                                                                                                                                        },
+                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                            "leaf id": 120,
+                                                                                                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/sec2/sec2/sec1/sec4/sub0/sub1/tit",
+                                                                                                                                                                                                                            "block type": "subsection",
+                                                                                                                                                                                                                            "content": "Examples"
+                                                                                                                                                                                                                        },
+                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/sec2/sec2/sec1/sec4/sub0/sub1",
+                                                                                                                                                                                                                            "block_type": "sub",
+                                                                                                                                                                                                                            "children": [
+                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                    "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/sec2/sec2/sec1/sec4/sub0/sub1/table*0",
+                                                                                                                                                                                                                                    "block_type": "table*",
+                                                                                                                                                                                                                                    "children": [
+                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                            "leaf id": 121,
+                                                                                                                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/sec2/sec2/sec1/sec4/sub0/sub1/table*0/par0",
+                                                                                                                                                                                                                                            "block type": "par",
+                                                                                                                                                                                                                                            "content": "[htbp]     \\centering"
+                                                                                                                                                                                                                                        },
+                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                            "leaf id": 122,
+                                                                                                                                                                                                                                            "key": "doc/body/sec0/sec7/sec3/sec3/sub2/sub2/sub1/sub8/sub3/sec3/sec7/sub1/sub2/sec4/sec5/sec8/sec5/sec1/sec2/sec1/sec2/sec2/sec1/sec4/sub0/sub1/table*0/tabular1",
+                                                                                                                                                                                                                                            "block type": "tabular",
+                                                                                                                                                                                                                                            "content": "{>{\\raggedright\\arraybackslash}p{0.25\\textwidth}|>{\\raggedright\\arraybackslash}p{0.25\\textwidth}|r|r}         Contaminated Input & Contaminated Output & Sub-Task & Source  \\\\          \\hline          I need a restaurant to dine at in Cambridge on my upcoming trip . I need info about chiquito restaurant bar restaurant . & restaurant-inform<<<name===chiquito restaurant bar & DST & Jupyter Notebook \\\\          \\hline           i would like to book a 5 star , or closest to it , in the east part of town please . & \"<SOB> hotel { area = east, stars = 5, type = hotel } <EOB> <SOB> hotel { area = east, stars = 5 } restaurant { area = east } <EOB>\" & DST & Python  \\\\         \\hline                  [Syst] the train id is tr8292 and the price is 16.50 pounds. & [SYS\\_DA] train-inform-leave-tr8292                 [SYS\\_DA] train-inform-ticket-16.50 pounds & Act Tagging & Github Issue \\\\         \\hline"
+                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                    ]
+                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                            ]
+                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                    ]
+                                                                                                                                                                                                                }
+                                                                                                                                                                                                            ]
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                    ]
+                                                                                                                                                                                                }
+                                                                                                                                                                                            ]
+                                                                                                                                                                                        }
+                                                                                                                                                                                    ]
+                                                                                                                                                                                }
+                                                                                                                                                                            ]
+                                                                                                                                                                        }
+                                                                                                                                                                    ]
+                                                                                                                                                                }
+                                                                                                                                                            ]
+                                                                                                                                                        }
+                                                                                                                                                    ]
+                                                                                                                                                }
+                                                                                                                                            ]
+                                                                                                                                        }
+                                                                                                                                    ]
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "leaf id": 123,
+            "key": "doc/bib0",
+            "block type": "bibliography",
+            "content": "Tom~B. Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, Sandhini Agarwal, Ariel Herbert-Voss, Gretchen Krueger, Tom Henighan, Rewon Child, Aditya Ramesh, Daniel~M. Ziegler, Jeffrey Wu, Clemens Winter, Christopher Hesse, Mark Chen, Eric Sigler, Mateusz Litwin, Scott Gray, Benjamin Chess, Jack Clark, Christopher Berner, Sam McCandlish, Alec Radford, Ilya Sutskever, and Dario Amodei. 2020. \\newblock \\href {http://arxiv.org/abs/2005.14165} {Language {Models} are {Few}-{Shot} {Learners}}. \\newblock arXiv:2005.14165 [cs]. \\newblock ArXiv: 2005.14165."
+        },
+        {
+            "leaf id": 124,
+            "key": "doc/bib1",
+            "block type": "bibliography",
+            "content": "Pawe{\\l} Budzianowski, Tsung-Hsien Wen, Bo-Hsiang Tseng, I{\\~n}igo Casanueva, Ultes Stefan, Ramadan Osman, and Milica Ga{\\v{s}}i\\'c. 2018. \\newblock Multiwoz - a large-scale multi-domain wizard-of-oz dataset for task-oriented dialogue modelling. \\newblock In Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing (EMNLP)."
+        },
+        {
+            "leaf id": 125,
+            "key": "doc/bib2",
+            "block type": "bibliography",
+            "content": "Mark Chen, Jerry Tworek, Heewoo Jun, Qiming Yuan, Henrique Ponde de~Oliveira Pinto, Jared Kaplan, Harri Edwards, Yuri Burda, Nicholas Joseph, Greg Brockman, Alex Ray, Raul Puri, Gretchen Krueger, Michael Petrov, Heidy Khlaaf, Girish Sastry, Pamela Mishkin, Brooke Chan, Scott Gray, Nick Ryder, Mikhail Pavlov, Alethea Power, Lukasz Kaiser, Mohammad Bavarian, Clemens Winter, Philippe Tillet, Felipe~Petroski Such, Dave Cummings, Matthias Plappert, Fotios Chantzis, Elizabeth Barnes, Ariel Herbert-Voss, William~Hebgen Guss, Alex Nichol, Alex Paino, Nikolas Tezak, Jie Tang, Igor Babuschkin, Suchir Balaji, Shantanu Jain, William Saunders, Christopher Hesse, Andrew~N. Carr, Jan Leike, Josh Achiam, Vedant Misra, Evan Morikawa, Alec Radford, Matthew Knight, Miles Brundage, Mira Murati, Katie Mayer, Peter Welinder, Bob McGrew, Dario Amodei, Sam McCandlish, Ilya Sutskever, and Wojciech Zaremba. 2021. \\newblock \\href {http://arxiv.org/abs/2107.03374} {Evaluating {Large} {Language} {Models} {Trained} on {Code}}. \\newblock ArXiv:2107.03374 [cs]."
+        },
+        {
+            "leaf id": 126,
+            "key": "doc/bib3",
+            "block type": "bibliography",
+            "content": "Willy Chung, Samuel Cahyawijaya, Bryan Wilie, Holy Lovenia, and Pascale Fung. 2023. \\newblock \\href {http://arxiv.org/abs/2310.08885} {{InstructTODS}: {Large} {Language} {Models} for {End}-to-{End} {Task}-{Oriented} {Dialogue} {Systems}}. \\newblock ArXiv:2310.08885 [cs]."
+        },
+        {
+            "leaf id": 127,
+            "key": "doc/bib4",
+            "block type": "bibliography",
+            "content": "A.~P. Dempster, N.~M. Laird, and D.~B. Rubin. 1977. \\newblock \\href {http://www.jstor.org/stable/2984875} {Maximum likelihood from incomplete data via the em algorithm}. \\newblock Journal of the Royal Statistical Society. Series B (Methodological), 39(1):1--38."
+        },
+        {
+            "leaf id": 128,
+            "key": "doc/bib5",
+            "block type": "bibliography",
+            "content": "Michael Heck, Nurul Lubis, Benjamin Ruppik, Renato Vukovic, Shutong Feng, Christian Geishauser, Hsien-chin Lin, Carel van Niekerk, and Milica Gasic. 2023. \\newblock \\href {https://doi.org/10.18653/v1/2023.acl-short.81} {{C}hat{GPT} for zero-shot dialogue state tracking: A solution or an opportunity?} \\newblock In Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers), pages 936--950, Toronto, Canada. Association for Computational Linguistics."
+        },
+        {
+            "leaf id": 129,
+            "key": "doc/bib6",
+            "block type": "bibliography",
+            "content": "Ari Holtzman, Jan Buys, Li~Du, Maxwell Forbes, and Yejin Choi. 2020. \\newblock \\href {https://doi.org/10.48550/arXiv.1904.09751} {The {Curious} {Case} of {Neural} {Text} {Degeneration}}. \\newblock ArXiv:1904.09751 [cs]."
+        },
+        {
+            "leaf id": 130,
+            "key": "doc/bib7",
+            "block type": "bibliography",
+            "content": "Yushi Hu, Chia-Hsuan Lee, Tianbao Xie, Tao Yu, Noah~A. Smith, and Mari Ostendorf. 2022. \\newblock \\href {http://arxiv.org/abs/2203.08568} {In-{Context} {Learning} for {Few}-{Shot} {Dialogue} {State} {Tracking}}. \\newblock Number: arXiv:2203.08568 arXiv:2203.08568 [cs]."
+        },
+        {
+            "leaf id": 131,
+            "key": "doc/bib8",
+            "block type": "bibliography",
+            "content": "Vojt{\\v{e}}ch Hude{\\v{c}}ek and Ondrej Dusek. 2023. \\newblock \\href {https://aclanthology.org/2023.sigdial-1.21} {Are large language models all you need for task-oriented dialogue?} \\newblock In Proceedings of the 24th Meeting of the Special Interest Group on Discourse and Dialogue, pages 216--228, Prague, Czechia. Association for Computational Linguistics."
+        },
+        {
+            "leaf id": 132,
+            "key": "doc/bib9",
+            "block type": "bibliography",
+            "content": "Xisen Jin, Wenqiang Lei, Zhaochun Ren, Hongshen Chen, Shangsong Liang, Yihong Zhao, and Dawei Yin. 2018. \\newblock \\href {https://doi.org/10.1145/3269206.3271683} {Explicit {State} {Tracking} with {Semi}-{Supervision} for {Neural} {Dialogue} {Generation}}. \\newblock In Proceedings of the 27th {ACM {International} {Conference} on {Information} and {Knowledge} {Management}}, pages 1403--1412. \\newblock ArXiv:1808.10596 [cs]."
+        },
+        {
+            "leaf id": 133,
+            "key": "doc/bib10",
+            "block type": "bibliography",
+            "content": "Brendan King and Jeffrey Flanigan. 2023. \\newblock \\href {https://doi.org/10.18653/v1/2023.findings-acl.344} {Diverse retrieval-augmented in-context learning for dialogue state tracking}. \\newblock In Findings of the Association for Computational Linguistics: ACL 2023, pages 5570--5585, Toronto, Canada. Association for Computational Linguistics."
+        },
+        {
+            "leaf id": 134,
+            "key": "doc/bib11",
+            "block type": "bibliography",
+            "content": "Changmao Li and Jeffrey Flanigan. 2024. \\newblock \\href {https://doi.org/10.1609/aaai.v38i16.29808} {Task {Contamination}: {Language} {Models} {May} {Not} {Be} {Few}-{Shot} {Anymore}}. \\newblock Proceedings of the AAAI Conference on Artificial Intelligence, 38(16):18471--18480."
+        },
+        {
+            "leaf id": 135,
+            "key": "doc/bib12",
+            "block type": "bibliography",
+            "content": "Raymond Li, Loubna~Ben allal, Yangtian Zi, Niklas Muennighoff, Denis Kocetkov, Chenghao Mou, Marc Marone, Christopher Akiki, Jia LI, Jenny Chim, Qian Liu, Evgenii Zheltonozhskii, Terry~Yue Zhuo, Thomas Wang, Olivier Dehaene, Joel Lamy-Poirier, Joao Monteiro, Nicolas Gontier, Ming-Ho Yee, Logesh~Kumar Umapathi, Jian Zhu, Ben Lipkin, Muhtasham Oblokulov, Zhiruo Wang, Rudra Murthy, Jason~T Stillerman, Siva~Sankalp Patel, Dmitry Abulkhanov, Marco Zocca, Manan Dey, Zhihan Zhang, Urvashi Bhattacharyya, Wenhao Yu, Sasha Luccioni, Paulo Villegas, Fedor Zhdanov, Tony Lee, Nadav Timor, Jennifer Ding, Claire~S Schlesinger, Hailey Schoelkopf, Jan Ebert, Tri Dao, Mayank Mishra, Alex Gu, Carolyn~Jane Anderson, Brendan Dolan-Gavitt, Danish Contractor, Siva Reddy, Daniel Fried, Dzmitry Bahdanau, Yacine Jernite, Carlos~Mu{\\~n}oz Ferrandis, Sean Hughes, Thomas Wolf, Arjun Guha, Leandro~Von Werra, and Harm de~Vries. 2023{\\natexlab{a}}. \\newblock \\href {https://openreview.net/forum?id=KoFOg41haE} {Starcoder: may the source be with you!} \\newblock Transactions on Machine Learning Research. \\newblock Reproducibility Certification."
+        },
+        {
+            "leaf id": 136,
+            "key": "doc/bib13",
+            "block type": "bibliography",
+            "content": "Zekun Li, Baolin Peng, Pengcheng He, Michel Galley, Jianfeng Gao, and Xifeng Yan. 2023{\\natexlab{b}}. \\newblock Guiding large language models via directional stimulus prompting. \\newblock arXiv preprint arXiv:2302.11520."
+        },
+        {
+            "leaf id": 137,
+            "key": "doc/bib14",
+            "block type": "bibliography",
+            "content": "Hong Liu, Yucheng Cai, Zhenru Lin, Zhijian Ou, Yi~Huang, and Junlan Feng. 2021{\\natexlab{a}}. \\newblock \\href {http://arxiv.org/abs/2109.04314} {Variational {Latent}-{State} {GPT} for {Semi}-{Supervised} {Task}-{Oriented} {Dialog} {Systems}}. \\newblock ArXiv:2109.04314 [cs]."
+        },
+        {
+            "leaf id": 138,
+            "key": "doc/bib15",
+            "block type": "bibliography",
+            "content": "Qi~Liu, Lei Yu, Laura Rimell, and Phil Blunsom. 2021{\\natexlab{b}}. \\newblock \\href {https://doi.org/10.1162/tacl_a_00390} {Pretraining the {Noisy} {Channel} {Model} for {Task}-{Oriented} {Dialogue}}. \\newblock Transactions of the Association for Computational Linguistics, 9:657--674."
+        },
+        {
+            "leaf id": 139,
+            "key": "doc/bib16",
+            "block type": "bibliography",
+            "content": "Qing-Bin Liu, Shi-Zhu He, Cao Liu, Kang Liu, and Jun Zhao. 2023. \\newblock \\href {https://doi.org/10.1007/s11390-021-1064-y} {Unsupervised {Dialogue} {State} {Tracking} for {End}-to-{End} {Task}-{Oriented} {Dialogue} with a {Multi}-{Span} {Prediction} {Network}}. \\newblock Journal of Computer Science and Technology, 38(4):834--852."
+        },
+        {
+            "leaf id": 140,
+            "key": "doc/bib17",
+            "block type": "bibliography",
+            "content": "Sewon Min, Mike Lewis, Hannaneh Hajishirzi, and Luke Zettlemoyer. 2022. \\newblock \\href {https://doi.org/10.18653/v1/2022.acl-long.365} {Noisy channel language model prompting for few-shot text classification}. \\newblock In Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 5316--5330, Dublin, Ireland. Association for Computational Linguistics."
+        },
+        {
+            "leaf id": 141,
+            "key": "doc/bib18",
+            "block type": "bibliography",
+            "content": "Tom{\\'a}{\\v{s}} Nekvinda and Ond{\\v{r}}ej Du{\\v{s}}ek. 2021. \\newblock \\href {https://doi.org/10.18653/v1/2021.gem-1.4} {Shades of {BLEU}, flavours of success: The case of {M}ulti{WOZ}}. \\newblock In Proceedings of the 1st Workshop on Natural Language Generation, Evaluation, and Metrics (GEM 2021), pages 34--46, Online. Association for Computational Linguistics."
+        },
+        {
+            "leaf id": 142,
+            "key": "doc/bib19",
+            "block type": "bibliography",
+            "content": "Wenbo Pan, Qiguang Chen, Xiao Xu, Wanxiang Che, and Libo Qin. 2023. \\newblock \\href {https://doi.org/10.48550/ARXIV.2304.04256} {A {Preliminary} {Evaluation} of {ChatGPT} for {Zero}-shot {Dialogue} {Understanding}}. \\newblock Publisher: arXiv Version Number: 1."
+        },
+        {
+            "leaf id": 143,
+            "key": "doc/bib20",
+            "block type": "bibliography",
+            "content": "Shachi Paul, Rahul Goel, and Dilek Hakkani-T\u00fcr. 2019. \\newblock \\href {https://doi.org/10.21437/Interspeech.2019-1866} {{Towards Universal Dialogue Act Tagging for Task-Oriented Dialogues}}. \\newblock In Proc. Interspeech 2019, pages 1453--1457."
+        },
+        {
+            "leaf id": 144,
+            "key": "doc/bib21",
+            "block type": "bibliography",
+            "content": "Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, and Peter~J. Liu. 2020. \\newblock \\href {http://arxiv.org/abs/1910.10683} {Exploring the {Limits} of {Transfer} {Learning} with a {Unified} {Text}-to-{Text} {Transformer}}. \\newblock arXiv:1910.10683 [cs, stat]. \\newblock ArXiv: 1910.10683."
+        },
+        {
+            "leaf id": 145,
+            "key": "doc/bib22",
+            "block type": "bibliography",
+            "content": "Abhinav Rastogi, Xiaoxue Zang, Srinivas Sunkara, Raghav Gupta, and Pranav Khaitan. 2020. \\newblock \\href {https://doi.org/10.1609/aaai.v34i05.6394} {Towards {Scalable} {Multi}-{Domain} {Conversational} {Agents}: {The} {Schema}-{Guided} {Dialogue} {Dataset}}. \\newblock Proceedings of the AAAI Conference on Artificial Intelligence, 34(05):8689--8696."
+        },
+        {
+            "leaf id": 146,
+            "key": "doc/bib23",
+            "block type": "bibliography",
+            "content": "Kaitao Song, Xu~Tan, Tao Qin, Jianfeng Lu, and Tie-Yan Liu. 2020. \\newblock \\href {https://doi.org/10.48550/arXiv.2004.09297} {{MPNet}: {Masked} and {Permuted} {Pre}-training for {Language} {Understanding}}. \\newblock ArXiv:2004.09297 [cs]."
+        },
+        {
+            "leaf id": 147,
+            "key": "doc/bib24",
+            "block type": "bibliography",
+            "content": "Yixuan Su, Lei Shu, Elman Mansimov, Arshit Gupta, Deng Cai, Yi-An Lai, and Yi~Zhang. 2022. \\newblock \\href {https://doi.org/10.18653/v1/2022.acl-long.319} {Multi-task pre-training for plug-and-play task-oriented dialogue system}. \\newblock In Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 4661--4676, Dublin, Ireland. Association for Computational Linguistics."
+        },
+        {
+            "leaf id": 148,
+            "key": "doc/bib25",
+            "block type": "bibliography",
+            "content": "Qingyang Wu, James Gung, Raphael Shu, and Yi~Zhang. 2023. \\newblock \\href {https://aclanthology.org/2023.sigdial-1.24} {{D}iact{TOD}: Learning generalizable latent dialogue acts for controllable task-oriented dialogue systems}. \\newblock In Proceedings of the 24th Meeting of the Special Interest Group on Discourse and Dialogue, pages 255--267, Prague, Czechia. Association for Computational Linguistics."
+        },
+        {
+            "leaf id": 149,
+            "key": "doc/bib26",
+            "block type": "bibliography",
+            "content": "Xiaoxue Zang, Abhinav Rastogi, Srinivas Sunkara, Raghav Gupta, Jianguo Zhang, and Jindong Chen. 2020. \\newblock \\href {https://doi.org/10.18653/v1/2020.nlp4convai-1.13} {{MultiWOZ} 2.2 : {A} {Dialogue} {Dataset} with {Additional} {Annotation} {Corrections} and {State} {Tracking} {Baselines}}. \\newblock In Proceedings of the 2nd {Workshop on {Natural} {Language} {Processing} for {Conversational} {AI}}, pages 109--117, Online. Association for Computational Linguistics."
+        },
+        {
+            "leaf id": 150,
+            "key": "doc/bib27",
+            "block type": "bibliography",
+            "content": "Xiaoying Zhang, Baolin Peng, Kun Li, Jingyan Zhou, and Helen Meng. 2023. \\newblock \\href {https://doi.org/10.18653/v1/2023.findings-emnlp.891} {{SGP}-{TOD}: Building task bots effortlessly via schema-guided {LLM} prompting}. \\newblock In Findings of the Association for Computational Linguistics: EMNLP 2023, pages 13348--13369, Singapore. Association for Computational Linguistics."
+        },
+        {
+            "leaf id": 151,
+            "key": "doc/bib28",
+            "block type": "bibliography",
+            "content": "Yichi Zhang, Zhijian Ou, Min Hu, and Junlan Feng. 2020. \\newblock \\href {https://doi.org/10.18653/v1/2020.emnlp-main.740} {A {Probabilistic} {End}-{To}-{End} {Task}-{Oriented} {Dialog} {Model} with {Latent} {Belief} {States} towards {Semi}-{Supervised} {Learning}}. \\newblock In Proceedings of the 2020 {Conference on {Empirical} {Methods} in {Natural} {Language} {Processing} ({EMNLP})}, pages 9207--9219, Online. Association for Computational Linguistics."
+        },
+        {
+            "leaf id": 152,
+            "key": "doc/bib29",
+            "block type": "bibliography",
+            "content": "Zihao Zhao, Eric Wallace, Shi Feng, Dan Klein, and Sameer Singh. 2021. \\newblock \\href {https://proceedings.mlr.press/v139/zhao21c.html} {Calibrate before use: Improving few-shot performance of language models}. \\newblock In Proceedings of the 38th International Conference on Machine Learning, volume 139 of Proceedings of Machine Learning Research, pages 12697--12706. PMLR."
+        }
+    ]
+}

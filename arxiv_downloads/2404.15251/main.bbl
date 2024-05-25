@@ -1,0 +1,121 @@
+\providecommand{\noopsort}[1]{}\providecommand{\singleletter}[1]{#1}%
+\begin{thebibliography}{10}
+
+\bibitem{boscke11p112904}
+T.~B{\"o}scke, {\it et~al.\/}, Phase transitions in ferroelectric silicon doped hafnium oxide, {\it Applied Physics Letters\/} {\bf 99},  (2011).
+
+\bibitem{muller11p112901}
+J.~M{\"u}ller, {\it et~al.\/}, Ferroelectric \uppercase{Z}r$_{0.5}$\uppercase{H}f$_{0.5}$\uppercase{O}$_{2}$ thin films for nonvolatile memory applications, {\it Applied Physics Letters\/} {\bf 99},  (2011).
+
+\bibitem{terki08p1484}
+R.~Terki, G.~Bertrand, H.~Aourag, C.~Coddet, Cubic-to-tetragonal phase transition of \uppercase{H}f\uppercase{O}$_2$ from computational study, {\it Materials Letters\/} {\bf 62},  (2008).
+
+\bibitem{kelley23p1144}
+K.~P. Kelley, {\it et~al.\/}, Ferroelectricity in hafnia controlled via surface electrochemical state, {\it Nature Materials\/} {\bf 22},  (2023).
+
+\bibitem{zhou22peadd5953}
+S.~Zhou, J.~Zhang, A.~M. Rappe, Strain-induced antipolar phase in hafnia stabilizes robust thin-film ferroelectricity, {\it Science Advances\/} {\bf 8},  (2022).
+
+\bibitem{mittmann19p1900042}
+T.~Mittmann, {\it et~al.\/}, Origin of ferroelectric phase in undoped \uppercase{H}f\uppercase{O}$_2$ films deposited by sputtering, {\it Advanced Materials Interfaces\/} {\bf 6},  (2019).
+
+\bibitem{materlik18p164101}
+R.~Materlik, C.~K{\"u}nneth, M.~Falkowski, T.~Mikolajick, A.~Kersch, Al-, \uppercase{Y}-, and \uppercase{L}a-doping effects favoring intrinsic and field induced ferroelectricity in \uppercase{H}f\uppercase{O}$_2$: A first principles study, {\it Journal of Applied Physics\/} {\bf 123},  (2018).
+
+\bibitem{pevsic16p4601}
+M.~Pe{\v{s}}i{\'c}, {\it et~al.\/}, Physical mechanisms behind the field-cycling behavior of \uppercase{H}f\uppercase{O}$_2$-based ferroelectric capacitors, {\it Advanced Functional Materials\/} {\bf 26},  (2016).
+
+\bibitem{xu21p826}
+X.~Xu, {\it et~al.\/}, Kinetically stabilized ferroelectricity in bulk single-crystalline \uppercase{H}f\uppercase{O}$_2$: Y, {\it Nature Materials\/} {\bf 20},  (2021).
+
+\bibitem{olsenp12p082905}
+T.~Olsen, {\it et~al.\/}, Co-sputtering yttrium into hafnium oxide thin films to produce ferroelectric properties, {\it Applied Physics Letters\/} {\bf 101},  (2012).
+
+\bibitem{hyuk14p072901}
+M.~Hyuk~Park, H.~Joon~Kim, Y.~Jin~Kim, T.~Moon, C.~Seong~Hwang, The effects of crystallographic orientation and strain of thin \uppercase{H}f$_{0.5}$\uppercase{Z}r$_{0.5}$\uppercase{O}$_2$ film on its ferroelectricity, {\it Applied Physics Letters\/} {\bf 104},  (2014).
+
+\bibitem{hoffmann15p072006}
+M.~Hoffmann, {\it et~al.\/}, Stabilizing the ferroelectric phase in doped hafnium oxide, {\it Journal of Applied Physics\/} {\bf 118},  (2015).
+
+\bibitem{shimizu15p112904}
+T.~Shimizu, {\it et~al.\/}, Contribution of oxygen vacancies to the ferroelectric behavior of \uppercase{H}f$_{0.5}$\uppercase{Z}r$_{0.5}$\uppercase{O}$_2$ thin films, {\it Applied Physics Letters\/} {\bf 106},  (2015).
+
+\bibitem{ihlefeld23p082901}
+J.~F. Ihlefeld, {\it et~al.\/}, Applied in-plane strain effects on the polarization response of ferroelectric hafnium zirconium oxide thin films, {\it Applied Physics Letters\/} {\bf 123},  (2023).
+
+\bibitem{reyes14p140103}
+S.~E. Reyes-Lillo, K.~F. Garrity, K.~M. Rabe, Antiferroelectricity in thin-film \uppercase{Z}r\uppercase{O}$_2$ from first principles, {\it Physical Review B\/} {\bf 90},  (2014).
+
+\bibitem{qi20p214108}
+Y.~Qi, K.~M. Rabe, Phase competition in \uppercase{H}f\uppercase{O}$_2$ with applied electric field from first principles, {\it Physical Review B\/} {\bf 102},  (2020).
+
+\bibitem{lee20p1343}
+H.-J. Lee, {\it et~al.\/}, Scale-free ferroelectricity induced by flat phonon bands in \uppercase{H}f\uppercase{O}$_2$, {\it Science\/} {\bf 369},  (2020).
+
+\bibitem{muller12p4318}
+J.~M{\"u}ller, {\it et~al.\/}, Ferroelectricity in simple binary \uppercase{Z}r\uppercase{O}$_2$ and \uppercase{H}f\uppercase{O}$_2$, {\it Nano Letters\/} {\bf 12},  (2012).
+
+\bibitem{boscke11p102903}
+T.~B{\"o}scke, J.~M{\"u}ller, D.~Br{\"a}uhaus, U.~Schr{\"o}der, U.~B{\"o}ttger, Ferroelectricity in hafnium oxide thin films, {\it Applied Physics Letters\/} {\bf 99},  (2011).
+
+\bibitem{mikolajick18p340}
+T.~Mikolajick, S.~Slesazeck, M.~H. Park, U.~Schroeder, Ferroelectric hafnium oxide for ferroelectric random-access memories and ferroelectric field-effect transistors, {\it Mrs Bulletin\/} {\bf 43},  (2018).
+
+\bibitem{khan15p182}
+A.~I. Khan, {\it et~al.\/}, Negative capacitance in a ferroelectric capacitor, {\it Nature Materials\/} {\bf 14},  (2015).
+
+\bibitem{saha21p133701}
+A.~Saha, {\it et~al.\/}, Intrinsic synaptic plasticity of ferroelectric field effect transistors for online learning, {\it Applied Physics Letters\/} {\bf 119},  (2021).
+
+\bibitem{zhou15p240}
+D.~Zhou, {\it et~al.\/}, Electric field and temperature scaling of polarization reversal in silicon doped hafnium oxide ferroelectric thin films, {\it Acta Materialia\/} {\bf 99},  (2015).
+
+\bibitem{lee19p8929}
+K.~Lee, {\it et~al.\/}, Stable subloop behavior in ferroelectric si-doped \uppercase{H}f\uppercase{O}$_2$, {\it ACS applied materials \& interfaces\/} {\bf 11},  (2019).
+
+\bibitem{muller15pN30}
+J.~M{\"u}ller, P.~Polakowski, S.~Mueller, T.~Mikolajick, Ferroelectric hafnium oxide based materials and devices: Assessment of current status and future prospects, {\it ECS Journal of Solid State Science and Technology\/} {\bf 4},  (2015).
+
+\bibitem{wang21p010902}
+C.~Wang, H.~Qiao, Y.~Kim, Perspective on the switching behavior of \uppercase{H}f\uppercase{O}$_2$-based ferroelectrics, {\it Journal of Applied Physics\/} {\bf 129},  (2021).
+
+\bibitem{ding20p556}
+W.~Ding, Y.~Zhang, L.~Tao, Q.~Yang, Y.~Zhou, The atomic-scale domain wall structure and motion in \uppercase{H}f\uppercase{O}$_2$-based ferroelectrics: A first-principle study, {\it Acta Materialia\/} {\bf 196},  (2020).
+
+\bibitem{zhao22p064104}
+G.-D. Zhao, X.~Liu, W.~Ren, X.~Zhu, S.~Yu, Symmetry of ferroelectric switching and domain walls in hafnium dioxide, {\it Physical Review B\/} {\bf 106},  (2022).
+
+\bibitem{shin07p881}
+Y.-H. Shin, I.~Grinberg, I.-W. Chen, A.~M. Rappe, Nucleation and growth mechanism of ferroelectric domain-wall motion, {\it Nature\/} {\bf 449},  (2007).
+
+\bibitem{liu16p360}
+S.~Liu, I.~Grinberg, A.~M. Rappe, Intrinsic ferroelectric switching from first principles, {\it Nature\/} {\bf 534},  (2016).
+
+\bibitem{tybell02p097601}
+T.~Tybell, P.~Paruch, T.~Giamarchi, J.-M. Triscone, Domain wall creep in epitaxial ferroelectric \uppercase{P}b(\uppercase{Z}r$_{0.2}$\uppercase{T}i$_{0.8}$)\uppercase{O}$_3$ thin films, {\it Physical Review Letters\/} {\bf 89},  (2002).
+
+\bibitem{hayashi72p616}
+M.~Hayashi, Kinetics of domain wall motion in ferroelectric switching. i. general formulation, {\it Journal of the Physical Society of Japan\/} {\bf 33},  (1972).
+
+\bibitem{miller60p1460}
+R.~C. Miller, G.~Weinreich, Mechanism for the sidewise motion of 180 domain walls in barium titanate, {\it Physical Review\/} {\bf 117},  (1960).
+
+\bibitem{merz54p690}
+W.~J. Merz, Domain formation and domain wall motions in ferroelectric \uppercase{B}a\uppercase{T}i\uppercase{O}$_3$ single crystals, {\it Physical Review\/} {\bf 95},  (1954).
+
+\bibitem{kresse96p15}
+G.~Kresse, J.~Furthm{\"u}ller, Efficiency of ab-initio total energy calculations for metals and semiconductors using a plane-wave basis set, {\it Computational Materials Science\/} {\bf 6},  (1996).
+
+\bibitem{kresse96p11169}
+G.~Kresse, J.~Furthm{\"u}ller, Efficient iterative schemes for ab initio total-energy calculations using a plane-wave basis set, {\it Physical Review B\/} {\bf 54},  (1996).
+
+\bibitem{blochl94p17953}
+P.~E. Bl{\"o}chl, Projector augmented-wave method, {\it Physical Review B\/} {\bf 50},  (1994).
+
+\bibitem{kresse99p1758}
+G.~Kresse, D.~Joubert, From ultrasoft pseudopotentials to the projector augmented-wave method, {\it Physical Review B\/} {\bf 59},  (1999).
+
+\bibitem{Momma21p1272}
+K.~Momma, F.~Izumi, Vesta 3 for three-dimensional visualization of crystal, volumetric and morphology data, {\it Journal of Applied Crystallography\/} {\bf 44},  (2011).
+
+\end{thebibliography}

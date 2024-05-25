@@ -1,0 +1,186 @@
+\begin{thebibliography}{CEVV09}
+
+\bibitem[AB05]{AlexeevBrion}
+Valery Alexeev and Michel Brion.
+\newblock Moduli of affine schemes with reductive group action.
+\newblock {\em J. Algebraic Geom.}, 14(1):83--117, 2005.
+
+\bibitem[AH07]{Aschenbrenner2007Finite}
+Matthias Aschenbrenner and Christopher Hillar.
+\newblock Finite generation of symmetric ideals.
+\newblock {\em Trans. Amer. Math. Soc.}, 359(11):5171--5192, 2007.
+
+\bibitem[ATY97]{Ariki1997Higher}
+Susumu Ariki, Tomohide Terasoma, and Hiro-Fumi Yamada.
+\newblock Higher {S}pecht polynomials.
+\newblock {\em Hiroshima Math. J.}, 27(1):177--188, 1997.
+
+\bibitem[BG92]{BergeronGarsia1992Harmonic}
+N.~Bergeron and A.~M. Garsia.
+\newblock On certain spaces of harmonic polynomials.
+\newblock In {\em Hypergeometric functions on domains of positivity, {J}ack
+  polynomials, and applications ({T}ampa, {FL}, 1991)}, volume 138 of {\em
+  Contemp. Math.}, pages 51--86. Amer. Math. Soc., Providence, RI, 1992.
+
+\bibitem[Bri13]{BrionInvariantHilb}
+Michel Brion.
+\newblock Invariant {H}ilbert schemes.
+\newblock In {\em Handbook of moduli. {V}ol. {I}}, volume~24 of {\em Adv. Lect.
+  Math. (ALM)}, pages 64--117. Int. Press, Somerville, MA, 2013.
+
+\bibitem[CEF15]{ChurchEllenbergFarb2015FImodules}
+Thomas Church, Jordan~S. Ellenberg, and Benson Farb.
+\newblock F{I}-modules and stability for representations of symmetric groups.
+\newblock {\em Duke Math. J.}, 164(9):1833--1910, 2015.
+
+\bibitem[CEVV09]{Cartwright2009HilbertSchemeOf8Points}
+Dustin~A. Cartwright, Daniel Erman, Mauricio Velasco, and Bianca Viray.
+\newblock Hilbert schemes of 8 points.
+\newblock {\em Algebra Number Theory}, 3(7):763--795, 2009.
+
+\bibitem[CF13]{ChurchFarb2013RepresentationStability}
+Thomas Church and Benson Farb.
+\newblock Representation theory and homological stability.
+\newblock {\em Adv. Math.}, 245:250--314, 2013.
+
+\bibitem[Coh67]{Cohen1967Laws}
+Daniel Cohen.
+\newblock On the laws of a metabelian variety.
+\newblock {\em J. Algebra}, 5:267--273, 1967.
+
+\bibitem[Dra14]{Draisma2014Noetherianity}
+Jan Draisma.
+\newblock Noetherianity up to symmetry.
+\newblock In {\em Combinatorial algebraic geometry}, volume 2108 of {\em
+  Lecture Notes in Math.}, pages 33--61. Springer, Cham, 2014.
+
+\bibitem[FH91]{FultonHarris1991ReprTheory}
+William Fulton and Joe Harris.
+\newblock {\em Representation theory}, volume 129 of {\em Graduate Texts in
+  Mathematics}.
+\newblock Springer-Verlag, New York, 1991.
+\newblock A first course, Readings in Mathematics.
+
+\bibitem[Fog73]{Fogarty1973Fixed}
+John Fogarty.
+\newblock Fixed point schemes.
+\newblock {\em Amer. J. Math.}, 95:35--51, 1973.
+
+\bibitem[Ful97]{Fulton}
+William Fulton.
+\newblock {\em Young tableaux}, volume~35 of {\em London Mathematical Society
+  Student Texts}.
+\newblock Cambridge University Press, Cambridge, 1997.
+\newblock With applications to representation theory and geometry.
+
+\bibitem[GP92]{GarsiaProcesi1992}
+A.~M. Garsia and C.~Procesi.
+\newblock On certain graded {$S_n$}-modules and the {$q$}-{K}ostka polynomials.
+\newblock {\em Adv. Math.}, 94(1):82--138, 1992.
+
+\bibitem[Gri22]{griffin2022orbit}
+Sean~T Griffin.
+\newblock Orbit harmonics for the union of two orbits.
+\newblock {\em
+  \href{https://arxiv.org/pdf/2204.04566.pdf}{{\color{blue}{arXiv:2204.04566}}}},
+  2022.
+
+\bibitem[Hai03]{Haiman2003Combinatorics}
+Mark Haiman.
+\newblock Combinatorics, symmetric functions, and {H}ilbert schemes.
+\newblock In {\em Current developments in mathematics, 2002}, pages 39--111.
+  Int. Press, Somerville, MA, 2003.
+
+\bibitem[HS12]{Hillar2012Finite}
+Christopher Hillar and Seth Sullivant.
+\newblock Finite {G}r\"{o}bner bases in infinite dimensional polynomial rings
+  and applications.
+\newblock {\em Adv. Math.}, 229(1):1--25, 2012.
+
+\bibitem[Iar72]{Iarrobino1972Reducibility}
+A.~Iarrobino.
+\newblock Reducibility of the families of {$0$}-dimensional schemes on a
+  variety.
+\newblock {\em Invent. Math.}, 15:72--77, 1972.
+
+\bibitem[LNNR20]{NagelRoemer2020CodimUpToSymmetry}
+Dinh~Van Le, Uwe Nagel, Hop~D. Nguyen, and Tim R\"{o}mer.
+\newblock Codimension and projective dimension up to symmetry.
+\newblock {\em Math. Nachr.}, 293(2):346--362, 2020.
+
+\bibitem[LNNR21]{NagelRoemer2021RegularityUpToSymmetry}
+Dinh~Van Le, Uwe Nagel, Hop~D. Nguyen, and Tim R\"{o}mer.
+\newblock Castelnuovo-{M}umford regularity up to symmetry.
+\newblock {\em Int. Math. Res. Not. IMRN}, (14):11010--11049, 2021.
+
+\bibitem[LT15]{LehnTerpereau}
+Christian Lehn and Ronan Terpereau.
+\newblock Invariant deformation theory of affine schemes with reductive group
+  action.
+\newblock {\em J. Pure Appl. Algebra}, 219(9):4168--4202, 2015.
+
+\bibitem[MOY22]{Murai2022Specht}
+Satoshi Murai, Hidefumi Ohsugi, and Kohji Yanagawa.
+\newblock A note on the reducedness and {G}r\"{o}bner bases of {S}pecht ideals.
+\newblock {\em Comm. Algebra}, 50(12):5430--5434, 2022.
+
+\bibitem[MRV21]{moustrou2021symmetric}
+Philippe Moustrou, Cordian Riener, and Hugues Verdure.
+\newblock Symmetric ideals, {S}pecht polynomials and solutions to symmetric
+  systems of equations.
+\newblock {\em J. Symbolic Comput.}, 107:106--121, 2021.
+
+\bibitem[NC19]{nino2019algorithmic}
+Jonathan~Andr{\'e}s Ni{\~n}o~Cort{\'e}s.
+\newblock Algorithmic calculation of invariant rings under the action of finite
+  sub-(groups): an implementation in {M}acaulay2.
+\newblock Master's thesis, Universidad de los Andes, 2019.
+
+\bibitem[NR17]{Nagel2017Equivariant}
+Uwe Nagel and Tim R\"{o}mer.
+\newblock Equivariant {H}ilbert series in non-noetherian polynomial rings.
+\newblock {\em J. Algebra}, 486:204--245, 2017.
+
+\bibitem[NR19]{Nagel2019FIvaryingCoeff}
+Uwe Nagel and Tim R\"{o}mer.
+\newblock F{I}- and {OI}-modules with varying coefficients.
+\newblock {\em J. Algebra}, 535:286--322, 2019.
+
+\bibitem[NS21]{nagpal2021symmetric}
+Rohit Nagpal and Andrew Snowden.
+\newblock Symmetric ideals of the infinite polynomial ring.
+\newblock {\em
+  \href{https://arxiv.org/abs/2107.13027}{{\color{blue}{arXiv:2107.13027}}}},
+  2021.
+
+\bibitem[RTAL13]{Riener2013Symmetries}
+Cordian Riener, Thorsten Theobald, Lina~Jansson Andr\'{e}n, and Jean~B.
+  Lasserre.
+\newblock Exploiting symmetries in {SDP}-relaxations for polynomial
+  optimization.
+\newblock {\em Math. Oper. Res.}, 38(1):122--141, 2013.
+
+\bibitem[Sag01]{Sagan}
+Bruce~E. Sagan.
+\newblock {\em The symmetric group}, volume 203 of {\em Graduate Texts in
+  Mathematics}.
+\newblock Springer-Verlag, New York, second edition, 2001.
+\newblock Representations, combinatorial algorithms, and symmetric functions.
+
+\bibitem[Spe37]{Specht}
+Wilhelm Specht.
+\newblock Zur {D}arstellungstheorie der symmetrischen {G}ruppe.
+\newblock {\em Math. Z.}, 42(1):774--779, 1937.
+
+\bibitem[Tan82]{Tanisaki1982Defining}
+Toshiyuki Tanisaki.
+\newblock Defining ideals of the closures of the conjugacy classes and
+  representations of the {W}eyl groups.
+\newblock {\em Tohoku Math. J. (2)}, 34(4):575--585, 1982.
+
+\bibitem[TY93]{Terasoma1993Higher}
+Tomohide Terasoma and Hirofumi Yamada.
+\newblock Higher {S}pecht polynomials for the symmetric group.
+\newblock {\em Proc. Japan Acad. Ser. A Math. Sci.}, 69(2):41--44, 1993.
+
+\end{thebibliography}

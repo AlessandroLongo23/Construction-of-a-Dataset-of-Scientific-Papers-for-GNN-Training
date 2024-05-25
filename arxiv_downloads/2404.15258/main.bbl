@@ -1,0 +1,395 @@
+\begin{thebibliography}{10}
+
+\bibitem{ABB}
+A.~Agrachev, D.~Barilari, and U.~Boscain.
+\newblock {\em A {C}omprehensive {I}ntroduction to sub-{R}iemannian
+  {G}eometry}, volume 181 of {\em Cambridge Studies in Advanced Mathematics}.
+\newblock Cambridge University Press, Cambridge, 2020.
+\newblock From the Hamiltonian viewpoint, with an appendix by Igor Zelenko.
+
+\bibitem{shape1}
+A.~Arnaudon, F.~van~der Meulen, M.~Schauer, and S.~Sommer.
+\newblock Diffusion bridges for stochastic {H}amiltonian systems and shape
+  evolutions.
+\newblock {\em SIAM J. Imaging Sci.}, 15(1):293--323, 2022.
+
+\bibitem{BMN21}
+I.~Bailleul, L.~Mesnager, and J.~Norris.
+\newblock Small-time fluctuations for the bridge of a sub-{R}iemannian
+  diffusion.
+\newblock {\em Ann. Sci. \'{E}c. Norm. Sup\'{e}r. (4)}, 54(3):549--586, 2021.
+
+\bibitem{BN22}
+I.~Bailleul and J.~Norris.
+\newblock Diffusion in small time in incomplete sub-{R}iemannian manifolds.
+\newblock {\em Anal. PDE}, 15(1):63--84, 2022.
+
+\bibitem{bellaiche1996tangent}
+A.~Bella{\"\i}che.
+\newblock The tangent space in sub-{R}iemannian geometry.
+\newblock In {\em Sub-Riemannian geometry}, pages 1--78. Springer, 1996.
+
+\bibitem{BeskosPapaspiliopoulosRobertsFearnhead}
+A.~Beskos, O.~Papaspiliopoulos, G.~O. Roberts, and P.~Fearnhead.
+\newblock Exact and computationally efficient likelihood-based estimation for
+  discretely observed diffusion processes.
+\newblock {\em J. R. Stat. Soc. Ser. B Stat. Methodol.}, 68(3):333--382, 2006.
+\newblock With discussions and a reply by the authors.
+
+\bibitem{beskos-mcmc-methods}
+A.~Beskos, G.~Roberts, A.~Stuart, and J.~Voss.
+\newblock M{CMC} methods for diffusion bridges.
+\newblock {\em Stoch. Dyn.}, 8(3):319--350, 2008.
+
+\bibitem{bichtelerjacod}
+K.~Bichteler and J.~Jacod.
+\newblock Calcul de {M}alliavin pour les diffusions avec sauts: existence d'une
+  densit\'{e} dans le cas unidimensionnel.
+\newblock In {\em S\'{e}minaire de {P}robabilit\'{e}s, {XVII}}, volume 986 of
+  {\em Lecture Notes in Math.}, pages 132--157. Springer, Berlin, 1983.
+
+\bibitem{bierkens2020piecewise}
+J.~Bierkens, S.~Grazzi, F.~van~der Meulen, and M.~Schauer.
+\newblock A piecewise deterministic {M}onte {C}arlo method for diffusion
+  bridges.
+\newblock {\em Stat. Comput.}, 31(3):Paper No. 37, 21, 2021.
+
+\bibitem{bridgesim5}
+J.~Bierkens, F.~van~der Meulen, and M.~Schauer.
+\newblock Simulation of elliptic and hypo-elliptic conditional diffusions.
+\newblock {\em Adv. in Appl. Probab.}, 52(1):173--212, 2020.
+
+\bibitem{bladt2016}
+M.~Bladt, S.~Finch, and M.~S\o{}rensen.
+\newblock Simulation of multivariate diffusion bridges.
+\newblock {\em J. R. Stat. Soc. Ser. B. Stat. Methodol.}, 78(2):343--369, 2016.
+
+\bibitem{bortoliRiemannianScoreBasedGenerative2022}
+V.~D. Bortoli, E.~Mathieu, M.~J. Hutchinson, J.~Thornton, Y.~W. Teh, and
+  A.~Doucet.
+\newblock Riemannian {S}core-{B}ased {G}enerative {M}odelling.
+\newblock In {\em Advances in Neural Information Processing Systems}, May 2022.
+
+\bibitem{buiInferencePartiallyObserved2023}
+M.~N. Bui, Y.~Pokern, and P.~Dellaportas.
+\newblock Inference for partially observed {R}iemannian {O}rnstein-{U}hlenbeck
+  diffusions of covariance matrices.
+\newblock {\em Bernoulli}, 29(4):2961--2986, 2023.
+
+\bibitem{Cho39}
+W.-L. Chow.
+\newblock \"{U}ber {S}ysteme von linearen partiellen {D}ifferentialgleichungen
+  erster {O}rdnung.
+\newblock {\em Math. Ann.}, 117:98--105, 1939.
+
+\bibitem{corstanjeSimulatingConditionedDiffusions2024}
+M.~Corstanje, F.~van~der Meulen, M.~Schauer, and S.~Sommer.
+\newblock Simulating conditioned diffusions on manifolds, 2024.
+\newblock arXiv:2403.05409.
+
+\bibitem{delyonhu}
+B.~Delyon and Y.~Hu.
+\newblock Simulation of conditioned diffusion and application to parameter
+  estimation.
+\newblock {\em Stochastic Process. Appl.}, 116(11):1660--1675, 2006.
+
+\bibitem{durham2002}
+G.~B. Durham and A.~R. Gallant.
+\newblock Numerical techniques for maximum likelihood estimation of
+  continuous-time diffusion processes.
+\newblock {\em J. Bus. Econom. Statist.}, 20(3):297--338, 2002.
+\newblock With comments and a reply by the authors.
+
+\bibitem{elworthy}
+K.~D. Elworthy.
+\newblock {\em Stochastic {D}ifferential {E}quations on {M}anifolds}, volume~70
+  of {\em London Mathematical Society Lecture Note Series}.
+\newblock Cambridge University Press, Cambridge-New York, 1982.
+
+\bibitem{emery}
+M.~\'{E}mery.
+\newblock {\em Stochastic {C}alculus in {M}anifolds}.
+\newblock Universitext. Springer-Verlag, Berlin, 1989.
+\newblock With an appendix by P.-A. Meyer.
+
+\bibitem{foster_habermann}
+J.~Foster and K.~Habermann.
+\newblock Brownian bridge expansions for {L}\'{e}vy area approximations and
+  particular values of the {R}iemann zeta function.
+\newblock {\em Combin. Probab. Comput.}, 32(3):370--397, 2023.
+
+\bibitem{foster20}
+J.~Foster, T.~Lyons, and H.~Oberhauser.
+\newblock An optimal polynomial approximation of {B}rownian motion.
+\newblock {\em SIAM J. Numer. Anal.}, 58(3):1393--1421, 2020.
+
+\bibitem{gaveau1977principe}
+B.~Gaveau.
+\newblock Principe de moindre action, propagation de la chaleur et estim\'{e}es
+  sous elliptiques sur certains groupes nilpotents.
+\newblock {\em Acta Math.}, 139(1-2):95--153, 1977.
+
+\bibitem{bayes0}
+A.~Golightly and D.~J. Wilkinson.
+\newblock Bayesian sequential inference for nonlinear multivariate diffusions.
+\newblock {\em Stat. Comput.}, 16(4):323--338, 2006.
+
+\bibitem{GolightlyWilkinsonChapter}
+A.~Golightly and D.~J. Wilkinson.
+\newblock {\em Learning and Inference in Computational Systems Biology},
+  chapter {Markov chain Monte Carlo algorithms for SDE parameter estimation},
+  pages 253--276.
+\newblock MIT Press, 2010.
+
+\bibitem{grigor2013stochastic}
+A.~Grigor’yan.
+\newblock Stochastic completeness of symmetric {M}arkov processes and volume
+  growth.
+\newblock {\em Rend. Semin. Mat. Univ. Politec. Torino}, 71(2):227--237, 2013.
+
+\bibitem{grong2022geometric}
+E.~Grong, T.~Nilssen, and A.~Schmeding.
+\newblock Geometric rough paths on infinite dimensional spaces.
+\newblock {\em J. Differential Equations}, 340:151--178, 2022.
+
+\bibitem{grong2019stochastic}
+E.~Grong and A.~Thalmaier.
+\newblock Stochastic completeness and gradient representations for
+  sub-{R}iemannian manifolds.
+\newblock {\em Potential Anal.}, 51(2):219--254, 2019.
+
+\bibitem{Hab18}
+K.~Habermann.
+\newblock Small-time fluctuations for sub-{R}iemannian diffusion loops.
+\newblock {\em Probab. Theory Related Fields}, 171(3-4):617--652, 2018.
+
+\bibitem{Hab19}
+K.~Habermann.
+\newblock Small-time fluctuations for the bridge in a model class of
+  hypoelliptic diffusions of weak {H}\"{o}rmander type.
+\newblock {\em Electron. J. Probab.}, 24:Paper No. 11, 19, 2019.
+
+\bibitem{semicircle}
+K.~Habermann.
+\newblock A semicircle law and decorrelation phenomena for iterated
+  {K}olmogorov loops.
+\newblock {\em J. Lond. Math. Soc. (2)}, 103(2):558--586, 2021.
+
+\bibitem{haussmann1986time}
+U.~G. Haussmann and E.~Pardoux.
+\newblock Time reversal of diffusions.
+\newblock {\em Ann. Probab.}, 14(4):1188--1205, 1986.
+
+\bibitem{HdBDT21}
+J.~Heng, V.~De~Bortoli, A.~Doucet, and J.~Thornton.
+\newblock Simulating diffusion bridges with score matching, 2022.
+\newblock arXiv:2111.07243.
+
+\bibitem{Hor67}
+L.~H{\"o}rmander.
+\newblock Hypoelliptic second order differential equations.
+\newblock {\em Acta Math.}, 119:147--171, 1967.
+
+\bibitem{hsu}
+E.~P. Hsu.
+\newblock {\em Stochastic {A}nalysis on {M}anifolds}, volume~38 of {\em
+  Graduate Studies in Mathematics}.
+\newblock American Mathematical Society, Providence, RI, 2002.
+
+\bibitem{huangRiemannianDiffusionModels2022}
+C.-W. Huang, M.~Aghajohari, J.~Bose, P.~Panangaden, and A.~Courville.
+\newblock Riemannian {D}iffusion {M}odels.
+\newblock In {\em Advances in Neural Information Processing Systems}, May 2022.
+
+\bibitem{hyvarinenEstimationNonNormalizedStatistical2005}
+A.~Hyv\"{a}rinen.
+\newblock Estimation of non-normalized statistical models by score matching.
+\newblock {\em J. Mach. Learn. Res.}, 6:695--709, 2005.
+
+\bibitem{jensen2022discrete}
+M.~H. Jensen, S.~Joshi, and S.~Sommer.
+\newblock Discrete-{T}ime {O}bservations of {B}rownian {M}otion on {L}ie groups
+  and {H}omogeneous {S}paces: Sampling and {M}etric {E}stimation.
+\newblock {\em Algorithms}, 15(8):290, 2022.
+
+\bibitem{jensen2019simulation}
+M.~H. Jensen, A.~Mallasto, and S.~Sommer.
+\newblock Simulation of conditioned diffusions on the flat torus.
+\newblock In {\em Geometric Science of Information: 4th International
+  Conference, GSI 2019, Toulouse, France, August 27--29, 2019, Proceedings 4},
+  pages 685--694. Springer, 2019.
+
+\bibitem{JS21}
+M.~H. Jensen and S.~Sommer.
+\newblock Simulation of conditioned semimartingales on {R}iemannian manifolds,
+  2021.
+\newblock arXiv:2105.13190.
+
+\bibitem{kloeden1992stochastic}
+P.~E. Kloeden and E.~Platen.
+\newblock {\em Numerical solution of stochastic differential equations},
+  volume~23 of {\em Applications of Mathematics}.
+\newblock Springer-Verlag, Berlin, 1992.
+
+\bibitem{kloeden1992approximation}
+P.~E. Kloeden, E.~Platen, and I.~W. Wright.
+\newblock The approximation of multiple stochastic integrals.
+\newblock {\em Stochastic Anal. Appl.}, 10(4):431--441, 1992.
+
+\bibitem{KuznetsovLevyArea1}
+D.~F. Kuznetsov.
+\newblock {A method of expansion and approximation of repeated stochastic
+  {S}tratonovich integrals based on multiple {F}ourier series on full
+  orthonormal systems. [In Russian]}.
+\newblock {\em Electronic Journal ``Differential Equations and Control
+  Processes''}, 1:18--77, 1997.
+
+\bibitem{leandre1987majoration}
+R.~L\'{e}andre.
+\newblock Majoration en temps petit de la densit\'{e} d'une diffusion
+  d\'{e}g\'{e}n\'{e}r\'{e}e.
+\newblock {\em Probab. Theory Related Fields}, 74(2):289--294, 1987.
+
+\bibitem{leandre1987minoration}
+R.~L\'{e}andre.
+\newblock Minoration en temps petit de la densit\'{e} d'une diffusion
+  d\'{e}g\'{e}n\'{e}r\'{e}e.
+\newblock {\em J. Funct. Anal.}, 74(2):399--414, 1987.
+
+\bibitem{LinChenMykland}
+M.~Lin, R.~Chen, and P.~Mykland.
+\newblock On generating {M}onte {C}arlo samples of continuous diffusion
+  bridges.
+\newblock {\em J. Amer. Statist. Assoc.}, 105(490):820--838, 2010.
+
+\bibitem{mider2021continuous}
+M.~Mider, M.~Schauer, and F.~van~der Meulen.
+\newblock Continuous-discrete smoothing of diffusions.
+\newblock {\em Electron. J. Stat.}, 15(2):4295--4342, 2021.
+
+\bibitem{milstein2013numerical}
+G.~N. Milstein.
+\newblock {\em Numerical integration of stochastic differential equations},
+  volume 313.
+\newblock Springer Science \& Business Media, 2013.
+
+\bibitem{montgomery2002tour}
+R.~Montgomery.
+\newblock {\em A tour of subriemannian geometries, their geodesics and
+  applications}, volume~91 of {\em Mathematical Surveys and Monographs}.
+\newblock American Mathematical Society, Providence, RI, 2002.
+
+\bibitem{mrongowius2022approximation}
+J.~Mrongowius and A.~R\"{o}\ss~ler.
+\newblock On the approximation and simulation of iterated stochastic integrals
+  and the corresponding {L}\'{e}vy areas in terms of a multidimensional
+  {B}rownian motion.
+\newblock {\em Stoch. Anal. Appl.}, 40(3):397--425, 2022.
+
+\bibitem{muniz2022higher}
+M.~Muniz, M.~Ehrhardt, M.~G\"{u}nther, and R.~Winkler.
+\newblock Higher strong order methods for linear {I}t\^{o} {SDE}s on matrix
+  {L}ie groups.
+\newblock {\em BIT}, 62(4):1095--1119, 2022.
+
+\bibitem{neel2020uniform}
+R.~W. Neel and L.~Sacchelli.
+\newblock Uniform, localized asymptotics for sub-{R}iemannian heat kernels and
+  diffusions, 2020.
+\newblock arXiv:2012.12888.
+
+\bibitem{norris86}
+J.~Norris.
+\newblock Simplified {M}alliavin calculus.
+\newblock In {\em S\'{e}minaire de {P}robabilit\'{e}s, {XX}}, volume 1204 of
+  {\em Lecture Notes in Math.}, pages 101--130. Springer, Berlin, 1986.
+
+\bibitem{bridgesim3}
+O.~Papaspiliopoulos and G.~Roberts.
+\newblock Importance sampling techniques for estimation of diffusion models.
+\newblock In {\em Statistical methods for stochastic differential equations},
+  volume 124 of {\em Monogr. Statist. Appl. Probab.}, pages 311--340. CRC
+  Press, Boca Raton, FL, 2012.
+
+\bibitem{bayes1}
+O.~Papaspiliopoulos, G.~O. Roberts, and O.~Stramer.
+\newblock Data augmentation for diffusions.
+\newblock {\em J. Comput. Graph. Statist.}, 22(3):665--688, 2013.
+
+\bibitem{piggott2016geometric}
+M.~J. Piggott and V.~Solo.
+\newblock Geometric {E}uler--{M}aruyama schemes for stochastic differential
+  equations in {${\rm SO}(n)$} and {${\rm SE}(n)$}.
+\newblock {\em SIAM J. Numer. Anal.}, 54(4):2490--2516, 2016.
+
+\bibitem{Ras38}
+P.~K. Rashevski\u\i.
+\newblock On the connectability of two arbitrary points of a totally
+  nonholonomic space by an admissible curve.
+\newblock {\em Uchen. Zap. Mosk. Ped. Inst. Ser. Fiz.-Mat. Nauk}, 3(2):83--94,
+  1938.
+
+\bibitem{sarkka2019applied}
+S.~S{\"a}rkk{\"a} and A.~Solin.
+\newblock {\em Applied stochastic differential equations}, volume~10.
+\newblock Cambridge University Press, 2019.
+
+\bibitem{bridgesim6}
+M.~Schauer, F.~van~der Meulen, and H.~van Zanten.
+\newblock Guided proposals for simulating multi-dimensional diffusion bridges.
+\newblock {\em Bernoulli}, 23(4A):2917--2950, 2017.
+
+\bibitem{medical2}
+S.~Sommer, A.~Arnaudon, L.~Kuhnel, and S.~Joshi.
+\newblock Bridge {S}imulation and {M}etric {E}stimation on {L}andmark
+  {M}anifolds.
+\newblock In {\em Graphs in Biomedical Image Analysis, Computational Anatomy
+  and Imaging Genetics}, pages 79--91. Springer, 2017.
+
+\bibitem{song2019generative}
+Y.~Song and S.~Ermon.
+\newblock Generative modeling by estimating gradients of the data distribution.
+\newblock In {\em Advances in Neural Information Processing Systems}, 2019.
+
+\bibitem{song2020improved}
+Y.~Song and S.~Ermon.
+\newblock Improved techniques for training score-based generative models.
+\newblock In {\em Advances in Neural Information Processing Systems}, 2020.
+
+\bibitem{StVa72}
+D.~W. Stroock and S.~R.~S. Varadhan.
+\newblock On the support of diffusion processes with applications to the strong
+  maximum principle.
+\newblock In {\em Proceedings of the {S}ixth {B}erkeley {S}ymposium on
+  {M}athematical {S}tatistics and {P}robability, {V}ol. {III}: {P}robability
+  theory}, pages 333--359. Univ. California Press, Berkeley, California, 1972.
+
+\bibitem{Stuart}
+A.~M. Stuart, J.~Voss, and P.~Wiberg.
+\newblock Fast communication conditional path sampling of {SDE}s and the
+  {L}angevin {MCMC} method.
+\newblock {\em Commun. Math. Sci.}, 2(4):685--697, 2004.
+
+\bibitem{sussmann1973orbits}
+H.~J. Sussmann.
+\newblock Orbits of families of vector fields and integrability of
+  distributions.
+\newblock {\em Trans. Amer. Math. Soc.}, 180:171--188, 1973.
+
+\bibitem{bayes2}
+F.~van~der Meulen and M.~Schauer.
+\newblock Bayesian estimation of discretely observed multi-dimensional
+  diffusion processes using guided proposals.
+\newblock {\em Electron. J. Stat.}, 11(1):2358--2396, 2017.
+
+\bibitem{vincentConnectionScoreMatching2011}
+P.~Vincent.
+\newblock A connection between score matching and denoising autoencoders.
+\newblock {\em Neural Comput.}, 23(7):1661--1674, 2011.
+
+\bibitem{whitaker2017}
+G.~A. Whitaker, A.~Golightly, R.~J. Boys, and C.~Sherlock.
+\newblock Improved bridge constructs for stochastic differential equations.
+\newblock {\em Stat. Comput.}, 27(4):885--900, 2017.
+
+\end{thebibliography}

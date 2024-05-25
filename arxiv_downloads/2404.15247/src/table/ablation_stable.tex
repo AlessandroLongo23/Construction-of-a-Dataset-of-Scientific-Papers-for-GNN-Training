@@ -1,0 +1,13 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Model & \multicolumn{1}{c}{HumanEval} & \multicolumn{1}{c}{HumanEval+} \\ \midrule
+\baselinestable   & 62.2                          & 56.1                           \\ \midrule
+\stablemoe   & 64.0                            & 59.1                           \\
+\stablemerge   &    \textbf{68.3}                           &    \textbf{62.2}                            \\ \bottomrule
+\end{tabular}
+\caption{\label{tab:ablation-stable}
+Ablation over the effect of the base model by replacing \dscoderbase 1.3B with \stablecoder 3B. \ours can consistently improve the instruction tuning performance of different base code \llm{s}.
+}
+\end{table}

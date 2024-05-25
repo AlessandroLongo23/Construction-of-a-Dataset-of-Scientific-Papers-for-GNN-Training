@@ -1,0 +1,19 @@
+\chapter*{Introduzione}
+Lo scopo di questa tesi è la presentazione di un algoritmo il cui scopo è la generazione di un dataset per l'addestramento di una GNN. 
+Il dataset generato contiene coppie composte ognuna da un file LaTeX (.tex) e dal file pdf (.pdf) generato a partire da esso: 
+oltre a questo vengono generati dei dati per il matching tra i due file, che forniscono le informazioni per associare
+ogni elemento presenti nel file di ouput (pdf) alla corrispondente porzione del file di input (LaTeX).
+
+In questo modo, ognuno di essi può essere trattato come un nodo della GNN e le relazioni tra essi, come per esempio l'appartenenza
+alla stessa pagina o allo stesso blocco di testo, possono essere rappresentate con degli archi.
+
+\section*{Struttura della tesi}
+    \subsection*{Capitolo 1}
+    Nel primo capitolo verrà introdotto il problema del DLA e alcune delle soluzioni che sono state impiegate nel corso degli anni per risolverlo.
+
+    \subsection*{Capitolo 2}
+    Il secondo capitolo presenta una descrizione ad alto livello dell'algoritmo proposto e del suo processo di stesura, nonché la discussione di
+    alcune scelte implementative e di possibili alternative.
+
+    \subsection*{Capitolo 3}
+    L'ultimo capitolo analizza i risultati ottenuti, assesta la qualità del matching nelle coppie prodotte e suggerisce degli spunti per possibili miglioramenti futuri. 

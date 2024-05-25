@@ -1,0 +1,535 @@
+%apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (0) allowed
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{39}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{https://doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Lecun}\ \emph {et~al.}(1998)\citenamefont {Lecun},
+  \citenamefont {Bottou}, \citenamefont {Bengio},\ and\ \citenamefont
+  {Haffner}}]{art:LeNet}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Lecun}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Bottou}},
+  \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Bengio}},\ and\ \bibinfo
+  {author} {\bibfnamefont {P.}~\bibnamefont {Haffner}},\ }\bibfield  {title}
+  {\bibinfo {title} {Gradient-based learning applied to document recognition},\
+  }\href {https://doi.org/10.1109/5.726791} {\bibfield  {journal} {\bibinfo
+  {journal} {Proc. IEEE}\ }\textbf {\bibinfo {volume} {86}},\ \bibinfo {pages}
+  {2278} (\bibinfo {year} {1998})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Krizhevsky}\ \emph {et~al.}(2017)\citenamefont
+  {Krizhevsky}, \citenamefont {Sutskever},\ and\ \citenamefont
+  {Hinton}}]{art:AlexNet}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Krizhevsky}}, \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
+  {Sutskever}},\ and\ \bibinfo {author} {\bibfnamefont {G.~E.}\ \bibnamefont
+  {Hinton}},\ }\bibfield  {title} {\bibinfo {title} {Image{N}et classification
+  with deep convolutional neural networks},\ }\href
+  {https://doi.org/10.1145/3065386} {\bibfield  {journal} {\bibinfo  {journal}
+  {Commun. ACM}\ }\textbf {\bibinfo {volume} {60}},\ \bibinfo {pages} {84–90}
+  (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {He}\ \emph {et~al.}()\citenamefont {He},
+  \citenamefont {Zhang}, \citenamefont {Ren},\ and\ \citenamefont
+  {Sun}}]{art:ResNet}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {He}}, \bibinfo {author} {\bibfnamefont {X.}~\bibnamefont {Zhang}}, \bibinfo
+  {author} {\bibfnamefont {S.}~\bibnamefont {Ren}},\ and\ \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Sun}},\ }\bibfield  {title} {\bibinfo
+  {title} {Deep residual learning for image recognition},\ }in\ \href
+  {https://doi.org/10.1109/CVPR.2016.90} {\emph {\bibinfo {booktitle} {IEEE
+  Conference on Computer Vision and Pattern Recognition}}},\ \bibinfo {series
+  and number} {CVPR '16},\ p.\ \bibinfo {pages} {770}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Dosovitskiy}\ \emph {et~al.}()\citenamefont
+  {Dosovitskiy}, \citenamefont {Beyer}, \citenamefont {Kolesnikov},
+  \citenamefont {Weissenborn}, \citenamefont {Zhai}, \citenamefont
+  {Unterthiner}, \citenamefont {Dehghani}, \citenamefont {Minderer},
+  \citenamefont {Heigold}, \citenamefont {Gelly}, \citenamefont {Uszkoreit},\
+  and\ \citenamefont {Houlsby}}]{art:ViT}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Dosovitskiy}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Beyer}},
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Kolesnikov}}, \bibinfo
+  {author} {\bibfnamefont {D.}~\bibnamefont {Weissenborn}}, \bibinfo {author}
+  {\bibfnamefont {X.}~\bibnamefont {Zhai}}, \bibinfo {author} {\bibfnamefont
+  {T.}~\bibnamefont {Unterthiner}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Dehghani}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Minderer}}, \bibinfo {author} {\bibfnamefont
+  {G.}~\bibnamefont {Heigold}}, \bibinfo {author} {\bibfnamefont
+  {S.}~\bibnamefont {Gelly}}, \bibinfo {author} {\bibfnamefont
+  {J.}~\bibnamefont {Uszkoreit}},\ and\ \bibinfo {author} {\bibfnamefont
+  {N.}~\bibnamefont {Houlsby}},\ }\bibfield  {title} {\bibinfo {title} {An
+  image is worth 16x16 words: Transformers for image recognition at scale},\
+  }in\ \href@noop {} {\emph {\bibinfo {booktitle} {International Conference on
+  Learning Representations}}},\ \bibinfo {series and number} {ICLR '21},\
+  \Eprint {https://arxiv.org/abs/2010.11929} {arXiv:2010.11929 [cs.CV]}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Shastri}\ \emph {et~al.}(2021)\citenamefont
+  {Shastri}, \citenamefont {Tait}, \citenamefont {Ferreira~de Lima},
+  \citenamefont {Pernice}, \citenamefont {Bhaskaran}, \citenamefont {Wright},\
+  and\ \citenamefont {Prucnal}}]{art:Shastri}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~J.}\ \bibnamefont
+  {Shastri}}, \bibinfo {author} {\bibfnamefont {A.~N.}\ \bibnamefont {Tait}},
+  \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Ferreira~de Lima}},
+  \bibinfo {author} {\bibfnamefont {W.~H.~P.}\ \bibnamefont {Pernice}},
+  \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Bhaskaran}}, \bibinfo
+  {author} {\bibfnamefont {C.~D.}\ \bibnamefont {Wright}},\ and\ \bibinfo
+  {author} {\bibfnamefont {P.~R.}\ \bibnamefont {Prucnal}},\ }\bibfield
+  {title} {\bibinfo {title} {Photonics for artificial intelligence and
+  neuromorphic computing},\ }\href {https://doi.org/10.1038/s41566-020-00754-y}
+  {\bibfield  {journal} {\bibinfo  {journal} {Nat. Photon.}\ }\textbf {\bibinfo
+  {volume} {15}},\ \bibinfo {pages} {102–114} (\bibinfo {year}
+  {2021})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Lin}\ \emph {et~al.}(2018)\citenamefont {Lin},
+  \citenamefont {Rivenson}, \citenamefont {Yardimci}, \citenamefont {Veli},
+  \citenamefont {Luo}, \citenamefont {Jarrahi},\ and\ \citenamefont
+  {Ozcan}}]{art:Lin}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {X.}~\bibnamefont
+  {Lin}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Rivenson}},
+  \bibinfo {author} {\bibfnamefont {N.~T.}\ \bibnamefont {Yardimci}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Veli}}, \bibinfo {author}
+  {\bibfnamefont {Y.}~\bibnamefont {Luo}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Jarrahi}},\ and\ \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {Ozcan}},\ }\bibfield  {title} {\bibinfo {title}
+  {All-optical machine learning using diffractive deep neural networks},\
+  }\href {https://doi.org/10.1126/science.aat8084} {\bibfield  {journal}
+  {\bibinfo  {journal} {Science}\ }\textbf {\bibinfo {volume} {361}},\ \bibinfo
+  {pages} {1004–1008} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Zuo}\ \emph {et~al.}(2019)\citenamefont {Zuo},
+  \citenamefont {Li}, \citenamefont {Zhao}, \citenamefont {Jiang},
+  \citenamefont {Chen}, \citenamefont {Chen}, \citenamefont {Jo}, \citenamefont
+  {Liu},\ and\ \citenamefont {Du}}]{art:Zuo}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Zuo}}, \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Li}}, \bibinfo
+  {author} {\bibfnamefont {Y.}~\bibnamefont {Zhao}}, \bibinfo {author}
+  {\bibfnamefont {Y.}~\bibnamefont {Jiang}}, \bibinfo {author} {\bibfnamefont
+  {Y.-C.}\ \bibnamefont {Chen}}, \bibinfo {author} {\bibfnamefont
+  {P.}~\bibnamefont {Chen}}, \bibinfo {author} {\bibfnamefont {G.-B.}\
+  \bibnamefont {Jo}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Liu}},\ and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Du}},\
+  }\bibfield  {title} {\bibinfo {title} {All-optical neural network with
+  nonlinear activation functions},\ }\href
+  {https://doi.org/10.1364/OPTICA.6.001132} {\bibfield  {journal} {\bibinfo
+  {journal} {Optica}\ }\textbf {\bibinfo {volume} {6}},\ \bibinfo {pages}
+  {1132} (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Colburn}\ \emph {et~al.}(2019)\citenamefont
+  {Colburn}, \citenamefont {Chu}, \citenamefont {Shilzerman},\ and\
+  \citenamefont {Majumdar}}]{art:Colburn}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Colburn}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Chu}},
+  \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Shilzerman}},\ and\
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Majumdar}},\ }\bibfield
+  {title} {\bibinfo {title} {Optical frontend for a convolutional neural
+  network},\ }\href {https://doi.org/10.1364/AO.58.003179} {\bibfield
+  {journal} {\bibinfo  {journal} {Appl. Opt.}\ }\textbf {\bibinfo {volume}
+  {58}},\ \bibinfo {pages} {3179} (\bibinfo {year} {2019})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Li}\ \emph {et~al.}(2021)\citenamefont {Li},
+  \citenamefont {Ni}, \citenamefont {Feng}, \citenamefont {Cui}, \citenamefont
+  {Liu}, \citenamefont {Zhang},\ and\ \citenamefont {Huang}}]{art:Li}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Li}}, \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Ni}}, \bibinfo
+  {author} {\bibfnamefont {X.}~\bibnamefont {Feng}}, \bibinfo {author}
+  {\bibfnamefont {K.}~\bibnamefont {Cui}}, \bibinfo {author} {\bibfnamefont
+  {F.}~\bibnamefont {Liu}}, \bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
+  {Zhang}},\ and\ \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Huang}},\
+  }\bibfield  {title} {\bibinfo {title} {All-optical image identification with
+  programmable matrix transformation},\ }\href
+  {https://doi.org/10.1364/OE.430281} {\bibfield  {journal} {\bibinfo
+  {journal} {Opt. Express}\ }\textbf {\bibinfo {volume} {29}},\ \bibinfo
+  {pages} {26474} (\bibinfo {year} {2021})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Luo}\ \emph {et~al.}(2022)\citenamefont {Luo},
+  \citenamefont {Zhao}, \citenamefont {Li}, \citenamefont {Çetintaş},
+  \citenamefont {Rivenson}, \citenamefont {Jarrahi},\ and\ \citenamefont
+  {Ozcan}}]{art:Luo}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Luo}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Zhao}}, \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Li}}, \bibinfo {author}
+  {\bibfnamefont {E.}~\bibnamefont {Çetintaş}}, \bibinfo {author}
+  {\bibfnamefont {Y.}~\bibnamefont {Rivenson}}, \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {Jarrahi}},\ and\ \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {Ozcan}},\ }\bibfield  {title} {\bibinfo
+  {title} {Computational imaging without a computer: seeing through random
+  diffusers at the speed of light},\ }\href
+  {https://doi.org/10.1186/s43593-022-00012-4} {\bibfield  {journal} {\bibinfo
+  {journal} {eLight}\ }\textbf {\bibinfo {volume} {2}},\ \bibinfo {pages} {4}
+  (\bibinfo {year} {2022})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {McMahon}(2023)}]{art:McMahon}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~L.}\ \bibnamefont
+  {McMahon}},\ }\bibfield  {title} {\bibinfo {title} {The physics of optical
+  computing},\ }\href {https://doi.org/10.1038/s42254-023-00645-5} {\bibfield
+  {journal} {\bibinfo  {journal} {Nat. Rev. Phys.}\ }\textbf {\bibinfo {volume}
+  {5}},\ \bibinfo {pages} {717–734} (\bibinfo {year} {2023})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Benatti}\ \emph {et~al.}(2019)\citenamefont
+  {Benatti}, \citenamefont {Mancini},\ and\ \citenamefont
+  {Mangini}}]{art:Mangini}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Benatti}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Mancini}},\
+  and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Mangini}},\
+  }\bibfield  {title} {\bibinfo {title} {Continuous variable quantum
+  perceptron},\ }\href {https://doi.org/10.1142/s0219749919410090} {\bibfield
+  {journal} {\bibinfo  {journal} {Int. J. Quantum Inf.}\ }\textbf {\bibinfo
+  {volume} {17}},\ \bibinfo {pages} {1941009} (\bibinfo {year}
+  {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Tacchino}\ \emph {et~al.}(2019)\citenamefont
+  {Tacchino}, \citenamefont {Macchiavello}, \citenamefont {Gerace},\ and\
+  \citenamefont {Bajoni}}]{art:Tacchino}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Tacchino}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Macchiavello}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Gerace}},\ and\ \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Bajoni}},\ }\bibfield  {title} {\bibinfo {title} {An artificial neuron
+  implemented on an actual quantum processor},\ }\href
+  {https://doi.org/10.1038/s41534-019-0140-4} {\bibfield  {journal} {\bibinfo
+  {journal} {Npj Quantum Inf.}\ }\textbf {\bibinfo {volume} {5}},\ \bibinfo
+  {pages} {26} (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Cerezo}\ \emph {et~al.}(2021)\citenamefont {Cerezo},
+  \citenamefont {Arrasmith}, \citenamefont {Babbush}, \citenamefont {Benjamin},
+  \citenamefont {Endo}, \citenamefont {Fujii}, \citenamefont {McClean},
+  \citenamefont {Mitarai}, \citenamefont {Yuan}, \citenamefont {Cincio},\ and\
+  \citenamefont {Coles}}]{art:Cerezo1}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Cerezo}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Arrasmith}},
+  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Babbush}}, \bibinfo
+  {author} {\bibfnamefont {S.~C.}\ \bibnamefont {Benjamin}}, \bibinfo {author}
+  {\bibfnamefont {S.}~\bibnamefont {Endo}}, \bibinfo {author} {\bibfnamefont
+  {K.}~\bibnamefont {Fujii}}, \bibinfo {author} {\bibfnamefont {J.~R.}\
+  \bibnamefont {McClean}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Mitarai}}, \bibinfo {author} {\bibfnamefont {X.}~\bibnamefont {Yuan}},
+  \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Cincio}},\ and\ \bibinfo
+  {author} {\bibfnamefont {P.~J.}\ \bibnamefont {Coles}},\ }\bibfield  {title}
+  {\bibinfo {title} {Variational quantum algorithms},\ }\href
+  {https://doi.org/10.1038/s42254-021-00348-9} {\bibfield  {journal} {\bibinfo
+  {journal} {Nat. Rev. Phys.}\ }\textbf {\bibinfo {volume} {3}},\ \bibinfo
+  {pages} {625–644} (\bibinfo {year} {2021})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Senokosov}\ \emph {et~al.}(2024)\citenamefont
+  {Senokosov}, \citenamefont {Sedykh}, \citenamefont {Sagingalieva},
+  \citenamefont {Kyriacou},\ and\ \citenamefont {Melnikov}}]{art:Senokosov}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Senokosov}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Sedykh}},
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Sagingalieva}}, \bibinfo
+  {author} {\bibfnamefont {B.}~\bibnamefont {Kyriacou}},\ and\ \bibinfo
+  {author} {\bibfnamefont {A.}~\bibnamefont {Melnikov}},\ }\bibfield  {title}
+  {\bibinfo {title} {Quantum machine learning for image classification},\
+  }\href {https://doi.org/10.1088/2632-2153/ad2aef} {\bibfield  {journal}
+  {\bibinfo  {journal} {Mach. Learn.: Sci. Technol.}\ }\textbf {\bibinfo
+  {volume} {5}},\ \bibinfo {pages} {015040} (\bibinfo {year}
+  {2024})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Cerezo}\ \emph {et~al.}(2024)\citenamefont {Cerezo},
+  \citenamefont {Larocca}, \citenamefont {García-Martín}, \citenamefont
+  {Diaz}, \citenamefont {Braccia}, \citenamefont {Fontana}, \citenamefont
+  {Rudolph}, \citenamefont {Bermejo}, \citenamefont {Ijaz}, \citenamefont
+  {Thanasilp}, \citenamefont {Anschuetz},\ and\ \citenamefont
+  {Holmes}}]{art:Cerezo2}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Cerezo}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Larocca}},
+  \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {García-Martín}},
+  \bibinfo {author} {\bibfnamefont {N.~L.}\ \bibnamefont {Diaz}}, \bibinfo
+  {author} {\bibfnamefont {P.}~\bibnamefont {Braccia}}, \bibinfo {author}
+  {\bibfnamefont {E.}~\bibnamefont {Fontana}}, \bibinfo {author} {\bibfnamefont
+  {M.~S.}\ \bibnamefont {Rudolph}}, \bibinfo {author} {\bibfnamefont
+  {P.}~\bibnamefont {Bermejo}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {Ijaz}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Thanasilp}}, \bibinfo {author} {\bibfnamefont {E.~R.}\ \bibnamefont
+  {Anschuetz}},\ and\ \bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont
+  {Holmes}},\ }\href@noop {} {\bibinfo {title} {Does provable absence of barren
+  plateaus imply classical simulability? {O}r, why we need to rethink
+  variational quantum computing}} (\bibinfo {year} {2024}),\ \Eprint
+  {https://arxiv.org/abs/2312.09121} {arXiv:2312.09121 [quant-ph]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Steinbrecher}\ \emph {et~al.}(2019)\citenamefont
+  {Steinbrecher}, \citenamefont {Olson}, \citenamefont {Englund},\ and\
+  \citenamefont {Carolan}}]{art:Steinbrecher}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.~R.}\ \bibnamefont
+  {Steinbrecher}}, \bibinfo {author} {\bibfnamefont {J.~P.}\ \bibnamefont
+  {Olson}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Englund}},\
+  and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Carolan}},\
+  }\bibfield  {title} {\bibinfo {title} {Quantum optical neural networks},\
+  }\href {https://doi.org/10.1038/s41534-019-0174-7} {\bibfield  {journal}
+  {\bibinfo  {journal} {Npj Quantum Inf.}\ }\textbf {\bibinfo {volume} {5}},\
+  \bibinfo {pages} {60} (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Killoran}\ \emph {et~al.}(2019)\citenamefont
+  {Killoran}, \citenamefont {Bromley}, \citenamefont {Arrazola}, \citenamefont
+  {Schuld}, \citenamefont {Quesada},\ and\ \citenamefont
+  {Lloyd}}]{art:Killoran}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Killoran}}, \bibinfo {author} {\bibfnamefont {T.~R.}\ \bibnamefont
+  {Bromley}}, \bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont
+  {Arrazola}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Schuld}},
+  \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Quesada}},\ and\ \bibinfo
+  {author} {\bibfnamefont {S.}~\bibnamefont {Lloyd}},\ }\bibfield  {title}
+  {\bibinfo {title} {Continuous-variable quantum neural networks},\ }\href
+  {https://doi.org/10.1103/PhysRevResearch.1.033063} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Res.}\ }\textbf {\bibinfo {volume} {1}},\
+  \bibinfo {pages} {033063} (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Sui}\ \emph {et~al.}(2020)\citenamefont {Sui},
+  \citenamefont {Wu}, \citenamefont {Liu}, \citenamefont {Chen},\ and\
+  \citenamefont {Gu}}]{art:Sui}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {X.}~\bibnamefont
+  {Sui}}, \bibinfo {author} {\bibfnamefont {Q.}~\bibnamefont {Wu}}, \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Liu}}, \bibinfo {author}
+  {\bibfnamefont {Q.}~\bibnamefont {Chen}},\ and\ \bibinfo {author}
+  {\bibfnamefont {G.}~\bibnamefont {Gu}},\ }\bibfield  {title} {\bibinfo
+  {title} {A review of optical neural networks},\ }\href
+  {https://doi.org/10.1109/ACCESS.2020.2987333} {\bibfield  {journal} {\bibinfo
+   {journal} {IEEE Access}\ }\textbf {\bibinfo {volume} {8}},\ \bibinfo {pages}
+  {70773} (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Stanev}\ \emph {et~al.}(2023)\citenamefont {Stanev},
+  \citenamefont {Spagnolo},\ and\ \citenamefont {Sciarrino}}]{art:Stanev}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Stanev}}, \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Spagnolo}},\
+  and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Sciarrino}},\
+  }\bibfield  {title} {\bibinfo {title} {Deterministic optimal quantum cloning
+  via a quantum-optical neural network},\ }\href
+  {https://doi.org/10.1103/PhysRevResearch.5.013139} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Res.}\ }\textbf {\bibinfo {volume} {5}},\
+  \bibinfo {pages} {013139} (\bibinfo {year} {2023})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Wood}\ \emph {et~al.}(2024)\citenamefont {Wood},
+  \citenamefont {Shrapnel},\ and\ \citenamefont {Milburn}}]{art:Wood}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Wood}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Shrapnel}},\
+  and\ \bibinfo {author} {\bibfnamefont {G.~J.}\ \bibnamefont {Milburn}},\
+  }\href@noop {} {\bibinfo {title} {A {K}err kernel quantum learning machine}}
+  (\bibinfo {year} {2024}),\ \Eprint {https://arxiv.org/abs/2404.01787}
+  {arXiv:2404.01787 [quant-ph]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hong}\ \emph {et~al.}(1987)\citenamefont {Hong},
+  \citenamefont {Ou},\ and\ \citenamefont {Mandel}}]{art:Mandel}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~K.}\ \bibnamefont
+  {Hong}}, \bibinfo {author} {\bibfnamefont {Z.~Y.}\ \bibnamefont {Ou}},\ and\
+  \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Mandel}},\ }\bibfield
+  {title} {\bibinfo {title} {Measurement of subpicosecond time intervals
+  between two photons by interference},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.59.2044} {\bibfield  {journal} {\bibinfo
+   {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {59}},\ \bibinfo
+  {pages} {2044} (\bibinfo {year} {1987})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bowie}\ \emph {et~al.}(2023)\citenamefont {Bowie},
+  \citenamefont {Shrapnel},\ and\ \citenamefont {Kewming}}]{art:Bowie}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Bowie}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Shrapnel}},\
+  and\ \bibinfo {author} {\bibfnamefont {M.~J.}\ \bibnamefont {Kewming}},\
+  }\bibfield  {title} {\bibinfo {title} {Quantum kernel evaluation via
+  {H}ong–{O}u–{M}andel interference},\ }\href
+  {https://doi.org/10.1088/2058-9565/acfba9} {\bibfield  {journal} {\bibinfo
+  {journal} {Quantum Sci. Technol.}\ }\textbf {\bibinfo {volume} {9}},\
+  \bibinfo {pages} {015001} (\bibinfo {year} {2023})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Glorot}\ and\ \citenamefont
+  {Bengio}(2010)}]{art:Glorot}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {X.}~\bibnamefont
+  {Glorot}}\ and\ \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Bengio}},\ }\bibfield  {title} {\bibinfo {title} {Understanding the
+  difficulty of training deep feedforward neural networks},\ }in\ \href
+  {https://proceedings.mlr.press/v9/glorot10a.html} {\emph {\bibinfo
+  {booktitle} {Proceedings of the Thirteenth International Conference on
+  Artificial Intelligence and Statistics}}},\ \bibinfo {series} {PMLR},
+  Vol.~\bibinfo {volume} {9}\ (\bibinfo {year} {2010})\ pp.\ \bibinfo {pages}
+  {249--256}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Neff}\ \emph {et~al.}(1990)\citenamefont {Neff},
+  \citenamefont {Athale},\ and\ \citenamefont {Lee}}]{art:Neff}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Neff}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Athale}},\ and\
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Lee}},\ }\bibfield
+  {title} {\bibinfo {title} {Two-dimensional spatial light modulators: a
+  tutorial},\ }\href {https://doi.org/10.1109/5.53402} {\bibfield  {journal}
+  {\bibinfo  {journal} {Proc. IEEE}\ }\textbf {\bibinfo {volume} {78}},\
+  \bibinfo {pages} {826} (\bibinfo {year} {1990})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Zhang}\ \emph {et~al.}(2014)\citenamefont {Zhang},
+  \citenamefont {You},\ and\ \citenamefont {Chu}}]{art:Zhang}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont
+  {Zhang}}, \bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont {You}},\ and\
+  \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Chu}},\ }\bibfield
+  {title} {\bibinfo {title} {Fundamentals of phase-only liquid crystal on
+  silicon ({LCOS}) devices},\ }\href {https://doi.org/10.1038/lsa.2014.94}
+  {\bibfield  {journal} {\bibinfo  {journal} {Light Sci. Appl.}\ }\textbf
+  {\bibinfo {volume} {3}},\ \bibinfo {pages} {e213} (\bibinfo {year}
+  {2014})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Tensor{F}low Developers}}(2023)}]{soft:TensorFlow}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Tensor{F}low
+  Developers}}},\ }\href {https://doi.org/10.5281/zenodo.10126399} {\bibinfo
+  {title} {Tensor{F}low}} (\bibinfo {year} {2023})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Collobert}\ and\ \citenamefont
+  {Bengio}()}]{art:Bengio}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Collobert}}\ and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Bengio}},\ }\bibfield  {title} {\bibinfo {title} {Links between perceptrons,
+  {MLP}s and {SVM}s},\ }in\ \href {https://doi.org/10.1145/1015330.1015415}
+  {\emph {\bibinfo {booktitle} {Proceedings of the Twenty-First International
+  Conference on Machine Learning}}},\ \bibinfo {series and number} {ICML '04},\
+  p.~\bibinfo {pages} {23}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rosenblatt}(1958)}]{art:Rosenblatt}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Rosenblatt}},\ }\bibfield  {title} {\bibinfo {title} {The perceptron: {A}
+  probabilistic model for information storage and organization in the brain},\
+  }\href {https://doi.org/10.1037/h0042519} {\bibfield  {journal} {\bibinfo
+  {journal} {Psychol. Rev.}\ }\textbf {\bibinfo {volume} {65}},\ \bibinfo
+  {pages} {386} (\bibinfo {year} {1958})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Morgillo}\ and\ \citenamefont
+  {Roncallo}()}]{rep:QON}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~R.}\ \bibnamefont
+  {Morgillo}}\ and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Roncallo}},\ }\href
+  {https://github.com/simoneroncallo/quantum-optical-neuron} {}\bibinfo {note}
+  {\url{https://github.com/simoneroncallo/quantum-optical-neuron}}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Rezai}\ and\ \citenamefont
+  {Salehi}(2022)}]{art:Rezai}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Rezai}}\ and\ \bibinfo {author} {\bibfnamefont {J.~A.}\ \bibnamefont
+  {Salehi}},\ }\bibfield  {title} {\bibinfo {title} {Fundamentals of quantum
+  {F}ourier optics},\ }\href {https://doi.org/10.1109/TQE.2022.3224799}
+  {\bibfield  {journal} {\bibinfo  {journal} {IEEE Trans. Quantum Eng.}\
+  }\textbf {\bibinfo {volume} {4}},\ \bibinfo {pages} {1} (\bibinfo {year}
+  {2022})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Saleh}\ and\ \citenamefont
+  {Teich}(1991)}]{book:Saleh}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~E.~A.}\
+  \bibnamefont {Saleh}}\ and\ \bibinfo {author} {\bibfnamefont {M.~C.}\
+  \bibnamefont {Teich}},\ }\href {https://doi.org/10.1002/0471213748} {\emph
+  {\bibinfo {title} {Fundamentals of Photonics}}}\ (\bibinfo  {publisher}
+  {Wiley},\ \bibinfo {year} {1991})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Brańczyk}(2017)}]{art:Branczyk}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~M.}\ \bibnamefont
+  {Brańczyk}},\ }\href@noop {} {\bibinfo {title} {Hong-{O}u-{M}andel
+  interference}} (\bibinfo {year} {2017}),\ \Eprint
+  {https://arxiv.org/abs/1711.00080} {arXiv:1711.00080 [quant-ph]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Boyle}\ and\ \citenamefont
+  {Smith}(1970)}]{art:Boyle}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.~S.}\ \bibnamefont
+  {Boyle}}\ and\ \bibinfo {author} {\bibfnamefont {G.~E.}\ \bibnamefont
+  {Smith}},\ }\bibfield  {title} {\bibinfo {title} {Charge coupled
+  semiconductor devices},\ }\href
+  {https://doi.org/10.1002/j.1538-7305.1970.tb01790.x} {\bibfield  {journal}
+  {\bibinfo  {journal} {Bell Syst. Tech. J.}\ }\textbf {\bibinfo {volume}
+  {49}},\ \bibinfo {pages} {587} (\bibinfo {year} {1970})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Kolobov}(1999)}]{art:Kolobov}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~I.}\ \bibnamefont
+  {Kolobov}},\ }\bibfield  {title} {\bibinfo {title} {The spatial behavior of
+  nonclassical light},\ }\href {https://doi.org/10.1103/RevModPhys.71.1539}
+  {\bibfield  {journal} {\bibinfo  {journal} {Rev. Mod. Phys.}\ }\textbf
+  {\bibinfo {volume} {71}},\ \bibinfo {pages} {1539} (\bibinfo {year}
+  {1999})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Delaubert}\ \emph {et~al.}(2008)\citenamefont
+  {Delaubert}, \citenamefont {Treps}, \citenamefont {Fabre}, \citenamefont
+  {Bachor},\ and\ \citenamefont {Réfrégier}}]{art:Fabre}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Delaubert}}, \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Treps}},
+  \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Fabre}}, \bibinfo
+  {author} {\bibfnamefont {H.~A.}\ \bibnamefont {Bachor}},\ and\ \bibinfo
+  {author} {\bibfnamefont {P.}~\bibnamefont {Réfrégier}},\ }\bibfield
+  {title} {\bibinfo {title} {Quantum limits in image processing},\ }\href
+  {https://doi.org/10.1209/0295-5075/81/44001} {\bibfield  {journal} {\bibinfo
+  {journal} {EPL}\ }\textbf {\bibinfo {volume} {81}},\ \bibinfo {pages} {44001}
+  (\bibinfo {year} {2008})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Santosa}\ and\ \citenamefont
+  {Symes}(1986)}]{art:Santosa}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Santosa}}\ and\ \bibinfo {author} {\bibfnamefont {W.~W.}\ \bibnamefont
+  {Symes}},\ }\bibfield  {title} {\bibinfo {title} {Linear inversion of
+  band-limited reflection seismograms},\ }\href
+  {https://doi.org/10.1137/0907087} {\bibfield  {journal} {\bibinfo  {journal}
+  {SIAM J. Sci. Stat. Comput.}\ }\textbf {\bibinfo {volume} {7}},\ \bibinfo
+  {pages} {1307–1330} (\bibinfo {year} {1986})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Tikhonov}\ and\ \citenamefont
+  {Glasko}(1965)}]{art:Tikhonov}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Tikhonov}}\ and\ \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Glasko}},\ }\bibfield  {title} {\bibinfo {title} {Use of the regularization
+  method in non-linear problems},\ }\href
+  {https://doi.org/10.1016/0041-5553(65)90150-3} {\bibfield  {journal}
+  {\bibinfo  {journal} {{USSR} Comput. Math. Math. Phys.}\ }\textbf {\bibinfo
+  {volume} {5}},\ \bibinfo {pages} {93} (\bibinfo {year} {1965})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Rotondi}\ \emph {et~al.}(2022)\citenamefont
+  {Rotondi}, \citenamefont {Pedroni},\ and\ \citenamefont
+  {Pievatolo}}]{book:Rotondi}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Rotondi}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Pedroni}},\
+  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Pievatolo}},\ }\href
+  {https://doi.org/10.1007/978-3-031-09429-3} {\emph {\bibinfo {title}
+  {Probability, Statistics and Simulation: With Application Programs Written in
+  R}}}\ (\bibinfo  {publisher} {Springer},\ \bibinfo {year} {2022})\BibitemShut
+  {NoStop}%
+\end{thebibliography}%

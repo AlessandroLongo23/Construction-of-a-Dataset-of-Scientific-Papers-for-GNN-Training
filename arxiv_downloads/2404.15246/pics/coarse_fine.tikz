@@ -1,0 +1,62 @@
+\begin{tikzpicture}
+
+    \begin{scope}[thick, arrows=-stealth]
+    \draw (0pt,0pt) -- (37pt,13pt);
+    \draw (0pt,30pt) -- (37pt,17pt);
+    \draw (120pt,0pt) -- (146pt,0pt);
+    \draw (120pt,15pt) -- (146pt,15pt);
+    \draw (120pt,30pt) -- (146pt,30pt);
+    \draw (150pt,30pt) -- (176pt,30pt);
+    \draw (150pt,0pt) -- (177pt,5.5pt);
+    \draw (150pt,15pt) -- (177pt,9.5pt);
+    \draw (120pt,60pt) -- (147.5pt,32.5pt);
+    \draw (120pt,60pt) -- (147.5pt,17.5pt);
+    \draw (120pt,45pt) -- (147.5pt,2.5pt);
+    \end{scope}
+
+    \draw[black, fill=white] (0pt,0pt) circle (1.0ex);
+    \draw[black, fill=white] (0pt,30pt) circle (1.0ex);
+    \draw[black, fill=white] (40pt,15pt) circle (1.0ex);
+    \node[anchor=center] at (-10pt,0pt) {\small $A$};
+    \node[anchor=center] at (-10pt,30pt) {\small $u$};
+    \node[anchor=center] at (16pt,-20pt) {\textit{coarse-grained}};
+
+    \draw[black, fill=white] (120pt,0pt) circle (1.0ex);
+    \draw[black, fill=white] (120pt,15pt) circle (1.0ex);
+    \draw[black, fill=white] (120pt,30pt) circle (1.0ex);
+    \draw[black, fill=white] (120pt,45pt) circle (1.0ex);
+    \draw[black, fill=white] (120pt,60pt) circle (1.0ex);
+    \draw[black, fill=white] (150pt,0pt) circle (1.0ex);
+    \draw[black, fill=white] (150pt,15pt) circle (1.0ex);
+    \draw[black, fill=white] (150pt,30pt) circle (1.0ex);
+    \draw[black, fill=white] (180pt,7.5pt) circle (1.0ex);
+    \draw[black, fill=white] (180pt,30pt) circle (1.0ex);
+    \node[anchor=center] at (100pt,0pt) {\small $A[2,2]$};
+    \node[anchor=center] at (100pt,15pt) {\small $A[2,1]$};
+    \node[anchor=center] at (100pt,30pt) {\small $A[1,1]$};
+    \node[anchor=center] at (105pt,45pt) {\small $u[2]$};
+    \node[anchor=center] at (105pt,60pt) {\small $u[1]$};
+    \node[anchor=center] at (139pt,-20pt) {\textit{fine-grained}};
+
+    \node[anchor=center] at (80pt,106pt) {\small example matrix-vector multiplication};
+    \node[anchor=center] at (80pt,96pt) {\small (gray cells denote nonzero entries)};
+    \draw[very thick, arrows=-stealth] (110pt,90pt) -- (140pt,69pt);
+    \draw[very thick, arrows=-stealth] (50pt,90pt) -- (20pt,69pt);
+
+    \draw[black, fill=gray] (45pt,120pt) rectangle (60pt,135pt);
+    \draw[black, fill=gray] (75pt,120pt) rectangle (60pt,135pt);
+    \draw[black, fill=gray] (45pt,150pt) rectangle (60pt,135pt);
+    \draw[black, fill=white] (75pt,150pt) rectangle (60pt,135pt);
+    \node[anchor=center] at (60pt,158pt) {$A$};
+    
+    \draw[thick, densely dashed, arrows=-stealth] (78pt,135pt) -- (95pt,135pt);
+    \draw[black, fill=white] (100pt,120pt) rectangle (115pt,135pt);
+    \draw[black, fill=white] (100pt,150pt) rectangle (115pt,135pt);
+
+    \draw[thick, densely dashed, arrows=-stealth] (107.5pt,170pt) -- (107.5pt,155pt);
+    \draw[black, fill=gray] (100pt,175pt) rectangle (115pt,190pt);
+    \draw[black, fill=gray] (100pt,205pt) rectangle (115pt,190pt);
+    \node[anchor=center] at (107.5pt,213pt) {$u$};
+    
+
+\end{tikzpicture}

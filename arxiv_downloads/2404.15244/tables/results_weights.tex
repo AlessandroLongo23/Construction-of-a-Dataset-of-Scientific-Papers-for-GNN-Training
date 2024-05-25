@@ -1,0 +1,16 @@
+\caption{\textbf{Impact of backbone weights.} {\ours} applies to backbone weights obtained through self-supervised pre-training as well. (Dataset: COCO)}
+\centering
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{llcccccccc}
+\toprule
+ && \multicolumn{3}{c}{\textbf{Performance} ($\uparrow$)} && \multicolumn{2}{c}{\textbf{GFLOPs} ($\downarrow$)} \\ \cline{3-5} \cline{7-8}
+\multirow{-2}{*}{\textbf{Bakbone}} & \multirow{-2}{*}{\textbf{Model}} & \textbf{PQ} & \textbf{mIOU}$_p$ & \textbf{AP}$_p$ && \textbf{Total} & \textbf{Tx. Enc.} \\ 
+\midrule
+\multirow{2}{*}{\textbf{SWIN-T(MoBY\cite{xie2021moby})}} & M2F\cite{cheng2021mask2former}  & 51.64 & 62.42 & 41.93 && 235.57 & 121.69 \\
+& {\ours} & 51.48 & 62.49  & 41.27 && 203.56 & 89.64 \\
+\hline
+\multirow{2}{*}{\textbf{Res50(DINO\cite{caron2021emerging})}} & M2F\cite{cheng2021mask2former} & 51.57 & 61.65 & 41.24 && 229.41 & 126.05 \\
+& {\ours} & 51.89 & 61.67 & 41.30 && 191.97 & 88.50 \\
+\bottomrule
+\end{tabular}}  
+\label{tab:result_weights}

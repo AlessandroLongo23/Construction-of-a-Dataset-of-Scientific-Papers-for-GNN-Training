@@ -1,0 +1,111 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{https://doi.org/#1}
+
+\bibitem{anderson1967syntax}
+Anderson, R.H.: Syntax-directed recognition of hand-printed two-dimensional mathematics. In: Symposium on interactive systems for experimental applied mathematics: Proceedings of the Association for Computing Machinery Inc. Symposium. pp. 436--459 (1967)
+
+\bibitem{bian2022handwritten}
+Bian, X., Qin, B., Xin, X., Li, J., Su, X., Wang, Y.: Handwritten mathematical expression recognition via attention aggregation based bi-directional mutual learning. In: Proceedings of the AAAI Conference on Artificial Intelligence (AAAI). vol.~36, pp. 113--121 (2022)
+
+\bibitem{pix2tex2022}
+Blecher, L.: pix2tex - latex ocr. \url{https://github.com/lukas-blecher/LaTeX-OCR} (2022), accessed: 2024-2-29
+
+\bibitem{blecher2023nougat}
+Blecher, L., Cucurull, G., Scialom, T., Stojnic, R.: Nougat: Neural optical understanding for academic documents. arXiv.org  \textbf{2308.13418} (2023)
+
+\bibitem{Chan_Yeung_1999}
+Chan, K., Yeung, D.: Error detection, error correction and performance evaluation in on-line mathematical expression recognition  (Jan 1999)
+
+\bibitem{deng2017image}
+Deng, Y., Kanervisto, A., Ling, J., Rush, A.M.: Image-to-markup generation with coarse-to-fine attention. In: International Conference on Machine Learning (ICML). pp. 980--989. PMLR (2017)
+
+\bibitem{dong2024internlm}
+Dong, X., Zhang, P., Zang, Y., Cao, Y., Wang, B., Ouyang, L., Wei, X., Zhang, S., Duan, H., Cao, M., et~al.: Internlm-xcomposer2: Mastering free-form text-image composition and comprehension in vision-language large model. arXiv.org  \textbf{2401.16420} (2024)
+
+\bibitem{kim2022ocr}
+Kim, G., Hong, T., Yim, M., Nam, J., Park, J., Yim, J., Hwang, W., Yun, S., Han, D., Park, S.: Ocr-free document understanding transformer. In: European Conference on Computer Vision (ECCV). pp. 498--517. Springer (2022)
+
+\bibitem{krizhevsky2012imagenet}
+Krizhevsky, A., Sutskever, I., Hinton, G.E.: Imagenet classification with deep convolutional neural networks. NeurIPS  \textbf{25} (2012)
+
+\bibitem{le2019pattern}
+Le, A.D., Indurkhya, B., Nakagawa, M.: Pattern generation strategies for improving recognition of handwritten mathematical expressions. Pattern Recognition Letters  \textbf{128},  255--262 (2019)
+
+\bibitem{levenshtein1966binary}
+Levenshtein, V.I., et~al.: Binary codes capable of correcting deletions, insertions, and reversals. In: {Soviet physics doklady}. vol.~10, pp. 707--710. Soviet Union (1966)
+
+\bibitem{lewis2019bart}
+Lewis, M., Liu, Y., Goyal, N., Ghazvininejad, M., Mohamed, A., Levy, O., Stoyanov, V., Zettlemoyer, L.: Bart: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension. arXiv.org  (2019)
+
+\bibitem{li2022counting}
+Li, B., Yuan, Y., Liang, D., Liu, X., Ji, Z., Bai, J., Liu, W., Bai, X.: When counting meets hmer: counting-aware network for handwritten mathematical expression recognition. In: European Conference on Computer Vision (ECCV). pp. 197--214. Springer (2022)
+
+\bibitem{li2020improving}
+Li, Z., Jin, L., Lai, S., Zhu, Y.: Improving attention-based handwritten mathematical expression recognition with scale augmentation and drop attention. In: International Conference on Frontiers in Handwriting Recognition (ICFHR). pp. 175--180. IEEE (2020)
+
+\bibitem{liu2023improved}
+Liu, H., Li, C., Li, Y., Lee, Y.J.: Improved baselines with visual instruction tuning. arXiv.org  \textbf{2310.03744} (2023)
+
+\bibitem{liu2024visual}
+Liu, H., Li, C., Wu, Q., Lee, Y.J.: Visual instruction tuning. vol.~36 (2024)
+
+\bibitem{liu2021swin}
+Liu, Z., Lin, Y., Cao, Y., Hu, H., Wei, Y., Zhang, Z., Lin, S., Guo, B.: Swin transformer: Hierarchical vision transformer using shifted windows. In: ICCV. pp. 10012--10022 (2021)
+
+\bibitem{mahdavi2019icdar}
+Mahdavi, M., Zanibbi, R., Mouchere, H., Viard-Gaudin, C., Garain, U.: Icdar 2019 crohme+ tfd: Competition on recognition of handwritten mathematical expressions and typeset formula detection. In: International Conference on Document Analysis and Recognition (ICDAR). pp. 1533--1538. IEEE (2019)
+
+\bibitem{Miller_Viola_1998}
+Miller, E., Viola, P.: Ambiguity and constraint in mathematical expression recognition. National Conference on Artificial Intelligence (NCAI)  (Jul 1998)
+
+\bibitem{mouchere2014icfhr}
+Mouchere, H., Viard-Gaudin, C., Zanibbi, R., Garain, U.: Icfhr 2014 competition on recognition of on-line handwritten mathematical expressions (crohme 2014). In: International Conference on Frontiers in Handwriting Recognition (ICFHR). pp. 791--796. IEEE (2014)
+
+\bibitem{mouchere2016icfhr2016}
+Mouch{\`e}re, H., Viard-Gaudin, C., Zanibbi, R., Garain, U.: Icfhr2016 crohme: Competition on recognition of online handwritten mathematical expressions. In: International Conference on Frontiers in Handwriting Recognition (ICFHR). pp. 607--612. IEEE (2016)
+
+\bibitem{papineni2002bleu}
+Papineni, K., Roukos, S., Ward, T., Zhu, W.J.: Bleu: a method for automatic evaluation of machine translation. In: Proceedings of the 40th annual meeting of the Association for Computational Linguistics. pp. 311--318 (2002)
+
+\bibitem{texify2023}
+Paruchuri, V.: Texify. \url{https://github.com/VikParuchuri/texify} (2023), accessed: 2024-2-29
+
+\bibitem{simonyan2015very}
+Simonyan, K., Zisserman, A.: Very deep convolutional networks for large-scale image recognition. In: ICLR. Computational and Biological Learning Society (2015)
+
+\bibitem{suzuki2003infty}
+Suzuki, M., Tamari, F., Fukuda, R., Uchida, S., Kanahori, T.: Infty: an integrated ocr system for mathematical documents. In: Proceedings of the 2003 ACM symposium on Document engineering. pp. 95--104 (2003)
+
+\bibitem{vaswani2017attention}
+Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.N., Kaiser, {\L}., Polosukhin, I.: Attention is all you need. NeurIPS  \textbf{30} (2017)
+
+\bibitem{wei2023vary}
+Wei, H., Kong, L., Chen, J., Zhao, L., Ge, Z., Yang, J., Sun, J., Han, C., Zhang, X.: Vary: Scaling up the vision vocabulary for large vision-language models. arXiv.org  \textbf{2312.06109} (2023)
+
+\bibitem{wu2020handwritten}
+Wu, J.W., Yin, F., Zhang, Y.M., Zhang, X.Y., Liu, C.L.: Handwritten mathematical expression recognition via paired adversarial learning. International Journal of Computer Vision (IJCV)  \textbf{128},  2386--2401 (2020)
+
+\bibitem{yuan2022syntax}
+Yuan, Y., Liu, X., Dikubab, W., Liu, H., Ji, Z., Wu, Z., Bai, X.: Syntax-aware network for handwritten mathematical expression recognition. In: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR). pp. 4553--4562 (2022)
+
+\bibitem{zhang2018multi}
+Zhang, J., Du, J., Dai, L.: Multi-scale attention with dense encoder for handwritten mathematical expression recognition. In: Proc. of the International Conf. on Pattern Recognition (ICPR). pp. 2245--2250. IEEE (2018)
+
+\bibitem{zhang2020tree}
+Zhang, J., Du, J., Yang, Y., Song, Y.Z., Wei, S., Dai, L.: A tree-structured decoder for image-to-markup generation. In: International Conference on Machine Learning (ICML). pp. 11076--11085. PMLR (2020)
+
+\bibitem{zhang2017watch}
+Zhang, J., Du, J., Zhang, S., Liu, D., Hu, Y., Hu, J., Wei, S., Dai, L.: Watch, attend and parse: An end-to-end neural network based approach to handwritten mathematical expression recognition. Pattern Recognition  \textbf{71},  196--206 (2017)
+
+\bibitem{zhao2022comer}
+Zhao, W., Gao, L.: Comer: Modeling coverage for transformer-based handwritten mathematical expression recognition. In: European Conference on Computer Vision (ECCV). pp. 392--408. Springer (2022)
+
+\bibitem{zhao2021handwritten}
+Zhao, W., Gao, L., Yan, Z., Peng, S., Du, L., Zhang, Z.: Handwritten mathematical expression recognition with bidirectionally trained transformer. In: International Conference on Document Analysis and Recognition (ICDAR). pp. 570--584. Springer (2021)
+
+\bibitem{zhu2023minigpt}
+Zhu, D., Chen, J., Shen, X., Li, X., Elhoseiny, M.: Minigpt-4: Enhancing vision-language understanding with advanced large language models. arXiv.org  \textbf{2304.10592} (2023)
+
+\end{thebibliography}

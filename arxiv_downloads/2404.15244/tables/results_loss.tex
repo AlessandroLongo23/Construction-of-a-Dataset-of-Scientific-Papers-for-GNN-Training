@@ -1,0 +1,25 @@
+\centering
+\caption{\textbf{Stochastic Depth (SD) training.} Here, all models (w/ 6 encoder layers) deterministically exit at the \hllayer{marked layer} at inference. ``USD'': Unweighted; ``WSD'': Weighted. (Baseline: M2F w/ SWIN-T)}
+\resizebox{\columnwidth}{!}{
+\setlength{\tabcolsep}{10pt}
+\begin{tabular}{lccccc}
+\toprule
+\cellcolor{white} & \multicolumn{5}{c}{\textbf{PQ} ($\uparrow$)} \\ \cline{2-6}
+\rowcolor{gray!20}
+\cellcolor{white} \multirow{-2}{*}{\textbf{Model}}& \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} \\ 
+\midrule
+\multicolumn{6}{c}{\textbf{Dataset}: Cityscapes}\\
+\hline
+Baseline & 03.21 & 14.37 & 26.66 & 42.50 & 64.00 \\
+w/ USD & 59.96 & 61.85 & 63.18 & 62.98 & 63.73 \\
+w/ WSD & 60.71 & 62.14 & 62.94 & 63.89 & 64.60 \\
+
+\hline
+\multicolumn{6}{c}{\textbf{Dataset}: COCO}\\
+\hline
+Baseline & 10.16 & 17.02 & 23.43 & 33.63 & 51.71 \\
+w/ USD & 49.40 & 50.25 & 50.49 & 50.51 & 50.44 \\
+w/ WSD & 50.70 & 51.76 & 52.30 & 52.39 & 52.48 \\
+\bottomrule
+\end{tabular}}  
+\label{tab:loss}

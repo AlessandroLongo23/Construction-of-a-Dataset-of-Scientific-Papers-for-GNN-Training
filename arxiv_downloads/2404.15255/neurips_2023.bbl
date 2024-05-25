@@ -1,0 +1,1618 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{causal_scrubbing}{misc}{}
+      \name{author}{8}{}{%
+        {{hash=510dbf787b25c946b28ce73e81955092}{%
+           family={Chan},
+           familyi={C\bibinitperiod},
+           given={Lawrence},
+           giveni={L\bibinitperiod}}}%
+        {{hash=a945b058dd6635a23b58d5a815b13244}{%
+           family={Garriga-Alonso},
+           familyi={G\bibinithyphendelim A\bibinitperiod},
+           given={Adria},
+           giveni={A\bibinitperiod}}}%
+        {{hash=01d70217e8f8209736b180a35124ddfd}{%
+           family={Goldowsky-Dill},
+           familyi={G\bibinithyphendelim D\bibinitperiod},
+           given={Nix},
+           giveni={N\bibinitperiod}}}%
+        {{hash=971e8ecd2b0e20613eb1a2d618015bba}{%
+           family={Greenblatt},
+           familyi={G\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d0045563b934664a4fb449a99eca8d53}{%
+           family={Nitishinskaya},
+           familyi={N\bibinitperiod},
+           given={Jenny},
+           giveni={J\bibinitperiod}}}%
+        {{hash=40b15fe30062ca250351deb77989ad19}{%
+           family={Radhakrishnan},
+           familyi={R\bibinitperiod},
+           given={Ansh},
+           giveni={A\bibinitperiod}}}%
+        {{hash=156453364dfa7e6dcb43302882a89311}{%
+           family={Shlegeris},
+           familyi={S\bibinitperiod},
+           given={Buck},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a4d8286a5e4698156f532488b5a6f070}{%
+           family={Thomas},
+           familyi={T\bibinitperiod},
+           given={Nate},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{d5e624c5889d4403e5b11248009d84b4}
+      \strng{fullhash}{74b7a23a54968651782f61b122c1d986}
+      \strng{bibnamehash}{74b7a23a54968651782f61b122c1d986}
+      \strng{authorbibnamehash}{74b7a23a54968651782f61b122c1d986}
+      \strng{authornamehash}{d5e624c5889d4403e5b11248009d84b4}
+      \strng{authorfullhash}{74b7a23a54968651782f61b122c1d986}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Alignment Forum}
+      \field{title}{Causal scrubbing: A method for rigorously testing interpretability hypotheses}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.alignmentforum.org/posts/JvZhhzycHu2Yd57RN/causal-scrubbing-a-method-for-rigorously-testing
+      \endverb
+      \verb{url}
+      \verb https://www.alignmentforum.org/posts/JvZhhzycHu2Yd57RN/causal-scrubbing-a-method-for-rigorously-testing
+      \endverb
+    \endentry
+    \entry{ACDC}{article}{}
+      \name{author}{5}{}{%
+        {{hash=182052283b19e3d0eb67af9d8078787d}{%
+           family={{Conmy}},
+           familyi={C\bibinitperiod},
+           given={Arthur},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cd2869e586726253134dc76bb2ffd931}{%
+           family={{Mavor-Parker}},
+           familyi={M\bibinitperiod},
+           given={Augustine\bibnamedelima N.},
+           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=4e36115a073aa5092c751958d25fe766}{%
+           family={{Lynch}},
+           familyi={L\bibinitperiod},
+           given={Aengus},
+           giveni={A\bibinitperiod}}}%
+        {{hash=fa93338561a8a6916ee9b4c447327ab3}{%
+           family={{Heimersheim}},
+           familyi={H\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4ecea33091356ece9b9680e134cc7f0f}{%
+           family={{Garriga-Alonso}},
+           familyi={G\bibinitperiod},
+           given={Adrià},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e8ed418c3d7f96a6b14c9051af669f68}
+      \strng{fullhash}{49e2cc3fa1eec62df22a012eb603eb2a}
+      \strng{bibnamehash}{49e2cc3fa1eec62df22a012eb603eb2a}
+      \strng{authorbibnamehash}{49e2cc3fa1eec62df22a012eb603eb2a}
+      \strng{authornamehash}{e8ed418c3d7f96a6b14c9051af669f68}
+      \strng{authorfullhash}{49e2cc3fa1eec62df22a012eb603eb2a}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:2304.14997}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{4}
+      \field{title}{{Towards Automated Circuit Discovery for Mechanistic Interpretability}}
+      \field{year}{2023}
+      \field{pages}{arXiv:2304.14997}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.48550/arXiv.2304.14997
+      \endverb
+      \verb{eprint}
+      \verb 2304.14997
+      \endverb
+      \keyw{Computer Science - Machine Learning}
+    \endentry
+    \entry{2023arXiv230908600C}{article}{}
+      \name{author}{5}{}{%
+        {{hash=81adc00b4f07e3a2483bd1326a644b10}{%
+           family={{Cunningham}},
+           familyi={C\bibinitperiod},
+           given={Hoagy},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e71ac44c9aaf2232d36526bd1fc9f22b}{%
+           family={{Ewart}},
+           familyi={E\bibinitperiod},
+           given={Aidan},
+           giveni={A\bibinitperiod}}}%
+        {{hash=07a344d1e172b27b5541f6930d7dc44e}{%
+           family={{Riggs}},
+           familyi={R\bibinitperiod},
+           given={Logan},
+           giveni={L\bibinitperiod}}}%
+        {{hash=2b60ef9b6422798c6873b6ab23d63a16}{%
+           family={{Huben}},
+           familyi={H\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a22658e80bec4197f6d5d0beadf07cfb}{%
+           family={{Sharkey}},
+           familyi={S\bibinitperiod},
+           given={Lee},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{a9bfc7f10989cfcbc759919686cfb78e}
+      \strng{fullhash}{71542c9b3d8bb54096acc4edb13b192c}
+      \strng{bibnamehash}{71542c9b3d8bb54096acc4edb13b192c}
+      \strng{authorbibnamehash}{71542c9b3d8bb54096acc4edb13b192c}
+      \strng{authornamehash}{a9bfc7f10989cfcbc759919686cfb78e}
+      \strng{authorfullhash}{71542c9b3d8bb54096acc4edb13b192c}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:2309.08600}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{9}
+      \field{title}{{Sparse Autoencoders Find Highly Interpretable Features in Language Models}}
+      \field{year}{2023}
+      \field{pages}{arXiv:2309.08600}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.48550/arXiv.2309.08600
+      \endverb
+      \verb{eprint}
+      \verb 2309.08600
+      \endverb
+      \keyw{Computer Science - Machine Learning,Computer Science - Computation and Language}
+    \endentry
+    \entry{2023arXiv231017191F}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c255031a4dfd00743a17b2ab60887bac}{%
+           family={{Feng}},
+           familyi={F\bibinitperiod},
+           given={Jiahai},
+           giveni={J\bibinitperiod}}}%
+        {{hash=fe7a7e80c1857d185d3ab01f15fe584d}{%
+           family={{Steinhardt}},
+           familyi={S\bibinitperiod},
+           given={Jacob},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{fd3972a55894de2780c008235c47abcc}
+      \strng{fullhash}{fd3972a55894de2780c008235c47abcc}
+      \strng{bibnamehash}{fd3972a55894de2780c008235c47abcc}
+      \strng{authorbibnamehash}{fd3972a55894de2780c008235c47abcc}
+      \strng{authornamehash}{fd3972a55894de2780c008235c47abcc}
+      \strng{authorfullhash}{fd3972a55894de2780c008235c47abcc}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:2310.17191}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{10}
+      \field{title}{{How do Language Models Bind Entities in Context?}}
+      \field{year}{2023}
+      \field{pages}{arXiv:2310.17191}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.48550/arXiv.2310.17191
+      \endverb
+      \verb{eprint}
+      \verb 2310.17191
+      \endverb
+      \keyw{Computer Science - Machine Learning,Computer Science - Artificial Intelligence,Computer Science - Computation and Language}
+    \endentry
+    \entry{2021arXiv210606087F}{article}{}
+      \name{author}{6}{}{%
+        {{hash=e6802a85362f3ef009f12d473e79b5c9}{%
+           family={{Finlayson}},
+           familyi={F\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9ea7a03f6917bb2b03eb1d3e4e47c9f3}{%
+           family={{Mueller}},
+           familyi={M\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod}}}%
+        {{hash=80c831c617902a22d4fa4074948f3aff}{%
+           family={{Gehrmann}},
+           familyi={G\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5845eebbe70da4363c3e8a99a0cb93c0}{%
+           family={{Shieber}},
+           familyi={S\bibinitperiod},
+           given={Stuart},
+           giveni={S\bibinitperiod}}}%
+        {{hash=11e9c967573c1c8a0604dda20cf8a914}{%
+           family={{Linzen}},
+           familyi={L\bibinitperiod},
+           given={Tal},
+           giveni={T\bibinitperiod}}}%
+        {{hash=1b1e0145098271245102c2c35a46ffe4}{%
+           family={{Belinkov}},
+           familyi={B\bibinitperiod},
+           given={Yonatan},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{d20eabf7f8c572cf8caf43ae8416b8fc}
+      \strng{fullhash}{3007741b9912535658327ee899a70e11}
+      \strng{bibnamehash}{3007741b9912535658327ee899a70e11}
+      \strng{authorbibnamehash}{3007741b9912535658327ee899a70e11}
+      \strng{authornamehash}{d20eabf7f8c572cf8caf43ae8416b8fc}
+      \strng{authorfullhash}{3007741b9912535658327ee899a70e11}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:2106.06087}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{6}
+      \field{title}{{Causal Analysis of Syntactic Agreement Mechanisms in Neural Language Models}}
+      \field{year}{2021}
+      \field{pages}{arXiv:2106.06087}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.48550/arXiv.2106.06087
+      \endverb
+      \verb{eprint}
+      \verb 2106.06087
+      \endverb
+      \keyw{Computer Science - Computation and Language,68T50,I.2.7}
+    \endentry
+    \entry{2021arXiv210602997G}{article}{}
+      \name{author}{4}{}{%
+        {{hash=9cd0634a812fc079ff12ac11a64548f5}{%
+           family={{Geiger}},
+           familyi={G\bibinitperiod},
+           given={Atticus},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9df89305c0eb448aa978cec5ae121d8b}{%
+           family={{Lu}},
+           familyi={L\bibinitperiod},
+           given={Hanson},
+           giveni={H\bibinitperiod}}}%
+        {{hash=b0badbf499a1ef5e7bc2f893186e6a5c}{%
+           family={{Icard}},
+           familyi={I\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=699d626ef41a1a827d623529c1a45e5a}{%
+           family={{Potts}},
+           familyi={P\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{fc83448e06a8ee1c9610ad8696d870c5}
+      \strng{fullhash}{d34a3fbca9707325a24d8fb0c09daa16}
+      \strng{bibnamehash}{d34a3fbca9707325a24d8fb0c09daa16}
+      \strng{authorbibnamehash}{d34a3fbca9707325a24d8fb0c09daa16}
+      \strng{authornamehash}{fc83448e06a8ee1c9610ad8696d870c5}
+      \strng{authorfullhash}{d34a3fbca9707325a24d8fb0c09daa16}
+      \field{extraname}{1}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:2106.02997}
+      \field{eprintclass}{cs.AI}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{6}
+      \field{title}{{Causal Abstractions of Neural Networks}}
+      \field{year}{2021}
+      \field{pages}{arXiv:2106.02997}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.48550/arXiv.2106.02997
+      \endverb
+      \verb{eprint}
+      \verb 2106.02997
+      \endverb
+      \keyw{Computer Science - Artificial Intelligence,Computer Science - Machine Learning}
+    \endentry
+    \entry{2020arXiv200414623G}{article}{}
+      \name{author}{3}{}{%
+        {{hash=9cd0634a812fc079ff12ac11a64548f5}{%
+           family={{Geiger}},
+           familyi={G\bibinitperiod},
+           given={Atticus},
+           giveni={A\bibinitperiod}}}%
+        {{hash=daeaa06d9ea0876824538dc786c03740}{%
+           family={{Richardson}},
+           familyi={R\bibinitperiod},
+           given={Kyle},
+           giveni={K\bibinitperiod}}}%
+        {{hash=699d626ef41a1a827d623529c1a45e5a}{%
+           family={{Potts}},
+           familyi={P\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{0de19db1659e39d0cb40dc2d9edb9d29}
+      \strng{fullhash}{0de19db1659e39d0cb40dc2d9edb9d29}
+      \strng{bibnamehash}{0de19db1659e39d0cb40dc2d9edb9d29}
+      \strng{authorbibnamehash}{0de19db1659e39d0cb40dc2d9edb9d29}
+      \strng{authornamehash}{0de19db1659e39d0cb40dc2d9edb9d29}
+      \strng{authorfullhash}{0de19db1659e39d0cb40dc2d9edb9d29}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:2004.14623}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{4}
+      \field{title}{{Neural Natural Language Inference Models Partially Embed Theories of Lexical Entailment and Negation}}
+      \field{year}{2020}
+      \field{pages}{arXiv:2004.14623}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.48550/arXiv.2004.14623
+      \endverb
+      \verb{eprint}
+      \verb 2004.14623
+      \endverb
+      \keyw{Computer Science - Computation and Language}
+    \endentry
+    \entry{2021arXiv211200826G}{article}{}
+      \name{author}{8}{}{%
+        {{hash=9cd0634a812fc079ff12ac11a64548f5}{%
+           family={{Geiger}},
+           familyi={G\bibinitperiod},
+           given={Atticus},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4505c22f12bed80892a647cf3e187121}{%
+           family={{Wu}},
+           familyi={W\bibinitperiod},
+           given={Zhengxuan},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=9df89305c0eb448aa978cec5ae121d8b}{%
+           family={{Lu}},
+           familyi={L\bibinitperiod},
+           given={Hanson},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ac30fe6fd5d02f500b4f40dec9b9b0ba}{%
+           family={{Rozner}},
+           familyi={R\bibinitperiod},
+           given={Josh},
+           giveni={J\bibinitperiod}}}%
+        {{hash=46d603979ba79593dad623bebe771f80}{%
+           family={{Kreiss}},
+           familyi={K\bibinitperiod},
+           given={Elisa},
+           giveni={E\bibinitperiod}}}%
+        {{hash=b0badbf499a1ef5e7bc2f893186e6a5c}{%
+           family={{Icard}},
+           familyi={I\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=17c6b9edbad988db7d426fba005cecff}{%
+           family={{Goodman}},
+           familyi={G\bibinitperiod},
+           given={Noah\bibnamedelima D.},
+           giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=699d626ef41a1a827d623529c1a45e5a}{%
+           family={{Potts}},
+           familyi={P\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{fc83448e06a8ee1c9610ad8696d870c5}
+      \strng{fullhash}{7fe11c86b3dc1dd6790665aede90c9c1}
+      \strng{bibnamehash}{7fe11c86b3dc1dd6790665aede90c9c1}
+      \strng{authorbibnamehash}{7fe11c86b3dc1dd6790665aede90c9c1}
+      \strng{authornamehash}{fc83448e06a8ee1c9610ad8696d870c5}
+      \strng{authorfullhash}{7fe11c86b3dc1dd6790665aede90c9c1}
+      \field{extraname}{2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:2112.00826}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{12}
+      \field{title}{{Inducing Causal Structure for Interpretable Neural Networks}}
+      \field{year}{2021}
+      \field{pages}{arXiv:2112.00826}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.48550/arXiv.2112.00826
+      \endverb
+      \verb{eprint}
+      \verb 2112.00826
+      \endverb
+      \keyw{Computer Science - Machine Learning}
+    \endentry
+    \entry{2023arXiv230414767G}{article}{}
+      \name{author}{4}{}{%
+        {{hash=6ddfda347d05ca4293f624d7d476c882}{%
+           family={{Geva}},
+           familyi={G\bibinitperiod},
+           given={Mor},
+           giveni={M\bibinitperiod}}}%
+        {{hash=31bf8f4b7908bfb3307ac1daac6cc9f1}{%
+           family={{Bastings}},
+           familyi={B\bibinitperiod},
+           given={Jasmijn},
+           giveni={J\bibinitperiod}}}%
+        {{hash=365ccbd786e3036f7e84b1afd00759e1}{%
+           family={{Filippova}},
+           familyi={F\bibinitperiod},
+           given={Katja},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e8b604d0a7af5ee88043f8e31a4c6871}{%
+           family={{Globerson}},
+           familyi={G\bibinitperiod},
+           given={Amir},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{4aaee4fc48500f559528e5aee27c7620}
+      \strng{fullhash}{232692f04933c6605ece29767b8301b2}
+      \strng{bibnamehash}{232692f04933c6605ece29767b8301b2}
+      \strng{authorbibnamehash}{232692f04933c6605ece29767b8301b2}
+      \strng{authornamehash}{4aaee4fc48500f559528e5aee27c7620}
+      \strng{authorfullhash}{232692f04933c6605ece29767b8301b2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:2304.14767}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{4}
+      \field{title}{{Dissecting Recall of Factual Associations in Auto-Regressive Language Models}}
+      \field{year}{2023}
+      \field{pages}{arXiv:2304.14767}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.48550/arXiv.2304.14767
+      \endverb
+      \verb{eprint}
+      \verb 2304.14767
+      \endverb
+      \keyw{Computer Science - Computation and Language}
+    \endentry
+    \entry{NixPathPatching}{article}{}
+      \name{author}{4}{}{%
+        {{hash=3e8514a10785164451eb41490b07961c}{%
+           family={{Goldowsky-Dill}},
+           familyi={G\bibinitperiod},
+           given={Nicholas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=84bcde21a19278fb356ee85a1eed2ca5}{%
+           family={{MacLeod}},
+           familyi={M\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9662e14ce989b07e3dd552eea8889d58}{%
+           family={{Sato}},
+           familyi={S\bibinitperiod},
+           given={Lucas},
+           giveni={L\bibinitperiod}}}%
+        {{hash=2356ce9b0b518a921e6139ab1dd0e365}{%
+           family={{Arora}},
+           familyi={A\bibinitperiod},
+           given={Aryaman},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{4af341778a12b3eadde6f8401d0a755b}
+      \strng{fullhash}{354ca3a767d1f6edeb694b5c7917c1b1}
+      \strng{bibnamehash}{354ca3a767d1f6edeb694b5c7917c1b1}
+      \strng{authorbibnamehash}{354ca3a767d1f6edeb694b5c7917c1b1}
+      \strng{authornamehash}{4af341778a12b3eadde6f8401d0a755b}
+      \strng{authorfullhash}{354ca3a767d1f6edeb694b5c7917c1b1}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:2304.05969}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{4}
+      \field{title}{{Localizing Model Behavior with Path Patching}}
+      \field{year}{2023}
+      \field{pages}{arXiv:2304.05969}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.48550/arXiv.2304.05969
+      \endverb
+      \verb{eprint}
+      \verb 2304.05969
+      \endverb
+      \keyw{Computer Science - Machine Learning}
+    \endentry
+    \entry{2023arXiv230500586H}{article}{}
+      \name{author}{3}{}{%
+        {{hash=fffdddef31a69f412a5bf4ac003d75d2}{%
+           family={{Hanna}},
+           familyi={H\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=eb15df99005eada9082816eb70920674}{%
+           family={{Liu}},
+           familyi={L\bibinitperiod},
+           given={Ollie},
+           giveni={O\bibinitperiod}}}%
+        {{hash=085f7325909eb2ff8836337441e099cd}{%
+           family={{Variengien}},
+           familyi={V\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e0b33f6221e2dfaca391d0f6e90dd658}
+      \strng{fullhash}{e0b33f6221e2dfaca391d0f6e90dd658}
+      \strng{bibnamehash}{e0b33f6221e2dfaca391d0f6e90dd658}
+      \strng{authorbibnamehash}{e0b33f6221e2dfaca391d0f6e90dd658}
+      \strng{authornamehash}{e0b33f6221e2dfaca391d0f6e90dd658}
+      \strng{authorfullhash}{e0b33f6221e2dfaca391d0f6e90dd658}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:2305.00586}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{4}
+      \field{title}{{How does GPT-2 compute greater-than?: Interpreting mathematical abilities in a pre-trained language model}}
+      \field{year}{2023}
+      \field{pages}{arXiv:2305.00586}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.48550/arXiv.2305.00586
+      \endverb
+      \verb{eprint}
+      \verb 2305.00586
+      \endverb
+      \keyw{Computer Science - Computation and Language,Computer Science - Artificial Intelligence,Computer Science - Machine Learning}
+    \endentry
+    \entry{2023arXiv230104213H}{article}{}
+      \name{author}{4}{}{%
+        {{hash=141b5bd704afa4ee0592066165f2bd46}{%
+           family={{Hase}},
+           familyi={H\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=b118f9d5c7ddaa3d38926cc7de6586e0}{%
+           family={{Bansal}},
+           familyi={B\bibinitperiod},
+           given={Mohit},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a11a6718c039f3e3f3f31167e5094c10}{%
+           family={{Kim}},
+           familyi={K\bibinitperiod},
+           given={Been},
+           giveni={B\bibinitperiod}}}%
+        {{hash=1c13230a1d0e3d98a28ff167953d3a13}{%
+           family={{Ghandeharioun}},
+           familyi={G\bibinitperiod},
+           given={Asma},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{068f3656b2320ce7cc4483cd6fd1ca58}
+      \strng{fullhash}{771f058743a9ab932a33a8f8ceff9549}
+      \strng{bibnamehash}{771f058743a9ab932a33a8f8ceff9549}
+      \strng{authorbibnamehash}{771f058743a9ab932a33a8f8ceff9549}
+      \strng{authornamehash}{068f3656b2320ce7cc4483cd6fd1ca58}
+      \strng{authorfullhash}{771f058743a9ab932a33a8f8ceff9549}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:2301.04213}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{1}
+      \field{title}{{Does Localization Inform Editing? Surprising Differences in Causality-Based Localization vs. Knowledge Editing in Language Models}}
+      \field{year}{2023}
+      \field{pages}{arXiv:2301.04213}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.48550/arXiv.2301.04213
+      \endverb
+      \verb{eprint}
+      \verb 2301.04213
+      \endverb
+      \keyw{Computer Science - Machine Learning,Computer Science - Artificial Intelligence,Computer Science - Computation and Language}
+    \endentry
+    \entry{2021arXiv210600786H}{article}{}
+      \name{author}{3}{}{%
+        {{hash=141b5bd704afa4ee0592066165f2bd46}{%
+           family={{Hase}},
+           familyi={H\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=cc4948979898162143a8ce9a160e4cf3}{%
+           family={{Xie}},
+           familyi={X\bibinitperiod},
+           given={Harry},
+           giveni={H\bibinitperiod}}}%
+        {{hash=b118f9d5c7ddaa3d38926cc7de6586e0}{%
+           family={{Bansal}},
+           familyi={B\bibinitperiod},
+           given={Mohit},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{e161b8b2eba7598b54d30ac798e60e18}
+      \strng{fullhash}{e161b8b2eba7598b54d30ac798e60e18}
+      \strng{bibnamehash}{e161b8b2eba7598b54d30ac798e60e18}
+      \strng{authorbibnamehash}{e161b8b2eba7598b54d30ac798e60e18}
+      \strng{authornamehash}{e161b8b2eba7598b54d30ac798e60e18}
+      \strng{authorfullhash}{e161b8b2eba7598b54d30ac798e60e18}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:2106.00786}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{6}
+      \field{title}{{The Out-of-Distribution Problem in Explainability and Search Methods for Feature Importance Explanations}}
+      \field{year}{2021}
+      \field{pages}{arXiv:2106.00786}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.48550/arXiv.2106.00786
+      \endverb
+      \verb{eprint}
+      \verb 2106.00786
+      \endverb
+      \keyw{Computer Science - Machine Learning,Computer Science - Artificial Intelligence,Computer Science - Computation and Language}
+    \endentry
+    \entry{docstrings}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=fa93338561a8a6916ee9b4c447327ab3}{%
+           family={Heimersheim},
+           familyi={H\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=cc969266bafc1633769bb11eebf45bbf}{%
+           family={Janiak},
+           familyi={J\bibinitperiod},
+           given={Jett},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{d448fe1b7ce9071c7c74a06df928d8d7}
+      \strng{fullhash}{d448fe1b7ce9071c7c74a06df928d8d7}
+      \strng{bibnamehash}{d448fe1b7ce9071c7c74a06df928d8d7}
+      \strng{authorbibnamehash}{d448fe1b7ce9071c7c74a06df928d8d7}
+      \strng{authornamehash}{d448fe1b7ce9071c7c74a06df928d8d7}
+      \strng{authorfullhash}{d448fe1b7ce9071c7c74a06df928d8d7}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A circuit for {P}ython docstrings in a 4-layer attention-only transformer}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.alignmentforum.org/posts/u6KXXmKFbXfWzoAXn/a-circuit-for-python-docstrings-in-a-4-layer-attention-only
+      \endverb
+      \verb{url}
+      \verb https://www.alignmentforum.org/posts/u6KXXmKFbXfWzoAXn/a-circuit-for-python-docstrings-in-a-4-layer-attention-only
+      \endverb
+    \endentry
+    \entry{2023arXiv231015916H}{article}{}
+      \name{author}{3}{}{%
+        {{hash=76cf9fd813ff85478667e938b69e3787}{%
+           family={{Hendel}},
+           familyi={H\bibinitperiod},
+           given={Roee},
+           giveni={R\bibinitperiod}}}%
+        {{hash=6ddfda347d05ca4293f624d7d476c882}{%
+           family={{Geva}},
+           familyi={G\bibinitperiod},
+           given={Mor},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e8b604d0a7af5ee88043f8e31a4c6871}{%
+           family={{Globerson}},
+           familyi={G\bibinitperiod},
+           given={Amir},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ed591366d20ec061cbc4ffb9c22d42ae}
+      \strng{fullhash}{ed591366d20ec061cbc4ffb9c22d42ae}
+      \strng{bibnamehash}{ed591366d20ec061cbc4ffb9c22d42ae}
+      \strng{authorbibnamehash}{ed591366d20ec061cbc4ffb9c22d42ae}
+      \strng{authornamehash}{ed591366d20ec061cbc4ffb9c22d42ae}
+      \strng{authorfullhash}{ed591366d20ec061cbc4ffb9c22d42ae}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:2310.15916}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{10}
+      \field{title}{{In-Context Learning Creates Task Vectors}}
+      \field{year}{2023}
+      \field{pages}{arXiv:2310.15916}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.48550/arXiv.2310.15916
+      \endverb
+      \verb{eprint}
+      \verb 2310.15916
+      \endverb
+      \keyw{Computer Science - Computation and Language}
+    \endentry
+    \entry{2023arXiv230910312H}{article}{}
+      \name{author}{5}{}{%
+        {{hash=dc6a25244d65d1c3b76b8da8ba84b54c}{%
+           family={{Huang}},
+           familyi={H\bibinitperiod},
+           given={Jing},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9cd0634a812fc079ff12ac11a64548f5}{%
+           family={{Geiger}},
+           familyi={G\bibinitperiod},
+           given={Atticus},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6c34257fbdf0c1c881032a2533e5e7aa}{%
+           family={{D'Oosterlinck}},
+           familyi={D\bibinitperiod},
+           given={Karel},
+           giveni={K\bibinitperiod}}}%
+        {{hash=4505c22f12bed80892a647cf3e187121}{%
+           family={{Wu}},
+           familyi={W\bibinitperiod},
+           given={Zhengxuan},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=699d626ef41a1a827d623529c1a45e5a}{%
+           family={{Potts}},
+           familyi={P\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{5599a5f515ddace6d4f330e565035e9e}
+      \strng{fullhash}{b40cc0b8c5b89be7983081279364d740}
+      \strng{bibnamehash}{b40cc0b8c5b89be7983081279364d740}
+      \strng{authorbibnamehash}{b40cc0b8c5b89be7983081279364d740}
+      \strng{authornamehash}{5599a5f515ddace6d4f330e565035e9e}
+      \strng{authorfullhash}{b40cc0b8c5b89be7983081279364d740}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:2309.10312}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{9}
+      \field{title}{{Rigorously Assessing Natural Language Explanations of Neurons}}
+      \field{year}{2023}
+      \field{pages}{arXiv:2309.10312}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.48550/arXiv.2309.10312
+      \endverb
+      \verb{eprint}
+      \verb 2309.10312
+      \endverb
+      \keyw{Computer Science - Computation and Language}
+    \endentry
+    \entry{LieberumChincilla}{article}{}
+      \name{author}{7}{}{%
+        {{hash=3ecc8f369f344ca05234acb42aadb225}{%
+           family={{Lieberum}},
+           familyi={L\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+        {{hash=4d4a15b4892dbbfe84a56f04dc4ef217}{%
+           family={{Rahtz}},
+           familyi={R\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f6314673a113c5636aea6732571bd5c2}{%
+           family={{Kramár}},
+           familyi={K\bibinitperiod},
+           given={János},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d2f8bae99d9538a95287ac272f977fc4}{%
+           family={{Nanda}},
+           familyi={N\bibinitperiod},
+           given={Neel},
+           giveni={N\bibinitperiod}}}%
+        {{hash=edc6964c6549e1839ca94d3d61e03f76}{%
+           family={{Irving}},
+           familyi={I\bibinitperiod},
+           given={Geoffrey},
+           giveni={G\bibinitperiod}}}%
+        {{hash=21e62c2a6bed089dcb3a651c409444cf}{%
+           family={{Shah}},
+           familyi={S\bibinitperiod},
+           given={Rohin},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a23b9c9307da460af11d485bcf54cdc3}{%
+           family={{Mikulik}},
+           familyi={M\bibinitperiod},
+           given={Vladimir},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{8321a83b770f3321189720bcfe2c2fab}
+      \strng{fullhash}{b52201f4af67c1e2777734329325eeff}
+      \strng{bibnamehash}{b52201f4af67c1e2777734329325eeff}
+      \strng{authorbibnamehash}{b52201f4af67c1e2777734329325eeff}
+      \strng{authornamehash}{8321a83b770f3321189720bcfe2c2fab}
+      \strng{authorfullhash}{b52201f4af67c1e2777734329325eeff}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:2307.09458}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{7}
+      \field{title}{{Does Circuit Analysis Interpretability Scale? Evidence from Multiple Choice Capabilities in Chinchilla}}
+      \field{year}{2023}
+      \field{pages}{arXiv:2307.09458}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.48550/arXiv.2307.09458
+      \endverb
+      \verb{eprint}
+      \verb 2307.09458
+      \endverb
+      \keyw{Computer Science - Machine Learning}
+    \endentry
+    \entry{CallumCopySuppression}{article}{}
+      \name{author}{5}{}{%
+        {{hash=590d23df8c75b4b06dbb5da72bffd6a2}{%
+           family={{McDougall}},
+           familyi={M\bibinitperiod},
+           given={Callum},
+           giveni={C\bibinitperiod}}}%
+        {{hash=182052283b19e3d0eb67af9d8078787d}{%
+           family={{Conmy}},
+           familyi={C\bibinitperiod},
+           given={Arthur},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4ed4ccee409d4f4d2edba7bc426c1d01}{%
+           family={{Rushing}},
+           familyi={R\bibinitperiod},
+           given={Cody},
+           giveni={C\bibinitperiod}}}%
+        {{hash=bb9e5d036f9243e2b5781286cc63310d}{%
+           family={{McGrath}},
+           familyi={M\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=d2f8bae99d9538a95287ac272f977fc4}{%
+           family={{Nanda}},
+           familyi={N\bibinitperiod},
+           given={Neel},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{7c5357324ed2cd7aea6519314dbef60c}
+      \strng{fullhash}{96dce75662a0a1d563c161031f7bb45d}
+      \strng{bibnamehash}{96dce75662a0a1d563c161031f7bb45d}
+      \strng{authorbibnamehash}{96dce75662a0a1d563c161031f7bb45d}
+      \strng{authornamehash}{7c5357324ed2cd7aea6519314dbef60c}
+      \strng{authorfullhash}{96dce75662a0a1d563c161031f7bb45d}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:2310.04625}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{10}
+      \field{title}{{Copy Suppression: Comprehensively Understanding an Attention Head}}
+      \field{year}{2023}
+      \field{pages}{arXiv:2310.04625}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.48550/arXiv.2310.04625
+      \endverb
+      \verb{eprint}
+      \verb 2310.04625
+      \endverb
+      \keyw{Computer Science - Machine Learning,Computer Science - Artificial Intelligence,Computer Science - Computation and Language}
+    \endentry
+    \entry{2023arXiv230715771M}{article}{}
+      \name{author}{5}{}{%
+        {{hash=bb9e5d036f9243e2b5781286cc63310d}{%
+           family={{McGrath}},
+           familyi={M\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=4d4a15b4892dbbfe84a56f04dc4ef217}{%
+           family={{Rahtz}},
+           familyi={R\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=94566aab122d5d15606b23d218018b99}{%
+           family={{Kramar}},
+           familyi={K\bibinitperiod},
+           given={Janos},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a23b9c9307da460af11d485bcf54cdc3}{%
+           family={{Mikulik}},
+           familyi={M\bibinitperiod},
+           given={Vladimir},
+           giveni={V\bibinitperiod}}}%
+        {{hash=afdf5ed50a24cdca0f42433e4f4848d5}{%
+           family={{Legg}},
+           familyi={L\bibinitperiod},
+           given={Shane},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{c9cad7680df48a165b7d0585e9245e0b}
+      \strng{fullhash}{384d4fc7ecbb048d45e7dd0969fb1fdd}
+      \strng{bibnamehash}{384d4fc7ecbb048d45e7dd0969fb1fdd}
+      \strng{authorbibnamehash}{384d4fc7ecbb048d45e7dd0969fb1fdd}
+      \strng{authornamehash}{c9cad7680df48a165b7d0585e9245e0b}
+      \strng{authorfullhash}{384d4fc7ecbb048d45e7dd0969fb1fdd}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:2307.15771}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{7}
+      \field{title}{{The Hydra Effect: Emergent Self-repair in Language Model Computations}}
+      \field{year}{2023}
+      \field{pages}{arXiv:2307.15771}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.48550/arXiv.2307.15771
+      \endverb
+      \verb{eprint}
+      \verb 2307.15771
+      \endverb
+      \keyw{Computer Science - Machine Learning,Computer Science - Artificial Intelligence,Computer Science - Computation and Language}
+    \endentry
+    \entry{ROME}{article}{}
+      \name{author}{4}{}{%
+        {{hash=b384683127d935b8c7064183c81902bd}{%
+           family={{Meng}},
+           familyi={M\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=22ad692c20b3b8f8f6a32384dae0ac10}{%
+           family={{Bau}},
+           familyi={B\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=656236530f4f6226bc3d0f8a29330c23}{%
+           family={{Andonian}},
+           familyi={A\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1b1e0145098271245102c2c35a46ffe4}{%
+           family={{Belinkov}},
+           familyi={B\bibinitperiod},
+           given={Yonatan},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{15a6a526535bd0024d4b217821b6470c}
+      \strng{fullhash}{86fdad5cc4fc22cab9a5eb425ac0bdc0}
+      \strng{bibnamehash}{86fdad5cc4fc22cab9a5eb425ac0bdc0}
+      \strng{authorbibnamehash}{86fdad5cc4fc22cab9a5eb425ac0bdc0}
+      \strng{authornamehash}{15a6a526535bd0024d4b217821b6470c}
+      \strng{authorfullhash}{86fdad5cc4fc22cab9a5eb425ac0bdc0}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:2202.05262}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{2}
+      \field{title}{{Locating and Editing Factual Associations in GPT}}
+      \field{year}{2022}
+      \field{pages}{arXiv:2202.05262}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.48550/arXiv.2202.05262
+      \endverb
+      \verb{eprint}
+      \verb 2202.05262
+      \endverb
+      \keyw{Computer Science - Computation and Language,Computer Science - Machine Learning,I.2.7}
+    \endentry
+    \entry{2023arXiv231008744M}{article}{}
+      \name{author}{3}{}{%
+        {{hash=bc55d3e4d1707bba69a56af2308a6171}{%
+           family={{Merullo}},
+           familyi={M\bibinitperiod},
+           given={Jack},
+           giveni={J\bibinitperiod}}}%
+        {{hash=58de468240e30c9310974f0474a16450}{%
+           family={{Eickhoff}},
+           familyi={E\bibinitperiod},
+           given={Carsten},
+           giveni={C\bibinitperiod}}}%
+        {{hash=7ca6d98b9aedc0227fb0ef517ebdc65e}{%
+           family={{Pavlick}},
+           familyi={P\bibinitperiod},
+           given={Ellie},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{573b6d4a5775daac1926543dd2fc6b7a}
+      \strng{fullhash}{573b6d4a5775daac1926543dd2fc6b7a}
+      \strng{bibnamehash}{573b6d4a5775daac1926543dd2fc6b7a}
+      \strng{authorbibnamehash}{573b6d4a5775daac1926543dd2fc6b7a}
+      \strng{authornamehash}{573b6d4a5775daac1926543dd2fc6b7a}
+      \strng{authorfullhash}{573b6d4a5775daac1926543dd2fc6b7a}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:2310.08744}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{10}
+      \field{title}{{Circuit Component Reuse Across Tasks in Transformer Language Models}}
+      \field{year}{2023}
+      \field{pages}{arXiv:2310.08744}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.48550/arXiv.2310.08744
+      \endverb
+      \verb{eprint}
+      \verb 2310.08744
+      \endverb
+      \keyw{Computer Science - Computation and Language,Computer Science - Machine Learning}
+    \endentry
+    \entry{attribution_patching}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=d2f8bae99d9538a95287ac272f977fc4}{%
+           family={Nanda},
+           familyi={N\bibinitperiod},
+           given={Neel},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{d2f8bae99d9538a95287ac272f977fc4}
+      \strng{fullhash}{d2f8bae99d9538a95287ac272f977fc4}
+      \strng{bibnamehash}{d2f8bae99d9538a95287ac272f977fc4}
+      \strng{authorbibnamehash}{d2f8bae99d9538a95287ac272f977fc4}
+      \strng{authornamehash}{d2f8bae99d9538a95287ac272f977fc4}
+      \strng{authorfullhash}{d2f8bae99d9538a95287ac272f977fc4}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Blogpost}
+      \field{note}{Section \enquote{How to Think About Activation Patching}}
+      \field{title}{Attribution Patching: Activation Patching At Industrial Scale}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.neelnanda.io/mechanistic-interpretability/attribution-patching
+      \endverb
+      \verb{url}
+      \verb https://www.neelnanda.io/mechanistic-interpretability/attribution-patching
+      \endverb
+    \endentry
+    \entry{fact_finding}{misc}{}
+      \name{author}{4}{}{%
+        {{hash=d2f8bae99d9538a95287ac272f977fc4}{%
+           family={Nanda},
+           familyi={N\bibinitperiod},
+           given={Neel},
+           giveni={N\bibinitperiod}}}%
+        {{hash=5cd16c1c8e324a833679ce2d84dfa143}{%
+           family={SenR},
+           familyi={S\bibinitperiod}}}%
+        {{hash=f6314673a113c5636aea6732571bd5c2}{%
+           family={Kramár},
+           familyi={K\bibinitperiod},
+           given={János},
+           giveni={J\bibinitperiod}}}%
+        {{hash=21e62c2a6bed089dcb3a651c409444cf}{%
+           family={Shah},
+           familyi={S\bibinitperiod},
+           given={Rohin},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{17416b474b680d3d76c582e2248551c2}
+      \strng{fullhash}{41e13ef0d272ce7dc19287b2c455ba14}
+      \strng{bibnamehash}{41e13ef0d272ce7dc19287b2c455ba14}
+      \strng{authorbibnamehash}{41e13ef0d272ce7dc19287b2c455ba14}
+      \strng{authornamehash}{17416b474b680d3d76c582e2248551c2}
+      \strng{authorfullhash}{41e13ef0d272ce7dc19287b2c455ba14}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Alignment Forum}
+      \field{title}{Fact Finding: Attempting to Reverse-Engineer Factual Recall on the Neuron Level (Post 1)}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.alignmentforum.org/posts/iGuwZTHWb6DFY3sKB/fact-finding-attempting-to-reverse-engineer-factual-recall
+      \endverb
+      \verb{url}
+      \verb https://www.alignmentforum.org/posts/iGuwZTHWb6DFY3sKB/fact-finding-attempting-to-reverse-engineer-factual-recall
+      \endverb
+    \endentry
+    \entry{2019arXiv191009113S}{article}{}
+      \name{author}{4}{}{%
+        {{hash=32f9417bdfa8d25458096ea29154cca2}{%
+           family={{Soulos}},
+           familyi={S\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=33b4983b145116c665194beb0a9a9b6b}{%
+           family={{McCoy}},
+           familyi={M\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+        {{hash=11e9c967573c1c8a0604dda20cf8a914}{%
+           family={{Linzen}},
+           familyi={L\bibinitperiod},
+           given={Tal},
+           giveni={T\bibinitperiod}}}%
+        {{hash=74a4f6a7c1bedcd46b510fca0106e4f3}{%
+           family={{Smolensky}},
+           familyi={S\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{1fa710a5578474f491c031c1ce9b22b9}
+      \strng{fullhash}{71d984140f7f91ef51bebeb23103c4c8}
+      \strng{bibnamehash}{71d984140f7f91ef51bebeb23103c4c8}
+      \strng{authorbibnamehash}{71d984140f7f91ef51bebeb23103c4c8}
+      \strng{authornamehash}{1fa710a5578474f491c031c1ce9b22b9}
+      \strng{authorfullhash}{71d984140f7f91ef51bebeb23103c4c8}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:1910.09113}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{10}
+      \field{title}{{Discovering the Compositional Structure of Vector Representations with Role Learning Networks}}
+      \field{year}{2019}
+      \field{pages}{arXiv:1910.09113}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.48550/arXiv.1910.09113
+      \endverb
+      \verb{eprint}
+      \verb 1910.09113
+      \endverb
+      \keyw{Computer Science - Machine Learning,Computer Science - Computation and Language,Statistics - Machine Learning}
+    \endentry
+    \entry{2023arXiv230515054S}{article}{}
+      \name{author}{3}{}{%
+        {{hash=cf0f39fcf4ec90f0640734fb00d7c92d}{%
+           family={{Stolfo}},
+           familyi={S\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1b1e0145098271245102c2c35a46ffe4}{%
+           family={{Belinkov}},
+           familyi={B\bibinitperiod},
+           given={Yonatan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=642ef2dffcf1d8c1905bcf343127c6d7}{%
+           family={{Sachan}},
+           familyi={S\bibinitperiod},
+           given={Mrinmaya},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{8629a5721ea1abcd9202229a3926c1e1}
+      \strng{fullhash}{8629a5721ea1abcd9202229a3926c1e1}
+      \strng{bibnamehash}{8629a5721ea1abcd9202229a3926c1e1}
+      \strng{authorbibnamehash}{8629a5721ea1abcd9202229a3926c1e1}
+      \strng{authornamehash}{8629a5721ea1abcd9202229a3926c1e1}
+      \strng{authorfullhash}{8629a5721ea1abcd9202229a3926c1e1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:2305.15054}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{5}
+      \field{title}{{A Mechanistic Interpretation of Arithmetic Reasoning in Language Models using Causal Mediation Analysis}}
+      \field{year}{2023}
+      \field{pages}{arXiv:2305.15054}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.48550/arXiv.2305.15054
+      \endverb
+      \verb{eprint}
+      \verb 2305.15054
+      \endverb
+      \keyw{Computer Science - Computation and Language,Computer Science - Machine Learning}
+    \endentry
+    \entry{2023arXiv231015154T}{article}{}
+      \name{author}{4}{}{%
+        {{hash=423194b5cba9ee34352c2934e019bfb3}{%
+           family={{Tigges}},
+           familyi={T\bibinitperiod},
+           given={Curt},
+           giveni={C\bibinitperiod}}}%
+        {{hash=f470e05af46fa90e940233b0740ab537}{%
+           family={{Hollinsworth}},
+           familyi={H\bibinitperiod},
+           given={Oskar\bibnamedelima John},
+           giveni={O\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=9cd0634a812fc079ff12ac11a64548f5}{%
+           family={{Geiger}},
+           familyi={G\bibinitperiod},
+           given={Atticus},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d2f8bae99d9538a95287ac272f977fc4}{%
+           family={{Nanda}},
+           familyi={N\bibinitperiod},
+           given={Neel},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{6473ceb9702fdfeb84e8e124730b10c9}
+      \strng{fullhash}{55889988b5fbfa3b966d21c648ccfccf}
+      \strng{bibnamehash}{55889988b5fbfa3b966d21c648ccfccf}
+      \strng{authorbibnamehash}{55889988b5fbfa3b966d21c648ccfccf}
+      \strng{authornamehash}{6473ceb9702fdfeb84e8e124730b10c9}
+      \strng{authorfullhash}{55889988b5fbfa3b966d21c648ccfccf}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:2310.15154}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{10}
+      \field{title}{{Linear Representations of Sentiment in Large Language Models}}
+      \field{year}{2023}
+      \field{pages}{arXiv:2310.15154}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.48550/arXiv.2310.15154
+      \endverb
+      \verb{eprint}
+      \verb 2310.15154
+      \endverb
+      \keyw{Computer Science - Machine Learning,Computer Science - Artificial Intelligence,Computer Science - Computation and Language}
+    \endentry
+    \entry{2023arXiv231015213T}{article}{}
+      \name{author}{6}{}{%
+        {{hash=b44a3144cd69051ec90f978424d3c33a}{%
+           family={{Todd}},
+           familyi={T\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=005a4482f704cfb694e6a38d6c8f1ab6}{%
+           family={{Li}},
+           familyi={L\bibinitperiod},
+           given={Millicent\bibnamedelima L.},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=4215b411d379a7b7222494e9c9c20628}{%
+           family={{Sharma}},
+           familyi={S\bibinitperiod},
+           given={Arnab\bibnamedelima Sen},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=9ea7a03f6917bb2b03eb1d3e4e47c9f3}{%
+           family={{Mueller}},
+           familyi={M\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod}}}%
+        {{hash=dcf3fece96fc55df5a003eccf64d2961}{%
+           family={{Wallace}},
+           familyi={W\bibinitperiod},
+           given={Byron\bibnamedelima C.},
+           giveni={B\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=22ad692c20b3b8f8f6a32384dae0ac10}{%
+           family={{Bau}},
+           familyi={B\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{6ebfe9ea947e8307fbe57f10e06bacbd}
+      \strng{fullhash}{321699146c59a4554157dd4330ab89b6}
+      \strng{bibnamehash}{321699146c59a4554157dd4330ab89b6}
+      \strng{authorbibnamehash}{321699146c59a4554157dd4330ab89b6}
+      \strng{authornamehash}{6ebfe9ea947e8307fbe57f10e06bacbd}
+      \strng{authorfullhash}{321699146c59a4554157dd4330ab89b6}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:2310.15213}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{10}
+      \field{title}{{Function Vectors in Large Language Models}}
+      \field{year}{2023}
+      \field{pages}{arXiv:2310.15213}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.48550/arXiv.2310.15213
+      \endverb
+      \verb{eprint}
+      \verb 2310.15213
+      \endverb
+      \keyw{Computer Science - Computation and Language,Computer Science - Machine Learning}
+    \endentry
+    \entry{2020arXiv200412265V}{article}{}
+      \name{author}{9}{}{%
+        {{hash=bb7db97ed791e515c4b1e12e022b0993}{%
+           family={{Vig}},
+           familyi={V\bibinitperiod},
+           given={Jesse},
+           giveni={J\bibinitperiod}}}%
+        {{hash=80c831c617902a22d4fa4074948f3aff}{%
+           family={{Gehrmann}},
+           familyi={G\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1b1e0145098271245102c2c35a46ffe4}{%
+           family={{Belinkov}},
+           familyi={B\bibinitperiod},
+           given={Yonatan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=f23771478ccf7f86d1e52cacfed48331}{%
+           family={{Qian}},
+           familyi={Q\bibinitperiod},
+           given={Sharon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=264bad04638d8f51338e3c6b76750186}{%
+           family={{Nevo}},
+           familyi={N\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=913344f0061b628c2545e3d66804cbd5}{%
+           family={{Sakenis}},
+           familyi={S\bibinitperiod},
+           given={Simas},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b4d97598c0c2343542779e5bbb769208}{%
+           family={{Huang}},
+           familyi={H\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod}}}%
+        {{hash=655315497f6da48c0cc3ecec95b1e33b}{%
+           family={{Singer}},
+           familyi={S\bibinitperiod},
+           given={Yaron},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=5845eebbe70da4363c3e8a99a0cb93c0}{%
+           family={{Shieber}},
+           familyi={S\bibinitperiod},
+           given={Stuart},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{b4e61838c3939373a793cf22cbfd7167}
+      \strng{fullhash}{c95339d7b80090aa530b9c6e1fd52a9c}
+      \strng{bibnamehash}{c95339d7b80090aa530b9c6e1fd52a9c}
+      \strng{authorbibnamehash}{c95339d7b80090aa530b9c6e1fd52a9c}
+      \strng{authornamehash}{b4e61838c3939373a793cf22cbfd7167}
+      \strng{authorfullhash}{c95339d7b80090aa530b9c6e1fd52a9c}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:2004.12265}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{4}
+      \field{title}{{Causal Mediation Analysis for Interpreting Neural NLP: The Case of Gender Bias}}
+      \field{year}{2020}
+      \field{pages}{arXiv:2004.12265}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.48550/arXiv.2004.12265
+      \endverb
+      \verb{eprint}
+      \verb 2004.12265
+      \endverb
+      \keyw{Computer Science - Computation and Language,68T50,I.2.7}
+    \endentry
+    \entry{IOI}{article}{}
+      \name{author}{5}{}{%
+        {{hash=069dc336b3fb2f586b29076e5ab0d101}{%
+           family={{Wang}},
+           familyi={W\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=085f7325909eb2ff8836337441e099cd}{%
+           family={{Variengien}},
+           familyi={V\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=182052283b19e3d0eb67af9d8078787d}{%
+           family={{Conmy}},
+           familyi={C\bibinitperiod},
+           given={Arthur},
+           giveni={A\bibinitperiod}}}%
+        {{hash=156453364dfa7e6dcb43302882a89311}{%
+           family={{Shlegeris}},
+           familyi={S\bibinitperiod},
+           given={Buck},
+           giveni={B\bibinitperiod}}}%
+        {{hash=fe7a7e80c1857d185d3ab01f15fe584d}{%
+           family={{Steinhardt}},
+           familyi={S\bibinitperiod},
+           given={Jacob},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{a2fc6d5784f1806e61c243acead23837}
+      \strng{fullhash}{b3541a6fffe99e7253066b8ebbb71b7a}
+      \strng{bibnamehash}{b3541a6fffe99e7253066b8ebbb71b7a}
+      \strng{authorbibnamehash}{b3541a6fffe99e7253066b8ebbb71b7a}
+      \strng{authornamehash}{a2fc6d5784f1806e61c243acead23837}
+      \strng{authorfullhash}{b3541a6fffe99e7253066b8ebbb71b7a}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:2211.00593}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{11}
+      \field{title}{{Interpretability in the Wild: a Circuit for Indirect Object Identification in GPT-2 small}}
+      \field{year}{2022}
+      \field{pages}{arXiv:2211.00593}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.48550/arXiv.2211.00593
+      \endverb
+      \verb{eprint}
+      \verb 2211.00593
+      \endverb
+      \keyw{Computer Science - Machine Learning,Computer Science - Artificial Intelligence,Computer Science - Computation and Language}
+    \endentry
+    \entry{Zhang2023}{article}{}
+      \name{author}{2}{}{%
+        {{hash=87e6d6494db50c7e95fd8eeb1ac2815c}{%
+           family={{Zhang}},
+           familyi={Z\bibinitperiod},
+           given={Fred},
+           giveni={F\bibinitperiod}}}%
+        {{hash=d2f8bae99d9538a95287ac272f977fc4}{%
+           family={{Nanda}},
+           familyi={N\bibinitperiod},
+           given={Neel},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{76ddf552634ef7a7878c2cd8ebf594b2}
+      \strng{fullhash}{76ddf552634ef7a7878c2cd8ebf594b2}
+      \strng{bibnamehash}{76ddf552634ef7a7878c2cd8ebf594b2}
+      \strng{authorbibnamehash}{76ddf552634ef7a7878c2cd8ebf594b2}
+      \strng{authornamehash}{76ddf552634ef7a7878c2cd8ebf594b2}
+      \strng{authorfullhash}{76ddf552634ef7a7878c2cd8ebf594b2}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:2309.16042}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{9}
+      \field{title}{{Towards Best Practices of Activation Patching in Language Models: Metrics and Methods}}
+      \field{year}{2023}
+      \field{pages}{arXiv:2309.16042}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.48550/arXiv.2309.16042
+      \endverb
+      \verb{eprint}
+      \verb 2309.16042
+      \endverb
+      \keyw{Computer Science - Machine Learning,Computer Science - Artificial Intelligence,Computer Science - Computation and Language}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

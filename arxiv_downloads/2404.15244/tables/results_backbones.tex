@@ -1,0 +1,37 @@
+\caption{\textbf{Impact of backbone size.} {\ours} shows strong performance \wrt baselines across all backbone sizes on both COCO and Cityscapes datasets while reducing GFLOPs in the transformer encoder. $\dagger$ImageNet-21K pre-trained}
+\centering
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{llccccccc}
+\toprule
+ && \multicolumn{3}{c}{\textbf{Performance} ($\uparrow$)} && \multicolumn{2}{c}{\textbf{GFLOPs} ($\downarrow$)} \\ \cline{3-5} \cline{7-8}
+\multirow{-2}{*}{\textbf{Bakbone}} & \multirow{-2}{*}{\textbf{Model}} & \textbf{PQ} & \textbf{mIOU}$_p$ & \textbf{AP}$_p$ && \textbf{Total} & \textbf{Tx. Enc.} \\ 
+\midrule
+
+\multicolumn{8}{c}{\textbf{Dataset}: COCO}\\
+\hline
+\multirow{2}{*}{\textbf{SWIN-T}} & M2F \cite{cheng2021mask2former} & 52.03 & 62.49 & 42.18 && 235.57  & 121.69\\
+& {\ours} & 52.06 & 62.76 & 41.51 && 202.39 & 88.47 \\
+\hline
+\multirow{2}{*}{\textbf{SWIN-S}} & M2F \cite{cheng2021mask2former} & 54.63 & 64.24 & 44.69 && 316.50 & 121.69 \\
+& {\ours} & 54.76 & 64.46 & 44.48 && 275.96 & 81.05 \\
+\hline
+\multirow{2}{*}{\textbf{SWIN-B}$^\dagger$} & M2F & 56.40 & 67.09  & 46.29 && 470.98 & 122.56 \\
+& {\ours} & 56.49 & 66.56 & 46.40 && 425.17 & 76.50 \\
+\hline
+\multicolumn{8}{c}{\textbf{Dataset}: Cityscapes}\\
+\hline
+\multirow{2}{*}{\textbf{SWIN-T}} & M2F \cite{cheng2021mask2former} & 64.00 & 80.77 & 39.26 && 537.85 & 281.13 \\
+& {\ours} & 64.18 & 80.49 & 39.64 && 507.51  & 250.80 \\
+
+\hline
+\multirow{2}{*}{\textbf{SWIN-S}} & M2F \cite{cheng2021mask2former} & 64.84 & 81.76 & 40.73 && 724.29 & 281.13 \\
+& {\ours} & 65.12 & 81.64 & 41.17 && 665.38 & 222.22 \\
+
+\hline
+\multirow{2}{*}{\textbf{SWIN-B}$^\dagger$} & M2F \cite{cheng2021mask2former} & 66.12 & 82.70 & 42.84 && 1051.19 & 283.14 \\
+& {\ours} & 65.44 & 82.05 & 40.51 && 984.73 & 216.69 \\
+
+
+\bottomrule
+\end{tabular}}  
+\label{tab:result_backbones}

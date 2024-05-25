@@ -1,0 +1,14 @@
+\begin{table*}[t]
+\centering
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+\multirow{2}{*}{Model} & \multicolumn{4}{c}{Discipline}                                                                                             & \multicolumn{1}{c}{\multirow{2}{*}{\textbf{Overall}}} \\ \cmidrule(lr){2-5}
+                       & \multicolumn{1}{c}{Humanities} & \multicolumn{1}{c}{Social Science} & \multicolumn{1}{c}{STEM} & \multicolumn{1}{c}{Other} & \multicolumn{1}{c}{}    \\ \midrule
+\baselinetinyllama & \textbf{25.38}                 & 23.30                               & 24.20                     & 26.78                     & 24.97                       \\ \midrule
+\tinyllamamoe & 23.85                          & 26.32                              & 27.40                     & 28.03                     & 26.11                       \\
+\tinyllamamerge & 23.91                          & \textbf{26.49}                     & \textbf{27.72}           & \textbf{28.29}            & \textbf{26.30}               \\ \bottomrule
+\end{tabular}
+\caption{\label{tab:discussion-generalizability}
+Experiments on the generalizable effectiveness of \ours for general tasks in MMLU benchmark~\cite{hendrycks2021measuring}. It shows that \ours can improve the general instruction tuning performance of \llm{s}.
+}
+\end{table*}

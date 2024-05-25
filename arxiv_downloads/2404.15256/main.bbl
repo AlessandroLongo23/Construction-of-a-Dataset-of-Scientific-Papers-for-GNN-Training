@@ -1,0 +1,218 @@
+\begin{thebibliography}{42}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abu~Alhaija et~al.(2018)Abu~Alhaija, Mustikovela, Mescheder, Geiger, and Rother]{abu2018augmented}
+Hassan Abu~Alhaija, Siva~Karthik Mustikovela, Lars Mescheder, Andreas Geiger, and Carsten Rother.
+\newblock Augmented reality meets computer vision: Efficient data generation for urban driving scenes.
+\newblock \emph{International Journal of Computer Vision}, 126:\penalty0 961--972, 2018.
+
+\bibitem[Agarwal et~al.(2023)Agarwal, Kumar, Malik, and Pathak]{agarwal2023legged}
+Ananye Agarwal, Ashish Kumar, Jitendra Malik, and Deepak Pathak.
+\newblock Legged locomotion in challenging terrains using egocentric vision.
+\newblock In \emph{Conference on Robot Learning}, pages 403--415. PMLR, 2023.
+
+\bibitem[Cai et~al.(2023)Cai, Ancha, Sharma, Osteen, Bucher, Phillips, Wang, Everett, Roy, and How]{cai2023evora}
+Xiaoyi Cai, Siddharth Ancha, Lakshay Sharma, Philip~R Osteen, Bernadette Bucher, Stephen Phillips, Jiuguang Wang, Michael Everett, Nicholas Roy, and Jonathan~P How.
+\newblock Evora: Deep evidential traversability learning for risk-aware off-road autonomy.
+\newblock \emph{arXiv preprint arXiv:2311.06234}, 2023.
+
+\bibitem[Caluwaerts et~al.(2023)Caluwaerts, Iscen, Kew, Yu, Zhang, Freeman, Lee, Lee, Saliceti, Zhuang, et~al.]{caluwaerts2023barkour}
+Ken Caluwaerts, Atil Iscen, J~Chase Kew, Wenhao Yu, Tingnan Zhang, Daniel Freeman, Kuang-Huei Lee, Lisa Lee, Stefano Saliceti, Vincent Zhuang, et~al.
+\newblock Barkour: Benchmarking animal-level agility with quadruped robots.
+\newblock \emph{arXiv preprint arXiv:2305.14654}, 2023.
+
+\bibitem[Cheng et~al.(2023)Cheng, Shi, Agarwal, and Pathak]{cheng2023extreme}
+Xuxin Cheng, Kexin Shi, Ananye Agarwal, and Deepak Pathak.
+\newblock Extreme parkour with legged robots.
+\newblock \emph{arXiv preprint arXiv:2309.14341}, 2023.
+
+\bibitem[Cordts et~al.(2016)Cordts, Omran, Ramos, Rehfeld, Enzweiler, Benenson, Franke, Roth, and Schiele]{cordts2016cityscapes}
+Marius Cordts, Mohamed Omran, Sebastian Ramos, Timo Rehfeld, Markus Enzweiler, Rodrigo Benenson, Uwe Franke, Stefan Roth, and Bernt Schiele.
+\newblock The cityscapes dataset for semantic urban scene understanding.
+\newblock In \emph{Proceedings of the IEEE conference on computer vision and pattern recognition}, pages 3213--3223, 2016.
+
+\bibitem[Elnoor et~al.(2023)Elnoor, Sathyamoorthy, Weerakoon, and Manocha]{elnoor2023pronav}
+Mohamed Elnoor, Adarsh~Jagan Sathyamoorthy, Kasun Weerakoon, and Dinesh Manocha.
+\newblock Pronav: Proprioceptive traversability estimation for autonomous legged robot navigation in outdoor environments.
+\newblock \emph{arXiv preprint arXiv:2307.09754}, 2023.
+
+\bibitem[Erni et~al.(2023)Erni, Frey, Miki, Mattamala, and Hutter]{erni2023mem}
+Gian Erni, Jonas Frey, Takahiro Miki, Matias Mattamala, and Marco Hutter.
+\newblock Mem: Multi-modal elevation mapping for robotics and learning.
+\newblock In \emph{2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, pages 11011--11018. IEEE, 2023.
+
+\bibitem[Ewen et~al.(2022)Ewen, Li, Chen, Hong, and Vasudevan]{ewen2022these}
+Parker Ewen, Adam Li, Yuxin Chen, Steven Hong, and Ram Vasudevan.
+\newblock These maps are made for walking: Real-time terrain property estimation for mobile robots.
+\newblock \emph{IEEE Robotics and Automation Letters}, 7\penalty0 (3):\penalty0 7083--7090, 2022.
+
+\bibitem[Fan et~al.(2021)Fan, Otsu, Kubo, Dixit, Burdick, and Agha-Mohammadi]{fan2021step}
+David~D Fan, Kyohei Otsu, Yuki Kubo, Anushri Dixit, Joel Burdick, and Ali-Akbar Agha-Mohammadi.
+\newblock Step: Stochastic traversability evaluation and planning for risk-aware off-road navigation.
+\newblock \emph{arXiv preprint arXiv:2103.02828}, 2021.
+
+\bibitem[Frey et~al.(2023)Frey, Mattamala, Chebrolu, Cadena, Fallon, and Hutter]{frey2023fast}
+Jonas Frey, Matias Mattamala, Nived Chebrolu, Cesar Cadena, Maurice Fallon, and Marco Hutter.
+\newblock Fast traversability estimation for wild visual navigation.
+\newblock \emph{arXiv preprint arXiv:2305.08510}, 2023.
+
+\bibitem[Frey et~al.(2024)Frey, Khattak, Patel, Atha, Nubert, Padgett, Hutter, and Spieler]{frey2024roadrunner}
+Jonas Frey, Shehryar Khattak, Manthan Patel, Deegan Atha, Julian Nubert, Curtis Padgett, Marco Hutter, and Patrick Spieler.
+\newblock Roadrunner--learning traversability estimation for autonomous off-road driving.
+\newblock \emph{arXiv preprint arXiv:2402.19341}, 2024.
+
+\bibitem[Fu et~al.(2021)Fu, Kumar, Malik, and Pathak]{fu2021minimizing}
+Zipeng Fu, Ashish Kumar, Jitendra Malik, and Deepak Pathak.
+\newblock Minimizing energy consumption leads to the emergence of gaits in legged robots.
+\newblock \emph{arXiv preprint arXiv:2111.01674}, 2021.
+
+\bibitem[Fu et~al.(2022)Fu, Kumar, Agarwal, Qi, Malik, and Pathak]{fu2022coupling}
+Zipeng Fu, Ashish Kumar, Ananye Agarwal, Haozhi Qi, Jitendra Malik, and Deepak Pathak.
+\newblock Coupling vision and proprioception for navigation of legged robots.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pages 17273--17283, 2022.
+
+\bibitem[Gan et~al.(2022)Gan, Kim, Grizzle, Walls, Kim, Eustice, and Ghaffari]{gan2022multitask}
+Lu~Gan, Youngji Kim, Jessy~W Grizzle, Jeffrey~M Walls, Ayoung Kim, Ryan~M Eustice, and Maani Ghaffari.
+\newblock Multitask learning for scalable and dense multilayer bayesian map inference.
+\newblock \emph{IEEE Transactions on Robotics}, 39\penalty0 (1):\penalty0 699--717, 2022.
+
+\bibitem[Guan et~al.(2022)Guan, Kothandaraman, Chandra, Sathyamoorthy, Weerakoon, and Manocha]{guan2022ga}
+Tianrui Guan, Divya Kothandaraman, Rohan Chandra, Adarsh~Jagan Sathyamoorthy, Kasun Weerakoon, and Dinesh Manocha.
+\newblock Ga-nav: Efficient terrain segmentation for robot navigation in unstructured outdoor environments.
+\newblock \emph{IEEE Robotics and Automation Letters}, 7\penalty0 (3):\penalty0 8138--8145, 2022.
+
+\bibitem[He et~al.(2024)He, Zhang, Xiao, He, Liu, and Shi]{he2024agile}
+Tairan He, Chong Zhang, Wenli Xiao, Guanqi He, Changliu Liu, and Guanya Shi.
+\newblock Agile but safe: Learning collision-free high-speed legged locomotion.
+\newblock \emph{arXiv preprint arXiv:2401.17583}, 2024.
+
+\bibitem[Hoeller et~al.(2021)Hoeller, Wellhausen, Farshidian, and Hutter]{hoeller2021learning}
+David Hoeller, Lorenz Wellhausen, Farbod Farshidian, and Marco Hutter.
+\newblock Learning a state representation and navigation in cluttered and dynamic environments.
+\newblock \emph{IEEE Robotics and Automation Letters}, 6\penalty0 (3):\penalty0 5081--5088, 2021.
+
+\bibitem[Hoeller et~al.(2023)Hoeller, Rudin, Sako, and Hutter]{hoeller2023anymal}
+David Hoeller, Nikita Rudin, Dhionis Sako, and Marco Hutter.
+\newblock Anymal parkour: Learning agile navigation for quadrupedal robots.
+\newblock \emph{arXiv preprint arXiv:2306.14874}, 2023.
+
+\bibitem[Hwangbo et~al.(2019)Hwangbo, Lee, Dosovitskiy, Bellicoso, Tsounis, Koltun, and Hutter]{hwangbo2019learning}
+Jemin Hwangbo, Joonho Lee, Alexey Dosovitskiy, Dario Bellicoso, Vassilios Tsounis, Vladlen Koltun, and Marco Hutter.
+\newblock Learning agile and dynamic motor skills for legged robots.
+\newblock \emph{Science Robotics}, 4\penalty0 (26):\penalty0 eaau5872, 2019.
+
+\bibitem[Jenelten et~al.(2024)Jenelten, He, Farshidian, and Hutter]{jenelten2024dtc}
+Fabian Jenelten, Junzhe He, Farbod Farshidian, and Marco Hutter.
+\newblock Dtc: Deep tracking control.
+\newblock \emph{Science Robotics}, 9\penalty0 (86):\penalty0 eadh5401, 2024.
+
+\bibitem[Jung et~al.(2023)Jung, Lee, Meng, Boots, and Lambert]{jung2023v}
+Sanghun Jung, JoonHo Lee, Xiangyun Meng, Byron Boots, and Alexander Lambert.
+\newblock V-strong: Visual self-supervised traversability learning for off-road navigation.
+\newblock \emph{arXiv preprint arXiv:2312.16016}, 2023.
+
+\bibitem[Kareer et~al.(2023)Kareer, Yokoyama, Batra, Ha, and Truong]{kareer2023vinl}
+Simar Kareer, Naoki Yokoyama, Dhruv Batra, Sehoon Ha, and Joanne Truong.
+\newblock Vinl: Visual navigation and locomotion over obstacles.
+\newblock In \emph{2023 IEEE International Conference on Robotics and Automation (ICRA)}, pages 2018--2024. IEEE, 2023.
+
+\bibitem[Karnan et~al.(2023{\natexlab{a}})Karnan, Yang, Farkash, Warnell, Biswas, and Stone]{karnan2023sterling}
+Haresh Karnan, Elvin Yang, Daniel Farkash, Garrett Warnell, Joydeep Biswas, and Peter Stone.
+\newblock Sterling: Self-supervised terrain representation learning from unconstrained robot experience.
+\newblock In \emph{Conference on Robot Learning}, pages 2393--2413. PMLR, 2023{\natexlab{a}}.
+
+\bibitem[Karnan et~al.(2023{\natexlab{b}})Karnan, Yang, Warnell, Biswas, and Stone]{karnan2023wait}
+Haresh Karnan, Elvin Yang, Garrett Warnell, Joydeep Biswas, and Peter Stone.
+\newblock Wait, that feels familiar: Learning to extrapolate human preferences for preference aligned path planning.
+\newblock \emph{arXiv preprint arXiv:2309.09912}, 2023{\natexlab{b}}.
+
+\bibitem[Kumar et~al.(2021)Kumar, Fu, Pathak, and Malik]{kumar2021rma}
+Ashish Kumar, Zipeng Fu, Deepak Pathak, and Jitendra Malik.
+\newblock Rma: Rapid motor adaptation for legged robots.
+\newblock \emph{arXiv preprint arXiv:2107.04034}, 2021.
+
+\bibitem[Lee et~al.(2020)Lee, Hwangbo, Wellhausen, Koltun, and Hutter]{lee2020learning}
+Joonho Lee, Jemin Hwangbo, Lorenz Wellhausen, Vladlen Koltun, and Marco Hutter.
+\newblock Learning quadrupedal locomotion over challenging terrain.
+\newblock \emph{Science Robotics}, 5\penalty0 (47):\penalty0 eabc5986, 2020.
+
+\bibitem[Margolis et~al.(2023)Margolis, Fu, Ji, and Agrawal]{margolis2023learning}
+Gabriel~B Margolis, Xiang Fu, Yandong Ji, and Pulkit Agrawal.
+\newblock Learning to see physical properties with active sensing motor policies.
+\newblock \emph{arXiv preprint arXiv:2311.01405}, 2023.
+
+\bibitem[Meng et~al.(2023)Meng, Hatch, Lambert, Li, Wagener, Schmittle, Lee, Yuan, Chen, Deng, et~al.]{meng2023terrainnet}
+Xiangyun Meng, Nathan Hatch, Alexander Lambert, Anqi Li, Nolan Wagener, Matthew Schmittle, JoonHo Lee, Wentao Yuan, Zoey Chen, Samuel Deng, et~al.
+\newblock Terrainnet: Visual modeling of complex terrain for high-speed, off-road navigation.
+\newblock \emph{arXiv preprint arXiv:2303.15771}, 2023.
+
+\bibitem[Miki et~al.(2022)Miki, Lee, Hwangbo, Wellhausen, Koltun, and Hutter]{miki2022learning}
+Takahiro Miki, Joonho Lee, Jemin Hwangbo, Lorenz Wellhausen, Vladlen Koltun, and Marco Hutter.
+\newblock Learning robust perceptive locomotion for quadrupedal robots in the wild.
+\newblock \emph{Science Robotics}, 7\penalty0 (62):\penalty0 eabk2822, 2022.
+
+\bibitem[Roth et~al.(2023)Roth, Nubert, Yang, Mittal, and Hutter]{roth2023viplanner}
+Pascal Roth, Julian Nubert, Fan Yang, Mayank Mittal, and Marco Hutter.
+\newblock Viplanner: Visual semantic imperative learning for local navigation.
+\newblock \emph{arXiv preprint arXiv:2310.00982}, 2023.
+
+\bibitem[Rudin et~al.(2022)Rudin, Hoeller, Bjelonic, and Hutter]{rudin2022advanced}
+Nikita Rudin, David Hoeller, Marko Bjelonic, and Marco Hutter.
+\newblock Advanced skills by learning locomotion and local navigation end-to-end.
+\newblock In \emph{2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, pages 2497--2503. IEEE, 2022.
+
+\bibitem[Schulman et~al.(2017)Schulman, Wolski, Dhariwal, Radford, and Klimov]{schulman2017proximal}
+John Schulman, Filip Wolski, Prafulla Dhariwal, Alec Radford, and Oleg Klimov.
+\newblock Proximal policy optimization algorithms.
+\newblock \emph{arXiv preprint arXiv:1707.06347}, 2017.
+
+\bibitem[Truong et~al.(2021)Truong, Yarats, Li, Meier, Chernova, Batra, and Rai]{truong2021learning}
+Joanne Truong, Denis Yarats, Tianyu Li, Franziska Meier, Sonia Chernova, Dhruv Batra, and Akshara Rai.
+\newblock Learning navigation skills for legged robots with learned robot embeddings.
+\newblock In \emph{2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, pages 484--491. IEEE, 2021.
+
+\bibitem[Viswanath et~al.(2021)Viswanath, Singh, Jiang, Sujit, and Saripalli]{viswanath2021offseg}
+Kasi Viswanath, Kartikeya Singh, Peng Jiang, PB~Sujit, and Srikanth Saripalli.
+\newblock Offseg: A semantic segmentation framework for off-road driving.
+\newblock In \emph{2021 IEEE 17th international conference on automation science and engineering (CASE)}, pages 354--359. IEEE, 2021.
+
+\bibitem[Wang et~al.(2019)Wang, Li, Aertsen, Deprest, Ourselin, and Vercauteren]{wang2019aleatoric}
+Guotai Wang, Wenqi Li, Michael Aertsen, Jan Deprest, S{\'e}bastien Ourselin, and Tom Vercauteren.
+\newblock Aleatoric uncertainty estimation with test-time augmentation for medical image segmentation with convolutional neural networks.
+\newblock \emph{Neurocomputing}, 338:\penalty0 34--45, 2019.
+
+\bibitem[Wigness et~al.(2019)Wigness, Eum, Rogers, Han, and Kwon]{wigness2019rugd}
+Maggie Wigness, Sungmin Eum, John~G Rogers, David Han, and Heesung Kwon.
+\newblock A rugd dataset for autonomous navigation and visual perception in unstructured outdoor environments.
+\newblock In \emph{2019 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, pages 5000--5007. IEEE, 2019.
+
+\bibitem[Yang et~al.(2021)Yang, Zhang, Hansen, Xu, and Wang]{yang2021learning}
+Ruihan Yang, Minghao Zhang, Nicklas Hansen, Huazhe Xu, and Xiaolong Wang.
+\newblock Learning vision-guided quadrupedal locomotion end-to-end with cross-modal transformers.
+\newblock \emph{arXiv preprint arXiv:2107.03996}, 2021.
+
+\bibitem[Yao et~al.(2022)Yao, Zhang, and Oh]{yao2022rca}
+Xinjie Yao, Ji~Zhang, and Jean Oh.
+\newblock Rca: Ride comfort-aware visual navigation via self-supervised learning.
+\newblock In \emph{2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, pages 7847--7852. IEEE, 2022.
+
+\bibitem[Zhang et~al.(2023)Zhang, Rudin, Hoeller, and Hutter]{zhang2023learning}
+Chong Zhang, Nikita Rudin, David Hoeller, and Marco Hutter.
+\newblock Learning agile locomotion on risky terrains.
+\newblock \emph{arXiv preprint arXiv:2311.10484}, 2023.
+
+\bibitem[Zhang et~al.(2024)Zhang, Jin, Frey, Rudin, Mattamala~Aravena, Cadena, and Hutter]{zhang2024resilient}
+Chong Zhang, Jin Jin, Jonas Frey, Nikita Rudin, Matias~Eduardo Mattamala~Aravena, Cesar Cadena, and Marco Hutter.
+\newblock Resilient legged local navigation: Learning to traverse with compromised perception end-to-end.
+\newblock In \emph{41st IEEE Conference on Robotics and Automation (ICRA 2024)}, 2024.
+
+\bibitem[Zhuang et~al.(2023)Zhuang, Fu, Wang, Atkeson, Schwertfeger, Finn, and Zhao]{zhuang2023robot}
+Ziwen Zhuang, Zipeng Fu, Jianren Wang, Christopher Atkeson, Soeren Schwertfeger, Chelsea Finn, and Hang Zhao.
+\newblock Robot parkour learning.
+\newblock \emph{arXiv preprint arXiv:2309.05665}, 2023.
+
+\end{thebibliography}

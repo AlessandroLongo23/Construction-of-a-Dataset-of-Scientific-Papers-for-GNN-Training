@@ -1,0 +1,81 @@
+\PassOptionsToPackage{table}{xcolor}
+\documentclass[runningheads]{llncs}
+
+ 
+
+\usepackage[mobile]{eccv}
+
+
+
+\usepackage{eccvabbrv}
+
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{wrapfig}
+
+
+
+
+\usepackage[accsupp]{axessibility}  %
+
+
+
+
+\usepackage[pagebackref,breaklinks,colorlinks,citecolor=eccvblue]{hyperref}
+\usepackage{orcidlink}
+
+
+\input{preamble}
+\begin{document}
+
+\title{FlowMap: High-Quality Camera Poses, Intrinsics, and Depth via Gradient Descent}
+
+\titlerunning{FlowMap: Camera Poses, Intrinsics and Depth via Gradient Descent}
+
+\author{Cameron Smith* \and
+David Charatan* \and \\
+Ayush Tewari \and
+Vincent Sitzmann}
+
+\authorrunning{C.~Smith and D.~Charatan et al.}
+
+\institute{MIT CSAIL}
+
+\maketitle
+
+
+\input{sec/0_abstract}
+\input{sec/1_intro}
+\input{sec/2_related}
+\input{sec/3_method}
+\input{sec/4_experiments}
+\input{sec/5_ablations}
+\input{sec/6_conclusion}
+
+\bibliographystyle{splncs04}
+\bibliography{main}
+
+
+\title{Supplemental Material}
+\author{}
+\institute{}
+\maketitle
+\vspace{-20pt}
+
+\makeatletter
+\renewcommand \thesection{S\@arabic\c@section}
+\renewcommand\thetable{S\@arabic\c@table}
+\renewcommand \thefigure{S\@arabic\c@figure}
+\makeatother
+\setcounter{section}{0}
+\setcounter{figure}{0}
+\setcounter{table}{0}
+
+\input{supplement/additional_ablations}
+\input{supplement/additional_results}
+\input{supplement/implementation_details}
+\input{supplement/experiment_details}
+\input{supplement/limitations}
+
+
+\end{document}

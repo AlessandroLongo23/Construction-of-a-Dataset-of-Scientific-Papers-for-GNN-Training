@@ -1,0 +1,17 @@
+\caption{\textbf{Impact on DETR.} We extend our approach to DETR \cite{carion2020end} for object detection tasks as \oursdetr. (Dataset: COCO; Backbone: Res50)}
+\centering
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{lcccccccc}
+\toprule
+ & \multicolumn{5}{c}{\textbf{Performance} ($\uparrow$)} && \multicolumn{2}{c}{\textbf{GFLOPs} ($\downarrow$)} \\ \cline{2-6} \cline{8-9}
+\multirow{-2}{*}{\textbf{Model}} & \textbf{AP} & \textbf{AP}$_{50}$ & \textbf{AP}$_S$ & \textbf{AP}$_M$ & \textbf{AP}$_L$ && \textbf{Total} & \textbf{Tx. Enc.} \\ 
+\midrule
+
+DETR \cite{carion2020end} & 42.0 & 62.4 & 20.5 & 45.8 & 61.1 && 83.59 & 9.92 \\
+{\oursdetr}($\GPRatio=0.0001$) & 41.9 & 62.2 & 20.8 & 45.8 & 60.4 && 81.87 & 6.41 \\
+{\oursdetr}($\GPRatio=0.001$) & 40.9 & 61.5 & 20.2 & 44.5 & 59.1 && 79.92 & 4.52 \\
+{\oursdetr}($\GPRatio=0.01$) & 40.2 & 61.0 & 18.7 & 43.6 & 58.8 && 79.33 & 3.94 \\
+
+\bottomrule
+\end{tabular}}  
+\label{tab:result_detr}

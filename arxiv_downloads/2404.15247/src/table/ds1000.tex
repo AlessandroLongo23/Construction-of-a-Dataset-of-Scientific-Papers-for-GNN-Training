@@ -1,0 +1,16 @@
+\begin{table*}[h]
+\centering
+\begin{tabular}{@{}lcrrrrrrrr@{}}
+\toprule
+\multirow{2}{*}{Model} & \multirow{2}{*}{Size} & \multicolumn{7}{c}{Data Science Library}                                                                      & \multirow{2}{*}{\textbf{Overall}} \\ \cmidrule(lr){3-9}
+                       &                       &  \multicolumn{1}{c}{np}         &  \multicolumn{1}{c}{pd}        &  \multicolumn{1}{c}{plt}    &  \multicolumn{1}{c}{py}       &  \multicolumn{1}{c}{scp}         &  \multicolumn{1}{c}{tf}    &  \multicolumn{1}{c}{sk}       &                          \\ \midrule
+\dscoderbase    & 1.3B                  &       25.1        &       5.8        &        34.5       &       12.7        &      9.8         &       11.1        &       12.7        &        16.4                  \\ \midrule
+\baselineds                 & 1.3B                  & 30.9          & 17.0          & 40.5 & 32.7          & 18.3          & 21.1 & 24.4          & 25.9                     \\
+\ewads                    & 1.3B                  &   32.9   &    19.4         &   \textbf{41.8}  &       25.7       &      17.7      &       \textbf{22.2}        &       33.0        &    27.8                     \\ \midrule
+\oursmoe                  & 8$\times$1.3B                & 33.2          & 21.3          & 38.4          & 41.8          & 21.8          & 23.5    & 37.5          & 30.0               \\
+\oursmerge                  & 1.3B                  & \textbf{32.9} & \textbf{20.2} & 38.9          & \textbf{41.4} & \textbf{21.1} & 16.9          & \textbf{37.5} & \textbf{29.3}            \\ \bottomrule
+\end{tabular}
+\caption{\label{tab:ds1000}
+\Passat{1} results on \dsonek{} (completion format) with $\temperature=0.2$, $\topp=0.5$, $\maxLen=1024$, and $\nsamples=40$, following the same hyperparameter setting used in prior works~\cite{wei2023magicoder}.
+}
+\end{table*}

@@ -1,0 +1,235 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{https://doi.org/#1}
+
+\bibitem{10296714}
+Ammar, A., Khalil, M.I., Salama, C.: Rt-yoso: Revisiting yoso for real-time
+  panoptic segmentation. In: 2023 5th Novel Intelligent and Leading Emerging
+  Sciences Conference (NILES). pp. 306--311 (2023).
+  \doi{10.1109/NILES59815.2023.10296714}
+
+\bibitem{carion2020end}
+Carion, N., Massa, F., Synnaeve, G., Usunier, N., Kirillov, A., Zagoruyko, S.:
+  End-to-end object detection with transformers. In: European conference on
+  computer vision. pp. 213--229. Springer (2020)
+
+\bibitem{caron2021emerging}
+Caron, M., Touvron, H., Misra, I., J\'egou, H., Mairal, J., Bojanowski, P.,
+  Joulin, A.: Emerging properties in self-supervised vision transformers. In:
+  Proceedings of the International Conference on Computer Vision (ICCV) (2021)
+
+\bibitem{cheng2020panoptic}
+Cheng, B., Collins, M.D., Zhu, Y., Liu, T., Huang, T.S., Adam, H., Chen, L.C.:
+  Panoptic-deeplab: A simple, strong, and fast baseline for bottom-up panoptic
+  segmentation. In: Proceedings of the IEEE/CVF conference on computer vision
+  and pattern recognition. pp. 12475--12485 (2020)
+
+\bibitem{cheng2021mask2former}
+Cheng, B., Misra, I., Schwing, A.G., Kirillov, A., Girdhar, R.:
+  Masked-attention mask transformer for universal image segmentation. In: CVPR
+  (2022)
+
+\bibitem{cheng2021per}
+Cheng, B., Schwing, A., Kirillov, A.: Per-pixel classification is not all you
+  need for semantic segmentation. Advances in Neural Information Processing
+  Systems  \textbf{34},  17864--17875 (2021)
+
+\bibitem{cordts2016cityscapes}
+Cordts, M., Omran, M., Ramos, S., Rehfeld, T., Enzweiler, M., Benenson, R.,
+  Franke, U., Roth, S., Schiele, B.: The cityscapes dataset for semantic urban
+  scene understanding. In: Proceedings of the IEEE conference on computer
+  vision and pattern recognition. pp. 3213--3223 (2016)
+
+\bibitem{deng2009imagenet}
+Deng, J., Dong, W., Socher, R., Li, L.J., Li, K., Fei-Fei, L.: Imagenet: A
+  large-scale hierarchical image database. In: 2009 IEEE conference on computer
+  vision and pattern recognition. pp. 248--255. Ieee (2009)
+
+\bibitem{everingham2015pascal}
+Everingham, M., Eslami, S.A., Van~Gool, L., Williams, C.K., Winn, J.,
+  Zisserman, A.: The pascal visual object classes challenge: A retrospective.
+  International journal of computer vision  \textbf{111},  98--136 (2015)
+
+\bibitem{fan2021rethinking}
+Fan, M., Lai, S., Huang, J., Wei, X., Chai, Z., Luo, J., Wei, X.: Rethinking
+  bisenet for real-time semantic segmentation. In: Proceedings of the IEEE/CVF
+  conference on computer vision and pattern recognition. pp. 9716--9725 (2021)
+
+\bibitem{gu2024dataseg}
+Gu, X., Cui, Y., Huang, J., Rashwan, A., Yang, X., Zhou, X., Ghiasi, G., Kuo,
+  W., Chen, H., Chen, L.C., et~al.: Dataseg: Taming a universal multi-dataset
+  multi-task segmentation model. Advances in Neural Information Processing
+  Systems  \textbf{36} (2024)
+
+\bibitem{he2017mask}
+He, K., Gkioxari, G., Doll{\'a}r, P., Girshick, R.: Mask r-cnn. In: Proceedings
+  of the IEEE international conference on computer vision. pp. 2961--2969
+  (2017)
+
+\bibitem{he2016deep}
+He, K., Zhang, X., Ren, S., Sun, J.: Deep residual learning for image
+  recognition. In: Proceedings of the IEEE conference on computer vision and
+  pattern recognition. pp. 770--778 (2016)
+
+\bibitem{hou2020real}
+Hou, R., Li, J., Bhargava, A., Raventos, A., Guizilini, V., Fang, C., Lynch,
+  J., Gaidon, A.: Real-time panoptic segmentation from dense detections. In:
+  Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition. pp. 8523--8532 (2020)
+
+\bibitem{hu2023you}
+Hu, J., Huang, L., Ren, T., Zhang, S., Ji, R., Cao, L.: You only segment once:
+  Towards real-time panoptic segmentation. In: Proceedings of the IEEE/CVF
+  Conference on Computer Vision and Pattern Recognition. pp. 17819--17829
+  (2023)
+
+\bibitem{jain2023oneformer}
+Jain, J., Li, J., Chiu, M.T., Hassani, A., Orlov, N., Shi, H.: Oneformer: One
+  transformer to rule universal image segmentation. In: Proceedings of the
+  IEEE/CVF Conference on Computer Vision and Pattern Recognition. pp.
+  2989--2998 (2023)
+
+\bibitem{jiang2023multi}
+Jiang, Z., Gong, Z., Xu, Y., Wang, J.: Multi-exit vision transformer with
+  custom fine-tuning for fine-grained image recognition. In: 2023 IEEE
+  International Conference on Image Processing (ICIP). pp. 5233--5237 (2023)
+
+\bibitem{kingma2017adam}
+Kingma, D.P., Ba, J.: Adam: A method for stochastic optimization (2017)
+
+\bibitem{kirillov2019panoptic}
+Kirillov, A., He, K., Girshick, R., Rother, C., Dollár, P.: Panoptic
+  segmentation (2019)
+
+\bibitem{li2023lite}
+Li, F., Zeng, A., Liu, S., Zhang, H., Li, H., Zhang, L., Ni, L.M.: Lite detr:
+  An interleaved multi-scale encoder for efficient detr. In: Proceedings of the
+  IEEE/CVF Conference on Computer Vision and Pattern Recognition. pp.
+  18558--18567 (2023)
+
+\bibitem{lin2014microsoft}
+Lin, T.Y., Maire, M., Belongie, S., Hays, J., Perona, P., Ramanan, D.,
+  Doll{\'a}r, P., Zitnick, C.L.: Microsoft coco: Common objects in context. In:
+  Computer Vision--ECCV 2014: 13th European Conference, Zurich, Switzerland,
+  September 6-12, 2014, Proceedings, Part V 13. pp. 740--755. Springer (2014)
+
+\bibitem{liu2021swin}
+Liu, Z., Lin, Y., Cao, Y., Hu, H., Wei, Y., Zhang, Z., Lin, S., Guo, B.: Swin
+  transformer: Hierarchical vision transformer using shifted windows. In:
+  Proceedings of the IEEE/CVF international conference on computer vision. pp.
+  10012--10022 (2021)
+
+\bibitem{liu2021mevt}
+Liu, Z., Sun, Y., Li, Y., Zhou, Z., Hu, J., Li, F.: Multi-exit vision
+  transformer for dynamic inference. In: Proceedings of the IEEE/CVF Conference
+  on Computer Vision and Pattern Recognition (CVPR). pp. 5214--5223 (2021)
+
+\bibitem{lv2023detrs}
+Lv, W., Xu, S., Zhao, Y., Wang, G., Wei, J., Cui, C., Du, Y., Dang, Q., Liu,
+  Y.: Detrs beat yolos on real-time object detection. arXiv preprint
+  arXiv:2304.08069  (2023)
+
+\bibitem{PyTorch}
+Paszke, A., Gross, S., Massa, F., Lerer, A., Bradbury, J., Chanan, G., Killeen,
+  T., Lin, Z., Gimelshein, N., Antiga, L., Desmaison, A., Kopf, A., Yang, E.,
+  DeVito, Z., Raison, M., Tejani, A., Chilamkurthy, S., Steiner, B., Fang, L.,
+  Bai, J., Chintala, S.: Pytorch: An imperative style, high-performance deep
+  learning library. In: Advances in Neural Information Processing Systems 32,
+  pp. 8024--8035. Curran Associates, Inc. (2019)
+
+\bibitem{sun2023remax}
+Sun, S., Wang, W., Yu, Q., Howard, A., Torr, P., Chen, L.C.: Remax: Relaxing
+  for better training on efficient panoptic segmentation. arXiv preprint
+  arXiv:2306.17319  (2023)
+
+\bibitem{tang2023need}
+Tang, J., Liu, Z., Li, Y., Sun, Y., Zhou, Z., Hu, J., Li, F.: You need multiple
+  exiting: Dynamic early exiting for accelerating unified vision language
+  model. In: Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition (CVPR). pp. 13504--13513 (2023)
+
+\bibitem{tang2023you}
+Tang, S., Wang, Y., Kong, Z., Zhang, T., Li, Y., Ding, C., Wang, Y., Liang, Y.,
+  Xu, D.: You need multiple exiting: Dynamic early exiting for accelerating
+  unified vision language model. In: Proceedings of the IEEE/CVF Conference on
+  Computer Vision and Pattern Recognition. pp. 10781--10791 (2023)
+
+\bibitem{tu2008auto}
+Tu, Z.: Auto-context and its application to high-level vision tasks. In: 2008
+  IEEE Conference on Computer Vision and Pattern Recognition. pp.~1--8. IEEE
+  (2008)
+
+\bibitem{valade2024eero}
+Valade, F., Hebiri, M., Gay, P.: Eero: Early exit with reject option for
+  efficient classification with limited budget (2024)
+
+\bibitem{vaswani2017attention}
+Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.N.,
+  Kaiser, {\L}., Polosukhin, I.: Attention is all you need. Advances in neural
+  information processing systems  \textbf{30} (2017)
+
+\bibitem{wan2023efficient}
+Wan, Z., Wang, X., Liu, C., Alam, S., Zheng, Y., Qu, Z., Yan, S., Zhu, Y.,
+  Zhang, Q., Chowdhury, M., et~al.: Efficient large language models: A survey.
+  arXiv preprint arXiv:2312.03863  \textbf{1} (2023)
+
+\bibitem{wang2022single}
+Wang, X., Zhou, W., He, X., Peng, X., Wei, F., Guo, Y.: Single-layer vision
+  transformers for more accurate early exits with less overhead. Pattern
+  Recognition  \textbf{136},  102243 (2022)
+
+\bibitem{wu2019detectron2}
+Wu, Y., Kirillov, A., Massa, F., Lo, W.Y., Girshick, R.: Detectron2.
+  \url{https://github.com/facebookresearch/detectron2} (2019)
+
+\bibitem{xie2021self}
+Xie, Z., Lin, Y., Yao, Z., Zhang, Z., Dai, Q., Cao, Y., Hu, H.: Self-supervised
+  learning with swin transformers. arXiv preprint arXiv:2105.04553  (2021)
+
+\bibitem{xie2021moby}
+Xie, Z., Lin, Y., Yao, Z., Zhang, Z., Dai, Q., Cao, Y., Hu, H.: Self-supervised
+  learning with swin transformers. arXiv preprint arXiv:2105.04553  (2021)
+
+\bibitem{xu2023lgvit}
+Xu, F., Zhang, X., Ma, Z., Wang, J., Hu, J., Sun, J.: Lgvit: Dynamic early
+  exiting for accelerating vision transformer. In: Proceedings of the 32nd ACM
+  International Conference on Multimedia. pp. 1958--1966 (2023)
+
+\bibitem{xu2023pidnet}
+Xu, J., Xiong, Z., Bhattacharyya, S.P.: Pidnet: A real-time semantic
+  segmentation network inspired by pid controllers. In: Proceedings of the
+  IEEE/CVF Conference on Computer Vision and Pattern Recognition. pp.
+  19529--19539 (2023)
+
+\bibitem{xu2024survey}
+Xu, M., Yin, W., Cai, D., Yi, R., Xu, D., Wang, Q., Wu, B., Zhao, Y., Yang, C.,
+  Wang, S., et~al.: A survey of resource-efficient llm and multimodal
+  foundation models. arXiv preprint arXiv:2401.08092  (2024)
+
+\bibitem{xu2024rap}
+Xu, S., Yuan, H., Shi, Q., Qi, L., Wang, J., Yang, Y., Li, Y., Chen, K., Tong,
+  Y., Ghanem, B., et~al.: Rap-sam: Towards real-time all-purpose segment
+  anything. arXiv preprint arXiv:2401.10228  (2024)
+
+\bibitem{yang2023exploiting}
+Yang, J., Zhang, X., Zhang, X., Tang, J., Li, X.: Exploiting face
+  recognizability with early exit vision transformers. In: 2023 IEEE
+  International Conference on Image Processing (ICIP). pp. 6341--6345 (2023)
+
+\bibitem{yu2021bisenet}
+Yu, C., Gao, C., Wang, J., Yu, G., Shen, C., Sang, N.: Bisenet v2: Bilateral
+  network with guided aggregation for real-time semantic segmentation.
+  International Journal of Computer Vision  \textbf{129},  3051--3068 (2021)
+
+\bibitem{yu2018bisenet}
+Yu, C., Wang, J., Peng, C., Gao, C., Yu, G., Sang, N.: Bisenet: Bilateral
+  segmentation network for real-time semantic segmentation. In: Proceedings of
+  the European conference on computer vision (ECCV). pp. 325--341 (2018)
+
+\bibitem{zhang2023adaptive}
+Zhang, T., He, X., Qin, Z., Sun, J.: Adaptive deep neural network inference
+  optimization with eenet. In: Proceedings of the 37th International Conference
+  on Machine Learning. pp. 15983--15993 (2023)
+
+\end{thebibliography}

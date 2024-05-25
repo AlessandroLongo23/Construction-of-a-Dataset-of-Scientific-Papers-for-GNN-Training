@@ -1,0 +1,14 @@
+\begin{table}[]
+\centering
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Model                                                         & \multicolumn{1}{c}{HumanEval} & \multicolumn{1}{c}{HumanEval+} \\ \midrule
+\oursmoe                                                         & 65.2                          & 62.2                           \\
+\oursmerge (INIT)                                                        & 66.5                 & 64.0                  \\
+\oursmerge                                                         & \textbf{67.1}                 & \textbf{64.6}                  \\ \midrule
+\begin{tabular}[c]{@{}l@{}}\oursmerge\\ \ \ - \scalebox{0.8}{Shared Expert Rate} \end{tabular} & 66.5                          & 64.0                           \\ \bottomrule
+\end{tabular}
+\caption{\label{tab:ablation-merge}
+Ablation over the design of \oursmerge. "(INIT)" refers to directly using the initialized mixing coefficients to merge experts without training. "- Shared Rate" removes the shared rate setting from \oursmerge, which is the same as the learned soup~\cite{wortsman2022model}.
+}
+\end{table}

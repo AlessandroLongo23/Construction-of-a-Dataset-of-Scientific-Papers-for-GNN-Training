@@ -1,0 +1,12 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Model            & \multicolumn{1}{c}{HumanEval} & \multicolumn{1}{c}{HumanEval+} \\ \midrule
+\scalebox{0.9}{\oursmerge vs. \ewads} & 2.6e-18                       & 8.0e-23                        \\
+\scalebox{0.9}{\oursmerge vs. \baselineds} & 9.6e-30                       & 3.7e-33                        \\ \bottomrule
+\end{tabular}
+\caption{\label{tab:discussion-stat-p}
+$p$-values for \oursmerge vs. \ewads and \oursmerge vs. \baselineds in 200 experiments on \humaneval{}~(+) computed with sampling. Results show that improvements brought by \ours are statistically significant.
+}
+\end{table}

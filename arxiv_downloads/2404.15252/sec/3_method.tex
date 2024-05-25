@@ -1,0 +1,47 @@
+\section{Method}
+
+In this section, we detail our STAR-MT method and the domain adaptation benchmark. The overall scheme of the proposed solution is illustrated in Fig.\ref{fig:SFVOD}. 
+
+\subsection{Mean-teacher for domain adaptive VOD}
+ In developing our method, we leverage the advanced unsupervised domain adaptation strategies found in the mean-teacher self-training approach \cite{tarvainen2017mean}. We introduce the implementation of this method in this paradigm.
+ 
+ As a class of student-teacher training approach, the mean-teacher method keeps two identical networks: the student network and the teacher network. They are initialized by the weights trained on the source domain. During training, the weights of the teacher model are fixed, while the student model is trained with the supervision signal from the prediction output and features generated from the teacher model. On the other hand, the teacher model takes the exponential moving average (EMA) of consecutive student models for its parameter update:
+\begin{equation}
+    \theta_{\mathcal{T}}^{t} \leftarrow \alpha \theta_{\mathcal{T}}^{t-1} + (1-\alpha) \theta_{\mathcal{S}}^{t-1},
+\end{equation}
+where the $\theta_{\mathcal{T}}$ and $\theta_{\mathcal{S}}$ denote the weights of teacher and student models, $t$ denotes the training iteration, and $\alpha \in (0,1)$ is the momentum coefficient which is usually set close to 1 for a smooth temporal ensemble \cite{cao2023contrastive}.
+ 
+\subsection{Spatial-Temporal Alternate Refinement}
+YOLOV utilized the pre-trained backbone of YOLOX as its frame-wise feature extractor, followed by feature selection and affinity measurement that identifies features from the same object among frames to guide temporal aggregation. However, training the spatial backbone and temporal aggregation module simultaneously on the video object detection dataset is suboptimal because they require different training schemes. Hence, we propose to adapt the YOLOV in a two-stage alternate optimization manner, consisting of the temporal refinement stage (TRS) and spatial refinement stage (SRS).
+
+\subsubsection{Temporal Refinement Stage (TRS).}
+In the TRS, the entire teacher model, including the frame-wise backbone and temporal aggregation module, is updated via EMA. In the beginning, both teacher and student models are initialized the same.
+Like a typical mean-teacher-based algorithm, the same image sequences with different augmentations are fed into those models. The teacher model processes the weakly augmented images, and the heavily augmented images are fed into the student model. Moreover, we randomly mask out $r\%$ frames and enforce the student model to produce the same output with fewer frames than the teacher model. This masking mechanism can supposedly enhance the generalization capability of temporal aggregation. The student model is trained by aligning frame-wise features and soft pseudo labels with the features and predictions of the teacher model. The loss in this stage is defined as:
+\begin{equation}
+    \mathcal{L} = \mathcal{L}_{MSE}(f_{\mathcal{T}}, f_{\mathcal{S}}) + \mathcal{L}_{BCE}(y_{\mathcal{T}}^{cls}, y_{\mathcal{S}}^{cls}),
+\end{equation}
+where the first term is the mean square error between the feature maps $f_{\mathcal{T}}$ and $f_{\mathcal{S}}$, produced by the backbone module of the teacher and student models, respectively. The term $\mathcal{L}_{BCE}$ denotes the binary cross entropy loss. $y_{\mathcal{T}}^{cls}$ refers to the top-$k$ classification prediction after the temporal aggregation of the teacher model, and $y_{\mathcal{S}}^{cls}$ refers to that of the student model. $k$ is the number of proposals in the feature selection module before the temporal aggregation. We set $k=30$ following the default setting of YOLOV. We do not particularly compute the loss of objectiveness and bounding box prediction because they are unchanged in the temporal aggregation module. 
+
+
+\subsubsection{Spatial Refinement Stage (SRS).} 
+TAM consists of two key components: a Feature Selection Module, which selects high-quality prediction proposals, and a Feature Aggregation Module, which fuses these proposals across multiple frames. However, due to the inconsistency between the training pipelines of the single-frame detection head (backbone) and the TAM, the TRS, which mostly follows the training setting of the TAM, may lead to suboptimal adaptation on the backbone side. Recognizing that the TAM can reliably improve prediction quality, we propose using the output class score of YOLOV, instead of YOLOX, in the teacher model as higher-quality pseudo labels to guide the fine-tuning of the detection head of YOLOX in the student model. In the SRS, only the backbone of the teacher model is updated via EMA, ensuring that the adaptation focuses on the spatial feature extraction process while leveraging the enhanced temporal information from the TAM. The loss is given as follows:
+\begin{equation}
+    \mathcal{L} = \mathcal{L}_{MSE}(f_{\mathcal{T}}, f_{\mathcal{S}}) + \mathcal{L}_{BCE}(y_{\mathcal{T}}^{cls}, y_{\mathcal{S}}^{cls}) + \gamma \mathcal{L}_{cls},
+\end{equation}
+
+\noindent where $\gamma$ is the weighting factor. The new loss term $\mathcal{L}_{cls}$ is the certainty-aware binary cross entropy loss between the filtered class score from the teacher and student model:
+\begin{equation}
+\begin{aligned}
+    \mathcal{L}_{cls}  = -\frac{1}{N}\sum_{i}^{N} p^{i}_{\mathcal{S}} \Big[ \frac{1}{n_{c}} & \sum_{c}^{n_c}  \left( s_{\mathcal{T}}^{i,c} \log(s_{\mathcal{S}}^{i,c}) \right. \\
+    & \left.  +(1-s_{\mathcal{T}}^{i,c}) \log(1-s_{\mathcal{S}}^{i,c}) \right) \Big],
+\end{aligned}
+\end{equation}
+\noindent where $c$ is the index of the category, $n_c=30$ is the number of classes, and $i$ and $N$ are the index and number of detected objects in the sequence. $s_{\mathcal{S}}^{i,c}$ and $s_{\mathcal{T}}^{i,c}$ are the $i$-th output scores of class $c$ for the student and teacher models, respectively. $p^{i}_{\mathcal{S}} \in (0,1)$ is the normalized objectiveness score in the student model output, serving as the weight of the pseudo-label. It can be viewed as the certainty measurement of the object's existence; the greater $p^{i}_{\mathcal{S}}$ indicates the higher confidence of the particular pseudo label.
+ 
+\subsubsection{Alternate Refinement.} 
+STAR-MT training is periodical, with the TRS and SRS having identical iterations $\tau$ in each period. Given $k$ the index of the period, TRS is executed in iterations $[2k\tau, 2k\tau+\tau)$ and SRS in iterations $[2k\tau+\tau, 2k\tau+2\tau)$. During the experiment, it was observed that the order of those two stages only had a trivial impact on the overall performance.
+
+Although early stopping is not explicitly implemented in our approach, we utilize the mean self-entropy \cite{li2021free} of the class score from the teacher model as a performance criterion for all output checkpoints. This mean self-entropy, denoted as $H$, serves as a measure of reliability for pseudo labels; a lower $H$ indicates greater confidence in the teacher model in guiding the student. The checkpoint corresponding to the minimal value of $H$ is selected as our output model. The formula to compute $H$ is as follows:
+\begin{equation}
+    H  = -\frac{1}{Nn_{c}} \sum_{i}^{N}  \sum_{c}^{n_c} s_{\mathcal{T}}^{i,c} \log(s_{\mathcal{T}}^{i,c}).
+\end{equation}

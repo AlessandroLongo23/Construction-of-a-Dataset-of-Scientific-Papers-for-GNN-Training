@@ -1,0 +1,15 @@
+
+\section{Additional Ablation Studies}
+\input{figures/pose_convergence}
+\input{tables/ablations_supplemental}
+\input{tables/ablations_supplemental_full}
+\input{figures/patchmatch_full}
+In \cref{tab:ablations_supplemental}, we include three additional ablations.
+The ``Random Init.'' ablation uses a randomly initialized CNN for FlowMap training with 2,000 steps of optimization.
+The ``Random Init. (20k)'' ablation is identical, but runs for 20,000 optimization steps.
+The ``No Corresp. Weights'' ablation removes the correspondence weights used in FlowMap's Procrustes-solving step.
+We note that the ``Random Init. (20k)'' ablation's performance almost matches FlowMap's, indicating that although pre-training helps FlowMap converge much more quickly, it is not necessary for accuracy.
+In \cref{tab:ablations_supplemental_full}, we report per-scene ablation results.
+Finally, \cref{fig:convergence} compares convergence between FlowMap and the free-variable parameterization variants on more scenes.
+
+\input{figures/more_point_clouds}

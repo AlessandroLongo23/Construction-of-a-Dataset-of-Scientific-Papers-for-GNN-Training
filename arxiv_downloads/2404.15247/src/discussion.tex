@@ -1,0 +1,23 @@
+\section{Discussion}
+\subsection{Training Overhead Analysis}
+
+Compared with SFT, \ours will inevitably introduce additional overhead in the training process because \ours needs to fine-tune the upcycled \moe model while the normal SFT technique only needs to fine-tune the original dense model. To better understand the effect of such overhead, we conduct an experiment where we use the same training budget (i.e., the same GPU hours) instead of the same training steps for the normal SFT baseline. As shown in Table \ref{tab:discussion-overhead}, although sharing the same training budget as \oursmerge, the performance of \baselineds is still significantly worse than that of \oursmerge, demonstrating the ability of \ours to unlock the power of code instruction tuning using the same training budget.
+
+\input{src/table/discussion_overhead}
+
+\subsection{Generalizability for General Tasks}
+\input{src/table/discussion_generalizability}
+
+In this section, we demonstrate that \ours can improve the performance of \llm{s} on general tasks across different domains by applying \ours to general instruction tuning. We use \tinyllama 1.1B~\cite{zhang2024tinyllama} as the base model and use \evolgeneral~\cite{xu2023wizardlm} as the training dataset for general instruction tuning. Following existing work~\cite{zhang2024tinyllama}, we use MMLU~\cite{hendrycks2021measuring} with the 5-shot setting as our evaluation benchmark to showcase the general performance of \llm{s}. Hyperparameter settings are detailed in Appendix \ref{sec:tinyllama_setting}. As shown in Table \ref{tab:discussion-generalizability}, overall, \tinyllamamerge improves \baselinetinyllama by 5\% on MMLU, demonstrating the generalizable effectiveness of \ours for general instruction tuning.
+
+\subsection{Preliminary Theoretical Explanation}
+We provide a preliminary theoretical explanation of \ours by considering a simplified variant of it. Let’s start by analyzing the two major steps of \ours:
+\begin{itemize}[leftmargin=1em]
+    \setlength{\parskip}{2pt}
+    \setlength\itemsep{0pt}
+    \item \textbf{Step 1: Upcycling}. According to the scaling law~\cite{kaplan2020scaling}, the upcycled \moe model performs better than the normal SFT dense model due to more trainable parameters.
+    \item \textbf{Step 2: Merging}. We consider a simplified variant of \ours, where the upcycled \moe model (e.g., \oursmoe) can be viewed as the ensembling of two dense models and the merged dense model (e.g., \oursmerge) can be viewed as the merging of the same two dense models; see Appendix \ref{sec:theoratical_analysis} for more details. As such, we can directly apply the theoretical analyzing process in Section 4 of~\cite{wortsman2022model} to analyze the performance difference between the upcycled \moe model and the merged dense model, which is initially designed to analyze the performance difference between model ensembling and model merging. According to~\cite{wortsman2022model}, the convexity of the loss can help the merged dense model achieve a similar expected loss as that of the upcycled \moe model.
+\end{itemize}
+
+Overall, the \textbf{Upcycling} step improves the performance with more trainable parameters, while the \textbf{Merging} step maintains the upcycled MoE-level performance with only dense-model compute. Consequently, we provide a preliminary theoretical explanation for the effectiveness of \ours.
+

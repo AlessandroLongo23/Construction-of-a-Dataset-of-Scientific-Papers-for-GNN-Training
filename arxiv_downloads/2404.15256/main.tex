@@ -1,0 +1,717 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage{times}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic,algorithm}
+% \usepackage{caption}
+% \usepackage[section]{placeins}
+\usepackage{placeins}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{threeparttable}
+\usepackage{changes}
+\usepackage{bm}
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+% numbers option provides compact numerical references in the text. 
+\usepackage[numbers]{natbib}
+\usepackage{multicol}
+\usepackage[bookmarks=true]{hyperref}
+
+\pdfinfo{
+   /Author (Homer Simpson)
+   /Title  (Robots: Our new overlords)
+   /CreationDate (D:20101201120000)
+   /Subject (Robots)
+   /Keywords (Robots;Overlords)
+}
+
+\begin{document}
+\newcommand{\Red}[1]{\textcolor[rgb]{1.00,0.00,0.00}{#1}}
+\newcommand{\setParDis}{\setlength{\parskip}{0.2cm}}
+\newcommand{\commentdyr}[1]{\Red{#1}}
+% paper title
+\title{TOP-Nav: Legged Navigation Integrating Terrain, Obstacle and Proprioception Estimation}
+
+% You will get a Paper-ID when submitting a pdf file to the conference system
+% \author{Author Names Omitted for Anonymous Review. Paper-ID [229]}
+\author{Junli Ren$^*$, Yikai Liu$^*$, Yingru Dai, Guijin Wang
+\thanks{
+$^*$ Equal Contribution.}
+\thanks{
+Corresponding Author: Guijin Wang (wangguijin@tsinghua.edu.cn)}
+\thanks{
+All authors are with Department of Electronic Engineering, Tsinghua University, Beijing 100084, China.}}
+
+% \author{\authorblockN{Michael Shell}
+% \authorblockA{School of Electrical and\\Computer Engineering\\
+% Georgia Institute of Technology\\
+% Atlanta, Georgia 30332--0250\\
+% Email: mshell@ece.gatech.edu}
+% \and
+% \authorblockN{Homer Simpson}
+% \authorblockA{Twentieth Century Fox\\
+% Springfield, USA\\
+% Email: homer@thesimpsons.com}
+% \and
+% \authorblockN{James Kirk\\ and Montgomery Scott}
+% \authorblockA{Starfleet Academy\\
+% San Francisco, California 96678-2391\\
+% Telephone: (800) 555--1212\\
+% Fax: (888) 555--1212}}
+
+
+% avoiding spaces at the end of the author lines is not a problem with
+% conference papers because we don't use \thanks or \IEEEmembership
+
+
+% for over three affiliations, or if they all won't fit within the width
+% of the page, use this alternative format:
+% 
+%\author{\authorblockN{Michael Shell\authorrefmark{1},
+%Homer Simpson\authorrefmark{2},
+%James Kirk\authorrefmark{3}, 
+%Montgomery Scott\authorrefmark{3} and
+%Eldon Tyrell\authorrefmark{4}}
+%\authorblockA{\authorrefmark{1}School of Electrical and Computer Engineering\\
+%Georgia Institute of Technology,
+%Atlanta, Georgia 30332--0250\\ Email: mshell@ece.gatech.edu}
+%\authorblockA{\authorrefmark{2}Twentieth Century Fox, Springfield, USA\\
+%Email: homer@thesimpsons.com}
+%\authorblockA{\authorrefmark{3}Starfleet Academy, San Francisco, California 96678-2391\\
+%Telephone: (800) 555--1212, Fax: (888) 555--1212}
+%\authorblockA{\authorrefmark{4}Tyrell Inc., 123 Replicant Street, Los Angeles, California 90210--4321}}
+
+
+\maketitle
+
+\begin{abstract}
+Legged navigation is typically examined within open-world, off-road, and challenging environments. In these scenarios, estimating external disturbances requires a complex synthesis of multi-modal information. This underlines a major limitation in existing works that primarily focus on avoiding obstacles. In this work, we propose TOP-Nav, a novel legged navigation framework that integrates a comprehensive path planner with Terrain awareness, Obstacle avoidance and close-loop Proprioception. TOP-Nav underscores the synergies between vision and proprioception in both path and motion planning. Within the path planner, we present and integrate a terrain estimator that enables the robot to select waypoints on terrains with higher traversability while effectively avoiding obstacles. In the motion planning level, we not only implement a locomotion controller to track the navigation commands, but also construct a proprioception advisor to provide motion evaluations for the path planner. Based on the close-loop motion feedback, we make online corrections for the vision-based terrain and obstacle estimations. Consequently, TOP-Nav achieves open-world navigation that the robot can handle terrains or disturbances beyond the distribution of prior knowledge and overcomes constraints imposed by visual conditions. Building upon extensive experiments conducted in both simulation and real-world environments, TOP-Nav demonstrates superior performance in open-world navigation compared to existing methods. Project page at \href{https://top-nav-legged.github.io/TOP-Nav-Legged-page/}{top-nav-legged.github.io}.
+\end{abstract}
+
+\IEEEpeerreviewmaketitle
+
+\section{INTRODUCTION}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=8.3cm]{figures/introduction.pdf}}
+\caption{Example deployment scenarios for \textbf{TOP-Nav} in both simulation and the real world. Besides obstacle avoidance, the robot plans an optimized direction on terrains with better traversability. For novel terrains, the robot incorporates proprioception history from previously traversed terrain to infer the traversability.}
+\label{introcution}
+\end{figure}
+
+Imagine an outdoor hiking scenario where gait stability and efficient navigation are both critical. The target environment is often marked by intricate obstacles and hazardous terrains that cannot be fully observed through onboard vision. This challenge underscores the need for a comprehensive path planner integrating multi-modal observations. To achieve this, we humans employ experienced guidance and alternative perception modalities such as trekking poles and GPS devices. This example reveals a requirement of numerous trials and a substantial foundation of prior knowledge to accomplish the challenge navigation task.
+
+Although recent advancements in legged locomotion have allowed the robots to navigate various terrains based on a simulation-learned strong controller \cite{jenelten2024dtc,hwangbo2019learning,cheng2023extreme,zhuang2023robot,zhang2023learning}, the complexity of currently insimulable real-world factors makes it impossible for the robot to traverse all potential terrains encountered in reality. As a result, integrating the locomotion controller with only an open-loop path planner often restricts legged navigation to limited scenarios \cite{hoeller2021learning, caluwaerts2023barkour, kareer2023vinl, truong2021learning}.
+
+An effective solution to overcome these limitations is equipping the robot with terrain awareness. A traversable path can be planned based on the robot's preferences on terrains \cite{ewen2022these,gan2022multitask} with an appropriate distribution of contact heights and forces \cite{erni2023mem}. Unlike obstacle estimation, the distinct terrain features are typically encoded as semantic information, where traditional methods collect sufficient data and train segmentation or classification models \cite{guan2022ga} to learn these features. Nevertheless, compiling an exhaustive catalogue of all conceivable terrains along with their corresponding walking preferences is impractical \cite{frey2023fast}. Compounding the issue, the dynamic real-world conditions, such as lighting, humidity, and temperature, may introduce inaccuracies in the correspondence between images and walking preferences, especially when relying exclusively on vision in this context \cite{yao2022rca}.
+
+
+The mentioned challenges can be attributed to the reliance on vision and the ignorance of motion states in path planning. To address this, we complement the vision-only terrain estimator with online corrections from  motion evaluations. We construct a proprioception advisor to not only convey information about the traversability cost of novel terrains but also alert the robot to unexpected disturbances, such as invisible obstacles.
+
+By integrating the \textbf{T}errain estimator, \textbf{O}bstacle estimator, and \textbf{P}roprioception advisor, we formulate \textbf{TOP-Nav}: a hierarchical path and motion planning framework designed to navigate a quadruped robot through diverse and challenging terrains proficiently. \textbf{TOP-Nav} maintains four real-time robot-centric costmaps corresponding to: 1) goal approaching; 2) terrain traversibility; 3) obstacle occupancy; and 4) proprioception advice. The costmaps are synthesized with dynamically weighted factors to ensure a balanced consideration of safety and efficiency. We evaluate \textbf{TOP-Nav} both in simulation and on a physical robot, with a comparative analysis against existing approaches that address subsets of the factors (terrain, obstacle, proprioception). In simulation, we construct an environment featuring diverse terrains, including slopes, steps, and random textures, along with various obstacles. For real-world experiments, we deploy our approach in diverse off-road navigation scenarios encompassing common field terrains. Our main contributions are summarized below:
+
+\begin{itemize}
+    \item A comprehensive legged navigation framework Integrating multi-modal observations throughout a task and motion planner;
+    \item A terrain estimator trained from previously collected data to inform the robot of a vision-based terrain traversability;
+    \item Compensating proprioception to offer online corrections for the vision-based estimation of both terrain traversability and obstacles;
+    \item Successful implementation and quantitative validations of the proposed framework in both simulation and hardware.
+
+    
+\end{itemize}
+
+\section{RELATED WORK}
+
+The pivotal feature of \textbf{TOP-Nav} lies in its integration of the terrain estimator and proprioception advisor. To elucidate this aspect, we present an overview of the relevant literature. 
+
+\subsection{Vision and Legged Proprioception Integration} 
+
+Recent advancements in legged locomotion have showcased a synergistic mechanism for processing vision and proprioception within the context of ``How to Walk" \cite{agarwal2023legged}. While heightmaps serve as crucial observations for a controller to generate dynamic motions across various terrains \cite{lee2020learning,kumar2021rma}, proprioception observations can be employed to reconstruct the heightmaps in visually degraded environments \cite{miki2022learning}. Different from the mentioned efforts focus on the depth channel, we propose a data-efficient solution to extract semantic information from the proprioceptive feedback. 
+
+
+
+The insights of integrating vision and legged proprioception are further explored in guiding the robot in ``Where to Walk". From the perspective of vision adied navigation, researchers have explored both hierarchical \cite{kareer2023vinl,caluwaerts2023barkour} and end-to-end \cite{rudin2022advanced} pipelines. These methods require substantial efforts to develop a robust perception module \cite{hoeller2023anymal}, making it difficult and costly to transfer them to different hardwares. 
+
+To provide a comprehensive task observation and reduce the reliance on vision systems, recent researches have introduced proprioception to improve task planning. A majority of these works learn proprioception representations along with visual features in simulation, and then implement the cross-modal features through end-to-end \cite{yang2021learning}, hybrid \cite{he2024agile} or decoupled methods \cite{zhang2024resilient}. Despite the effectiveness demonstrated in these works, the high-dimensional representation space presents challenges for adaptation to novel scenarios and sim-to-real transfer. Alternatively, \citet{fu2022coupling} introduced a hierarchical navigation framework that derives evaluation scores from motion states, yet it overlooks the integration of visual observations.
+
+To mitigate these limitations, we propose a novel approach within \textbf{TOP-Nav} by maintaining a series of lightweight cost maps derived from multi-modal observations. This integration achieves a dynamic balance between vision and proprioception. Furthermore, we leverage the learning-based locomotion controller to derive motion evaluations from the value function, offering an efficient solution without additional training.
+
+\subsection{Terrain Traversability Estimation} 
+
+Terrain traversability is determined by factors such as terrain geometry, texture, and physical properties \cite{frey2024roadrunner}. Estimating these features could be achieved by identifying the semantic class with a predefined static traversability score\cite{roth2023viplanner,guan2022ga, viswanath2021offseg,ewen2022these}. These solutions exhibit a notable dependency on large-scale datasets \cite{meng2023terrainnet} or limited to structured environments like urban scenarios \cite{cordts2016cityscapes,abu2018augmented}.
+
+{In off-road navigation, the motion states involved in the dynamic interactions between the robot and the environment provide valuable metrics for assessing terrain traversability \cite{fan2021step}. These insights have inspired methods that eliminate the need for manual annotation by autonomously deriving terrain traversability from proprioception through self-supervised learning \cite{yao2022rca,cai2023evora,jung2023v,karnan2023sterling,elnoor2023pronav,margolis2023learning}. Nevertheless, the performance of these studies is contingent upon the quality of the collected datasets \cite{frey2024roadrunner}. To emphasize the challenges in unconstrained navigation, researchers have proposed various approaches to handling novel observations. For instance, \citet{frey2023fast} updated the traversability estimation network online with anomalies into consideration. \citet{karnan2023wait} performs nearest-neighbor search in the proprioception space to align visually novel terrains with existing traversability.}
+
+{Drawing inspiration from those works estimating traversability for novel terrains, we propose a prior-knowledge informed terrain estimator that employs the proprioception advisor as online corrections. Our method diverges from previous approaches primarily in two key aspects: 1) We employ an estimated value function from reinforcement learning to assess terrain traversability, providing a comprehensive evaluation of robot-terrain interactions. 2) By incorporating the proprioception based terrain traversability estimation as online corrections to vision-based predictions, we achieve a more data-efficient approach for estimating traversability on unknown terrains compared to online training.}
+
+\section{{Background}}
+
+{The proposed proprioception advisor leverages recent progress in legged locomotion to provide online motion evaluations for the path planner. This section provides an essential background of this.}
+
+{Learning-based legged locomotion controllers has been well developed through reinforcement learning, which is generally achieved by updating the policy ${\pi}$ within the asymmetric actor-critic training:}
+
+{\begin{equation}
+{\pi_1}\left\{
+\begin{aligned}
+\bm{a}_t={\pi_{\textrm{actor}}}(\bm{o}_t^p,\bm{o}_t^i,\bm{o}_t^e,\bm{o}_t^h)\\
+c_t={\pi_{\textrm{critic}}}(\bm{o}_t^p,\bm{o}_t^i,\bm{o}_t^e,\bm{o}_t^h)
+\end{aligned}
+\right.,
+\label{eq}\end{equation}}
+{the locomotion policy receives privileged observation ${\bm{o}_t^p}$, proprioception observation ${\bm{o}_t^i}$, scanned dots external observation ${\bm{o}_t^e}$ and historical observation ${\bm{o}_t^h}$ respectively. ${\pi_{\textrm{actor}}}$ is modelled as a Gaussian policy and infers the optimized actions $\bm{a}_t$ to compute the joint positions $\bm{q_\textrm{des}}$. $c_t$ stands for the estimated value function from $\pi_{\textrm{critic}}$, which is updated through:}
+
+{
+\begin{equation}
+    L^\textrm{critic}_t=(c_t-c_t^\textrm{targ})^2,
+\end{equation}
+where \begin{equation}
+    c_t^\textrm{targ}=\sum_{i=t}^T\gamma^{i-t}R(s_i),
+    \label{c_t}
+\end{equation}}
+{${s_i}$ denotes the robot state, $R(s_i)$ represents the rewards accrued at timestep $i$, which commonly includes guiding the robot to track a given velocity commands with stable gaits and attitude. A substantial efforts in reward engineering has enabled the value function $c_t^\textrm{targ}$ to evaluate a comprehensive set of interactions between the robot and its environment. Therefore, when deploying the learning-based controller, $c_t$ can be utilized to provide closed-loop feedback for the task planner.}
+
+{The complete training paradigm will involve a second stage, training a depth encoder and a student network to reproducing ${\bm{o}_t^p}$ and ${\bm{o}_t^e}$ from real world accessible observations $\bm{I}_d$ (depth image), $\bm{o}_t^i$ and $\bm{o}_t^h$. The motion controller will track the planned $\Delta_\textrm{yaw}$ and $v_\textrm{lin}$ and the control action is represented by the 12 desired joint position $\bm{q}_\textrm{des}$.}
+
+\begin{figure*}[!h]
+\centerline{\includegraphics[width=16.6cm]{figures/framework.pdf}}
+\caption{ \textbf{TOP-Nav}: the hierarchical path and motion planning framework to tackle the problem of legged navigation with a point goal. The path planner synthesizes relative distance, terrain traversability, obstacle occupancy, and motion evaluations into a combined cost map, from which it computes waypoints based on the overall cost considerations. The motion evaluations are extracted from a learning-based motion planner, which receives depth observation as input.}
+\label{framework}
+\end{figure*}
+
+\section{{Method}}
+\subsection{{System Overview}}
+As illustrated in Fig. \ref{framework}, the proposed \textbf{TOP-Nav} pipeline connects a path and motion planner to tackle the task of legged navigation. To efficiently generate a collision-free path and stable motion states, we highlight a terrain estimator and a proprioception advisor inside the pipeline. In addition to combining these modules on the costmap (Fig. \ref{framework}), the proprioception advisor provides online corrections for the terrain estimation. Such integration informs the robot of the traversability of unknown terrains and invisible obstacles, allowing \textbf{TOP-Nav} to handle open-world task without being constrained by visual conditions or prior knowledge.
+
+To elucidate the task configuration, the robot is given a point goal with its location $\bm{p}_\textrm{goal}$ and has to approach the goal within a limited time. The location of the robot is denoted as $(\bm{p}_\textrm{base},r_\textrm{base})$. For external observation, we utilize a bio-channel perception module for both the task and motion planner. This module includes depth ($\bm{I}_d$) and RGB ($\bm{I}_\textrm{rgb}$) channels. The path planner computes the desired velocity command $(v_\textrm{lin},\Delta_\textrm{yaw})$ for the robot, which is tracked by the motion planner along with the appropraite joint position signal.
+
+\subsection{Integrated Path Planner}
+A key feature within the path planner of \textbf{TOP-Nav} is the integrated cost map $\bm{M}_C$ which offers a comprehensive estimation that encompasses terrain traversability $\bm{M}_T$, obstacles $\bm{M}_O$, proprioception advice $\bm{M}_P$ and the goal approaching map $\bm{M}_G$. This integration addresses both visible and unexpected external disturbances against the robot. 
+
+To keep a balance between navigation efficiency and safety, we formulate the combination of $\bm{M}_C$ with dynamic scaling factors as follows:
+\begin{gather}
+    \bm{M}_C=\bm{M}_P+\bm{M}_O+{\alpha_T}\bm{M}_T+{\alpha_G}\bm{M}_G,\\
+    \alpha_T=\frac{k_{T_1}}{1+e^{-k_{T_2}(d-d_0)}} \text{, }
+    \alpha_G=\frac{k_{G_1}}{1+e^{-k_{G_2}(t-t_0)}}+k_{G_0},
+\end{gather}
+{here $\bm{M}_i$ are 2-d matrix with a spatial resolution of $0.15m$,} $d_0,t_0,k_T,k_G$ are hyperparameters, ${t}$ denotes current time consuming and ${d}$ denotes the distance from the point goal at the current step. We accord the highest priority to $\bm{M}_P$ and $\bm{M}_O$ since they represent non-traversable locations where the robot cannot pass through. The terrain traversability scale ${\alpha_T}$ decreases as the robot approaches the target. This design is made considering that, as the robot nears the target (${d}$ decreases), taking a detour to avoid a challenging yet traversable terrain would be an inefficient behaviour. Conversely, the goal approaching scale ${\alpha_G}$ increases with the duration ${t}$ of the task.
+
+With the integrated map $\bm{M}_C$, we select the optimal waypoint $\bm{p}_\textrm{way}$ based on the lowest combined cost.
+\begin{equation}
+\bm{p}_\textrm{way}=\argmin_{\bm{p} \in \bm{E}}\frac{1}{\Vert \bm{p}_\textrm{base}-\bm{p} \Vert}\sum_{(x,y)=\bm{p}_\textrm{base}}^{{(x,y)=\bm{p}}}\bm{M}_C(x,y), 
+\label{eq}\end{equation}
+Here $\bm{E}$ denotes the set of points on the edge of $\bm{M}_C$. For each point $\bm{p}$ in $\bm{E}$, we calculate the average combined cost along the path from the robot location $\bm{p}_\textrm{base}$ to the edge point $\bm{p}$. The optimal waypoint $\bm{p}_\textrm{way}$ is then chosen as the point with the lowest path cost.
+
+After determining the optimized local target $\bm{p}_\textrm{way}$, the target direction is calculated based on the relative position $\Delta_\textrm{yaw}=\arctan(\bm{p}_\textrm{way}-\bm{p}_\textrm{base})-r_\textrm{base}$, {here $r_\textrm{base}$ denotes the yaw direction of the robot base.} The linear velocity is constrained to mitigate the impact of high angular variation with $v_\textrm{lin}=v_0e^{-k \Delta_{\textrm{yaw}}}$, thereby preventing abrupt and substantial turning at high speeds.
+
+\setParDis
+\noindent\textbf{Obstacle Estimation and Localization:}
+In simulation, the robot has access to the ground truth location. For each point $\bm{p}=(x,y)$, $\bm{M}_G(x,y)=\Vert \bm{p}_\textrm{goal}-\bm{p} \Vert$. In real world, we set a target direction $r_\textrm{goal}$ to compute the goal map $\bm{M}_G(x,y) =\Vert r_\textrm{goal}-\arctan(\bm{p}-\bm{p}_\textrm{base})\Vert$. We construct the obstacle estimation based on the depth channel $\bm{I}_d$. The perceived obstacles are converted into point clouds, and for each point in $\bm{M}_O$, we compute the signed distance $\bm{M}_\textrm{SDF}$ to the closest obstacles within distance $d_\textrm{max}$, the cost of obstacles therefore can be computed as:
+\begin{equation}
+    \bm{M}_O(x,y)=\frac{\max(0,d_\textrm{max}-\bm{M}_\textrm{SDF}(x,y))}{d_\textrm{max}}.
+\end{equation}
+
+\subsection{Proprioception Advisor}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=8.3cm]{figures/Critic.pdf}}
+\caption{We demonstrate the variation of the normalized ${c_t}$ when the robot traverses on different types of terrain. The traversal on bush reveals unstable postures and a failure to track velocity commands, resulting in a decrease in $c_t$. Conversely, navigating on pavement exhibits a stable $c_t$.}
+\label{critic}
+\end{figure}
+
+{We design the proprioception advisor to identify motion abnormalities that may arise from unexpected external disturbances. A straightforward approach is to use the velocity tracking error \cite{frey2023fast}, but its effectiveness can be hindered by the noisy velocity estimation on real hardware. Considering the interactions between the robot and its environment, the ideal metrics should be both observable and comprehensive. To address this, we utilize the value function $c_t$ estimated from $\pi_{\textrm{critic}}$, which synthesizes multiple metrics and provides more stable results by incorporating historical observations.}
+
+{The original $\pi_{\textrm{critic}}$ requires privileged observations, we train another value function estimation network using observable motion states for the proprioception advisor to be deployed on hardware. The estimated motion evaluation $c_t$ is normalized using a sigmoid function.  As demonstarted in Fig. \ref{critic}, the motion evaluation will decline sharply when the robot encounters a locomotion failure, potentially due to transitioning onto challenging terrain. Implementation details for the reward design and normalization are provided in the appendix.}
+
+{Within the path planner, we first directly utilize the motion evaluations to enhance the robot's awareness of unforeseen disturbances.} This involves estimating collisions ($\bm{M}_P$) beyond the obstacle estimator and integrating them into the combined cost map ($\bm{M}_C$). {Previous works generate fix-sized virtual obstalces when proprioception feedback reaches a certain threshold \cite{fu2022coupling}, the design overlooks the variation of motion evaluations within each interval. We propose an continuously varied proprioception cost along the y-axis in $\bm{M}_P$}.
+\begin{equation}
+       {\bm{M}_P}(x,y)=\frac{1-\textrm{Norm}(c_{t})}{e^{k_{P}(\Vert y_\textrm{base}-y \Vert)}},
+\end{equation}
+here $k_P$ is hyperparameter. Since a lower motion evaluation indicates a potential challenging terrain or an invisible obstacle in the current direction of the robot, we allocate $c_{t}$ to the {centriod column in ${\bm{M}_P}$ and decrease it towards the edges.} 
+
+\subsection{Vision-based Terrain Estimation}
+
+% To circumvent the need for additional robot training or human demonstrations in terrain estimation, 
+{The proposed terrain estimator incorporates terrain traversability into the path planner. Firstly, we construct a mapping from visual observations to reference terrain traversabilities using prior knowledge.}
+
+Given that terrains like stairs, slopes, or discrete small steps can be effectively identified from depth observations, to which our locomotion controller can respond appropriately, our task-level terrain estimation module focuses on semantic features such as color and texture. These features are highlighted by the RGB channel, specifically pertaining to terrains such as grass, snow, and cement. To correspond the RGB observation into real-world coordinates, we apply the perspective transformation on $\bm{I}_\textrm{rgb}$ to map the pixels to $\bm{M}_\textrm{BEV}$, which has corresponding coordinates as $\bm{M}_T$. In subsequent processing, we discretize $\bm{M}_\textrm{BEV}$ into patches (Fig. \ref{terrainEst})  and assign the same difficulty within each patch.
+
+To accomplish vision-based terrain estimation, the robot first identifies the observed terrain from $\bm{M}_\textrm{BEV}$. We achieve this by training a terrain classification network ${\pi_{\textrm{terrain}}}$ from offline collected data $\bm{D}_{\textrm{terrain}}$. Considering that such inference falls short when faced with unfamiliar terrains, we calculate the predictive entropy to approximate the uncertainty $U$ of the inference at current observation \cite{wang2019aleatoric}. Since the approximation requires Monte Carlo simulation, we perform $K$ stochastic forward inferences with different data augmentations at each timestep, with $P_i^k$ denoting the predicted probability for label $i$ at trail $k$. We estimate the expectation as the average of the predicted probability $P_i=\sum_{k}P_i^k/K$. Then the predicted explicit terrain names $T$ and corresponding uncertainty $U$ for the current patch can be calculated as:
+\begin{equation}
+    U=-\sum_{i}{P_i} \log{P_i} \text{ and } T =\argmax_{i}(P_i).
+\end{equation}
+
+For safe navigation, terrain traversability signifies the robot's preference or stability in traversing a particular terrain, which has been explored from either self-supervision \cite{frey2023fast} or human demonstrations \cite{karnan2023sterling}. We leverage experience from these efforts to establish the terrain traversability (Fig. \ref{terrainEst}) as the operator preference. As we demonstrated in Fig. \ref{critic}, such prior knowledge-based terrain traversability aligns with the proprioception evaluations.
+
+\begin{figure}[ht!bp]
+\centerline{\includegraphics[width=8.3cm]{figures/Terrain_Estimator.pdf}}
+\caption{ The proposed terrain estimator incorporates a visual estimator and online corrections. The visual estimator infers the terrain name $T$ from the BEV map with its uncertainty ${U}$, and the corresponding terrain traversability $\bm{M}_{T_O}$ for $T$ is interpreted based on prior knowledge. The online corrections involve recording the motion evaluations $\bm{M}_{T_P}$ by the proprioception advisor and retrieving them from the experience buffer when encountering similar observations. In the figure, $(x_b, y_b)$, $(x_o, y_o)$, and $(x_r, y_r)$ represent the locations of the robot base, observation point, and historical position, respectively.}
+\label{terrainEst}
+\end{figure}
+
+\subsection{Online Terrain traversability Corrections}
+
+{Through the seamless integration of vision and proprioception, we provide online corrections for the vision-based traversability estimation $\bm{M}_{T_O}$ without additional training (Fig. \ref{terrainEst})}. This enables the robot with terrain awareness beyond the limitations of the collected data $\bm{D}_\textrm{terrain}$.
+
+We address the mechanism by which the robot recalls the traversability of a terrain once it has been seen and traversed within the navigation process. With the robot location $(x_\textrm{base},y_\textrm{base})$, we record a duration of $1s$ proprioception advice to indicate the terrain traversability at the robot location:
+\begin{equation}
+       \bm{T}_P(x_\textrm{base},y_\textrm{base})=1-\textrm{Norm}(\overline{c_{t-k:t}}).
+\end{equation}
+
+Besides $\bm{T}_P(x_\textrm{base},y_\textrm{base})$, we can access a latent feature $\bm{L}(x_\textrm{base}, y_\textrm{base})$ extracted by the classifier ${\pi_{\textrm{terrain}}}$ when the same patch was observed a few steps ago, we record both $\bm{T}_P$ and $\bm{L}$ at location $(x_\textrm{base},y_\textrm{base})$ into an experienced list $\bm{P}_e$. Now given a new observation at location $(x_o,y_o)$, We can find a traversed and seen patch $(x_r,y_r)$ that looks closest to $(x_o, y_o)$ based on cosine similarity:
+\begin{equation}
+       S_{(o,r)}=\argmax_{r \in \bm{P}_e}\cos{(\bm{L}(x_r, y_r),\bm{L}(x_o, y_o))},
+\end{equation}
+
+Note that we also have the historical traversability $\bm{T}_P(x_r,y_r)$ infered by the proprioception advisor at $(x_r, y_r)$, we can compute a proprioception adapted traversability with the similarity $S_{(o,r)}$ to access the historical proprioception correction ${\bm{M}_{T_P}}(x_o,y_o)$:
+\begin{equation}
+\bm{M}_{T_{P}}(x_o,y_o)=\frac{\bm{T}_P(x_r,y_r)}{1+e^{-k_{T_3}(S_{(o,r)}-S_0)}},
+\end{equation}
+here $k_{T_3}$ and $S_0$ are hyperparameters.
+
+Due to the delay in estimation from the proprioception history, we intend for $\bm{M}_{T_{P}}$ to be utilized when encountering novel terrains where $\bm{M}_{T_O}$ becomes unreliable. Therefore, we normalize the visual uncertainty $\bm{U}(x_o,y_o)$ into confidence $\bm{C}(x_o,y_o)$ to adjust the contribution of $\bm{M}_{T_O}$ and $\bm{M}_{T_{P}}$:
+\begin{equation}
+       {\bm{M}_T}(x_o,y_o)=(\frac{\bm{M}_{T_O}-\bm{M}_{T_{P}}}{1+e^{-k_{T_4}(C-C_0)}}+\bm{M}_{T_{P}})(x_o,y_o),
+\end{equation}
+here $k_{T_4}$ and $C_0$ are hyperparameters.
+
+By integrating the adapted $\bm{M}_T$ as the terrain traversability into the path planner, our system demonstrates rapid adaptability to different terrain and visual conditions.
+
+\section{Evaluations}
+
+\subsection{Experimental Setup}
+
+We assess \textbf{TOP-Nav} in both simulation and the real world. Considering the sim2real gap primarily lies in the RGB semantic information, we assume the robot has access to ground-truth terrain traversability in simulation. Therefore, our simulation experiments were designed to emphasize the following evaluations:
+
+\begin{itemize}
+    \item The improvements of \textbf{T}errain awareness in navigating challenge environments.
+    \item The improvements of the proposed \textbf{P}roprioception advisor in navigating the challenge environments.
+    \item The improvements in locomotion by selecting waypoints with higher traversability.
+\end{itemize}
+
+Relatively, in addition to the evaluations mentioned above, our real-world experiments specifically focus on assessing the enhancements provided by the proposed terrain estimator.
+
+\noindent\textbf{Simulation Settings:} Our simulation experiments are conducted within Nvidia Isaac Gym. We create a grid of ${8 \times 8}$ independent navigation cells. Each cell is ${5m \times 5m}$ in size, featuring a robot assigned to a point goal navigation task. The robot and point goal is randomly generated, with a minimum initial distance of ${5m}$ within the cell. $\bm{M}_C$ is configured with dimensions $(1.2m, 1.5m)$ centered around the robot`s location at ${\bm{p}_\textrm{base}^\textrm{map}=(0.45m,0.75m)}$. This design prioritizes a light-weight, real-time updated path planner and maintains consistency with the height map used in locomotion. The environments include randomly generated obstacles and terrains. Each cell is equipped with at least one \emph{wall} obstacle, two \emph{column} obstacles and the remaining space is divided into ${1m \times 1m}$ sections. For terrain traversability assignments, we uniformly partition the obstacle-free space into difficulty levels [0, 0.25, 0.5, 0.75, 1] and generate terrain with various heights of steps and the intensity of irregular terrain corresponding to the difficulty levels. This difficulty serves as ground-truth walking preferences in simulation. The simulation experiments are conducted $25$ times in each of the $64$ navigation cells.
+
+\begin{figure*}[htbp]
+\centerline{\includegraphics[width=16.6cm]{figures/simulation.pdf}}
+\caption{ We establish a parallel navigation evaluation environment in simulation, featuring ${8\times8}$ independent navigation cells. Each cell consists of randomly generated challenging terrains with distinct traverse difficulty, which is marked by the irregularity and complexity of the terrain. The proposed terrain awareness navigation framework plans an optimal path to navigate challenging terrains. The robot demonstrates the capability to recover from unexpected obstacles or irregular terrains with the proprioception advisor.}
+\label{simulation}
+\end{figure*}
+
+\noindent\textbf{Real-World Settings:} For real-world evaluations, we conduct outdoor navigation tasks in $5$ different scenarios involving challenge obstacles and various terrains, with each scenario replicated $5$ times for each method under investigation. {To obtain a more comprehensive observation in the real world, we configure the cost map $\bm{M}_C$ with dimensions of $(3m, 3m)$}. The location of robot is at ${\bm{p}_\textrm{base}^\textrm{map}=(0m, 1.5m)}$ in real world $\bm{M}_C$. The criteria for success include reaching the goal within the specified time constraints, consistent with the simulation setting.
+
+\noindent\textbf{Metrics:} We evaluate \textbf{TOP-Nav} with the following metrics:
+\begin{itemize}
+    \item \textit{SR} {(Success Rate)}: {The percentage of successful experiments. We define a success experiment as approaching the point goal into ${0.5m}$ within 20 seconds}
+    \item \textit{TD} {(Terrain Difficulty)}: The percentage of average traversed terrain costs, {\textit{TD} provides the ground truth traversed terrain costs within each episode}.
+    \item \textit{UT} {(Unstable Time)}: The percentage of unstable motion states ($\lvert roll \rvert>0.15 \text{ or } \lvert pitch \rvert > 0.15$) in each episode.
+    \item \textit{VFT} {(Velocity Tracking Failure)}: The average percentage of velocity tracking failures ($\Vert v_{\textrm{lin}}-v_{\textrm{act}}\Vert>0.2$) in each episode.
+    \item \textit{AEC} {(Average Energy Consumption)}: The average energy consumption ($\tau \dot {q}$) \cite{fu2021minimizing} in each successful episode.
+\end{itemize}
+Among them, \textit{UT}, \textit{VFT} and \textit{AEC} demonstrate walking states while completing navigation tasks in challenging terrains., \textit{TD} provides a reference terrain traversable cost, measuring the improvements in terrain-aware path planning for gait stability. We calculate the variance across different navigation scenarios to assess the robustness of the proposed method.
+
+\noindent\textbf{Baselines:} Beyond ablation study, we compare \textbf{TOP-Nav} against state-of-the-art legged navigation frameworks and segmentation based terrain estimators. VP-Nav \cite{fu2022coupling} integrates vision and proprioception to develop a collision detector and a fall predictor within the navigation pipeline. GA-Nav \cite{guan2022ga} achieves terrain segmentation relying solely on vision.{Sterling \cite{karnan2023sterling} learns terrain traversability in a self-supervised manner by assigning traversability to terrains based on those that share similar proprioception representations. However, this approach requires prior training for encountered terrains.} 
+
+\subsection{Simulation Evaluations}
+
+\begin{table*}[t]
+\small
+\renewcommand{\arraystretch}{1.3}
+\caption{Simulation Results with comparison experiments and ablation study}
+\begin{center}
+\begin{tabular}{c|c c c c c} 
+\hline
+\textbf{Method}&{\textit{SR} (\%)} $\uparrow$ &{\textit{TD}(\%)} $\downarrow$ &{\textit{UT}(\%)} $\downarrow$ &{\textit{VFT}(\%)} $\downarrow$ &{\textit{AEC}} $\downarrow$\\
+\hline
+VP-Nav            & ${65.62 \pm 2.38}$ & ${47.18 \pm 0.79}$ & ${36.18 \pm 0.54}$ & ${26.09 \pm 0.42}$& ${101.80 \pm 49.61}$\\
+
+wo/Terrain        & ${68.00 \pm 2.57}$ & ${45.83 \pm 0.70}$ & ${34.92 \pm 0.59}$ & ${25.06 \pm 0.46}$& ${101.70 \pm 46.55}$\\
+
+wo/Proprioception & ${62.75 \pm 1.64}$ & ${\bm{20.47 \pm 0.17}}$ & ${32.87 \pm 0.48}$ & ${26.66 \pm 0.57}$& ${\bm{88.17 \pm 15.31}}$\\
+
+Obstacle-Only     & ${52.81 \pm 2.30}$ & ${47.79 \pm 0.82}$ & ${41.45 \pm 0.79}$ & ${39.13 \pm 0.99}$& ${96.82 \pm 48.03}$\\
+
+\textbf{TOP-Nav}  & ${\bm{73.62 \pm 1.21}}$ & ${22.65 \pm 0.19}$ & ${\bm{27.21 \pm 0.24}}$ & ${\bm{18.14 \pm 0.16}}$& ${92.08 \pm 24.39}$\\
+\hline
+\end{tabular}
+\label{simulation-t}
+\end{center}
+\end{table*}
+
+\noindent\textbf{Improvements with Terrain Awareness:} 
+We illustrate a comprehensive terrain and obstacle map within one nav-cell in Fig. \ref{simulation}, exemplifying that the robot equipped with terrain awareness can plan a path with higher traversability. As demonstrated in Table \ref{simulation-t}, when integrated with terrain awareness, \textbf{TOP-Nav} surpasses the VP-Nav baseline by approximately $8\%$ in success rate (\textit{SR}). We observe that \textbf{TOP-Nav} and the \textit{wo/Proprioception} methods achieve a \textit{TD} of nearly $20\%$, which is half of the \textit{TD} achieved in methods without terrain awareness. These results indicate that the proposed path planner empowers the robot to select terrains with higher traversability, leading to a significant improvement in the success rate of navigation.
+
+\begin{figure*}[htbp]
+\centerline{\includegraphics[width=16.6cm]{figures/realworld.pdf}}
+\caption{ { In \textit{scene 1-3}, the green line represents the trajectory of \textbf{TOP-Nav}, while the red line represents Obstalce-Only. Our demonstrations for \textit{scene 4,5} are divided into phases that we provide details of the cost map integration in the figure.}}
+\label{realworld}
+\end{figure*}
+
+\setParDis
+\noindent\textbf{Improvements with Proprioception Advisor:}
+The simulation environments are cluttered with various obstacles and difficult terrains, leading to potential locomotion failures such as getting stuck on irregular terrain surfaces or colliding with unseen obstacles during directional changes (Fig. \ref{simulation}). We demonstrate that the proposed proprioception advisor could address those challenges: In contrast to methods without proprioception, our approach exhibits an approximate $11\%$ enhancement in \textit{SR}. This is evident in the comparison between \textbf{TOP-Nav} and wo/Proprioception, as well as the comparison between wo/Terrain and Obstacle-Only. Such ablations also indicate that the terrain traversability integration and the proprioception advisor each contribute to performance improvement. Meanwhile, even without terrain awareness, the proposed system outperforms VP-Nav by $2.5\%$, signifying an improvement in our integration of the proprioception advisor compared to existing methods.
+ 
+\setParDis
+\noindent\textbf{Advancements in Locomotion:}
+The metrics of \textit{UT} and \textit{VFT} evaluate the locomotion states. We observe that \textbf{TOP-Nav} achieves the lowest \textit{UT} and \textit{VFT}, indicating that selecting simpler terrains contributes to locomotion stability. In the absence of the proprioception advisor, wo/Proprioception and Obstacle-Only exhibit a significant increase in \textit{VFT} due to the robot getting stuck by unexpected obstacles. We evaluate energy consumption with the assumption that when traversing simpler terrain, the robot should exhibit more natural gaits. As a result, \textbf{TOP-Nav} and wo/Proprioception exhibit a $10\%$ reduction in energy consumption compared to methods without terrain awareness.
+
+\subsection{Real World Evaluations}
+
+As shown in Fig. \ref{realworld}, \textbf{TOP-Nav} is evaluated in different environments featured with diverse terrains and obstacles. Among them, the terrains encountered in \textit{scenes 1-3} were provided in the terrain classifier, we assess the improvements introduced by the vision-based terrain estimator in these experiments. {\textit{scenes 4-5} are designed to assess the effectiveness of the online correction module when encountering \textbf{novel terrains}. In \textit{scene 4}, the terrain classifier does not include high-cost gravel. In \textit{scene 5}, the robot encounters terrains with no prior knowledge, including a slippery detergent surface.} The evaluations in \textit{scene 6} demonstrate that with the {proposed} proprioception advisor, the robot is able to avoid invisible obstacles.
+
+Due to significant velocity estimation errors in the real robot, we exclude \textit{VFT} in the real-world experiments. The \textit{Time} metric measures the proportion of time the robot takes to complete the navigation task. \textit{ST} in scenario 5 assesses the time taken by the robot from encountering a transparent object to completely avoiding the obstacle.
+
+\noindent\textbf{Improvements with the Visual Estimator:}
+The evaluation results for \textit{scenes 1-3} are presented in Table \ref{Real World123}. \textbf{TOP-Nav} successfully completes all 15 trials with superior walking stability and minimal energy consumption. These results affirm the successful deployment of the proposed system on real hardware, allowing the robot to select waypoints on terrains with better traversability and thus execute more natural gaits. In contrast, GA-Nav, trained on RUGD \cite{wigness2019rugd}, demonstrates notable limitations when confronted with open-world navigation. We observe that the improvements of \textbf{TOP-Nav} over GA-Nav mainly stem from: 1) In \textit{scene 1,2}, GA-Nav fails to identify the slabbed road as a low-cost terrain from the bush and gravel. 2) In \textit{scene 3}, GA-Nav incorrectly identifies the lower part of the obstacle as a cement floor, which could be addressed by our integration of obstacles and terrain estimation. Nevertheless, GA-Nav surpasses VP-Nav and Obstacle-Only, which navigates without terrain awareness. With Obstacle-Only, the robot gets stuck by the stones or Grassroots, leading to a higher time consumption. While VP-Nav effectively alerts the robot to locomotion failures that could be brought by such terrains, the absence of terrain awareness prevents the robot from successfully navigating out of these challenging terrains, resulting in inferior locomotion performance.
+\begin{table}[t]
+\small
+\renewcommand{\arraystretch}{1.3}
+\caption{Evaluation results on scene 1,2,3.}
+\begin{center}
+\begin{tabular}{c|c c c c} 
+\hline
+\textbf{Method}&{\textit{SR}} $\uparrow$ &{\textit{UT}(\%)} $\downarrow$ &{\textit{AEC}} $\downarrow$ & {\textit{Time}(\%)} $\downarrow$ \\
+\hline
+GA-Nav& ${13/15}$& ${19.80}$& ${74.42}$& ${68.76}$\\
+VP-Nav            & ${11/15}$& ${23.02}$& ${71.45}$& ${80.12}$\\
+Obstacle-Only& ${12/15}$& ${22.75}$& ${71.09}$& ${79.72}$\\
+\textbf{TOP-Nav}  & ${\bf{15/15}}$& ${\bm{7.79}}$& ${\bm{59.07}}$& 
+${\bm{65.03}} $\\
+\hline
+\end{tabular}
+\label{Real World123}
+\end{center}
+\end{table}
+
+\begin{table}[t]
+\small
+\renewcommand{\arraystretch}{1.3}
+\caption{Evaluation results on scene 4 (Novel Terrains).}
+\begin{center}
+\begin{tabular}{c|c c c c} 
+\hline
+\textbf{Method}&{\textit{SR}} $\uparrow$ &{\textit{UT}(\%)} $\downarrow$ &{\textit{AEC}} $\downarrow$ & {\textit{Time}(\%)} $\downarrow$ \\
+\hline
+GA-Nav& ${5/5}$& ${\bm{7.98}}$& ${62.57}$& ${67.42}$\\
+VP-Nav            & ${4/5}$& ${26.43}$& ${70.30}$& ${77.90}$\\
+Obstacle-Only& ${5/5}$& ${42.33}$& ${72.60}$& ${70.64}$\\
+\textbf{TOP-Nav}  & ${5/5}$& ${14.30}$& ${\bm{57.46}}$& 
+${\bm{62.72}} $\\
+\hline
+\end{tabular}
+\label{Real World4}
+\end{center}
+\end{table}
+
+\noindent\textbf{Improvements with the Online Correction:} To evaluate the efficacy of the online corrections for providing the robot with traversability on novel terrains, we conduct experiments in \textit{scene 4} using a terrain classifier trained without gravel. The degraded classifier exhibits an accuracy of $\textbf{96.30\%}$ on the paved road with an average confidence of $\textbf{0.87}$, whereas the inference on gravel has an average confidence of $\textbf{0.43}$. We provide a navigation example in Fig. \ref{realworld} and divide it into four phases. In \textit{phase 1}, despite ${\bm{M}_{P}}$ indicating that the robot is traversing a challenging terrain, the goal map ${\bm{M}_{G}}$ guides the robot to continue moving forward until this information is incorporated into ${\bm{M}_{T_P}}$. In \textit{phase 2}, an online correction is applied as the robot encounters similar gravel terrain, leading to an increased cost brought by ${\bm{M}_{T_P}}$ in the current direction. Consequently, the robot turns right to tap on the paved road. In \textit{phase 3}, the robot avoids an observed obstacle. In \textit{phase 4}, the historical proprioception continues to indicate the presence of high-cost gravel terrain on the left. The {quantitative} results are provided in Table \ref{Real World4}. Despite GA-Nav possessing complete prior knowledge and correctly identifying the paved road in scene 4, our online corrections only lead to a $7\%$ increase in \textit{UT}, mainly due to the forward movement in \textit{phase 1}. VP-Nav allows the robot to exit the gravel terrain with the safety advisor, but it can not retain this information. As a result, the target orientation prompts the robot to return to the gravel, causing increased time consumption and instability.
+
+\begin{table}[t]
+\small
+\renewcommand{\arraystretch}{1.3}
+\caption{{Evaluation results on scene 5 (Novel slippy terrains).}}
+\begin{center}
+\begin{tabular}{c|c c c c} 
+\hline
+\textbf{Method}&{\textit{SR}} $\uparrow$ &{\textit{UT}(\%)} $\downarrow$ &{\textit{AEC}} $\downarrow$ & {\textit{ST}(\textit{s})} $\downarrow$\\
+\hline
+VP-Nav            & ${3/5}$& ${2.64}$     & ${102.04}$    & $\bm{63.05}$\\
+Obstacle-Only     & ${2/5}$& ${3.88}$     & ${119.77}$    & ${66.14}$\\
+Sterling          & ${2/5}$& ${3.85}$     & ${113.75}$    & ${76.52}$\\
+\textbf{TOP-Nav}  & ${5/5}$& ${\bm{1.19}}$& ${\bm{83.40}}$& ${67.62} $\\
+\hline
+\end{tabular}
+\label{Real World5}
+\end{center}
+\end{table}
+
+\noindent\textbf{{Evaluations on Challenge Novel Terrains:}} 
+{ In Scene 5, we present a more challenging scenario where the robot encounters terrains without any prior information. A black tarpaulin covered with slippery detergent is laid out in front of the robot, and the target direction is set in this facing direction. To mitigate the disturbances brought by reflections from detergents, the obstacle cost ${\bm{M}_{O}}$ is not considered in this experiment. As demonstrated in Fig. \ref{realworld}, the experiment could be divided into three phases. In \textit{phase 1}, the robot moving forward along the goal direction, but the slippery terrain causes a decline in motion evaluations, resulting in a higher ${\bm{M}_{P}}$. Simultaneously, the traversability cost of the slippery tarpaulin is recorded along with the visual features. In \textit{phase 2}, the robot begins to turn aside to avoid the high-cost central area. In \textit{phase 3}, the cost of ${\bm{M}_{G}}$ guides the robot to return to the original direction, where it can navigate on the wooden floor with better traversability to complete the task. The results presented in Table \ref{Real World5} validate the effectiveness of our method in maintaining stability and improving the success rate by avoiding challenging terrain. Among the comparisons, Obstacle-Only keeps moving forward on the slippy surface and exhibit the worst motion performance. We include Sterling in this comparison to demonstrate the importance of online corrections when incorporating proprioception into terrain estimation. Without online corrections, Sterling behaves similarly to Obstacle-Only, unable to adapt to novel terrains and continuing forward. Compared with the result in \textit{scene 4}, we demonstrate that \textbf{TOP-Nav} can handle novel terrains effectively without relying on operator preferences. This showcases the ability of the system to perform open-world navigation.}
+
+\begin{table}[t]
+\small
+\renewcommand{\arraystretch}{1.3}
+\caption{Evaluation results on scene 6 (Invisible Obstacles).}
+\begin{center}
+\begin{tabular}{c|c c c c} 
+\hline
+\textbf{Method}&{\textit{SR}} $\uparrow$ &{\textit{UT}(\%)} $\downarrow$ &{\textit{AEC}} $\downarrow$ & {\textit{ST}(\textit{s})} $\downarrow$\\
+\hline
+VP-Nav            & ${5/5}$& ${1.45}$& ${42.97}$& ${3.30}$\\
+Obstacle-Only& ${0/5}$& ${/}$& ${/}$& ${+\infty}$\\
+\textbf{TOP-Nav}  & ${5/5}$& ${\bm{0.79}}$& ${\bm{34.63}}$& 
+${\bm{1.98}} $\\
+\hline
+\end{tabular}
+\label{Real World6}
+\end{center}
+\end{table}
+
+
+\begin{figure}[ht!bp]
+\centerline{\includegraphics[width=8.3cm]{figures/glass_wall.pdf}}
+\caption{{ In \textit{scene 6}, the robot avoids unseen obstacles with the proprioception advisor.}}
+\label{glass}
+\end{figure}
+
+\noindent\textbf{Invisible Obstacles:} 
+The proposed proprioception advisor provides close-loop feedback to alert the robot to invisible obstacles. We assess this capability in \textit{scene 6}, where a glass wall is located along the planned path. In \textit{phase 1}, the obstacle estimator is oblivious to the presence of the glass wall, and the robot continues moving forward. In \textit{phase 2}, the robot collides with the glass wall, causing a rapid increase in ${\bm{M}_{P}}$ along the direction of movement. As a result, the robot adjusts its waypoint to steer clear of the high-cost area, successfully avoiding the glass wall. The {quantitative} results are provided in Table \ref{Real World6}.
+
+\section*{Conclusion}
+We present \textbf{TOP-Nav}, a legged navigation system that achieves closed-loop integration of visual and proprioception at both task and motion planning levels. Specifically, not only have we incorporated vision-based obstacle and terrain estimation into the navigation framework, but we have also utilized the proprioception advisor to make online corrections on these vision-only estimations. To validate the proposed system, we conducted extensive experiments in simulated environments featuring diverse terrains and obstacles. Furthermore, the navigation system was successfully deployed on a real robot, and quantitative experiments were conducted. These evaluation results underscore the success of our system in achieving open-world navigation, surpassing limitations posed by terrain, obstacles, or prior knowledge. Compared to existing approaches that couple vision and proprioception or navigate with terrain awareness, our system excels not only in achieving a higher success rate in challenge navigation, but also in demonstrating more stable gaits and lower energy consumption. In the future, we aim to extend the application of the proposed system to longer-distance navigation tasks through precise localization from radar. Furthermore, we plan to enhance the task planner with data-sufficient models such as Transformer.
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\clearpage
+
+\section{Implementation Details}
+\subsection{Motion Planner Details}
+The motion planner is implemented following \cite{cheng2023extreme}. Both the actor and critic networks within the locomotion policy ${\pi}$ have hidden layer sizes of [512, 256, 128]. The proprioception observation $\bm{o}_t^p$ includes angular velocity (3), Orientation (2), velocity commands (3), joint positions (12), joint velocities (12), and the last action (12). We store the last 10 steps of $\bm{o}_t^p$ into the history observation $\bm{o}_t^h$. The depth encoder learns the exteroception latent features from onboard observation $\bm{I}_d$ using a conv-GRU structure. ${\pi}$ is updated using PPO \cite{schulman2017proximal} for 20K iterations, the batch size is 160000 divided into 4 mini-batches. The depth encoder is optimized for 5k iterations. The rewards obtained at each step are the sum of the reward functions listed in Table \ref{reward}. 
+
+\begin{table}[h]
+\small
+\renewcommand{\arraystretch}{1.3}
+\caption{Reward Functions}
+\begin{center}
+\begin{threeparttable}
+\begin{tabular}{|c|c|}
+\hline
+ Target Velocity Tracking\tnote{1}&$min(\overline{v_{act}},v_\textrm{lin})$\\
+ \hline
+ Target Direction Tracking&$e^{- \mid \Delta_\textrm{yaw} \mid}$\\
+ \hline
+ Orientation Penalty& $-(roll^2+pitch^2)$\\
+ \hline
+ Hip Joint Position Penalty& ${-\Vert q_{hip} \Vert}^2$\\
+ \hline
+ z-direction velocity Penalty& ${-\mid v_{z} \mid}^2 $\\
+ \hline
+ Collision Penalty\tnote{2}& $-\sum_{i \in (calf,thigh)}({F_c^i  \geq 0.1N})$\\
+ \hline
+Torques Variation Penalty& ${-\Vert \tau_t-\tau_{t-1} \Vert}$\\
+ \hline
+\end{tabular}
+ \begin{tablenotes}
+\footnotesize            
+\item[1] $\overline{v_{act}}$ is the projection component of $v_{act}$ in the target direction.
+\item[2] $F_c^i$ is the contact force of calf and thigh indices.
+\end{tablenotes} 
+\end{threeparttable}  
+\label{reward}
+\end{center}
+\end{table}
+
+\subsection{Path Planner Details}
+For reference, we provide the default values of the hyperparameters used in the path planner in Table \ref{pathplanner}. Parameters $d_0,t_0$ adjust the weights of $\bm{M}_T$ and $\bm{M}_G$ as the robot approaches the target and as time progresses. $k_{G_0}$ keeps a minimum weight for the robot approaching the target. The listed values remain consistent in simulation; however, considering the various conditions in the real world, we make slight changes to these values in different real-world experiments for better validation of the contribution of this work. For instance, in outdoor navigation experiments, we assign a higher value to $k_{T_1}$ to expand the scale of the terrain estimator, which is effective for evaluating the accuracy of the proposed terrain estimator.
+
+The default commanded velcoity $v_0$ is set to $0.5m/s$ in both simulation and the real world. The maximum distance $d_\textrm{max}$ we considered for computing the obstacle map $\bm{M}_O$ is $0.3m$.
+
+\begin{table}[h]
+\small
+\renewcommand{\arraystretch}{1.3}
+\caption{Hyperparameters in the path planner}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+ Parameter&$d_0$&$t_0$&$k_{T_1}$&$k_{T_2}$&$k_{G_0}$&$k_{G_1}$&$k_{G_2}$\\
+ \hline
+ Default Value&$0.5$&$0.5$&$1.0$&$2.0$&$0.1$&$0.4$&$-10$\\
+ \hline
+\end{tabular}
+\label{pathplanner}
+\end{center}
+\end{table}
+
+
+\subsection{Proprioception Advisor Details}
+The proprioception advisor is trained with the locomotion policy ${\pi}$, with an exact same network architechture as $\pi_{\textrm{critic}}$. The input only includes proprioception observation $\bm{o}_t^p$ and historical observation $\bm{o}_t^h$, updated through the MSE loss with $c_t^\textrm{targ}$. The estimated value $c_t$ is normalized through sigmoid function:
+
+\begin{equation}
+    Norm(c_t)=\frac{1}{1+e^{2*(2.2-c_t)}}
+    \label{norm_ct}
+\end{equation}
+In practice, and we set a minimum threshold $c_{th}$ for the normalized critic value be considered in the path planner, in simulation $c_{th}=0.8$, while in the real world $c_{th}=0.5$, $Norm(c_t)$ larger than $c_{th}$ will be set to $1$.
+
+$\bm{M}_P$ is calculated with $k_{P}=0.3$, we demonstrate an example of $\bm{M}_P$ after the robot collides with a wall (with vision and obstacle detection disabled in this trial) in Fig \ref{hitwall}. In this scenario, the normalized $c_t$ returns $0.02$, $\bm{M}_P$ has a width of $0.75m$ along the moving direction of the robot with costs greater than 0.5.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=8.3cm]{figures/collision.pdf}}
+\caption{We demonstrate an example of $\bm{M}_P$ when the robot collides with an obstacle. }
+\label{hitwall}
+\end{figure}
+
+Generally, the proprioception advisor engages when locomotion states are compromised. To enable recovery from being obstructed by the unexpected terrains, we have designed the following recovery strategy in simulation: when $Norm(c_{t})$ falls below a specific threshold (0.5), we initially assign a backward velocity command of 0.5 m/s for 0.5 seconds. Next, to address potential terrain-related constraints that may prevent the robot from reaching planned waypoints at its default velocity, we reduce the frequency of the path planner to 0.5 Hz until the robot reaches the waypoint or makes a directional change of 0.3 radians. 
+
+\subsection{Terrain Estimator Details}
+
+For prior data collection of the terrain estimator, we teleoperate the robot to walk for 5 minutes on each of the concerned terrains. We capture the motion evaluations $c_t$ as well as the first-view observations during these demonstrations. We convert the RGB observations into BEV maps and dividing them into patches. The collected data is labelled based on the corresponding terrain from which it was acquired. The classification network is implemented using the MobileNet backbone and trained on a Nvidia GTX 2080 Ti for 6 hours. The proposed pipeline provides a light-weight inference model of 8 MB to be deployed for onboard computation. During deployment, at each step, we perform $K=8$ forward inferences of the terrain estimator to predict the vision-based terrain traversability and its uncertainty.
+
+Based on the collected motion evaluations, we compute the average $\bm{T}_P$ observed during walks on each terrain. These walking experiences provide reference values for assigning the terrain costs defined by the operator. Table \ref{accuracy} presents the validation accuracy of the terrain classifier, along with the reference terrain cost and the average collected $\bm{T}_P$ for each terrain. Since the terrains encountered in the real world did not exhibit significant differences in motion evaluations, we did not strictly set the reference cost based on linear correlation.
+\begin{table}[h]
+\small
+\renewcommand{\arraystretch}{1.3}
+\caption{Terrain Cost and Classify Accuracy}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+ \textbf{Name}&\textbf{Bush}&\textbf{Brick}&\textbf{Snow}&\textbf{Gravel}\\
+ \hline
+ Accuracy ($\%$)&89.58&92.28&83.20&83.47\\
+ \hline
+ $\bm{T}_P$&0.481&0.523&0.445&0.507\\
+ \hline
+ Cost&0.7&0.6&0.9&0.7\\
+ \hline
+ \textbf{Name}&\textbf{Slab}&\textbf{Cement}&\textbf{Paved}&\textbf{Grass}\\
+ \hline
+ Accuracy&90.67&82.87&93.81&88.36\\
+ \hline
+ $\bm{T}_P$&0.581&0.580&0.580&0.572\\
+ \hline
+ Cost&0.0&0.0&0.0&0.2\\
+ \hline
+\end{tabular}
+\label{accuracy}
+\end{center}
+\end{table}
+
+The hyperparameters used for online corrections are fine-tuned based on the distribution of the learned latent features $\bm{L}$ from the pre-collected data. Figure \ref{TSNE} depicts a t-SNE visualization of the features inferred by the terrain classifier, involving data both within and outside of $\bm{D}_\textrm{terrain}$. We observe that $\pi_{\textrm{terrain}}$ can learn distinctive features for specific terrains, showcasing unique clustering in the latent space, even for previously unseen terrain types. The average cosine similarity $S_{(o,r)}$ within each terrain class is $0.95$, we set the middle point $S_0$ to be $0.85$ and $k_{T_3}$ to be $15$. This allows the terrain cost derived from historical experience to decrease rapidly when the similarity falls below $0.8$.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=8.3cm]{figures/TSNE.pdf}}
+\caption{t-SNE visualization of the features inferred by the terrain classifier}
+\label{TSNE}
+\end{figure}
+
+To demonstrate the effectiveness of computing confidence in deciding whether the observed terrains is outside of $\bm{D}_\textrm{terrain}$, we illustrate the distribution of samples across different confidence levels in Fig \ref{confidence}. After 200 steps of training, the confidence values for known terrains predominantly clustered beyond 0.9, while samples of novel terrains remained dispersed across the confidence axis. The confidence is used to adjust the weight of online correct ions in terrain estimation. We set $k_{T_4}=20$ and $C_0=0.9$ in the experiments.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=8.3cm]{figures/confidence.pdf}}
+\caption{We illustrate the distribution of samples across different confidence levels, with the training of the terrain classifier, the confidence values for known terrains predominantly clustered beyond 0.9, while samples of novel terrains remained dispersed across the confidence axis.  }
+\label{confidence}
+\end{figure}
+
+\subsection{Hardware Details}
+We implement \textbf{TOP-Nav} on the Unitree-Go1 and Unitree-Go2 quadruped robot, with a weight of approximately $12 kg$ and dimensions of $645 mm \times 280 mm$. The robot is equipped with 12 brushless motors, each capable of producing a torque of $35.5 Nm$. The perception module is equipped with a RealSense D435i camera, offering simultaneous depth and RGB channels. All computations are processed onboard with an NVIDIA Jetson NX asynchronously, i.e. the motion planner operates at a fixed frequency of $50Hz$ and receives the latest depth latent $\bm{\ell}$ inference from the perception module. The path planner operates at a frequency of ${3Hz}$. 
+
+
+\section{Additional Experiments}
+
+\begin{figure*}[t]
+\centering{\includegraphics[width=16.6cm]{figures/evaluate_critic.pdf}}
+\caption{We conduct a series of straight navigation tasks in simulation. Each robot's waypoint is set in a straight line, covering terrains of various difficulties $[0.25,0.5,0.75,1]$ with types covering slopes, discrete steps and irregular surfaces.}
+\label{propadvisor}
+\end{figure*}
+
+In this section, we provide additional experiments to justify the effectiveness of the key components in \textbf{TOP-Nav}.
+
+\subsection{Evaluations on Proprioception Advisor}
+In this section, we discuss the relationship between the proposed proprioception advisor and terrain difficulties, along with ground truth reward terms such as velocity tracking and attitude stability.
+
+ We conduct a series of straight navigation tasks in simulation, as demonstrated in Fig \ref{propadvisor}. Each robot's waypoint is set in a straight line, covering terrains of various difficulties $D_l$ and types:
+
+\begin{itemize}
+    \item Irregular Surface: The height of each point in the terrain is randomly changed within the range of $(0.01+0.04*D_l,0.07+0.04*D_l)m$.
+    \item Discrete Steps: This terrain type consists of  $12*D_l$ mall steps within a $1m \times 1m$ area, where each small step has dimensions of $(0.1,0.1,0.08)m$.
+    \item Slope \& Holes: Randomly switches between upper slopes and holes, where the maximum height/depth of each slope/hole is set as  $1.2m*D_l$.
+\end{itemize}
+
+We conduct $30k$ steps of navigation for each robot and compute the average motion evaluations estimated by the proprioception advisor. The results are shown in Table \ref{Proprioception Advisor outputs}. We observe that as terrain ruggedness, irregularity, and the presence of obstacles increase, there is a corresponding decrease in the motion evaluations. Although this correlation is not strictly linear, the results provide supportive for us to estimate terrain traversability based on the proprioception advisor. 
+
+For comparison, we train an independent motion evaluation function $\pi_\textrm{deq}$, which is decoupled from the training process of the motion controller. $\pi_\textrm{deq}$ is updated using the MSE loss between the ground truth motion states and the network prediction $c_\textrm{ref}$. The ground truth walking states include velocity tracking, orientation penalty, and energy consumption:
+\begin{equation}
+    c^\textrm{target}_\textrm{ref}=min(\overline{v_{act}},v_\textrm{lin})-(roll^2+pitch^2)-0.001*\tau \dot {q},
+\end{equation}
+we train $\pi_\textrm{deq}$ for $10k$ iterations, $c^\textrm{target}_\textrm{ref}$ is normalized using a sigmoid function.  
+
+As shown in Table \ref{Proprioception Advisor outputs}, $c_\textrm{ref}$ demonstrates a noticeable decline as terrain difficulty increases, yet it does not exhibit a significant advantage compared to the proposed proprioception advisor.
+
+On the other hand, the same terrain may exhibit different traversability for robots with varying locomotion capabilities. Therefore, the evaluation of walking states represents another important metric for assessing terrain traversability. We demonstrate the correlation between the predicted motion evaluations $c_t$ and the ground truth motion states $c^\textrm{target}_\textrm{ref}$ in Fig \ref{correlation}. The perason correlation coefficient is $0.914$, indicating a strong linear correlation between the estimated $c_t$ and the actual motion states of the robot.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=8.3cm]{figures/linear_correlation.pdf}}
+\caption{We demonstrate the correlation between the predicted motion evaluations $c_t$ and the ground truth motion states, the estimated $c_t$ and the actual motion states of the robot has a strong linear correlation.}
+\label{correlation}
+\end{figure}
+
+\begin{table*}[t]
+\small
+\renewcommand{\arraystretch}{1.3}
+\caption{Evaluation of the proprioception advisor on different types of terrains.}
+\begin{center}
+\begin{tabular}{c|c|c c c|c} 
+\hline
+\textbf{Method}&\textbf{Terrain Difficulty}&{Slope \& Holes}&{Discrete Steps} &{Irregular Surface} & Flat Ground\\
+\hline
+\multirow{4}{*}{Prop Advisor}&0.25& $0.7560$& $0.7964$& $0.7001$ & \multirow{4}{*}{$0.8600$}\\
+&0.50& $0.3316$& $0.3633$& $0.2589$&\\
+&0.75& $0.1893$& $0.1614$& $0.1058$&\\
+&1.0 & $0.0573$& $0.0837$& $0.0347$&\\
+\hline\multirow{4}{*}{Decoupled Training}&0.25& $0.8649$& $0.9836$& $0.9811$ & \multirow{4}{*}{$0.9900$}\\
+&0.50& $0.3076$& $0.7403$& $0.8141$&\\
+&0.75& $0.2312$& $0.2323$& $0.4831$&\\
+&1.0 & $0.0770$& $0.3230$& $0.2563$&\\
+\hline
+\end{tabular}
+\label{Proprioception Advisor outputs}
+\end{center}
+\end{table*}
+
+\begin{table*}[!h]
+\small
+\renewcommand{\arraystretch}{1.3}
+\caption{Simulation Results with velocity comparisons}
+\begin{center}
+\begin{tabular}{c|c c c c c} 
+\hline
+Velocity (m/s)&{\textit{SR} (\%)} $\uparrow$ &{\textit{TD}(\%)} $\downarrow$ &{\textit{UT}(\%)} $\downarrow$ &{\textit{VFT}(\%)} $\downarrow$ &{\textit{AEC}} $\downarrow$\\
+\hline
+$0.25$            & ${49.69 \pm 3.43}$ & ${26.22 \pm 0.33}$ & ${26.56 \pm 0.41}$ & ${25.95 \pm 0.45}$& ${65.55 \pm 352.19}$\\
+
+$\textbf{0.5}$   & ${73.62 \pm 1.21}$ & ${22.65 \pm 0.19}$ & ${27.21 \pm 0.24}$ & ${18.14 \pm 0.16}$& ${92.08 \pm 24.39}$\\
+
+$0.75$  & ${73.91 \pm 2.46}$ & ${22.22 \pm 0.26}$ & ${22.53 \pm 0.37}$ & ${16.79 \pm 0.28}$& ${80.32 \pm 46.82}$\\
+
+$1.0$     & ${72.03 \pm 2.80}$ & ${21.65 \pm 0.23}$ & ${41.92 \pm 0.49}$ & ${21.30 \pm 0.44}$& ${123.53 \pm 39.61}$\\
+
+
+\hline
+\end{tabular}
+\label{velocity}
+\end{center}
+\end{table*}
+
+Building upon the discussion above, we validate that constructing the proprioception advisor with critic output enables efficient motion evaluation, including information on both the terrain difficulty and walking states of the robot. Moreover, the proposed advisor can be implemented without the need for additional training or sensors, making it a more appropriate approach to provide motion evaluations for robot path planning compared to existing methods.
+
+\subsection{Different Velocities}
+We conducted quantitative experiments in simulation with different velocities ($0.25, 0.5, 0.75, 1.0$) (m/s), and the results demonstrate that proper velocity design does affects the performance of the navigation system. As demonstrated in Table \ref{velocity}, a slower velocity command (0.25) prevents the robot from reaching the goal on time, resulting in a lower success rate. Moreover, it can be concluded that lower the speed would help decrease the energy consumption.
+
+On the other hand, setting a too large velocity command will introduce locomotion instability, as indicated by the results with a velocity of $1m/s$. However, conducting a quantitative analysis of the influence of speed is challenging in complex terrains. For instance, in slopes, robots with higher velocities may navigate more effectively, whereas terrains with discrete steps could lead to locomotion failures at faster speeds. Consequently, experiments with velocity commands of $1m/s$ still achieve a high success rate.
+
+The performances vary between $0.5m/s$ and $0.75m/s$ is not significant; therefore, we consider this range to be an appropriate commanded velocity range for deployment. In real-world experiments, we demonstrate the robot's velocity set at $0.75m/s$ in the supplementary video.
+
+\subsection{Long Distance Navigation}
+To further investigate the open-world navigation ability of the proposed system, we conduct a longer outdoor navigation experiment covering a total distance of $190$ meters, as depicted in Fig. \ref{long-distance}.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=8.3cm]{figures/long_distance.pdf}}
+\caption{We demonstrate the open-world navigation ability of \textbf{TOP-Nav} in a long-distance navigation task covering $190m$}
+\label{long-distance}
+\end{figure}
+
+We conducted the experiment in an off-road scenario with grass and gravel on both sides of the path. The robot was initially given a target direction straight ahead, relying on the terrain and obstacle estimator to keep navigating on the paved road. The path traversed by the robot is depicted in Fig. \ref{long-distance}. We observe that in such scenarios, the challenging terrains help guide the robot in changing its moving direction, ensuring that the robot stays on the paved road automatically. In contrast, on the open flat terrain, we had to provide teleoperation to make the robot change its direction and move onto another narrowing path.
+
+Since we do not have localization enabled in the real-world experiment, human teleoperation was used three times to change the target moving direction. This limitation was due to the onboard vision system's inability to perform accurate online localization, which we plan to address by integrating a mounted lidar in future work.
+
+
+
+
+\end{document}
+
+

@@ -1,0 +1,78 @@
+
+\newtheoremstyle{examplestyle} % Name of the style
+  {3pt} % Space above
+  {3pt} % Space below
+  {\normalfont\small} % Font style
+  {} % Indent amount
+  {\bfseries} % Theorem head font
+  {.} % Punctuation after theorem head
+  {.5em} % Space after theorem head
+  {} % Theorem head spec
+\theoremstyle{examplestyle}
+\newtheorem{example}{Example}
+
+\usepackage{environ}
+\NewEnviron{myexample}{
+  \noindent\hrulefill\\ % Horizontal rule above
+  \vspace*{-20pt}
+  \begin{example}
+  \BODY % Content of the environment
+  \end{example}
+  \vspace*{-16pt}
+  \noindent\hrulefill % Horizontal rule below
+}
+
+
+\begin{figure}
+\begin{flushleft}
+$\textrm{PracticalSelfTuneHmcStep}(\theta)$
+\vspace*{2pt}
+\hrule
+\vspace*{2pt}
+\begin{tabular}{ll}
+$\theta \in \mathbb{R}^d$: & position
+\\
+$\rho \in \mathbb{R}^d$: & momentum
+\\
+$\Sigma \in \mathbb{R}^{d \times d}$: & symmetric, positive definite metric
+\end{tabular}
+\vspace*{4pt}
+\hrule
+\vspace*{8pt}
+Set $\theta_0 = \theta$
+\\[4pt]
+Resample momentum $\rho_0 \sim \textrm{normal}(0, \Sigma).$
+\\[4pt]
+Sample tuning parameters $\epsilon, L \sim p(\epsilon, L \mid \theta_0, \rho_0, \Sigma)$
+\\[4pt]
+for $i$ from $0$ to $L - 1$ (inclusive):
+\\[2pt]
+\null \qquad $\rho_{i + 1/2} = \rho_i - \frac{\epsilon}{2} \cdot \nabla \log p(\theta_i)$
+\\[2pt]
+\null \qquad $\theta_{i + 1} = \theta_i + \epsilon \cdot \Sigma^{-1} \cdot \rho_{i + 1/2}$
+\\[2pt]
+\null \qquad $\rho_{i + 1} = \rho_{i + 1/2} - \frac{\epsilon}{2} \cdot \nabla \log p(\theta_0)$
+\\[6pt]
+Set proposal $\theta^*, \rho^*, \epsilon^*, L^* = \theta_L, -\rho_L, \epsilon, L$ 
+\\[4pt]
+Sample $u \sim \textrm{uniform}(0, 1)$
+\\[4pt]
+Return $\left(\theta^*, -\rho^*, \epsilon^*, L^* \right)$ 
+if $u < \frac{\displaystyle p(\theta^*, \rho^* \mid \epsilon^*, L^*)}
+             {\displaystyle p(\theta_0, \rho_0 \mid \epsilon, L)}$
+else return $\left( \theta_0, \rho_0, \epsilon, L \right)$.
+\vspace*{4pt}
+\hrule
+\caption{\it {\bfseries Practical Self-tuning HMC Step}.  This algorithm only differs from HMC in the sampling of the  tuning parameters each iteration.  Note the dependence of the acceptance probability on the tuning.}
+\label{fig:practical-self-tuning-hmc}
+\end{flushleft}
+\end{figure}
+
+
+\begin{comment}
+The No-U-Turn Sampler (NUTS), which directly motivated this work \cite{HoGe2014}. NUTS generates a trajectory forward and backward in time using a No-U-Turn condition that doubles the number of steps each interior iteration to ensure reversibility.  It then slice samples along the trajectory according to the joint density of the position and momentum.
+\end{comment}
+
+\begin{comment}
+The non-reversible uniform generalized Hamiltonian Monte Carlo algorithm coupled the Metropolis acceptance probability $\alpha$ and updated it non-reversibily while maintaining a marginal uniform distribution \cite{neal2020non} .  This clustered acceptances in generalized Hamiltonian Monte Carlo (HMC with partial momentum refresh and a single leapfrog step per iteration) and achieved efficiency comparable to HMC itself.
+\end{comment}

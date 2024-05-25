@@ -1,0 +1,390 @@
+\section{Annotated Dependency Pairs for Relative Termination}\label{Relative DP Framework}
+
+
+
+As shown in \Cref{Dependency Pairs for Relative Termination},
+up to now there only exist criteria \cite{iborra2017relative} that state
+when it is sound to apply
+\emph{ordinary} DPs for proving relative termination, but there is no \emph{specific} DP-based technique
+to analyze relative termination directly. To solve this problem, we now
+adapt the concept of \emph{annotated dependency pairs} (ADPs) for relative termination.
+ADPs were introduced in \cite{FLOPS2024} to prove innermost almost-sure termination of probabilistic term rewriting.
+In the relative setting, we can use similar dependency pairs as in the probabilistic setting,
+but with a different rewrite relation $\tored{}{}{}$ to deal with non-innermost rewrite steps.
+Compared to \cite{iborra2017relative},
+we can (a) remove the requirement of dominance, which will be handled
+by the dependency graph processor, and (b) allow for ADP processors that are specifically designed for the relative
+setting before possibly moving to ordinary DPs.
+The requirement that 
+$\R^{=}$ must be non-duplicating remains, since DPs do not help in analyzing
+redex-duplicating sequences as in \Cref{example:redex-duplicating}, where the crucial redex
+$\ta$ is not generated from a ``function call'' \pagebreak[2]
+in the right-hand side of a rule,
+but it just corresponds to a duplicated variable.
+To handle TRSs $\R / \R^{=}$ where $\R^{=}_{dup} \subseteq\R^{=}$
+is duplicating,
+one can move the duplicating rules to the main TRS $\R$ and 
+try to prove relative termination of
+$(\R \cup \R^{=}_{dup})/(\R^{=} \setminus \R^{=}_{dup})$ instead,
+or one can try to find a reduction pair $(\succsim, \succ)$ where
+$\succ$ is closed under contexts such that $\R \cup \R^= \subseteq {\succsim}$ and
+$\R^{=}_{dup} \subseteq {\succ}$. Then it suffices to prove relative termination of $(\R
+\setminus \succ, \R^{=} \setminus \succ)$ instead.
+
+
+
+For ordinary termination, we create a separate DP for each occurrence of a
+defined symbol in the right-hand side of a rule (and no DP is created for rules without
+defined symbols in their right-hand sides).
+This would work to detect
+\emph{ordinary infinite} sequences
+like the one in \Cref{example:ordinary-infinite}
+in the relative setting, i.e., such an infinite sequence would give rise to an infinite chain. 
+However,  as shown in \Cref{ex:dps-dont-work-in-relative}, this
+would not suffice to detect infinite redex-creating sequences as in
+\Cref{example:redex-creating}
+with   $\R_2 = \{\ta \to \tb\}$ and $\R_2^{=} = \{\tf \to \tc(\tf,\ta)\}$:
+$\underline{\tf}
+    \to_{\R_2^{=}} \tc(\tf,\underline{\ta}) \to_{\R_2} \tc(\underline{\tf},\tb) \to_{\R_2^{=}}
+    \tc(\tc(\tf,\underline{\ta}),\tb) \to_{\R_2}
+     \ldots$\
+
+  
+
+    
+Here, (1) we need a DP for
+the rule $\ta \to \tb$ to detect the reduction of the created
+$\R_2$-redex $\ta$, although $\tb$ is a constructor.
+Moreover,
+(2) both defined symbols $\tf$ and $\ta$ in the right-hand side of
+$\tf \to \tc(\tf, \ta)$ have to be considered simultaneously:
+We need $\tf$ to create an infinite number of $\R_2$-redexes, and we need $\ta$ since it
+is the created $\R_2$-redex.
+Hence, for rules from the base TRS $\R_2^=$, we have to consider all possible pairs of
+defined symbols in their right-hand sides simultaneously.\footnote{For relative
+termination, it suffices to
+consider \emph{pairs} of defined symbols.
+The reason is that to ``track'' a non-terminating reduction, one only has
+to
+consider a single redex plus possibly another redex of the base
+TRS which may later create a redex again.
+}
+This is not needed for the main TRS $\R_2$, i.e., if the $\tf$-rule were in the
+main TRS, then the $\tf$ in the right-hand side could be considered separately from the $\ta$ that it generates.
+Therefore, we distinguish between \emph{main} and \emph{base ADPs} (that are
+generated from the main and the base TRS, respectively).
+
+
+
+As in \cite{FLOPS2024},  we now annotate defined
+symbols directly in the original rewrite rule instead of extracting annotated subterms
+from its right-hand side. In this way, we may have terms containing several annotated
+symbols, which 
+allows us to consider pairs of defined symbols in right-hand sides
+simultaneously.
+
+\begin{definition}[Annotations]
+    For $t \in \TSet{\SignatureADC}{\VSet}$ 
+    and $\Sigma' \subseteq \SignatureADC \cup \VSet$, let $\pos_{\Sigma'}(t)$ be the
+    set of all positions of $t$
+    with symbols or variables from $\Sigma'$.
+    For $\Phi \subseteq \posDT(t)$,
+    $\anno_\Phi(t)$ is the variant of $t$ where the symbols at positions from $\Phi$
+    are annotated and all\linebreak other annotations are removed.
+    Thus, $\posT(\anno_\Phi(t)) = \Phi$, and
+    $\anno_\emptyset(t)$ removes all an-\linebreak
+    notations from $t$, where we often write
+    $\flat(t)$ instead of $\anno_\emptyset(t)$.
+    Moreover, for a singleton $\{\pi \}$, we often write $\anno_\pi$ instead of $\anno_{\{\pi\}}$.
+   We write $t \trianglelefteq_{\#}^\pi s$ if
+there is a $\pi \in \posT(s)$ and $t = \flat(s|_\pi)$
+(i.e., $t$ results from  a subterm of $s$ with annotated root
+symbol by removing its annotations). We also write $\trianglelefteq_{\#}$ instead of $\trianglelefteq_{\#}^\pi$.
+\end{definition}
+
+\begin{example}
+    If $\tf \in \SignatureD$, then we have $\anno_{1}(\tf(\tf(x))) =
+    \anno_{1}(\tF(\tF(x))) = \tf(\tF(x))$ and $\flat(\tF(\tF(x))) = \tf(\tf(x))$. 
+    Moreover, we have $\tf(x) \trianglelefteq_{\#}^{1} \tf(\tF(x))$.
+\end{example}
+
+
+While in \cite{FLOPS2024} all defined symbols on the right-hand sides of rules were
+annotated, 
+we now define our novel variant of \emph{annotated dependency pairs}
+for relative rewriting.
+
+\begin{definition}[Annotated Dependency Pair]\label{def:Canonical-ADPs}
+\hspace*{-.2cm}    A rule $\ell\!\to\!r$ with $\ell\!\in\!\TSet{\Sigma}{\VSet} \setminus\linebreak
+    \VSet$, $r \in \TSet{\SignatureADC}{\VSet}$, and $\VSet(r) \subseteq \VSet(\ell)$ is
+    called an
+    \defemph{annotated dependency pair (ADP)}.
+ 
+    Let $\SignatureD$ be the defined symbols of $\R \cup \R^=$, and for $n \in
+    \NN$, let $\ADPair{n}{\ell \to r}  =  
+    \{\ell \to\linebreak \anno_{\Phi}(r) \mid \Phi \subseteq \pos_{\SignatureD}(r), |\Phi| \leq n\}$.
+\pagebreak[2]  The  \defemph{canonical main ADPs} for $\R$ are $\ADPairMain{\R} = \bigcup\limits_{\ell \to r \in \R}
+  \!\!\!\!  \ADPairMain{\ell\!\to\!r}$ and  the \defemph{canonical base ADPs} for $\R^=\!$
+are  $\ADPairBase{\R^{=}}\!= \!\!\!
+    \bigcup\limits_{\ell \to r \in \R^=} \!\!\!\! \ADPairBase{\ell\!\to\!r}$.
+\end{definition}
+
+So the left-hand side of an ADP is just the left-hand side of the original rule.
+The right-hand side  results from the right-hand side of the original rule
+by replacing certain defined symbols $f$ with $f^{\#}$.
+Whenever
+we have two ADPs  $\ell \to \anno_{\Phi'}(r)$,
+$\ell \to \anno_{\Phi}(r)$
+with  $\Phi' \subset \Phi$, then
+we only consider $\ell \to \anno_{\Phi}(r)$ and remove
+ $\ell \to \anno_{\Phi'}(r)$.
+
+\begin{example}\label{ADP-Divl}
+    The canonical ADPs
+    of \Cref{example:redex-creating} are $\ADPairMain{\R_2} = \{ \ta
+    \to \tb\}$
+    and $\ADPairBase{\R_2^{=}} = \{\tf \to
+    \tc(\tF,\tA)\}$ and for
+    \Cref{example:redex-creatingAbove} we get $\ADPairMain{\R_3} = \{ \ta(x)
+    \to \tb(x)\}$
+    and $\ADPairBase{\R_3^{=}} = \{\tf \to
+    \tA(\tF)\}$.
+    For $\R_{\tdivl}/\R^{=}_{\tset 2}$ from \Cref{ex:divlTRS,ex:mainExample},
+    the ADPs $\ADPairMain{\R_{\tdivl}}$ are
+
+\vspace*{-.4cm}
+    
+    {\footnotesize
+    \hspace*{-.7cm}\begin{minipage}[t]{5.1cm}
+        \begin{align}
+            \label{R-div-adp-2} \tminus(x,\O) &\to x\\
+            \label{R-div-adp-1} \tminus(\ts(x),\ts(y)) &\to \tM(x,y) \\
+            \label{R-div-adp-3} \tdiv(x,\ts(\O)) &\to x\\
+            \label{R-div-adp-4} \tdivl(x,\tnil) &\to x \!
+        \end{align}
+    \end{minipage}
+    \begin{minipage}[t]{7.5cm}
+        \begin{align}
+            \label{R-div-adp-5} \tdiv(\ts(x),\ts(y)) &\to \ts(\tD(\tminus(x,y),\ts(y)))\\
+            \label{R-div-adp-6} \tdiv(\ts(x),\ts(y)) &\to \ts(\tdiv(\tM(x,y),\ts(y)))\\
+            \label{R-div-adp-7} \tdivl(x,\tcons(y,\xs)) &\to \tDL(\tdiv(x,y),\xs) \\
+            \label{R-div-adp-8} \tdivl(x,\tcons(y,\xs)) &\to \tdivl(\tD(x,y),\xs) \!
+        \end{align}
+    \end{minipage}}
+    
+    \vspace*{-.1cm}
+   
+  
+    \begin{align}
+      \label{B-com-adp-2}
+      \hspace*{-.2cm}
+         \text{and $\ADPairBase{\R^{=}_{\tset 2}}$ contains 
+      {\small $\tdivl(z, \tcons(x, \tcons(y,\zs))) \to \tDL(z, \tcons(y, \tcons(x,\zs)))$}}
+    \end{align}
+\end{example}
+
+
+In \cite{FLOPS2024},
+ADPs were only used for innermost rewriting.
+We now modify their rewrite relation and define what happens 
+with annotations inside the substitutions during a rewrite step.
+To simulate redex-creating sequences as in \Cref{example:redex-creatingAbove}
+with ADPs (where the position of the created redex $\ta(\ldots)$
+is above the position of the creating redex $\tf$),
+ADPs should be able to rewrite above annotated arguments
+without removing their annotation (we will demonstrate that in
+\Cref{ex:ADPs-for-redex-creation-2}).
+Thus, for an ADP $\ell \to\linebreak r$ with $\ell|_\pi = x$, we use a 
+\emph{variable reposition function (VRF)} to indicate which occur-\linebreak rence of $x$ in $r$ should
+keep the annotations if one rewrites an instance of $\ell$ where the subterm at position
+$\pi$ is annotated.
+So a VRF maps  positions of variables in the left-hand side of a rule to
+positions of the same variable in the right-hand side.
+
+\begin{definition}[Variable Reposition Function]\label{def:Var-Repos-Func}
+    Let $\ell \to r$ be an ADP.
+	A function $\varphi: \pos_{\VSet}(\ell) \to \pos_{\VSet}(r) \cup \{\bot\}$ is called a
+    \defemph{variable reposition function (VRF)} for
+    $\ell \to r$
+    iff
+    $\ell|_\pi = r|_{\varphi(\pi)}$ whenever
+ $\varphi(\pi) \neq \bot$.
+\end{definition}
+
+\begin{example}\label{example:rel-var-repos-function}
+    For the ADP $\ta(x) \to \tb(x)$ for $\R_3$ from \Cref{example:redex-creatingAbove},
+    if $x$ on position 1 of the left-hand side is instantiated by $\tF$,
+    then the VRF $\varphi(1) = 1$ 
+    indicates that
+    this ADP rewrites $\tA(\tF)$ to $\tb(\tF)$, whereas
+    $\varphi(1) = \bot$  means that
+    it rewrites $\tA(\tF)$ to $\tb(\tf)$.
+\end{example}
+
+With VRFs we can define the rewrite relation for ADPs w.r.t.\ full rewriting.
+
+\begin{definition}[$\tored{}{}{\C{P}}$]\label{def:ADP-Rewriting}
+    Let $\C{P}$ be a set of ADPs.
+    A term $s \in \TSet{\SignatureADC}{\VSet}$ rewrites to $t$ using $\C{P}$
+    (denoted $s \tored{}{}{\C{P}} t$)
+if there is a rule $\ell \to r \in \C{P}$, 
+    a substitution $\sigma$, a position $\pi \in \posDT(s)$
+    such that $\flat(s|_\pi) = \ell\sigma$, a VRF $\varphi$ for $\ell \to r$,
+    and\footnote{\label{ADPComparison2}In \cite{FLOPS2024} there
+    were two additional cases in the definition of the corresponding rewrite relation. One of
+    them was needed for processors that restrict the set of rules applicable for
+    $\mathbf{r}$-steps (e.g., based on usable rules), and the other case 
+    was needed to
+    ensure that the innermost
+    evaluation strategy is not affected by the application of ADP processors. This is
+    unnecessary here since we consider full rewriting. On the other hand,
+     VRFs are new compared to
+\cite{FLOPS2024}, since they are not needed for innermost rewriting.}
+    \begin{equation*}
+        \begin{array}{rll@{\quad}ll@{\qquad}l}
+        t &=                  &s[\anno_{\Phi}(r\sigma)]_{\pi}  & 
+        \text{if} & \pi \in \posT(s)    & (\mathbf{pr})\\ 
+        t &=                  &s[\anno_{\Psi}(r\sigma)]_{\pi}  & 
+        \text{if} & \pi \in\pos_\SignatureD(s) & (\mathbf{r})\!
+        \end{array}
+    \end{equation*}
+    Here, $\Psi \!=\! \{\varphi(\rho).\tau \mid \rho \!\in\! \pos_{\VSet}(\ell), \,
+    \varphi(\rho) \neq \bot,  \, \rho.\tau \!\in\! \posT(s|_{\pi}) \}$
+    and $\Phi = \posT(r) \cup \Psi$.
+\end{definition}
+So $\Psi$ considers all positions of annotated symbols in $s|_{\pi}$ that
+are below
+positions $\rho$ of\linebreak variables in $\ell$. If the VRF maps $\rho$ to a variable position
+$\rho'$ in
+$r$, then the annotations below $\pi.\rho$ in $s$ are kept in the resulting subterm at
+position $\pi.\rho'$
+after the rewriting.
+
+Rewriting with $\C{P}$ is like ordinary term rewriting, while considering and
+modifying
+annotations.
+Note that we represent all DPs resulting from a rule as well as the original
+rule by just one ADP.  
+So the ADP $\tdiv(\ts(x),\ts(y)) \to \ts(\tD(\tminus(x,y),\ts(y)))$
+represents both the DP resulting from $\tdiv$ in the right-hand side
+of the rule \eqref{R-div-rule-2}, and the rule \eqref{R-div-rule-2} itself 
+(by simply disregarding all annotations of the ADP).
+
+Similar to the classical DP framework, our goal is to track specific reduction
+sequences. As before, 
+there are $\mathbf{p}$-steps where
+a DP is applied at the
+position of an annotated symbol. These steps may
+introduce new annotations. Moreover, 
+between two $\mathbf{p}$-steps there can be
+several $\mathbf{r}$-steps.
+
+A step of the form $(\mathbf{pr})$ at position $\pi$ in \Cref{def:ADP-Rewriting} 
+represents  
+a $\mathbf{p}$- or an  
+$\mathbf{r}$-step\linebreak (or both), where an  
+$\mathbf{r}$-step is only possible 
+if one later rewrites an annotated symbol at a position above $\pi$.
+All annotations are kept during this step except for annotations of subterms
+that correspond to variables of the applied rule. Here, the used VRF $\varphi$ determines which of
+these annotations are kept and which are removed.
+As an example,
+with the canonical ADP $\ta(x) \to \tb(x)$  from
+$\ADPairMain{\R_3}$ we can rewrite
+$\tA(\tF) \tored{}{}{\ADPairMain{\R_3}}  \tb(\tF)$ as in \Cref{example:rel-var-repos-function}.
+Here, we have $\pi =
+\varepsilon$, $\flat(s|_\varepsilon) = \ta(\tf) = \ell \sigma$, $r =
+\tb(x)$, and the VRF $\varphi$ with 
+$\varphi(1) = 1$ such that the annotation of $\tF$ in $\tA$'s argument is
+kept in the  argument of $\tb$.
+
+A step of the form $(\mathbf{r})$
+rewrites at the position of a non-annotated defined symbol,
+and represents just an $\mathbf{r}$-step.  
+Hence, we remove all annotations
+from the right-hand side $r$ of the ADP.
+However, we may have to keep the annotations inside the substitution,
+hence we move them according to the VRF.
+For example, we obtain the rewrite step
+$\ts(\tD(\underline{\tminus(\ts(\O),\ts(\O))},\ts(\O))) \tored{}{}{\ADPairMain{\R_\tdivl}}\ts(\tD(\tminus(\O,\O),\ts(\O)))$
+using the ADP $\tminus(\ts(x),\ts(y)) 
+\to \tM(x,y) \;$ \eqref{R-div-adp-1}
+and any VRF.
+
+A \emph{(relative) ADP problem} has the form
+$(\C{P},\C{P}^{=})$, where $\C{P}$ and $\C{P}^{=}$ are finite sets of ADPs and $\C{P}^{=}$
+is non-duplicating. 
+$\C{P}$ is the set of all main ADPs and $\C{P}^{=}$ is the set of all base ADPs.
+Now we can define chains in the relative setting.
+
+\begin{definition}[Chains and Terminating ADP Problems]\label{def:relative-rewrite-chain}
+    Let $(\C{P},\C{P}^{=})$ be an ADP problem.
+    A sequence of terms $t_0, t_1, \ldots$ is a
+    $(\C{P},\C{P}^{=})$-\defemph{chain} if we have $t_i \tored{}{}{\C{P} \cup \C{P}^{=}}
+    t_{i+1}$ for all $i \in \IN$.
+    The chain is called \defemph{infinite} if infinitely
+    many of these rewrite steps use $\tored{}{}{\C{P}}$
+    with Case $(\mathbf{pr})$. 
+    We say that an ADP problem $(\C{P},\C{P}^{=})$ is \defemph{strongly normalizing (SN)} if
+    there is no infinite $(\C{P},\C{P}^{=})$-chain.
+\end{definition}
+
+Note the two different forms of relativity in \Cref{def:relative-rewrite-chain}:
+In a finite chain,
+we may not only use infinitely many steps with $\C{P}^{=}$ but also infinitely many steps
+with $\C{P}$ where Case $(\mathbf{r})$ applies.  
+Thus, an ADP problem $(\C{P},\C{P}^{=})$
+without annotated symbols or without any main ADPs (i.e., where $\C{P} = \emptyset$) is obviously SN.
+Finally, we obtain our desired chain criterion.
+
+\begin{restatable}[Chain Criterion for Relative Rewriting]{theorem}{RelChainCriterion}\label{theorem:relative-chain-crit}
+    Let $\R$ and $\R^{=}$ be TRSs such that $\R^{=}$ is non-duplicating.
+    Then $\R / \R^{=}$ is SN iff the ADP problem $(\ADPairMain{\R}, \ADPairBase{\R^{=}})$ is SN.
+\end{restatable}
+
+\begin{example}\label{ex:ADPs-for-redex-creation-1}
+    The infinite rewrite sequence of \Cref{example:redex-creating} can be simulated by
+    the following infinite chain  using $\ADPairMain{\R_2} = \{ \ta
+    \to \tb\}$
+    and $\ADPairBase{\R_2^{=}} = \{\tf \to
+    \tc(\tF,\tA)\}$.
+    \[\underline{\tF}
+    \tored{}{}{\ADPairBase{\R_2^{=}}} \tc(\tF,\underline{\tA}) \tored{}{}{\ADPairMain{\R_2}} \tc(\underline{\tF},\tb)
+    \tored{}{}{\ADPairBase{\R_2^{=}}} \tc(\tc(\tF,\underline{\tA}),\tb) \tored{}{}{\ADPairMain{\R_2}}
+    \ldots\]
+
+    The steps with $\tored{}{}{\ADPairBase{\R_2^{=}}}$ use Case
+    ($\mathbf{pr}$) at the position of the annotated symbol $\tF$
+    and the steps 
+    with $\tored{}{}{\ADPairMain{\R_2}}$ use ($\mathbf{pr}$) as well.
+    For this infinite chain, we indeed need 
+    two annotated symbols in the right-hand side of the base ADP: If $\tA$ were not annotated (i.e., if we had the ADP
+    $\tf \to
+    \tc(\tF,\ta)$), then the step with 
+    $\tored{}{}{\ADPairMain{\R_2}}$ would just use Case ($\mathbf{r}$) and the chain would
+    not be considered ``infinite''. If $\tF$ were not annotated
+    (i.e., if we had the ADP
+    $\tf \to
+    \tc(\tf,\tA)$), then we would have the step
+     $\tf
+    \tored{}{}{\ADPairBase{\R_2^{=}}} \tc(\tf,\ta)$ which uses
+    Case ($\mathbf{r}$)
+    and removes all
+    annotations from the right-hand side. Hence, again the chain would not be considered ``infinite''.
+\end{example}
+
+\begin{example}\label{ex:ADPs-for-redex-creation-2}
+  The infinite rewrite sequence of
+  \Cref{example:redex-creatingAbove} is simulated by the following chain with
+   $\ADPairMain{\R_3} = \{ \ta(x) \to \tb(x)\}$
+    and $\ADPairBase{\R_3^{=}} = \{\tf \to \tA(\tF)\}$.
+    \[\underline{\tF}
+    \tored{}{}{\ADPairBase{\R_3^{=}}} \underline{\tA}(\tF) \tored{}{}{\ADPairMain{\R_3}} \tb(\underline{\tF})
+    \tored{}{}{\ADPairBase{\R_3^{=}}} \tb(\underline{\tA}(\tF)) \tored{}{}{\ADPairMain{\R_3}}\tb(\tb(\underline{\tF}))  \tored{}{}{\ADPairBase{\R_3^{=}}}
+    \ldots\]
+    Here, it is important to use the VRF $\varphi(1) = 1$ for $\ta(x) \to \tb(x)$
+    which keeps the annotation of $\tA$'s argument
+    $\tF$ during the rewrite steps with $\ADPairMain{\R_3}$, i.e., these steps must yield
+    $\tb(\tF)$ instead of $\tb(\tf)$    
+    to generate further  subterms  $\tA(\ldots)$ afterwards.
+\end{example}

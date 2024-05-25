@@ -1,0 +1,22 @@
+\newcommand{\markclosed}{{\color[HTML]{FE0000} Private}}
+
+\begin{table*}[h]
+\centering
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+\multirow{2}{*}{Model}  & \multicolumn{1}{c}{\multirow{2}{*}{Size}} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}Instruction\\ Dataset\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}Dataset\\ Size\end{tabular}} & \multicolumn{2}{c}{Benchmark}                                    \\ \cmidrule(l){5-6} 
+                        & \multicolumn{1}{c}{}                      & \multicolumn{1}{c}{}  & \multicolumn{1}{c}{}                                                                               & \multicolumn{1}{c}{HumanEval (+)} & \multicolumn{1}{c}{MBPP (+)} \\ \midrule
+\gptthreefive (May 2023) & -         & {\markclosed} & -         & 73.2 (66.5)    & -            \\ \midrule
+\stablecoder             & 3B        & -             & -         & 28.7 (25.6)    & 53.6 (44.1)  \\
+\dscoderbase             & 1.3B      & -             & -         & 28.7 (25.6)    & 55.6 (46.9)  \\
+Phi-2                    & 2.7B      & -             & -         & 48.8 (45.1)    & 62.7 (52.9)  \\
+\dscoderinst             & 1.3B      & {\markclosed} & 2B        & 65.2 (59.8)    & 63.9 (53.1)  \\ \midrule
+\baselineds                & 1.3B             &  Evol-Instruct             &        0.3B             & 61.6 (57.3)    & 59.6 (49.1)  \\
+\ewads                     & 1.3B             & Evol-Instruct            &        0.3B              &   \textbf{67.1} (63.4)  &   58.9 (48.4)  \\ \midrule
+\oursmoe                   & 8$\times$1.3B    & Evol-Instruct           &        0.3B              & 65.2 (62.2)    & 60.4 (50.1)  \\
+\oursmerge                 & 1.3B             & Evol-Instruct           &        0.3B               & \textbf{67.1} (\textbf{64.6})    & \textbf{60.4} (\textbf{50.1})  \\ \bottomrule
+\end{tabular}
+\caption{\label{tab:python-text2code}
+\Passat{1} results of different \llm{s} on \humaneval{}~(+) and \mbpp{}~(+) computed with greedy decoding, following the setting of prior works~\cite{wei2023magicoder, evalplus}. We report the results consistently from the \evalplus~\cite{evalplus} Leaderboard. Note that numbers in bold refer to the highest scores among all 1.3B models fine-tuned on public datasets, which is the same for all the other tables.
+}
+\end{table*}

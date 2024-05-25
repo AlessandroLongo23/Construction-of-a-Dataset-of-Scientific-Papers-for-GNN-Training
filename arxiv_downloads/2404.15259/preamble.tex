@@ -1,0 +1,69 @@
+\usepackage{paralist}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{comment}
+\usepackage{float}
+
+\def\ints{\mathbf{K}}
+\def\loss{\mathcal{L}}
+\def\grad{\nabla}
+\def\coord{\mathbf{x}}
+\def\field{\phi}
+\def\feat{\mathbf{f}}
+\def\cov{\Sigma}
+\def\density{\sigma}
+\def\obsset{\mathcal{C}}
+\def\unproj{\pi^{-1}}
+\def\pixcoord{\mathbf{u}}
+\def\pixcoordx{\mathbf{x}}
+\def\proj{\pi}
+\def\focal{\mathbf{f}}
+\def\image{\mathcal{I}}
+\def\mean{\mu}
+\def\col{\mathbf{c}}
+\def\expect{\mathbb{E}}
+\def\model{\mathbf{F}}
+\def\prob{P}
+\def\modparam{\theta}
+\def\probparam{\phi}
+\def\imgspace{\mathbb{R}^{\text{H} \times \text{W} \times 3}}
+\newcommand{\param}{\phi}
+\newcommand\render{\text{render}}
+\newcommand\sample{\text{sample}}
+\newcommand{\tf}[1]{\mathbf{#1}}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\newcommand\norm[1]{\lVert#1\rVert}
+\newcommand{\img}{\mathcal{I}}
+\newcommand{\oflow}{\mathbf{V}}
+\newcommand{\tracks}{\mathcal{T}}
+\newcommand{\imagekey}{\image_\text{key}}
+\newcommand{\imagequery}{\image_\text{query}}
+\def\pose{\textbf{P}}
+\def\weights{\mathcal{W}}
+\def\project{\pi}
+\def\depth{\mathbf{D}}
+\def\SE{\text{SE}}
+\def\surf{\mathbf{X}}
+
+\def\flow{\mathbf{F}} %
+\def\predflow{\hat{\flow}} %
+\def\camflow{\tilde{\flow}} %
+\def\corr{\mathbf{C}} %
+\def\predcorr{\hat{\corr}} %
+\newcommand{\ours}{FlowMap}
+
+\newcommand{\myparagraph}[1]{\vspace{-4pt}\subsubsection{#1}}
+
+
+\def\maketitlesupplementary
+   {
+   \newpage
+       \twocolumn[
+        \centering
+        \Large
+        \textbf{\thetitle}\\
+        \vspace{0.5em}Supplementary Material \\
+        \vspace{1.0em}
+       ] %
+   }
+   

@@ -1,0 +1,72 @@
+\section{Introduction}\label{Introduction}
+
+Termination is an important topic in program verification.
+There is a wealth of work on
+automatic termination analysis of term rewrite systems (TRSs) which can also be used to
+analyze termination of programs in many other languages.
+Essentially all current termination tools for TRSs (e.g., \aprove~\cite{JAR-AProVE2017}, \natt~\cite{natt_sys_2014}, \muterm~\cite{gutierrez_mu-term_2020}, \ttttwo~\cite{ttt2_sys}, etc.)
+use \emph{dependency pairs (DPs)}
+\cite{arts2000termination,gieslLPAR04dpframework,giesl2006mechanizing,hirokawa2005automating,DBLP:journals/iandc/HirokawaM07}.
+
+
+A combination of two TRSs $\R$ and $\R^{=}$
+is considered to be ``\emph{relatively terminating}'' if there is no 
+rewrite sequence that uses infinitely many steps
+with rules from $\R$ (whereas rules from $\R^{=}$ may be used infinitely often).
+Relative termination of TRSs has been
+studied since decades \cite{DBLP:phd/dnb/Geser90}, and approaches based on
+relative rewriting are used for many different applications, e.g.,
+\cite{koprowskiZantema2005LivenessRelRew,fuhs2019DerivToRuntime,DBLP:journals/lmcs/NageleFZ17,DBLP:journals/corr/ZanklK14,DBLP:journals/jar/HirokawaM11,DBLP:conf/lpar/KleinH12,DBLP:conf/lopstr/IborraNV09,DBLP:journals/aaecc/NishidaV10,DBLP:conf/flops/Vidal08}.
+
+However, while techniques and tools for analyzing ordinary termination of  TRSs
+are very powerful due to the use of DPs, 
+most approaches for automated analysis of relative termination are quite restricted in
+power. Therefore, 
+one of the largest open problems regarding DPs is Problem \#106 of the RTA List of Open Problems \cite{RTALoop}: 
+\emph{Can we use the dependency pair method to prove relative termination?}
+A first major step towards an answer to this question was presented in
+\cite{iborra2017relative} by giving  criteria for $\R$ and $\R^{=}$ that allow the use of
+ordinary DPs for relative termination. 
+
+Recently, we adapted DPs  in order to analyze probabilistic innermost term rewriting, by using so-called
+\emph{annotated dependency pairs (ADPs)} \cite{FLOPS2024}
+or \emph{dependency tuples (DTs)} \cite{kassinggiesl2023iAST} (which were originally proposed
+for innermost complexity analysis of  TRSs \cite{noschinski2013analyzing}).\footnote{As shown in
+\cite{FLOPS2024}, using ADPs instead of DTs leads to a more elegant,
+more powerful, and less complicated framework, and to completeness of
+the underlying \emph{chain criterion}.}
+In these adaptions, one \pagebreak[2] considers all \emph{defined} function symbols in the\linebreak[2]
+right-hand side
+of a rule at once, whereas ordinary DPs 
+consider them separately.
+
+In this paper, we show that considering the defined symbols on right-hand sides
+separately (as for DPs) does not suffice for relative termination. On the other hand,
+we do not need to consider all of them at once either.
+Instead, we introduce a new definition of ADPs that is suitable for relative
+termination and develop a corresponding ADP framework for automated relative
+termination proofs of TRSs.
+Moreover, while ADPs and DTs were only applicable for \emph{innermost}  rewriting in
+\cite{FLOPS2024,kassinggiesl2023iAST,noschinski2013analyzing}, we now adapt ADPs to \emph{full}
+(relative) rewriting, i.e., we do not impose any specific evaluation strategy.
+So while \cite{iborra2017relative} presented conditions under which the \emph{ordinary
+classical} DP framework can be used to 
+prove relative termination, in this paper we develop the first \emph{specific} DP
+framework for relative termination.
+
+\medskip
+
+\noindent
+\textbf{Structure:} We start with preliminaries on relative rewriting in
+\Cref{Relative Term Rewriting}.
+In \Cref{DP Framework} we recapitulate the core processors of the DP framework.
+Moreover, we state the main results of \cite{iborra2017relative} on using ordinary
+DPs for relative termination.
+Afterwards, we introduce our novel notion of \emph{annotated dependency pairs} for
+relative termination in \Cref{Relative DP Framework}
+and present a corresponding new ADP
+framework in \Cref{Relative ADP Processors}.
+We implemented our framework in the tool \aprove{} and
+in  \Cref{Evaluation and Conclusion}, we evaluate our implementation in comparison to
+other state-of-the-art  tools.
+ All proofs can be found in \Cref{Appendix}.

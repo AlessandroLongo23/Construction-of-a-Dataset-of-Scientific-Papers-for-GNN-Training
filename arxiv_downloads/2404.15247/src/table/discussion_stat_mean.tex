@@ -1,0 +1,13 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Model                         & \multicolumn{1}{c}{HumanEval} & \multicolumn{1}{c}{HumanEval+} \\ \midrule
+\baselineds                      & 61.6                          & 57.2                           \\
+\ewads & 62.7                          & 58.8                           \\
+\oursmerge                      & \textbf{64.5}                 & \textbf{60.9}                  \\ \bottomrule
+\end{tabular}
+\caption{\label{tab:discussion-stat-mean}
+Average pass@1 results of 200 experiments on \humaneval{}~(+) computed with sampling. \ours clearly outperforms both \ewads and \baselineds.
+}
+\end{table}

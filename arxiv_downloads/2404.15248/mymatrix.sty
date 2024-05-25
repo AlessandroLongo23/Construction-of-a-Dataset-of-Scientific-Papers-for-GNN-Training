@@ -1,0 +1,29 @@
+\ProvidesPackage{mymatrix}%
+\RequirePackage{mathtools}
+\RequirePackage{mhsetup}[2010/01/21]
+\MHInternalSyntaxOn
+
+\def\MT_matrix_begin:N #1{%
+  \hskip -\arraycolsep
+  \MH_let:NwN \@ifnextchar \MH_nospace_ifnextchar:Nnn
+  \array{*\c@MaxMatrixCols #1}}
+\def\mymatrixend:{\endarray \hskip -\arraycolsep}
+
+\renewenvironment{bmatrix*}[1][c]
+{\renewcommand*{\arraystretch}{.8}\footnotesize\left(\MT_matrix_begin:N #1 \vspace{-0.85em}\\}
+  {\MT_matrix_end:\right)}
+
+\newenvironment{sbmatrix*}[1][c]
+{\renewcommand*{\arraystretch}{.8}\scriptsize\left(\MT_matrix_begin:N #1 \vspace{-0.85em}\\}
+  {\MT_matrix_end:\right)}
+
+\renewenvironment{bmatrix}
+{\begin{bmatrix*}{}}
+  {\end{bmatrix*}}
+
+\newenvironment{sbmatrix}
+{\begin{sbmatrix*}{}}
+  {\end{sbmatrix*}}
+
+\MHInternalSyntaxOff
+\endinput

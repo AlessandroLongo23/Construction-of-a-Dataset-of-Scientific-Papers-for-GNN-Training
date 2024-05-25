@@ -1,0 +1,35 @@
+% \begin{table}[!t]
+\centering
+\caption{\textbf{Cityscapes evaluation.} {\hlours{Our method}}, {\hltask{Task-specific architectures}}}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{lcccccccc}
+\toprule
+ & \multicolumn{3}{c}{\textbf{Performance} ($\uparrow$)} && \multicolumn{2}{c}{\textbf{GFLOPs} ($\downarrow$)} \\ \cline{2-4} \cline{6-7}
+\multirow{-2}{*}{\textbf{Model}} & \textbf{PQ} & \textbf{mIoU}$_p$ & \textbf{AP}$_p$ && \textbf{Total} & \textbf{Tx. Enc.} \\ 
+\midrule
+
+\multicolumn{7}{c}{\textbf{Backbone}: SWIN-T}\\
+\hline
+RT-M2F \cite{lv2023detrs} & 59.73 & 77.89 & 31.35 && 	361.10 & 130.00 \\
+Lite-M2F \cite{li2023lite}  & 62.29 & 79.43 & 36.57 && 428.71 & 172.00 \\
+M2F \cite{cheng2021mask2former} & 64.00 & 80.77 & 39.26 && 537.85 & 281.13 \\
+\rowcolor{eccvblue!20}
+{\ours}($\GPRatio=0.003$) & 64.18 & 80.49 & 39.64 && 507.51  & 250.80 \\
+\rowcolor{eccvblue!20}
+{\ours}($\GPRatio=0.01$) & 62.09 & 79.58 & 36.04 && 439.67  & 182.95 \\
+\rowcolor{eccvblue!20}
+Lite-\ours  & 62.64 & 79.99 & 36.52 && 412.88 & 156.17 \\
+\hline
+\multicolumn{7}{c}{\textbf{Backbone}: Res50}\\
+\hline
+M2F & 61.86	& 76.94	& 37.35 && 524.11 & 281.13  \\
+\rowcolor{gray!20}
+YOSO \cite{hu2023you} & 59.70 & 76.05 & 33.76 && 265.1 & -- \\
+\rowcolor{gray!20}
+ReMax\cite{sun2023remax} & 65.40 & -- & -- && 294.7 & -- \\
+\rowcolor{eccvblue!20}
+{\ours} & 62.20 & 77.34 & 37.21 && 453.50 & 220.59 \\
+
+\bottomrule
+\end{tabular}}  
+\label{tab:result_cityscapes}

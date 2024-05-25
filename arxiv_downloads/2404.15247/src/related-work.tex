@@ -1,0 +1,36 @@
+\section{Related Work}
+\subsection{\moefull}
+\moefull (\moe) can efficiently scale up model sizes with only sub-linear increases in computation~\cite{shazeer2017outrageously}. 
+Compared with the standard Transformer, \moe replaces each Feed-Forward Network (FFN) layer with an \moe layer, which uses $N$ (\ie multiple) expert networks that are structurally equivalent to the original FFN layer and uses a router that directs each input token to $K$ out of $N$ expert networks. 
+Formally, for the $l$-th \moe layer, output hidden state $\mbox{\textbf{h}}_t^l$ of the $t$-th input token is computed as follows~\cite{dai2024deepseekmoe}:
+\begin{equation}\label{formula:moe}
+\begin{split}
+\mbox{\textbf{h}}_t^l &= \sum_{i=1}^{N}(g_{i,t}\mbox{FFN}_i(\mbox{\textbf{u}}_t^l)) + \mbox{\textbf{u}}_t^l \\
+g_{i,t} &= 
+\begin{cases}
+ s_{i,t} & s_{i,t}\in  \mbox{Topk}(s_t, K) \\
+    0 & \text{otherwise}
+\end{cases} \\
+s_t &= \{s_{i,t} \mid 1\leq i\leq N\} \\
+s_{i,t} &= \mbox{Softmax}_i({\mbox{\textbf{u}}_t^l}^T\mbox{\textbf{e}}_i^l)
+\end{split}
+\end{equation}
+where $N$ refers to the total number of experts, $g_{i,t}$ refers to the gate value for the $i$-th expert, $\mbox{FFN}_i(\cdot)$ refers to the $i$-th expert, $\mbox{\textbf{u}}_t^l$ refers to the hidden states of the $t$-th token which is the input of the $l$-th \moe layer, $s_{i,t}$ refers to the affinity score between the $i$-th expert and the $t$-th token, $\mbox{Topk}(S, K)$ refers to a function computing $K$ largest scores over $S$, and $\mbox{\textbf{e}}_i^l$ refers to the centroid of the $i$-th expert in the $l$-th \moe layer. By definition, each token will only be assigned to and computed in the top $K$ experts among all the $N$ experts.
+
+Recently, many works have been proposed to scale model sizes with \moe architecture~\cite{lepikhin2020gshard, du2022glam, fedus2022switch, jiang2024mixtral, xue2024openmoe}. While 
+most \moe models are trained from scratch, \sparseupcycle~\cite{komatsuzaki2023sparse} is proposed to initialize \moe models based on the pre-trained dense model, which can efficiently reduce the computational costs of training \moe models, compared with training \moe models from scratch. 
+Specifically, \sparseupcycle constructs a new \moe model by initializing each expert of each \moe layer as a copy of the original FFN layer in the dense model, while directly copying the remaining layers from the dense model to the new \moe model.
+
+\subsection{Instruction Tuning}
+Instruction tuning is designed to improve the instruction-following ability of \llm{s} by fine-tuning them on the instruction datasets in a supervised fashion~\cite{wei2022finetuned}. 
+The quality of the instruction dataset is significant for the effectiveness of instruction tuning and researchers have proposed multiple methods to improve data quality. For example, \textsc{\selfinstruct}~\cite{wang2023selfinstruct} synthesizes high-quality instruction data by prompting a foundation \llm with specially designed prompts. To improve \textsc{\selfinstruct}, \evolinstruct~\cite{xu2023wizardlm} improves the complexity and diversity of the instruction dataset by prompting \chatgpt with heuristic prompts. \textsc{\ossinstruct}~\cite{wei2023magicoder} queries \chatgpt to generate instruction-output pairs by getting inspiration from real-world code snippets.
+
+Recently, some parameter-efficient fine-tuning techniques have been proposed to use \moe for better instruction tuning. For example, \loramoe~\cite{dou2023loramoe} and \mocle~\cite{gou2024mixture} propose \moe-like modules that are constructed with Low-Rank Adaptations (\lora) to improve instruction tuning, while \pesc~\cite{wu2024parameterefficient} proposes to integrate adapters into \moe that are upcycled from dense models. Different from these works, \ours focuses on full fine-tuning, which generally performs better than parameter-efficient fine-tuning~\cite{chen2022revisiting}.
+
+\subsection{Weight Averaging}\label{sec:weight_averaging}
+Weight averaging is a commonly used technique to improve the performance of deep learning models. For example, \modelsoup~\cite{wortsman2022model} averages the weights of multiple models that are initialized from the same pre-trained model but finetuned with different hyperparameter configurations to improve the accuracy and robustness of the model. However, only a few works have been proposed to merge expert networks of an \moe layer to a normal FFN layer using weight averaging. For example, OneS~\cite{xue2022student} proposes several simple weight averaging methods to merge expert networks of a BERT-based \moe model. Closely related to our work, \ewafull (\ewa)~\cite{huang2023experts} proposes to convert an \moe model to a dense model with two steps: (i) During \moe training, \ewa conducts weighted averaging of all the expert weights after each weight update of \moe, which is based on a manually-crafted hyperparameter $\beta$; (ii) After training, \ewa converts each \moe layer into an FFN layer by uniformly averaging the experts. 
+
+Different from all the aforementioned existing works, \ours is the first work proposing a \textbf{learnable} mechanism to merge expert networks in the upcycled \moe model. Furthermore, while the training scheme of \ewa is deeply coupled to a specific \moe architecture, \ours can be easily adapted to different \moe architectures by only adjusting the final merging process. 
+In addition, unlike \ewa, \ours does not introduce any hyperparameters into the training of the large \moe models, 
+significantly reducing the computational resources for hyperparameter searching. 
+Our empirical results in Section \ref{sec:experiment} also showcase the clear advantage of \ours.

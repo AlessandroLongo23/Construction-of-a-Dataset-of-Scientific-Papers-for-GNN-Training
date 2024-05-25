@@ -1,0 +1,392 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{46}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[fol(2024)]%
+        {folder}
+ \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{Supplementary material}.
+\newblock \bibinfo{howpublished}{The scheduling algorithm implementations used in our experiments, our computational DAG database, and the data from our experiments are available at: \url{https://github.com/Algebraic-Programming/Artifacts/tree/master/SPAA_2024_Efficient_Multi-Processor_Scheduling}}.
+\newblock
+
+
+\bibitem[Adam et~al\mbox{.}(1974)]%
+        {list1}
+\bibfield{author}{\bibinfo{person}{Thomas~L Adam}, \bibinfo{person}{K.~Mani Chandy}, {and} \bibinfo{person}{JR Dickson}.} \bibinfo{year}{1974}\natexlab{}.
+\newblock \showarticletitle{A comparison of list schedules for parallel processing systems}.
+\newblock \bibinfo{journal}{\emph{Commun. ACM}} \bibinfo{volume}{17}, \bibinfo{number}{12} (\bibinfo{year}{1974}), \bibinfo{pages}{685--690}.
+\newblock
+
+
+\bibitem[Ahmad and Kwok(1998)]%
+        {duplic}
+\bibfield{author}{\bibinfo{person}{Ishfaq Ahmad} {and} \bibinfo{person}{Yu-Kwong Kwok}.} \bibinfo{year}{1998}\natexlab{}.
+\newblock \showarticletitle{On exploiting task duplication in parallel program scheduling}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on parallel and distributed systems}} \bibinfo{volume}{9}, \bibinfo{number}{9} (\bibinfo{year}{1998}), \bibinfo{pages}{872--892}.
+\newblock
+
+
+\bibitem[Bisseling(2020)]%
+        {BSPbook2}
+\bibfield{author}{\bibinfo{person}{Rob~H Bisseling}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Parallel Scientific Computation: A Structured Approach Using BSP}}.
+\newblock \bibinfo{publisher}{Oxford University Press, USA}.
+\newblock
+
+
+\bibitem[Blumofe and Leiserson(1999)]%
+        {cilk}
+\bibfield{author}{\bibinfo{person}{Robert~D Blumofe} {and} \bibinfo{person}{Charles~E Leiserson}.} \bibinfo{year}{1999}\natexlab{}.
+\newblock \showarticletitle{Scheduling multithreaded computations by work stealing}.
+\newblock \bibinfo{journal}{\emph{Journal of the ACM (JACM)}} \bibinfo{volume}{46}, \bibinfo{number}{5} (\bibinfo{year}{1999}), \bibinfo{pages}{720--748}.
+\newblock
+
+
+\bibitem[Culler et~al\mbox{.}(1993)]%
+        {logP}
+\bibfield{author}{\bibinfo{person}{David Culler}, \bibinfo{person}{Richard Karp}, \bibinfo{person}{David Patterson}, \bibinfo{person}{Abhijit Sahay}, \bibinfo{person}{Klaus~Erik Schauser}, \bibinfo{person}{Eunice Santos}, \bibinfo{person}{Ramesh Subramonian}, {and} \bibinfo{person}{Thorsten Von~Eicken}.} \bibinfo{year}{1993}\natexlab{}.
+\newblock \showarticletitle{LogP: Towards a realistic model of parallel computation}. In \bibinfo{booktitle}{\emph{Proceedings of the fourth ACM SIGPLAN symposium on Principles and practice of parallel programming}}. \bibinfo{pages}{1--12}.
+\newblock
+
+
+\bibitem[Forrest and Lougee-Heimer(2005)]%
+        {cbc1}
+\bibfield{author}{\bibinfo{person}{John Forrest} {and} \bibinfo{person}{Robin Lougee-Heimer}.} \bibinfo{year}{2005}\natexlab{}.
+\newblock \showarticletitle{CBC user guide}.
+\newblock In \bibinfo{booktitle}{\emph{Emerging theory, methods, and applications}}. \bibinfo{publisher}{INFORMS}, \bibinfo{pages}{257--277}.
+\newblock
+
+
+\bibitem[Goldman et~al\mbox{.}(1998)]%
+        {BSPalg3}
+\bibfield{author}{\bibinfo{person}{Alfredo Goldman}, \bibinfo{person}{Gregory Mouni{\'e}}, {and} \bibinfo{person}{Denis Trystram}.} \bibinfo{year}{1998}\natexlab{}.
+\newblock \showarticletitle{Near optimal algorithms for scheduling independent chains in BSP}. In \bibinfo{booktitle}{\emph{Proceedings. Fifth International Conference on High Performance Computing}}. IEEE, \bibinfo{pages}{310--317}.
+\newblock
+
+
+\bibitem[Hajiaghayi et~al\mbox{.}(2014)]%
+        {hier1}
+\bibfield{author}{\bibinfo{person}{Mohammadtaghi Hajiaghayi}, \bibinfo{person}{Theodore Johnson}, \bibinfo{person}{Mohammad~Reza Khani}, {and} \bibinfo{person}{Barna Saha}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Hierarchical graph partitioning}. In \bibinfo{booktitle}{\emph{Proceedings of the 26th ACM symposium on Parallelism in algorithms and architectures ({SPAA})}}. \bibinfo{pages}{51--60}.
+\newblock
+
+
+\bibitem[Herrmann et~al\mbox{.}(2017)]%
+        {DAGpart}
+\bibfield{author}{\bibinfo{person}{Julien Herrmann}, \bibinfo{person}{Jonathan Kho}, \bibinfo{person}{Bora U{\c{c}}ar}, \bibinfo{person}{Kamer Kaya}, {and} \bibinfo{person}{{\"U}mit~V {\c{C}}ataly{\"u}rek}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Acyclic partitioning of large directed acyclic graphs}. In \bibinfo{booktitle}{\emph{2017 17th IEEE/ACM international symposium on cluster, cloud and grid computing (CCGRID)}}. IEEE, \bibinfo{pages}{371--380}.
+\newblock
+
+
+\bibitem[Hill et~al\mbox{.}(1998)]%
+        {BSPlib}
+\bibfield{author}{\bibinfo{person}{Jonathan~MD Hill}, \bibinfo{person}{Bill McColl}, \bibinfo{person}{Dan~C Stefanescu}, \bibinfo{person}{Mark~W Goudreau}, \bibinfo{person}{Kevin Lang}, \bibinfo{person}{Satish~B Rao}, \bibinfo{person}{Torsten Suel}, \bibinfo{person}{Thanasis Tsantilas}, {and} \bibinfo{person}{Rob~H Bisseling}.} \bibinfo{year}{1998}\natexlab{}.
+\newblock \showarticletitle{BSPlib: The BSP programming library}.
+\newblock \bibinfo{journal}{\emph{Parallel Comput.}} \bibinfo{volume}{24}, \bibinfo{number}{14} (\bibinfo{year}{1998}), \bibinfo{pages}{1947--1980}.
+\newblock
+
+
+\bibitem[Hoogeveen et~al\mbox{.}(1994)]%
+        {CDcomplexity2}
+\bibfield{author}{\bibinfo{person}{JA Hoogeveen}, \bibinfo{person}{Jan~Karel Lenstra}, {and} \bibinfo{person}{Bart Veltman}.} \bibinfo{year}{1994}\natexlab{}.
+\newblock \showarticletitle{Three, four, five, six, or the complexity of scheduling with communication delays}.
+\newblock \bibinfo{journal}{\emph{Operations Research Letters}} \bibinfo{volume}{16}, \bibinfo{number}{3} (\bibinfo{year}{1994}), \bibinfo{pages}{129--137}.
+\newblock
+
+
+\bibitem[Hwang et~al\mbox{.}(1989)]%
+        {list2}
+\bibfield{author}{\bibinfo{person}{Jing-Jang Hwang}, \bibinfo{person}{Yuan-Chieh Chow}, \bibinfo{person}{Frank~D Anger}, {and} \bibinfo{person}{Chung-Yee Lee}.} \bibinfo{year}{1989}\natexlab{}.
+\newblock \showarticletitle{Scheduling precedence graphs in systems with interprocessor communication times}.
+\newblock \bibinfo{journal}{\emph{siam journal on computing}} \bibinfo{volume}{18}, \bibinfo{number}{2} (\bibinfo{year}{1989}), \bibinfo{pages}{244--257}.
+\newblock
+
+
+\bibitem[Kanemitsu et~al\mbox{.}(2016)]%
+        {clus3}
+\bibfield{author}{\bibinfo{person}{Hidehiro Kanemitsu}, \bibinfo{person}{Masaki Hanada}, {and} \bibinfo{person}{Hidenori Nakazato}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Clustering-based task scheduling in a large number of heterogeneous processors}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Parallel and Distributed Systems}} \bibinfo{volume}{27}, \bibinfo{number}{11} (\bibinfo{year}{2016}), \bibinfo{pages}{3144--3157}.
+\newblock
+
+
+\bibitem[Karypis et~al\mbox{.}(1997)]%
+        {multi1}
+\bibfield{author}{\bibinfo{person}{George Karypis}, \bibinfo{person}{Rajat Aggarwal}, \bibinfo{person}{Vipin Kumar}, {and} \bibinfo{person}{Shashi Shekhar}.} \bibinfo{year}{1997}\natexlab{}.
+\newblock \showarticletitle{Multilevel hypergraph partitioning: Application in VLSI domain}. In \bibinfo{booktitle}{\emph{Proceedings of the 34th annual Design Automation Conference}}. \bibinfo{pages}{526--529}.
+\newblock
+
+
+\bibitem[Kulkarni et~al\mbox{.}(2020)]%
+        {approx3}
+\bibfield{author}{\bibinfo{person}{Janardhan Kulkarni}, \bibinfo{person}{Shi Li}, \bibinfo{person}{Jakub Tarnawski}, {and} \bibinfo{person}{Minwei Ye}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Hierarchy-based algorithms for minimizing makespan under precedence and communication constraints}. In \bibinfo{booktitle}{\emph{Proceedings of the Fourteenth Annual ACM-SIAM Symposium on Discrete Algorithms ({SODA})}}. SIAM, \bibinfo{pages}{2770--2789}.
+\newblock
+
+
+\bibitem[Kwok and Ahmad(1996)]%
+        {clus2}
+\bibfield{author}{\bibinfo{person}{Yu-Kwong Kwok} {and} \bibinfo{person}{Ishfaq Ahmad}.} \bibinfo{year}{1996}\natexlab{}.
+\newblock \showarticletitle{Dynamic critical-path scheduling: An effective technique for allocating task graphs to multiprocessors}.
+\newblock \bibinfo{journal}{\emph{IEEE transactions on parallel and distributed systems}} \bibinfo{volume}{7}, \bibinfo{number}{5} (\bibinfo{year}{1996}), \bibinfo{pages}{506--521}.
+\newblock
+
+
+\bibitem[Lenstra and Rinnooy~Kan(1978)]%
+        {PRAMcomplexity1}
+\bibfield{author}{\bibinfo{person}{Jan~Karel Lenstra} {and} \bibinfo{person}{AHG Rinnooy~Kan}.} \bibinfo{year}{1978}\natexlab{}.
+\newblock \showarticletitle{Complexity of scheduling under precedence constraints}.
+\newblock \bibinfo{journal}{\emph{Operations Research}} \bibinfo{volume}{26}, \bibinfo{number}{1} (\bibinfo{year}{1978}), \bibinfo{pages}{22--35}.
+\newblock
+
+
+\bibitem[Leung and Young(1990)]%
+        {tardiness}
+\bibfield{author}{\bibinfo{person}{Joseph Y-T Leung} {and} \bibinfo{person}{Gilbert~H Young}.} \bibinfo{year}{1990}\natexlab{}.
+\newblock \showarticletitle{Minimizing total tardiness on a single machine with precedence constraints}.
+\newblock \bibinfo{journal}{\emph{ORSA Journal on Computing}} \bibinfo{volume}{2}, \bibinfo{number}{4} (\bibinfo{year}{1990}), \bibinfo{pages}{346--352}.
+\newblock
+
+
+\bibitem[Levey and Rothvoss(2016)]%
+        {approx1}
+\bibfield{author}{\bibinfo{person}{Elaine Levey} {and} \bibinfo{person}{Thomas Rothvoss}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{A (1+ epsilon)-approximation for makespan scheduling with precedence constraints using LP hierarchies}. In \bibinfo{booktitle}{\emph{Proceedings of the forty-eighth annual ACM symposium on Theory of Computing}}. \bibinfo{pages}{168--177}.
+\newblock
+
+
+\bibitem[Li(2021)]%
+        {approx2}
+\bibfield{author}{\bibinfo{person}{Shi Li}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Towards PTAS for precedence constrained scheduling via combinatorial algorithms}. In \bibinfo{booktitle}{\emph{Proceedings of the 2021 ACM-SIAM Symposium on Discrete Algorithms (SODA)}}. SIAM, \bibinfo{pages}{2991--3010}.
+\newblock
+
+
+\bibitem[Liu et~al\mbox{.}(2022)]%
+        {approx4}
+\bibfield{author}{\bibinfo{person}{Quanquan~C Liu}, \bibinfo{person}{Manish Purohit}, \bibinfo{person}{Zoya Svitkina}, \bibinfo{person}{Erik Vee}, {and} \bibinfo{person}{Joshua~R Wang}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Scheduling with Communication Delay in Near-Linear Time}. In \bibinfo{booktitle}{\emph{39th International Symposium on Theoretical Aspects of Computer Science (STACS)}}.
+\newblock
+
+
+\bibitem[McColl(2021)]%
+        {BSPbook1}
+\bibfield{author}{\bibinfo{person}{Bill McColl}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Mathematics, Models and Architectures}.
+\newblock \bibinfo{journal}{\emph{Mathematics for Future Computing and Communications}} (\bibinfo{year}{2021}), \bibinfo{pages}{6}.
+\newblock
+
+
+\bibitem[McColl(1995)]%
+        {BSPalg1}
+\bibfield{author}{\bibinfo{person}{William~F McColl}.} \bibinfo{year}{1995}\natexlab{}.
+\newblock \showarticletitle{Scalable computing}.
+\newblock \bibinfo{journal}{\emph{Computer Science Today}} (\bibinfo{year}{1995}), \bibinfo{pages}{46--61}.
+\newblock
+
+
+\bibitem[McColl and Tiskin(1999)]%
+        {BSPalg2}
+\bibfield{author}{\bibinfo{person}{William~F McColl} {and} \bibinfo{person}{Alexandre Tiskin}.} \bibinfo{year}{1999}\natexlab{}.
+\newblock \showarticletitle{Memory-efficient matrix multiplication in the BSP model}.
+\newblock \bibinfo{journal}{\emph{Algorithmica}}  \bibinfo{volume}{24} (\bibinfo{year}{1999}), \bibinfo{pages}{287--297}.
+\newblock
+
+
+\bibitem[Mingsheng et~al\mbox{.}(2003)]%
+        {list4}
+\bibfield{author}{\bibinfo{person}{Shang Mingsheng}, \bibinfo{person}{Sun Shixin}, {and} \bibinfo{person}{Wang Qingxian}.} \bibinfo{year}{2003}\natexlab{}.
+\newblock \showarticletitle{An efficient parallel scheduling algorithm of dependent task graphs}. In \bibinfo{booktitle}{\emph{4th International Conference on Parallel and Distributed Computing, Applications and Technologies}}. IEEE, \bibinfo{pages}{595--598}.
+\newblock
+
+
+\bibitem[{\"O}zkaya et~al\mbox{.}(2019)]%
+        {SPD}
+\bibfield{author}{\bibinfo{person}{M~Yusuf {\"O}zkaya}, \bibinfo{person}{Anne Benoit}, \bibinfo{person}{Bora U{\c{c}}ar}, \bibinfo{person}{Julien Herrmann}, {and} \bibinfo{person}{{\"U}mit~V {\c{C}}ataly{\"u}rek}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{A scalable clustering-based task scheduler for homogeneous processors using DAG partitioning}. In \bibinfo{booktitle}{\emph{IEEE International Parallel and Distributed Processing Symposium (IPDPS)}}. IEEE, \bibinfo{pages}{155--165}.
+\newblock
+
+
+\bibitem[Papp et~al\mbox{.}(2023a)]%
+        {DAGBSP}
+\bibfield{author}{\bibinfo{person}{P{\'a}l~Andr{\'a}s Papp}, \bibinfo{person}{Georg Anegg}, {and} \bibinfo{person}{AN Yzelman}.} \bibinfo{year}{2023}\natexlab{a}.
+\newblock \showarticletitle{DAG Scheduling in the BSP Model}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2303.05989}} (\bibinfo{year}{2023}).
+\newblock
+
+
+\bibitem[Papp et~al\mbox{.}(2023b)]%
+        {hyperDAG}
+\bibfield{author}{\bibinfo{person}{P{\'a}l~Andr{\'a}s Papp}, \bibinfo{person}{Georg Anegg}, {and} \bibinfo{person}{Albert-Jan~N Yzelman}.} \bibinfo{year}{2023}\natexlab{b}.
+\newblock \showarticletitle{Partitioning hypergraphs is hard: Models, inapproximability, and applications}. In \bibinfo{booktitle}{\emph{35th ACM Symposium on Parallelism in Algorithms and Architectures (SPAA)}}. \bibinfo{pages}{415--425}.
+\newblock
+
+
+\bibitem[Picouleau(1995)]%
+        {CDcomplexity1}
+\bibfield{author}{\bibinfo{person}{Christophe Picouleau}.} \bibinfo{year}{1995}\natexlab{}.
+\newblock \showarticletitle{New complexity results on scheduling with small communication delays}.
+\newblock \bibinfo{journal}{\emph{Discrete Applied Mathematics}} \bibinfo{volume}{60}, \bibinfo{number}{1-3} (\bibinfo{year}{1995}), \bibinfo{pages}{331--342}.
+\newblock
+
+
+\bibitem[Popp et~al\mbox{.}(2021)]%
+        {DAH}
+\bibfield{author}{\bibinfo{person}{Merten Popp}, \bibinfo{person}{Sebastian Schlag}, \bibinfo{person}{Christian Schulz}, {and} \bibinfo{person}{Daniel Seemaier}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Multilevel Acyclic Hypergraph Partitioning}. In \bibinfo{booktitle}{\emph{2021 Proceedings of the Workshop on Algorithm Engineering and Experiments (ALENEX)}}. SIAM, \bibinfo{pages}{1--15}.
+\newblock
+
+
+\bibitem[Radulescu and Van~Gemund(2002)]%
+        {list5}
+\bibfield{author}{\bibinfo{person}{Andrei Radulescu} {and} \bibinfo{person}{Arjan~JC Van~Gemund}.} \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{Low-cost task scheduling for distributed-memory machines}.
+\newblock \bibinfo{journal}{\emph{IEEE transactions on parallel and distributed systems}} \bibinfo{volume}{13}, \bibinfo{number}{6} (\bibinfo{year}{2002}), \bibinfo{pages}{648--658}.
+\newblock
+
+
+\bibitem[Schlag et~al\mbox{.}(2016)]%
+        {multi3}
+\bibfield{author}{\bibinfo{person}{Sebastian Schlag}, \bibinfo{person}{Vitali Henne}, \bibinfo{person}{Tobias Heuer}, \bibinfo{person}{Henning Meyerhenke}, \bibinfo{person}{Peter Sanders}, {and} \bibinfo{person}{Christian Schulz}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{K-way hypergraph partitioning via n-level recursive bisection}. In \bibinfo{booktitle}{\emph{2016 Proceedings of the Eighteenth Workshop on Algorithm Engineering and Experiments (ALENEX)}}. SIAM, \bibinfo{pages}{53--67}.
+\newblock
+
+
+\bibitem[Skillicorn et~al\mbox{.}(1997)]%
+        {BSPqa}
+\bibfield{author}{\bibinfo{person}{David~B Skillicorn}, \bibinfo{person}{Jonathan Hill}, {and} \bibinfo{person}{William~F McColl}.} \bibinfo{year}{1997}\natexlab{}.
+\newblock \showarticletitle{Questions and answers about BSP}.
+\newblock \bibinfo{journal}{\emph{Scientific Programming}} \bibinfo{volume}{6}, \bibinfo{number}{3} (\bibinfo{year}{1997}), \bibinfo{pages}{249--274}.
+\newblock
+
+
+\bibitem[Svensson(2010)]%
+        {PRAMcomplexity3}
+\bibfield{author}{\bibinfo{person}{Ola Svensson}.} \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{Conditional hardness of precedence constrained scheduling on identical machines}. In \bibinfo{booktitle}{\emph{Proceedings of the forty-second ACM symposium on Theory of computing (STOC)}}. \bibinfo{pages}{745--754}.
+\newblock
+
+
+\bibitem[Topcuoglu et~al\mbox{.}(2002)]%
+        {list3}
+\bibfield{author}{\bibinfo{person}{Haluk Topcuoglu}, \bibinfo{person}{Salim Hariri}, {and} \bibinfo{person}{Min-You Wu}.} \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{Performance-effective and low-complexity task scheduling for heterogeneous computing}.
+\newblock \bibinfo{journal}{\emph{IEEE transactions on parallel and distributed systems}} \bibinfo{volume}{13}, \bibinfo{number}{3} (\bibinfo{year}{2002}), \bibinfo{pages}{260--274}.
+\newblock
+
+
+\bibitem[Trifunovi{\'c} and Knottenbelt(2008)]%
+        {multi2}
+\bibfield{author}{\bibinfo{person}{Aleksandar Trifunovi{\'c}} {and} \bibinfo{person}{William~J Knottenbelt}.} \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{Parallel multilevel algorithms for hypergraph partitioning}.
+\newblock \bibinfo{journal}{\emph{J. Parallel and Distrib. Comput.}} \bibinfo{volume}{68}, \bibinfo{number}{5} (\bibinfo{year}{2008}), \bibinfo{pages}{563--581}.
+\newblock
+
+
+\bibitem[Ullman(1975)]%
+        {PRAMcomplexity2}
+\bibfield{author}{\bibinfo{person}{Jeffrey~D. Ullman}.} \bibinfo{year}{1975}\natexlab{}.
+\newblock \showarticletitle{NP-complete scheduling problems}.
+\newblock \bibinfo{journal}{\emph{Journal of Computer and System sciences}} \bibinfo{volume}{10}, \bibinfo{number}{3} (\bibinfo{year}{1975}), \bibinfo{pages}{384--393}.
+\newblock
+
+
+\bibitem[Valiant(1990)]%
+        {BSPintro}
+\bibfield{author}{\bibinfo{person}{Leslie~G Valiant}.} \bibinfo{year}{1990}\natexlab{}.
+\newblock \showarticletitle{A bridging model for parallel computation}.
+\newblock \bibinfo{journal}{\emph{Commun. ACM}} \bibinfo{volume}{33}, \bibinfo{number}{8} (\bibinfo{year}{1990}), \bibinfo{pages}{103--111}.
+\newblock
+
+
+\bibitem[Valiant(2011)]%
+        {multiBSP2}
+\bibfield{author}{\bibinfo{person}{Leslie~G Valiant}.} \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{A bridging model for multi-core computing}.
+\newblock \bibinfo{journal}{\emph{J. Comput. System Sci.}} \bibinfo{volume}{77}, \bibinfo{number}{1} (\bibinfo{year}{2011}), \bibinfo{pages}{154--166}.
+\newblock
+
+
+\bibitem[Wang and Sinnen(2018)]%
+        {schedsurvey}
+\bibfield{author}{\bibinfo{person}{Huijun Wang} {and} \bibinfo{person}{Oliver Sinnen}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{List-scheduling versus cluster-scheduling}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Parallel and Distributed Systems}} \bibinfo{volume}{29}, \bibinfo{number}{8} (\bibinfo{year}{2018}), \bibinfo{pages}{1736--1749}.
+\newblock
+
+
+\bibitem[Yang and Gerasoulis(1994)]%
+        {clus1}
+\bibfield{author}{\bibinfo{person}{Tao Yang} {and} \bibinfo{person}{Apostolos Gerasoulis}.} \bibinfo{year}{1994}\natexlab{}.
+\newblock \showarticletitle{DSC: Scheduling parallel tasks on an unbounded number of processors}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on parallel and distributed systems}} \bibinfo{volume}{5}, \bibinfo{number}{9} (\bibinfo{year}{1994}), \bibinfo{pages}{951--967}.
+\newblock
+
+
+\bibitem[Yzelman and Bisseling(2012)]%
+        {BSPimpl2}
+\bibfield{author}{\bibinfo{person}{AN Yzelman} {and} \bibinfo{person}{Rob~H Bisseling}.} \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{An object-oriented bulk synchronous parallel library for multicore programming}.
+\newblock \bibinfo{journal}{\emph{Concurrency and Computation: Practice and Experience}} \bibinfo{volume}{24}, \bibinfo{number}{5} (\bibinfo{year}{2012}), \bibinfo{pages}{533--553}.
+\newblock
+
+
+\bibitem[Yzelman et~al\mbox{.}(2014)]%
+        {BSPimpl1}
+\bibfield{author}{\bibinfo{person}{AN Yzelman}, \bibinfo{person}{Rob~H Bisseling}, \bibinfo{person}{Dirk Roose}, {and} \bibinfo{person}{Karl Meerbergen}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{MulticoreBSP for C: a high-performance library for shared-memory parallel programming}.
+\newblock \bibinfo{journal}{\emph{International Journal of Parallel Programming}}  \bibinfo{volume}{42} (\bibinfo{year}{2014}), \bibinfo{pages}{619--642}.
+\newblock
+
+
+\bibitem[Yzelman et~al\mbox{.}(2020)]%
+        {alp1}
+\bibfield{author}{\bibinfo{person}{AN Yzelman}, \bibinfo{person}{D Di~Nardo}, \bibinfo{person}{JM Nash}, {and} \bibinfo{person}{WJ Suijlen}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{A C++ GraphBLAS: specification, implementation, parallelisation, and evaluation}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:1906.03196}} (\bibinfo{year}{2020}).
+\newblock
+
+
+\bibitem[Zarebavani et~al\mbox{.}(2022)]%
+        {hdagg}
+\bibfield{author}{\bibinfo{person}{Behrooz Zarebavani}, \bibinfo{person}{Kazem Cheshmi}, \bibinfo{person}{Bangtian Liu}, \bibinfo{person}{Michelle~Mills Strout}, {and} \bibinfo{person}{Maryam~Mehri Dehnavi}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{HDagg: hybrid aggregation of loop-carried dependence iterations in sparse matrix computations}. In \bibinfo{booktitle}{\emph{2022 IEEE International Parallel and Distributed Processing Symposium (IPDPS)}}. IEEE, \bibinfo{pages}{1217--1227}.
+\newblock
+
+
+\end{thebibliography}

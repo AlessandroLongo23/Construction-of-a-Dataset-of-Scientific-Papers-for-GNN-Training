@@ -1,0 +1,928 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% USER-DEFINED MACROS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\namedlabel#1#2{\begingroup
+    #2%
+    \def\@currentlabel{#2}%
+    \phantomsection\label{#1}\endgroup
+}
+
+%\newcommand{\comment}[1]{\footnote{!!!#1}}
+%\renewcommand{\comment}[1]{}
+%\newcommand{\disabledcomment}[1]{}
+%\newcommand{\oldcomment}[1]{}
+
+%% Operators
+\newcommand{\diff}{\mathop{}\!\mathrm{d}}
+\renewcommand{\Re}{\operatorname{Re}}
+\renewcommand{\Im}{\operatorname{Im}}
+\DeclareMathOperator{\im}{im}
+\DeclareMathOperator{\rank}{rank}
+
+%% Bold face
+\newcommand{\ba}{\mathbf{a}}
+\newcommand{\bb}{\mathbf{b}}
+\newcommand{\bx}{\mathbf{x}}
+\newcommand{\by}{\mathbf{y}}
+\newcommand{\bzero}{\mathbf{0}}
+\newcommand{\bone}{\mathbf{1}}
+
+%% Miscellaneous
+\newcommand{\ie}{\leavevmode\unskip, i.e.,\xspace}
+\newcommand{\eg}{\leavevmode\unskip, e.g.,\xspace}
+\newcommand{\dash}{\textthreequartersemdash\xspace}
+\newcommand{\TikZ}{Ti\textit{k}Z\xspace}
+\newcommand{\matlab}{\textsc{Matlab}\xspace}
+\newcommand{\aprove}{\textsf{AProVE}}
+\newcommand{\muterm}{\textsf{MU-TERM}}
+\newcommand{\natt}{\textsf{NaTT}}
+\newcommand{\ttttwo}{\textsf{T\kern-0.15em\raisebox{-0.55ex}T\kern-0.15emT\kern-0.15em\raisebox{-0.55ex}2}}
+\newcommand{\ceta}{\textsf{CeTA}}
+\newcommand{\mnm}{\textsf{MultumNonMulta}}
+\newcommand{\matchbox}{\textsf{Matchbox}}
+
+\newcounter{saveenum}
+\newcommand{\name}[1]{\textsc{#1}}
+\renewcommand{\emph}[1]{\index{#1}\textit{#1}}
+\newcommand{\bref}[1]{(\ref{#1})}
+
+%% General Math
+\renewcommand{\emptyset}{\varnothing}
+\newcommand{\dashed}[1]{#1^{\prime}}
+\newcommand{\IB}{\mathbb{B}}
+\newcommand{\IP}{\mathbb{P}}
+\newcommand{\IZ}{\mathbb{Z}}
+\newcommand{\IN}{\mathbb{N}}
+\newcommand{\IR}{\mathbb{R}}
+\newcommand{\expec}[1]{\ensuremath{\mathbb{E}\left(#1\right)}}
+\newcommand{\IE}{\ensuremath{\mathbb{E}}}
+\newcommand{\II}{\mathbb{I}}
+\newcommand{\F}[1]{\mathfrak{#1}}
+\newcommand{\C}[1]{\mathcal{#1}}
+\newcommand{\sigmagen}[1]{\ensuremath{\left\langle #1 \right \rangle _{\sigma}}}
+\newcommand{\multiset}[1]{\mathrm{MultiSet}(#1)}
+\newcommand{\pot}[1]{\mathrm{Pot}(#1)}
+\newcommand{\mymap}[2]{\mathrm{Map}(#1,#2)}
+\newcommand{\ind}{\mathbf{1}}
+
+\newcommand{\leftleadsto}{\mathrel{\reflectbox{$\leadsto$}}}
+
+%% Termrewriting 
+\makeatletter
+\def\moverlay{\mathpalette\mov@rlay}
+\def\mov@rlay#1#2{\leavevmode\vtop{%
+   \baselineskip\z@skip \lineskiplimit-\maxdimen
+   \ialign{\hfil$\m@th#1##$\hfil\cr#2\crcr}}}
+\newcommand{\charfusion}[3][\mathord]{
+    #1{\ifx#1\mathop\vphantom{#2}\fi
+        \mathpalette\mov@rlay{#2\cr#3}
+      }
+    \ifx#1\mathop\expandafter\displaylimits\fi}
+\makeatother
+
+%%% General Definitions
+\newcommand{\Var}{\mathcal{V}}
+\newcommand{\Loc}{\mathcal{L}}
+\newcommand{\Trans}{\mathcal{T}}
+\renewcommand{\P}{\mathcal{P}}
+\newcommand{\eval}{\sigma}
+\newcommand{\occ}{\operatorname{Occ}}
+\newcommand{\redexocc}{\operatorname{pirp}}
+\newcommand{\varocc}{\operatorname{Occ}_{\C{V}}}
+
+%%% PTRS and DP Stuff
+\newcommand{\Proc}{\operatorname{Proc}}
+\newcommand{\projOne}{\mathrm{proj}_1}
+\newcommand{\projTwo}{\mathrm{proj}_2}
+\newcommand{\MSubd}{\mathrm{MSub}_D}
+\newcommand{\Subd}{\mathrm{Sub}_D}
+\newcommand{\SubdPos}{\mathrm{Sub}_{DPos}}
+\newcommand{\SubdOcc}{\mathrm{Sub}_{DOcc}}
+\newcommand{\SubdSharp}{\mathrm{Sub}^\#}
+\newcommand{\SubdPosSharp}{\mathrm{Sub}_{DPos}^\#}
+\newcommand{\SubdR}{\mathrm{Sub}_{D, \R}^\#}
+\newcommand{\SubdD}{\mathrm{Sub}_{D, \C{D}}^\#}
+\newcommand{\SubdSharpNotNorm}{\mathrm{Sub}_{D, \lnot \mathit{nf}}^\#}
+\newcommand{\SubdSharpNorm}{\mathrm{Sub}_{D, \mathit{nf}}^\#}
+\newcommand{\Subdnf}{\mathrm{Sub}_D^{\neg \mathit{nf}}}
+\newcommand{\Subcomnf}{\mathrm{Sub}_{\Com{}}^{\neg \mathit{nf}}}
+\newcommand{\Submultnf}{\mathrm{Sub}_{\text{set}}^{\neg \mathit{nf}}}
+\newcommand{\SubdnfAll}{\mathrm{SubAll}_D^{\neg \mathit{nf}}}
+\newcommand{\SubcomnfAll}{\mathrm{SubAll}_{\Com{}}^{\neg \mathit{nf}}}
+\newcommand{\SubmultnfAll}{\mathrm{SubAll}_{\text{mul}}}
+\newcommand{\SubmultD}{\mathrm{Sub}_{D, \text{set}}}
+\newcommand{\Subterm}[1]{\mathrm{Subterm}(#1)}
+\newcommand{\Subtermdep}[1]{\mathrm{Subterm}_{dep}(#1)}
+\newcommand{\SubmultPoss}{\mathrm{Sub}_{\text{set}}^{\text{Poss}}}
+\newcommand{\SubDPoss}{\mathrm{Sub}_{\text{term}}^{\text{Poss}}}
+\newcommand{\SubmultMain}{\mathrm{Sub}_{\text{set}}^{\text{Main}}}
+\newcommand{\SubDMain}{\mathrm{Sub}_{\text{term}}^{\text{Main}}}
+\newcommand{\SubmultNorm}{\mathrm{Sub}_{\text{set}}^{\text{Norm}}}
+\newcommand{\SubDNorm}{\mathrm{Sub}_{\text{term}}^{\text{Norm}}}
+\newcommand{\Junk}{\mathrm{Junk}}
+\newcommand{\inSet}[1]{\langle \hspace{-3px} \{#1\} \hspace{-3px} \rangle}
+\newcommand{\ce}{\mathcal{C}_{\varepsilon}}
+
+\newcommand{\Extension}{\operatorname{Ext}}
+\newcommand{\FExtension}{\operatorname{FamExt}}
+
+\newcommand{\Substi}{\operatorname{Sub}}
+\newcommand{\SubstitutionSet}[2]{\Substi\left(#1,#2\right)}
+\newcommand{\TSet}[2]{\mathcal{T}\left(#1,#2\right)}
+\newcommand{\DEPTerm}{\mathcal{T}^\#\left(\Sigma\right)}
+\newcommand{\LSet}{\mathcal{L}}
+\newcommand{\VSet}{\mathcal{V}}
+\newcommand{\TVSet}{\mathcal{TV}}
+\newcommand{\PVSet}{\mathcal{PV}}
+\newcommand{\DEPSetWellPos}{\mathsf{WPS}}
+\newcommand{\PosEx}{\mathsf{PosEx}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\R}{\mathcal{R}}
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\pars}[1]{\xrightarrow{p}_{#1}}
+\newcommand\restrict[2]{#1\raisebox{-.5ex}{$|$}_{#2}}
+\newcommand{\DTuple}[1]{\mathcal{DT}(#1)}
+\newcommand{\DPTuple}[1]{\mathcal{DT}_{\!\!pos}(#1)}
+\newcommand{\DPair}[1]{\mathcal{DP}(#1)}
+\newcommand{\DTPair}[2]{\mathcal{DP}^{#1}(#2)}
+\newcommand{\DP}[1]{\mathtt{DP}(#1)}
+\newcommand{\Rule}[1]{\mathtt{rule}(#1)}
+\newcommand{\ADPair}[2]{\mathcal{A}_{#1}(#2)}
+\newcommand{\ADPairMain}[1]{\mathcal{A}_{1}(#1)}
+\newcommand{\ADPairBase}[1]{\mathcal{A}_{2}(#1)}
+\newcommand{\Dist}{\operatorname{Dist}}
+\newcommand{\FDist}{\operatorname{FDist}}
+\newcommand{\Supp}{\operatorname{Supp}}
+\newcommand{\Hist}{\operatorname{Hist}}
+\newcommand{\Term}{\operatorname{Term}}
+\newcommand{\NonTerm}{\operatorname{NonTerm}}
+\newcommand{\toppos}{\operatorname{\mathcal{T}op}}
+\newcommand{\rootsym}{\operatorname{root}}
+\newcommand{\capterm}{\operatorname{Cap}}
+\newcommand{\renterm}{\operatorname{Ren}}
+\newcommand{\rules}{\operatorname{Rules}}
+\newcommand{\urules}{\mathcal{U}}
+\newcommand{\upairs}{\mathcal{U}\!\text{P}}
+\newcommand{\upairsabs}{\mathcal{A}\mathcal{U}\mathcal{P}}
+\newcommand{\vr}{\operatorname{vr}}
+\newcommand{\capt}{\operatorname{capt}}
+
+\newcommand{\edh}{\operatorname{edh}}
+\newcommand{\edl}{\operatorname{edl}}
+\newcommand{\Pol}{\operatorname{Pol}}
+\newcommand{\TGround}{\mathcal{T}(\Sigma)}
+\newcommand{\DPGround}{\mathcal{T}(\Sigma \uplus \Sigma^{\#})}
+\newcommand{\Com}[1]{\mathsf{c}_{#1}}
+\newcommand{\SigmaDP}{\Sigma \uplus \Sigma^{\#}}
+\newcommand{\DPGroundCom}{\mathcal{T}(\SigmaDP)}
+\newcommand{\cont}{cont}
+\newcommand{\ncont}{ncont}
+\newcommand{\nonprob}{\normalfont{\text{np}}}
+\newcommand{\PP}{\mathcal{P}}
+\newcommand{\QQ}{\mathcal{Q}}
+\newcommand{\SSS}{\mathcal{S}}
+
+%%% generator-rule definitions
+\newcommand{\cv}{\operatorname{cv}}
+\newcommand{\bv}{\operatorname{bv}}
+\newcommand{\dv}{\operatorname{dv}}
+
+%%% Commonly used terms
+\newcommand{\tcm}{\mathsf{cm}}
+\newcommand{\trun}{\mathsf{run}}
+\newcommand{\tend}{\mathsf{end}}
+\newcommand{\tstart}{\mathsf{start}}
+\newcommand{\tfin}{\mathsf{finish}}
+\newcommand{\tfloor}{\mathsf{floor}}
+\newcommand{\tcross}{\mathsf{cross}}
+\newcommand{\tplus}{\mathsf{plus}}
+\renewcommand{\ts}{\mathsf{s}}
+\newcommand{\tz}{\mathsf{0}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\tf}{\mathsf{f}}
+\newcommand{\tg}{\mathsf{g}}
+\renewcommand{\th}{\mathsf{h}}
+\newcommand{\ta}{\mathsf{a}}
+\newcommand{\tb}{\mathsf{b}}
+\newcommand{\tc}{\mathsf{d}}
+\newcommand{\td}{\mathsf{d}}
+\newcommand{\te}{\mathsf{e}}
+\newcommand{\tv}{\mathsf{v}}
+\newcommand{\tw}{\mathsf{w}}
+\newcommand{\tu}{\mathsf{u}}
+\newcommand{\tn}{\mathsf{n}}
+\newcommand{\tm}{\mathsf{m}}
+\newcommand{\tq}{\mathsf{q}}
+\newcommand{\tminus}{\mathsf{minus}}
+\newcommand{\tdiv}{\mathsf{div}}
+\newcommand{\tdivl}{\mathsf{divL}}
+\newcommand{\tpdiv}{\mathsf{pdiv}}
+\newcommand{\trd}{\mathsf{rd}}
+\newcommand{\trw}{\mathsf{rw}}
+\newcommand{\tic}{\mathsf{incpl}}
+\newcommand{\tcons}{\mathsf{cons}}
+\newcommand{\tgen}{\mathsf{gen}}
+\newcommand{\trand}{\mathsf{rand}}
+\newcommand{\tnil}{\mathsf{nil}}
+\newcommand{\tlen}{\mathsf{len}}
+\newcommand{\tsum}{\mathsf{sum}}
+\newcommand{\tcom}{\mathsf{com}}
+\newcommand{\tset}{\mathsf{mset}}
+\newcommand{\tLen}{\mathsf{Len}}
+\newcommand{\tSum}{\mathsf{Sum}}
+\newcommand{\tPlus}{\mathsf{Plus}}
+\newcommand{\tCons}{\mathsf{C}}
+\newcommand{\tpurge}{\mathsf{purge}}
+\newcommand{\teq}{\mathsf{eq}}
+\newcommand{\tremove}{\mathsf{remove}}
+\newcommand{\tmoveelements}{\mathsf{moveElements}}
+\newcommand{\tor}{\mathsf{or}}
+\newcommand{\tcheck}{\mathsf{check}}
+\newcommand{\tif}{\mathsf{if}}
+\newcommand{\ttrue}{\mathsf{true}}
+\newcommand{\tfalse}{\mathsf{false}}
+\newcommand{\tge}{\mathsf{ge}}
+\newcommand{\tgt}{\mathsf{gt}}
+\newcommand{\tp}{\mathsf{p}}
+\newcommand{\tM}{\mathsf{M}}
+\newcommand{\tD}{\mathsf{D}}
+\newcommand{\tDL}{\mathsf{DL}}
+\newcommand{\tF}{\mathsf{F}}
+\newcommand{\tG}{\mathsf{G}}
+\newcommand{\tH}{\mathsf{H}}
+\newcommand{\tA}{\mathsf{A}}
+\newcommand{\tB}{\mathsf{B}}
+\newcommand{\tC}{\mathsf{C}}
+\newcommand{\tRD}{\mathsf{RD}}
+\newcommand{\tshuffle}{\mathsf{shuffle}}
+\newcommand{\trotate}{\mathsf{rotate}}
+\newcommand{\tapp}{\mathsf{app}}
+\newcommand{\tqs}{\mathsf{qsrt}}
+\newcommand{\tquicksort}{\mathsf{quicksort}}
+\newcommand{\tqshelp}{\mathsf{qsHelp}}
+\newcommand{\tifhigh}{\mathsf{ifHigh}}
+\newcommand{\thigh}{\mathsf{high}}
+\newcommand{\tiflow}{\mathsf{ifLow}}
+\newcommand{\tlow}{\mathsf{low}}
+\newcommand{\tleq}{\mathsf{leq}}
+\newcommand{\tenc}{\mathsf{enc}}
+\newcommand{\targenc}{\mathsf{argenc}}
+\newcommand{\thd}{\mathsf{hd}}
+\newcommand{\ttail}{\mathsf{tl}}
+\newcommand{\tisempty}{\mathsf{empty}}
+\newcommand{\tinf}{\mathsf{inf}}
+\newcommand{\tInf}{\mathsf{Inf}}
+
+
+
+\newcommand{\teven}{\mathsf{even}}
+\newcommand{\tloop}{\mathsf{loop}}
+\newcommand{\tevenif}{\mathsf{if}}
+\newcommand{\tstop}{\mathsf{stop}}
+\newcommand{\xs}{\mathit{xs}}
+\newcommand{\ys}{\mathit{ys}}
+\newcommand{\zs}{\mathit{zs}}
+\newcommand{\tbogo}{\mathsf{bogo}}
+\newcommand{\tbogohelp}{\mathsf{bogoHelp}}
+\newcommand{\tifsorted}{\mathsf{ifSorted}}
+\newcommand{\tifleq}{\mathsf{ifLeq}}
+\newcommand{\tsortr}{\mathsf{sortR}}
+
+%%% chain-tree definitions
+\newcommand{\ctroot}{\F{r}}
+\newcommand{\ctleaf}{\operatorname{Leaf}}
+\newcommand{\ctleafF}{\operatorname{Leaf}_F}
+\newcommand{\cthole}{\operatorname{Hole}}
+\newcommand{\ctleafEOne}{\operatorname{Leaf}_{E_1}}
+\newcommand{\ctleafEPless}{\operatorname{Leaf}_{\PP_<}}
+\newcommand{\ctdepth}{\operatorname{d}}
+\newcommand{\ctdepthSet}{\operatorname{D}}
+\newcommand{\ctlevel}{\C{L}}
+\newcommand{\ctlevelwithborder}{\overline{\C{L}}}
+\newcommand{\ctlevelOne}{\C{L}_{1}}
+\newcommand{\ctlevelTwo}{\C{L}}
+\newcommand{\ctlevelTwowithborder}{\F{L}}
+\newcommand{\ctlevelEPless}{\C{L}_{\PP_<}}
+\newcommand{\ctc}{\mathbf{\C{C}hain\C{T}ree}}
+
+%%% RPP Proof Stuff
+\newcommand{\val}{\mathit{\C{V}al}}
+\newcommand{\adval}{\overline{\mathit{\C{V}al}}}
+\newcommand{\advaltwo}{\widehat{\mathit{\C{V}al}}}
+
+%%% NatPTRS Stuff
+\newcommand{\aritOp}{\C{A}rith\C{O}p}
+\newcommand{\relOp}{\C{R}el\C{O}p}
+\newcommand{\boolOp}{\C{B}ool\C{O}p}
+\newcommand{\TNatGround}{\mathcal{T}(\Sigma \cup \Sigma_{\mathit{nat}})} 
+
+%% Notions of Termination
+\newcommand{\AST}{\operatorname{\textbf{AST}}}
+\newcommand{\ASTPRS}{\operatorname{\textbf{AST-PRS}}}
+\newcommand{\MAST}{\operatorname{\textbf{M-AST}}}
+\newcommand{\MASTPRS}{\operatorname{\textbf{M-AST-PRS}}}
+\newcommand{\TAST}{\operatorname{\textbf{T-AST}}}
+\newcommand{\TASTPRS}{\operatorname{\textbf{T-AST-PRS}}}
+
+\newcommand{\PAST}{\operatorname{\textbf{PAST}}}
+\newcommand{\PASTPRS}{\operatorname{\textbf{PAST-PRS}}}
+\newcommand{\MPAST}{\operatorname{\textbf{M-PAST}}}
+\newcommand{\MPASTPRS}{\operatorname{\textbf{M-PAST-PRS}}}
+\newcommand{\TPAST}{\operatorname{\textbf{T-PAST}}}
+\newcommand{\TPASTPRS}{\operatorname{\textbf{T-PAST-PRS}}}
+
+\newcommand{\SAST}{\operatorname{\textbf{SAST}}}
+\newcommand{\SASTPRS}{\operatorname{\textbf{SAST-PRS}}}
+\newcommand{\MSAST}{\operatorname{\textbf{M-SAST}}}
+\newcommand{\MSASTPRS}{\operatorname{\textbf{M-SAST-PRS}}}
+\newcommand{\TSAST}{\operatorname{\textbf{T-SAST}}}
+\newcommand{\TSASTPRS}{\operatorname{\textbf{T-SAST-PRS}}}
+
+
+
+% CLEVERREF
+\crefname{definition}{Def.}{Def.}
+\crefname{example}{Ex.}{Ex.}
+\crefname{counterexample}{Counterex.}{Counterex.}
+\crefname{appendix}{App.}{App.}
+\crefname{ex}{Ex.}{Ex.}
+\crefname{theorem}{Thm.}{Thm.}
+\crefname{lemma}{Lemma}{Lemmas}
+\crefname{remark}{Rem.}{Rem.}
+\crefname{section}{Sect.}{Sect.}
+\crefname{subsection}{Sect.}{Sect.}
+\crefname{subsubsection}{Sect.}{Sect.}
+\crefname{line}{Line}{Lines}
+\crefname{corollary}{Cor.}{Cor.}
+\crefname{figure}{Fig.}{Fig.}
+\crefname{enumi}{}{}
+\crefname{algorithm}{Alg.}{Alg.}
+
+%%% Rewrite Relations
+\makeatletter
+\NewDocumentCommand{\dparrow}{+O{} +O{0.5cm}}{%
+\begin{tikzpicture}[baseline=-0.5ex] {
+\node[inner sep=0](@1) at (-0,0) {};
+\node[inner sep=0](@2) at (#2,0) {};
+\draw [arrows={-Triangle[open]},shorten >= 1pt,shorten <= 1pt](@1)--(@2) node[pos=.5,above,inner sep=1pt] {\ensuremath{#1}};}
+\end{tikzpicture}\xspace\xspace
+}
+
+\NewDocumentCommand{\myto}{+O{} +O{0.5cm}}{%
+\begin{tikzpicture}[baseline=-0.5ex] {
+\node[inner sep=0](@1) at (0,0) {};
+\node[inner sep=0](@2) at (#2,0) {};
+\draw [arrows={-to}](@1)--(@2) node[pos=.5,above,inner sep=1pt] {\ensuremath{#1}};}
+\end{tikzpicture}\xspace
+}
+
+\NewDocumentCommand{\paraarrow}{+O{} +O{0.4cm}}{%
+\begin{tikzpicture}[baseline=-0.5ex] {
+\node[inner sep=0](@1) at (0,0) {};
+\node[inner sep=0](@2) at (#2,0) {};
+\node[inner sep=0](@3) at (0.07,0) {};
+\draw [arrows={-to}](@1)--(@2) node[pos=.5,above,inner sep=1pt] {\ensuremath{#1}};
+\draw [arrows={-to}](@1)--(@3);}
+\end{tikzpicture}\xspace
+}
+
+\NewDocumentCommand{\paradparrow}{+O{} +O{0.4cm}}{%
+\begin{tikzpicture}[baseline=-0.5ex] {
+\node[inner sep=0](@1) at (0,0) {};
+\node[inner sep=0](@2) at (#2,0) {};
+\node[inner sep=0](@3) at (0.07,0) {};
+\draw [arrows={-Triangle[open]}](@1)--(@2) node[pos=.5,above,inner sep=1pt] {\ensuremath{#1}};
+\draw [arrows={-to}](@1)--(@3);}
+\end{tikzpicture}\xspace
+}
+
+%overset spacing
+\newcommand{\oset}[2]{%
+  {\mathop{#2}\limits^{\vbox to 1\ex@{\kern-\tw@\ex@
+   \hbox{\scriptsize #1}\vss}}}}
+
+\newcommand{\osetthree}[2]{%
+  {\mathop{#2}\limits^{\vbox to 3\ex@{\kern-\tw@\ex@
+   \hbox{\scriptsize #1}\vss}}}}
+
+\newcommand{\osetfive}[2]{%
+  {\mathop{#2}\limits^{\vbox to 5\ex@{\kern-\tw@\ex@
+   \hbox{\scriptsize #1}\vss}}}}
+
+\newcommand{\osetminus}[2]{%
+  {\mathop{#2}\limits^{\vbox to -2\ex@{\kern-\tw@\ex@
+   \hbox{\scriptsize #1}\vss}}}}
+\makeatother
+
+%%%% Standard Term Rewriting
+\newcommand{\rootto}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\scriptsize $\epsilon\:$}}{\smash{\rightarrow}}}}}
+\newcommand{\roottor}{\stackrel{\hspace{-.35cm}\epsilon}{\to_{\R}}}
+\newcommand{\roottoDPr}{\stackrel{\hspace{-1.05cm}\epsilon}{\to_{\DTuple{\R}}}}
+\newcommand{\pitor}{\stackrel{\hspace{-.35cm}\pi}{\to_{\R}}}
+\newcommand{\pitoDPr}{\stackrel{\hspace{-1.05cm}\pi}{\to_{\DTuple{\R}}}}
+
+%%%%% Basics
+\newcommand{\longto}{\myto[][0.8cm]}
+\newcommand{\ito}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\mathsf{i}\:$}}{\smash{\rightarrow}}}}}
+\newcommand{\oto}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\mathsf{o}\:$}}{\smash{\rightarrow}}}}}
+\newcommand{\qto}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\QQ\:$}}{\smash{\rightarrow}}}}}
+\newcommand{\qPrimeto}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\dashed{\QQ}\:$}}{\smash{\rightarrow}}}}}
+\newcommand{\itops}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\mathsf{i}\:$}}{\smash{\rightarrow}}}}}
+\newcommand{\idparrow}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\mathsf{i}\:$}}{\smash{\dparrow}}}}}
+\newcommand{\mdparrow}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\mathsf{m}\:$}}{\smash{\dparrow}}}}}
+\newcommand{\odparrow}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\mathsf{o}\:$}}{\smash{\dparrow}}}}}
+\newcommand{\qdparrow}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\QQ\:$}}{\smash{\dparrow}}}}}
+\newcommand{\otopara}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\mathsf{o}\:$}}{\smash{\paraarrow}}}}}
+\newcommand{\qtopara}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\QQ\:$}}{\smash{\paraarrow}}}}}
+\newcommand{\qPrimetopara}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\dashed{\QQ}\:$}}{\smash{\paraarrow}}}}}
+\newcommand{\iparadparrow}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\mathsf{i}\:$}}{\smash{\paradparrow}}}}}
+\newcommand{\oparadparrow}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\mathsf{o}\:$}}{\smash{\paradparrow}}}}}
+\newcommand{\qparadparrow}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\QQ\:$}}{\smash{\paradparrow}}}}}
+
+%%%%% Custom
+\newcommand{\itorstar}{\mathrel{\ito_{\R}^{*}}}
+\newcommand{\itorref}{\mathrel{\ito_{\R}^{\leq 1}}}
+\newcommand{\itor}{\mathrel{\ito_{\R}}}
+\newcommand{\itorPD}{\mathrel{\ito_{\R \cup \C{PD}}}}
+
+\newcommand{\otor}{\mathrel{\oto_{\R}}}
+
+\newcommand{\itoqr}{\mathrel{\qto_{\R}}}
+\newcommand{\itoqPrimer}{\qPrimeto_{\R}}
+
+\newcommand{\itos}{\mathrel{\ito_{\SSS}}}
+\newcommand{\itosstar}{\mathrel{\ito_{\SSS}^*}}
+\newcommand{\itop}{\mathrel{\ito_{\PP}}}
+\newcommand{\itod}{\mathrel{\ito_{\C{D}}}}
+
+\newcommand{\istop}{\mathrel{\ito_{\PP,\SSS}}}
+\newcommand{\itousabler}{\mathrel{\ito_{\urules(\C{D},\R)}}}
+
+\newcommand{\itodr}{\mathrel{\ito_{\C{D},\R}}}
+\newcommand{\tosp}{\mathrel{{\to}_{\PP,\SSS}}}
+\newcommand{\itoqs}[1]{\mathrel{\ito_{\QQ_{#1},\SSS}}}
+\newcommand{\itodprs}{\mathrel{\ito_{\DTuple{\R},\SSS}}}
+
+\newcommand{\chainstepDsucccurlyeqR}{\mathrel{\ito_{(\C{D}_{\succcurlyeq},\R)}}}
+\newcommand{\chainstepDR}{\mathrel{\ito_{(\C{D},\R)}}}
+\newcommand{\chainstepDRR}{\mathrel{\ito_{(\DPair{\R},\R)}}}
+\newcommand{\chainstepnonprobPS}{\mathrel{\ito_{(\nonprob(\PP),\nonprob(\SSS))}}}
+\newcommand{\chainstepDUsableR}{\mathrel{\ito_{(\C{D},\urules(\C{D}, \R))}}}
+\newcommand{\chainstepwith}[2]{\mathrel{\ito_{(#1,#2)}}}
+
+\newcommand{\itosp}{\mathrel{\ito_{\SSS,\PP}}}
+
+%%%%% Relative Rewriting
+\newcommand{\relchainstep}[4]{\dparrow_{(#1,#2,#3,#4)}}
+\newcommand{\relminchainstep}[4]{\mdparrow_{(#1,#2,#3,#4)}}
+
+\newcommand{\setitodr}{\mathrel{\idparrow_{\DTuple{\R}}}}
+\newcommand{\setitodrr}{\mathrel{\idparrow_{\DTuple{\R},\R}}}
+\newcommand{\setchaindrr}{\mathrel{\idparrow_{(\DTuple{\R},\R)}}}
+
+%%%% Probabilistic Term Rewriting
+
+%%%%% Basics
+\newcommand{\liftto}{\rightrightarrows}
+\newcommand{\iliftto}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\mathsf{i}\:$}}{\smash{\liftto}}}}}
+\newcommand{\oliftto}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\mathsf{o}\:$}}{\smash{\liftto}}}}}
+\newcommand{\qliftto}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\QQ\:$}}{\smash{\liftto}}}}}
+\newcommand{\epsiloniliftto}{\mathrel{\smash{\stackrel{\raisebox{4.6pt}{\tiny $\mathsf{i}\,\varepsilon\:$}}{\smash{\liftto}}}}}
+\newcommand{\dpliftto}{\mathrel{\ooalign{\raisebox{2pt}{$\dparrow$}\cr\hfil\raisebox{-2pt}{$\dparrow$}\hfil}}}
+\newcommand{\idpliftto}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\mathsf{i}\:$}}{\smash{\dpliftto}}}}}
+\newcommand{\odpliftto}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\mathsf{o}\:$}}{\smash{\dpliftto}}}}}
+\newcommand{\qdpliftto}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\QQ\:$}}{\smash{\dpliftto}}}}}
+\newcommand{\longliftto}{\mathrel{\ooalign{\raisebox{2pt}{$\longto$}\cr\hfil\raisebox{-2pt}{$\longto$}\hfil}}}
+\newcommand{\ilongliftto}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\mathsf{i}\:$}}{\smash{\longliftto}}}}}
+\newcommand{\olongliftto}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\mathsf{o}\:$}}{\smash{\longliftto}}}}}
+\newcommand{\qlongliftto}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\QQ\:$}}{\smash{\longliftto}}}}}
+\newcommand{\paraliftto}{\mathrel{\ooalign{\raisebox{2pt}{$\paraarrow$}\cr\hfil\raisebox{-2pt}{$\paraarrow$}\hfil}}}
+\newcommand{\iparaliftto}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\mathsf{i}\:$}}{\smash{\paraliftto}}}}}
+\newcommand{\oparaliftto}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\mathsf{o}\:$}}{\smash{\paraliftto}}}}}
+\newcommand{\qparaliftto}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\QQ\:$}}{\smash{\paraliftto}}}}}
+\newcommand{\dpparaliftto}{\mathrel{\ooalign{\raisebox{2pt}{$\paradparrow$}\cr\hfil\raisebox{-2pt}{$\paradparrow$}\hfil}}}
+\newcommand{\idpparaliftto}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\mathsf{i}\:$}}{\smash{\dpparaliftto}}}}}
+\newcommand{\odpparaliftto}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\mathsf{o}\:$}}{\smash{\dpparaliftto}}}}}
+\newcommand{\qdpparaliftto}{\mathrel{\smash{\stackrel{\raisebox{3.4pt}{\tiny $\QQ\:$}}{\smash{\dpparaliftto}}}}}
+
+%%%%% Custom
+\newcommand{\prslifting}{\stackrel{prs}{\liftto}}
+
+\newcommand{\ilifttoR}{\mathrel{\iliftto_{\R}}}
+\newcommand{\ilifttoRprobexample}{\mathrel{\iliftto_{\R_{tup}}}}
+\newcommand{\ilifttoS}{\mathrel{\iliftto_{\SSS}}}
+\newcommand{\ilifttoRrw}{\mathrel{\iliftto_{\R_{rw}}}}
+\newcommand{\ilifttoRstar}{\mathrel{\iliftto_{\R}^*}}
+\newcommand{\ilifttoDPRR}{\mathrel{\iliftto_{\DTuple{\R}\cup\R}}}
+ \newcommand{\ilifttoDPR}{\mathrel{\iliftto_{\DTuple{\R}}}}
+\newcommand{\ilifttoDPRprobexample}{\mathrel{\iliftto_{\DTuple{\R_{tup}}}}}
+ \newcommand{\ilifttoRref}{\mathrel{\iliftto_{\R}^{\leq 1}}}
+\newcommand{\ilifttoDP}{\mathrel{\iliftto__{\DTuple{\R}}}}
+\newcommand{\epsilonilifttoDP}{\mathrel{\epsiloniliftto__{\DTuple{\R}}}}
+\newcommand{\epsilonilifttoDPRR}{\mathrel{\epsiloniliftto_{\DTuple{\R}\cup\R}}}
+
+\newcommand{\itononprobP}{\mathrel{\ito_{\nonprob(\PP)}}}
+
+%%%%% Multiset
+\newcommand{\setitops}{\mathrel{\idpliftto_{\PP,\SSS}}}
+\newcommand{\setitopr}{\mathrel{\idpliftto_{\PP,\R}}}
+\newcommand{\setitoUsablePairsps}{\mathrel{\idpliftto_{\C{T}_\mathbf{UP}(\PP, \SSS),\SSS}}}
+\newcommand{\setitozs}{\mathrel{\idpliftto_{Z,\SSS}}}
+\newcommand{\setitopsnonprob}{\mathrel{\idpliftto_{\nonprob(\PP),\nonprob(\SSS)}}}
+\newcommand{\setitosp}{\mathrel{\idpliftto_{\SSS,\PP}}}
+\newcommand{\setitos}{\mathrel{\idpliftto_{\SSS}}}
+\newcommand{\setitor}{\mathrel{\idpliftto_{\R}}}
+\newcommand{\setitop}{\mathrel{\idpliftto_{\PP}}}
+\newcommand{\setitosnonprob}{\mathrel{\idpliftto_{\nonprob(\SSS)}}}
+
+\newcommand{\setiliftingS}{\mathrel{\idpliftto_{\SSS}}}
+\newcommand{\setiliftingPS}{\mathrel{\idpliftto_{\PP, \SSS}}}
+\newcommand{\setiliftingDRR}{\mathrel{\idpliftto_{\DTuple{\R}, \R}}}
+\newcommand{\setiliftingDRRprobexample}{\mathrel{\idpliftto_{\DTuple{\R_{tup}}, \R_{tup}}}}
+\newcommand{\setchainstepPS}{\mathrel{\idpliftto_{(\PP,\SSS)}}}
+\newcommand{\setchainstepDRR}{\mathrel{\idpliftto_{(\DTuple{\R},\R)}}}
+
+
+%%Stefan%%
+% function symbols
+\newcommand{\fs}[1]{\mathsf{#1}}
+% functions
+\newcommand{\fun}[1]{\mathrm{#1}}
+% variables
+\newcommand{\var}[1]{\mathit{#1}}
+% nicer looking \phi
+\renewcommand{\phi}{\varphi}
+% nicer looking \emptyset
+\renewcommand{\emptyset}{\varnothing}
+% true...
+\newcommand{\true}{\fs{true}}
+% ...and false
+\newcommand{\false}{\fs{false}}
+% arity of function symbols
+\newcommand{\arity}{\fun{arity}}
+% domain of a function
+\newcommand{\dom}{\fun{dom}}
+% image of a functions
+\newcommand{\img}{\fun{img}}
+% range of substitutions
+\newcommand{\rng}{\fun{rng}}
+% identity function
+\newcommand{\id}{\fun{id}}
+% size measure
+\newcommand{\size}[1]{\left\|#1\right\|}
+% exponentiation
+\newcommand{\pow}{\mathbin{\char`\^}}
+% powerset
+\newcommand{\Pow}{\mathcal{P}ow}
+% vectors
+\newcommand{\vect}[1]{\mathbf{#1}}
+% length of vectors
+\newcommand{\length}{\fun{len}}
+% com symbols
+\newcommand{\com}{\fun{c}}
+% not com symbols
+\newcommand{\ncom}{{\centernot{\com}}}
+% bijective map for reduction step
+\newcommand{\mapred}{\pi^\mathtt{red}}
+% bijective map for outermost subterms
+\newcommand{\mapsub}{\pi^\sub}
+% bijective map for chop
+\newcommand{\mapchop}{\pi^\chop}
+% bijective map for filter
+\newcommand{\mapfilter}{\pi^\filter}
+% flatten for com symbols
+\newcommand{\flatten}{\fun{flatten}}
+% removes annotations from right hand side with return value
+\newcommand{\nocost}{\fun{nocost}}
+% replacements for \middle\mid (which does not work)
+\newcommand{\relmiddle}[1]{\mathrel{}\middle#1\mathrel{}}
+
+% argument positions
+\newcommand{\AP}{\mathcal{AP}}
+% return positions
+\newcommand{\RP}{\mathcal{RP}}
+
+% positions of terms
+\newcommand{\pos}{\fun{pos}}
+% innermost positions of an term
+\newcommand{\posi}{\fun{pos}^{\mathtt{i}}}
+% outermost positions of an term
+\newcommand{\poso}{\fun{pos}^{\mathtt{o}}}
+% positions of tuple symbols
+\newcommand{\posT}{\fun{pos}_{\SignatureA}}
+% innermost positions of tuple symbols
+\newcommand{\posTi}{\fun{pos}_{\SignatureA}^{\mathtt{i}}}
+% outermost positions of tuple symbols
+\newcommand{\posTo}{\fun{pos}_{\SignatureA}^{\mathtt{o}}}
+% positions of defined symbols
+\newcommand{\posD}{\fun{pos}_{\SignatureD}}
+% positions of constructors
+\newcommand{\posC}{\fun{pos}_{\SignatureC}}
+% positions of defined and annotated symbols
+\newcommand{\posDT}{\fun{pos}_{\SignatureD \cup \SignatureA}}
+% annotated positions of an annotated term
+\newcommand{\posA}[1]{\fun{pos}^{\mathtt{A}}_{#1}}
+% innermost annotated positions of an annotated term
+\newcommand{\posAi}[1]{\fun{pos}^{\mathtt{A,i}}_{#1}}
+% outermost annotated positions of an annotated term
+\newcommand{\posAo}[1]{\fun{pos}^{\mathtt{A,o}}_{#1}}
+% subterms of terms
+\newcommand{\sub}{\fun{sub}}
+% innermost subterms of terms
+\newcommand{\subi}{\fun{sub}^\mathtt{i}}
+% outermost subterms of terms
+\newcommand{\subo}{\fun{sub}^\mathtt{o}}
+% subterms with tuple symbols
+\newcommand{\subT}{\fun{sub}_{\SignatureA}}
+% innermost subterms with tuple symbols
+\newcommand{\subTi}{\fun{sub}_{\SignatureA}^\mathtt{i}}
+% outermost subterms with tuple symbols
+\newcommand{\subTo}{\fun{sub}_{\SignatureA}^\mathtt{o}}
+% subterms with defined symbols
+\newcommand{\subD}{\fun{sub}_{\SignatureD}}
+% subterms with constructors
+\newcommand{\subC}{\fun{sub}_{\SignatureC}}
+% annotated subterms of an annotated term
+\newcommand{\subA}{\fun{ann}}
+% innermost annotated subterms of an annotated term
+\newcommand{\subAi}[1]{\fun{sub}^{\mathtt{A,i}}_{#1}}
+% innermost annotated subterms of an annotated term
+\newcommand{\subAo}[1]{\fun{sub}^{\mathtt{A,o}}_{#1}}
+% subterms without annotation of an annotated term
+\newcommand{\subAt}[1]{\fun{sub}^{\mathtt{A,t}}_{#1}}
+% innermost subterms without annotation of an annotated term
+\newcommand{\subAti}[1]{\fun{sub}^{\mathtt{A,t,i}}_{#1}}
+% innermost subterms without annotation of an annotated term
+\newcommand{\subAto}[1]{\fun{sub}^{\mathtt{A,t,o}}_{#1}}
+
+% concrete tagged term without tags
+\newcommand{\term}{\fun{term}}
+% tags at the root position of a concrete tagged term
+\newcommand{\tags}{\fun{tags}}
+% context of a position in a term
+\newcommand{\ctx}{\fun{ctx}}
+
+% subposition of an annotated term
+\newcommand{\projA}[2]{{#1}|^\mathtt{A}_{#2}}
+% annotated term without annotations
+\newcommand{\projAt}[2]{{#1}|^\mathtt{A,t}_{#2}}
+% annotation of an annotated term
+\newcommand{\projAa}[3]{{#1}|^{\mathtt{A,}#2}_{#3}}
+% replace subposition of an annotated term by a new annotated term
+\newcommand{\replA}[3]{{#1}[{#2}]^\mathtt{A}_{#3}}
+% update annotation of an annotated term
+\newcommand{\replAa}[4]{{#1}[{#2}]^{\mathtt{A,}#3}_{#4}}
+
+% constructor for tuple terms
+\newcommand{\anno}{\#} 
+% constructor for tuple terms without tuple symbols
+\newcommand{\annoE}{\anno_{\emptyset}}
+% constructor for tuple terms with only the topmost function symbol being a tuple symbol
+\newcommand{\annoEps}{\anno_{\{\varepsilon\}}}
+% constructor for tuple terms with all defined symbols replaced by tuple symbols
+\newcommand{\annoD}{\anno_{\SignatureD}}
+% constructor for normal terms
+\newcommand{\disanno}{\fun{disanno}}
+% constructor for tuple terms with only the topmost function symbol being a tuple symbol
+\newcommand{\disannoPos}[1]{\flat^{\uparrow}_{#1}}
+% tuple term to traditional dependency tuple
+\newcommand{\dt}{\fun{dt}}
+% partitioning of condition
+\newcommand{\phipart}{\fun{part}}
+% the rule variant that includes the return value and the cost
+\newcommand{\varall}{\#}
+% the rule variant that includes the return value but no cost
+\newcommand{\varret}{\square}
+% return value projection
+\newcommand{\ret}{\fun{ret}}
+% function to generate locations
+\newcommand{\loc}{\fun{loc}}
+% function to generate left locations
+\newcommand{\locL}{\fun{loc}_\mathtt{L}}
+% function to generate right locations
+\newcommand{\locR}{\fun{loc}_\mathtt{R}}
+% function to extract a term at a location
+\newcommand{\extr}{\fun{extr}}
+% filter argument and return positions
+\newcommand{\filter}{\fun{filter}}
+% delete argument and return positions, effectively reducing the arity of the function symbols
+\newcommand{\del}{\fun{del}}
+% replace argument and return positions by fresh variables
+\newcommand{\chop}{\fun{chop}}
+
+% converts a TRS into a DT problem
+\newcommand{\liftDT}{\fun{lift}}
+% converts a term into an annotated term
+\newcommand{\liftTagT}{\fun{lift}_\mathtt{Tag,T}}
+% converts a TRS into a DT problem
+\newcommand{\liftTag}{\fun{lift}_\mathtt{Tag}}
+% removes all annotations from a DT problem
+%\newcommand{\drop}{\fun{drop}}
+
+% root symbol of a term
+\newcommand{\head}{\fun{root}}
+% simple type
+\newcommand{\simpletype}[1]{\tau^{#1}}
+
+% type term
+\newcommand{\typeT}{\tau^{\TT}}
+% type int
+\newcommand{\typeZ}{\tau^{\ZZ}}
+% type bool
+\newcommand{\typeB}{\tau^{\BB}}
+% type List
+\newcommand{\listtype}{\simpletype{\sus{List}}}
+% the type nat
+\newcommand{\nattype}{\simpletype{\sus{Nat}}}
+% the type nat
+\newcommand{\ntype}{\simpletype{\NN}}
+% the type bool
+\newcommand{\booltype}{\simpletype{\sus{Bool}}}
+% the type tree
+\newcommand{\treetype}{\simpletype{\sus{Tree}}}
+% type
+\newcommand{\type}{\iota}
+% set of all types
+\newcommand{\types}{\mathscr{T}}
+% set of all simple types
+\newcommand{\simpletypes}{\mathscr{T}_{\sus{simple}}}
+% terms
+\newcommand{\TT}{\mathbb{T}}
+% basic terms
+\newcommand{\TTbasic}{\TT_{\sus{basic}}}
+% variables
+\newcommand{\VV}{\mathcal{V}}
+% term variables
+\newcommand{\VVT}{\mathcal{V}^\TT}
+% int variables
+\newcommand{\VVZ}{\mathcal{V}^\ZZ}
+% boolean variables
+\newcommand{\VVB}{\mathcal{V}^\BB}
+% DT problems
+\newcommand{\projS}[1]{#1^{\annoDPS}}
+\newcommand{\projK}[1]{#1^{\annoDPK}}
+\newcommand{\projN}[1]{#1^{\annoDPN}}
+\newcommand{\flipS}[1]{\fun{flip^{\annoDPS}}({#1})}
+\newcommand{\flipK}[1]{\fun{flip^{\annoDPK}}({#1})}
+\newcommand{\flipN}[1]{\fun{flip^{\annoDPN}}({#1})}
+
+% defined symbols and constructors
+\newcommand{\SignatureDC}{\mathcal{F}}
+% tuple symbols, defined symbols, and constructors
+\newcommand{\SignatureADC}{\Sigma^\#}
+% com-symbols
+\newcommand{\SignatureCom}{\mathcal{C}_\com}
+% constructors
+\newcommand{\SignatureC}{\mathcal{C}}
+% defined symbols
+\newcommand{\SignatureD}{\mathcal{D}}
+% tuple symbols
+\newcommand{\SignatureA}{\mathcal{D}^\#}
+% tuple and defined symbols
+\newcommand{\SignatureAD}{\mathcal{D}^\# \uplus \mathcal{D}}
+% user function symbols
+\newcommand{\SignatureUDC}{\mathcal{F}_\mathtt{U}}
+% user constructors
+\newcommand{\SignatureUC}{\mathcal{C}_\mathtt{U}}
+% user defined symbols
+\newcommand{\SignatureUD}{\mathcal{D}_\mathtt{U}}
+% user tuple symbols
+\newcommand{\SignatureUT}{\mathcal{D}_\mathtt{U}^\#}
+% user tuple symbols, user defined symbols, and user constructors
+\newcommand{\SignatureUTDC}{\mathcal{F}_\mathtt{U}^\#}
+% predefined function symbols
+\newcommand{\SignaturePDC}{\mathcal{F}_\mathtt{P}}
+% predefined constructors
+\newcommand{\SignaturePC}{\mathcal{C}_\mathtt{P}}
+% predefined defined symbols
+\newcommand{\SignaturePD}{\mathcal{D}_\mathtt{P}}
+
+% set of tags
+\newcommand{\Tag}{\mathtt{Tag}}
+% set of flat tags
+\newcommand{\FTag}{\mathtt{FTag}}
+% set of deep tags
+\newcommand{\DTag}{\mathtt{DTag}}
+
+% annotations
+\newcommand{\A}{\mathcal{A}}
+% dependency pair annotations
+\newcommand{\ADP}{\mathcal{A}_{DP}}
+% dependency pair annotations
+\newcommand{\annoDP} {\mathtt{\#}}
+\newcommand{\annoDPD}{\mathtt{D}}
+\newcommand{\annoDPS}{\mathtt{S}}
+\newcommand{\annoDPN}{\mathtt{N}}
+\newcommand{\annoDPK}{\mathtt{K}}
+
+% subposition relation
+\newcommand{\subpos}{\trianglelefteq}
+% proper subposition relation
+\newcommand{\psubpos}{\triangleleft}
+% not subposition relation
+\newcommand{\nsubpos}{\ntrianglelefteq}
+% not proper subposition relation
+\newcommand{\npsubpos}{\ntriangleleft}
+% lhs
+\newcommand{\lhs}{\fun{lhs}}
+% rhs
+\newcommand{\rhs}{\fun{rhs}}
+% box of a context
+%\newcommand{\hole}{\square}
+% call graph relation
+\newcommand{\cgrel}{\sqsupseteq}
+% call graph relation -- strict
+\newcommand{\pcgrel}{\sqsupset}
+% normal forms
+\newcommand{\NF}{\fun{NF}}
+% argument normal forms
+\newcommand{\ANF}{\fun{ANF}}
+% unique normal form
+\newcommand{\unf}{{\downarrow}}
+% guard
+\renewcommand{\gg}{\gamma}
+% source of a transition
+\newcommand{\src}{\fun{src}}
+% guard of a transition
+\newcommand{\guard}{\fun{cond}}
+% cost of a transition
+\newcommand{\cost}{\fun{cost}}
+% Int symbols
+\newcommand{\IntSyms}{\mathcal{PD}}
+% conditions
+\newcommand{\cond}[1]{\ \left[#1\right]}
+% derivation height with cost
+\newcommand{\dhc}{\fun{dhc}}
+% separator used after binders like \forall, \exists, \lambda
+\newcommand{\bindsep}{. \,}
+% macro for code
+\newcommand{\code}[1]{\lstinline{#1}}
+% text in sub/superscripts
+\newcommand{\sus}[1]{\text{#1}}
+% natural numbers
+\newcommand{\NN}{\mathbb{N}}
+% integers
+\newcommand{\ZZ}{\mathbb{Z}}
+% reals
+\newcommand{\RR}{\mathbb{R}}
+% booleans
+\newcommand{\BB}{\mathbb{B}}
+% Landau big-Oh
+\newcommand{\OO}{\mathcal{O}}
+% runtime complexity
+\newcommand{\rc}{\fun{rc}}
+% innermost runtime complexity
+\newcommand{\irc}{\fun{irc}}
+% costs
+\newcommand{\cc}{c}
+% concrete costs
+\newcommand{\concretecosts}{k}
+% processor
+\newcommand{\proc}{\fun{proc}}
+\newcommand{\procabs}{\fun{proc}_{\abstraction{\placeholder}}}
+% derivation height
+\newcommand{\dht}{\fun{dh}}
+% placeholder for fancy notations
+\newcommand{\placeholder}{\bm{\cdot}}
+% abstraction from terms to integers
+\newcommand{\abstraction}[1]{\Lbag #1 \Rbag}
+% filter argument and return positions
+\newcommand{\filterOld}[2]{{#1}_{\setminus {#2}}}
+
+% The separator between the returned term of a rule and its additional cost terms.
+\newcommand{\noret}[1]{\;;\; #1}
+\newcommand{\nonoret}{\;;\; \bot}
+
+\newcommand{\tox}[3]{
+  \mathrel{
+    \xrightarrow{{}_{\scriptstyle #1}}
+    \!\!{}^{#2}_{#3}
+  }
+}
+
+\newcommand{\ruleArr}[3]{
+  \mathrel{
+    \xrightarrow{{}_{\scriptstyle #1}}
+    \!\!{}^{#2}_{#3}
+  }
+}
+\newcommand{\tored}[3]{
+  \mathrel{
+    \xhookrightarrow{{}_{\scriptstyle #1}}
+    \!\!{}^{#2}_{#3}
+  }
+}
+\newcommand{\itored}[3]{
+  \mathrel{
+    \xhookrightarrow[{\raisebox{.5ex}[0pt][0pt]{$\scriptstyle i$}}]{{}_{\scriptstyle #1}}
+    \!\!{}^{#2}_{#3}
+  }
+}
+
+
+\newcommand{\defemph}[1]{{\rm #1}}
+
+\renewcommand{\epsilon}{\varepsilon}
+
+
+\newcommand{\orig}{{\mathrm{orig}}}
+
+\setcounter{secnumdepth}{3}

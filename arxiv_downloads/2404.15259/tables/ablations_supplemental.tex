@@ -1,0 +1,32 @@
+\setlength{\tabcolsep}{8pt}
+\begin{table*}[t]
+
+\centering
+
+\newcommand{\first}{\cellcolor{red!40}}
+\newcommand{\second}{\cellcolor{orange!40}}
+\newcommand{\third}{\cellcolor{yellow!40}}
+\setlength{\tabcolsep}{4pt}
+
+\begin{tabular}{lrrr}
+\toprule
+Method              & PSNR $\uparrow$ & SSIM $\uparrow$ & LPIPS $\downarrow$ \\
+\midrule
+FlowMap             &   \first{27.70} &   \first{0.863} &      \first{0.089} \\
+Single Stage        &   \third{26.66} &   \third{0.842} &      \third{0.112} \\
+Expl. Focal Length  &           25.15 &           0.788 &              0.141 \\
+Expl. Depth         &            8.84 &           0.168 &              0.684 \\
+Expl. Pose          &           16.00 &           0.533 &              0.495 \\
+No Tracks           &           25.83 &           0.822 &              0.122 \\
+Random Init.        &           25.54 &           0.808 &              0.129 \\
+Random Init. (20k)  &  \second{27.25} &  \second{0.850} &     \second{0.101} \\
+No Corresp. Weights &           24.18 &           0.765 &              0.168 \\
+\bottomrule
+\end{tabular}
+
+\vspace{10pt}
+
+\caption{\textbf{Additional Ablations.} We report additional ablation results averaged across all scenes alongside the ablations found in the main paper.}
+
+\label{tab:ablations_supplemental}
+\end{table*}

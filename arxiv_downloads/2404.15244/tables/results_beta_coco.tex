@@ -1,0 +1,22 @@
+\begin{table}[!t]
+\caption{$\GPRatio$ on COCO. (Backbone: Swin-T)}
+\centering
+\begin{minipage}{0.495\textwidth}
+    \resizebox{\columnwidth}{!}{
+\begin{tabular}{lcccccccc}
+\toprule
+ & \multicolumn{3}{c}{\textbf{Performance} ($\uparrow$)} && \multicolumn{2}{c}{\textbf{GFLOPs} ($\downarrow$), (\% decrement)} \\ \cline{2-4} \cline{6-7}
+\multirow{-2}{*}{\textbf{Model}} & \textbf{PQ} & \textbf{mIoU}$_p$ & \textbf{AP}$_p$ && \textbf{Total} & \textbf{Tx. Enc.} \\ 
+\midrule
+
+M2F \cite{cheng2021mask2former}  & 52.03 & 62.49 & 42.18 && 235.57  & 121.69 \\
+{\ours}($\GPRatio=0$) & 52.24 & 62.95 & 41.61 && 220.61(-6.35) & 107.18(-11.92) \\
+{\ours}($\GPRatio=0.0005$) & 52.06 & 62.76 & 41.51 && 202.39(-14.08) & 88.47(-27.30) \\
+{\ours}($\GPRatio=0.001$) & 51.72 & 62.60 & 41.12 && 193.10(-18.03) & 79.18(-34.93) \\
+{\ours}($\GPRatio=0.02$) & 50.79 & 62.25 & 39.71 && 181.64(-22.89) & 67.71(-44.36) \\
+\bottomrule
+\end{tabular}}  
+\label{tab:result_beta_cc}
+\end{minipage}
+
+\end{table}

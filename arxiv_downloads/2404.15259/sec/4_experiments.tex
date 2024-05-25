@@ -1,0 +1,69 @@
+\input{tables/table_main_comparison}
+\input{figures/trajectories/figure}
+\input{figures/point_clouds}
+
+\section{Results}
+\label{sec:exp}
+
+We benchmark FlowMap via the downstream task of 3D Gaussian reconstruction~\cite{kerbl20233d}.
+This allows us to measure the quality of the camera parameters and geometry (depth maps) it outputs \emph{without having access to ground-truth scene geometry and camera parameters}.
+
+
+\myparagraph{Baselines.}
+We benchmark FlowMap against several baselines.
+First, we evaluate against COLMAP~\cite{schonberger2016structure}, the state-of-the-art structure-from-motion (SfM) method.
+Given a collection of images, COLMAP outputs per-image camera poses and intrinsics alongside a sparse 3D point cloud of the underlying scene.
+3D Gaussian Splatting, which was designed around COLMAP's SfM outputs, is initialized using this point cloud.
+Second, we evaluate against COLMAP multi-view stereo (MVS), which enhances COLMAP's output with a much denser 3D point cloud.
+When initialized using this denser point cloud, 3D Gaussian Splatting produces slightly better results.
+However, note that COLMAP MVS is rarely used in practice because it can be prohibitively time-consuming to run.
+Third, we evaluate against DROID-SLAM, a neural SLAM system trained on a synthetic dataset of posed video trajectories.
+Finally, we evaluate against NoPE-NeRF, an method that jointly optimizes a neural radiance field and unknown camera poses.
+Note that unlike FlowMap and COLMAP, both DROID-SLAM and NoPE-NeRF require camera intrinsics as input.
+
+\myparagraph{Datasets.}
+
+We analyze FlowMap on four standard novel view synthesis datasets: MipNeRF-360~\cite{barron2021mipnerf}, Tanks \& Temples~\cite{Knapitsch2017tanks}, LLFF~\cite{mildenhall2019local}, and CO3D~\cite{reizenstein2021common}.
+Because FlowMap runs on video sequences, we restrict these datasets to just the video-like sequences they provide.
+
+\myparagraph{Methodology.}
+
+We run FlowMap and the baselines using images that have been rescaled to a resolution of about 700,000 pixels.
+We then optimize 3D Gaussian scenes for all methods except NoPE-NeRF, since it provides its own NeRF renderings.
+We use 90\% of the available views for training and 10\% for testing.
+During 3D Gaussian fitting, we follow the common~\cite{nerfstudio} practice of fine-tuning the initial camera poses and intrinsics.
+Such refinement is beneficial because the camera poses produced by SfM algorithms like COLMAP are generally not pixel-perfect~\cite{park2023camp,lin2021barf}.
+We use the 3D points provided by COLMAP, DROID-SLAM, and FlowMap as input to 3D Gaussian Splatting.
+For FlowMap, we combine the output depth maps, poses, and intrinsics to yield one point per depth map pixel.
+
+\subsection{Novel View Synthesis Results}
+
+Tab.~\ref{tab:recon} reports rendering quality metrics (PSNR, SSIM, and LPIPS) on the held-out test views, and Fig.~\ref{fig:splat_comparison} shows qualitative results.
+Qualitatively, FlowMap facilitates high-quality 3D reconstructions with sharp details.
+Quantitatively, FlowMap performs slightly better than COLMAP SfM and significantly outperforms DROID-SLAM and NoPE-NeRF.
+Only COLMAP MVS slightly exceeds FlowMap in terms of reconstruction quality.
+As noted previously, COLMAP MVS is rarely used for 3D Gaussian Splatting, since it is very time-consuming to run on high-resolution images.
+
+\subsection{Camera Parameter Estimation Results}
+
+Since the datasets we use do not provide ground-truth camera parameters, they cannot be used to directly evaluate camera parameter estimates.
+Instead, Tab.~\ref{tab:recon} reports the average trajectory error (ATE) of FlowMap, DROID-SLAM, and NoPe-NeRF with respect to COLMAP.
+Since COLMAP's poses are not perfect~\cite{park2023camp}, this comparison is not to be understood as a benchmark, but rather as an indication of how close these methods' outputs are to COLMAP's state-of-the-art estimates.
+We find that DROID-SLAM and FlowMap both recover poses that are close to COLMAP's, while NoPE-NeRF's estimated poses are far off.
+When computing ATEs, we normalize all trajectories such that $\text{tr}(XX^T) = 1$, where $X$ is an $n$-by-3 matrix of camera positions.
+
+Fig.~\ref{fig:trajectories} plots trajectories recovered by FlowMap against those recovered by COLMAP, showing that they are often nearly identical.
+Fig.~\ref{fig:point_clouds} shows point clouds derived from FlowMap's estimated depth maps and camera parameters, illustrating that FlowMap recovers well-aligned scene geometry.
+
+\subsection{Large-Scale Robustness Study}
+
+\input{figures/colmap_comparison}
+
+We study FlowMap's robustness by using it to estimate camera poses for 420 CO3D scenes from 10 categories.
+We compare these trajectories to CO3D's pose annotations, which were computed using COLMAP.
+Since the quality of CO3D's ground-truth trajectories varies between categories, we focus on categories that have been used to train novel view synthesis models~\cite{tewari2023diffusion,chan2023generative,wewer24latentsplat}, where pose accuracy is expected to be higher.
+We find that FlowMap's mean ATE (0.0056) is lower than DROID-SLAM's (0.0082) and similar to the mean ATE obtained by re-running COLMAP and comparing the results to the provided poses (0.0038).
+This demonstrates that FlowMap consistently estimates poses which are close to COLMAP's.
+We note that COLMAP failed to estimate poses for 36 scenes, possibly because we ran it at a sparser frame rate to be consistent with our method or because the original annotations were generated using different COLMAP settings; we exclude COLMAP's failures from the above mean ATE.
+See Fig.~\ref{fig:colmap_study} for distributions of ATE values with respect to CO3D's provided camera poses.
+\vspace{-10pt}

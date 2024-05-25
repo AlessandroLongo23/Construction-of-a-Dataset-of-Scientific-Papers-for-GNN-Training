@@ -1,0 +1,13 @@
+\section{Conclusion}
+
+
+
+This paper introduces \ours to unlock the power of code instruction tuning by simply merging upcycled \moe.
+Similar to SFT, \ours starts with a dense \llm{} and produces a fine-tuned dense \llm{} with the exact size and model structure.
+Yet, \ours improves SFT by upcycling the pre-trained dense \llm{} to an \moe{} model for fine-tuning, after which we compile the \moe{} model back to an efficient dense \llm{} with a learnable merging mechanism.
+As such, we unleash the performance limit of instruction tuning without any additional inference overhead.
+Using the same dataset, \ours improves SFT on a variety of benchmarks, including HumanEval(+), MBPP(+), \multiple{}, and \dsonek{}, from 2\% to 13\%.
+By applying \ours to \dscoderbase{ 1.3B}, we create the next state-of-the-art small (<3B) \llm{} for code.
+The ultimate dense \llm{} produced by \ours preserves or even outperforms the full upcycled \moe which uses $8\times$ parameters as much as our final dense \llm{}.
+\ours is fully orthogonal to the existing instruction tuners such as \evolinstruct{} and \ossinstruct{}, opening a new dimension to maximal code instruction tuning.
+

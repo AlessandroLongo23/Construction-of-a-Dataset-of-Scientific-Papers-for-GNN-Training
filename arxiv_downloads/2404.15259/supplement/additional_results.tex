@@ -1,0 +1,27 @@
+\section{Additional Results}
+
+\input{tables/table_main_comparison_supplemental}
+
+
+\subsection{Pre-Trained Depth vs. Fine-Tuned Depth vs. High-Resolution Fine-Tuned Depth.}
+In \cref{fig:depths}, we compare the depths produced by FlowMap's initialization to the depths produced after FlowMap optimization.
+We additionally compare these results to a MiDaS CNN fine-tuned at a significantly higher resolution.
+We find that per-scene fine-tuning leads to high-quality depth predictions.
+This is illustrated by Fig.~\ref{fig:add_clouds}, which demonstrates FlowMap's ability to generate high-quality, consistent depths.
+However, it is worth noting that FlowMap's off-the-shelf depths are slightly blurry.
+To investigate whether this is a limitation of our loss or the architecture of the depth-predicting CNN, we also perform optimization at a higher resolution.
+We find that this leads to crisp depth maps, demonstrating that blurry depth maps are a result of insufficient capacity of the MiDaS backbone and not a limitation of our camera-induced flow loss.
+Notably, the poses barely change in this fine-tuning stage.
+It is likely that replacing the MiDaS depth predictor with a more powerful depth backbone would lead to sharper depth without high-resolution fine-tuning.
+
+\input{figures/depth_vis}
+\input{figures/patchmatch_full}
+
+\subsection{Additional Point Clouds and Qualitative Pose Reconstructions}
+In \cref{fig:add_clouds}, we display 12 additional point clouds plus estimated camera poses across popular datasets and scenes across the LLFF, Tanks and Temples, MipNeRF 360, and CO3D datasets.
+FlowMap robustly recovers camera poses and scene geometry across these diverse, challenging, and real-world sequences.
+
+\subsection{Failure Cases}
+While running FlowMap, we observed failures on several scenes.
+These include the Tanks-and-Temples Auditorium scene (our model struggles with rotation-dominant trajectories), the LLFF Leaves scene (our model falls into a ``hollow-face minimum''), and the Tanks-and-Temples Lighthouse scene (this video features a large lens flare which degrades the optical flow).
+Future extensions to FlowMap could use an occlusion-aware formulation to avoid hollow-face minima.

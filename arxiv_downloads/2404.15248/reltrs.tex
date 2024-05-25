@@ -1,0 +1,126 @@
+\section{Relative Term Rewriting}\label{Relative Term Rewriting}
+
+We assume familiarity with term rewriting \cite{baader_nipkow_1999} and regard (finite) TRSs
+over a (finite) signature $\Sigma$ and a set of variables $\VSet$.
+
+\begin{example}\label{ex:divlTRS}
+Consider the following TRS $\R_{\tdivl}$, where $\tdivl(x,\xs)$ computes the
+number that results from dividing $x$ by each element of the list $\xs$. 
+As usual, natural numbers are 
+represented by the function symbols $\O$ and $\ts$, and lists are represented via $\tnil$
+and $\tcons$. 
+Then $\tdivl(\ts^{24}(\O), \tcons(\ts^4(\O), \tcons(\ts^3(\O),\tnil)))$ evaluates to
+$\ts^2(\O)$, because $(24/4)/3 = 2$. Here, $\ts^2(\O)$ stands for $\ts(\ts(\O))$, etc.
+
+\vspace*{-0.5cm}
+
+{\footnotesize
+\hspace*{-0.85cm}
+\begin{minipage}[t]{5.1cm}
+    \begin{align}
+        \label{R-minus-rule-2} \tminus(x,\O) &\to x\\
+        \label{R-minus-rule-1} \tminus(\ts(x),\ts(y)) &\to \tminus(x,y) \\
+        \label{R-div-rule-1} \tdiv(x,\ts(\O)) &\to x\!
+    \end{align}
+\end{minipage}\hspace{.3cm}
+\begin{minipage}[t]{7.1cm}
+    \begin{align}
+        \label{R-div-rule-2} \tdiv(\ts(x),\ts(y)) &\to \ts(\tdiv(\tminus(x,y),\ts(y)))\\
+        \label{R-list-rule-2} \tdivl(x,\tnil) &\to x \\
+        \label{R-list-rule-1} \tdivl(x,\tcons(y,\xs)) &\to \tdivl(\tdiv(x,y),\xs) \!
+         \end{align}
+\end{minipage}}
+\end{example}
+
+\smallskip
+
+\noindent 
+A TRS $\R$ induces a \emph{rewrite relation} ${\to_{\R}} \subseteq \TSet{\Sigma}{\VSet}
+\times \TSet{\Sigma}{\VSet}$ on terms where $s \to_{\R} t$ holds if there is a position
+ $\pi \in \pos(s)$, 
+a rule $\ell \to r \in \R$, and a substitution $\sigma$ such that $s|_{\pi}=\ell\sigma$ and $t = s[r\sigma]_{\pi}$.
+For example, we have $\tminus(\ts(\O),\ts(\O)) \to_{\R_{\tdivl}} \tminus(\O,\O) \to_{\R_{\tdivl}} \O$.
+We call a TRS $\R$ \emph{strongly normalizing (SN)} or \emph{terminating} if $\to_{\R}$ is
+well founded. Using the DP framework, one can easily prove that
+$\R_{\tdivl}$ is SN (see \Cref{Dependency Pairs for Ordinary Term Rewriting}). In
+particular, in each application of the recursive $\tdivl$-rule 
+\eqref{R-list-rule-1}, the length of the list in $\tdivl$'s second argument is
+decreased by one.
+
+In the relative setting, one considers two TRSs
+$\R$ and $\R^{=}$.
+We say that $\R$ is \emph{relatively strongly normalizing} w.r.t.\ $\R^{=}$ (i.e.,
+$\R / \R^{=}$ is SN) if there is no infinite $(\to_{\R} \cup \to_{\R^{=}})$-rewrite sequence that uses an infinite number of $\to_{\R}$-steps.
+We refer to $\R$ as the \emph{main} and $\R^{=}$ as the \emph{base} TRS.
+
+\begin{example}\label{ex:mset1}
+    For example, let $\R_{\tdivl}$ be the \emph{main} TRS.
+    Since the order of the list elements does not affect \pagebreak[2] the termination
+   of $\R_{\tdivl}$, 
+     this algorithm also works for multisets.
+   To abstract lists to multisets, we add the \emph{base} TRS $\R^{=}_{\tset} = \{\eqref{B-com-rule-1}\}$.
+    \begin{equation}
+        \label{B-com-rule-1} \tcons(x, \tcons(y,\zs)) \to \tcons(y, \tcons(x,\zs)) 
+    \end{equation}
+    $\R^{=}_{\tset}$ is non-terminating, since it can
+    switch elements in a list arbitrarily often.
+    How-\linebreak ever, $\R_{\tdivl} / \R^{=}_{\tset}$ is SN as each application of
+    Rule \eqref{R-list-rule-1} still reduces the list length.
+\end{example}
+
+We will use the following four examples to show why a naive
+adaption of dependency pairs does not work in the relative setting and why we need our new
+notion of \emph{annotated dependency pairs}.
+These examples represent different types of infinite rewrite sequences
+that lead to non-termination in the relative setting: \emph{redex-duplicating},
+\emph{redex-creating} (or ``-emitting''), and \emph{ordinary infinite sequences}.
+
+\begin{example}[Redex-Duplicating]\label{example:redex-duplicating}
+    Consider the TRSs $\R_1 = \{\ta \to \tb\}$ and $\R_1^{=} = \{\tf(x) \to \tc(\tf(x),x)\}$.
+    $\R_1 / \R_1^{=}$ is not SN due to the infinite rewrite sequence $\underline{\tf(\ta)}
+    \to_{\R_1^{=}}\linebreak \tc(\tf(\ta),\underline{\ta}) \to_{\R_1} \tc(\underline{\tf(\ta)},\tb) \to_{\R_1^{=}}
+    \tc(\tc(\tf(\ta),\underline{\ta}),\tb)\to_{\R_1}
+      \tc(\tc(\tf(\ta),\tb),\tb)\to_{\R_1^{=}}
+    \ldots$\
+    The reason is that $\R_1^{=}$ can be used to duplicate an arbitrary $\R_1$-redex infinitely often.
+\end{example}
+
+\begin{example}[Redex-Creating on Parallel Position]\label{example:redex-creating}
+    Next, consider $\R_2 = \{\ta \to \tb\}$ and $\R_2^{=} = \{\tf \to \tc(\tf,\ta)\}$.
+    $\R_2 / \R_2^{=}$ is not SN as we have the infinite rewrite sequence $\underline{\tf}
+    \to_{\R_2^{=}} \tc(\tf,\underline{\ta}) \to_{\R_2} \tc(\underline{\tf},\tb) \to_{\R_2^{=}}
+    \tc(\tc(\tf,\underline{\ta}),\tb) \to_{\R_2}
+ \tc(\tc(\underline{\tf},\tb),\tb) \to_{\R_2^{=}} \ldots$\
+ Here, $\R_2^{=}$ can create an
+ $\R_2$-redex infinitely often (where
+ in the right-hand side $\tc(\tf,\ta)$ of $\R_2^{=}$'s rule, the
+ $\R_2^=$-redex $\tf$ and
+ the created $\R_2$-redex $\ta$ are on parallel positions).
+\end{example}
+
+\begin{example}[Redex-Creating on Position Above]\label{example:redex-creatingAbove}
+  Let $\R_3 = \{\ta(x) \to \tb(x)\}$ and $\R_3^{=} = \{\tf \to \ta(\tf)\}$.
+    $\R_3 / \R_3^{=}$ is not SN as we have $\underline{\tf} \to_{\R_3^{=}}
+    \underline{\ta}(\tf) \to_{\R_3} \tb(\underline{\tf}) \to_{\R_3^{=}}
+    \tb(\underline{\ta}(\tf)) \to_{\R_3} 
+ \tb(\tb(\underline{\tf})) \to_{\R_3^{=}}\ldots$, i.e., again
+    $\R_3^{=}$ can be used to create an
+ $\R_3$-redex infinitely often.
+ In the right-hand side $\ta(\tf)$ of
+$\R_3^=$'s rule,
+the position  of the created $\R_3$-redex $\ta(\ldots)$
+    is above the position of the  $\R_3^=$-redex $\tf$.
+\end{example}
+
+  
+
+\begin{example}[Ordinary Infinite]\label{example:ordinary-infinite}
+  Finally, consider $\R_4 = \{\ta \to \tb\}$ and $\R_4^{=} = \{ \tb \to \ta\}$.
+Here, the base TRS $\R_4^{=}$ can neither duplicate nor create an $\R_4$-redex infinitely often,
+    but in combination with the main TRS $\R_4$ we obtain the
+  infinite rewrite sequence $\ta \to_{\R_4}
+    \tb \to_{\R_4^{=}} \ta \to_{\R_4}
+    \tb \to_{\R_4^{=}} \ldots$\ Thus,
+    $\R_4 / \R_4^{=}$ is not SN. 
+\end{example}
+

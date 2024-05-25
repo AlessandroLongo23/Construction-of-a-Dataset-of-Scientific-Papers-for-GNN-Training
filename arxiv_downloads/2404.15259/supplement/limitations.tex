@@ -1,0 +1,11 @@
+\section{Limitations}
+Wile our method is much faster than MVS COLMAP, it is about 30 percent slower than COLMAP at its highest quality setting (on long sequences, about 20 minutes for our method vs. 14 minutes for COLMAP).
+It additionally requires signficantly more GPU memory than COLMAP does.
+Our method's pose and intrinsics predictions are less accurate and robust than COLMAP's, as measured by ATE, though after Gaussian Splatting with fine-tuning of camera parameters, we often perform on par with COLMAP.
+
+Our method further depends on correspondences estimated by point tracks and optical flow.
+While existing methods for computing point tracks and optical flow are robust, failures sometimes occur, and these failures can affect FlowMap's accuracy if they are significant.
+On the other hand, FlowMap will directly improve alongside advancements in these domains.
+
+Finally, our method is constrained to work on frame sequences with significant overlap (i.e., videos) and fails when input sequences contain significant scene motion.
+The latter limitation is shared with COLMAP, though we hope that our method may serve as a step towards novel methods that address this shortcoming.

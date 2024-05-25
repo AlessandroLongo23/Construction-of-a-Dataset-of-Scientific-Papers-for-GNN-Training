@@ -1,0 +1,238 @@
+\begin{thebibliography}{46}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Cai et~al.(2016)Cai, Xu, Jia, Qing, and Tao]{cai2016dehazenet}
+Bolun Cai, Xiangmin Xu, Kui Jia, Chunmei Qing, and Dacheng Tao.
+\newblock Dehazenet: An end-to-end system for single image haze removal.
+\newblock \emph{IEEE Transactions on Image Processing}, 25\penalty0 (11):\penalty0 5187--5198, 2016.
+
+\bibitem[Cai et~al.(2019)Cai, Pan, Ngo, Tian, Duan, and Yao]{cai2019exploring}
+Qi Cai, Yingwei Pan, Chong-Wah Ngo, Xinmei Tian, Lingyu Duan, and Ting Yao.
+\newblock Exploring object relation in mean teacher for cross-domain detection.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pages 11457--11466, 2019.
+
+\bibitem[Cao et~al.(2023)Cao, Joshi, Gui, and Wang]{cao2023contrastive}
+Shengcao Cao, Dhiraj Joshi, Liang-Yan Gui, and Yu-Xiong Wang.
+\newblock Contrastive mean teacher for domain adaptive object detectors.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, pages 23839--23848, 2023.
+
+\bibitem[Carion et~al.(2020)Carion, Massa, Synnaeve, Usunier, Kirillov, and Zagoruyko]{carion2020end}
+Nicolas Carion, Francisco Massa, Gabriel Synnaeve, Nicolas Usunier, Alexander Kirillov, and Sergey Zagoruyko.
+\newblock End-to-end object detection with transformers.
+\newblock In \emph{European conference on computer vision}, pages 213--229. Springer, 2020.
+
+\bibitem[Chan and Chimitt(2023)]{chan2023computational}
+Stanley~H Chan and Nicholas Chimitt.
+\newblock Computational imaging through atmospheric turbulence.
+\newblock \emph{Foundations and Trends{\textregistered} in Computer Graphics and Vision}, 15\penalty0 (4):\penalty0 253--508, 2023.
+
+\bibitem[Chen et~al.(2018)Chen, Li, Sakaridis, Dai, and Van~Gool]{chen2018domain}
+Yuhua Chen, Wen Li, Christos Sakaridis, Dengxin Dai, and Luc Van~Gool.
+\newblock Domain adaptive faster r-cnn for object detection in the wild.
+\newblock In \emph{Proceedings of the IEEE conference on computer vision and pattern recognition}, pages 3339--3348, 2018.
+
+\bibitem[Chen et~al.(2023)Chen, Wang, and Zhang]{chen2023exploiting}
+Zhihong Chen, Zilei Wang, and Yixin Zhang.
+\newblock Exploiting low-confidence pseudo-labels for source-free object detection.
+\newblock In \emph{Proceedings of the ACM International Conference on Multimedia}, pages 5370--5379, 2023.
+
+\bibitem[Chimitt and Chan(2020)]{chimitt2020simulating}
+Nicholas Chimitt and Stanley~H Chan.
+\newblock Simulating anisoplanatic turbulence by sampling intermodal and spatially correlated zernike coefficients.
+\newblock \emph{Optical Engineering}, 59\penalty0 (8):\penalty0 83101--83101, 2020.
+
+\bibitem[Chimitt et~al.(2022)Chimitt, Zhang, Mao, and Chan]{chimitt2022real}
+Nicholas Chimitt, Xingguang Zhang, Zhiyuan Mao, and Stanley~H Chan.
+\newblock Real-time dense field phase-to-space simulation of imaging through atmospheric turbulence.
+\newblock \emph{IEEE Transactions on Computational Imaging}, 8:\penalty0 1159--1169, 2022.
+
+\bibitem[Chu et~al.(2023)Chu, Li, Chen, Li, and Li]{chu2023adversarial}
+Qiaosong Chu, Shuyan Li, Guangyi Chen, Kai Li, and Xiu Li.
+\newblock Adversarial alignment for source free object detection.
+\newblock In \emph{Proceedings of the AAAI Conference on Artificial Intelligence}, pages 452--460, 2023.
+
+\bibitem[Fujitake and Sugimoto(2022)]{VSformer}
+Masato Fujitake and Akihiro Sugimoto.
+\newblock Video sparse transformer with attention-guided memory for video object detection.
+\newblock \emph{IEEE Access}, 10:\penalty0 65886--65900, 2022.
+
+\bibitem[Ge et~al.(2021)Ge, Liu, Wang, Li, and Sun]{ge2021yolox}
+Zheng Ge, Songtao Liu, Feng Wang, Zeming Li, and Jian Sun.
+\newblock Yolox: Exceeding yolo series in 2021.
+\newblock \emph{arXiv:2107.08430}, 2021.
+
+\bibitem[Godard et~al.(2019)Godard, Mac~Aodha, Firman, and Brostow]{Godard_2019_mono}
+Cl{\'e}ment Godard, Oisin Mac~Aodha, Michael Firman, and Gabriel~J Brostow.
+\newblock Digging into self-supervised monocular depth estimation.
+\newblock In \emph{Proceedings of the IEEE/CVF international conference on computer vision (ICCV)}, pages 3828--3838, 2019.
+
+\bibitem[Gong et~al.(2021)Gong, Chen, Wang, Chu, Zhu, Lin, Yu, and Feng]{gong2021temporal}
+Tao Gong, Kai Chen, Xinjiang Wang, Qi Chu, Feng Zhu, Dahua Lin, Nenghai Yu, and Huamin Feng.
+\newblock Temporal {ROI} align for video object recognition.
+\newblock In \emph{Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment (AAAI)}, pages 1442--1450, 2021.
+
+\bibitem[Inoue et~al.(2018)Inoue, Furuta, Yamasaki, and Aizawa]{inoue2018cross}
+Naoto Inoue, Ryosuke Furuta, Toshihiko Yamasaki, and Kiyoharu Aizawa.
+\newblock Cross-domain weakly-supervised object detection through progressive domain adaptation.
+\newblock In \emph{Proceedings of the IEEE conference on computer vision and pattern recognition}, pages 5001--5009, 2018.
+
+\bibitem[Kundu et~al.(2020)Kundu, Venkat, Babu, et~al.]{kundu2020universal}
+Jogendra~Nath Kundu, Naveen Venkat, R~Venkatesh Babu, et~al.
+\newblock Universal source-free domain adaptation.
+\newblock In \emph{Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}, pages 4544--4553, 2020.
+
+\bibitem[Li et~al.(2022)Li, Ye, Zhu, Zhou, and Xiong]{li2022source}
+Shuaifeng Li, Mao Ye, Xiatian Zhu, Lihua Zhou, and Lin Xiong.
+\newblock Source-free object detection by learning to overlook domain style.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, pages 8014--8023, 2022.
+
+\bibitem[Li et~al.(2021)Li, Chen, Xie, Yang, Yuan, Pu, and Zhuang]{li2021free}
+Xianfeng Li, Weijie Chen, Di Xie, Shicai Yang, Peng Yuan, Shiliang Pu, and Yueting Zhuang.
+\newblock A free lunch for unsupervised domain adaptive object detection without source data.
+\newblock In \emph{Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment (AAAI)}, 2021.
+
+\bibitem[Liang et~al.(2020)Liang, Hu, and Feng]{liang2020we}
+Jian Liang, Dapeng Hu, and Jiashi Feng.
+\newblock Do we really need to access the source data? source hypothesis transfer for unsupervised domain adaptation.
+\newblock In \emph{International Conference on Machine Learning}, pages 6028--6039. PMLR, 2020.
+
+\bibitem[Lin et~al.()Lin, Yang, Liu, Yu, and Lin]{run_and_chase}
+L. Lin, Z. Yang, Q. Liu, Y. Yu, and Q. Lin.
+\newblock Run and chase: Towards accurate source-free domain adaptive object detection.
+\newblock In \emph{IEEE International Conference on Multimedia and Expo (ICME)}, pages 2453--2458. IEEE Computer Society.
+
+\bibitem[Lin et~al.(2017)Lin, Doll{\'a}r, Girshick, He, Hariharan, and Belongie]{lin2017feature}
+Tsung-Yi Lin, Piotr Doll{\'a}r, Ross Girshick, Kaiming He, Bharath Hariharan, and Serge Belongie.
+\newblock Feature pyramid networks for object detection.
+\newblock In \emph{Proceedings of the IEEE conference on computer vision and pattern recognition}, pages 2117--2125, 2017.
+
+\bibitem[Liu et~al.(2024)Liu, Ashbaugh, Chimitt, Hassan, Hassani, Jaiswal, Kim, Mao, Perry, Ren, Su, Varghaei, Wang, Zhang, Chan, Ross, Shi, Wang, Jain, and Liu]{Liu_2024_WACV}
+Feng Liu, Ryan Ashbaugh, Nicholas Chimitt, Najmul Hassan, Ali Hassani, Ajay Jaiswal, Minchul Kim, Zhiyuan Mao, Christopher Perry, Zhiyuan Ren, Yiyang Su, Pegah Varghaei, Kai Wang, Xingguang Zhang, Stanley Chan, Arun Ross, Humphrey Shi, Zhangyang Wang, Anil Jain, and Xiaoming Liu.
+\newblock Farsight: A physics-driven whole-body biometric system at large distance and altitude.
+\newblock In \emph{Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)}, pages 6227--6236, 2024.
+
+\bibitem[Liu et~al.(2023)Liu, Lin, Shen, and Yang]{liu2023periodically}
+Qipeng Liu, Luojun Lin, Zhifeng Shen, and Zhifeng Yang.
+\newblock Periodically exchange teacher-student for source-free object detection.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)}, pages 6414--6424, 2023.
+
+\bibitem[Liu et~al.(2016)Liu, Anguelov, Erhan, Szegedy, Reed, Fu, and Berg]{liu2016ssd}
+Wei Liu, Dragomir Anguelov, Dumitru Erhan, Christian Szegedy, Scott Reed, Cheng-Yang Fu, and Alexander~C Berg.
+\newblock {SSD}: Single shot multibox detector.
+\newblock In \emph{European Conference on Computer Vision (ECCV)}, pages 21--37. Springer, 2016.
+
+\bibitem[Liu et~al.(2021)Liu, Zhang, and Wang]{liu2021source}
+Yuang Liu, Wei Zhang, and Jun Wang.
+\newblock Source-free domain adaptation for semantic segmentation.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pages 1215--1224, 2021.
+
+\bibitem[Mao et~al.(2021)Mao, Chimitt, and Chan]{Mao_2021_ICCV}
+Zhiyuan Mao, Nicholas Chimitt, and Stanley~H. Chan.
+\newblock Accelerating atmospheric turbulence simulation via learned phase-to-space transform.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)}, pages 14759--14768, 2021.
+
+\bibitem[Oza et~al.(2023)Oza, Sindagi, Sharmini, and Patel]{oza2023unsupervised}
+Poojan Oza, Vishwanath~A Sindagi, Vibashan~Vishnukumar Sharmini, and Vishal~M Patel.
+\newblock Unsupervised domain adaptation of object detectors: A survey.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}, pages 1 -- 24, 2023.
+
+\bibitem[Patel et~al.(2015)Patel, Gopalan, Li, and Chellappa]{adp_vp}
+Vishal~M Patel, Raghuraman Gopalan, Ruonan Li, and Rama Chellappa.
+\newblock Visual domain adaptation: A survey of recent advances.
+\newblock \emph{IEEE Signal Processing Magazine}, 32\penalty0 (3):\penalty0 53--69, 2015.
+
+\bibitem[Redmon et~al.(2016)Redmon, Divvala, Girshick, and Farhadi]{YOLOv1}
+Joseph Redmon, Santosh Divvala, Ross Girshick, and Ali Farhadi.
+\newblock You only look once: Unified, real-time object detection.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, pages 779--788, 2016.
+
+\bibitem[Ren et~al.(2015)Ren, He, Girshick, and Sun]{faster_rcnn}
+Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun.
+\newblock {Faster R-CNN}: Towards real-time object detection with region proposal networks.
+\newblock \emph{Advances in neural information processing systems}, 2015.
+
+\bibitem[Russakovsky et~al.(2015)Russakovsky, Deng, Su, Krause, Satheesh, Ma, Huang, Karpathy, Khosla, Bernstein, et~al.]{russakovsky2015imagenet}
+Olga Russakovsky, Jia Deng, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma, Zhiheng Huang, Andrej Karpathy, Aditya Khosla, Michael Bernstein, et~al.
+\newblock Imagenet large scale visual recognition challenge.
+\newblock \emph{International Journal of Computer Vision}, 115:\penalty0 211--252, 2015.
+
+\bibitem[Saito et~al.(2019{\natexlab{a}})Saito, Kim, Sclaroff, Darrell, and Saenko]{saito2019semi}
+Kuniaki Saito, Donghyun Kim, Stan Sclaroff, Trevor Darrell, and Kate Saenko.
+\newblock Semi-supervised domain adaptation via minimax entropy.
+\newblock In \emph{Proceedings of the IEEE/CVF international conference on computer vision}, pages 8050--8058, 2019{\natexlab{a}}.
+
+\bibitem[Saito et~al.(2019{\natexlab{b}})Saito, Ushiku, Harada, and Saenko]{saito2019strong}
+Kuniaki Saito, Yoshitaka Ushiku, Tatsuya Harada, and Kate Saenko.
+\newblock Strong-weak distribution alignment for adaptive object detection.
+\newblock In \emph{Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}, pages 6956--6965, 2019{\natexlab{b}}.
+
+\bibitem[Shi et~al.(2023)Shi, Wang, and Guo]{shi2023yolov}
+Yuheng Shi, Naiyan Wang, and Xiaojie Guo.
+\newblock Yolov: making still image object detectors great at video object detection.
+\newblock In \emph{Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment (AAAI)}, pages 2254--2262, 2023.
+
+\bibitem[Tarvainen and Valpola(2017)]{tarvainen2017mean}
+Antti Tarvainen and Harri Valpola.
+\newblock Mean teachers are better role models: Weight-averaged consistency targets improve semi-supervised deep learning results.
+\newblock \emph{Advances in neural information processing systems}, 30, 2017.
+
+\bibitem[Vibashan et~al.(2023)Vibashan, Oza, and Patel]{vibashan2023instance}
+VS Vibashan, Poojan Oza, and Vishal~M Patel.
+\newblock Instance relation graph guided source-free domain adaptive object detection.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, pages 3520--3530, 2023.
+
+\bibitem[Vs et~al.(2021)Vs, Gupta, Oza, Sindagi, and Patel]{vs2021mega}
+Vibashan Vs, Vikram Gupta, Poojan Oza, Vishwanath~A Sindagi, and Vishal~M Patel.
+\newblock Mega-cda: Memory guided attention for category-aware unsupervised domain adaptive object detection.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pages 4516--4526, 2021.
+
+\bibitem[Wang et~al.(2022)Wang, Tang, Liu, Guan, Xie, and Song]{wang2022ptseformer}
+Han Wang, Jun Tang, Xiaodong Liu, Shanyan Guan, Rong Xie, and Li Song.
+\newblock Ptseformer: Progressive temporal-spatial enhanced transformer towards video object detection.
+\newblock In \emph{European Conference on Computer Vision (ECCV)}, pages 732--747, 2022.
+
+\bibitem[Wu et~al.(2019)Wu, Chen, Wang, and Zhang]{wu2019sequence}
+Haiping Wu, Yuntao Chen, Naiyan Wang, and Zhaoxiang Zhang.
+\newblock Sequence level semantics aggregation for video object detection.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, pages 9217--9225, 2019.
+
+\bibitem[Xu et~al.(2022)Xu, Yang, Cao, Wu, Wu, and Chen]{xu2022source}
+Yuecong Xu, Jianfei Yang, Haozhi Cao, Keyu Wu, Min Wu, and Zhenghua Chen.
+\newblock Source-free video domain adaptation by learning temporal consistency for action recognition.
+\newblock In \emph{European Conference on Computer Vision}, pages 147--164. Springer, 2022.
+
+\bibitem[Yang et~al.(2021)Yang, Wang, Van De~Weijer, Herranz, and Jui]{yang2021generalized}
+Shiqi Yang, Yaxing Wang, Joost Van De~Weijer, Luis Herranz, and Shangling Jui.
+\newblock Generalized source-free domain adaptation.
+\newblock In \emph{Proceedings of the IEEE/CVF international conference on computer vision}, pages 8978--8987, 2021.
+
+\bibitem[Yang et~al.(2022)Yang, Jui, van~de Weijer, et~al.]{yang2022attracting}
+Shiqi Yang, Shangling Jui, Joost van~de Weijer, et~al.
+\newblock Attracting and dispersing: A simple approach for source-free domain adaptation.
+\newblock \emph{Advances in Neural Information Processing Systems}, 35:\penalty0 5802--5815, 2022.
+
+\bibitem[Zhang et~al.(2024)Zhang, Mao, Chimitt, and Chan]{zhang2022imaging}
+Xingguang Zhang, Zhiyuan Mao, Nicholas Chimitt, and Stanley~H. Chan.
+\newblock Imaging through the atmosphere using turbulence mitigation transformer.
+\newblock \emph{IEEE Transactions on Computational Imaging}, 10:\penalty0 115--128, 2024.
+
+\bibitem[Zhou et~al.(2022)Zhou, Li, He, Yang, Cheng, Tong, Ma, and Tao]{zhou2022transvod}
+Qianyu Zhou, Xiangtai Li, Lu He, Yibo Yang, Guangliang Cheng, Yunhai Tong, Lizhuang Ma, and Dacheng Tao.
+\newblock Transvod: end-to-end video object detection with spatial-temporal transformers.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}, pages 7853 -- 7869, 2022.
+
+\bibitem[Zhu et~al.(2017)Zhu, Wang, Dai, Yuan, and Wei]{zhu2017flow}
+Xizhou Zhu, Yujie Wang, Jifeng Dai, Lu Yuan, and Yichen Wei.
+\newblock Flow-guided feature aggregation for video object detection.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)}, pages 408--417, 2017.
+
+\bibitem[Zou et~al.(2023)Zou, Chen, Shi, Guo, and Ye]{zou2023object}
+Zhengxia Zou, Keyan Chen, Zhenwei Shi, Yuhong Guo, and Jieping Ye.
+\newblock Object detection in 20 years: A survey.
+\newblock \emph{Proceedings of the IEEE}, 111\penalty0 (3):\penalty0 257--276, 2023.
+
+\end{thebibliography}

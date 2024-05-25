@@ -1,0 +1,119 @@
+\section{Additional Experiments}
+
+\paragraph{Impact of backbone size on Lite-M2F.} We apply {\ours} on Lite-M2F using various backbone sizes, including SWIN-Tiny (T), SWIN-Small (S), and SWIN-Base (B) architectures \cite{liu2021swin}. Lite-M2F is a specific variant based on Lite-DETR \cite{li2023lite}. We used the configuration named ``Lite-DETR H3L1-(6+1)$\times$1'' given its strong performance in detection relative to the computations required. However, we adjust this configuration to (5+1) when applying our approach to Lite-M2F. Further, we use their without the key-aware deformable attention  \cite{li2023lite} proposed in their paper. This adjustment is necessary because Lite-M2F actually has 6 encoder layers, and the original configuration might introduce an additional layer that isn't present in the model. Following this, we identify layers 2 to 5 as potential exits, followed by the last layer, layer 6 in the transformer encoder. We retain layer 6 and do not consider it as a feasible exit point as it leverages features from all scales provided by the backbone, making it essential to the model's functionality. As shown in \Tabref{tab:supp_result_backbones}, we observe that {\ours} effectively reduces computational cost while maintaining performance across Lite-M2F variants, which underscores the versatility and robustness of {\ours} across different model architectures and sizes.
+%
+\paragraph{Impact of target and loss settings for gating network training.} We investigate various target and loss settings during the training of the gating network. Specifically, we compare the approach detailed in the main paper, using one-hot target and cross-entropy loss (referred to as ``hard-CE'' in \Tabref{tab:tgt_loss}), with three alternative methods that do not involve setting a specific target exit for each image.
+
+First, we consider using cross-entropy loss between the output of the utility function $\uF(\cdot)$ and the predicted logit passed through a softmax function (referred to as ``u-CE''), \ie, 
+\[
+\loss_\text{gating}=\sum_i^N\sum_{\Glayer}^{\NGlayer}\uF\superIdx(\Glayer)\ln [\text{softmax}(g_\Glayer\superIdx)]\,.
+\]
+
+Second, we apply a softmax function to the utility function $u(\Glayer)$ and use cross-entropy as the loss function (referred to as ``soft-CE''), \ie,
+\[
+\loss_\text{gating}=\sum_i^N\sum_{\Glayer}^{\NGlayer}\text{softmax}(\uF\superIdx(\Glayer))\ln [\text{softmax}(g_\Glayer\superIdx)]\,.
+\]
+
+Third, we apply a softmax function to the utility function, but use mean squared error (MSE) loss instead (referred to as ``soft-MSE''), \ie,
+\[
+\loss_\text{gating}=\sum_i^N\sum_{\Glayer}^{\NGlayer}\left[\text{softmax}(\uF\superIdx(\Glayer))-\text{softmax}(g_\Glayer\superIdx)\right]^2\,.
+\]
+
+The analysis in \Tabref{tab:tgt_loss} is conducted using the SWIN-T \cite{liu2021swin} backbone on the COCO dataset. We observe that ``hard-CE'' yields the most favorable results. As a result, we use this approach consistently in the main paper.
+
+\begin{table}[!ht]
+
+\begin{minipage}[!hb]{0.495\textwidth}
+\centering
+\caption{\textbf{Impact of backbone size on Lite-M2F.} Our Lite-{\ours} maintains the performance of Lite-M2F while reducing GFLOPs for different datasets and for different backbones.}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{llcccccccc}
+\toprule
+ && \multicolumn{3}{c}{\textbf{Performance} ($\uparrow$)} && \multicolumn{2}{c}{\textbf{GFLOPs} ($\downarrow$)} \\ \cline{3-5} \cline{7-8}
+\multirow{-2}{*}{\textbf{Bakbone}} & \multirow{-2}{*}{\textbf{Model}} & \textbf{PQ} & \textbf{mIOU}$_p$ & \textbf{AP}$_p$ && \textbf{Total} & \textbf{Tx. Enc.} \\ 
+\midrule
+
+\multicolumn{8}{c}{\textbf{Dataset}: Cityscapes}\\
+\hline
+\multirow{2}{*}{\textbf{SWIN-T}}
+& Lite-M2F \cite{li2023lite} & 62.29 & 79.43 & 36.57 && 428.71 & 172.00 \\
+& Lite-{\ours} & 62.64 & 79.99 & 36.52 && 412.88 & 156.17 \\
+\hline
+\multirow{2}{*}{\textbf{SWIN-S}}
+& Lite-M2F \cite{li2023lite} & 63.54 & 79.74 & 39.12 && 615.15 & 171.99 \\
+& Lite-{\ours} & 63.32 & 80.21 & 37.91 && 588.82 & 145.66 \\
+
+
+\hline
+\multirow{2}{*}{\textbf{SWIN-B}} 
+& Lite-M2F \cite{li2023lite} & 64.48 & 82.34 & 39.21 && 942.05 & 174.01 \\
+& Lite-{\ours} & 64.66 & 81.40 & 39.52 && 921.15 & 153.11 \\
+
+\hline
+\multicolumn{8}{c}{\textbf{Dataset}: COCO}\\
+\hline
+\multirow{2}{*}{}\textbf{SWIN-T}
+& Lite-M2F \cite{li2023lite} & 52.70 & 63.08 & 41.10 && 193.79 & 79.78 \\
+& Lite-{\ours} & 52.84 & 63.23 & 42.18 && 178.43 & 64.42 \\
+\hline
+\multirow{2}{*}{\textbf{SWIN-S}} 
+& Lite-M2F \cite{li2023lite} & 54.30 & 64.81 & 43.94 && 269.26 & 74.45 \\  
+& Lite-{\ours} & 54.47 & 64.14  & 43.55 && 258.00 & 63.96 \\
+
+\bottomrule
+\end{tabular}}  
+\label{tab:supp_result_backbones}
+\end{minipage}
+\hfill
+\begin{minipage}[!hb]{0.495\textwidth}
+\centering
+\caption{\textbf{Impact of target and loss in gating network training.} We use ``hard-CE'' loss for training our gating network in the main paper. (Backbone: SWIN-T; Dataset: COCO)}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{lcccccccc}
+\toprule
+ & \multicolumn{3}{c}{\textbf{Performance} ($\uparrow$)} && \multicolumn{2}{c}{\textbf{GFLOPs} ($\downarrow$)} \\ \cline{2-4} \cline{6-7}
+\multirow{-2}{*}{\textbf{Method}} & \textbf{PQ} & \textbf{mIOU}$_p$ & \textbf{AP}$_p$ && \textbf{Total} & \textbf{Tx. Enc.} \\ 
+\midrule
+\rowcolor{eccvblue!20}
+hard-CE & 52.06 & 62.76 & 41.51 && 202.39 & 88.47 \\
+u-CE & 52.16 & 62.58 & 41.57 && 207.49 & 94.06 \\
+soft-CE & 51.64 & 62.75 & 40.88 && 202.08 & 87.85 \\
+soft-MSE & 51.54 & 62.73 & 40.91 && 198.46 & 84.53 \\
+\bottomrule
+\end{tabular}}  
+\label{tab:tgt_loss}
+\end{minipage}
+
+\end{table}
+
+\section{Additional Qualitative Results}
+We provide additional examples of predicted segmentation maps in \Figref{fig:supp_qual_result}.
+\begin{figure}[!ht]
+\begin{tcbraster}[enhanced,
+    blank, 
+    raster columns=3,
+    raster equal height,
+    ]
+    \tcbincludegraphics[]{figures/qual_result_images/coco/exp9/000000176232.jpg}
+    \tcbincludegraphics[]{figures/qual_result_images/coco/exp9/000000176232_m2f.jpg}
+    \tcbincludegraphics[flip title={boxsep=0.75mm}]{figures/qual_result_images/coco/exp9/000000176232_ours.jpg}
+    \vspace*{-2.5\baselineskip}
+    %
+    \tcbincludegraphics[]{figures/qual_result_images/coco/exp2/000000002149.jpg}
+    \tcbincludegraphics[]{figures/qual_result_images/coco/exp2/000000002149_m2f.jpg}
+    \tcbincludegraphics[flip title={boxsep=0.75mm}]{figures/qual_result_images/coco/exp2/000000002149_ours.jpg}
+    \vspace*{-5\baselineskip}
+    %
+    \tcbincludegraphics[]{figures/qual_result_images/cityscapes/exp6/munster_000008_000019_leftImg8bit.png}
+    \tcbincludegraphics[]{figures/qual_result_images/cityscapes/exp6/munster_000008_000019_leftImg8bit_m2f.png}
+    \tcbincludegraphics[flip title={boxsep=0.75mm}]{figures/qual_result_images/cityscapes/exp6/munster_000008_000019_leftImg8bit_ours.png}
+    \vspace*{-8\baselineskip}
+    %
+    \tcbincludegraphics[]{figures/qual_result_images/cityscapes/exp7/munster_000013_000019_leftImg8bit.png}
+    \tcbincludegraphics[]{figures/qual_result_images/cityscapes/exp7/munster_000013_000019_leftImg8bit_m2f.png}
+    \tcbincludegraphics[flip title={boxsep=0.75mm}]{figures/qual_result_images/cityscapes/exp7/munster_000013_000019_leftImg8bit_ours.png}
+    \vspace*{-2\baselineskip}
+   \end{tcbraster} 
+    \caption{\textbf{Qualitative visualizations.} We provide additional examples of predicted segmentation maps from M2F \cite{cheng2021mask2former} (\textit{middle} column) and \ours (\textit{last} column). \textit{Top} two rows are from the COCO dataset, whereas \textit{bottom} two rows are from the Cityscapes dataset. Please zoom in for a clearer view of the details. (Backbone: SWIN-T)} 
+    \label{fig:supp_qual_result}
+\end{figure}

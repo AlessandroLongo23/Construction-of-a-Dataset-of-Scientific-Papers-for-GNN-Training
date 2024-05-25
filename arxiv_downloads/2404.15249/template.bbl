@@ -1,0 +1,225 @@
+\begin{thebibliography}{10}
+
+\bibitem{Top500}
+H.~Meuer, E.~Strohmaier, J.~Dongarra, H.~Simon, and M.~Meuer.
+\newblock Top500, November 2023.
+
+\bibitem{Navarro2014}
+C.~A. Navarro, N.~Hitschfeld-Kahler, and L.~Mateu.
+\newblock A survey on parallel computing and its applications in data-parallel problems using gpu architectures.
+\newblock {\em Communications in Computational Physics}, 15(2):285–329, 2014.
+
+\bibitem{Hwu2012}
+W.~Hwu.
+\newblock {\em GPU computing gems}.
+\newblock Waltham, MA : Morgan Kaufmann, Waltham, MA, jade ed.. edition, 2012.
+
+\bibitem{QIAN2021109908}
+Y.~Qian, C.~Wang, and S.~Zhou.
+\newblock A positive and energy stable numerical scheme for the poisson–nernst–planck–cahn–hilliard equations with steric interactions.
+\newblock {\em Journal of Computational Physics}, 426:109908, 2021.
+
+\bibitem{DING2019108864}
+J.~Ding, Z.~Wang, and S.~Zhou.
+\newblock Positivity preserving finite difference methods for poisson–nernst–planck equations with steric interactions: Application to slit-shaped nanopore conductance.
+\newblock {\em Journal of Computational Physics}, 397:108864, 2019.
+
+\bibitem{Chai2023}
+Y.~Chai, K.~Huang, S.~Wang, Z.~Xiang, and G.~Zhang.
+\newblock The extrinsic enriched finite element method with appropriate enrichment functions for the helmholtz equation.
+\newblock {\em Mathematics}, 11:1664, 03 2023.
+
+\bibitem{Greengard1998318}
+L.~Greengard and M.~C. Kropinski.
+\newblock An integral equation approach to the incompressible navier-stokes equations in two dimensions.
+\newblock {\em SIAM Journal on Scientific Computing}, 20(1):318 – 336, 1998.
+\newblock Cited by: 37; All Open Access, Green Open Access.
+
+\bibitem{Quartapelle1993NumericalSO}
+L.~Quartapelle.
+\newblock Numerical solution of the incompressible navier-stokes equations.
+\newblock In {\em International series of numerical mathematics}, volume 113, 1993.
+
+\bibitem{ZHU2011752}
+S.~Zhu, Q.~Wu, and C.~Liu.
+\newblock Shape and topology optimization for elliptic boundary value problems using a piecewise constant level set method.
+\newblock {\em Applied Numerical Mathematics}, 61(6):752--767, 2011.
+
+\bibitem{gong2023}
+W.~Gong, J.~Li, and S.~Zhu.
+\newblock Improved discrete boundary type shape gradients for pde-constrained shape optimization.
+\newblock {\em SIAM Journal on Scientific Computing}, 44(4):A2464--A2505, 2022.
+
+\bibitem{Chapko199747}
+R.~Chapko and R.~Kress.
+\newblock Rothe's method for the heat equation and boundary integral equations.
+\newblock {\em Journal of Integral Equations and Applications}, 9(1):47 – 69, 1997.
+\newblock Cited by: 43; All Open Access, Bronze Open Access.
+
+\bibitem{ZHOU20061}
+Y.~C. Zhou, S.~Zhao, M.~Feig, and G.~W. We.
+\newblock High order matched interface and boundary method for elliptic equations with discontinuous coefficients and singular sources.
+\newblock {\em Journal of Computational Physics}, 213(1):1--30, 2006.
+
+\bibitem{CHENG2006616}
+H.~Cheng, J.~Huang, and T.~J. Leiterman.
+\newblock An adaptive fast solver for the modified helmholtz equation in two dimensions.
+\newblock {\em Journal of Computational Physics}, 211(2):616--637, 2006.
+
+\bibitem{SUN2014445}
+H.~Sun and D.~L. Darmofal.
+\newblock An adaptive simplex cut-cell method for high-order discontinuous galerkin discretizations of elliptic interface problems and conjugate heat transfer problems.
+\newblock {\em Journal of Computational Physics}, 278:445--468, 2014.
+
+\bibitem{GarciaRisueno2014}
+P.~García-Risueño, J.~Alberdi-Rodriguez, M.~J.~T. Oliveira, X.~Andrade, M.~Pippig, J.~Muguerza, A.~Arruabarrena, and A.~Rubio.
+\newblock A survey of the parallel performance and accuracy of poisson solvers for electronic structure calculations.
+\newblock {\em Journal of Computational Chemistry}, 35(6):427--444, 2014.
+
+\bibitem{ying2007kernel}
+W.~Ying and C.~S. Henriquez.
+\newblock A kernel-free boundary integral method for elliptic boundary value problems.
+\newblock {\em Journal of computational physics}, 227(2):1046--1074, 2007.
+
+\bibitem{ying2013kernel}
+W.~Ying and W.~Wang.
+\newblock A kernel-free boundary integral method for implicitly defined surfaces.
+\newblock {\em Journal of Computational Physics}, 252:606--624, 2013.
+
+\bibitem{ying2014kernel}
+W.~Ying and W.~Wang.
+\newblock A kernel-free boundary integral method for variable coefficients elliptic pdes.
+\newblock {\em Communications in Computational Physics}, 15(4):1108--1140, 2014.
+
+\bibitem{xie2019fourth}
+Y.~Xie and W.~Ying.
+\newblock A fourth-order kernel-free boundary integral method for the modified helmholtz equation.
+\newblock {\em Journal of Scientific Computing}, 78(3):1632--1658, 2019.
+
+\bibitem{xie2021cartesian}
+Y.~Xie, Z.~Huang, and W.~Ying.
+\newblock A cartesian grid based tailored finite point method for reaction-diffusion equation on complex domains.
+\newblock {\em Computers \& Mathematics with Applications}, 97:298--313, 2021.
+
+\bibitem{ZHAO2023116163}
+Z.~Zhao, H.~Dong, and W.~Ying.
+\newblock Kernel free boundary integral method for 3d incompressible flow and linear elasticity equations on irregular domains.
+\newblock {\em Computer Methods in Applied Mechanics and Engineering}, 414:116163, 2023.
+
+\bibitem{dong2023kernelfree}
+H.~Dong, S.~Li, W.~Ying, and Z.~Zhao.
+\newblock Kernel-free boundary integral method for two-phase stokes equations with discontinuous viscosity on staggered grids, 2023.
+
+\bibitem{zhou2023adi}
+H.~Zhou, M.~Huang, and W.~Ying.
+\newblock Adi schemes for heat equations with irregular boundaries and interfaces in 3d with applications, 2023.
+
+\bibitem{REDDY2015287}
+R.~Reddy and R.~Banerjee.
+\newblock Gpu accelerated vof based multiphase flow solver and its application to sprays.
+\newblock {\em Computers \& Fluids}, 117:287--303, 2015.
+
+\bibitem{cuIBM2018Layton}
+S.~K. Layton, A.~Krishnan, and L.~A. Barba.
+\newblock cuibm -- {A} gpu-accelerated immersed boundary method.
+\newblock {\em CoRR}, abs/1109.3524, 2011.
+
+\bibitem{LIANG2014156Solving}
+S.~Liang, W.~Liu, and L.~Yuan.
+\newblock Solving seven-equation model for compressible two-phase flow using multiple gpus.
+\newblock {\em Computers \& Fluids}, 99:156--171, 2014.
+
+\bibitem{huang2015implementation}
+C.~Huang, B.~Shi, N.~He, and Z.~Chai.
+\newblock Implementation of multi-gpu based lattice boltzmann method for flow through porous media.
+\newblock {\em Advances in Applied Mathematics and Mechanics}, 7(1):1--12, 2015.
+
+\bibitem{Volkov2011}
+V.~Volkov and B.~Kazian.
+\newblock Fitting fft onto the g80 architecture.
+\newblock {\em Methodology}, January 2011.
+
+\bibitem{Govindaraju2008}
+N.~K. Govindaraju, B.~Lloyd, Y.~Dotsenko, B.~Smith, and J.~Manferdelli.
+\newblock High performance discrete fourier transforms on graphics processors.
+\newblock In {\em SC '08: Proceedings of the 2008 ACM/IEEE Conference on Supercomputing}, pages 1--12, 2008.
+
+\bibitem{Nandapalan2012}
+N.~Nandapalan, J.~Jaros, A.~P. Rendell, and B.~Treeby.
+\newblock Implementation of 3d ffts across multiple gpus in shared memory environments.
+\newblock In {\em 2012 13th International Conference on Parallel and Distributed Computing, Applications and Technologies}, pages 167--172, 2012.
+
+\bibitem{Chen2010}
+Y.~Chen, X.~Cui, and H.~Mei.
+\newblock Large-scale fft on gpu clusters.
+\newblock In {\em Proceedings of the 24th ACM International Conference on Supercomputing}, ICS '10, page 315–324, New York, NY, USA, 2010. Association for Computing Machinery.
+
+\bibitem{Nukada2012}
+A.~Nukada, K.~Sato, and S.~Matsuoka.
+\newblock Scalable multi-gpu 3-d fft for tsubame 2.0 supercomputer.
+\newblock In {\em SC '12: Proceedings of the International Conference on High Performance Computing, Networking, Storage and Analysis}, pages 1--10, 2012.
+
+\bibitem{aliabadi2011boundary}
+M.~H. Aliabadi and P.~H. Wen.
+\newblock {\em Boundary element methods in engineering and sciences}, volume~4.
+\newblock World Scientific, 2011.
+
+\bibitem{yu2002natural}
+D.~Yu.
+\newblock {\em Natural boundary integral method and its applications}, volume 539.
+\newblock Springer Science \& Business Media, 2002.
+
+\bibitem{kress1989linear}
+R.~Kress, V.~Maz'ya, and V.~Kozlov.
+\newblock {\em Linear integral equations}, volume~82.
+\newblock Springer, 1989.
+
+\bibitem{hsiao2008boundary}
+G.~C. Hsiao and W.~L. Wendland.
+\newblock {\em Boundary integral equations}.
+\newblock Springer, 2008.
+
+\bibitem{lin2022bigreennet}
+G.~Lin, F.~Chen, P.~Hu, X.~Chen, J.~Chen, J.~Wang, and Z.~Shi.
+\newblock Bi-greennet: Learning green's functions by boundary integral network, 2022.
+
+\bibitem{Wu2013}
+J.~Wu and J.~JaJa.
+\newblock High performance fft based poisson solver on a cpu-gpu heterogeneous platform.
+\newblock In {\em 2013 IEEE 27th International Symposium on Parallel and Distributed Processing}, pages 115--125, 2013.
+
+\bibitem{naumov2010cusparse}
+M.~Naumov, L.~S. Chien, P.~Vandermersch, and U.~Kapasi.
+\newblock Cusparse library.
+\newblock In {\em GPU Technology Conference}, 2010.
+
+\bibitem{govindaraju2008high}
+N.~K. Govindaraju, B.~Lloyd, Y.~Dotsenko, B.~Smith, and J.~Manferdelli.
+\newblock High performance discrete fourier transforms on graphics processors.
+\newblock In {\em SC'08: Proceedings of the 2008 ACM/IEEE conference on Supercomputing}, pages 1--12. Ieee, 2008.
+
+\bibitem{saad2003iterative}
+Y.~Saad.
+\newblock {\em Iterative methods for sparse linear systems}.
+\newblock SIAM, 2003.
+
+\bibitem{arrowhead2017}
+P.~A. Belov, E.~R. Nugumanov, and S.~L. Yakovlev.
+\newblock The arrowhead decomposition method for a block-tridiagonal system of linear equations.
+\newblock {\em Journal of Physics: Conference Series}, 929:012035, 11 2017.
+
+\bibitem{Gholami2016}
+A.~Gholami, D.~Malhotra, H.~Sundar, and G.~Biros.
+\newblock Fft, fmm, or multigrid? a comparative study of state-of-the-art poisson solvers for uniform and nonuniform grids in the unit cube.
+\newblock {\em SIAM Journal on Scientific Computing}, 38(3):C280--C306, 2016.
+
+\bibitem{dong2023second}
+H.~Dong, S.~Li, W.~Ying, and Z.~Zhao.
+\newblock Second order convergence of a modified mac scheme for stokes interface problems, 2023.
+
+\bibitem{MacNamara2016}
+S.~MacNamara and G.~Strang.
+\newblock {\em Operator Splitting}, pages 95--114.
+\newblock Springer International Publishing, Cham, 2016.
+
+\end{thebibliography}

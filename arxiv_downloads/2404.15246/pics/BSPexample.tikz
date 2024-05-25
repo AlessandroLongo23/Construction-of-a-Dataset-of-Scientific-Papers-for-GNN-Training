@@ -1,0 +1,79 @@
+\begin{tikzpicture}
+	
+    \begin{scope}[very thick, gray]
+
+    \draw [gray, densely dotted] (0pt,55pt) -- (240pt,55pt);
+    \draw [gray, densely dotted] (160pt,10pt) -- (160pt,125pt);
+    \end{scope}
+
+    \node[anchor=center, gray, rotate=90] at (-18pt,80pt) {\small \textbf{proc. 1}};
+
+    \node[anchor=center, gray, rotate=90] at (-18pt,30pt) {\small \textbf{proc. 2}};
+
+    \draw [gray] (0pt,108pt) -- (0pt,110pt) -- (76pt,110pt) -- (76pt,108pt);
+    \draw [gray] (38pt,110pt) -- (38pt,112pt);
+    \node[anchor=center, gray] at (38pt,120pt) {\small computation};
+
+    \draw [gray] (82pt,108pt) -- (82pt,110pt) -- (156pt,110pt) -- (156pt,108pt);
+    \draw [gray] (119pt,110pt) -- (119pt,112pt);
+    \node[anchor=center, gray] at (119pt,120pt) {\small communication};
+
+    \node[anchor=center, gray] at (80pt,140pt) {\small \textbf{superstep 1}};
+
+    \draw [gray] (164pt,108pt) -- (164pt,110pt) -- (226pt,110pt) -- (226pt,108pt);
+    \draw [gray] (195pt,110pt) -- (195pt,112pt);
+    \node[anchor=center, gray] at (195pt,120pt) {\small computation};
+
+    \node[anchor=center, gray] at (215pt,140pt) {\small \textbf{superstep 2}};
+
+    \begin{scope}[thick, arrows=-stealth]
+    \draw (5pt,40pt) -- (33.5pt,40pt);
+    \draw (37.5pt,40pt) -- (66pt,40pt);
+    \draw (5pt,20pt) -- (66pt,20pt);
+    \draw (5pt,20pt) -- (35pt,37.5pt);
+    \draw (37.5pt,40pt) -- (67.5pt,22.5pt);
+
+    \draw (5pt,70pt) -- (66pt,70pt);
+    \draw (5pt,70pt) -- (26.5pt,89pt);
+    \draw (30pt,90pt) -- (67.5pt,72.5pt);
+    \draw (30pt,90pt) -- (66pt,90pt);
+
+    \draw (70pt,90pt) -- (166pt,90pt);
+    \draw (70pt,90pt) -- (167pt,43pt);
+    \draw (70pt,40pt) -- (166.5pt,87pt);
+    \draw (70pt,20pt) -- (167pt,68pt);
+    \draw (70pt,20pt) -- (186pt,20pt);
+
+    \draw (170pt,40pt) -- (187.5pt,22.5pt);
+    \draw (190pt,20pt) -- (216pt,20pt);
+    \draw (170pt,40pt) -- (216pt,40pt);
+    \draw (170pt,90pt) -- (216pt,90pt);
+    \draw (170pt,70pt) -- (216.5pt,87.5pt);
+    \end{scope}
+    \draw[thick] (220pt,20pt) -- (230pt,20pt);
+    \draw[thick] (220pt,40pt) -- (230pt,40pt);
+    \draw[thick] (220pt,40pt) -- (230pt,45pt);
+    \draw[thick] (220pt,90pt) -- (230pt,90pt);
+    \draw[thick] (220pt,90pt) -- (230pt,85pt);
+
+    \draw[black, fill=white] (5pt,20pt) circle (1.0ex);
+    \draw[black, fill=white] (5pt,40pt) circle (1.0ex);
+    \draw[black, fill=white] (37.5pt,40pt) circle (1.0ex);
+    \draw[black, fill=white] (70pt,20pt) circle (1.0ex);
+    \draw[black, fill=white] (70pt,40pt) circle (1.0ex);
+
+    \draw[black, fill=white] (5pt,70pt) circle (1.0ex);
+    \draw[black, fill=white] (30pt,90pt) circle (1.0ex);
+    \draw[black, fill=white] (70pt,70pt) circle (1.0ex);
+    \draw[black, fill=white] (70pt,90pt) circle (1.0ex);
+
+    \draw[black, fill=white] (170pt,70pt) circle (1.0ex);
+    \draw[black, fill=white] (170pt,90pt) circle (1.0ex);
+    \draw[black, fill=white] (220pt,90pt) circle (1.0ex);
+    \draw[black, fill=white] (170pt,40pt) circle (1.0ex);
+    \draw[black, fill=white] (220pt,40pt) circle (1.0ex);
+    \draw[black, fill=white] (190pt,20pt) circle (1.0ex);
+    \draw[black, fill=white] (220pt,20pt) circle (1.0ex);
+
+
+\end{tikzpicture}

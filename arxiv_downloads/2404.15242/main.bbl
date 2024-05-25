@@ -1,0 +1,418 @@
+\begin{thebibliography}{10}
+
+\bibitem{wiegmann2000explicit}
+K.P.~Bube A.~Wiegmann.
+\newblock The explicit-jump immersed interface method: finite difference
+  methods for pdes with piecewise smooth solutions.
+\newblock {\em SIAM Journal on Numerical Analysis}, 37(3):827--862, 2000.
+
+\bibitem{aliabadi2011boundary}
+M.~H. Aliabadi and P.~H. Wen.
+\newblock {\em Boundary element methods in engineering and sciences}, volume~4.
+\newblock World Scientific, 2011.
+
+\bibitem{berg2018unified}
+Jens Berg and Kaj Nystr{\"o}m.
+\newblock A unified deep artificial neural network approach to partial
+  differential equations in complex geometries.
+\newblock {\em Neurocomputing}, 317:28--41, 2018.
+
+\bibitem{berthelsen2004decomposed}
+P.A. Berthelsen.
+\newblock A decomposed immersed interface method for variable coefficient
+  elliptic equations with non-smooth and discontinuous solutions.
+\newblock {\em Journal of Computational Physics}, 197(1):364--386, 2004.
+
+\bibitem{Bhattacharya2021}
+Kaushik Bhattacharya, Bamdad Hosseini, Nikola~B. Kovachki, and Andrew~M.
+  Stuart.
+\newblock Model {Reduction} {And} {Neural} {Networks} {For} {Parametric}
+  {PDEs}.
+\newblock {\em The SMAI Journal of computational mathematics}, 7:121--157,
+  2021.
+
+\bibitem{Chai2023}
+Yingbin Chai, Kangye Huang, Shangpan Wang, Zhichao Xiang, and Guanjun Zhang.
+\newblock The extrinsic enriched finite element method with appropriate
+  enrichment functions for the helmholtz equation.
+\newblock {\em Mathematics}, 11:1664, 03 2023.
+
+\bibitem{Chapko199747}
+Roman Chapko and Rainer Kress.
+\newblock Rothe's method for the heat equation and boundary integral equations.
+\newblock {\em Journal of Integral Equations and Applications}, 9(1):47 – 69,
+  1997.
+\newblock Cited by: 43; All Open Access, Bronze Open Access.
+
+\bibitem{wen2018finite}
+Long Chen, Huayi Wei, and Min Wen.
+\newblock An interface-fitted mesh generator and virtual element methods for
+  elliptic interface problems.
+\newblock {\em Journal of Computational Physics}, 334, 01 2017.
+
+\bibitem{CHENG2006616}
+Hongwei Cheng, Jingfang Huang, and Terry~Jo Leiterman.
+\newblock An adaptive fast solver for the modified helmholtz equation in two
+  dimensions.
+\newblock {\em Journal of Computational Physics}, 211(2):616--637, 2006.
+
+\bibitem{chu2010}
+C.-C. CHU, I.~G. GRAHAM, and T.-Y. HOU.
+\newblock A new multiscale finite element method for high-contrast elliptic
+  interface problems.
+\newblock {\em Mathematics of Computation}, 79(272):1915--1955, 2010.
+
+\bibitem{DING2019108864}
+Jie Ding, Zhongming Wang, and Shenggao Zhou.
+\newblock Positivity preserving finite difference methods for
+  poisson–nernst–planck equations with steric interactions: Application to
+  slit-shaped nanopore conductance.
+\newblock {\em Journal of Computational Physics}, 397:108864, 2019.
+
+\bibitem{dong2023kernelfree}
+Haixia Dong, Shuwang Li, Wenjun Ying, and Zhongshu Zhao.
+\newblock Kernel-free boundary integral method for two-phase stokes equations
+  with discontinuous viscosity on staggered grids, 2023.
+
+\bibitem{dong2023second}
+Haixia Dong, Zhongshu Zhao, Shuwang Li, Wenjun Ying, and Jiwei Zhang.
+\newblock Second order convergence of a modified mac scheme for stokes
+  interface problems, 2023.
+
+\bibitem{E2018deepRitz}
+Weinan Ee and Bing Yu.
+\newblock The deep ritz method: A deep learning-based numerical algorithm for
+  solving variational problems.
+\newblock {\em Communications in Mathematics and Statistics}, 6, 09 2017.
+
+\bibitem{fan2023decoupling}
+Chen Fan and Zhiyue Zhang.
+\newblock Decoupling numerical method based on deep neural network for
+  nonlinear degenerate interface problems, 2023.
+
+\bibitem{fedkiw1999non}
+Ronald~P Fedkiw, Tariq Aslam, Barry Merriman, and Stanley Osher.
+\newblock A non-oscillatory eulerian approach to interfaces in multimaterial
+  flows (the ghost fluid method).
+\newblock {\em Journal of computational physics}, 152(2):457--492, 1999.
+
+\bibitem{hsiao2008boundary}
+W.L.~Wendland G.C.~Hsiao.
+\newblock {\em Boundary integral equations}.
+\newblock Springer, 2008.
+
+\bibitem{Gin2021}
+Craig~R Gin, Daniel~E Shea, Steven~L Brunton, and J~Nathan Kutz.
+\newblock Deepgreen: deep learning of green’s functions for nonlinear
+  boundary value problems.
+\newblock {\em Scientific reports}, 11(1):1--14, 2021.
+
+\bibitem{gong2023}
+Wei Gong, Jiajie Li, and Shengfeng Zhu.
+\newblock Improved discrete boundary type shape gradients for pde-constrained
+  shape optimization.
+\newblock {\em SIAM Journal on Scientific Computing}, 44(4):A2464--A2505, 2022.
+
+\bibitem{Greenfeld2019}
+Daniel Greenfeld, Meirav Galun, Ronen Basri, Irad Yavneh, and Ron Kimmel.
+\newblock Learning to optimize multigrid pde solvers.
+\newblock In {\em International Conference on Machine Learning}, pages
+  2415--2423. PMLR, 2019.
+
+\bibitem{Greengard1998318}
+Leslie Greengard and Mary~Catherine Kropinski.
+\newblock An integral equation approach to the incompressible navier-stokes
+  equations in two dimensions.
+\newblock {\em SIAM Journal on Scientific Computing}, 20(1):318 – 336, 1998.
+\newblock Cited by: 37; All Open Access, Green Open Access.
+
+\bibitem{greengard_rokhlin_1997}
+Leslie Greengard and Vladimir Rokhlin.
+\newblock A new version of the fast multipole method for the laplace equation
+  in three dimensions.
+\newblock {\em Acta Numerica}, 6:229–269, 1997.
+
+\bibitem{HE2022114358}
+Cuiyu He, Xiaozhe Hu, and Lin Mu.
+\newblock A mesh-free method using piecewise deep neural network for elliptic
+  interface problems.
+\newblock {\em Journal of Computational and Applied Mathematics}, 412:114358,
+  2022.
+
+\bibitem{HOU2005411}
+Songming Hou and Xu-Dong Liu.
+\newblock A numerical method for solving variable coefficient elliptic equation
+  with interfaces.
+\newblock {\em Journal of Computational Physics}, 202(2):411--445, 2005.
+
+\bibitem{hou2012numerical}
+Songming Hou, Liqun Wang, and Wei Wang.
+\newblock A numerical method for solving the elliptic interface problems with
+  multi-domains and triple junction points.
+\newblock {\em Journal of Computational Mathematics}, pages 504--516, 2012.
+
+\bibitem{HU2022111576}
+Wei-Fan Hu, Te-Sheng Lin, and Ming-Chih Lai.
+\newblock A discontinuity capturing shallow neural network for elliptic
+  interface problems.
+\newblock {\em Journal of Computational Physics}, 469:111576, 2022.
+
+\bibitem{HUANG2017439}
+Peiqi Huang, Haijun Wu, and Yuanming Xiao.
+\newblock An unfitted interface penalty finite element method for elliptic
+  interface problems.
+\newblock {\em Computer Methods in Applied Mechanics and Engineering},
+  323:439--460, 2017.
+
+\bibitem{jwason1963}
+M.~A. Jaswon.
+\newblock Integral equation methods in potential theory. i.
+\newblock {\em Proceedings of the Royal Society of London. Series A,
+  Mathematical and Physical Sciences}, 275(1360):23--32, 1963.
+
+\bibitem{Jiang2020a}
+Chiyu~“Max” Jiang, Soheil Esmaeilzadeh, Kamyar Azizzadenesheli, Karthik
+  Kashinath, Mustafa Mustafa, Hamdi~A. Tchelepi, Philip Marcus, Mr~Prabhat, and
+  Anima Anandkumar.
+\newblock Meshfreeflownet: A physics-constrained deep continuous space-time
+  super-resolution framework.
+\newblock In {\em SC20: International Conference for High Performance
+  Computing, Networking, Storage and Analysis}, pages 1--15, 2020.
+
+\bibitem{johansen1998cartesian}
+Hans Johansen and Phillip Colella.
+\newblock A cartesian grid embedded boundary method for poisson's equation on
+  irregular domains.
+\newblock {\em Journal of Computational Physics}, 147(1):60--85, 1998.
+
+\bibitem{Kochkov2021a}
+Dmitrii Kochkov, Jamie~A. Smith, Ayya Alieva, Qing Wang, Michael~P. Brenner,
+  and Stephan Hoyer.
+\newblock Machine learning–accelerated computational fluid dynamics.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  118(21):e2101784118, 2021.
+
+\bibitem{leveque1994immersed}
+Randall~J LeVeque and Zhilin Li.
+\newblock The immersed interface method for elliptic equations with
+  discontinuous coefficients and singular sources.
+\newblock {\em SIAM Journal on Numerical Analysis}, 31(4):1019--1044, 1994.
+
+\bibitem{li1999fem}
+Zhilin Li, Yanping Lin, and Xiaohui Wu.
+\newblock New cartesian grid methods for interface problems using the finite
+  element formulation.
+\newblock {\em Numerische Mathematik}, 96, 03 1999.
+
+\bibitem{li2003newinterface}
+Zhilin Li, Wei-Cheng Wang, I-Liang Chern, and Ming-Chih Lai.
+\newblock New formulations for interface problems in polar coordinates.
+\newblock {\em SIAM Journal on Scientific Computing}, 25(1):224--245, 2003.
+
+\bibitem{li2021fourier}
+Zongyi Li, Nikola~Borislavov Kovachki, Kamyar Azizzadenesheli, Burigede liu,
+  Kaushik Bhattacharya, Andrew Stuart, and Anima Anandkumar.
+\newblock Fourier neural operator for parametric partial differential
+  equations.
+\newblock In {\em International Conference on Learning Representations}, 2021.
+
+\bibitem{lin2023bi}
+Guochang Lin, Fukai Chen, Pipi Hu, Xiang Chen, Junqing Chen, Jun Wang, and
+  Zuoqiang Shi.
+\newblock Bi-greennet: learning green’s functions by boundary integral
+  network.
+\newblock {\em Communications in Mathematics and Statistics}, 11(1):103--129,
+  2023.
+
+\bibitem{CSIAM-AM-4-275}
+Guochang Lin, Pipi Hu, Fukai Chen, Xiang Chen, Junqing Chen, Jun Wang, and
+  Zuoqiang Shi.
+\newblock Binet: Learn to solve partial differential equations with boundary
+  integral networks.
+\newblock {\em CSIAM Transactions on Applied Mathematics}, 4(2):275--305, 2023.
+
+\bibitem{lulu2021deeponet}
+Lu~Lu, Pengzhan Jin, Guofei Pang, Zhongqiang Zhang, and George Karniadakis.
+\newblock Learning nonlinear operators via deeponet based on the universal
+  approximation theorem of operators.
+\newblock {\em Nature Machine Intelligence}, 3:218--229, 03 2021.
+
+\bibitem{luna2021accelerating}
+Kevin Luna, Katherine Klymko, and Johannes~P. Blaschke.
+\newblock Accelerating gmres with deep learning in real-time, 2021.
+
+\bibitem{Nelsen2021}
+Nicholas~H. Nelsen and Andrew~M. Stuart.
+\newblock The random feature model for input-output maps between banach spaces.
+\newblock {\em SIAM Journal on Scientific Computing}, 43(5):A3212--A3243, 2021.
+
+\bibitem{mccorquodale2001cartesian}
+H.~Johansen P.~McCorquodale, P.~Colella.
+\newblock A cartesian grid embedded boundary method for the heat equation on
+  irregular domains.
+\newblock {\em Journal of Computational Physics}, 173(2):620--635, 2001.
+
+\bibitem{Patel2021}
+Ravi~G Patel, Nathaniel~A Trask, Mitchell~A Wood, and Eric~C Cyr.
+\newblock A physics-informed operator regression framework for extracting
+  data-driven continuum models.
+\newblock {\em Computer Methods in Applied Mechanics and Engineering},
+  373:113500, 2021.
+
+\bibitem{QIAN2021109908}
+Yiran Qian, Cheng Wang, and Shenggao Zhou.
+\newblock A positive and energy stable numerical scheme for the
+  poisson–nernst–planck–cahn–hilliard equations with steric
+  interactions.
+\newblock {\em Journal of Computational Physics}, 426:109908, 2021.
+
+\bibitem{Quartapelle1993NumericalSO}
+Luigi Quartapelle.
+\newblock Numerical solution of the incompressible navier-stokes equations.
+\newblock In {\em International series of numerical mathematics}, volume 113,
+  1993.
+
+\bibitem{kress1989linear}
+V.~Kozlov R.~Kress, V.~Maz'ya.
+\newblock {\em Linear integral equations}, volume~82.
+\newblock Springer, 1989.
+
+\bibitem{Raissi2019}
+M.~Raissi, P.~Perdikaris, and G.E. Karniadakis.
+\newblock Physics-informed neural networks: A deep learning framework for
+  solving forward and inverse problems involving nonlinear partial differential
+  equations.
+\newblock {\em Journal of Computational Physics}, 378:686--707, 2019.
+
+\bibitem{Raissi2019a}
+Maziar Raissi, Paris Perdikaris, and George~E Karniadakis.
+\newblock Physics-informed neural networks: A deep learning framework for
+  solving forward and inverse problems involving nonlinear partial differential
+  equations.
+\newblock {\em Journal of Computational Physics}, 378:686--707, 2019.
+
+\bibitem{raissi2019physics}
+Maziar Raissi, Paris Perdikaris, and George~E Karniadakis.
+\newblock Physics-informed neural networks: A deep learning framework for
+  solving forward and inverse problems involving nonlinear partial differential
+  equations.
+\newblock {\em Journal of Computational physics}, 378:686--707, 2019.
+
+\bibitem{sirignano2018dgm}
+Justin Sirignano and Konstantinos Spiliopoulos.
+\newblock Dgm: A deep learning algorithm for solving partial differential
+  equations.
+\newblock {\em Journal of computational physics}, 375:1339--1364, 2018.
+
+\bibitem{SUN2014445}
+Huafei Sun and David~L. Darmofal.
+\newblock An adaptive simplex cut-cell method for high-order discontinuous
+  galerkin discretizations of elliptic interface problems and conjugate heat
+  transfer problems.
+\newblock {\em Journal of Computational Physics}, 278:445--468, 2014.
+
+\bibitem{twizell1996second}
+Edward~H Twizell, Abba~B Gumel, and MA~Arigu.
+\newblock Second-order, l 0-stable methods for the heat equation with
+  time-dependent boundary conditions.
+\newblock {\em Advances in Computational Mathematics}, 6(1):333--352, 1996.
+
+\bibitem{ying2007kernel}
+C.S.~Henriquez W.~Ying.
+\newblock A kernel-free boundary integral method for elliptic boundary value
+  problems.
+\newblock {\em Journal of computational physics}, 227(2):1046--1074, 2007.
+
+\bibitem{ying2013kernel}
+W.C.~Wang W.~Ying.
+\newblock A kernel-free boundary integral method for implicitly defined
+  surfaces.
+\newblock {\em Journal of Computational Physics}, 252:606--624, 2013.
+
+\bibitem{ying2014kernel}
+W.C.~Wang W.~Ying.
+\newblock A kernel-free boundary integral method for variable coefficients
+  elliptic pdes.
+\newblock {\em Communications in Computational Physics}, 15(4):1108--1140,
+  2014.
+
+\bibitem{xie2019fourth}
+W.~Ying Y.~Xie.
+\newblock A fourth-order kernel-free boundary integral method for the modified
+  helmholtz equation.
+\newblock {\em Journal of Scientific Computing}, 78(3):1632--1658, 2019.
+
+\bibitem{xie2021cartesian}
+W.~Ying Y.~Xie, Z.~Huang.
+\newblock A cartesian grid based tailored finite point method for
+  reaction-diffusion equation on complex domains.
+\newblock {\em Computers \& Mathematics with Applications}, 97:298--313, 2021.
+
+\bibitem{YING2004591}
+Lexing Ying, George Biros, and Denis Zorin.
+\newblock A kernel-independent adaptive fast multipole algorithm in two and
+  three dimensions.
+\newblock {\em Journal of Computational Physics}, 196(2):591--626, 2004.
+
+\bibitem{YING2006247}
+Lexing Ying, George Biros, and Denis Zorin.
+\newblock A high-order 3d boundary integral equation solver for elliptic pdes
+  in smooth domains.
+\newblock {\em Journal of Computational Physics}, 219(1):247--275, 2006.
+
+\bibitem{yu2002natural}
+D.~Yu.
+\newblock {\em Natural boundary integral method and its applications}, volume
+  539.
+\newblock Springer Science \& Business Media, 2002.
+
+\bibitem{Zang_2020}
+Yaohua Zang, Gang Bao, Xiaojing Ye, and Haomin Zhou.
+\newblock Weak adversarial networks for high-dimensional partial differential
+  equations.
+\newblock {\em Journal of Computational Physics}, 411:109409, jun 2020.
+
+\bibitem{CiCP-32-299}
+Lulu Zhang, Tao Luo, Yaoyu Zhang, Weinan E, Zhi-Qin John~Xu, and Zheng Ma.
+\newblock Mod-net: A machine learning approach via model-operator-data network
+  for solving pdes.
+\newblock {\em Communications in Computational Physics}, 32(2):299--335, 2022.
+
+\bibitem{ZHAO2023116163}
+Zhongshu Zhao, Haixia Dong, and Wenjun Ying.
+\newblock Kernel free boundary integral method for 3d incompressible flow and
+  linear elasticity equations on irregular domains.
+\newblock {\em Computer Methods in Applied Mechanics and Engineering},
+  414:116163, 2023.
+
+\bibitem{zhao2023kernel}
+Zhongshu Zhao, Haixia Dong, and Wenjun Ying.
+\newblock Kernel free boundary integral method for 3d incompressible flow and
+  linear elasticity equations on irregular domains.
+\newblock {\em Computer Methods in Applied Mechanics and Engineering},
+  414:116163, 2023.
+
+\bibitem{zhou2023adi}
+Han Zhou, Minsheng Huang, and Wenjun Ying.
+\newblock Adi schemes for heat equations with irregular boundaries and
+  interfaces in 3d with applications, 2023.
+
+\bibitem{zhou2006high}
+Y.C. Zhou, S.~Zhao, and G.W.~We M.~Feig.
+\newblock High order matched interface and boundary method for elliptic
+  equations with discontinuous coefficients and singular sources.
+\newblock {\em Journal of Computational Physics}, 213(1):1--30, 2006.
+
+\bibitem{ZHOU20061}
+Y.C. Zhou, Shan Zhao, Michael Feig, and G.W. Wei.
+\newblock High order matched interface and boundary method for elliptic
+  equations with discontinuous coefficients and singular sources.
+\newblock {\em Journal of Computational Physics}, 213(1):1--30, 2006.
+
+\bibitem{ZHU2011752}
+Shengfeng Zhu, Qingbiao Wu, and Chunxiao Liu.
+\newblock Shape and topology optimization for elliptic boundary value problems
+  using a piecewise constant level set method.
+\newblock {\em Applied Numerical Mathematics}, 61(6):752--767, 2011.
+
+\end{thebibliography}

@@ -1,0 +1,12 @@
+\begin{figure*}[t!]
+    \centering
+    \includegraphics[width=\linewidth,]{figures/pdfs/colmap_study_hist.pdf}
+    \vspace{-20pt}
+    \caption{\textbf{Large-scale Robustness Study.}
+    We run FlowMap and DROID-SLAM on 420 CO3D scenes across 10 categories and plot mean ATEs with respect to CO3D's COLMAP-generated pose metadata.
+    We also re-run COLMAP on the same data.
+    Compared to DROID-SLAM, which requires ground-truth intrinsics, FlowMap produces notably lower ATEs.
+    FlowMap's ATE distribution is similar to one obtained by re-running COLMAP, with most ATEs falling under 0.005 in both cases.}
+    \label{fig:colmap_study}
+    \vspace{-5pt}
+\end{figure*}

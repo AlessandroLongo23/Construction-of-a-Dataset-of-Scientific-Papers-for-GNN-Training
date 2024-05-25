@@ -1,0 +1,10 @@
+\section{Discussion}
+
+This paper presents a second-order, single, and multiple-GPU accelerated efficient KFBI method for  elliptic boundary value problems. The equations are first transformed into a BIE, and then the unknown density in the equation is solved by GMRES iteration. Boundary and volume integral can be evaluated by equivalent interface problems to obtain the approximate solution. The procedure for solving the interface problem consists of four steps: discretization, correction, fast solving, and interpolation.
+ 
+In the single GPU algorithm, since the KFBI method itself mainly 
+focuses on the control points on the boundary and the irregular nodes near the boundary. We only need to assign  threads to them and design a fast algorithm on the GPU to solve the interface problem efficiently. In the multiple-GPU algorithm, the system of linear equations in the interface problem must be solved by the ADM method, which involves the interaction of information between the host and the device handled by MPI. 
+
+The accuracy and efficiency of the algorithm are verified from numerical examples. The method is especially suited for GPU acceleration in large-scale computations, and the multiple-GPU distributed solver scales well. Numerical examples show that single-GPU solver speeds 50-200 times than traditional CPU while the eight GPUs distributed solver yields up to $60\%$ parallel efficiency.
+
+The single/multiple-GPU accelerated KFBI method can be extended for other PDEs, such as the Maxwell and elasticity equations. Furthermore, combined with the deep learning method, the KFBI method may exhibit potential applicability in solving equations within non-smooth domains on the GPU platform.

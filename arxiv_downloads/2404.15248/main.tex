@@ -1,0 +1,140 @@
+\documentclass[runningheads,envcountsame]{llncs}
+
+
+
+% ORCID
+\makeatletter
+\RequirePackage[bookmarks,unicode,colorlinks=true]{hyperref}%
+   \def\@citecolor{blue}%
+   \def\@urlcolor{blue}%
+   \def\@linkcolor{blue}%
+\def\UrlFont{\rmfamily}
+\def\orcidID#1{\href{http://orcid.org/#1}{\protect\raisebox{-1.25pt}{\protect\includegraphics{orcid_color.eps}}}}
+\makeatother
+
+
+% Since we use the hyperref package, Springer asks us to include the following line
+% to display URLs in blue roman font according to Springer's eBook style:
+\renewcommand\UrlFont{\color{blue}\rmfamily}
+
+
+\usepackage{xcolor,colortbl}
+\usepackage{mathtools}
+\usepackage{multirow}
+\usepackage{stmaryrd}
+\usepackage{cancel}
+\usepackage{amsmath,amssymb}
+\usepackage{thmtools, thm-restate}
+\usepackage[shortlabels]{enumitem}
+\usepackage{microtype}
+\usepackage{wrapfig}
+\usepackage{pbox}
+\usepackage{marvosym}
+\usepackage{listings}
+\usepackage[ruled, vlined, linesnumbered]{algorithm2e}
+\hypersetup{
+	pdftitle={A Dependency Pair Framework for Relative Termination of Term Rewriting}, colorlinks=true, linkcolor=blue, citecolor=olive, filecolor=magenta, urlcolor=cyan
+}
+\usepackage{todonotes}
+\usepackage{placeins}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{mymatrix}
+\usepackage{nicefrac,xfrac}
+\usetikzlibrary{shapes,calc,arrows,automata,decorations.pathmorphing,backgrounds}
+\usepackage[all,cmtip]{xy}
+
+\RequirePackage{makecell}
+
+\usepackage[capitalize,nameinlink]{cleveref}
+\usepackage{IEEEtrantools}
+\renewenvironment{proof}{}{}
+\newenvironment{myproof}{
+	\noindent{\it Proof.}
+}{\qed
+	\medskip
+}
+\input{commands}
+\newcommand{\sth}{\operatorname{sth}}
+\newcommand{\sthb}{{\operatorname{sth}^{\sqcup}}}
+\newcommand{\sthbInv}[1]{{\operatorname{sth}^{\sqcup}_{#1}}}
+\DeclareMathOperator{\sign}{sign}
+\SetKwInOut{Input}{input}
+\SetKwInOut{Output}{output}
+\newcommand*{\return}{\textbf{return}\,\,}
+
+\newcommand{\mc}[2]{\multicolumn{#1}{c}{#2}}
+\definecolor{Gray}{gray}{0.85}
+\definecolor{LightCyan}{rgb}{0.88,1,1}
+
+\newcolumntype{a}{>{\columncolor{Gray}}c}
+\newcolumntype{b}{>{\columncolor{white}}c}
+
+
+ \newcommand{\makeproof}[2]{}
+ \newcommand{\paper}[1]{}
+ \newcommand{\report}[1]{#1}
+ \newcommand{\final}[1]{}
+ %\usepackage{thm-restate}
+% \newcommand{\paper}[1]{}
+%\newcommand{\report}[1]{#1}
+
+ \report{
+  \setlength{\textwidth}{127mm}
+   \setlength{\textheight}{198mm}
+ }
+ 
+
+ \newcommand{\notnew}[1]{}
+ 
+\paper{\usepackage[ hyperref=true, backend=bibtex, firstinits=true, maxbibnames=99, sortcites, style=numeric-comp ]{biblatex}
+\addbibresource{biblio.bib}}
+
+\report{\usepackage{cite}}
+
+
+\title{A Dependency Pair Framework for Relative Termination of Term Rewriting\thanks{funded by the
+    Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) - 235950644 (Project
+    GI 274/6-2) and DFG Research Training Group 2236 UnRAVeL}}
+\titlerunning{Dependency Pairs for Relative Termination}
+\author{
+    Jan-Christoph Kassing\final{$^{(\mbox{\Letter})}$}\orcidID{0009-0001-9972-2470}
+    \and Grigory Vartanyan\final{$^{(\mbox{\Letter})}$}\orcidID{0009-0009-9631-8307}
+    \and Jürgen Giesl\final{$^{(\mbox{\Letter})}$}\orcidID{0000-0003-0283-8520}}
+\institute{LuFG Informatik 2, RWTH Aachen University, Aachen, Germany}
+\authorrunning{J.-C.\ Kassing, G.\ Vartanyan, J.\ Giesl}
+
+\begin{document}
+\allowdisplaybreaks
+
+\maketitle
+
+\vspace*{-.1cm}
+
+\input{abstract}
+\input{introduction}
+\input{reltrs}
+\input{dp}
+\input{reldp}
+\input{ADPframework}
+\input{evaluation}
+
+\paper{\printbibliography}
+\report{\bibliographystyle{splncs04}
+ %\bibliography{biblio}
+ \input{main.bbl}
+}
+
+
+\report{
+  \clearpage
+
+\appendix
+\input{appendix}
+}
+\end{document}
+
+
+

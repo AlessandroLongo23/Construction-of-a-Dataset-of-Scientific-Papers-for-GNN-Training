@@ -1,0 +1,31 @@
+\section{Introduction}
+
+\label{sec:intro}
+
+Reconstructing a 3D scene from video is one of the most fundamental problems in vision and has been studied for over five decades.
+Today, essentially all state-of-the-art approaches are built on top of Structure-from-Motion (SfM) methods like COLMAP~\cite{schonberger2016structure}. These approaches extract sparse correspondences across frames, match them, discard outliers, and then optimize the correspondences' 3D positions alongside the camera parameters by minimizing reprojection error~\cite{schonberger2016structure}.
+
+This framework has delivered excellent results which underlie many present-day vision applications, and so it is unsurprising that SfM systems have remained largely unchanged in the age of deep learning, save for deep-learning-based correspondence matching \cite{sarlin2020superglue,lindenberger2023lightglue,sarlin2021pixloc,detone2018superpoint}.
+
+However, conventional SfM has a major limitation: it is not differentiable with respect to its free variables (camera poses, camera intrinsics, and per-pixel depths).
+This means that SfM acts as an isolated pre-processing step that cannot be embedded into end-to-end deep learning pipelines. 
+A differentiable, self-supervised SfM method would enable neural networks to be trained self-supervised on internet-scale data for a broad class of multi-view geometry problems.
+This would pave the way for deep-learning based 3D reconstruction and scene understanding.
+
+\input{figures/overview/figure}
+In this paper, we present FlowMap, a differentiable and surprisingly simple camera and geometry estimation method whose outputs enable photorealistic novel view synthesis. 
+FlowMap directly minimizes the difference between optical flow that is induced by a camera moving through a static 3D scene and pre-computed correspondences in the form of off-the-shelf point tracks and optical flow.
+Since FlowMap is end-to-end differentiable, it can naturally be embedded in any deep learning pipeline.
+Its loss is minimized only via gradient descent, leading to high-quality camera poses, camera intrinsics, and per-pixel depth.
+Unlike conventional SfM, which outputs sparse 3D points that are each constrained by several views, FlowMap outputs dense per-frame depth estimates.
+This is a critical advantage in downstream novel view synthesis and robotics tasks.
+Unlike prior attempts at gradient-based optimization of cameras and 3D geometry~\cite{lin2021barf,nerf--,bian2022nopenerf}, we do not treat depth, intrinsics, and camera poses as free variables.
+Rather, we introduce differentiable feed-forward estimates of each one: depth is parameterized via a neural network, pose is parameterized as the solution to a least-squares problem involving depth and flow, and camera intrinsics are parameterized using a differentiable selection based on optical flow consistency.
+In other words, FlowMap solves SfM by learning the depth network's parameters; camera poses and intrinsics are computed via analytical feed-forward modules without free parameters of their own.
+We show that this uniquely enables high-quality SfM via gradient descent while making FlowMap compatible with standard deep-learning pipelines.
+Unlike recent radiance-field bundle-adjustment baselines~\cite{bian2022nopenerf,lin2021barf}, FlowMap does not use differentiable volume rendering, and so it is significantly faster to run, generally reconstructing an object-centric $360^\circ$ scan in less than 10 minutes.
+
+Through extensive ablation studies, we show that each of FlowMap's design choices is necessary.
+On popular, real-world novel view synthesis datasets (Tanks \& Temples, Mip-NeRF 360, CO3D, and LLFF), we demonstrate that FlowMap enables photo-realistic novel view synthesis up to full $360^\circ$ trajectories using Gaussian Splatting~\cite{kerbl20233d}. 
+Gaussian Splats obtained from FlowMap reconstructions far outperform the state-of-the-art gradient-based bundle-adjustment method, NoPeNeRF~\cite{bian2022nopenerf}, and those obtained using the SLAM algorithm DROID-SLAM~\cite{teed2021droid}, even though both baselines require ground-truth intrinsics.
+Gaussian Splats obtained from FlowMap are on par with those obtained from COLMAP~\cite{schonberger2016structure}, even though FlowMap only leverages gradient descent, is fully differentiable, and represents a complete departure from conventional SfM techniques.
