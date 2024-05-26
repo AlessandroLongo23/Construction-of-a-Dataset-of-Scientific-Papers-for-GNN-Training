@@ -164,7 +164,7 @@
                                                     "leaf id": 19,
                                                     "key": "doc/body/sec1/sub1/sec2/sub1/equation4",
                                                     "block type": "equation",
-                                                    "content": "\\alpha = \\frac{2\\pi}{N_{sc}^{RB}}\\bigg((m_{0} + m_{cs} + n_{cs}(n_{s,f}^{\\mu},l+l'))\\hspace{-8pt}\\mod N_{sc}^{RB} \\bigg),     \\label{eq: alpha}"
+                                                    "content": "\\alpha = \\frac{2\\pi}{N_{sc}^RB}\\bigg((m_{0} + m_{cs} + n_{cs}(n_{s,f}^{\\mu},l+l'))\\hspace{-8pt}\\mod N_{sc}^RB \\bigg),     \\label{eq: alpha}"
                                                 },
                                                 {
                                                     "leaf id": 20,
@@ -260,7 +260,7 @@
                                                                             "leaf id": 32,
                                                                             "key": "doc/body/sec1/sub1/sec2/sub1/sub7/ssb1/ssb2/equation3",
                                                                             "block type": "equation",
-                                                                            "content": "y(k) = \\sum_{m = 0}^{N_{UE}-1}h_{m}(k)e^{j\\alpha_{m} k}\\cdot\\bar{r}_{u,v} (k) + w(k),     \\label{eq: pucch_rx_signal}"
+                                                                            "content": "y(k) = \\sum_{m = 0}^{N_UE-1}h_{m}(k)e^{j\\alpha_{m} k}\\cdot\\bar{r}_{u,v} (k) + w(k),     \\label{eq: pucch_rx_signal}"
                                                                         },
                                                                         {
                                                                             "leaf id": 33,
@@ -468,7 +468,7 @@
                                                                                                                                     "leaf id": 61,
                                                                                                                                     "key": "doc/body/sec1/sub1/sec2/sub1/sub7/ssb1/ssb2/sub5/ssb0/ssb9/sec1/sub1/sub4/ssb1/algorithm2",
                                                                                                                                     "block type": "algorithm",
-                                                                                                                                    "content": "[h]     Training dataset generation     \\label{alg: data_gen}     N_UE = {0, 1, 2, \u2026, 12} \\\\     SNR = {0, 5, 10, 15, 20} dB \\\\     Iter = {1, 2, \u2026, 1000\\} \\\\     \\ForEach{N_UE, SNR, Iter}{         n_UE = 0, 1, 2, \u2026, N_UE \\\\         \\ForEach{u \u2208n_UE}{             \\ForEach{c \u2208{1, 2, \u2026, 168}}{                 bit\\_len\\_harq \u2208{0, 1, 2} \\\\                 bit\\_len\\_sr \u2208{0, 1} \\\\                 Generate UCI bits and label (\u03b1) \\\\                 Generate Format 0 signal and place it in the resource grid\\\\                 }             OFDM Modulation of the TX OFDM grid\\\\             Transmit over channel         }         Receive combined signal from N_UE UEs (Eq.~\\ref{eq: pucch_rx_signal})\\\\         Perform OFDM Demodulation to obtain the RX grid\\\\         \\ForEach{c \u2208{1, 2, \u2026, 168}}{             Extract and save Format 0 signal \\\\         }             }"
+                                                                                                                                    "content": "[h]     Training dataset generation     \\label{alg: data_gen}     N_UE = {0, 1, 2, \u2026, 12} \\\\     = {0, 5, 10, 15, 20} dB \\\\     Iter = {1, 2, \u2026, 1000\\} \\\\     \\ForEach{N_UE, , Iter}{         n_UE = 0, 1, 2, \u2026, N_UE \\\\         \\ForEach{u \u2208n_UE}{             \\ForEach{c \u2208{1, 2, \u2026, 168}}{                 bit\\_len\\_harq \u2208{0, 1, 2} \\\\                 bit\\_len\\_sr \u2208{0, 1} \\\\                 Generate UCI bits and label (\u03b1) \\\\                 Generate Format 0 signal and place it in the resource grid\\\\                 }             OFDM Modulation of the TX OFDM grid\\\\             Transmit over channel         }         Receive combined signal from N_UE UEs (Eq.~\\ref{eq: pucch_rx_signal})\\\\         Perform OFDM Demodulation to obtain the RX grid\\\\         \\ForEach{c \u2208{1, 2, \u2026, 168}}{             Extract and save Format 0 signal \\\\         }             }"
                                                                                                                                 },
                                                                                                                                 {
                                                                                                                                     "leaf id": 62,
@@ -642,19 +642,19 @@
                                                                                                                                                                                     "leaf id": 84,
                                                                                                                                                                                     "key": "doc/body/sec1/sub1/sec2/sub1/sub7/ssb1/ssb2/sub5/ssb0/ssb9/sec1/sub1/sub4/ssb1/ssb3/sub4/ssb1/ssb5/ssb1/sub1/par4",
                                                                                                                                                                                     "block type": "par",
-                                                                                                                                                                                    "content": "Eq.~\\eqref{eq: metadata_offset} shows the offset added to the true value of the number of multiplexed UEs, N_UE to obtain N_UE which is the expected number of multiplexed UE at the receiver, as indicated by L2."
+                                                                                                                                                                                    "content": "Eq.~\\eqref{eq: metadata_offset} shows the offset added to the true value of the number of multiplexed UEs, N_UE to obtain _UE which is the expected number of multiplexed UE at the receiver, as indicated by L2."
                                                                                                                                                                                 },
                                                                                                                                                                                 {
                                                                                                                                                                                     "leaf id": 85,
                                                                                                                                                                                     "key": "doc/body/sec1/sub1/sec2/sub1/sub7/ssb1/ssb2/sub5/ssb0/ssb9/sec1/sub1/sub4/ssb1/ssb3/sub4/ssb1/ssb5/ssb1/sub1/equation5",
                                                                                                                                                                                     "block type": "equation",
-                                                                                                                                                                                    "content": "\\Tilde{N}_{UE} \\in [N_{UE}, N_{UE} + \\Delta]     \\label{eq: metadata_offset}"
+                                                                                                                                                                                    "content": "\\TildeN_UE \\in [N_UE, N_UE + \\Delta]     \\label{eq: metadata_offset}"
                                                                                                                                                                                 },
                                                                                                                                                                                 {
                                                                                                                                                                                     "leaf id": 86,
                                                                                                                                                                                     "key": "doc/body/sec1/sub1/sec2/sub1/sub7/ssb1/ssb2/sub5/ssb0/ssb9/sec1/sub1/sub4/ssb1/ssb3/sub4/ssb1/ssb5/ssb1/sub1/par6",
                                                                                                                                                                                     "block type": "par",
-                                                                                                                                                                                    "content": "Note that since the maximum number of UEs that can be multiplexed in a given resource block is 12, the value of N_UE is chosen accordingly."
+                                                                                                                                                                                    "content": "Note that since the maximum number of UEs that can be multiplexed in a given resource block is 12, the value of _UE is chosen accordingly."
                                                                                                                                                                                 },
                                                                                                                                                                                 {
                                                                                                                                                                                     "leaf id": 87,
@@ -832,7 +832,7 @@
                                                                                                                                                                                                                     "leaf id": 110,
                                                                                                                                                                                                                     "key": "doc/body/sec1/sub1/sec2/sub1/sub7/ssb1/ssb2/sub5/ssb0/ssb9/sec1/sub1/sub4/ssb1/ssb3/sub4/ssb1/ssb5/ssb1/sub1/sec7/sub1/sub2/sub10/par0",
                                                                                                                                                                                                                     "block type": "par",
-                                                                                                                                                                                                                    "content": "The confusion matrices in Figures~\\ref{fig: cm_multilabel_snr_20_off_0} and~\\ref{fig: cm_multilabel_snr_20_off_4} indicate the overall multi-label classification performance of the model. Figures~\\ref{fig: cm_multilabel_snr_20_off_0} and~\\ref{fig: cm_multilabel_snr_20_off_4} show the multi-label confusion matrix for the best (\u0394 = 0) and worst (\u0394 = 4) cases of 20dB SNR respectively, for both simulated data and hardware-captured data. Multi-label classification can be thought of as a combination of several independent binary classifiers. Diagonally dominant confusion matrices indicate that each of the binary classifiers is well-trained. For a given SNR, as \u0394 increases, the model leans more towards false positives because the model (whose 25th input is N_UE\u2208 [N_UE, N_UE + \u0394]) is trying to predict N_UE number of UEs. The value of \u0394 is always positive, meaning that the number of expected UEs, as indicated by L2, is always greater than or equal to the actual number of UEs transmitting on a given resource allocation. Hence, the model almost always over-predicts."
+                                                                                                                                                                                                                    "content": "The confusion matrices in Figures~\\ref{fig: cm_multilabel_snr_20_off_0} and~\\ref{fig: cm_multilabel_snr_20_off_4} indicate the overall multi-label classification performance of the model. Figures~\\ref{fig: cm_multilabel_snr_20_off_0} and~\\ref{fig: cm_multilabel_snr_20_off_4} show the multi-label confusion matrix for the best (\u0394 = 0) and worst (\u0394 = 4) cases of 20dB SNR respectively, for both simulated data and hardware-captured data. Multi-label classification can be thought of as a combination of several independent binary classifiers. Diagonally dominant confusion matrices indicate that each of the binary classifiers is well-trained. For a given SNR, as \u0394 increases, the model leans more towards false positives because the model (whose 25th input is _UE \u2208 [N_UE, N_UE + \u0394]) is trying to predict _UE number of UEs. The value of \u0394 is always positive, meaning that the number of expected UEs, as indicated by L2, is always greater than or equal to the actual number of UEs transmitting on a given resource allocation. Hence, the model almost always over-predicts."
                                                                                                                                                                                                                 },
                                                                                                                                                                                                                 {
                                                                                                                                                                                                                     "key": "doc/body/sec1/sub1/sec2/sub1/sub7/ssb1/ssb2/sub5/ssb0/ssb9/sec1/sub1/sub4/ssb1/ssb3/sub4/ssb1/ssb5/ssb1/sub1/sec7/sub1/sub2/sub10/figure1",
@@ -1188,91 +1188,91 @@
             "leaf id": 150,
             "key": "doc/bib0",
             "block type": "bibliography",
-            "content": "C.~Johnson, {5G {N}ew {R}adio in {B}ullets}, 1st~ed.\\hskip 1em plus 0.5em minus 0.4em\\relax Farnham, England: {Self-Published}, 2019."
+            "content": "C.~Johnson, {5G New Radio in Bullets}, 1st~ed.\\hskip 1em plus 0.5em minus 0.4em\\relax Farnham, England: {Self-Published}, 2019."
         },
         {
             "leaf id": 151,
             "key": "doc/bib1",
             "block type": "bibliography",
-            "content": "{3GPP}, ``{P}hysical {C}hannels and {M}odulation,'' {3rd Generation Partnership Project (3GPP)}, Technical Specification (TS) 38.211, 2021, version 16.5.0."
+            "content": "{3GPP}, ``Physical Channels and Modulation,'' {3rd Generation Partnership Project (3GPP)}, Technical Specification (TS) 38.211, 2021, version 16.5.0."
         },
         {
             "leaf id": 152,
             "key": "doc/bib2",
             "block type": "bibliography",
-            "content": "{3GPP\\vspace{0mm}}, ``{M}ultiplexing and {C}hannel {C}oding,'' {3rd Generation Partnership Project (3GPP)}, Technical Specification (TS) 38.212, 2021, version 16.5.0."
+            "content": "{3GPP\\vspace{0mm}}, ``Multiplexing and Channel Coding,'' {3rd Generation Partnership Project (3GPP)}, Technical Specification (TS) 38.212, 2021, version 16.5.0."
         },
         {
             "leaf id": 153,
             "key": "doc/bib3",
             "block type": "bibliography",
-            "content": "{3GPP\\vspace{0.5mm}}, ``{P}hysical {L}ayer {P}rocedures for {C}ontrol,'' {3rd Generation Partnership Project (3GPP)}, Technical Specification (TS) 38.213, 2021, version 16.5.0."
+            "content": "{3GPP\\vspace{0.5mm}}, ``Physical Layer Procedures for Control,'' {3rd Generation Partnership Project (3GPP)}, Technical Specification (TS) 38.213, 2021, version 16.5.0."
         },
         {
             "leaf id": 154,
             "key": "doc/bib4",
             "block type": "bibliography",
-            "content": "\\BIBentryALTinterwordspacing J.~Ryu. (2019) {5G/NR} - {I}nitial {A}ttach. Accessed: Oct 30, 2023. [Online]. Available: \\url{{https://www.sharetechnote.com/html/5G/5G_CallProcess_InitialAttach.html#SA_InitialAttach_OverallSignalingFlow}} \\BIBentrySTDinterwordspacing"
+            "content": "\\BIBentryALTinterwordspacing J.~Ryu. (2019) {5G/NR} - Initial Attach. Accessed: Oct 30, 2023. [Online]. Available: \\url{{https://www.sharetechnote.com/html/5G/5G_CallProcess_InitialAttach.html#SA_InitialAttach_OverallSignalingFlow}} \\BIBentrySTDinterwordspacing"
         },
         {
             "leaf id": 155,
             "key": "doc/bib5",
             "block type": "bibliography",
-            "content": "A.~K. Yerrapragada, J.~K. Sattianarayanin, A.~Gautam, and R.~K. Ganti, ``{M}achine {L}earning {D}ecoder for {5G} {NR} {PUCCH} {F}ormat 0,'' in 2023 National Conference on Communications (NCC), 2023, pp. 1--6."
+            "content": "A.~K. Yerrapragada, J.~K. Sattianarayanin, A.~Gautam, and R.~K. Ganti, ``Machine Learning Decoder for {5G} NR PUCCH Format 0,'' in 2023 National Conference on Communications (NCC), 2023, pp. 1--6."
         },
         {
             "leaf id": 156,
             "key": "doc/bib6",
             "block type": "bibliography",
-            "content": "\\BIBentryALTinterwordspacing {IIT Madras}. (2019) {5G} {T}estbed {IIT} {M}adras. Accessed: Oct 30, 2023. [Online]. Available: \\url{{http://www.5gtbiitm.in/}} \\BIBentrySTDinterwordspacing"
+            "content": "\\BIBentryALTinterwordspacing {IIT Madras}. (2019) {5G} Testbed IIT Madras. Accessed: Oct 30, 2023. [Online]. Available: \\url{{http://www.5gtbiitm.in/}} \\BIBentrySTDinterwordspacing"
         },
         {
             "leaf id": 157,
             "key": "doc/bib7",
             "block type": "bibliography",
-            "content": "L.~Kundu, G.~Xiong, and J.~Cho, ``{P}hysical {U}plink {C}ontrol {C}hannel {D}esign for {5G} {N}ew {R}adio,'' in 2018 IEEE 5G World Forum (5GWF), 2018, pp. 233--238."
+            "content": "L.~Kundu, G.~Xiong, and J.~Cho, ``Physical Uplink Control Channel Design for {5G} New Radio,'' in 2018 IEEE 5G World Forum (5GWF), 2018, pp. 233--238."
         },
         {
             "leaf id": 158,
             "key": "doc/bib8",
             "block type": "bibliography",
-            "content": "B.~Park, H.~Cheon, E.~Ko, C.~Kang, and D.~Hong, ``A blind {OFDM} synchronization algorithm based on cyclic correlation,'' IEEE Signal Processing Letters, vol.~11, no.~2, pp. 83--85, 2004."
+            "content": "B.~Park, H.~Cheon, E.~Ko, C.~Kang, and D.~Hong, ``A blind OFDM synchronization algorithm based on cyclic correlation,'' IEEE Signal Processing Letters, vol.~11, no.~2, pp. 83--85, 2004."
         },
         {
             "leaf id": 159,
             "key": "doc/bib9",
             "block type": "bibliography",
-            "content": "S.~Ma, X.~Pan, G.-H. Yang, and T.-S. Ng, ``Blind {S}ymbol {S}ynchronization {B}ased on {C}yclic {P}refix for {OFDM} {S}ystems,'' IEEE Transactions on Vehicular Technology, vol.~58, no.~4, pp. 1746--1751, 2009."
+            "content": "S.~Ma, X.~Pan, G.-H. Yang, and T.-S. Ng, ``Blind Symbol Synchronization Based on Cyclic Prefix for OFDM Systems,'' IEEE Transactions on Vehicular Technology, vol.~58, no.~4, pp. 1746--1751, 2009."
         },
         {
             "leaf id": 160,
             "key": "doc/bib10",
             "block type": "bibliography",
-            "content": "M.~Wahlqvist, R.~Larsson, and C.~Ostberg, ``{T}ime synchronization in the uplink of an {OFDM} system,'' in Proceedings of Vehicular Technology Conference-VTC, 1996."
+            "content": "M.~Wahlqvist, R.~Larsson, and C.~Ostberg, ``Time synchronization in the uplink of an OFDM system,'' in Proceedings of Vehicular Technology Conference-VTC, 1996."
         },
         {
             "leaf id": 161,
             "key": "doc/bib11",
             "block type": "bibliography",
-            "content": "Y.-H. Kim, H.~Ju, C.~B. Jeong, and M.-S. Lee, ``{P}erformance comparison of {DTX} detection schemes for {5G NR PUCCH},'' in 2020 International Conference on Information and Communication Technology Convergence (ICTC), 2020, pp. 1391--1394."
+            "content": "Y.-H. Kim, H.~Ju, C.~B. Jeong, and M.-S. Lee, ``Performance comparison of DTX detection schemes for {5G NR PUCCH},'' in 2020 International Conference on Information and Communication Technology Convergence (ICTC), 2020, pp. 1391--1394."
         },
         {
             "leaf id": 162,
             "key": "doc/bib12",
             "block type": "bibliography",
-            "content": "S.~Tadavarty and N.~K. Chaval, ``Performance {A}nalysis of {5G NR} {PUCCH} {F}ormat 0 {R}eceiver,'' in 2021 IEEE 18th India Council International Conference (INDICON), 2021, pp. 1--5."
+            "content": "S.~Tadavarty and N.~K. Chaval, ``Performance Analysis of {5G NR} PUCCH Format 0 Receiver,'' in 2021 IEEE 18th India Council International Conference (INDICON), 2021, pp. 1--5."
         },
         {
             "leaf id": 163,
             "key": "doc/bib13",
             "block type": "bibliography",
-            "content": "D.~Phan and T.~H.~P. Nguyen, ``An {E}nhanced {M}ethod to {I}mprove {S}ignal {R}eception {P}erformance for {5G NR} {P}hysical {U}plink {C}ontrol {C}hannel with {F}requency {H}opping {C}onfiguration,'' in 2021 International Conference on Advanced Technologies for Communications (ATC), 2021, pp. 13--17."
+            "content": "D.~Phan and T.~H.~P. Nguyen, ``An Enhanced Method to Improve Signal Reception Performance for {5G NR} Physical Uplink Control Channel with Frequency Hopping Configuration,'' in 2021 International Conference on Advanced Technologies for Communications (ATC), 2021, pp. 13--17."
         },
         {
             "leaf id": 164,
             "key": "doc/bib14",
             "block type": "bibliography",
-            "content": "{3GPP\\vspace{0.4mm}}, ``{S}tudy on {A}rtificial {I}ntelligence ({AI})/{M}achine {L}earning ({ML}) for {NR} {A}ir {I}nterface,'' {3rd Generation Partnership Project (3GPP)}, Technical Report (TR) 38.843, 2023, release 18."
+            "content": "{3GPP\\vspace{0.4mm}}, ``Study on Artificial Intelligence (AI)/Machine Learning (ML) for NR Air Interface,'' {3rd Generation Partnership Project (3GPP)}, Technical Report (TR) 38.843, 2023, release 18."
         },
         {
             "leaf id": 165,
@@ -1284,19 +1284,19 @@
             "leaf id": 166,
             "key": "doc/bib16",
             "block type": "bibliography",
-            "content": "{Work Group}-4, ``{O-RAN} {W}orking {G}roup 4 ({O}pen {F}ronthaul {I}nterfaces {WG}) {C}ontrol, {U}ser and {S}ynchronization {P}lane {S}pecification,'' Open RAN Alliance, {T}echnical {S}pecification (TS), 2022, version 11.00."
+            "content": "{Work Group}-4, ``{O-RAN} Working Group 4 (Open Fronthaul Interfaces WG) Control, User and Synchronization Plane Specification,'' Open RAN Alliance, Technical Specification (TS), 2022, version 11.00."
         },
         {
             "leaf id": 167,
             "key": "doc/bib17",
             "block type": "bibliography",
-            "content": "N.~Srivastava, G.~Hinton, A.~Krizhevsky, I.~Sutskever, and R.~Salakhutdinov, ``Dropout: {A} {S}imple {W}ay to {P}revent {N}eural {N}etworks from {O}verfitting,'' Journal of Machine Learning Research, vol.~15, no.~1, pp. 1929--1958, 2014."
+            "content": "N.~Srivastava, G.~Hinton, A.~Krizhevsky, I.~Sutskever, and R.~Salakhutdinov, ``Dropout: A Simple Way to Prevent Neural Networks from Overfitting,'' Journal of Machine Learning Research, vol.~15, no.~1, pp. 1929--1958, 2014."
         },
         {
             "leaf id": 168,
             "key": "doc/bib18",
             "block type": "bibliography",
-            "content": "K.~Hara, D.~Saitoh, and H.~Shouno, ``{A}nalysis of {D}ropout {L}earning {R}egarded as {E}nsemble {L}earning,'' in Artificial Neural Networks and Machine Learning \u2013 ICANN 2016, 2016, pp. 72--79."
+            "content": "K.~Hara, D.~Saitoh, and H.~Shouno, ``Analysis of Dropout Learning Regarded as Ensemble Learning,'' in Artificial Neural Networks and Machine Learning \u2013 ICANN 2016, 2016, pp. 72--79."
         },
         {
             "leaf id": 169,
@@ -1308,13 +1308,13 @@
             "leaf id": 170,
             "key": "doc/bib20",
             "block type": "bibliography",
-            "content": "S.~Lin and J.~Yu, ``Happy {B}its {B}ased {BSR} {M}echanism in {5G} {N}etworks,'' IOP Conference Series: Materials Science and Engineering, vol. 466, no.~1, 2018."
+            "content": "S.~Lin and J.~Yu, ``Happy Bits Based BSR Mechanism in {5G} Networks,'' IOP Conference Series: Materials Science and Engineering, vol. 466, no.~1, 2018."
         },
         {
             "leaf id": 171,
             "key": "doc/bib21",
             "block type": "bibliography",
-            "content": "M.~Wierse, ``{E}valuation of {X}ilinx {V}ersal {D}evice,'' Bachelor Thesis, ETH Zurich, 2023."
+            "content": "M.~Wierse, ``Evaluation of Xilinx Versal Device,'' Bachelor Thesis, ETH Zurich, 2023."
         }
     ]
 }

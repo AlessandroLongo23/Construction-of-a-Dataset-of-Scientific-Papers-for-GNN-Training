@@ -68,7 +68,7 @@
                             "leaf id": 9,
                             "key": "doc/body/sec0/par5",
                             "block type": "par",
-                            "content": "The structure of this paper is methodically organized as follows. Initially, the fundamental theory underlying the boundary integral (BI) method and the KFBI method is introduced in Section <ref>. Following this, Section <ref> elaborates on various aspects of the hybrid KFBI method in detail, which integrates operator learning techniques to enhance its efficacy and versatility. Subsequently, Section <ref> is dedicated to presenting the numerical results obtained. The concluding Section \\ref{Conclusion} engages in a comprehensive discussion regarding the merits, limitations, and prospects of the hybrid KFBI method, encapsulating the essence of this research."
+                            "content": "The structure of this paper is methodically organized as follows. Initially, the fundamental theory underlying the boundary integral (BI) method and the KFBI method is introduced in Section . Following this, Section <ref> elaborates on various aspects of the hybrid KFBI method in detail, which integrates operator learning techniques to enhance its efficacy and versatility. Subsequently, Section <ref> is dedicated to presenting the numerical results obtained. The concluding Section \\ref{Conclusion} engages in a comprehensive discussion regarding the merits, limitations, and prospects of the hybrid KFBI method, encapsulating the essence of this research."
                         },
                         {
                             "leaf id": 10,
@@ -84,13 +84,13 @@
                                     "leaf id": 11,
                                     "key": "doc/body/sec0/sec6/par0",
                                     "block type": "par",
-                                    "content": "In this section, we will expound upon a segment of knowledge pertaining to BI methods, serving as the foundation for both the KFBI method and the hybrid KFBI approach. Let \u03a9  be a bounded, two-dimensional domain of irregular and complex structure, with a boundary \u0393 = \u2202\u03a9 possessing at least C^2 continuity. The function u(\ud835\udc31) = u(x, y), where \ud835\udc31\u2208\ud835\udc11^2, remains undetermined (analogous considerations apply to \ud835\udc11^d for d > 2). The foundational principles of the BI method are discussed for the Dirichlet boundary condition. The case with the Neumann condition is addressed in Appendix \\ref{appen::neumann::condition}."
+                                    "content": "In this section, we will expound upon a segment of knowledge pertaining to BI methods, serving as the foundation for both the KFBI method and the hybrid KFBI approach. Let \u03a9  be a bounded, two-dimensional domain of irregular and complex structure, with a boundary \u0393 = \u2202\u03a9 possessing at least C^2 continuity. The function u(\ud835\udc31) = u(x, y), where \ud835\udc31\u2208^2, remains undetermined (analogous considerations apply to ^d for d > 2). The foundational principles of the BI method are discussed for the Dirichlet boundary condition. The case with the Neumann condition is addressed in Appendix \\ref{appen::neumann::condition}."
                                 },
                                 {
                                     "leaf id": 12,
                                     "key": "doc/body/sec0/sec6/par1",
                                     "block type": "par",
-                                    "content": "As shown in Fig.\\,<ref>, to solve the boundary value problems on domain \u03a9 by the BI method, we first embed the irregular domain \u03a9 into a larger rectangle domain \u212c and denote by \u03a9^c = \u212c\\\u03a9 the complement of the domain \u03a9 in \u212c."
+                                    "content": "As shown in Fig.\\,<ref>, to solve the boundary value problems on domain \u03a9 by the BI method, we first embed the irregular domain \u03a9 into a larger rectangle domain  and denote by \u03a9^c = \\\u03a9 the complement of the domain \u03a9 in ."
                                 },
                                 {
                                     "leaf id": 13,
@@ -102,25 +102,25 @@
                                     "leaf id": 14,
                                     "key": "doc/body/sec0/sec6/par3",
                                     "block type": "par",
-                                    "content": "Suppose \u2112 is an elliptic operator, consider the elliptic equation"
+                                    "content": "Suppose  is an elliptic operator, consider the elliptic equation"
                                 },
                                 {
                                     "leaf id": 15,
                                     "key": "doc/body/sec0/sec6/equation4",
                                     "block type": "equation",
-                                    "content": "(\\mathcal{L} u)(\\mathbf{x}) =f(\\mathbf{x}), \\quad \\text { in } \\Omega,     \\label{one_GPU:PDE}"
+                                    "content": "(\\mathcalL u)(\\mathbf{x}) =f(\\mathbf{x}), \\quad \\text { in } \\Omega,     \\label{one_GPU:PDE}"
                                 },
                                 {
                                     "leaf id": 16,
                                     "key": "doc/body/sec0/sec6/par5",
                                     "block type": "par",
-                                    "content": "where \u2112 = \u2207\u00b7\u03c3(\ud835\udc31) \u2207-\u03ba(\ud835\udc31) with the diffusion tensor \u03c3 and the reaction coefficient \u03ba\u2265 0 which are at least continuously differentiable over the regular domain \u212c \\cite{ying2007kernel}. Subject to pure Dirichlet boundary condition"
+                                    "content": "where = \u2207\u00b7\u03c3(\ud835\udc31) \u2207-\u03ba(\ud835\udc31) with the diffusion tensor \u03c3 and the reaction coefficient \u03ba\u2265 0 which are at least continuously differentiable over the regular domain  \\cite{ying2007kernel}. Subject to pure Dirichlet boundary condition"
                                 },
                                 {
                                     "leaf id": 17,
                                     "key": "doc/body/sec0/sec6/equation6",
                                     "block type": "equation",
-                                    "content": "u(\\mathbf{x}) = g_{D}(\\mathbf{x}), \\quad  on \\Gamma,     \\label{one_GPU:PDE_D_BC}"
+                                    "content": "u(\\mathbf{x}) = g_D(\\mathbf{x}), \\quad  on \\Gamma,     \\label{one_GPU:PDE_D_BC}"
                                 },
                                 {
                                     "leaf id": 18,
@@ -132,13 +132,13 @@
                                     "leaf id": 19,
                                     "key": "doc/body/sec0/sec6/par8",
                                     "block type": "par",
-                                    "content": "According to the standard BI method \\cite{aliabadi2011boundary,yu2002natural}, let G(\ud835\udc31, \ud835\udc32) be Green's function on the rectangle \u212c associated with the elliptic PDE (<ref>), which satisfies for any \ud835\udc32\u2208\u212c,"
+                                    "content": "According to the standard BI method \\cite{aliabadi2011boundary,yu2002natural}, let G(\ud835\udc31, \ud835\udc32) be Green's function on the rectangle  associated with the elliptic PDE (<ref>), which satisfies for any \ud835\udc32\u2208,"
                                 },
                                 {
                                     "leaf id": 20,
                                     "key": "doc/body/sec0/sec6/align9",
                                     "block type": "align",
-                                    "content": "\\mathcal{L} G(\\mathbf{x}, \\mathbf{y}) &= \\delta(\\mathbf{x}-\\mathbf{y}), \\quad \\mathbf{x} \\in \\mathcal{B}, \\\\ G(\\mathbf{x}, \\mathbf{y}) &=0, \\quad \\mathbf{x} \\in \\partial \\mathcal{B},"
+                                    "content": "\\mathcalL G(\\mathbf{x}, \\mathbf{y}) &= \\delta(\\mathbf{x}-\\mathbf{y}), \\quad \\mathbf{x} \\in \\mathcalB, \\\\ G(\\mathbf{x}, \\mathbf{y}) &=0, \\quad \\mathbf{x} \\in \\partial \\mathcalB,"
                                 },
                                 {
                                     "leaf id": 21,
@@ -162,7 +162,7 @@
                                     "leaf id": 24,
                                     "key": "doc/body/sec0/sec6/equation13",
                                     "block type": "equation",
-                                    "content": "\\frac{1}{2}\\varphi (\\mathbf{x}) + (W\\varphi)(\\mathbf{x}) + (Yf)(\\mathbf{x}) = g_{D}(\\mathbf{x}), \\quad \\mathbf{x} \\in \\Gamma. \\label{one_GPU:second_fredholm}"
+                                    "content": "\\frac{1}{2}\\varphi (\\mathbf{x}) + (W\\varphi)(\\mathbf{x}) + (Yf)(\\mathbf{x}) = g_D(\\mathbf{x}), \\quad \\mathbf{x} \\in \\Gamma. \\label{one_GPU:second_fredholm}"
                                 },
                                 {
                                     "leaf id": 25,
@@ -192,13 +192,13 @@
                                     "leaf id": 29,
                                     "key": "doc/body/sec0/sec6/align18",
                                     "block type": "align",
-                                    "content": "\\widetilde{W}(\\varphi)(\\mathbf{x}) & := (\\frac{1}{2} \\mathcal{I} + W)(\\varphi)(\\mathbf{x}), \\quad \\mathbf{x} \\in \\Gamma,"
+                                    "content": "\\widetildeW(\\varphi)(\\mathbf{x}) & := (\\frac{1}{2} \\mathcalI + W)(\\varphi)(\\mathbf{x}), \\quad \\mathbf{x} \\in \\Gamma,"
                                 },
                                 {
                                     "leaf id": 30,
                                     "key": "doc/body/sec0/sec6/par19",
                                     "block type": "par",
-                                    "content": "where \u2110 is the identity operator."
+                                    "content": "where  is the identity operator."
                                 },
                                 {
                                     "leaf id": 31,
@@ -210,13 +210,13 @@
                                     "leaf id": 32,
                                     "key": "doc/body/sec0/sec6/align21",
                                     "block type": "align",
-                                    "content": "u_{k}^{+}(\\mathbf{x}_{m}) = \\widetilde{W}\\varphi_{k}(\\mathbf{x}_{m}), & \\quad m = 1, 2, \\cdots, M, \\label{one_GPU:richardson1}"
+                                    "content": "u_{k}^{+}(\\mathbf{x}_{m}) = \\widetildeW\\varphi_{k}(\\mathbf{x}_{m}), & \\quad m = 1, 2, \\cdots, M, \\label{one_GPU:richardson1}"
                                 },
                                 {
                                     "leaf id": 33,
                                     "key": "doc/body/sec0/sec6/align22",
                                     "block type": "align",
-                                    "content": "\\varphi_{k+1}(\\mathbf{x}_{m}) = \\varphi_{k}(\\mathbf{x}_{m}) + 2 \\gamma [\\widetilde{g_{D}}(\\mathbf{x}_{m}) - u_{k}^{+}(\\mathbf{x}_{m})], & \\quad m = 1, 2, \\cdots, M, \\label{one_GPU:richardson2}"
+                                    "content": "\\varphi_{k+1}(\\mathbf{x}_{m}) = \\varphi_{k}(\\mathbf{x}_{m}) + 2 \\gamma [\\widetilde{g_D}(\\mathbf{x}_{m}) - u_{k}^{+}(\\mathbf{x}_{m})], & \\quad m = 1, 2, \\cdots, M, \\label{one_GPU:richardson2}"
                                 },
                                 {
                                     "key": "doc/body/sec0/sec6/par23",
@@ -284,13 +284,13 @@
                                                     "leaf id": 42,
                                                     "key": "doc/body/sec0/sec6/sec28/sub1/par0",
                                                     "block type": "par",
-                                                    "content": "In the KFBI method, the boundary integral equation \\eqref{one_GPU:second_fredholm} is resolved iteratively, utilizing methods like Richardson iteration. Given that equation \\eqref{one_GPU:second_fredholm} remains non-singular for a general symmetric positive definite diffusion tensor \u03c3 and non-negative reaction coefficient k \\cite{ying2007kernel}, the solution operator \ud835\udcae_\u2112, \u03a9 can be defined as mapping the modified boundary value g_D to the density \u03c6. The encapsulation of the right-hand side \\(f\\) of equation \\eqref{one_GPU:PDE} and the boundary condition g_D into g_D enables the learning of \ud835\udcae_\u2112, \u03a9, thereby facilitating the resolution of a wide range of equations with variable \\(f\\) and assorted boundary conditions."
+                                                    "content": "In the KFBI method, the boundary integral equation \\eqref{one_GPU:second_fredholm} is resolved iteratively, utilizing methods like Richardson iteration. Given that equation \\eqref{one_GPU:second_fredholm} remains non-singular for a general symmetric positive definite diffusion tensor \u03c3 and non-negative reaction coefficient k \\cite{ying2007kernel}, the solution operator _, \u03a9 can be defined as mapping the modified boundary value g_D to the density \u03c6. The encapsulation of the right-hand side \\(f\\) of equation \\eqref{one_GPU:PDE} and the boundary condition g_D into g_D enables the learning of _, \u03a9, thereby facilitating the resolution of a wide range of equations with variable \\(f\\) and assorted boundary conditions."
                                                 },
                                                 {
                                                     "leaf id": 43,
                                                     "key": "doc/body/sec0/sec6/sec28/sub1/remark1",
                                                     "block type": "remark",
-                                                    "content": "\\label{rmk_linearity} For fixed elliptic operator \u2112 and domain \u03a9 satisfying the requirement of the KFBI method, the operator \ud835\udcae_\u2112, \u03a9 between the function spaces defined above is linear."
+                                                    "content": "\\label{rmk_linearity} For fixed elliptic operator  and domain \u03a9 satisfying the requirement of the KFBI method, the operator _, \u03a9 between the function spaces defined above is linear."
                                                 },
                                                 {
                                                     "leaf id": 44,
@@ -306,37 +306,37 @@
                                                             "leaf id": 45,
                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/par0",
                                                             "block type": "par",
-                                                            "content": "A natural and appealing wish is to obtain the explicit or computationally convenient form of the operator \ud835\udcae_\u2112, \u03a9, which was nearly impossible in the past. With advanced deep learning and related technologies, models based on deep neural networks now offer the potential to realize this vision. In other words, we can use neural networks to approximate this operator and aim to obtain the best network parameters through training on data for the most effective approximation."
+                                                            "content": "A natural and appealing wish is to obtain the explicit or computationally convenient form of the operator _, \u03a9, which was nearly impossible in the past. With advanced deep learning and related technologies, models based on deep neural networks now offer the potential to realize this vision. In other words, we can use neural networks to approximate this operator and aim to obtain the best network parameters through training on data for the most effective approximation."
                                                         },
                                                         {
                                                             "leaf id": 46,
                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/par1",
                                                             "block type": "par",
-                                                            "content": "We provide a detailed exposition of the methodology tailored for \u03a9\u2208\u211d^2, noting that analogous approaches apply to higher-dimensional contexts. Recall that in the standard KFBI method, we can discretize the larger rectangle \u212c using a rectangular grid with cell numbers I \u00d7 J, for which \u212c\u2283\u03a9 and \u2202\u03a9\u2229\u2202\u212c=\u2205. The discretization of the density \u03c6 is achieved through periodic cubic splines, facilitating the straightforward and efficient computation of density derivatives. More precisely, we presuppose the existence of M quasi-uniformly spaced nodes on the boundary \u2202\u03a9. Note the meanings of \\(I\\), \\(J\\), and \\(M\\) will be consistently employed throughout the subsequent sections of this paper. To better integrate with the standard KFBI method, a natural and effective approach for operator learning is to set the input and output of the neural network to be the values of g_D and \u03c6 at the M points on the closed curve \u2202\u03a9, respectively, when using network \ud835\udca9_\u2112, \u03a9 to approximate the operator \ud835\udcae_\u2112, \u03a9. In addition, we facilitate the utilization of the standard KFBI method for the generation of multiple datasets (which will be elaborated upon in detail in subsection \\ref{Strategies for Generating Training Data}), expediently employed in the training of the neural network."
+                                                            "content": "We provide a detailed exposition of the methodology tailored for \u03a9\u2208^2, noting that analogous approaches apply to higher-dimensional contexts. Recall that in the standard KFBI method, we can discretize the larger rectangle  using a rectangular grid with cell numbers I \u00d7 J, for which \u2283\u03a9 and \u2202\u03a9\u2229\u2202=\u2205. The discretization of the density \u03c6 is achieved through periodic cubic splines, facilitating the straightforward and efficient computation of density derivatives. More precisely, we presuppose the existence of M quasi-uniformly spaced nodes on the boundary \u2202\u03a9. Note the meanings of \\(I\\), \\(J\\), and \\(M\\) will be consistently employed throughout the subsequent sections of this paper. To better integrate with the standard KFBI method, a natural and effective approach for operator learning is to set the input and output of the neural network to be the values of g_D and \u03c6 at the M points on the closed curve \u2202\u03a9, respectively, when using network _, \u03a9 to approximate the operator _, \u03a9. In addition, we facilitate the utilization of the standard KFBI method for the generation of multiple datasets (which will be elaborated upon in detail in subsection \\ref{Strategies for Generating Training Data}), expediently employed in the training of the neural network."
                                                         },
                                                         {
                                                             "leaf id": 47,
                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/par2",
                                                             "block type": "par",
-                                                            "content": "If the neural network \ud835\udca9_\u2112, \u03a9 can be successfully trained and possesses high approximation accuracy and strong generalization, it will significantly aid in solving equations \u2112 u = f in the fixed domain \\(\\Omega\\) with free inhomogeneous term f and Dirichlet-type boundary conditions u|_\u2202\u03a9 = g^D by KFBI method (the role of the model, or its specific application, will be discussed in detail in next section \\ref{Hybrid KFBI Method Based on Trained Models}). The network \ud835\udca9_\u2112, \u03a9 has already been demonstrated to yield satisfactory results in subsequent numerical examples."
+                                                            "content": "If the neural network _, \u03a9 can be successfully trained and possesses high approximation accuracy and strong generalization, it will significantly aid in solving equations u = f in the fixed domain \\(\\Omega\\) with free inhomogeneous term f and Dirichlet-type boundary conditions u|_\u2202\u03a9 = g^D by KFBI method (the role of the model, or its specific application, will be discussed in detail in next section \\ref{Hybrid KFBI Method Based on Trained Models}). The network _, \u03a9 has already been demonstrated to yield satisfactory results in subsequent numerical examples."
                                                         },
                                                         {
                                                             "leaf id": 48,
                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/par3",
                                                             "block type": "par",
-                                                            "content": "However, a more ambitious idea is to explore incorporating entire or partial boundary information yielded by boundary curves into the network, enabling it to operate beyond the constraints of solving equations solely within a fixed region. Considering the difficulties posed by arbitrarily closed curves are incalculable, a more common approach is considering a class of parametric curves. Specifically, \ud835\udcae_\u2112 can be considered as a solution operator for equation 1/2\u03c6+\ud835\udca6\u03c6 =  g_D (caused by the fixed operator \u2112) on a class of \u2202\u03a9, which is mapping (\u2202\u03a9, g_D) to the density \u03c6. Thus, we aspire for a neural network \ud835\udca9_\u2112, that can simultaneously intake boundary position information of \u2202\u03a9 and values about the function g_D, yielding output values about density \u03c6. Denote by {\ud835\udc31_\ud835\udc22} _i = 1^M the point set in the KFBI method which are used to discrete the boundary \u2202\u03a9. Recall that in the previous network \ud835\udca9_\u2112, \u03a9, we configured the input of this network as (g_D(\ud835\udc31_1), g_D(\ud835\udc31_2), ..., g_D(\ud835\udc31_\ud835\udc0c))^T and the output as (\u03c6(\ud835\udc31_1), \u03c6(\ud835\udc31_2), ..., \u03c6(\ud835\udc31_\ud835\udc0c))^T. Returning to the discussion about network \ud835\udca9_\u2112, the required input should be divided into two parts. One component consists of the values of the function g_D, which remains consistent with the above, while the other component should incorporate spatial location information yielded by a class of boundary, such as ellipses with different major and minor axes. Here, we propose two methods for incorporating boundary position information into the network. One approach is to directly incorporate the positional coordinates into the network, that is, setting the network's input as (\ud835\udc31_1, \ud835\udc31_2, ..., \ud835\udc31_\ud835\udc0c)^T and (g_D(\ud835\udc31_1), g_D(\ud835\udc31_2), ..., g_D(\ud835\udc31_\ud835\udc0c))^T, where \ud835\udc31_\ud835\udc22 = (x_i, 1, x_i, 2)^T is the coordinate for all i = 1, 2, ..., N. Another approach involves adding only the parameters of the boundary curve to the network's input. For instance, the ellipses with parameters of axial lengths r_a, r_b can be defined as \u2202\u03a9_{r_a, r_b} := {(x, y): (x - x_0)^2/r_a^2 + (y - y_0)^2/r_b^2 = 1}, here x_0 and y_0 are constant numbers. Then the input of the network \ud835\udca9_\u2112 can be designed as (r_a, r_b)^T and (g_D(\ud835\udc31_1), g_D(\ud835\udc31_2), ..., g_D(\ud835\udc31_\ud835\udc0c))^T. While it is true that various methods can be suggested, these two approaches have been observed to be effective and computationally efficient in subsequent numerical experiments, especially the first approach that was able to include more information."
+                                                            "content": "However, a more ambitious idea is to explore incorporating entire or partial boundary information yielded by boundary curves into the network, enabling it to operate beyond the constraints of solving equations solely within a fixed region. Considering the difficulties posed by arbitrarily closed curves are incalculable, a more common approach is considering a class of parametric curves. Specifically, _ can be considered as a solution operator for equation 1/2\u03c6+\u03c6 =  g_D (caused by the fixed operator ) on a class of \u2202\u03a9, which is mapping (\u2202\u03a9, g_D) to the density \u03c6. Thus, we aspire for a neural network _, that can simultaneously intake boundary position information of \u2202\u03a9 and values about the function g_D, yielding output values about density \u03c6. Denote by {\ud835\udc31_\ud835\udc22} _i = 1^M the point set in the KFBI method which are used to discrete the boundary \u2202\u03a9. Recall that in the previous network _, \u03a9, we configured the input of this network as (g_D(\ud835\udc31_1), g_D(\ud835\udc31_2), ..., g_D(\ud835\udc31_\ud835\udc0c))^T and the output as (\u03c6(\ud835\udc31_1), \u03c6(\ud835\udc31_2), ..., \u03c6(\ud835\udc31_\ud835\udc0c))^T. Returning to the discussion about network _, the required input should be divided into two parts. One component consists of the values of the function g_D, which remains consistent with the above, while the other component should incorporate spatial location information yielded by a class of boundary, such as ellipses with different major and minor axes. Here, we propose two methods for incorporating boundary position information into the network. One approach is to directly incorporate the positional coordinates into the network, that is, setting the network's input as (\ud835\udc31_1, \ud835\udc31_2, ..., \ud835\udc31_\ud835\udc0c)^T and (g_D(\ud835\udc31_1), g_D(\ud835\udc31_2), ..., g_D(\ud835\udc31_\ud835\udc0c))^T, where \ud835\udc31_\ud835\udc22 = (x_i, 1, x_i, 2)^T is the coordinate for all i = 1, 2, ..., N. Another approach involves adding only the parameters of the boundary curve to the network's input. For instance, the ellipses with parameters of axial lengths r_a, r_b can be defined as \u2202\u03a9_{r_a, r_b} := {(x, y): (x - x_0)^2/r_a^2 + (y - y_0)^2/r_b^2 = 1}, here x_0 and y_0 are constant numbers. Then the input of the network _ can be designed as (r_a, r_b)^T and (g_D(\ud835\udc31_1), g_D(\ud835\udc31_2), ..., g_D(\ud835\udc31_\ud835\udc0c))^T. While it is true that various methods can be suggested, these two approaches have been observed to be effective and computationally efficient in subsequent numerical experiments, especially the first approach that was able to include more information."
                                                         },
                                                         {
                                                             "leaf id": 49,
                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/par4",
                                                             "block type": "par",
-                                                            "content": "The parametric PDEs that we aim to investigate not only manifests in the ability to represent the domain boundaries parametrically but also occasionally entails solving equations induced by a parametric operator \u2112, such as the Helmholtz equations and screened Poisson equations. In this case, we need a neural network \ud835\udca9_\u03a9 to approximate the solution operator \ud835\udcae_\u03a9, which is defined as mapping (\u2112, g_D) to the density \u03c6 for a class of parameterized elliptic operator \u2112. Similar to the preceding discussion, we can incorporate the parameters of operator \u2112 into the network's input. Specifically, if the operator \u2112 has parameters k_1, k_2, ..., k_n, we can set the input of networks \ud835\udca9_\u03a9 as (k_1, k_2, ..., k_n)^T and (g_D(\ud835\udc31_1), g_D(\ud835\udc31_2), ..., g_D(\ud835\udc31_\ud835\udc0c))^T."
+                                                            "content": "The parametric PDEs that we aim to investigate not only manifests in the ability to represent the domain boundaries parametrically but also occasionally entails solving equations induced by a parametric operator , such as the Helmholtz equations and screened Poisson equations. In this case, we need a neural network _\u03a9 to approximate the solution operator _\u03a9, which is defined as mapping (, g_D) to the density \u03c6 for a class of parameterized elliptic operator . Similar to the preceding discussion, we can incorporate the parameters of operator  into the network's input. Specifically, if the operator  has parameters k_1, k_2, ..., k_n, we can set the input of networks _\u03a9 as (k_1, k_2, ..., k_n)^T and (g_D(\ud835\udc31_1), g_D(\ud835\udc31_2), ..., g_D(\ud835\udc31_\ud835\udc0c))^T."
                                                         },
                                                         {
                                                             "leaf id": 50,
                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/remark5",
                                                             "block type": "remark",
-                                                            "content": "Our ultimate goal is to incorporate both the parameters of the equation operator \u2112 and the parameters of the boundary \u2202\u03a9 into the network \ud835\udca9, which is used to approximate the solution operator \ud835\udcae of equation 1/2\u03c6+\ud835\udca6\u03c6 =  g_D caused by the parametric operator \u2112 and on a class of parametric \u2202\u03a9. Incorporating the operator's parameters \u2112 and the boundary \u2202\u03a9 parameters into the network does not pose new technical challenges. However, concerns arise regarding the difficulties in generating sufficient data and potential issues related to the increased size of network parameters that might result in slower inference speeds. The subsequent numerical experimentation section will elucidate the attempts we made, while this could become a significant topic for consideration in our future exploration."
+                                                            "content": "Our ultimate goal is to incorporate both the parameters of the equation operator  and the parameters of the boundary \u2202\u03a9 into the network , which is used to approximate the solution operator  of equation 1/2\u03c6+\u03c6 =  g_D caused by the parametric operator  and on a class of parametric \u2202\u03a9. Incorporating the operator's parameters  and the boundary \u2202\u03a9 parameters into the network does not pose new technical challenges. However, concerns arise regarding the difficulties in generating sufficient data and potential issues related to the increased size of network parameters that might result in slower inference speeds. The subsequent numerical experimentation section will elucidate the attempts we made, while this could become a significant topic for consideration in our future exploration."
                                                         },
                                                         {
                                                             "leaf id": 51,
@@ -380,13 +380,13 @@
                                                                             "leaf id": 56,
                                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/par0",
                                                                             "block type": "par",
-                                                                            "content": "Initially, with fixed \u2112 and \u03a9, focus is placed on data generation for training the operator \ud835\udca9_\u2112, \u03a9. For fixed operator \u2112 and domain \u03a9, an exact solution to equation \\eqref{one_GPU:PDE} can be constructed, and the KFBI method can be executed based on the inhomogeneous term f and boundary condition g_D derived from this exact solution. This process yields a pair (g_D, \u03c6), assuming the KFBI method's minor error is negligible. Specifically, pairs (g_D(\ud835\udc31_1), ..., g_D(\ud835\udc31_\ud835\udc0c))^T and (\u03c6(\ud835\udc31_1), ..., \u03c6(\ud835\udc31_\ud835\udc0c))^T are obtained from each exact solution. To train the linear neural network \ud835\udca9_\u2112, \u03a9 effectively, more than M linearly independent vectors g_D should be added to the dataset. Consequently, constructing over M exact solutions for equation \\eqref{one_GPU:PDE} to obtain corresponding sets of g_D and \u03c6 becomes necessary. Typically, M can be chosen as a power of 2, like 128, 256, 512, etc. In general, to get a more generalized model, we will make the size of the data set much larger than M although a training data set with M linearly independent pairs is enough due to the linearity of real operators and the networks. For instance, several thousand pairs of g_D and \u03c6 are enough to train the model when M = 128."
+                                                                            "content": "Initially, with fixed  and \u03a9, focus is placed on data generation for training the operator _, \u03a9. For fixed operator  and domain \u03a9, an exact solution to equation \\eqref{one_GPU:PDE} can be constructed, and the KFBI method can be executed based on the inhomogeneous term f and boundary condition g_D derived from this exact solution. This process yields a pair (g_D, \u03c6), assuming the KFBI method's minor error is negligible. Specifically, pairs (g_D(\ud835\udc31_1), ..., g_D(\ud835\udc31_\ud835\udc0c))^T and (\u03c6(\ud835\udc31_1), ..., \u03c6(\ud835\udc31_\ud835\udc0c))^T are obtained from each exact solution. To train the linear neural network _, \u03a9 effectively, more than M linearly independent vectors g_D should be added to the dataset. Consequently, constructing over M exact solutions for equation \\eqref{one_GPU:PDE} to obtain corresponding sets of g_D and \u03c6 becomes necessary. Typically, M can be chosen as a power of 2, like 128, 256, 512, etc. In general, to get a more generalized model, we will make the size of the data set much larger than M although a training data set with M linearly independent pairs is enough due to the linearity of real operators and the networks. For instance, several thousand pairs of g_D and \u03c6 are enough to train the model when M = 128."
                                                                         },
                                                                         {
                                                                             "leaf id": 57,
                                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/par1",
                                                                             "block type": "par",
-                                                                            "content": "For training \ud835\udca9_\u2112, \ud835\udca9_\u03a9 or \ud835\udca9, sufficient data sets are generated in the same manner for each parameter pair \\((p_1, p_2, ..., p_N)\\). These parameter pairs \\((p_1, p_2, ..., p_N)\\) are uniformly sampled within the given parameter space to ensure adequate data volume."
+                                                                            "content": "For training _, _\u03a9 or , sufficient data sets are generated in the same manner for each parameter pair \\((p_1, p_2, ..., p_N)\\). These parameter pairs \\((p_1, p_2, ..., p_N)\\) are uniformly sampled within the given parameter space to ensure adequate data volume."
                                                                         },
                                                                         {
                                                                             "leaf id": 58,
@@ -402,19 +402,19 @@
                                                                                     "leaf id": 59,
                                                                                     "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/par0",
                                                                                     "block type": "par",
-                                                                                    "content": "For fixed \u2112 and \u03a9, training the parameters \u0398_\u2112, \u03a9 of operator \ud835\udca9_\u2112, \u03a9 with dataset { (g_D_i, \u03c6_i) }_i = 1^n gained from the strategy mentioned above by using this trivial loss function:"
+                                                                                    "content": "For fixed  and \u03a9, training the parameters \u0398_, \u03a9 of operator _, \u03a9 with dataset { (g_D_i, \u03c6_i) }_i = 1^n gained from the strategy mentioned above by using this trivial loss function:"
                                                                                 },
                                                                                 {
                                                                                     "leaf id": 60,
                                                                                     "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/equation1",
                                                                                     "block type": "equation",
-                                                                                    "content": "\\label{eq3.2.3.1} loss(\\Theta_{\\mathcal{L}, \\Omega}) = \\sum_{i = 1}^n || \\mathcal{N}_{\\mathcal{L}, \\Omega}(\\widetilde{g_D}_i; \\Theta_{\\mathcal{L}, \\Omega}) - \\varphi_i ||_2^2,"
+                                                                                    "content": "\\label{eq3.2.3.1} loss(\\Theta_{\\mathcalL, \\Omega}) = \\sum_{i = 1}^n || \\mathcalN_{\\mathcalL, \\Omega}(\\widetilde{g_D}_i; \\Theta_{\\mathcalL, \\Omega}) - \\varphi_i ||_2^2,"
                                                                                 },
                                                                                 {
                                                                                     "leaf id": 61,
                                                                                     "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/par2",
                                                                                     "block type": "par",
-                                                                                    "content": "where g_D_i = (g_D_i(\ud835\udc31_1), g_D_i(\ud835\udc31_2), ..., g_D_i(\ud835\udc31_\ud835\udc0c))^T, \u03c6_i = (\u03c6_i(\ud835\udc31_1), \u03c6_i(\ud835\udc31_2), ..., \u03c6_i(\ud835\udc31_\ud835\udc0c))^T are the i-th pair of data and ||\u00b7||_2 is used to represent the 2-norm of vectors. For training \ud835\udca9_\u2112, \ud835\udca9_\u03a9 or \ud835\udca9, similar loss functions are utilized."
+                                                                                    "content": "where g_D_i = (g_D_i(\ud835\udc31_1), g_D_i(\ud835\udc31_2), ..., g_D_i(\ud835\udc31_\ud835\udc0c))^T, \u03c6_i = (\u03c6_i(\ud835\udc31_1), \u03c6_i(\ud835\udc31_2), ..., \u03c6_i(\ud835\udc31_\ud835\udc0c))^T are the i-th pair of data and ||\u00b7||_2 is used to represent the 2-norm of vectors. For training _, _\u03a9 or , similar loss functions are utilized."
                                                                                 },
                                                                                 {
                                                                                     "leaf id": 62,
@@ -436,7 +436,7 @@
                                                                                             "leaf id": 64,
                                                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/par0",
                                                                                             "block type": "par",
-                                                                                            "content": "This section introduces the significant role offered by the trained neural networks \ud835\udca9_\u2112, \u03a9 (or \ud835\udca9_\u2112, \ud835\udca9_\u03a9, \ud835\udca9). The networks are designed to infer the density function \u03c6. Consequently, the inference results from these neural networks can be directly utilized as density functions \u03c6, which are then integrated into the formula \\eqref{One_GPU:fredholm_dirichlet}. Solving the corresponding interface problem \\eqref{one_GPU:interface} yields the solution to the PDE \\eqref{one_GPU:PDE}. Alternatively, the output \u03c6 from the neural networks can be used as the initial value in the iterative KFBI method, reducing the number of iterations and saving time. These approaches are subsequently referred to as Strategies 1 and 2, respectively. Regarding the utilization of neural network inference results as initial values, there exists lots of related works, each demonstrating commendable efficacy within their respective applications, such as \\cite{luna2021accelerating}."
+                                                                                            "content": "This section introduces the significant role offered by the trained neural networks _, \u03a9 (or _, _\u03a9, ). The networks are designed to infer the density function \u03c6. Consequently, the inference results from these neural networks can be directly utilized as density functions \u03c6, which are then integrated into the formula \\eqref{One_GPU:fredholm_dirichlet}. Solving the corresponding interface problem \\eqref{one_GPU:interface} yields the solution to the PDE \\eqref{one_GPU:PDE}. Alternatively, the output \u03c6 from the neural networks can be used as the initial value in the iterative KFBI method, reducing the number of iterations and saving time. These approaches are subsequently referred to as Strategies 1 and 2, respectively. Regarding the utilization of neural network inference results as initial values, there exists lots of related works, each demonstrating commendable efficacy within their respective applications, such as \\cite{luna2021accelerating}."
                                                                                         },
                                                                                         {
                                                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/remark1",
@@ -446,7 +446,7 @@
                                                                                                     "leaf id": 65,
                                                                                                     "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/remark1/itemize0",
                                                                                                     "block type": "itemize",
-                                                                                                    "content": "\\item The two methods above have been observed to significantly reduce iteration count and time compared to the standard KFBI method. Being quite radical, the first method effectively reduces the KFBI method's iteration count to one, thereby considerably decreasing the running time, though at some cost to precision (relative to the KFBI method). However, as will be demonstrated in subsequent numerical experiments, this approach still achieves reasonably good numerical accuracy. The second method offers a balanced approach, acting as a preprocessing solution for setting the initial value in the KFBI iterative process. This method reduces a portion of the iteration count without compromising precision (relative to the KFBI method). Both methods are proven feasible and valuable through the upcoming numerical experiments. Additionally, due to the relatively simple architecture of the neural network, the time required for a single inference is negligible. \\item The operator learning approach based on the KFBI method, as proposed in this work, effectively reduces the problem's dimensionality. When addressing equation \\eqref{one_GPU:PDE} for d=2, the input and output of the operator \ud835\udcae_\u2112, \u03a9 (or \ud835\udcae_\u2112, \ud835\udcae_\u03a9), approximated by the neural network \ud835\udca9_\u2112, \u03a9 (or \ud835\udca9_\u2112, \ud835\udca9_\u03a9), are functions on a one-dimensional manifold, and thus are naturally represented by vectors with M components. This aspect of the method significantly aids in solving elliptic PDEs on \u03a9 by learning mappings between functions defined on \\(\\partial \\Omega\\), highlighting a significant advantage of the approach.  \\item The training of the neural network \ud835\udca9_\u2112, \u03a9 enables the solution of a wide range of equations \\eqref{one_GPU:PDE}, where both the non-homogeneous term f and boundary conditions g_D can vary. The applicability of neural networks \ud835\udca9_\u2112, \ud835\udca9_\u03a9 and \ud835\udca9 is further extended, demonstrating their powerful range, which stands as another distinctive feature of this method. These models are pivotal in solving PDEs, as evidenced in Section \\ref{Numerical Experiments}.  \\item The proposed method can be synergistically combined with other techniques, such as multigrid solvers and GPU acceleration, to enhance solution efficiency."
+                                                                                                    "content": "\\item The two methods above have been observed to significantly reduce iteration count and time compared to the standard KFBI method. Being quite radical, the first method effectively reduces the KFBI method's iteration count to one, thereby considerably decreasing the running time, though at some cost to precision (relative to the KFBI method). However, as will be demonstrated in subsequent numerical experiments, this approach still achieves reasonably good numerical accuracy. The second method offers a balanced approach, acting as a preprocessing solution for setting the initial value in the KFBI iterative process. This method reduces a portion of the iteration count without compromising precision (relative to the KFBI method). Both methods are proven feasible and valuable through the upcoming numerical experiments. Additionally, due to the relatively simple architecture of the neural network, the time required for a single inference is negligible. \\item The operator learning approach based on the KFBI method, as proposed in this work, effectively reduces the problem's dimensionality. When addressing equation \\eqref{one_GPU:PDE} for d=2, the input and output of the operator _, \u03a9 (or _, _\u03a9), approximated by the neural network _, \u03a9 (or _, _\u03a9), are functions on a one-dimensional manifold, and thus are naturally represented by vectors with M components. This aspect of the method significantly aids in solving elliptic PDEs on \u03a9 by learning mappings between functions defined on \\(\\partial \\Omega\\), highlighting a significant advantage of the approach.  \\item The training of the neural network _, \u03a9 enables the solution of a wide range of equations \\eqref{one_GPU:PDE}, where both the non-homogeneous term f and boundary conditions g_D can vary. The applicability of neural networks _, _\u03a9 and  is further extended, demonstrating their powerful range, which stands as another distinctive feature of this method. These models are pivotal in solving PDEs, as evidenced in Section \\ref{Numerical Experiments}.  \\item The proposed method can be synergistically combined with other techniques, such as multigrid solvers and GPU acceleration, to enhance solution efficiency."
                                                                                                 }
                                                                                             ]
                                                                                         },
@@ -496,7 +496,7 @@
                                                                                                                     "leaf id": 71,
                                                                                                                     "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/sec2/sub2/ssb0/par0",
                                                                                                                     "block type": "par",
-                                                                                                                    "content": "We focus on the post-training operations of the neural network model, excluding the training process, and this principle is consistently applied thereafter. In this context, the Laplace equation is considered with \u2112 = \u0394 and the fixed homogeneous term f = 0. The boundary \u2202\u03a9 is defined by the set {(x, y): x = c_x + r_a cos(\u03b1) cos(t) - r_b sin(\u03b1) sin(t), y = c_y + r_a sin(\u03b1) cos(t) - r_b cos(\u03b1) sin(t)  t \u2208 [0, 2\u03c0)}, where the ellipse, characterized as rotated, is defined by c_x = 0.2, c_y = 0.4, r_a = 1.0, r_b = 0.5, and \u03b1 = \u03c0/7. The bounding box \u212c for the interface problem is established as \u212c = [-1.2,1.2] \u00d7 [-1.2,1.2]. The number of discrete points along the boundary curve M is determined as M = max{I, J}. To demonstrate the network's generalization capability, the exact solutions chosen for testing in the following sections were not included in the training data, a principle consistently upheld in subsequent examples."
+                                                                                                                    "content": "We focus on the post-training operations of the neural network model, excluding the training process, and this principle is consistently applied thereafter. In this context, the Laplace equation is considered with = \u0394 and the fixed homogeneous term f = 0. The boundary \u2202\u03a9 is defined by the set {(x, y): x = c_x + r_a cos(\u03b1) cos(t) - r_b sin(\u03b1) sin(t), y = c_y + r_a sin(\u03b1) cos(t) - r_b cos(\u03b1) sin(t)  t \u2208 [0, 2\u03c0)}, where the ellipse, characterized as rotated, is defined by c_x = 0.2, c_y = 0.4, r_a = 1.0, r_b = 0.5, and \u03b1 = \u03c0/7. The bounding box  for the interface problem is established as = [-1.2,1.2] \u00d7 [-1.2,1.2]. The number of discrete points along the boundary curve M is determined as M = max{I, J}. To demonstrate the network's generalization capability, the exact solutions chosen for testing in the following sections were not included in the training data, a principle consistently upheld in subsequent examples."
                                                                                                                 },
                                                                                                                 {
                                                                                                                     "leaf id": 72,
@@ -608,13 +608,13 @@
                                                                                                                             "leaf id": 84,
                                                                                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/sec2/sub2/ssb0/ssb9/par3",
                                                                                                                             "block type": "par",
-                                                                                                                            "content": "The application of the KFBI method to solve the Stokes equation, as elaborated in the paper by Dong et al. \\cite {dong2023second}, needs to be delved into here. This equation's solution (\ud835\udc2e, p) is expressible in terms of volume and boundary integrals, involving the density function \u03c6, which solves the corresponding boundary integral equation. The right-hand side of this boundary integral equation is denoted as \\(\\widetilde{\\mathbf{g_D}}\\). Terms such as \ud835\udcae_\u2112, \u03a9 (or \ud835\udcae_\u2112, \ud835\udcae_\u03a9) and \ud835\udca9_\u2112, \u03a9 (or \ud835\udca9_\u2112, \ud835\udca9_\u03a9) retain their previous meanings. Notably, \ud835\udc20_\ud835\udc03 becomes a vector function \\((\\widetilde{g_D}^{(1)},\\widetilde{g_D}^{(2)})\\), and a similar transformation applies to \\(\\mathbf{\\varphi}\\). However, this does not introduce complications in the network's construction and training, as a tensor of size (M, 2) can be conveniently reshaped into a vector of length 2M. For this example, the absolute tolerance for iteration is set at 1E-8, and the initial value in the standard KFBI is \u03c6_0 = (0, 0)^T."
+                                                                                                                            "content": "The application of the KFBI method to solve the Stokes equation, as elaborated in the paper by Dong et al. \\cite {dong2023second}, needs to be delved into here. This equation's solution (\ud835\udc2e, p) is expressible in terms of volume and boundary integrals, involving the density function \u03c6, which solves the corresponding boundary integral equation. The right-hand side of this boundary integral equation is denoted as \\(\\widetilde{\\mathbf{g_D}}\\). Terms such as _, \u03a9 (or _, _\u03a9) and _, \u03a9 (or _, _\u03a9) retain their previous meanings. Notably, \ud835\udc20_\ud835\udc03 becomes a vector function \\((\\widetilde{g_D}^{(1)},\\widetilde{g_D}^{(2)})\\), and a similar transformation applies to \\(\\mathbf{\\varphi}\\). However, this does not introduce complications in the network's construction and training, as a tensor of size (M, 2) can be conveniently reshaped into a vector of length 2M. For this example, the absolute tolerance for iteration is set at 1E-8, and the initial value in the standard KFBI is \u03c6_0 = (0, 0)^T."
                                                                                                                         },
                                                                                                                         {
                                                                                                                             "leaf id": 85,
                                                                                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/sec2/sub2/ssb0/ssb9/par4",
                                                                                                                             "block type": "par",
-                                                                                                                            "content": "The boundary \u2202\u03a9 = {(x, y): x = c_x + r_a cos(\u03b1) cos(t) - r_b sin(\u03b1) sin(t)  y = c_y + r_a sin(\u03b1) cos(t) - r_b cos(\u03b1) sin(t)  t \u2208 [0, 2\u03c0) } with c_x = 0, c_y = 0, r_a = 1.0, r_b = 0.6 and \u03b1 = 0 such that \u03a9 is an ellipse. The bounding box \u212c for the interface problem is set to be \u212c = [-1.2,1.2] \u00d7 [-1.2,1.2]. The discrete number of the boundary curve M is set as M = max{I, J}."
+                                                                                                                            "content": "The boundary \u2202\u03a9 = {(x, y): x = c_x + r_a cos(\u03b1) cos(t) - r_b sin(\u03b1) sin(t)  y = c_y + r_a sin(\u03b1) cos(t) - r_b cos(\u03b1) sin(t)  t \u2208 [0, 2\u03c0) } with c_x = 0, c_y = 0, r_a = 1.0, r_b = 0.6 and \u03b1 = 0 such that \u03a9 is an ellipse. The bounding box  for the interface problem is set to be = [-1.2,1.2] \u00d7 [-1.2,1.2]. The discrete number of the boundary curve M is set as M = max{I, J}."
                                                                                                                         },
                                                                                                                         {
                                                                                                                             "leaf id": 86,
@@ -736,7 +736,7 @@
                                                                                                                                             "leaf id": 101,
                                                                                                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/sec2/sub2/ssb0/ssb9/sub9/ssb0/par0",
                                                                                                                                             "block type": "par",
-                                                                                                                                            "content": "In this section, \u2112 is designated as \u0394, with f being freely chosen as the inhomogeneous term of the Poisson equation. The boundary defining the star-shaped domain \u03a9 is characterized by \u2202\u03a9 = {(x, y): x = (1.0 - S_c + S_c cos(S_m t)) cos(t), y = (1.0 - S_c + S_c cos(S_m t)) sin(t)  t \u2208 [0, 2\u03c0) }, where S_m \u2208{3, 4, 5, 6} and S_c \u2208 [0.05, 0.20] are parameters included in the input part of networks. The bounding box \u212c for the interface problem is established as \u212c = [-1.5,1.5] \u00d7 [-1.5,1.5]. The discrete number of points along the boundary curve M is determined as M = max{I, J}, with I = J = 256 in this example."
+                                                                                                                                            "content": "In this section,  is designated as \u0394, with f being freely chosen as the inhomogeneous term of the Poisson equation. The boundary defining the star-shaped domain \u03a9 is characterized by \u2202\u03a9 = {(x, y): x = (1.0 - S_c + S_c cos(S_m t)) cos(t), y = (1.0 - S_c + S_c cos(S_m t)) sin(t)  t \u2208 [0, 2\u03c0) }, where S_m \u2208{3, 4, 5, 6} and S_c \u2208 [0.05, 0.20] are parameters included in the input part of networks. The bounding box  for the interface problem is established as = [-1.5,1.5] \u00d7 [-1.5,1.5]. The discrete number of points along the boundary curve M is determined as M = max{I, J}, with I = J = 256 in this example."
                                                                                                                                         },
                                                                                                                                         {
                                                                                                                                             "leaf id": 102,
@@ -782,7 +782,7 @@
                                                                                                                                                     "leaf id": 107,
                                                                                                                                                     "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/sec2/sub2/ssb0/ssb9/sub9/ssb0/ssb5/par0",
                                                                                                                                                     "block type": "par",
-                                                                                                                                                    "content": "In this section, Stokes Equation \\eqref{eq4.1.3.1} is considered. The boundary defining the elliptic domain \u03a9 is described by \u2202\u03a9 = {(x, y): x = r_a cos(t), y = r_b sin(t)  t \u2208 [0, 2\u03c0) }, with parameters r_a, r_b \u2208 [0.8, 1.2]. The coordinates on parameterized \u2202\u03a9 appear in the networks. The bounding box \u212c for the interface problem is established as \u212c = [-1.5,1.5] \u00d7 [-1.5,1.5]. The discrete number of points along the boundary curve M is set at M = max{I, J}, with I = J = 128 in this example, and the absolute tolerance for iteration is fixed at 1E-8."
+                                                                                                                                                    "content": "In this section, Stokes Equation \\eqref{eq4.1.3.1} is considered. The boundary defining the elliptic domain \u03a9 is described by \u2202\u03a9 = {(x, y): x = r_a cos(t), y = r_b sin(t)  t \u2208 [0, 2\u03c0) }, with parameters r_a, r_b \u2208 [0.8, 1.2]. The coordinates on parameterized \u2202\u03a9 appear in the networks. The bounding box  for the interface problem is established as = [-1.5,1.5] \u00d7 [-1.5,1.5]. The discrete number of points along the boundary curve M is set at M = max{I, J}, with I = J = 128 in this example, and the absolute tolerance for iteration is fixed at 1E-8."
                                                                                                                                                 },
                                                                                                                                                 {
                                                                                                                                                     "leaf id": 108,
@@ -834,7 +834,7 @@
                                                                                                                                                             "leaf id": 113,
                                                                                                                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/sec2/sub2/ssb0/ssb9/sub9/ssb0/ssb5/ssb5/par0",
                                                                                                                                                             "block type": "par",
-                                                                                                                                                            "content": "In this section, the operator \u2112 is defined as \u0394 - \u03ba\u2110, where \u2110 represents the identity operator, and \u03ba > 0 serves as the coefficient for the modified Helmholtz equation. The domain \u03a9 is designated a dumbbell-shaped area, as depicted in figure \\ref{fig:Modified Helmholtz}. Specifically, \u2202\u03a9 is a periodic C^2 cubic spline curve, passing through control points detailed in Appendix \\ref{appen:Control Points for Dumbbel-Shaped Domain}. The coefficient \u03ba, ranging between 1 and 5, is integrated into the input part of the networks. The bounding box \u212c for the interface problem is established as \u212c = [-1.2,1.2] \u00d7 [-1.2,1.2]. The number of discrete points along the boundary curve M is set at M = 92, with I = J = 256 in this example. The absolute tolerance for iteration is fixed at 1E-8, and the initial value for the standard KFBI method is set as \u03c6_0 = (0, 0)^T."
+                                                                                                                                                            "content": "In this section, the operator  is defined as \u0394 - \u03ba, where  represents the identity operator, and \u03ba > 0 serves as the coefficient for the modified Helmholtz equation. The domain \u03a9 is designated a dumbbell-shaped area, as depicted in figure \\ref{fig:Modified Helmholtz}. Specifically, \u2202\u03a9 is a periodic C^2 cubic spline curve, passing through control points detailed in Appendix \\ref{appen:Control Points for Dumbbel-Shaped Domain}. The coefficient \u03ba, ranging between 1 and 5, is integrated into the input part of the networks. The bounding box  for the interface problem is established as = [-1.2,1.2] \u00d7 [-1.2,1.2]. The number of discrete points along the boundary curve M is set at M = 92, with I = J = 256 in this example. The absolute tolerance for iteration is fixed at 1E-8, and the initial value for the standard KFBI method is set as \u03c6_0 = (0, 0)^T."
                                                                                                                                                         },
                                                                                                                                                         {
                                                                                                                                                             "leaf id": 114,
@@ -1010,19 +1010,19 @@
                                                                                                                                                                             "leaf id": 132,
                                                                                                                                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/sec2/sub2/ssb0/ssb9/sub9/ssb0/ssb5/ssb5/ssb5/ssb5/equation3",
                                                                                                                                                                             "block type": "equation",
-                                                                                                                                                                            "content": "\\label{eq4.3.2.2} \\boldsymbol{\\sigma}(\\mathbf{u})=\\lambda \\nabla \\cdot \\mathbf{u} \\mathbf{I}+2 \\mu \\boldsymbol{\\epsilon}(\\mathbf{u}),"
+                                                                                                                                                                            "content": "\\label{eq4.3.2.2} \\boldsymbol{\\sigma}(\\mathbf{u})=\\lambda \\nabla \\cdot \\mathbf{u} \\mathbfI+2 \\mu \\boldsymbol{\\epsilon}(\\mathbf{u}),"
                                                                                                                                                                         },
                                                                                                                                                                         {
                                                                                                                                                                             "leaf id": 133,
                                                                                                                                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/sec2/sub2/ssb0/ssb9/sub9/ssb0/ssb5/ssb5/ssb5/ssb5/par4",
                                                                                                                                                                             "block type": "par",
-                                                                                                                                                                            "content": "here \u03f5(\ud835\udc2e)=1/2(\u2207\ud835\udc2e+(\u2207\ud835\udc2e)^T) is the linear strain tensor, \ud835\udc08 is the 2 \u00d7 2 identity matrix. Lae coefficients \u03bb and \u03bc is given by Young's modulus E and Poisson's ratio \u03bd:"
+                                                                                                                                                                            "content": "here \u03f5(\ud835\udc2e)=1/2(\u2207\ud835\udc2e+(\u2207\ud835\udc2e)^T) is the linear strain tensor,  is the 2 \u00d7 2 identity matrix. Lae coefficients \u03bb and \u03bc is given by Young's modulus E and Poisson's ratio \u03bd:"
                                                                                                                                                                         },
                                                                                                                                                                         {
                                                                                                                                                                             "leaf id": 134,
                                                                                                                                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/sec2/sub2/ssb0/ssb9/sub9/ssb0/ssb5/ssb5/ssb5/ssb5/equation*5",
                                                                                                                                                                             "block type": "equation*",
-                                                                                                                                                                            "content": "\\lambda=\\frac{E \\nu}{(1+\\nu)(1-2 \\nu)}, \\quad \\mu=\\frac{E}{2(1+\\nu)}."
+                                                                                                                                                                            "content": "\\lambda=\\frac{E \\nu}{(1+\\nu)(1-2 \\nu)}, \\quad \\mu=\\fracE{2(1+\\nu)}."
                                                                                                                                                                         },
                                                                                                                                                                         {
                                                                                                                                                                             "leaf id": 135,
@@ -1040,13 +1040,13 @@
                                                                                                                                                                             "leaf id": 137,
                                                                                                                                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/sec2/sub2/ssb0/ssb9/sub9/ssb0/ssb5/ssb5/ssb5/ssb5/par8",
                                                                                                                                                                             "block type": "par",
-                                                                                                                                                                            "content": "The solution of the Naiver equation using the KFBI method, as detailed in the paper by Zhao et al.\\cite{zhao2023kernel}, needs not to be elaborated upon here; readers interested in its implementation may consult the referenced paper. It is important to note that the solution \ud835\udc2e to this equation can be expressed through volume and boundary integrals, with the density function \u03c6 resolving the corresponding boundary integral equation. In this work, the right-hand side of this boundary integral equation is continued to be denoted as \ud835\udc20_\ud835\udc03, derived from both \ud835\udc20_\ud835\udc03 and \ud835\udc1f. Terms such as \ud835\udcae_\u2112, \u03a9 and \ud835\udca9_\u2112, \u03a9 retain their previously established meanings."
+                                                                                                                                                                            "content": "The solution of the Naiver equation using the KFBI method, as detailed in the paper by Zhao et al.\\cite{zhao2023kernel}, needs not to be elaborated upon here; readers interested in its implementation may consult the referenced paper. It is important to note that the solution \ud835\udc2e to this equation can be expressed through volume and boundary integrals, with the density function \u03c6 resolving the corresponding boundary integral equation. In this work, the right-hand side of this boundary integral equation is continued to be denoted as \ud835\udc20_\ud835\udc03, derived from both \ud835\udc20_\ud835\udc03 and \ud835\udc1f. Terms such as _, \u03a9 and _, \u03a9 retain their previously established meanings."
                                                                                                                                                                         },
                                                                                                                                                                         {
                                                                                                                                                                             "leaf id": 138,
                                                                                                                                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/sec2/sub2/ssb0/ssb9/sub9/ssb0/ssb5/ssb5/ssb5/ssb5/par9",
                                                                                                                                                                             "block type": "par",
-                                                                                                                                                                            "content": "This section defines the domain \u03a9 as a heart-shaped area, as illustrated in figure \\ref{fig:naiver2D}. \u2202\u03a9 is a periodic C^2 cubic spline curve, traversing control points detailed in Appendix \\ref{appen:Control Points for Heart-Shaped Domain}. The parameters E \u2208 [10^8, 10^9] and \u03bd\u2208 [0.35, 0.45] are integrated into the input part of networks, covering the typical range of Young's modulus and Poisson's ratio for most plastics. The bounding box \u212c for the interface problem is established as \u212c = [-1.2,1.2] \u00d7 [-1.2,1.2]. The number of discrete points on the boundary curve M is set at M = max{I, J} with I = J = 256. Absolute tolerance for iteration is determined to be 1E-8, and the initial value for the standard KFBI method is set as \u03d5_0 = (0, 0)^T."
+                                                                                                                                                                            "content": "This section defines the domain \u03a9 as a heart-shaped area, as illustrated in figure \\ref{fig:naiver2D}. \u2202\u03a9 is a periodic C^2 cubic spline curve, traversing control points detailed in Appendix \\ref{appen:Control Points for Heart-Shaped Domain}. The parameters E \u2208 [10^8, 10^9] and \u03bd\u2208 [0.35, 0.45] are integrated into the input part of networks, covering the typical range of Young's modulus and Poisson's ratio for most plastics. The bounding box  for the interface problem is established as = [-1.2,1.2] \u00d7 [-1.2,1.2]. The number of discrete points on the boundary curve M is set at M = max{I, J} with I = J = 256. Absolute tolerance for iteration is determined to be 1E-8, and the initial value for the standard KFBI method is set as \u03d5_0 = (0, 0)^T."
                                                                                                                                                                         },
                                                                                                                                                                         {
                                                                                                                                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/sec2/sub2/ssb0/ssb9/sub9/ssb0/ssb5/ssb5/ssb5/ssb5/remark10",
@@ -1134,7 +1134,7 @@
                                                                                                                                                                                     "leaf id": 147,
                                                                                                                                                                                     "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/sec2/sub2/ssb0/ssb9/sub9/ssb0/ssb5/ssb5/ssb5/ssb5/ssb15/par0",
                                                                                                                                                                                     "block type": "par",
-                                                                                                                                                                                    "content": "In this section, we continue to focus on the Naiver equations presented in \\ref{Naiver Equations}. We allow for perturbations to be applied to certain control points, and incorporate the coordinates of these control points into the input of the model (note that \u2202\u03a9 is obtained through cubic spline interpolation of the control points). Specifically in this experience, the original domain is a heart-shaped domain whose boundary is obtained through cubic spline interpolation of 28 control points, identical to the boundary described in \\ref{Naiver Equations}. We allow for perturbations in the x-direction of the 1st, 14th, and 27th control points, with distances of \u03f5_1, \u03f5_14, \u03f5_27, respectively. Here \u03f5_i \u2208 [-0.15, 0.15], i \u2208{1, 14, 27}. As previously mentioned, the coordinates of these three points will be included in the model's input along with the values of \ud835\udc20_\ud835\udc03 at M  discrete points. The equation parameters E and \u03bd are fixed at 1E9 and 0.45, respectively. The bounding box \u212c for the interface problem is established as \u212c = [-1.5,1.5] \u00d7 [-1.5,1.5]. The number of discrete points on the boundary curve M is set at M = max{I, J} with I = J = 128. Absolute tolerance for iteration is determined to be 1E-8, and the initial value for the standard KFBI method is set as \u03d5_0 = (0, 0)^T."
+                                                                                                                                                                                    "content": "In this section, we continue to focus on the Naiver equations presented in \\ref{Naiver Equations}. We allow for perturbations to be applied to certain control points, and incorporate the coordinates of these control points into the input of the model (note that \u2202\u03a9 is obtained through cubic spline interpolation of the control points). Specifically in this experience, the original domain is a heart-shaped domain whose boundary is obtained through cubic spline interpolation of 28 control points, identical to the boundary described in \\ref{Naiver Equations}. We allow for perturbations in the x-direction of the 1st, 14th, and 27th control points, with distances of \u03f5_1, \u03f5_14, \u03f5_27, respectively. Here \u03f5_i \u2208 [-0.15, 0.15], i \u2208{1, 14, 27}. As previously mentioned, the coordinates of these three points will be included in the model's input along with the values of \ud835\udc20_\ud835\udc03 at M  discrete points. The equation parameters E and \u03bd are fixed at 1E9 and 0.45, respectively. The bounding box  for the interface problem is established as = [-1.5,1.5] \u00d7 [-1.5,1.5]. The number of discrete points on the boundary curve M is set at M = max{I, J} with I = J = 128. Absolute tolerance for iteration is determined to be 1E-8, and the initial value for the standard KFBI method is set as \u03d5_0 = (0, 0)^T."
                                                                                                                                                                                 },
                                                                                                                                                                                 {
                                                                                                                                                                                     "leaf id": 148,
@@ -1284,7 +1284,7 @@
                                                                                                                                                                                                             "leaf id": 164,
                                                                                                                                                                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/sec2/sub2/ssb0/ssb9/sub9/ssb0/ssb5/ssb5/ssb5/ssb5/ssb15/sec5/sec5/equation1/array0",
                                                                                                                                                                                                             "block type": "array",
-                                                                                                                                                                                                            "content": "{ll}       \\mathcal{L} v(\\mathbf{x)} =\\mathcal{F}(\\mathbf{x}), & \\mathbf{x} \\text { in } \\Omega \\cup \\Omega^{c}, \\\\         {[v(\\mathbf{x})]=\\Phi(\\mathbf{x}),} & \\mathbf{x} \\text { on } \\Gamma, \\\\         {\\left[\\partial_{\\mathbf{n}}v(\\mathbf{x})\\right]=0,} & \\mathbf{x}\\text { on } \\Gamma, \\\\         v(\\mathbf{x})=0, & \\mathbf{x} \\text { on } \\partial \\mathcal{B}."
+                                                                                                                                                                                                            "content": "{ll}       \\mathcalL v(\\mathbf{x)} =\\mathcalF(\\mathbf{x}), & \\mathbf{x} \\text { in } \\Omega \\cup \\Omega^{c}, \\\\         {[v(\\mathbf{x})]=\\Phi(\\mathbf{x}),} & \\mathbf{x} \\text { on } \\Gamma, \\\\         {\\left[\\partial_{\\mathbf{n}}v(\\mathbf{x})\\right]=0,} & \\mathbf{x}\\text { on } \\Gamma, \\\\         v(\\mathbf{x})=0, & \\mathbf{x} \\text { on } \\partial \\mathcalB."
                                                                                                                                                                                                         }
                                                                                                                                                                                                     ]
                                                                                                                                                                                                 },
@@ -1296,7 +1296,7 @@
                                                                                                                                                                                                             "leaf id": 165,
                                                                                                                                                                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/sec2/sub2/ssb0/ssb9/sub9/ssb0/ssb5/ssb5/ssb5/ssb5/ssb15/sec5/sec5/table2/par0",
                                                                                                                                                                                                             "block type": "par",
-                                                                                                                                                                                                            "content": "[ht]     \\centering     \\begin{tabular}{c|c|c}     \\hline \\text { Integral } & \u2131 & \u03a6  \\\\     \\hline     W\u03c6 & \u2131 = 0 & \u03a6=\u03c6  \\\\     Yf & \u2131= f\u0303(\ud835\udc31) = f(\ud835\udc31)     in \u03a9\n 0     in \u03a9^c & \u03a6 = 0 \\\\"
+                                                                                                                                                                                                            "content": "[ht]     \\centering     \\begin{tabular}{c|c|c}     \\hline \\text { Integral } &  & \u03a6  \\\\     \\hline     W\u03c6 & = 0 & \u03a6=\u03c6  \\\\     Yf & = f\u0303(\ud835\udc31) = f(\ud835\udc31)     in \u03a9\n 0     in \u03a9^c & \u03a6 = 0 \\\\"
                                                                                                                                                                                                         }
                                                                                                                                                                                                     ]
                                                                                                                                                                                                 },
@@ -1320,13 +1320,13 @@
                                                                                                                                                                                                             "leaf id": 168,
                                                                                                                                                                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/sec2/sub2/ssb0/ssb9/sub9/ssb0/ssb5/ssb5/ssb5/ssb5/ssb15/sec5/sec5/sec4/par0",
                                                                                                                                                                                                             "block type": "par",
-                                                                                                                                                                                                            "content": "The BI method and KFBI method for elliptic PDEs with Dirichlet BVP has been introduced in Section \\ref{BIM} and Appendix \\ref{introduce_kfbi}. In this section, the elliptic equation (<ref>) subject to Neumann boundary condition is considered as:"
+                                                                                                                                                                                                            "content": "The BI method and KFBI method for elliptic PDEs with Dirichlet BVP has been introduced in Section \\refBIM and Appendix \\ref{introduce_kfbi}. In this section, the elliptic equation (<ref>) subject to Neumann boundary condition is considered as:"
                                                                                                                                                                                                         },
                                                                                                                                                                                                         {
                                                                                                                                                                                                             "leaf id": 169,
                                                                                                                                                                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/sec2/sub2/ssb0/ssb9/sub9/ssb0/ssb5/ssb5/ssb5/ssb5/ssb15/sec5/sec5/sec4/equation1",
                                                                                                                                                                                                             "block type": "equation",
-                                                                                                                                                                                                            "content": "\\partial_{\\mathbf{n}}u(\\mathbf{x}) = g_{N}(\\mathbf{x}). \\label{Neumann}"
+                                                                                                                                                                                                            "content": "\\partial_{\\mathbf{n}}u(\\mathbf{x}) = g_N(\\mathbf{x}). \\label{Neumann}"
                                                                                                                                                                                                         },
                                                                                                                                                                                                         {
                                                                                                                                                                                                             "leaf id": 170,
@@ -1350,7 +1350,7 @@
                                                                                                                                                                                                             "leaf id": 173,
                                                                                                                                                                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/sec2/sub2/ssb0/ssb9/sub9/ssb0/ssb5/ssb5/ssb5/ssb5/ssb15/sec5/sec5/sec4/equation5",
                                                                                                                                                                                                             "block type": "equation",
-                                                                                                                                                                                                            "content": "\\frac{1}{2}\\psi(\\mathbf{x}) -\\partial_{\\mathbf{n}} (S\\psi)(\\mathbf{x}) + \\partial_{\\mathbf{n}} (Yf)(\\mathbf{x}) = g_{N}(\\mathbf{x}).     \\label{fredholm:neumann}"
+                                                                                                                                                                                                            "content": "\\frac{1}{2}\\psi(\\mathbf{x}) -\\partial_{\\mathbf{n}} (S\\psi)(\\mathbf{x}) + \\partial_{\\mathbf{n}} (Yf)(\\mathbf{x}) = g_N(\\mathbf{x}).     \\label{fredholm:neumann}"
                                                                                                                                                                                                         },
                                                                                                                                                                                                         {
                                                                                                                                                                                                             "leaf id": 174,
@@ -1374,7 +1374,7 @@
                                                                                                                                                                                                             "leaf id": 177,
                                                                                                                                                                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/sec2/sub2/ssb0/ssb9/sub9/ssb0/ssb5/ssb5/ssb5/ssb5/ssb15/sec5/sec5/sec4/align9",
                                                                                                                                                                                                             "block type": "align",
-                                                                                                                                                                                                            "content": "\\partial_{\\mathbf{n}} u_{k}^{+}(\\mathbf{x}_{m}) = \\frac{1}{2}\\psi(\\mathbf{x}_{m}) - \\partial_{\\mathbf{n}}(S\\psi)(\\mathbf{x}_{m}), & \\quad m = 1, 2, \\cdots, M,\\label{neumann:richardson1} \\\\     \\psi_{k+1}(\\mathbf{x}_{m}) = \\psi_{k}(\\mathbf{x}_{m}) + \\gamma[\\hat{g}_{N}(\\mathbf{x}_{m}) - \\partial_{\\mathbf{n}} u_{k}^{+}(\\mathbf{x}_{m})], & \\quad m = 1, 2, \\cdots, M, \\label{neumann:richardson2}"
+                                                                                                                                                                                                            "content": "\\partial_{\\mathbf{n}} u_{k}^{+}(\\mathbf{x}_{m}) = \\frac{1}{2}\\psi(\\mathbf{x}_{m}) - \\partial_{\\mathbf{n}}(S\\psi)(\\mathbf{x}_{m}), & \\quad m = 1, 2, \\cdots, M,\\label{neumann:richardson1} \\\\     \\psi_{k+1}(\\mathbf{x}_{m}) = \\psi_{k}(\\mathbf{x}_{m}) + \\gamma[\\hat{g}_N(\\mathbf{x}_{m}) - \\partial_{\\mathbf{n}} u_{k}^{+}(\\mathbf{x}_{m})], & \\quad m = 1, 2, \\cdots, M, \\label{neumann:richardson2}"
                                                                                                                                                                                                         },
                                                                                                                                                                                                         {
                                                                                                                                                                                                             "leaf id": 178,
@@ -1480,7 +1480,7 @@
                                                                                                                                                                                                                     "leaf id": 190,
                                                                                                                                                                                                                     "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/sec2/sub2/ssb0/ssb9/sub9/ssb0/ssb5/ssb5/ssb5/ssb5/ssb15/sec5/sec5/sec4/sec16/par4",
                                                                                                                                                                                                                     "block type": "par",
-                                                                                                                                                                                                                    "content": "The first step is partitioning box \u212c into Cartesian grid and dividing the Cartesian grid nodes into regular and irregular nodes according to the boundary location. We define the irregular point if the line between the point and one of its adjacent grid nodes cross the boundary. A grid point which is not irregular is defined as a regular point."
+                                                                                                                                                                                                                    "content": "The first step is partitioning box  into Cartesian grid and dividing the Cartesian grid nodes into regular and irregular nodes according to the boundary location. We define the irregular point if the line between the point and one of its adjacent grid nodes cross the boundary. A grid point which is not irregular is defined as a regular point."
                                                                                                                                                                                                                 },
                                                                                                                                                                                                                 {
                                                                                                                                                                                                                     "leaf id": 191,
@@ -1496,7 +1496,7 @@
                                                                                                                                                                                                                             "leaf id": 192,
                                                                                                                                                                                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/sec2/sub2/ssb0/ssb9/sub9/ssb0/ssb5/ssb5/ssb5/ssb5/ssb15/sec5/sec5/sec4/sec16/sub5/par0",
                                                                                                                                                                                                                             "block type": "par",
-                                                                                                                                                                                                                            "content": "The KFBI method involves making corrections to each irregular node. Suppose \u212c is partitioned into a uniform Cartesian grid \ud835\udcaf_h with mesh parameter h = x_i+1-x_i = y_j+1 - y_j. Let v_i,j = v_h(\ud835\udc29_i,j) be the finite difference approximation of v(\ud835\udc31) at the grid node \ud835\udc29_i, j. For the elliptic operator \u2112 for interface problem (<ref>) is approximated by five-point discrete operator \u2112_h on Cartesian grid \ud835\udcaf_h. If the right-hand side  f(\ud835\udc31) is sufficiently smooth, then the solution to the finite difference equation has second-order accuracy. However, the irregular domain leads to discontinuous f\u0303(\ud835\udc31), v(\ud835\udc31) and \u2202_\ud835\udc27v(\ud835\udc31) in (<ref>), resulting in unignorable truncation error to maintain the second order\\cite{ying2007kernel}."
+                                                                                                                                                                                                                            "content": "The KFBI method involves making corrections to each irregular node. Suppose  is partitioned into a uniform Cartesian grid _h with mesh parameter h = x_i+1-x_i = y_j+1 - y_j. Let v_i,j = v_h(\ud835\udc29_i,j) be the finite difference approximation of v(\ud835\udc31) at the grid node \ud835\udc29_i, j. For the elliptic operator  for interface problem (<ref>) is approximated by five-point discrete operator _h on Cartesian grid _h. If the right-hand side  f(\ud835\udc31) is sufficiently smooth, then the solution to the finite difference equation has second-order accuracy. However, the irregular domain leads to discontinuous f\u0303(\ud835\udc31), v(\ud835\udc31) and \u2202_\ud835\udc27v(\ud835\udc31) in (<ref>), resulting in unignorable truncation error to maintain the second order\\cite{ying2007kernel}."
                                                                                                                                                                                                                         },
                                                                                                                                                                                                                         {
                                                                                                                                                                                                                             "leaf id": 193,
@@ -1508,7 +1508,7 @@
                                                                                                                                                                                                                             "leaf id": 194,
                                                                                                                                                                                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/sec2/sub2/ssb0/ssb9/sub9/ssb0/ssb5/ssb5/ssb5/ssb5/ssb15/sec5/sec5/sec4/sec16/sub5/cases2",
                                                                                                                                                                                                                             "block type": "cases",
-                                                                                                                                                                                                                            "content": "\\mathcal{O}\\left(h^{2}\\right) & \\text { if }\\mathbf{p}_{i,j} \\text { is a regular node } \\\\ \\mathcal{O}\\left(h^{-2}\\right) & \\text { if }\\mathbf{p}_{i,j} \\text { is an irregular node }"
+                                                                                                                                                                                                                            "content": "\\mathcalO\\left(h^{2}\\right) & \\text { if }\\mathbf{p}_{i,j} \\text { is a regular node } \\\\ \\mathcalO\\left(h^{-2}\\right) & \\text { if }\\mathbf{p}_{i,j} \\text { is an irregular node }"
                                                                                                                                                                                                                         },
                                                                                                                                                                                                                         {
                                                                                                                                                                                                                             "leaf id": 195,
@@ -1550,7 +1550,7 @@
                                                                                                                                                                                                                             "leaf id": 201,
                                                                                                                                                                                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/sec2/sub2/ssb0/ssb9/sub9/ssb0/ssb5/ssb5/ssb5/ssb5/ssb15/sec5/sec5/sec4/sec16/sub5/par9",
                                                                                                                                                                                                                             "block type": "par",
-                                                                                                                                                                                                                            "content": "which introduces a first-order error, since \n    \n E_{h, x}\\left(x_{i}, y_{j}\\right)=C_{h, x}^{+}\\left(x_{i}, y_{j}\\right)+\\mathcal{O}(h). \n    \n"
+                                                                                                                                                                                                                            "content": "which introduces a first-order error, since \n    \n E_{h, x}\\left(x_{i}, y_{j}\\right)=C_{h, x}^{+}\\left(x_{i}, y_{j}\\right)+\\mathcalO(h). \n    \n"
                                                                                                                                                                                                                         },
                                                                                                                                                                                                                         {
                                                                                                                                                                                                                             "leaf id": 202,
@@ -1586,7 +1586,7 @@
                                                                                                                                                                                                                             "leaf id": 207,
                                                                                                                                                                                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/sec2/sub2/ssb0/ssb9/sub9/ssb0/ssb5/ssb5/ssb5/ssb5/ssb15/sec5/sec5/sec4/sec16/sub5/par15",
                                                                                                                                                                                                                             "block type": "par",
-                                                                                                                                                                                                                            "content": "which introduces a first-order error, since \n    \n E_{h, y}\\left(x_{i}, y_{j}\\right)=C_{h, y}^{+}\\left(x_{i}, y_{j}\\right)+\\mathcal{O}(h). \n    \n"
+                                                                                                                                                                                                                            "content": "which introduces a first-order error, since \n    \n E_{h, y}\\left(x_{i}, y_{j}\\right)=C_{h, y}^{+}\\left(x_{i}, y_{j}\\right)+\\mathcalO(h). \n    \n"
                                                                                                                                                                                                                         },
                                                                                                                                                                                                                         {
                                                                                                                                                                                                                             "leaf id": 208,
@@ -1626,7 +1626,7 @@
                                                                                                                                                                                                                                     "leaf id": 212,
                                                                                                                                                                                                                                     "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/sec2/sub2/ssb0/ssb9/sub9/ssb0/ssb5/ssb5/ssb5/ssb5/ssb15/sec5/sec5/sec4/sec16/sub5/sub19/par0",
                                                                                                                                                                                                                                     "block type": "par",
-                                                                                                                                                                                                                                    "content": "Let v_h^+, v_h^- be the approximate solution of v^+, v^- respectively. Assume approximate solution v_h(\ud835\udc31) is a piecewise smooth function although only the value defined at grid nodes of \ud835\udcaf_h are known. Assume the solution v_h(\ud835\udc31) is smooth in \u212c\u2216\u0393. Fig.<ref> shows the six-point stencil of interpolated point \ud835\udc33_k located in the shadow region of a grid cell. The stencil consists of 6 points and can be obtained by rotation or reflection transformation if \ud835\udc33_k in another grid cell."
+                                                                                                                                                                                                                                    "content": "Let v_h^+, v_h^- be the approximate solution of v^+, v^- respectively. Assume approximate solution v_h(\ud835\udc31) is a piecewise smooth function although only the value defined at grid nodes of _h are known. Assume the solution v_h(\ud835\udc31) is smooth in \u2216\u0393. Fig.<ref> shows the six-point stencil of interpolated point \ud835\udc33_k located in the shadow region of a grid cell. The stencil consists of 6 points and can be obtained by rotation or reflection transformation if \ud835\udc33_k in another grid cell."
                                                                                                                                                                                                                                 },
                                                                                                                                                                                                                                 {
                                                                                                                                                                                                                                     "leaf id": 213,
@@ -1738,7 +1738,7 @@
                                                                                                                                                                                                                                             "leaf id": 227,
                                                                                                                                                                                                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/sec2/sub2/ssb0/ssb9/sub9/ssb0/ssb5/ssb5/ssb5/ssb5/ssb15/sec5/sec5/sec4/sec16/sub5/sub19/sub13/par1",
                                                                                                                                                                                                                                             "block type": "par",
-                                                                                                                                                                                                                                            "content": "Assume w(\ud835\udc31) be a piecewise smooth function defined in \u212c, shown in the <ref>, whose normal derivative \u2202_\ud835\udc27 w(\ud835\udc31) and w(\ud835\udc31) itself may be discontinuous across the interface. Computation of the jumps for w on \u0393 can be reiterated below"
+                                                                                                                                                                                                                                            "content": "Assume w(\ud835\udc31) be a piecewise smooth function defined in , shown in the <ref>, whose normal derivative \u2202_\ud835\udc27 w(\ud835\udc31) and w(\ud835\udc31) itself may be discontinuous across the interface. Computation of the jumps for w on \u0393 can be reiterated below"
                                                                                                                                                                                                                                         },
                                                                                                                                                                                                                                         {
                                                                                                                                                                                                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/sec2/sub2/ssb0/ssb9/sub9/ssb0/ssb5/ssb5/ssb5/ssb5/ssb15/sec5/sec5/sec4/sec16/sub5/sub19/sub13/align2",
@@ -1756,7 +1756,7 @@
                                                                                                                                                                                                                                             "leaf id": 229,
                                                                                                                                                                                                                                             "key": "doc/body/sec0/sec6/sec28/sub1/sub2/ssb6/ssb3/ssb2/sub4/sec2/sub2/ssb0/ssb9/sub9/ssb0/ssb5/ssb5/ssb5/ssb5/ssb15/sec5/sec5/sec4/sec16/sub5/sub19/sub13/par3",
                                                                                                                                                                                                                                             "block type": "par",
-                                                                                                                                                                                                                                            "content": "s be the arc length parameter of the curve \u0393, \ud835\udc2d=(\u03c4_1(s), \u03c4_2(s))^T be a unit tangent vector at a point on the interface. Thus, \ud835\udc27=(\u03c4_2(s),-\u03c4_1(s))^T=\ud835\udc2d^\u22a5 be the unit outward normal vector on \u0393. Suppose \u03c6 = \u03c6(s) and \u03c8 = \u03c8(s) are two at least twice differentiable functions defined on \u0393."
+                                                                                                                                                                                                                                            "content": "s be the arc length parameter of the curve \u0393, \ud835\udc2d=(\u03c4_1(s), \u03c4_2(s))^ be a unit tangent vector at a point on the interface. Thus, \ud835\udc27=(\u03c4_2(s),-\u03c4_1(s))^=\ud835\udc2d^\u22a5 be the unit outward normal vector on \u0393. Suppose \u03c6 = \u03c6(s) and \u03c8 = \u03c8(s) are two at least twice differentiable functions defined on \u0393."
                                                                                                                                                                                                                                         },
                                                                                                                                                                                                                                         {
                                                                                                                                                                                                                                             "leaf id": 230,
@@ -1908,403 +1908,403 @@
             "leaf id": 240,
             "key": "doc/bib0",
             "block type": "bibliography",
-            "content": "K.P.~Bube A.~Wiegmann. \\newblock The explicit-jump immersed interface method: finite difference   methods for pdes with piecewise smooth solutions. \\newblock {\\em SIAM Journal on Numerical Analysis}, 37(3):827--862, 2000."
+            "content": "K.P.~Bube A.~Wiegmann.  The explicit-jump immersed interface method: finite difference   methods for pdes with piecewise smooth solutions.  SIAM Journal on Numerical Analysis, 37(3):827--862, 2000."
         },
         {
             "leaf id": 241,
             "key": "doc/bib1",
             "block type": "bibliography",
-            "content": "M.~H. Aliabadi and P.~H. Wen. \\newblock {\\em Boundary element methods in engineering and sciences}, volume~4. \\newblock World Scientific, 2011."
+            "content": "M.~H. Aliabadi and P.~H. Wen.  Boundary element methods in engineering and sciences, volume~4.  World Scientific, 2011."
         },
         {
             "leaf id": 242,
             "key": "doc/bib2",
             "block type": "bibliography",
-            "content": "Jens Berg and Kaj Nystr{\\\"o}m. \\newblock A unified deep artificial neural network approach to partial   differential equations in complex geometries. \\newblock {\\em Neurocomputing}, 317:28--41, 2018."
+            "content": "Jens Berg and Kaj Nystr{\\\"o}m.  A unified deep artificial neural network approach to partial   differential equations in complex geometries.  Neurocomputing, 317:28--41, 2018."
         },
         {
             "leaf id": 243,
             "key": "doc/bib3",
             "block type": "bibliography",
-            "content": "P.A. Berthelsen. \\newblock A decomposed immersed interface method for variable coefficient   elliptic equations with non-smooth and discontinuous solutions. \\newblock {\\em Journal of Computational Physics}, 197(1):364--386, 2004."
+            "content": "P.A. Berthelsen.  A decomposed immersed interface method for variable coefficient   elliptic equations with non-smooth and discontinuous solutions.  Journal of Computational Physics, 197(1):364--386, 2004."
         },
         {
             "leaf id": 244,
             "key": "doc/bib4",
             "block type": "bibliography",
-            "content": "Kaushik Bhattacharya, Bamdad Hosseini, Nikola~B. Kovachki, and Andrew~M.   Stuart. \\newblock Model {Reduction} {And} {Neural} {Networks} {For} {Parametric}   {PDEs}. \\newblock {\\em The SMAI Journal of computational mathematics}, 7:121--157,   2021."
+            "content": "Kaushik Bhattacharya, Bamdad Hosseini, Nikola~B. Kovachki, and Andrew~M.   Stuart.  Model {Reduction} {And} {Neural} {Networks} {For} {Parametric}   {PDEs}.  The SMAI Journal of computational mathematics, 7:121--157,   2021."
         },
         {
             "leaf id": 245,
             "key": "doc/bib5",
             "block type": "bibliography",
-            "content": "Yingbin Chai, Kangye Huang, Shangpan Wang, Zhichao Xiang, and Guanjun Zhang. \\newblock The extrinsic enriched finite element method with appropriate   enrichment functions for the helmholtz equation. \\newblock {\\em Mathematics}, 11:1664, 03 2023."
+            "content": "Yingbin Chai, Kangye Huang, Shangpan Wang, Zhichao Xiang, and Guanjun Zhang.  The extrinsic enriched finite element method with appropriate   enrichment functions for the helmholtz equation.  Mathematics, 11:1664, 03 2023."
         },
         {
             "leaf id": 246,
             "key": "doc/bib6",
             "block type": "bibliography",
-            "content": "Roman Chapko and Rainer Kress. \\newblock Rothe's method for the heat equation and boundary integral equations. \\newblock {\\em Journal of Integral Equations and Applications}, 9(1):47 \u2013 69,   1997. \\newblock Cited by: 43; All Open Access, Bronze Open Access."
+            "content": "Roman Chapko and Rainer Kress.  Rothe's method for the heat equation and boundary integral equations.  Journal of Integral Equations and Applications, 9(1):47 \u2013 69,   1997.  Cited by: 43; All Open Access, Bronze Open Access."
         },
         {
             "leaf id": 247,
             "key": "doc/bib7",
             "block type": "bibliography",
-            "content": "Long Chen, Huayi Wei, and Min Wen. \\newblock An interface-fitted mesh generator and virtual element methods for   elliptic interface problems. \\newblock {\\em Journal of Computational Physics}, 334, 01 2017."
+            "content": "Long Chen, Huayi Wei, and Min Wen.  An interface-fitted mesh generator and virtual element methods for   elliptic interface problems.  Journal of Computational Physics, 334, 01 2017."
         },
         {
             "leaf id": 248,
             "key": "doc/bib8",
             "block type": "bibliography",
-            "content": "Hongwei Cheng, Jingfang Huang, and Terry~Jo Leiterman. \\newblock An adaptive fast solver for the modified helmholtz equation in two   dimensions. \\newblock {\\em Journal of Computational Physics}, 211(2):616--637, 2006."
+            "content": "Hongwei Cheng, Jingfang Huang, and Terry~Jo Leiterman.  An adaptive fast solver for the modified helmholtz equation in two   dimensions.  Journal of Computational Physics, 211(2):616--637, 2006."
         },
         {
             "leaf id": 249,
             "key": "doc/bib9",
             "block type": "bibliography",
-            "content": "C.-C. CHU, I.~G. GRAHAM, and T.-Y. HOU. \\newblock A new multiscale finite element method for high-contrast elliptic   interface problems. \\newblock {\\em Mathematics of Computation}, 79(272):1915--1955, 2010."
+            "content": "C.-C. CHU, I.~G. GRAHAM, and T.-Y. HOU.  A new multiscale finite element method for high-contrast elliptic   interface problems.  Mathematics of Computation, 79(272):1915--1955, 2010."
         },
         {
             "leaf id": 250,
             "key": "doc/bib10",
             "block type": "bibliography",
-            "content": "Jie Ding, Zhongming Wang, and Shenggao Zhou. \\newblock Positivity preserving finite difference methods for   poisson\u2013nernst\u2013planck equations with steric interactions: Application to   slit-shaped nanopore conductance. \\newblock {\\em Journal of Computational Physics}, 397:108864, 2019."
+            "content": "Jie Ding, Zhongming Wang, and Shenggao Zhou.  Positivity preserving finite difference methods for   poisson\u2013nernst\u2013planck equations with steric interactions: Application to   slit-shaped nanopore conductance.  Journal of Computational Physics, 397:108864, 2019."
         },
         {
             "leaf id": 251,
             "key": "doc/bib11",
             "block type": "bibliography",
-            "content": "Haixia Dong, Shuwang Li, Wenjun Ying, and Zhongshu Zhao. \\newblock Kernel-free boundary integral method for two-phase stokes equations   with discontinuous viscosity on staggered grids, 2023."
+            "content": "Haixia Dong, Shuwang Li, Wenjun Ying, and Zhongshu Zhao.  Kernel-free boundary integral method for two-phase stokes equations   with discontinuous viscosity on staggered grids, 2023."
         },
         {
             "leaf id": 252,
             "key": "doc/bib12",
             "block type": "bibliography",
-            "content": "Haixia Dong, Zhongshu Zhao, Shuwang Li, Wenjun Ying, and Jiwei Zhang. \\newblock Second order convergence of a modified mac scheme for stokes   interface problems, 2023."
+            "content": "Haixia Dong, Zhongshu Zhao, Shuwang Li, Wenjun Ying, and Jiwei Zhang.  Second order convergence of a modified mac scheme for stokes   interface problems, 2023."
         },
         {
             "leaf id": 253,
             "key": "doc/bib13",
             "block type": "bibliography",
-            "content": "Weinan Ee and Bing Yu. \\newblock The deep ritz method: A deep learning-based numerical algorithm for   solving variational problems. \\newblock {\\em Communications in Mathematics and Statistics}, 6, 09 2017."
+            "content": "Weinan Ee and Bing Yu.  The deep ritz method: A deep learning-based numerical algorithm for   solving variational problems.  Communications in Mathematics and Statistics, 6, 09 2017."
         },
         {
             "leaf id": 254,
             "key": "doc/bib14",
             "block type": "bibliography",
-            "content": "Chen Fan and Zhiyue Zhang. \\newblock Decoupling numerical method based on deep neural network for   nonlinear degenerate interface problems, 2023."
+            "content": "Chen Fan and Zhiyue Zhang.  Decoupling numerical method based on deep neural network for   nonlinear degenerate interface problems, 2023."
         },
         {
             "leaf id": 255,
             "key": "doc/bib15",
             "block type": "bibliography",
-            "content": "Ronald~P Fedkiw, Tariq Aslam, Barry Merriman, and Stanley Osher. \\newblock A non-oscillatory eulerian approach to interfaces in multimaterial   flows (the ghost fluid method). \\newblock {\\em Journal of computational physics}, 152(2):457--492, 1999."
+            "content": "Ronald~P Fedkiw, Tariq Aslam, Barry Merriman, and Stanley Osher.  A non-oscillatory eulerian approach to interfaces in multimaterial   flows (the ghost fluid method).  Journal of computational physics, 152(2):457--492, 1999."
         },
         {
             "leaf id": 256,
             "key": "doc/bib16",
             "block type": "bibliography",
-            "content": "W.L.~Wendland G.C.~Hsiao. \\newblock {\\em Boundary integral equations}. \\newblock Springer, 2008."
+            "content": "W.L.~Wendland G.C.~Hsiao.  Boundary integral equations.  Springer, 2008."
         },
         {
             "leaf id": 257,
             "key": "doc/bib17",
             "block type": "bibliography",
-            "content": "Craig~R Gin, Daniel~E Shea, Steven~L Brunton, and J~Nathan Kutz. \\newblock Deepgreen: deep learning of green\u2019s functions for nonlinear   boundary value problems. \\newblock {\\em Scientific reports}, 11(1):1--14, 2021."
+            "content": "Craig~R Gin, Daniel~E Shea, Steven~L Brunton, and J~Nathan Kutz.  Deepgreen: deep learning of green\u2019s functions for nonlinear   boundary value problems.  Scientific reports, 11(1):1--14, 2021."
         },
         {
             "leaf id": 258,
             "key": "doc/bib18",
             "block type": "bibliography",
-            "content": "Wei Gong, Jiajie Li, and Shengfeng Zhu. \\newblock Improved discrete boundary type shape gradients for pde-constrained   shape optimization. \\newblock {\\em SIAM Journal on Scientific Computing}, 44(4):A2464--A2505, 2022."
+            "content": "Wei Gong, Jiajie Li, and Shengfeng Zhu.  Improved discrete boundary type shape gradients for pde-constrained   shape optimization.  SIAM Journal on Scientific Computing, 44(4):A2464--A2505, 2022."
         },
         {
             "leaf id": 259,
             "key": "doc/bib19",
             "block type": "bibliography",
-            "content": "Daniel Greenfeld, Meirav Galun, Ronen Basri, Irad Yavneh, and Ron Kimmel. \\newblock Learning to optimize multigrid pde solvers. \\newblock In {\\em International Conference on Machine Learning}, pages   2415--2423. PMLR, 2019."
+            "content": "Daniel Greenfeld, Meirav Galun, Ronen Basri, Irad Yavneh, and Ron Kimmel.  Learning to optimize multigrid pde solvers.  In International Conference on Machine Learning, pages   2415--2423. PMLR, 2019."
         },
         {
             "leaf id": 260,
             "key": "doc/bib20",
             "block type": "bibliography",
-            "content": "Leslie Greengard and Mary~Catherine Kropinski. \\newblock An integral equation approach to the incompressible navier-stokes   equations in two dimensions. \\newblock {\\em SIAM Journal on Scientific Computing}, 20(1):318 \u2013 336, 1998. \\newblock Cited by: 37; All Open Access, Green Open Access."
+            "content": "Leslie Greengard and Mary~Catherine Kropinski.  An integral equation approach to the incompressible navier-stokes   equations in two dimensions.  SIAM Journal on Scientific Computing, 20(1):318 \u2013 336, 1998.  Cited by: 37; All Open Access, Green Open Access."
         },
         {
             "leaf id": 261,
             "key": "doc/bib21",
             "block type": "bibliography",
-            "content": "Leslie Greengard and Vladimir Rokhlin. \\newblock A new version of the fast multipole method for the laplace equation   in three dimensions. \\newblock {\\em Acta Numerica}, 6:229\u2013269, 1997."
+            "content": "Leslie Greengard and Vladimir Rokhlin.  A new version of the fast multipole method for the laplace equation   in three dimensions.  Acta Numerica, 6:229\u2013269, 1997."
         },
         {
             "leaf id": 262,
             "key": "doc/bib22",
             "block type": "bibliography",
-            "content": "Cuiyu He, Xiaozhe Hu, and Lin Mu. \\newblock A mesh-free method using piecewise deep neural network for elliptic   interface problems. \\newblock {\\em Journal of Computational and Applied Mathematics}, 412:114358,   2022."
+            "content": "Cuiyu He, Xiaozhe Hu, and Lin Mu.  A mesh-free method using piecewise deep neural network for elliptic   interface problems.  Journal of Computational and Applied Mathematics, 412:114358,   2022."
         },
         {
             "leaf id": 263,
             "key": "doc/bib23",
             "block type": "bibliography",
-            "content": "Songming Hou and Xu-Dong Liu. \\newblock A numerical method for solving variable coefficient elliptic equation   with interfaces. \\newblock {\\em Journal of Computational Physics}, 202(2):411--445, 2005."
+            "content": "Songming Hou and Xu-Dong Liu.  A numerical method for solving variable coefficient elliptic equation   with interfaces.  Journal of Computational Physics, 202(2):411--445, 2005."
         },
         {
             "leaf id": 264,
             "key": "doc/bib24",
             "block type": "bibliography",
-            "content": "Songming Hou, Liqun Wang, and Wei Wang. \\newblock A numerical method for solving the elliptic interface problems with   multi-domains and triple junction points. \\newblock {\\em Journal of Computational Mathematics}, pages 504--516, 2012."
+            "content": "Songming Hou, Liqun Wang, and Wei Wang.  A numerical method for solving the elliptic interface problems with   multi-domains and triple junction points.  Journal of Computational Mathematics, pages 504--516, 2012."
         },
         {
             "leaf id": 265,
             "key": "doc/bib25",
             "block type": "bibliography",
-            "content": "Wei-Fan Hu, Te-Sheng Lin, and Ming-Chih Lai. \\newblock A discontinuity capturing shallow neural network for elliptic   interface problems. \\newblock {\\em Journal of Computational Physics}, 469:111576, 2022."
+            "content": "Wei-Fan Hu, Te-Sheng Lin, and Ming-Chih Lai.  A discontinuity capturing shallow neural network for elliptic   interface problems.  Journal of Computational Physics, 469:111576, 2022."
         },
         {
             "leaf id": 266,
             "key": "doc/bib26",
             "block type": "bibliography",
-            "content": "Peiqi Huang, Haijun Wu, and Yuanming Xiao. \\newblock An unfitted interface penalty finite element method for elliptic   interface problems. \\newblock {\\em Computer Methods in Applied Mechanics and Engineering},   323:439--460, 2017."
+            "content": "Peiqi Huang, Haijun Wu, and Yuanming Xiao.  An unfitted interface penalty finite element method for elliptic   interface problems.  Computer Methods in Applied Mechanics and Engineering,   323:439--460, 2017."
         },
         {
             "leaf id": 267,
             "key": "doc/bib27",
             "block type": "bibliography",
-            "content": "M.~A. Jaswon. \\newblock Integral equation methods in potential theory. i. \\newblock {\\em Proceedings of the Royal Society of London. Series A,   Mathematical and Physical Sciences}, 275(1360):23--32, 1963."
+            "content": "M.~A. Jaswon.  Integral equation methods in potential theory. i.  Proceedings of the Royal Society of London. Series A,   Mathematical and Physical Sciences, 275(1360):23--32, 1963."
         },
         {
             "leaf id": 268,
             "key": "doc/bib28",
             "block type": "bibliography",
-            "content": "Chiyu~\u201cMax\u201d Jiang, Soheil Esmaeilzadeh, Kamyar Azizzadenesheli, Karthik   Kashinath, Mustafa Mustafa, Hamdi~A. Tchelepi, Philip Marcus, Mr~Prabhat, and   Anima Anandkumar. \\newblock Meshfreeflownet: A physics-constrained deep continuous space-time   super-resolution framework. \\newblock In {\\em SC20: International Conference for High Performance   Computing, Networking, Storage and Analysis}, pages 1--15, 2020."
+            "content": "Chiyu~\u201cMax\u201d Jiang, Soheil Esmaeilzadeh, Kamyar Azizzadenesheli, Karthik   Kashinath, Mustafa Mustafa, Hamdi~A. Tchelepi, Philip Marcus, Mr~Prabhat, and   Anima Anandkumar.  Meshfreeflownet: A physics-constrained deep continuous space-time   super-resolution framework.  In SC20: International Conference for High Performance   Computing, Networking, Storage and Analysis, pages 1--15, 2020."
         },
         {
             "leaf id": 269,
             "key": "doc/bib29",
             "block type": "bibliography",
-            "content": "Hans Johansen and Phillip Colella. \\newblock A cartesian grid embedded boundary method for poisson's equation on   irregular domains. \\newblock {\\em Journal of Computational Physics}, 147(1):60--85, 1998."
+            "content": "Hans Johansen and Phillip Colella.  A cartesian grid embedded boundary method for poisson's equation on   irregular domains.  Journal of Computational Physics, 147(1):60--85, 1998."
         },
         {
             "leaf id": 270,
             "key": "doc/bib30",
             "block type": "bibliography",
-            "content": "Dmitrii Kochkov, Jamie~A. Smith, Ayya Alieva, Qing Wang, Michael~P. Brenner,   and Stephan Hoyer. \\newblock Machine learning\u2013accelerated computational fluid dynamics. \\newblock {\\em Proceedings of the National Academy of Sciences},   118(21):e2101784118, 2021."
+            "content": "Dmitrii Kochkov, Jamie~A. Smith, Ayya Alieva, Qing Wang, Michael~P. Brenner,   and Stephan Hoyer.  Machine learning\u2013accelerated computational fluid dynamics.  Proceedings of the National Academy of Sciences,   118(21):e2101784118, 2021."
         },
         {
             "leaf id": 271,
             "key": "doc/bib31",
             "block type": "bibliography",
-            "content": "Randall~J LeVeque and Zhilin Li. \\newblock The immersed interface method for elliptic equations with   discontinuous coefficients and singular sources. \\newblock {\\em SIAM Journal on Numerical Analysis}, 31(4):1019--1044, 1994."
+            "content": "Randall~J LeVeque and Zhilin Li.  The immersed interface method for elliptic equations with   discontinuous coefficients and singular sources.  SIAM Journal on Numerical Analysis, 31(4):1019--1044, 1994."
         },
         {
             "leaf id": 272,
             "key": "doc/bib32",
             "block type": "bibliography",
-            "content": "Zhilin Li, Yanping Lin, and Xiaohui Wu. \\newblock New cartesian grid methods for interface problems using the finite   element formulation. \\newblock {\\em Numerische Mathematik}, 96, 03 1999."
+            "content": "Zhilin Li, Yanping Lin, and Xiaohui Wu.  New cartesian grid methods for interface problems using the finite   element formulation.  Numerische Mathematik, 96, 03 1999."
         },
         {
             "leaf id": 273,
             "key": "doc/bib33",
             "block type": "bibliography",
-            "content": "Zhilin Li, Wei-Cheng Wang, I-Liang Chern, and Ming-Chih Lai. \\newblock New formulations for interface problems in polar coordinates. \\newblock {\\em SIAM Journal on Scientific Computing}, 25(1):224--245, 2003."
+            "content": "Zhilin Li, Wei-Cheng Wang, I-Liang Chern, and Ming-Chih Lai.  New formulations for interface problems in polar coordinates.  SIAM Journal on Scientific Computing, 25(1):224--245, 2003."
         },
         {
             "leaf id": 274,
             "key": "doc/bib34",
             "block type": "bibliography",
-            "content": "Zongyi Li, Nikola~Borislavov Kovachki, Kamyar Azizzadenesheli, Burigede liu,   Kaushik Bhattacharya, Andrew Stuart, and Anima Anandkumar. \\newblock Fourier neural operator for parametric partial differential   equations. \\newblock In {\\em International Conference on Learning Representations}, 2021."
+            "content": "Zongyi Li, Nikola~Borislavov Kovachki, Kamyar Azizzadenesheli, Burigede liu,   Kaushik Bhattacharya, Andrew Stuart, and Anima Anandkumar.  Fourier neural operator for parametric partial differential   equations.  In International Conference on Learning Representations, 2021."
         },
         {
             "leaf id": 275,
             "key": "doc/bib35",
             "block type": "bibliography",
-            "content": "Guochang Lin, Fukai Chen, Pipi Hu, Xiang Chen, Junqing Chen, Jun Wang, and   Zuoqiang Shi. \\newblock Bi-greennet: learning green\u2019s functions by boundary integral   network. \\newblock {\\em Communications in Mathematics and Statistics}, 11(1):103--129,   2023."
+            "content": "Guochang Lin, Fukai Chen, Pipi Hu, Xiang Chen, Junqing Chen, Jun Wang, and   Zuoqiang Shi.  Bi-greennet: learning green\u2019s functions by boundary integral   network.  Communications in Mathematics and Statistics, 11(1):103--129,   2023."
         },
         {
             "leaf id": 276,
             "key": "doc/bib36",
             "block type": "bibliography",
-            "content": "Guochang Lin, Pipi Hu, Fukai Chen, Xiang Chen, Junqing Chen, Jun Wang, and   Zuoqiang Shi. \\newblock Binet: Learn to solve partial differential equations with boundary   integral networks. \\newblock {\\em CSIAM Transactions on Applied Mathematics}, 4(2):275--305, 2023."
+            "content": "Guochang Lin, Pipi Hu, Fukai Chen, Xiang Chen, Junqing Chen, Jun Wang, and   Zuoqiang Shi.  Binet: Learn to solve partial differential equations with boundary   integral networks.  CSIAM Transactions on Applied Mathematics, 4(2):275--305, 2023."
         },
         {
             "leaf id": 277,
             "key": "doc/bib37",
             "block type": "bibliography",
-            "content": "Lu~Lu, Pengzhan Jin, Guofei Pang, Zhongqiang Zhang, and George Karniadakis. \\newblock Learning nonlinear operators via deeponet based on the universal   approximation theorem of operators. \\newblock {\\em Nature Machine Intelligence}, 3:218--229, 03 2021."
+            "content": "Lu~Lu, Pengzhan Jin, Guofei Pang, Zhongqiang Zhang, and George Karniadakis.  Learning nonlinear operators via deeponet based on the universal   approximation theorem of operators.  Nature Machine Intelligence, 3:218--229, 03 2021."
         },
         {
             "leaf id": 278,
             "key": "doc/bib38",
             "block type": "bibliography",
-            "content": "Kevin Luna, Katherine Klymko, and Johannes~P. Blaschke. \\newblock Accelerating gmres with deep learning in real-time, 2021."
+            "content": "Kevin Luna, Katherine Klymko, and Johannes~P. Blaschke.  Accelerating gmres with deep learning in real-time, 2021."
         },
         {
             "leaf id": 279,
             "key": "doc/bib39",
             "block type": "bibliography",
-            "content": "Nicholas~H. Nelsen and Andrew~M. Stuart. \\newblock The random feature model for input-output maps between banach spaces. \\newblock {\\em SIAM Journal on Scientific Computing}, 43(5):A3212--A3243, 2021."
+            "content": "Nicholas~H. Nelsen and Andrew~M. Stuart.  The random feature model for input-output maps between banach spaces.  SIAM Journal on Scientific Computing, 43(5):A3212--A3243, 2021."
         },
         {
             "leaf id": 280,
             "key": "doc/bib40",
             "block type": "bibliography",
-            "content": "H.~Johansen P.~McCorquodale, P.~Colella. \\newblock A cartesian grid embedded boundary method for the heat equation on   irregular domains. \\newblock {\\em Journal of Computational Physics}, 173(2):620--635, 2001."
+            "content": "H.~Johansen P.~McCorquodale, P.~Colella.  A cartesian grid embedded boundary method for the heat equation on   irregular domains.  Journal of Computational Physics, 173(2):620--635, 2001."
         },
         {
             "leaf id": 281,
             "key": "doc/bib41",
             "block type": "bibliography",
-            "content": "Ravi~G Patel, Nathaniel~A Trask, Mitchell~A Wood, and Eric~C Cyr. \\newblock A physics-informed operator regression framework for extracting   data-driven continuum models. \\newblock {\\em Computer Methods in Applied Mechanics and Engineering},   373:113500, 2021."
+            "content": "Ravi~G Patel, Nathaniel~A Trask, Mitchell~A Wood, and Eric~C Cyr.  A physics-informed operator regression framework for extracting   data-driven continuum models.  Computer Methods in Applied Mechanics and Engineering,   373:113500, 2021."
         },
         {
             "leaf id": 282,
             "key": "doc/bib42",
             "block type": "bibliography",
-            "content": "Yiran Qian, Cheng Wang, and Shenggao Zhou. \\newblock A positive and energy stable numerical scheme for the   poisson\u2013nernst\u2013planck\u2013cahn\u2013hilliard equations with steric   interactions. \\newblock {\\em Journal of Computational Physics}, 426:109908, 2021."
+            "content": "Yiran Qian, Cheng Wang, and Shenggao Zhou.  A positive and energy stable numerical scheme for the   poisson\u2013nernst\u2013planck\u2013cahn\u2013hilliard equations with steric   interactions.  Journal of Computational Physics, 426:109908, 2021."
         },
         {
             "leaf id": 283,
             "key": "doc/bib43",
             "block type": "bibliography",
-            "content": "Luigi Quartapelle. \\newblock Numerical solution of the incompressible navier-stokes equations. \\newblock In {\\em International series of numerical mathematics}, volume 113,   1993."
+            "content": "Luigi Quartapelle.  Numerical solution of the incompressible navier-stokes equations.  In International series of numerical mathematics, volume 113,   1993."
         },
         {
             "leaf id": 284,
             "key": "doc/bib44",
             "block type": "bibliography",
-            "content": "V.~Kozlov R.~Kress, V.~Maz'ya. \\newblock {\\em Linear integral equations}, volume~82. \\newblock Springer, 1989."
+            "content": "V.~Kozlov R.~Kress, V.~Maz'ya.  Linear integral equations, volume~82.  Springer, 1989."
         },
         {
             "leaf id": 285,
             "key": "doc/bib45",
             "block type": "bibliography",
-            "content": "M.~Raissi, P.~Perdikaris, and G.E. Karniadakis. \\newblock Physics-informed neural networks: A deep learning framework for   solving forward and inverse problems involving nonlinear partial differential   equations. \\newblock {\\em Journal of Computational Physics}, 378:686--707, 2019."
+            "content": "M.~Raissi, P.~Perdikaris, and G.E. Karniadakis.  Physics-informed neural networks: A deep learning framework for   solving forward and inverse problems involving nonlinear partial differential   equations.  Journal of Computational Physics, 378:686--707, 2019."
         },
         {
             "leaf id": 286,
             "key": "doc/bib46",
             "block type": "bibliography",
-            "content": "Maziar Raissi, Paris Perdikaris, and George~E Karniadakis. \\newblock Physics-informed neural networks: A deep learning framework for   solving forward and inverse problems involving nonlinear partial differential   equations. \\newblock {\\em Journal of Computational Physics}, 378:686--707, 2019."
+            "content": "Maziar Raissi, Paris Perdikaris, and George~E Karniadakis.  Physics-informed neural networks: A deep learning framework for   solving forward and inverse problems involving nonlinear partial differential   equations.  Journal of Computational Physics, 378:686--707, 2019."
         },
         {
             "leaf id": 287,
             "key": "doc/bib47",
             "block type": "bibliography",
-            "content": "Maziar Raissi, Paris Perdikaris, and George~E Karniadakis. \\newblock Physics-informed neural networks: A deep learning framework for   solving forward and inverse problems involving nonlinear partial differential   equations. \\newblock {\\em Journal of Computational physics}, 378:686--707, 2019."
+            "content": "Maziar Raissi, Paris Perdikaris, and George~E Karniadakis.  Physics-informed neural networks: A deep learning framework for   solving forward and inverse problems involving nonlinear partial differential   equations.  Journal of Computational physics, 378:686--707, 2019."
         },
         {
             "leaf id": 288,
             "key": "doc/bib48",
             "block type": "bibliography",
-            "content": "Justin Sirignano and Konstantinos Spiliopoulos. \\newblock Dgm: A deep learning algorithm for solving partial differential   equations. \\newblock {\\em Journal of computational physics}, 375:1339--1364, 2018."
+            "content": "Justin Sirignano and Konstantinos Spiliopoulos.  Dgm: A deep learning algorithm for solving partial differential   equations.  Journal of computational physics, 375:1339--1364, 2018."
         },
         {
             "leaf id": 289,
             "key": "doc/bib49",
             "block type": "bibliography",
-            "content": "Huafei Sun and David~L. Darmofal. \\newblock An adaptive simplex cut-cell method for high-order discontinuous   galerkin discretizations of elliptic interface problems and conjugate heat   transfer problems. \\newblock {\\em Journal of Computational Physics}, 278:445--468, 2014."
+            "content": "Huafei Sun and David~L. Darmofal.  An adaptive simplex cut-cell method for high-order discontinuous   galerkin discretizations of elliptic interface problems and conjugate heat   transfer problems.  Journal of Computational Physics, 278:445--468, 2014."
         },
         {
             "leaf id": 290,
             "key": "doc/bib50",
             "block type": "bibliography",
-            "content": "Edward~H Twizell, Abba~B Gumel, and MA~Arigu. \\newblock Second-order, l 0-stable methods for the heat equation with   time-dependent boundary conditions. \\newblock {\\em Advances in Computational Mathematics}, 6(1):333--352, 1996."
+            "content": "Edward~H Twizell, Abba~B Gumel, and MA~Arigu.  Second-order, l 0-stable methods for the heat equation with   time-dependent boundary conditions.  Advances in Computational Mathematics, 6(1):333--352, 1996."
         },
         {
             "leaf id": 291,
             "key": "doc/bib51",
             "block type": "bibliography",
-            "content": "C.S.~Henriquez W.~Ying. \\newblock A kernel-free boundary integral method for elliptic boundary value   problems. \\newblock {\\em Journal of computational physics}, 227(2):1046--1074, 2007."
+            "content": "C.S.~Henriquez W.~Ying.  A kernel-free boundary integral method for elliptic boundary value   problems.  Journal of computational physics, 227(2):1046--1074, 2007."
         },
         {
             "leaf id": 292,
             "key": "doc/bib52",
             "block type": "bibliography",
-            "content": "W.C.~Wang W.~Ying. \\newblock A kernel-free boundary integral method for implicitly defined   surfaces. \\newblock {\\em Journal of Computational Physics}, 252:606--624, 2013."
+            "content": "W.C.~Wang W.~Ying.  A kernel-free boundary integral method for implicitly defined   surfaces.  Journal of Computational Physics, 252:606--624, 2013."
         },
         {
             "leaf id": 293,
             "key": "doc/bib53",
             "block type": "bibliography",
-            "content": "W.C.~Wang W.~Ying. \\newblock A kernel-free boundary integral method for variable coefficients   elliptic pdes. \\newblock {\\em Communications in Computational Physics}, 15(4):1108--1140,   2014."
+            "content": "W.C.~Wang W.~Ying.  A kernel-free boundary integral method for variable coefficients   elliptic pdes.  Communications in Computational Physics, 15(4):1108--1140,   2014."
         },
         {
             "leaf id": 294,
             "key": "doc/bib54",
             "block type": "bibliography",
-            "content": "W.~Ying Y.~Xie. \\newblock A fourth-order kernel-free boundary integral method for the modified   helmholtz equation. \\newblock {\\em Journal of Scientific Computing}, 78(3):1632--1658, 2019."
+            "content": "W.~Ying Y.~Xie.  A fourth-order kernel-free boundary integral method for the modified   helmholtz equation.  Journal of Scientific Computing, 78(3):1632--1658, 2019."
         },
         {
             "leaf id": 295,
             "key": "doc/bib55",
             "block type": "bibliography",
-            "content": "W.~Ying Y.~Xie, Z.~Huang. \\newblock A cartesian grid based tailored finite point method for   reaction-diffusion equation on complex domains. \\newblock {\\em Computers \\& Mathematics with Applications}, 97:298--313, 2021."
+            "content": "W.~Ying Y.~Xie, Z.~Huang.  A cartesian grid based tailored finite point method for   reaction-diffusion equation on complex domains.  Computers \\& Mathematics with Applications, 97:298--313, 2021."
         },
         {
             "leaf id": 296,
             "key": "doc/bib56",
             "block type": "bibliography",
-            "content": "Lexing Ying, George Biros, and Denis Zorin. \\newblock A kernel-independent adaptive fast multipole algorithm in two and   three dimensions. \\newblock {\\em Journal of Computational Physics}, 196(2):591--626, 2004."
+            "content": "Lexing Ying, George Biros, and Denis Zorin.  A kernel-independent adaptive fast multipole algorithm in two and   three dimensions.  Journal of Computational Physics, 196(2):591--626, 2004."
         },
         {
             "leaf id": 297,
             "key": "doc/bib57",
             "block type": "bibliography",
-            "content": "Lexing Ying, George Biros, and Denis Zorin. \\newblock A high-order 3d boundary integral equation solver for elliptic pdes   in smooth domains. \\newblock {\\em Journal of Computational Physics}, 219(1):247--275, 2006."
+            "content": "Lexing Ying, George Biros, and Denis Zorin.  A high-order 3d boundary integral equation solver for elliptic pdes   in smooth domains.  Journal of Computational Physics, 219(1):247--275, 2006."
         },
         {
             "leaf id": 298,
             "key": "doc/bib58",
             "block type": "bibliography",
-            "content": "D.~Yu. \\newblock {\\em Natural boundary integral method and its applications}, volume   539. \\newblock Springer Science \\& Business Media, 2002."
+            "content": "D.~Yu.  Natural boundary integral method and its applications, volume   539.  Springer Science \\& Business Media, 2002."
         },
         {
             "leaf id": 299,
             "key": "doc/bib59",
             "block type": "bibliography",
-            "content": "Yaohua Zang, Gang Bao, Xiaojing Ye, and Haomin Zhou. \\newblock Weak adversarial networks for high-dimensional partial differential   equations. \\newblock {\\em Journal of Computational Physics}, 411:109409, jun 2020."
+            "content": "Yaohua Zang, Gang Bao, Xiaojing Ye, and Haomin Zhou.  Weak adversarial networks for high-dimensional partial differential   equations.  Journal of Computational Physics, 411:109409, jun 2020."
         },
         {
             "leaf id": 300,
             "key": "doc/bib60",
             "block type": "bibliography",
-            "content": "Lulu Zhang, Tao Luo, Yaoyu Zhang, Weinan E, Zhi-Qin John~Xu, and Zheng Ma. \\newblock Mod-net: A machine learning approach via model-operator-data network   for solving pdes. \\newblock {\\em Communications in Computational Physics}, 32(2):299--335, 2022."
+            "content": "Lulu Zhang, Tao Luo, Yaoyu Zhang, Weinan E, Zhi-Qin John~Xu, and Zheng Ma.  Mod-net: A machine learning approach via model-operator-data network   for solving pdes.  Communications in Computational Physics, 32(2):299--335, 2022."
         },
         {
             "leaf id": 301,
             "key": "doc/bib61",
             "block type": "bibliography",
-            "content": "Zhongshu Zhao, Haixia Dong, and Wenjun Ying. \\newblock Kernel free boundary integral method for 3d incompressible flow and   linear elasticity equations on irregular domains. \\newblock {\\em Computer Methods in Applied Mechanics and Engineering},   414:116163, 2023."
+            "content": "Zhongshu Zhao, Haixia Dong, and Wenjun Ying.  Kernel free boundary integral method for 3d incompressible flow and   linear elasticity equations on irregular domains.  Computer Methods in Applied Mechanics and Engineering,   414:116163, 2023."
         },
         {
             "leaf id": 302,
             "key": "doc/bib62",
             "block type": "bibliography",
-            "content": "Zhongshu Zhao, Haixia Dong, and Wenjun Ying. \\newblock Kernel free boundary integral method for 3d incompressible flow and   linear elasticity equations on irregular domains. \\newblock {\\em Computer Methods in Applied Mechanics and Engineering},   414:116163, 2023."
+            "content": "Zhongshu Zhao, Haixia Dong, and Wenjun Ying.  Kernel free boundary integral method for 3d incompressible flow and   linear elasticity equations on irregular domains.  Computer Methods in Applied Mechanics and Engineering,   414:116163, 2023."
         },
         {
             "leaf id": 303,
             "key": "doc/bib63",
             "block type": "bibliography",
-            "content": "Han Zhou, Minsheng Huang, and Wenjun Ying. \\newblock Adi schemes for heat equations with irregular boundaries and   interfaces in 3d with applications, 2023."
+            "content": "Han Zhou, Minsheng Huang, and Wenjun Ying.  Adi schemes for heat equations with irregular boundaries and   interfaces in 3d with applications, 2023."
         },
         {
             "leaf id": 304,
             "key": "doc/bib64",
             "block type": "bibliography",
-            "content": "Y.C. Zhou, S.~Zhao, and G.W.~We M.~Feig. \\newblock High order matched interface and boundary method for elliptic   equations with discontinuous coefficients and singular sources. \\newblock {\\em Journal of Computational Physics}, 213(1):1--30, 2006."
+            "content": "Y.C. Zhou, S.~Zhao, and G.W.~We M.~Feig.  High order matched interface and boundary method for elliptic   equations with discontinuous coefficients and singular sources.  Journal of Computational Physics, 213(1):1--30, 2006."
         },
         {
             "leaf id": 305,
             "key": "doc/bib65",
             "block type": "bibliography",
-            "content": "Y.C. Zhou, Shan Zhao, Michael Feig, and G.W. Wei. \\newblock High order matched interface and boundary method for elliptic   equations with discontinuous coefficients and singular sources. \\newblock {\\em Journal of Computational Physics}, 213(1):1--30, 2006."
+            "content": "Y.C. Zhou, Shan Zhao, Michael Feig, and G.W. Wei.  High order matched interface and boundary method for elliptic   equations with discontinuous coefficients and singular sources.  Journal of Computational Physics, 213(1):1--30, 2006."
         },
         {
             "leaf id": 306,
             "key": "doc/bib66",
             "block type": "bibliography",
-            "content": "Shengfeng Zhu, Qingbiao Wu, and Chunxiao Liu. \\newblock Shape and topology optimization for elliptic boundary value problems   using a piecewise constant level set method. \\newblock {\\em Applied Numerical Mathematics}, 61(6):752--767, 2011."
+            "content": "Shengfeng Zhu, Qingbiao Wu, and Chunxiao Liu.  Shape and topology optimization for elliptic boundary value problems   using a piecewise constant level set method.  Applied Numerical Mathematics, 61(6):752--767, 2011."
         }
     ]
 }

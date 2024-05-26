@@ -7,7 +7,8 @@
             662.2923752,
             534.5968462999999,
             686.2026752
-        ]
+        ],
+        "match": 0
     },
     {
         "content": "Mining Invariance from Nonlinear",
@@ -17,7 +18,8 @@
             690.1873752,
             474.48485789999995,
             714.0976752
-        ]
+        ],
+        "match": 0
     },
     {
         "content": "Department of Electrical and Computer Engineering",
@@ -27,7 +29,8 @@
             621.6752181999999,
             412.3166818,
             631.6378182
-        ]
+        ],
+        "match": 1
     },
     {
         "content": "Austin Goddard, Kang Du, Yu Xiang",
@@ -37,7 +40,8 @@
             633.7068776,
             390.1587451,
             644.6657776
-        ]
+        ],
+        "match": 1
     },
     {
         "content": "{austin.goddard, kang.du, yu.xiang}@utah.edu",
@@ -47,7 +51,8 @@
             596.7880784,
             399.2081712,
             606.7506784000001
-        ]
+        ],
+        "match": 1
     },
     {
         "content": "University of Utah",
@@ -57,7 +62,8 @@
             609.3462182,
             344.0274883999999,
             619.3088182
-        ]
+        ],
+        "match": 1
     },
     {
         "content": "4",
@@ -67,7 +73,8 @@
             575.3,
             36.34,
             585.3
-        ]
+        ],
+        "match": 4
     },
     {
         "content": "2",
@@ -77,7 +84,8 @@
             565.3,
             36.34,
             575.3
-        ]
+        ],
+        "match": 4
     },
     {
         "content": "0",
@@ -87,7 +95,8 @@
             555.3,
             36.34,
             565.3
-        ]
+        ],
+        "match": 4
     },
     {
         "content": "2",
@@ -97,7 +106,8 @@
             545.3,
             36.34,
             555.3
-        ]
+        ],
+        "match": 4
     },
     {
         "content": "r",
@@ -107,7 +117,8 @@
             533.64,
             36.34,
             540.3
-        ]
+        ],
+        "match": 1
     },
     {
         "content": "p",
@@ -117,7 +128,8 @@
             523.64,
             36.34,
             533.64
-        ]
+        ],
+        "match": 1
     },
     {
         "content": "A",
@@ -127,7 +139,8 @@
             509.2,
             36.34,
             523.64
-        ]
+        ],
+        "match": 1
     },
     {
         "content": "3",
@@ -137,7 +150,8 @@
             494.2,
             36.34,
             504.2
-        ]
+        ],
+        "match": null
     },
     {
         "content": "2",
@@ -147,7 +161,8 @@
             484.2,
             36.34,
             494.2
-        ]
+        ],
+        "match": null
     },
     {
         "content": "]",
@@ -157,7 +172,8 @@
             467.53999999999996,
             36.34,
             474.2
-        ]
+        ],
+        "match": 14
     },
     {
         "content": "E",
@@ -167,7 +183,8 @@
             455.32,
             36.34,
             467.53999999999996
-        ]
+        ],
+        "match": 1
     },
     {
         "content": "M",
@@ -177,7 +194,8 @@
             437.53999999999996,
             36.34,
             455.31999999999994
-        ]
+        ],
+        "match": 2
     },
     {
         "content": "t.",
@@ -187,7 +205,8 @@
             426.98,
             36.34,
             437.53999999999996
-        ]
+        ],
+        "match": 4
     },
     {
         "content": "a",
@@ -197,7 +216,8 @@
             418.1,
             36.34,
             426.98
-        ]
+        ],
+        "match": 4
     },
     {
         "content": "t",
@@ -207,7 +227,8 @@
             412.53999999999996,
             36.34,
             418.09999999999997
-        ]
+        ],
+        "match": 1
     },
     {
         "content": "[s",
@@ -217,7 +238,8 @@
             398.1,
             36.34,
             412.53999999999996
-        ]
+        ],
+        "match": 40
     },
     {
         "content": "1",
@@ -227,7 +249,8 @@
             378.1,
             36.34,
             388.1
-        ]
+        ],
+        "match": 4
     },
     {
         "content": "v",
@@ -237,7 +260,8 @@
             368.1,
             36.34,
             378.1
-        ]
+        ],
+        "match": 4
     },
     {
         "content": "5",
@@ -247,7 +271,8 @@
             358.1,
             36.34,
             368.1
-        ]
+        ],
+        "match": null
     },
     {
         "content": "4",
@@ -257,7 +282,8 @@
             348.1,
             36.34,
             358.1
-        ]
+        ],
+        "match": 4
     },
     {
         "content": "2",
@@ -267,7 +293,8 @@
             338.1,
             36.34,
             348.1
-        ]
+        ],
+        "match": 4
     },
     {
         "content": "5",
@@ -277,7 +304,8 @@
             328.1,
             36.34,
             338.1
-        ]
+        ],
+        "match": null
     },
     {
         "content": "1",
@@ -287,7 +315,8 @@
             318.1,
             36.34,
             328.1
-        ]
+        ],
+        "match": 4
     },
     {
         "content": ".",
@@ -297,7 +326,8 @@
             313.1,
             36.34,
             318.1
-        ]
+        ],
+        "match": 4
     },
     {
         "content": "4",
@@ -307,7 +337,8 @@
             303.1,
             36.34,
             313.1
-        ]
+        ],
+        "match": 4
     },
     {
         "content": "0",
@@ -317,7 +348,8 @@
             293.1,
             36.34,
             303.1
-        ]
+        ],
+        "match": 4
     },
     {
         "content": "4",
@@ -327,7 +359,8 @@
             283.1,
             36.34,
             293.1
-        ]
+        ],
+        "match": 4
     },
     {
         "content": "2",
@@ -337,7 +370,8 @@
             273.1,
             36.34,
             283.1
-        ]
+        ],
+        "match": 4
     },
     {
         "content": ":",
@@ -347,7 +381,8 @@
             267.54,
             36.34,
             273.1
-        ]
+        ],
+        "match": 0
     },
     {
         "content": "v",
@@ -357,7 +392,8 @@
             257.54,
             36.34,
             267.54
-        ]
+        ],
+        "match": 4
     },
     {
         "content": "i",
@@ -367,7 +403,8 @@
             251.98,
             36.34,
             257.53999999999996
-        ]
+        ],
+        "match": 4
     },
     {
         "content": "X",
@@ -377,7 +414,8 @@
             237.54,
             36.34,
             251.98
-        ]
+        ],
+        "match": 4
     },
     {
         "content": "r",
@@ -387,7 +425,8 @@
             230.88,
             36.34,
             237.54
-        ]
+        ],
+        "match": 4
     },
     {
         "content": "a",
@@ -397,7 +436,8 @@
             222.0,
             36.34,
             230.88
-        ]
+        ],
+        "match": 4
     },
     {
         "content": "Abstract\u2014Making predictions in an unseen environment given",
@@ -407,7 +447,8 @@
             562.2420224000001,
             300.02338240000006,
             571.2084224000001
-        ]
+        ],
+        "match": 2
     },
     {
         "content": "data from multiple training environments is a challenging task.",
@@ -417,7 +458,8 @@
             552.2790224000001,
             300.02320000000014,
             561.2454224000002
-        ]
+        ],
+        "match": 2
     },
     {
         "content": "We approach this problem from an invariance perspective,",
@@ -427,7 +469,8 @@
             542.3170224000002,
             300.0232000000002,
             551.2834224000002
-        ]
+        ],
+        "match": 2
     },
     {
         "content": "focusing on binary classification to shed light on general nonlinear",
@@ -437,7 +480,8 @@
             532.3540224000002,
             300.0232000000001,
             541.3204224000002
-        ]
+        ],
+        "match": 2
     },
     {
         "content": "data generation mechanisms. We identify a unique form of",
@@ -447,7 +491,8 @@
             522.3910224000002,
             300.0232000000001,
             531.3574224000002
-        ]
+        ],
+        "match": 2
     },
     {
         "content": "invariance that exists solely in a binary setting that allows us to",
@@ -457,7 +502,8 @@
             512.4290224000002,
             300.02320000000014,
             521.3954224000003
-        ]
+        ],
+        "match": 2
     },
     {
         "content": "train models invariant over environments. We provide sufficient",
@@ -467,7 +513,8 @@
             502.4660224000002,
             300.02320000000014,
             511.4324224000002
-        ]
+        ],
+        "match": 2
     },
     {
         "content": "conditions for such invariance and show it is robust even when",
@@ -477,7 +524,8 @@
             492.5030224000002,
             300.0232000000001,
             501.46942240000016
-        ]
+        ],
+        "match": 2
     },
     {
         "content": "environmental conditions vary greatly. Our formulation admits",
@@ -487,7 +535,8 @@
             482.5410224000002,
             300.0232000000001,
             491.50742240000017
-        ]
+        ],
+        "match": 2
     },
     {
         "content": "a causal interpretation, allowing us to compare it with various",
@@ -497,7 +546,8 @@
             472.5780224000002,
             300.02320000000003,
             481.54442240000014
-        ]
+        ],
+        "match": 2
     },
     {
         "content": "frameworks. Finally, we propose a heuristic prediction method",
@@ -507,7 +557,8 @@
             462.61502240000016,
             300.0232000000001,
             471.5814224000001
-        ]
+        ],
+        "match": 2
     },
     {
         "content": "and conduct experiments using real and synthetic datasets.",
@@ -517,7 +568,8 @@
             452.65302240000017,
             281.31032320000014,
             461.61942240000013
-        ]
+        ],
+        "match": 2
     },
     {
         "content": "I. INTRODUCTION",
@@ -527,7 +579,8 @@
             433.6440784000002,
             213.37183979999998,
             443.6066784000002
-        ]
+        ],
+        "match": 3
     },
     {
         "content": "It is common practice to collect observations of a set of",
@@ -537,7 +590,8 @@
             418.5140784000002,
             300.0219200000001,
             428.4766784000002
-        ]
+        ],
+        "match": 4
     },
     {
         "content": "features X = (X1, . . . , Xm) and response Y from different",
@@ -547,7 +601,8 @@
             405.8630828000002,
             300.01860359999995,
             416.7408556000002
-        ]
+        ],
+        "match": 4
     },
     {
         "content": "environments to train a model. The prediction of the response",
@@ -557,7 +612,8 @@
             394.6040784000002,
             300.0215200000001,
             404.5666784000002
-        ]
+        ],
+        "match": 4
     },
     {
         "content": "in an unseen environment is often referred to as multi\u2212",
@@ -567,7 +623,8 @@
             382.6480784000002,
             300.0215200000001,
             392.6106784000002
-        ]
+        ],
+        "match": 4
     },
     {
         "content": "environment domain adaptation, with practical applications",
@@ -577,7 +634,8 @@
             370.6930784000002,
             300.0215200000001,
             380.65567840000017
-        ]
+        ],
+        "match": 4
     },
     {
         "content": "in various fields (e.g., genetics [1] and healthcare [2]). A",
@@ -587,7 +645,8 @@
             358.73807840000023,
             300.02152000000007,
             368.70067840000024
-        ]
+        ],
+        "match": 4
     },
     {
         "content": "common assumption in such problems is the principle of",
@@ -597,7 +656,8 @@
             346.78307840000025,
             300.0215200000002,
             356.7456784000002
-        ]
+        ],
+        "match": 4
     },
     {
         "content": "invariance, modularity, or autonomy [3]\u2013[8]. This invariance",
@@ -607,7 +667,8 @@
             334.82807840000027,
             300.0215200000002,
             344.7906784000003
-        ]
+        ],
+        "match": 4
     },
     {
         "content": "assumption states that the conditional distribution of Y given",
@@ -617,7 +678,8 @@
             322.8730784000003,
             300.0223932,
             333.0548556000003
-        ]
+        ],
+        "match": 4
     },
     {
         "content": "X is invariant with respect to different environment.",
@@ -627,7 +689,8 @@
             310.91707840000026,
             264.0057328000002,
             321.09885560000026
-        ]
+        ],
+        "match": 4
     },
     {
         "content": "The invariant causal prediction (ICP) framework [9], along",
@@ -637,7 +700,8 @@
             298.95607840000025,
             300.01921740000006,
             308.94856620000024
-        ]
+        ],
+        "match": 5
     },
     {
         "content": "with its various extensions [10], [11], employ the invariance",
@@ -647,7 +711,8 @@
             287.00107840000027,
             300.0215200000001,
             296.9636784000003
-        ]
+        ],
+        "match": 5
     },
     {
         "content": "principle to identify invariant predictors across environments.",
@@ -657,7 +722,8 @@
             275.0460784000003,
             300.02152000000024,
             285.00867840000024
-        ]
+        ],
+        "match": 5
     },
     {
         "content": "Following this framework, various domain adaptation ap\u2212",
@@ -667,7 +733,8 @@
             263.0910784000003,
             300.0215200000002,
             273.0536784000003
-        ]
+        ],
+        "match": 5
     },
     {
         "content": "proaches have been developed [12]\u2013[14]. Specifically, the",
@@ -677,7 +744,8 @@
             251.13507840000028,
             300.0215200000001,
             261.0976784000003
-        ]
+        ],
+        "match": 5
     },
     {
         "content": "stabilized regression (SR) [14] approach relies on a weaker",
@@ -687,7 +755,8 @@
             239.18007840000027,
             300.0182200000001,
             249.1725662000003
-        ]
+        ],
+        "match": 5
     },
     {
         "content": "form of invariance dependent on expectation as opposed",
@@ -697,7 +766,8 @@
             227.22507840000026,
             300.02152000000024,
             237.18767840000027
-        ]
+        ],
+        "match": 5
     },
     {
         "content": "to probability. The common assumption for the approaches",
@@ -707,7 +777,8 @@
             215.27007840000024,
             300.02152000000024,
             225.23267840000025
-        ]
+        ],
+        "match": 5
     },
     {
         "content": "mentioned is that the assignment of Y does not change",
@@ -717,7 +788,8 @@
             203.31507840000023,
             300.0269168000001,
             213.49685560000023
-        ]
+        ],
+        "match": 5
     },
     {
         "content": "over environments. In a causal sense, from which much of",
@@ -727,7 +799,8 @@
             191.36007840000022,
             300.02152000000024,
             201.32267840000023
-        ]
+        ],
+        "match": 5
     },
     {
         "content": "the literature in this area stems, this is referred to as an",
@@ -737,7 +810,8 @@
             179.40407840000023,
             300.0215200000002,
             189.36667840000024
-        ]
+        ],
+        "match": 5
     },
     {
         "content": "intervention on Y [8]. When Y is intervened, the invariance",
@@ -747,7 +821,8 @@
             167.44907840000022,
             300.0245616000001,
             177.64081820000024
-        ]
+        ],
+        "match": 5
     },
     {
         "content": "principle, as well as the frameworks mentioned above, fail. In a",
@@ -757,7 +832,8 @@
             155.4940784000002,
             300.02152000000024,
             165.45667840000021
-        ]
+        ],
+        "match": 5
     },
     {
         "content": "series of recent works [15], [16], an alternative approach called",
@@ -767,7 +843,8 @@
             143.5390784000002,
             300.0215200000002,
             153.5016784000002
-        ]
+        ],
+        "match": 5
     },
     {
         "content": "the invariant matching property (IMP) has been developed",
@@ -777,7 +854,8 @@
             131.58407840000018,
             300.01948100000004,
             141.5765662000002
-        ]
+        ],
+        "match": 5
     },
     {
         "content": "to detect linear invariant models in a regression setting even",
@@ -787,7 +865,8 @@
             119.6290784000002,
             300.0270018,
             129.8208182000002
-        ]
+        ],
+        "match": 5
     },
     {
         "content": "when the assignment of Y is altered over environment.",
@@ -797,7 +876,8 @@
             107.6730784000002,
             275.3517700000001,
             117.85485560000019
-        ]
+        ],
+        "match": 5
     },
     {
         "content": "In this work, we extend general principles developed in [15],",
@@ -807,7 +887,8 @@
             95.7120784000002,
             300.0219200000002,
             105.67467840000019
-        ]
+        ],
+        "match": 6
     },
     {
         "content": "[16] to the binary classification setting as an attempt to gener\u2212",
@@ -817,7 +898,8 @@
             83.7570784000002,
             300.0215200000002,
             93.71967840000019
-        ]
+        ],
+        "match": 6
     },
     {
         "content": "alize to nonlinear settings. The proposed approach works even",
@@ -827,7 +909,8 @@
             71.8020784000002,
             300.0215200000002,
             81.7646784000002
-        ]
+        ],
+        "match": 6
     },
     {
         "content": "when data\u2212generating models change over environments (e.g.,",
@@ -837,7 +920,8 @@
             59.84707840000019,
             300.0215200000002,
             69.8096784000002
-        ]
+        ],
+        "match": 6
     },
     {
         "content": "Y can be generated using a probit model for one environment",
@@ -847,7 +931,8 @@
             47.89107840000019,
             300.0229592000001,
             58.07285560000019
-        ]
+        ],
+        "match": 6
     },
     {
         "content": "and a logistic model in another). Additionally, the approach is",
@@ -857,7 +942,8 @@
             561.9640784000002,
             563.0355200000001,
             571.9266784000002
-        ]
+        ],
+        "match": 6
     },
     {
         "content": "not constrained by the data type, meaning it can be useful on",
@@ -867,7 +953,8 @@
             550.0090784000001,
             563.0355200000001,
             559.9716784000002
-        ]
+        ],
+        "match": 6
     },
     {
         "content": "continuous, discrete, or categorical variables.",
@@ -877,7 +964,8 @@
             538.0530784000001,
             495.6783814000001,
             548.0156784000002
-        ]
+        ],
+        "match": 6
     },
     {
         "content": "Consider the following setting. For different environmental",
@@ -887,7 +975,8 @@
             505.98907840000015,
             563.0349200000002,
             515.9516784000001
-        ]
+        ],
+        "match": 8
     },
     {
         "content": "conditions indexed by the set E, we have a random vector",
@@ -897,7 +986,8 @@
             494.03407840000017,
             563.04116,
             504.21585560000017
-        ]
+        ],
+        "match": 8
     },
     {
         "content": "II. PROBLEM FORMULATION",
@@ -907,7 +997,8 @@
             520.8380784000001,
             499.07373659999996,
             530.8006784000002
-        ]
+        ],
+        "match": 7
     },
     {
         "content": "X = (X1, . . . , Xm) and a binary random variable Y whose",
@@ -917,7 +1008,8 @@
             481.3830828000001,
             563.0364430000001,
             492.25985560000015
-        ]
+        ],
+        "match": 8
     },
     {
         "content": "elements form a joint distribution Pe := P X,Ye dependent on",
@@ -927,7 +1019,8 @@
             468.45908280000015,
             563.0362350000001,
             481.51188280000014
-        ]
+        ],
+        "match": 8
     },
     {
         "content": "e \u2208 E. Denote X and Y as X e and Y e for a specific e \u2208 E,",
@@ -937,7 +1030,8 @@
             458.1680784000002,
             563.0366500000001,
             469.5558828000002
-        ]
+        ],
+        "match": 8
     },
     {
         "content": "respectively. The supports of X and Y are X = Rm and Y =",
@@ -947,7 +1041,8 @@
             446.2130784000002,
             563.0369102800001,
             458.3276000000002
-        ]
+        ],
+        "match": 8
     },
     {
         "content": "{0, 1}, respectively. Let XS be a random vector containing the",
@@ -957,7 +1052,8 @@
             433.5620828000002,
             563.0390964000002,
             444.4398556000002
-        ]
+        ],
+        "match": 8
     },
     {
         "content": "elements in X indexed by the set S \u2286 {1, . . . , m}, and let XS",
@@ -967,7 +1063,8 @@
             421.60708280000017,
             562.1571207000002,
             432.4838556000002
-        ]
+        ],
+        "match": 8
     },
     {
         "content": "be its support. To simplify notation, let X e0 := Y e. For each",
@@ -977,7 +1074,8 @@
             408.67308280000015,
             563.0343216000003,
             421.7358828000001
-        ]
+        ],
+        "match": 8
     },
     {
         "content": "e \u2208 E, we keep the distribution Pe general, with the exception",
@@ -987,7 +1085,8 @@
             397.69708280000015,
             563.0331806000004,
             408.5738556000002
-        ]
+        ],
+        "match": 8
     },
     {
         "content": "that there exists an X ei generated according to the form",
@@ -997,7 +1096,8 @@
             384.6430828000002,
             540.7822924000003,
             397.8248828000002
-        ]
+        ],
+        "match": 8
     },
     {
         "content": "X ei = g(X eSi) + \u03f5e, for some i \u2208 {1, . . . , m}, (1)",
@@ -1007,7 +1107,8 @@
             366.5686278000001,
             563.0363916000002,
             380.72788280000015
-        ]
+        ],
+        "match": null
     },
     {
         "content": "where X eSi, for Si \u2286 {0, . . . , m}\u2139, represents the variables",
@@ -1017,7 +1118,8 @@
             348.69262780000014,
             563.0326758000003,
             362.6348828000001
-        ]
+        ],
+        "match": 10
     },
     {
         "content": "that directly effect X ei , and \u03f5e is an independent, zero mean,",
@@ -1027,7 +1129,8 @@
             337.4980828000002,
             563.0363718000003,
             350.6798828000002
-        ]
+        ],
+        "match": 10
     },
     {
         "content": "noise variable. We assume the output of the function g is not",
@@ -1037,7 +1140,8 @@
             327.3370784000002,
             563.0414288000003,
             337.5188556000002
-        ]
+        ],
+        "match": 10
     },
     {
         "content": "constant with regards to any of its inputs; g is a constant",
@@ -1047,7 +1151,8 @@
             315.3810784000002,
             563.0343944000003,
             325.5628556000002
-        ]
+        ],
+        "match": 10
     },
     {
         "content": "function when Si = \u2205.",
@@ -1057,7 +1162,8 @@
             302.7310828000002,
             406.6846500000003,
             315.5406000000002
-        ]
+        ],
+        "match": 10
     },
     {
         "content": "Additionally, while the function g does not change over",
@@ -1067,7 +1173,8 @@
             291.7150784000002,
             563.0335932000003,
             301.8968556000002
-        ]
+        ],
+        "match": 11
     },
     {
         "content": "environment (i.e., does not depend on e), the distribution of",
@@ -1077,7 +1184,8 @@
             279.7600784000002,
             563.0316708000003,
             289.9418556000002
-        ]
+        ],
+        "match": 11
     },
     {
         "content": "\u03f5e can change arbitrarily as long as the mean of the distribution",
@@ -1087,7 +1195,8 @@
             267.80507840000024,
             563.0328372000005,
             279.19288280000023
-        ]
+        ],
+        "match": 11
     },
     {
         "content": "remains zero. Aside from a binary Y and the form of X ei in (1),",
@@ -1097,7 +1206,8 @@
             254.05508280000024,
             563.0402676000002,
             267.23788280000025
-        ]
+        ],
+        "match": 11
     },
     {
         "content": "we make no assumptions on the distribution or functional form",
@@ -1107,7 +1217,8 @@
             243.89407840000024,
             563.0355200000002,
             253.85667840000025
-        ]
+        ],
+        "match": 11
     },
     {
         "content": "of any variable. As such, this formulation applies to any set",
@@ -1117,7 +1228,8 @@
             231.93907840000023,
             563.0355200000004,
             241.90167840000024
-        ]
+        ],
+        "match": 11
     },
     {
         "content": "of features, be it continuous, discrete, or a mixture of the two.",
@@ -1127,7 +1239,8 @@
             219.98407840000021,
             563.0355200000004,
             229.94667840000022
-        ]
+        ],
+        "match": 11
     },
     {
         "content": "We assume only a subset of all environments are observed",
@@ -1137,7 +1250,8 @@
             208.2730784000002,
             563.0359200000004,
             218.2356784000002
-        ]
+        ],
+        "match": 12
     },
     {
         "content": "and denote this set by Eobs \u2286 E. Where Eobs = Etrain \u222a {etest},",
@@ -1147,7 +1261,8 @@
             195.4686592000002,
             563.03665,
             207.55245920000021
-        ]
+        ],
+        "match": 12
     },
     {
         "content": "and Y test := Y etest , our goal is to make predictions on Y test,",
@@ -1157,7 +1272,8 @@
             184.36307840000018,
             563.03665,
             197.04233920000019
-        ]
+        ],
+        "match": 12
     },
     {
         "content": "given a set of training environments Etrain. As such, we aim to",
@@ -1167,7 +1283,8 @@
             171.55865920000022,
             563.0351668000001,
             182.58885560000022
-        ]
+        ],
+        "match": 12
     },
     {
         "content": "find a function \u03d5e : X \u2212\u2192 W such that, the probability of Y",
@@ -1177,7 +1294,8 @@
             159.7570828000002,
             560.82328556,
             170.6338556000002
-        ]
+        ],
+        "match": 12
     },
     {
         "content": "given \u03d5e(X) does not vary over any environment. Specifically,",
@@ -1187,7 +1305,8 @@
             147.8020828000002,
             563.0380784000001,
             158.6788556000002
-        ]
+        ],
+        "match": 12
     },
     {
         "content": "for all w \u2208 W and e, h \u2208 Eobs,",
@@ -1197,7 +1316,8 @@
             135.69365920000018,
             437.0446500000001,
             146.72385560000018
-        ]
+        ],
+        "match": 12
     },
     {
         "content": "Pe(Y |\u03d5e(X) = w) = Ph(Y |\u03d5h(X) = w). (2)",
@@ -1207,7 +1327,8 @@
             118.2520828000002,
             563.0363916000001,
             129.12885560000018
-        ]
+        ],
+        "match": 14
     },
     {
         "content": "As Y is binary, it is equivalent to write (2) in the form:",
@@ -1217,7 +1338,8 @@
             101.3520784000002,
             563.0354858000003,
             111.5338556000002
-        ]
+        ],
+        "match": 14
     },
     {
         "content": "EPe[Y |\u03d5e(X) = w] = EPh[Y |\u03d5h(X) = w], for all w \u2208 W",
@@ -1227,7 +1349,8 @@
             88.03062780000019,
             562.2212364999999,
             99.5788556000002
-        ]
+        ],
+        "match": 14
     },
     {
         "content": "and e, h \u2208 Eobs. It is well\u2212known that (2) is satisfied if",
@@ -1237,7 +1360,8 @@
             76.59265920000018,
             563.0372844,
             87.6238556000002
-        ]
+        ],
+        "match": 14
     },
     {
         "content": "\u03d5e(X) = XSY and for SY \u2286 {1, . . . , m},",
@@ -1247,7 +1371,8 @@
             64.1756278000002,
             482.96565,
             75.6678556000002
-        ]
+        ],
+        "match": 14
     },
     {
         "content": "Y e = f (X eSY ) + \u03f5Y ,",
@@ -1257,7 +1382,8 @@
             45.61262780000019,
             479.89461027999994,
             59.777882800000185
-        ]
+        ],
+        "match": 14
     },
     {
         "content": "(3)",
@@ -1267,7 +1393,8 @@
             47.89107840000019,
             563.0363915999999,
             57.85367840000019
-        ]
+        ],
+        "match": null
     },
     {
         "content": "where \u03f5Y is an independent noise that does not vary over",
@@ -1277,7 +1404,8 @@
             704.7300828,
             300.0209046000001,
             715.6078556
-        ]
+        ],
+        "match": 16
     },
     {
         "content": "environment [9]. However, we are interested in a more general",
@@ -1287,7 +1415,8 @@
             693.4710783999999,
             300.02152000000007,
             703.4336784
-        ]
+        ],
+        "match": 16
     },
     {
         "content": "setting where the function f and distribution of the noise can",
@@ -1297,7 +1426,8 @@
             681.5160783999999,
             300.0227848,
             691.7078181999999
-        ]
+        ],
+        "match": 16
     },
     {
         "content": "vary over environment. From a causal perspective, this would",
@@ -1307,7 +1437,8 @@
             669.5600783999998,
             300.0189446,
             679.7518181999999
-        ]
+        ],
+        "match": 16
     },
     {
         "content": "indicate that Y e had been intervened (see Section IV\u2212A). In",
@@ -1317,7 +1448,8 @@
             657.6050783999998,
             300.02648899999997,
             668.9938827999998
-        ]
+        ],
+        "match": 16
     },
     {
         "content": "such a setting, \u03d5e(X) = XSY is no longer useful and other",
@@ -1327,7 +1459,8 @@
             644.3396277999998,
             300.02739320000006,
             655.8318555999998
-        ]
+        ],
+        "match": 16
     },
     {
         "content": "approaches must be considered. We now consider one such",
@@ -1337,7 +1470,8 @@
             633.6950783999997,
             300.02152000000007,
             643.6576783999998
-        ]
+        ],
+        "match": 16
     },
     {
         "content": "alternative, starting with a motivating example.",
@@ -1347,7 +1481,8 @@
             621.7400783999997,
             241.34180600000005,
             631.7026783999997
-        ]
+        ],
+        "match": 16
     },
     {
         "content": "III. MOTIVATING EXAMPLE",
@@ -1357,7 +1492,8 @@
             602.1770783999997,
             234.019842,
             612.1396783999998
-        ]
+        ],
+        "match": 17
     },
     {
         "content": "Consider the following setting with X e = (X e1 , X e2 , X e3 ).",
@@ -1367,7 +1503,8 @@
             584.7860827999998,
             300.02265000000006,
             597.8478827999998
-        ]
+        ],
+        "match": 18
     },
     {
         "content": "Let X e1 and X e2 be independent and follow X e1 \u223c N (\u00b5e1, \u03c321)",
@@ -1377,7 +1514,8 @@
             572.8310827999998,
             300.0224551400001,
             585.8928827999997
-        ]
+        ],
+        "match": 18
     },
     {
         "content": "and X e2 \u223c N (\u00b5e2, \u03c322). The variable Y e is generated such that\nY e|X e1 , X e2 forms a probit model. Specifically,",
@@ -1387,7 +1525,8 @@
             548.9210827999997,
             300.0235888000001,
             573.9378827999997
-        ]
+        ],
+        "match": 18
     },
     {
         "content": "Y e =",
@@ -1397,7 +1536,8 @@
             523.7012555999996,
             114.50391028000008,
             535.3688827999997
-        ]
+        ],
+        "match": 14
     },
     {
         "content": "(cid:40)1, if \u03b2e1X e1 + \u03b22X e2 + \u03f5Y > 0,",
@@ -1407,7 +1547,8 @@
             528.6030827999998,
             256.07961028,
             546.6560399999997
-        ]
+        ],
+        "match": 19
     },
     {
         "content": "0, otherwise.",
@@ -1417,7 +1558,8 @@
             515.9310783999997,
             184.50961028000003,
             526.1128555999998
-        ]
+        ],
+        "match": 19
     },
     {
         "content": "Following a similar form as (1), X e3 is linear given Y e so that",
@@ -1427,7 +1569,8 @@
             495.36108279999974,
             300.0183566,
             508.42288279999974
-        ]
+        ],
+        "match": 20
     },
     {
         "content": "X e3 =",
@@ -1437,7 +1580,8 @@
             468.27708279999973,
             130.79291027999997,
             481.82688279999974
-        ]
+        ],
+        "match": 29
     },
     {
         "content": "(cid:40)\u03b31X e1 + \u03f53, if Y e = 1,",
@@ -1447,7 +1591,8 @@
             475.0610827999997,
             240.82861027999994,
             493.11403999999976
-        ]
+        ],
+        "match": 21
     },
     {
         "content": "\u03b30X e1 + \u03f53, if Y e = 0.",
@@ -1457,7 +1602,8 @@
             460.7150827999997,
             240.82861027999988,
             473.7768827999997
-        ]
+        ],
+        "match": 21
     },
     {
         "content": "The noise variables \u03f5Y and \u03f53 are i.i.d. N (0, \u03c32). Suppose",
@@ -1467,7 +1613,8 @@
             441.4960827999997,
             300.0216973999999,
             453.57888279999975
-        ]
+        ],
+        "match": null
     },
     {
         "content": "we wish to predict Y e given only X e1 . Predicting Y e for a",
@@ -1477,7 +1624,8 @@
             428.56208279999976,
             300.02625519999987,
             441.62388279999976
-        ]
+        ],
+        "match": 12
     },
     {
         "content": "particular e \u2208 E becomes difficult as \u03b2e1 and \u00b5e2 vary with",
@@ -1487,7 +1635,8 @@
             416.6070827999998,
             300.0268487999998,
             429.6688827999998
-        ]
+        ],
+        "match": null
     },
     {
         "content": "environment. Specifically,",
@@ -1497,7 +1646,8 @@
             406.32507839999977,
             153.79047719999986,
             416.2876783999998
-        ]
+        ],
+        "match": 12
     },
     {
         "content": "EPe[Y |X1 = x1] = \u03a6",
@@ -1507,7 +1657,8 @@
             378.2426277999997,
             174.24475327999986,
             389.72885559999975
-        ]
+        ],
+        "match": 40
     },
     {
         "content": "(cid:32) \u03b2e1x1 + \u03b22\u00b5e2(cid:112)(\u03b22\u03c32)2 + \u03c32",
@@ -1517,7 +1668,8 @@
             370.6330828,
             249.63857910000002,
             402.72103999999973
-        ]
+        ],
+        "match": 28
     },
     {
         "content": "(cid:33)",
@@ -1527,7 +1679,8 @@
             392.75744000000003,
             259.21939041999997,
             402.72004000000004
-        ]
+        ],
+        "match": null
     },
     {
         "content": ", (4)",
@@ -1537,7 +1690,8 @@
             379.54707840000003,
             300.0223916,
             389.72885560000003
-        ]
+        ],
+        "match": 42
     },
     {
         "content": "where \u03a6 is the cumulative distribution function of a standard",
@@ -1547,7 +1701,8 @@
             353.09907840000005,
             300.0181084000001,
             363.28085560000005
-        ]
+        ],
+        "match": 24
     },
     {
         "content": "normal random variable. As (4) varies over environment, it is",
@@ -1557,7 +1712,8 @@
             341.14407840000007,
             300.0215200000001,
             351.1066784000001
-        ]
+        ],
+        "match": 24
     },
     {
         "content": "not practical to use EPe [Y |X1] to estimate Y e on different",
@@ -1567,7 +1723,8 @@
             327.8836278,
             300.0267497999999,
             340.5768828
-        ]
+        ],
+        "match": 24
     },
     {
         "content": "environments. Even while conditioning on both X e1 and X e2",
@@ -1577,7 +1734,8 @@
             315.56008280000003,
             299.52379959999996,
             328.62188280000004
-        ]
+        ],
+        "match": 24
     },
     {
         "content": "(the variables that directly affect Y e), the variance (w.r.t.",
@@ -1587,7 +1745,8 @@
             305.27907840000006,
             300.0259298,
             316.66688280000005
-        ]
+        ],
+        "match": 24
     },
     {
         "content": "environment) still remains through \u03b2e1.",
@@ -1597,7 +1756,8 @@
             291.6500828,
             206.60964999999993,
             304.7118828
-        ]
+        ],
+        "match": 24
     },
     {
         "content": "We can, however, decompose (4) into various variant and",
@@ -1607,7 +1767,8 @@
             281.2640784,
             300.02192,
             291.22667839999997
-        ]
+        ],
+        "match": 25
     },
     {
         "content": "invariant components such that EPe[Y |X1 = x1] becomes the",
@@ -1617,7 +1778,8 @@
             268.0046278,
             300.0252421999999,
             279.49085560000003
-        ]
+        ],
+        "match": 25
     },
     {
         "content": "following (see the proof of Proposition 1 for a general case),",
@@ -1627,7 +1789,8 @@
             257.35407840000005,
             299.66286640000004,
             267.3166784
-        ]
+        ],
+        "match": 25
     },
     {
         "content": "EPe [X3|X1 = x1] \u2212 EPe [X3|X1 = x1, Y = 0]",
@@ -1637,7 +1800,8 @@
             239.23362780000002,
             261.89442335999985,
             250.72085560000002
-        ]
+        ],
+        "match": null
     },
     {
         "content": "EPe[X3|X1 = x1, Y = 1] \u2212 EPe [X3|X1 = x1, Y = 0] , (5)",
@@ -1647,7 +1811,8 @@
             225.6606278,
             300.02239159999993,
             243.98085559999998
-        ]
+        ],
+        "match": 40
     },
     {
         "content": "where EPe [X3|X1 = x1] is",
@@ -1657,7 +1822,8 @@
             208.51062779999998,
             160.07805419999994,
             219.99785559999998
-        ]
+        ],
+        "match": 33
     },
     {
         "content": "\u03a6",
@@ -1667,7 +1833,8 @@
             182.9232556,
             92.73698971999993,
             192.88585559999999
-        ]
+        ],
+        "match": 24
     },
     {
         "content": "(cid:32) \u03b2e1x1 + \u03b22\u00b5e2(cid:112)(\u03b22\u03c32)2 + \u03c32",
@@ -1677,7 +1844,8 @@
             173.7900828,
             168.1255791,
             205.87704
-        ]
+        ],
+        "match": 28
     },
     {
         "content": "(cid:33)",
@@ -1687,7 +1855,8 @@
             195.91443999999998,
             177.70639042,
             205.87704
-        ]
+        ],
+        "match": null
     },
     {
         "content": "(\u03b31 \u2212 \u03b30)x1 + \u03b30x1, (6)",
@@ -1697,7 +1866,8 @@
             182.0090828,
             300.0223915999999,
             192.88585559999999
-        ]
+        ],
+        "match": 28
     },
     {
         "content": "and EPe[X3|X1 = x1, Y = y] is \u03b31x1 if y = 1 and \u03b30x1",
@@ -1707,7 +1877,8 @@
             154.2866278,
             299.5245790999998,
             165.7738556
-        ]
+        ],
+        "match": 29
     },
     {
         "content": "if y = 0. We note that the variance (w.r.t environment)",
@@ -1717,7 +1888,8 @@
             143.63707839999998,
             300.02385559999993,
             153.81885559999998
-        ]
+        ],
+        "match": 29
     },
     {
         "content": "contributed by \u03b2e1 and \u00b5e2 is completely accounted for in",
@@ -1727,7 +1899,8 @@
             130.00808279999998,
             300.0221961999999,
             143.06988280000002
-        ]
+        ],
+        "match": 29
     },
     {
         "content": "the term EPe [X3|X1] and that EPe [X3|X1, Y ] is invariant",
@@ -1737,7 +1910,8 @@
             118.42162780000004,
             300.0191451999998,
             129.90885560000004
-        ]
+        ],
+        "match": 29
     },
     {
         "content": "over environment. Thus, (2) holds for the function \u03d5e(X) =",
@@ -1747,7 +1921,8 @@
             107.07608280000004,
             300.02572421999986,
             117.95285560000003
-        ]
+        ],
+        "match": 29
     },
     {
         "content": "(X1, EPe [X3|X1]). In addition to this, we also note that",
@@ -1757,7 +1932,8 @@
             94.51162780000004,
             300.02160859999987,
             105.99785560000004
-        ]
+        ],
+        "match": 29
     },
     {
         "content": "conditioning on both X1 and X2 leads to a similar invariance;",
@@ -1767,7 +1943,8 @@
             83.16608280000004,
             300.02389819999985,
             94.04285560000004
-        ]
+        ],
+        "match": 29
     },
     {
         "content": "we only condition on X1 in this example for simplicity.",
@@ -1777,7 +1954,8 @@
             71.21008280000004,
             279.07118479999986,
             82.08785560000004
-        ]
+        ],
+        "match": 29
     },
     {
         "content": "This invariance does not hold if we replace X e3 with any",
@@ -1787,7 +1965,8 @@
             58.17308280000003,
             300.02623799999975,
             71.23488280000004
-        ]
+        ],
+        "match": 30
     },
     {
         "content": "other variable. For example, suppose we were to estimate Y e,",
@@ -1797,7 +1976,8 @@
             47.89207840000003,
             300.0226499999998,
             59.27988280000003
-        ]
+        ],
+        "match": 30
     },
     {
         "content": "replacing X e3 with X e2 . We can still decompose (4) similarly\nto (5) by replacing X e3 with X e2 . As EPe [X2|X1] = \u00b5e2 does",
@@ -1807,7 +1987,8 @@
             691.7970828,
             563.0364457999999,
             716.8138828
-        ]
+        ],
+        "match": 30
     },
     {
         "content": "not contain \u03b2e1, the portion of EPe[Y |X1] that contains \u03b2e1 must",
@@ -1817,7 +1998,8 @@
             679.8420828,
             563.0362569999999,
             692.9038827999999
-        ]
+        ],
+        "match": 30
     },
     {
         "content": "reside in EPe [X2|X1, Y ]. i.e., EPe [X2|X1, Y ] is not invariant",
@@ -1827,7 +2009,8 @@
             668.2556277999998,
             563.0400371999997,
             679.7418555999999
-        ]
+        ],
+        "match": 30
     },
     {
         "content": "over environments as is EPe [X3|X1, Y ]. Thus, the function",
@@ -1837,7 +2020,8 @@
             656.3006277999998,
             563.0369325999997,
             667.7868555999999
-        ]
+        ],
+        "match": 30
     },
     {
         "content": "\u03d5e(X) = (X1, EPe [X2|X1]) will no longer satisfy (2).",
@@ -1847,7 +2031,8 @@
             644.3446277999998,
             535.3418787999996,
             655.8318555999998
-        ]
+        ],
+        "match": 30
     },
     {
         "content": "To further illustrate the difference in selecting X e3 over",
@@ -1857,7 +2042,8 @@
             631.9670827999998,
             563.0366621999995,
             645.0288827999998
-        ]
+        ],
+        "match": 31
     },
     {
         "content": "X e2 , suppose we wish to estimate on a new environment",
@@ -1867,7 +2053,8 @@
             620.0120827999998,
             563.0394863999998,
             633.0738827999998
-        ]
+        ],
+        "match": 31
     },
     {
         "content": "etest. While we have access to X test, we can easily construct",
@@ -1877,7 +2064,8 @@
             609.7300783999997,
             563.0369001999996,
             620.9654591999997
-        ]
+        ],
+        "match": 31
     },
     {
         "content": "EPtest[Xi|X1] for either i \u2208 {2, 3}. We cannot, however, use",
@@ -1887,7 +2075,8 @@
             596.3610391999997,
             563.0388795999997,
             607.9568555999997
-        ]
+        ],
+        "match": 31
     },
     {
         "content": "Y test to construct our estimate, and EPtest[Xi|X1, Y ] must be",
@@ -1897,7 +2086,8 @@
             584.4050391999997,
             563.0409539999998,
             597.0544591999997
-        ]
+        ],
+        "match": 31
     },
     {
         "content": "obtained by leveraging invariances over environment. Thus,",
@@ -1907,7 +2097,8 @@
             573.8650783999996,
             563.0355199999999,
             583.8276783999996
-        ]
+        ],
+        "match": 31
     },
     {
         "content": "for either i \u2208 {2, 3}, we construct the estimate",
@@ -1917,7 +2108,8 @@
             561.9100783999995,
             503.17221619999987,
             572.0918555999996
-        ]
+        ],
+        "match": 31
     },
     {
         "content": "\u02c6Y testi =: EPtest[Xi|X1] \u2212 EPe [Xi|X1, Y = 0]",
@@ -1927,7 +2119,8 @@
             536.5790827999996,
             519.1984233599998,
             555.1638555999996
-        ]
+        ],
+        "match": null
     },
     {
         "content": "EPe [Xi|X1, Y = 1] \u2212 EPe[Xi|X1, Y = 0] , (7)",
@@ -1937,7 +2130,8 @@
             530.1036278,
             563.0363915999999,
             548.4248556
-        ]
+        ],
+        "match": 42
     },
     {
         "content": "where e \u2208 Etrain. As EPe [X3|X1, Y ] is invariant and",
@@ -1947,7 +2141,8 @@
             513.1766278,
             563.0381982,
             524.6628556000001
-        ]
+        ],
+        "match": 33
     },
     {
         "content": "EPe [X2|X1, Y ] is not invariant as discussed above, \u02c6Y test3 will",
@@ -1957,7 +2152,8 @@
             500.78308280000005,
             563.0358056000001,
             515.2268556
-        ]
+        ],
+        "match": 33
     },
     {
         "content": "provide a good estimate of Y test, while \u02c6Y test2 will not.",
@@ -1967,7 +2163,8 @@
             488.8030828,
             531.2155684000002,
             503.2468556
-        ]
+        ],
+        "match": 33
     },
     {
         "content": "In Fig. 1 we compare \u02c6Y test3 and \u02c6Y test2 by simulating",
@@ -1977,7 +2174,8 @@
             476.7700828,
             563.0332554000001,
             491.2138556
-        ]
+        ],
+        "match": 34
     },
     {
         "content": "(xtest, ytest) pairs for a set of specific parameters. The estimate",
@@ -1987,7 +2185,8 @@
             466.5580784,
             563.0342154000003,
             477.7934592
-        ]
+        ],
+        "match": 34
     },
     {
         "content": "\u02c6Y test2 does not fit the data as many xtest1 corresponding to",
@@ -1997,7 +2196,8 @@
             452.86008279999993,
             563.0367040000002,
             467.3038556
-        ]
+        ],
+        "match": 34
     },
     {
         "content": "ytest = 0 will be incorrectly classified to one. However, this is",
@@ -2007,7 +2207,8 @@
             442.6480783999999,
             563.0319374000003,
             453.8824591999999
-        ]
+        ],
+        "match": 34
     },
     {
         "content": "not the case when \u02c6Y test3 is used, and the fit is greatly improved",
@@ -2017,7 +2218,8 @@
             428.9490827999999,
             563.0320658000004,
             443.3928555999999
-        ]
+        ],
+        "match": 34
     },
     {
         "content": "(Fig. 1). The poor fit on \u02c6Y test2 is a result of EPe [X2|X1, Y ]",
@@ -2027,7 +2229,8 @@
             416.97008279999994,
             563.0366102800006,
             431.4138555999999
-        ]
+        ],
+        "match": 34
     },
     {
         "content": "varying across environments.",
@@ -2037,7 +2240,8 @@
             406.75807839999993,
             430.3625758000006,
             416.7206783999999
-        ]
+        ],
+        "match": 34
     },
     {
         "content": "Fig. 1: Comparisons of \u02c6Y test3 (left) and \u02c6Y test2 (right), where",
@@ -2047,7 +2251,8 @@
             277.46008279999995,
             563.0335110000001,
             291.90385560000004
-        ]
+        ],
+        "match": null
     },
     {
         "content": "\u03b2e1 = 2, \u00b5e2 = 1, \u03b2test2 = 0, and \u00b5test2 = \u22121.",
@@ -2057,7 +2262,8 @@
             265.50508279999985,
             484.5266500000002,
             278.6368827999999
-        ]
+        ],
+        "match": 40
     },
     {
         "content": "IV. THE BINARY INVARIANT MATCHING PROPERTY",
@@ -2067,7 +2273,8 @@
             244.3440783999998,
             547.9897026000002,
             254.3066783999998
-        ]
+        ],
+        "match": 37
     },
     {
         "content": "A deterministic relationship such as the one in (5) has been",
@@ -2077,7 +2284,8 @@
             228.9260783999998,
             563.0349200000003,
             238.8886783999998
-        ]
+        ],
+        "match": 38
     },
     {
         "content": "previously referred to as matching [15], and can be generalized",
@@ -2087,7 +2295,8 @@
             216.97107839999978,
             563.0388288000003,
             227.16281819999978
-        ]
+        ],
+        "match": 38
     },
     {
         "content": "to the formulation outlined in Section II.",
@@ -2097,7 +2306,8 @@
             205.01607839999977,
             479.2899044000002,
             214.97867839999978
-        ]
+        ],
+        "match": 38
     },
     {
         "content": "Definition 1. For k \u2208 {1, . . . , m}, S \u2286 {1, . . . , m}\\k, and",
@@ -2107,7 +2317,8 @@
             187.0988165999998,
             563.0407672000002,
             197.22081819999977
-        ]
+        ],
+        "match": null
     },
     {
         "content": "h(XS, Y ) := EPe [Xk|XS, Y ], the pair (k, S) satisfies the",
@@ -2117,7 +2328,8 @@
             173.76862779999976,
             563.0355530000002,
             185.26581819999979
-        ]
+        ],
+        "match": null
     },
     {
         "content": "binary invariant matching property (bIMP)1 if,",
@@ -2127,7 +2339,8 @@
             163.34821819999976,
             503.58822960000015,
             174.35345919999978
-        ]
+        ],
+        "match": 37
     },
     {
         "content": "EPe [Y |XS] = EPe [Xk|XS] \u2212 h(XS, 0)",
@@ -2137,7 +2350,8 @@
             138.59962779999975,
             516.1807551400002,
             156.82685559999976
-        ]
+        ],
+        "match": 29
     },
     {
         "content": "h(XS, 1) \u2212 h(XS, 0) , (8)",
@@ -2147,7 +2361,8 @@
             132.3760828,
             563.0363916,
             150.0868556
-        ]
+        ],
+        "match": null
     },
     {
         "content": "holds for all e \u2208 Eobs, where h(XS, Y ) does not depend on e.",
@@ -2157,7 +2372,8 @@
             115.44808280000002,
             563.0356500000001,
             126.33581820000002
-        ]
+        ],
+        "match": 11
     },
     {
         "content": "As seen in the example, there are a variety of choices for k",
@@ -2167,7 +2383,8 @@
             98.15707840000003,
             562.7225295600002,
             108.33885560000003
-        ]
+        ],
+        "match": 41
     },
     {
         "content": "and S, not all of which lead to invariant representations. We",
@@ -2177,7 +2394,8 @@
             86.20207840000003,
             563.0375712000002,
             96.38385560000003
-        ]
+        ],
+        "match": 41
     },
     {
         "content": "1There are degenerate cases when h(XS , 0) = h(XS , 1), for which the",
@@ -2187,7 +2405,8 @@
             65.47734560000004,
             563.0352579000001,
             75.47543840000003
-        ]
+        ],
+        "match": 40
     },
     {
         "content": "tower property implies EPe [Xk|XS ] = EPe [h(XS , Y )|XS ] = h(XS , 0),",
@@ -2197,7 +2416,8 @@
             55.707627800000026,
             563.0365250000001,
             65.43390060000003
-        ]
+        ],
+        "match": 40
     },
     {
         "content": "and the ratio in (8) reduces to 0 divided by 0.",
@@ -2207,7 +2427,8 @@
             48.32245840000002,
             463.907525,
             56.46790060000003
-        ]
+        ],
+        "match": 40
     },
     {
         "content": "now detail the sufficient conditions for which a pair (k, S)",
@@ -2217,7 +2438,8 @@
             705.4260783999999,
             300.02245514000003,
             715.6078556
-        ]
+        ],
+        "match": 41
     },
     {
         "content": "may occur. While many methods [9], [14], [15] make various",
@@ -2227,7 +2449,8 @@
             705.4260784,
             563.03552,
             715.3886784000001
-        ]
+        ],
+        "match": 52
     },
     {
         "content": "satisfies the bIMP (see Appendix for the proof).",
@@ -2237,7 +2460,8 @@
             693.4710783999999,
             246.30318080000006,
             703.4336784
-        ]
+        ],
+        "match": 41
     },
     {
         "content": "Proposition 1. Let k \u2208 {1, . . . , m} and S = R \u222a Q where",
@@ -2247,7 +2471,8 @@
             675.6698166,
             300.0229782,
             685.7918182
-        ]
+        ],
+        "match": 54
     },
     {
         "content": "R, Q \u2286 {1, . . . , m} \\ k and R \u2229 Q = \u2205. The pair (k, S)",
@@ -2257,7 +2482,8 @@
             663.8642555999999,
             300.02245514,
             675.7595999999999
-        ]
+        ],
+        "match": 54
     },
     {
         "content": "satisfies the bIMP if, for every e \u2208 Eobs,",
@@ -2267,7 +2493,8 @@
             651.0010565999999,
             212.02064999999996,
             661.8818181999999
-        ]
+        ],
+        "match": 54
     },
     {
         "content": "1) X ek = g(X eR, Y e) + \u03f5e as in (1) ,",
@@ -2277,7 +2504,8 @@
             635.9200827999998,
             209.3116499999999,
             649.3308827999998
-        ]
+        ],
+        "match": null
     },
     {
         "content": "2) X eQ \u22a5\u22a5 X ek | (X eR, Y e) .",
@@ -2287,7 +2515,8 @@
             623.9640827999998,
             174.38064999999986,
             637.3748827999998
-        ]
+        ],
+        "match": null
     },
     {
         "content": "What remains is to show that the bIMP can be used to satisfy",
@@ -2297,7 +2526,8 @@
             608.1160783999998,
             300.02192,
             618.0786783999998
-        ]
+        ],
+        "match": 43
     },
     {
         "content": "the invariance principle in (2), and thus, can be beneficial in",
@@ -2307,7 +2537,8 @@
             596.1610783999997,
             300.02152000000007,
             606.1236783999998
-        ]
+        ],
+        "match": 43
     },
     {
         "content": "predicting on unknown environments, as shown below.",
@@ -2317,7 +2548,8 @@
             584.2060783999997,
             273.41141539999995,
             594.1686783999997
-        ]
+        ],
+        "match": 43
     },
     {
         "content": "Theorem 1. Let k \u2208 {1, . . . , m} and S = R \u222a Q where",
@@ -2327,7 +2559,8 @@
             566.4048165999998,
             300.0229781999999,
             576.5268181999998
-        ]
+        ],
+        "match": 44
     },
     {
         "content": "R, Q \u2286 {1, . . . , m} \\ k and R \u2229 Q = \u2205. When \u03d5e(X) =",
@@ -2337,7 +2570,8 @@
             553.6850827999997,
             300.0253012199999,
             566.4945999999997
-        ]
+        ],
+        "match": 44
     },
     {
         "content": "(XR, XQ, EPe [Xk|XR, XQ]), (2) holds if the pair (k, S) sat\u2212",
@@ -2347,7 +2581,8 @@
             541.1196277999996,
             300.0228999999999,
             552.6168181999997
-        ]
+        ],
+        "match": 44
     },
     {
         "content": "isfies the bIMP.",
@@ -2357,7 +2592,8 @@
             530.6992181999996,
             111.8678563999999,
             540.6618181999996
-        ]
+        ],
+        "match": 44
     },
     {
         "content": "Proof. Let \u2113e(XR, XQ) := EPe [Xk|XR, XQ] and \u03d5e(X) =",
@@ -2367,7 +2603,8 @@
             511.2946277999996,
             300.0218346199999,
             523.9878827999996
-        ]
+        ],
+        "match": 45
     },
     {
         "content": "(XR, XQ, \u2113e(XR, XQ)). Since (k, S) satisfies the bIMP and",
@@ -2377,7 +2614,8 @@
             499.94908279999964,
             300.02579619999983,
             512.0318827999996
-        ]
+        ],
+        "match": 45
     },
     {
         "content": "\u2113e(XR, XQ) is a function of XR and XQ,",
@@ -2387,7 +2625,8 @@
             487.9930827999997,
             223.05864999999977,
             500.0768827999997
-        ]
+        ],
+        "match": 45
     },
     {
         "content": "EPe [Y |\u03d5e(X) = (xQ, xR, z)]",
@@ -2397,7 +2636,8 @@
             468.9796277999996,
             184.4870654199998,
             480.4668555999997
-        ]
+        ],
+        "match": null
     },
     {
         "content": "= EPe [Y |XR = xR, XQ = xq, \u2113e(XR, XQ) = z]",
@@ -2407,7 +2647,8 @@
             454.03562779999953,
             283.4156102799997,
             467.2278827999995
-        ]
+        ],
+        "match": 54
     },
     {
         "content": "= z \u2212 g(xR, 0)",
@@ -2417,7 +2658,8 @@
             434.7732555999996,
             162.46875513999973,
             451.4758555999996
-        ]
+        ],
+        "match": 54
     },
     {
         "content": "g(xR, 1) \u2212 g(xR, 0) .",
@@ -2427,7 +2669,8 @@
             427.0250828,
             181.14461027999997,
             444.73585560000004
-        ]
+        ],
+        "match": 42
     },
     {
         "content": "(9)",
@@ -2437,7 +2680,8 @@
             434.55407840000004,
             300.02239159999993,
             444.51667840000005
-        ]
+        ],
+        "match": null
     },
     {
         "content": "Thus, (2) holds as (9) does not vary over e \u2208 Eobs.",
@@ -2447,7 +2691,8 @@
             411.1246592,
             256.48464999999993,
             422.1548556
-        ]
+        ],
+        "match": 52
     },
     {
         "content": "Remark 1. In this work, we focus specifically on settings",
@@ -2457,7 +2702,8 @@
             394.1728166,
             300.02340520000007,
             404.2948182
-        ]
+        ],
+        "match": 47
     },
     {
         "content": "where Y e is binary. However, there does exist a corresponding",
@@ -2467,7 +2713,8 @@
             382.3662556,
             300.0235154000001,
             393.53588279999997
-        ]
+        ],
+        "match": 47
     },
     {
         "content": "matching property with sufficient conditions similar to those in",
@@ -2477,7 +2724,8 @@
             370.4212182,
             300.02152000000007,
             380.3838182
-        ]
+        ],
+        "match": 47
     },
     {
         "content": "Proposition 1 for cases when Y e is multi\u2212class or continuous.",
@@ -2487,7 +2735,8 @@
             358.4562556,
             300.02671300000003,
             369.6248828
-        ]
+        ],
+        "match": 47
     },
     {
         "content": "We leave the analysis for the long version of this work.",
@@ -2497,7 +2746,8 @@
             346.51121820000003,
             276.7986994000001,
             356.47381820000004
-        ]
+        ],
+        "match": 47
     },
     {
         "content": "A. A Causal Perspective",
@@ -2507,7 +2757,8 @@
             328.2042182,
             149.39697060000003,
             338.1668182
-        ]
+        ],
+        "match": 48
     },
     {
         "content": "While the sufficient conditions in Theorem 1 may seem",
@@ -2517,7 +2768,8 @@
             312.94307840000005,
             300.02192000000014,
             322.90567840000006
-        ]
+        ],
+        "match": 49
     },
     {
         "content": "abstract, we now show that, in fact, they have a specific",
@@ -2527,7 +2779,8 @@
             300.98807840000006,
             300.02152000000007,
             310.9506784
-        ]
+        ],
+        "match": 49
     },
     {
         "content": "meaning in a causal sense. To do so, we introduce the",
@@ -2537,7 +2790,8 @@
             289.0330784000001,
             300.02152000000007,
             298.9956784000001
-        ]
+        ],
+        "match": 49
     },
     {
         "content": "structural causal model (SCM) [8]. Here, X e and Y e are part",
@@ -2547,7 +2801,8 @@
             277.0780784000001,
             300.0240225999999,
             288.4658828000001
-        ]
+        ],
+        "match": 49
     },
     {
         "content": "of an SCM S e that varies over environment such that",
@@ -2557,7 +2812,8 @@
             265.1230784000001,
             269.20652079999996,
             276.5108828000001
-        ]
+        ],
+        "match": 49
     },
     {
         "content": "S e :",
@@ -2567,7 +2823,8 @@
             223.4262556000001,
             113.25761027999995,
             235.0928828000001
-        ]
+        ],
+        "match": 54
     },
     {
         "content": "\uf8f1\uf8f4\uf8f4\uf8f4\uf8f4\uf8f4\uf8f2",
@@ -2577,7 +2834,8 @@
             230.83844000000005,
             124.87975513999996,
             264.7120400000001
-        ]
+        ],
+        "match": null
     },
     {
         "content": "\uf8f4\uf8f4\uf8f4\uf8f4\uf8f4\uf8f3",
@@ -2587,7 +2845,8 @@
             197.96144000000004,
             124.87975513999996,
             222.86804000000006
-        ]
+        ],
+        "match": null
     },
     {
         "content": "Y e := f eY (X eP A(Y e) , \u03f5eY ),",
@@ -2597,7 +2856,8 @@
             245.70008280000008,
             233.3976102799999,
             259.4988828000001
-        ]
+        ],
+        "match": 55
     },
     {
         "content": "X e1 := f e1 (X eP A(X e1 ) , \u03f5e1),",
@@ -2607,7 +2867,8 @@
             228.92962780000013,
             231.13761027999982,
             244.50388280000016
-        ]
+        ],
+        "match": null
     },
     {
         "content": "...",
@@ -2617,7 +2878,8 @@
             212.79007840000014,
             147.2956499999998,
             230.72267840000018
-        ]
+        ],
+        "match": 42
     },
     {
         "content": "X em := f em(X eP A(X em) , \u03f5em).",
@@ -2627,7 +2889,8 @@
             194.42762780000012,
             241.16461027999978,
             209.83188280000016
-        ]
+        ],
+        "match": 55
     },
     {
         "content": "(10)",
@@ -2637,7 +2900,8 @@
             223.2070784000001,
             300.0226915999998,
             233.16967840000012
-        ]
+        ],
+        "match": null
     },
     {
         "content": "where \u03f5e1 . . . \u03f5em, \u03f5eY are independent noise variables. To sim\u2212",
@@ -2647,7 +2911,8 @@
             177.67208280000014,
             300.0254635999998,
             191.00588280000017
-        ]
+        ],
+        "match": 51
     },
     {
         "content": "plify notation, let X e0 := Y e. Thus, P A(X ei ) \u2286 {0, . . . , 1}\ndenotes the set indexed by the direct causal parents of X ei for",
@@ -2657,7 +2922,8 @@
             153.91308280000015,
             300.0223915999998,
             179.04988280000018
-        ]
+        ],
+        "match": 51
     },
     {
         "content": "all i \u2208 {0, . . . , m}.",
@@ -2667,7 +2933,8 @@
             143.75207840000013,
             126.34264999999982,
             153.93385560000013
-        ]
+        ],
+        "match": null
     },
     {
         "content": "As in Section II, Y e is binary. Additionally, at least one",
@@ -2677,7 +2944,8 @@
             131.85907840000013,
             300.0235529999998,
             143.24688280000015
-        ]
+        ],
+        "match": 52
     },
     {
         "content": "structural assignment (i.e., f ei (\u00b7)) in S e is an additive noise",
@@ -2687,7 +2955,8 @@
             118.10908280000014,
             300.02602079999974,
             131.29188280000014
-        ]
+        ],
+        "match": 52
     },
     {
         "content": "function that does not vary over environment. Specifically, for",
@@ -2697,7 +2966,8 @@
             107.94807840000014,
             300.02151999999995,
             117.91067840000014
-        ]
+        ],
+        "match": 52
     },
     {
         "content": "some i \u2208 {0, . . . , m}, let f ei (X eP A(X ei ), \u03f5ei ) = g(X eP A(X ei )) +",
@@ -2707,7 +2977,8 @@
             91.69662780000014,
             300.01938941999987,
             107.38088280000014
-        ]
+        ],
+        "match": null
     },
     {
         "content": "\u03f5ei , where \u03f5ei has zero mean. An intervention on a variable",
@@ -2717,7 +2988,8 @@
             81.96308280000014,
             300.0272805999999,
             95.14488280000013
-        ]
+        ],
+        "match": 52
     },
     {
         "content": "from {X e1 , . . . , X em, Y e} occurs if the structural assignment",
@@ -2727,7 +2999,8 @@
             70.12808280000014,
             300.02761539999983,
             83.18988280000013
-        ]
+        ],
+        "match": 52
     },
     {
         "content": "changes for some e \u2208 E. Relating the SCM to the formation",
@@ -2737,7 +3010,8 @@
             59.84607840000012,
             300.0245297999998,
             70.02785560000012
-        ]
+        ],
+        "match": 52
     },
     {
         "content": "in Section II gives insight into the types of interventions that",
@@ -2747,7 +3021,8 @@
             47.89107840000012,
             300.02151999999995,
             57.85367840000012
-        ]
+        ],
+        "match": 52
     },
     {
         "content": "assumptions on the types of interventions (e.g., shifts in the",
@@ -2757,7 +3032,8 @@
             693.4700784,
             563.0355199999999,
             703.4326784000001
-        ]
+        ],
+        "match": 52
     },
     {
         "content": "mean or variance), the setting in (10) allows for very general",
@@ -2767,7 +3043,8 @@
             681.5150784,
             563.03552,
             691.4776784000001
-        ]
+        ],
+        "match": 52
     },
     {
         "content": "interventions, including general interventions on Y e, which",
@@ -2777,7 +3054,8 @@
             669.5600784,
             563.0412175999999,
             680.9478828
-        ]
+        ],
+        "match": 52
     },
     {
         "content": "many other approaches do not allow.",
@@ -2787,7 +3065,8 @@
             657.6050783999999,
             463.1106419999999,
             667.5676784
-        ]
+        ],
+        "match": 52
     },
     {
         "content": "Given S e for all e \u2208 Eobs, we can express the conditions of",
@@ -2797,7 +3076,8 @@
             644.7016592,
             563.0334097999997,
             656.9378828
-        ]
+        ],
+        "match": 53
     },
     {
         "content": "Proposition 1 in the language of SCMs, detailed below.",
@@ -2807,7 +3087,8 @@
             633.5950783999999,
             539.8824375999998,
             643.5576784
-        ]
+        ],
+        "match": 53
     },
     {
         "content": "Corollary 1. Let k \u2208 {1, . . . , m} and S = R \u222a Q where",
@@ -2817,7 +3098,8 @@
             615.6318166,
             563.0369781999998,
             625.7538182
-        ]
+        ],
+        "match": 54
     },
     {
         "content": "R, Q \u2286 {1, . . . , m} \\ k and R \u2229 Q = \u2205. For the SCM S e, the",
@@ -2827,7 +3109,8 @@
             603.8262555999999,
             563.0319417999998,
             615.7215999999999
-        ]
+        ],
+        "match": 54
     },
     {
         "content": "pair (k, S) satisfies the bIMP for all e \u2208 Eobs if the following",
@@ -2837,7 +3120,8 @@
             590.9630565999998,
             563.0386987999999,
             601.8438181999999
-        ]
+        ],
+        "match": 54
     },
     {
         "content": "cases hold.",
@@ -2847,7 +3131,8 @@
             579.9262181999998,
             357.24805439999983,
             589.8888181999998
-        ]
+        ],
+        "match": 54
     },
     {
         "content": "1) X ek = g(X eP A(X ek)) + \u03f5ek ,",
@@ -2857,7 +3142,8 @@
             561.1026277999997,
             440.8326499999999,
             576.9268827999998
-        ]
+        ],
+        "match": 55
     },
     {
         "content": "2) X eR and Y e constitute the parents of X ek ,",
@@ -2867,7 +3153,8 @@
             551.0870827999997,
             510.1146499999999,
             564.4978827999997
-        ]
+        ],
+        "match": 55
     },
     {
         "content": "3) The variables in X eQ can be any non\u2212descendants of X ek.",
@@ -2877,7 +3164,8 @@
             539.1320827999997,
             563.0366499999998,
             552.5428827999997
-        ]
+        ],
+        "match": 55
     },
     {
         "content": "The first condition in Proposition 1 is analogous to the",
@@ -2887,7 +3175,8 @@
             523.1220783999996,
             563.0349199999999,
             533.0846783999997
-        ]
+        ],
+        "match": 56
     },
     {
         "content": "first and second condition above as P A(X ek) = (XS, Y ).",
@@ -2897,7 +3186,8 @@
             509.14408279999964,
             563.0366499999999,
             522.5548827999996
-        ]
+        ],
+        "match": 56
     },
     {
         "content": "Additionally, in an SCM, any variable conditioned on its",
@@ -2907,7 +3197,8 @@
             499.21207839999965,
             563.03552,
             509.1746783999996
-        ]
+        ],
+        "match": 56
     },
     {
         "content": "parents is independent of any non\u2212descendant. As such, the",
@@ -2917,7 +3208,8 @@
             487.25607839999964,
             563.0355200000001,
             497.2186783999996
-        ]
+        ],
+        "match": 56
     },
     {
         "content": "set X eQ can be any non\u2212descendant of X ek, bridging the final",
@@ -2927,7 +3219,8 @@
             473.2790827999996,
             563.0397760000001,
             486.6898827999996
-        ]
+        ],
+        "match": 56
     },
     {
         "content": "conditions in Proposition 1 and Corollary 1.",
@@ -2937,7 +3230,8 @@
             463.34607839999967,
             493.1379184000001,
             473.3086783999996
-        ]
+        ],
+        "match": 56
     },
     {
         "content": "In many cases, the set Q can be quite inclusive despite",
@@ -2947,7 +3241,8 @@
             451.29107839999966,
             563.0345712000001,
             461.47285559999966
-        ]
+        ],
+        "match": 57
     },
     {
         "content": "what may seem like a strong independence condition in",
@@ -2957,7 +3252,8 @@
             439.3360783999997,
             563.0355200000001,
             449.29867839999963
-        ]
+        ],
+        "match": 57
     },
     {
         "content": "Proposition 1. In Corollary 1, we learn that, in a causal sense,",
@@ -2967,7 +3263,8 @@
             427.3810783999997,
             563.03552,
             437.3436783999997
-        ]
+        ],
+        "match": 57
     },
     {
         "content": "X eQ can be any non\u2212descendant of X ek. For example, if half of",
@@ -2977,7 +3274,8 @@
             413.40308279999977,
             563.0315468,
             426.81388279999976
-        ]
+        ],
+        "match": 57
     },
     {
         "content": "the predictors in an SCM are ancestors of Y e, while the other",
@@ -2987,7 +3285,8 @@
             403.47007839999975,
             563.0334297999999,
             414.8588827999997
-        ]
+        ],
+        "match": 57
     },
     {
         "content": "half are descendants, then the set Q indexes at least half of",
@@ -2997,7 +3296,8 @@
             391.51507839999977,
             563.0393989999999,
             401.69685559999976
-        ]
+        ],
+        "match": 57
     },
     {
         "content": "all predictors (and potentially many more).",
@@ -3007,7 +3307,8 @@
             379.5600783999998,
             487.80792740000004,
             389.5226783999998
-        ]
+        ],
+        "match": 57
     },
     {
         "content": "V. PROPOSED METHOD",
@@ -3017,7 +3318,8 @@
             360.03207839999976,
             487.83534339999994,
             369.99467839999977
-        ]
+        ],
+        "match": 58
     },
     {
         "content": "For each e \u2208 Etrain, we have ne samples, represented as a",
@@ -3027,7 +3329,8 @@
             343.49165919999973,
             563.0390934000001,
             355.72788279999975
-        ]
+        ],
+        "match": 59
     },
     {
         "content": "matrix X e \u2208 Rne\u00d7m, and a vector Y e \u2208 {0, 1}ne (see [17]",
@@ -3037,7 +3340,8 @@
             332.38507839999977,
             563.0387793999998,
             344.49959999999976
-        ]
+        ],
+        "match": 59
     },
     {
         "content": "for a discussion on the impact of different environments).",
@@ -3047,7 +3351,8 @@
             320.4300783999998,
             563.0355199999999,
             330.3926783999998
-        ]
+        ],
+        "match": 59
     },
     {
         "content": "Additionally, we have ntest samples in the test environment,",
@@ -3057,7 +3362,8 @@
             307.6256591999998,
             563.0384721999999,
             318.6568555999998
-        ]
+        ],
+        "match": 59
     },
     {
         "content": "and we denote X test \u2208 Rntest\u00d7m and Y test as the predictor",
@@ -3067,7 +3373,8 @@
             296.5190783999998,
             563.0327111999998,
             308.6335999999998
-        ]
+        ],
+        "match": 59
     },
     {
         "content": "matrix and target vector for the environment etest, respectively.",
@@ -3077,7 +3384,8 @@
             284.5640783999998,
             563.0408137999999,
             295.7994591999998
-        ]
+        ],
+        "match": 59
     },
     {
         "content": "We denote X as the pooled predictor matrix over all e \u2208 Etrain,",
@@ -3087,7 +3395,8 @@
             271.7606591999998,
             563.0366499999999,
             282.7908555999998
-        ]
+        ],
+        "match": 59
     },
     {
         "content": "and XY =y as the matrix comprising the rows of X in which",
@@ -3097,7 +3406,8 @@
             259.95808279999983,
             563.0359682,
             270.83585559999983
-        ]
+        ],
+        "match": 59
     },
     {
         "content": "Y = y, for y \u2208 {0, 1}. Let X \u2212e be the matrix of samples",
@@ -3107,7 +3417,8 @@
             248.6990783999998,
             563.035617,
             260.0868827999998
-        ]
+        ],
+        "match": 59
     },
     {
         "content": "indexed only by those samples not in e \u2208 Etrain.",
@@ -3117,7 +3428,8 @@
             235.8946591999998,
             506.76365,
             246.9248555999998
-        ]
+        ],
+        "match": 59
     },
     {
         "content": "We now leverage insights gained from Theorem 1 and the",
@@ -3127,7 +3439,8 @@
             224.6890783999998,
             563.0359200000001,
             234.6516783999998
-        ]
+        ],
+        "match": 60
     },
     {
         "content": "bIMP to develop a practical method for estimation in unknown",
@@ -3137,7 +3450,8 @@
             212.7330783999998,
             563.0355200000001,
             222.69567839999982
-        ]
+        ],
+        "match": 60
     },
     {
         "content": "environments. At test time, we do not have access to Y test. As",
@@ -3147,7 +3461,8 @@
             200.7780783999998,
             563.0338411999999,
             212.01345919999983
-        ]
+        ],
+        "match": 60
     },
     {
         "content": "such, one cannot say with definitive assurance that (2) holds",
@@ -3157,7 +3472,8 @@
             188.8230783999998,
             563.03552,
             198.7856783999998
-        ]
+        ],
+        "match": 60
     },
     {
         "content": "for all e \u2208 Eobs. Thus, the best that can be done in such settings",
@@ -3167,7 +3483,8 @@
             176.01865919999977,
             563.0384418,
             187.04985559999977
-        ]
+        ],
+        "match": 60
     },
     {
         "content": "is to identify a \u03d5e such that (2) holds for all e \u2208 Etrain, implying",
@@ -3177,7 +3494,8 @@
             164.06365919999976,
             563.0334355999998,
             175.09485559999976
-        ]
+        ],
+        "match": 60
     },
     {
         "content": "that Etrain must have at least two environments.",
@@ -3187,7 +3505,8 @@
             152.10865919999978,
             504.3347621999999,
             163.13885559999977
-        ]
+        ],
+        "match": 60
     },
     {
         "content": "Thus, our goal in a practical setting is to identify (k, S) pairs",
@@ -3197,7 +3516,8 @@
             140.90307839999977,
             563.0362943999999,
             151.08485559999977
-        ]
+        ],
+        "match": 61
     },
     {
         "content": "that may satisfy the bIMP overall e \u2208 Etrain. Simply put, we test",
@@ -3207,7 +3527,8 @@
             128.0986591999998,
             563.0327411999998,
             139.12885559999978
-        ]
+        ],
+        "match": 61
     },
     {
         "content": "whether EPe [Xk|XS, Y ] is invariant. To do so, we consider a",
@@ -3217,7 +3538,8 @@
             115.6876277999998,
             563.0366277999997,
             127.1738555999998
-        ]
+        ],
+        "match": 61
     },
     {
         "content": "special form of the model in (1) where X ek = g(X eS, Y e) +",
@@ -3227,7 +3549,8 @@
             103.0140827999998,
             563.0325292199997,
             116.42488279999979
-        ]
+        ],
+        "match": 61
     },
     {
         "content": "\u03f5e with \u03f5e \u223c N (0, (\u03c3e)2) is assigned a different nonlinear",
@@ -3237,7 +3560,8 @@
             93.0820783999998,
             563.0394997999997,
             104.4698827999998
-        ]
+        ],
+        "match": 61
     },
     {
         "content": "additive noise function for each value of Y e. Specifically,",
@@ -3247,7 +3571,8 @@
             81.1270783999998,
             548.9600381999996,
             92.5148827999998
-        ]
+        ],
+        "match": 61
     },
     {
         "content": "g(X eS, Y e) =",
@@ -3257,7 +3582,8 @@
             52.70308279999979,
             415.26396821999975,
             66.2528827999998
-        ]
+        ],
+        "match": 54
     },
     {
         "content": "(cid:40)g1(X eS), if Y e = 1,",
@@ -3267,7 +3593,8 @@
             59.21608279999979,
             512.6616102799999,
             77.54003999999979
-        ]
+        ],
+        "match": 62
     },
     {
         "content": "g0(X eS), if Y e = 0. (11)",
@@ -3277,7 +3604,8 @@
             44.870082799999786,
             563.0366915999999,
             64.32967839999978
-        ]
+        ],
+        "match": 62
     },
     {
         "content": "As X ek can be split into two models, one for each value of Y e,",
@@ -3287,7 +3615,8 @@
             703.4030828,
             300.02265,
             716.8138828
-        ]
+        ],
+        "match": 63
     },
     {
         "content": "we can perform an invariance test on each model. If both are",
@@ -3297,7 +3626,8 @@
             693.4710783999999,
             300.02152,
             703.4336784
-        ]
+        ],
+        "match": 63
     },
     {
         "content": "found to be invariant, we can consider EPe [Xk|XS, Y ] as a",
@@ -3307,7 +3637,8 @@
             680.2106277999999,
             300.0175696,
             691.6978555999999
-        ]
+        ],
+        "match": 63
     },
     {
         "content": "whole to be invariant. Invariance tests on additive noise models",
@@ -3317,7 +3648,8 @@
             669.5600783999998,
             300.0215200000001,
             679.5226783999999
-        ]
+        ],
+        "match": 63
     },
     {
         "content": "have been widely studied: Various tests have been proposed",
@@ -3327,7 +3659,8 @@
             657.6050783999998,
             300.02152000000007,
             667.5676783999999
-        ]
+        ],
+        "match": 63
     },
     {
         "content": "for linear [9] and nonlinear [10] models. We adopt one such",
@@ -3337,7 +3670,8 @@
             645.6500783999998,
             300.02152000000007,
             655.6126783999998
-        ]
+        ],
+        "match": 63
     },
     {
         "content": "approximate test from [10] known as the residual distribution",
@@ -3347,7 +3681,8 @@
             633.6950783999997,
             300.02198339999995,
             643.8868181999998
-        ]
+        ],
+        "match": 63
     },
     {
         "content": "test for our setting, as further detailed in Algorithm 1.",
@@ -3357,7 +3692,8 @@
             621.7400783999997,
             272.00640060000006,
             631.9318181999997
-        ]
+        ],
+        "match": 63
     },
     {
         "content": "Algorithm 1 Binary Invariant Residual Distribution Test",
@@ -3367,7 +3703,8 @@
             598.5250784,
             281.36152580000004,
             608.5574166
-        ]
+        ],
+        "match": 63
     },
     {
         "content": "Input: Y e and X e, for each e \u2208 Etrain, significance level \u03b1,",
@@ -3377,7 +3714,8 @@
             584.2716592,
             300.02265000000006,
             596.5078828000001
-        ]
+        ],
+        "match": 63
     },
     {
         "content": "and the pair (k, S)",
@@ -3387,7 +3725,8 @@
             573.1650784,
             125.83645514000003,
             583.3468556
-        ]
+        ],
+        "match": 63
     },
     {
         "content": "Output: accepted or rejected",
@@ -3397,7 +3736,8 @@
             561.2100783999999,
             169.44091840000004,
             571.4018182
-        ]
+        ],
+        "match": 64
     },
     {
         "content": "Regress Xk,Y =i on XS,Y =i to get \u02c6gi, for i \u2208 {0, 1}",
@@ -3407,7 +3747,8 @@
             546.5670828,
             274.75730000000004,
             557.4438556
-        ]
+        ],
+        "match": 64
     },
     {
         "content": "for each e \u2208 Etrain and i \u2208 {0, 1} do",
@@ -3417,7 +3758,8 @@
             534.4576592,
             207.30850560000002,
             545.4888556
-        ]
+        ],
+        "match": null
     },
     {
         "content": "Rei = X ek,Y =i \u2212 \u02c6gi(X eS,Y =i)",
@@ -3427,7 +3769,8 @@
             521.3290828,
             192.67645514000003,
             534.7398828
-        ]
+        ],
+        "match": null
     },
     {
         "content": "R\u2212e",
@@ -3437,7 +3780,8 @@
             510.8142556000001,
             92.60979960000003,
             522.6298828
-        ]
+        ],
+        "match": null
     },
     {
         "content": "i = X \u2212e",
@@ -3447,7 +3791,8 @@
             508.61708280000005,
             126.60979960000004,
             522.6298828
-        ]
+        ],
+        "match": 67
     },
     {
         "content": "k,Y =i \u2212 \u02c6gi(X \u2212e",
@@ -3457,7 +3802,8 @@
             508.38908280000004,
             182.76779960000005,
             522.6298828
-        ]
+        ],
+        "match": 40
     },
     {
         "content": "S,Y =i)",
@@ -3467,7 +3813,8 @@
             508.46608280000004,
             198.9024551400001,
             520.7768556000001
-        ]
+        ],
+        "match": 67
     },
     {
         "content": "pvalei = t\u2212test(Rei , R\u2212e",
@@ -3477,7 +3824,8 @@
             495.79908280000006,
             169.14379960000005,
             509.71988280000005
-        ]
+        ],
+        "match": null
     },
     {
         "content": "i )",
@@ -3487,7 +3835,8 @@
             495.67708280000005,
             173.51645514000006,
             507.83685560000004
-        ]
+        ],
+        "match": null
     },
     {
         "content": "Combine p\u2212values in pvale1 and pvale0 via Bonferroni cor\u2212",
@@ -3497,7 +3846,8 @@
             481.0670828,
             300.02040640000007,
             494.98688280000005
-        ]
+        ],
+        "match": 64
     },
     {
         "content": "rection",
@@ -3507,7 +3857,8 @@
             470.96807839999997,
             86.59214020000007,
             480.9306783999999
-        ]
+        ],
+        "match": 64
     },
     {
         "content": "if mine\u2208Etrain pvale1 > \u03b1 and mine\u2208Etrain pvale2 > \u03b1 then",
@@ -3517,7 +3868,8 @@
             457.15608279999987,
             287.1243514000001,
             471.0768827999999
-        ]
+        ],
+        "match": 64
     },
     {
         "content": "return accepted",
@@ -3527,7 +3879,8 @@
             447.05707839999985,
             136.55508040000007,
             457.24881819999985
-        ]
+        ],
+        "match": 64
     },
     {
         "content": "else return rejected",
@@ -3537,7 +3890,8 @@
             435.10207839999987,
             136.90291840000006,
             445.29381819999986
-        ]
+        ],
+        "match": 64
     },
     {
         "content": "We use Algorithm 1 as an approximate test for whether",
@@ -3547,7 +3901,8 @@
             407.4780784,
             300.02192000000014,
             417.4406784
-        ]
+        ],
+        "match": 65
     },
     {
         "content": "EPe[Xk|XS, Y ] is invariant over environments. We now em\u2212",
@@ -3557,7 +3912,8 @@
             394.2186278,
             300.0175782000001,
             405.70485560000003
-        ]
+        ],
+        "match": 65
     },
     {
         "content": "ploy this test to develop a practical method for estimating",
@@ -3567,7 +3923,8 @@
             383.56807840000005,
             300.0215200000001,
             393.53067840000006
-        ]
+        ],
+        "match": 65
     },
     {
         "content": "Y test which we refer to as bIMP. We adopt a similar approach",
@@ -3577,7 +3934,8 @@
             371.61307840000006,
             300.02651520000006,
             382.84745920000006
-        ]
+        ],
+        "match": 65
     },
     {
         "content": "to that of [14] and [15] in which we test the invariance of",
@@ -3587,7 +3945,8 @@
             359.6580784000001,
             300.0215200000002,
             369.6206784000001
-        ]
+        ],
+        "match": 65
     },
     {
         "content": "EPe[Xk|XS, Y ] for all possible pairs (k, S). We then train",
@@ -3597,7 +3956,8 @@
             346.39762780000007,
             300.02088039999995,
             357.8848556000001
-        ]
+        ],
+        "match": 65
     },
     {
         "content": "models using the X ek and X eS which are accepted according",
@@ -3607,7 +3967,8 @@
             333.72508280000005,
             300.0225317999999,
             347.13588280000005
-        ]
+        ],
+        "match": 65
     },
     {
         "content": "to Algorithm 1. Our bIMP models are a combination of two",
@@ -3617,7 +3978,8 @@
             323.7920784000001,
             300.02152000000007,
             333.7546784000001
-        ]
+        ],
+        "match": 65
     },
     {
         "content": "separate models trained to estimate both EPe [Xk|XS, Y ] and",
@@ -3627,7 +3989,8 @@
             310.5316278,
             300.02299439999985,
             322.0188556000001
-        ]
+        ],
+        "match": 65
     },
     {
         "content": "EPe [Xk|XS]. Given both of these estimates, we compute an",
@@ -3637,7 +4000,8 @@
             298.5766278,
             300.01965359999997,
             310.06385560000007
-        ]
+        ],
+        "match": 65
     },
     {
         "content": "estimate of Y test using (8). As it is likely that more than",
@@ -3647,7 +4011,8 @@
             287.9270784,
             300.0261891999999,
             299.1614592
-        ]
+        ],
+        "match": 65
     },
     {
         "content": "one pair is accepted, the final estimate of Y test is the average",
@@ -3657,7 +4022,8 @@
             275.97207840000004,
             300.0253159999999,
             287.20645920000004
-        ]
+        ],
+        "match": 65
     },
     {
         "content": "estimate over all accepted pairs.",
@@ -3667,7 +4033,8 @@
             264.0160784,
             180.19136719999995,
             273.97867840000004
-        ]
+        ],
+        "match": 65
     },
     {
         "content": "While we can guarantee invariance via the bIMP, there is",
@@ -3677,7 +4044,8 @@
             251.5950784,
             300.02192,
             261.5576784
-        ]
+        ],
+        "match": 66
     },
     {
         "content": "no guarantee that the estimation will predict well on etest.",
@@ -3687,7 +4055,8 @@
             239.6400784,
             300.02264999999994,
             250.87545920000002
-        ]
+        ],
+        "match": 66
     },
     {
         "content": "As such, in addition to filtering pairs based on invariance,",
@@ -3697,7 +4066,8 @@
             227.68507839999998,
             300.02152000000007,
             237.6476784
-        ]
+        ],
+        "match": 66
     },
     {
         "content": "bIMP also filters based on a prediction score. Invariant pairs",
@@ -3707,7 +4077,8 @@
             215.73007839999997,
             300.02572440000006,
             225.7225662
-        ]
+        ],
+        "match": 66
     },
     {
         "content": "Tinv computed using (8) are filtered using the mean squared",
@@ -3717,7 +4088,8 @@
             202.92565919999996,
             300.0227198,
             213.95685559999995
-        ]
+        ],
+        "match": 66
     },
     {
         "content": "prediction error. The threshold by which the pairs are filtered",
@@ -3727,7 +4099,8 @@
             191.81907839999997,
             300.02151999999995,
             201.78167839999998
-        ]
+        ],
+        "match": 66
     },
     {
         "content": "is identical to the procedure proposed in [14].",
@@ -3737,7 +4110,8 @@
             179.86407839999995,
             237.4464294,
             189.82667839999996
-        ]
+        ],
+        "match": 66
     },
     {
         "content": "The bIMP method proposed gives freedom to the user",
@@ -3747,7 +4121,8 @@
             167.44307839999996,
             300.0201542,
             177.43556619999998
-        ]
+        ],
+        "match": 68
     },
     {
         "content": "to select the underlying models with which to estimate",
@@ -3757,7 +4132,8 @@
             155.48807839999995,
             300.02152000000007,
             165.45067839999996
-        ]
+        ],
+        "match": 68
     },
     {
         "content": "EPe [Xk|XS] and EPe [Xk|XS, Y ]. In the case of EPe [Xk|XS],",
@@ -3767,7 +4143,8 @@
             142.22762779999994,
             300.0226499999999,
             153.71485559999994
-        ]
+        ],
+        "match": 68
     },
     {
         "content": "we have complete freedom to select whichever model suits",
@@ -3777,7 +4154,8 @@
             131.57807839999992,
             300.02152,
             141.54067839999993
-        ]
+        ],
+        "match": 68
     },
     {
         "content": "the data, be it linear or nonlinear. For EPe [Xk|XS, Y ], we",
@@ -3787,7 +4165,8 @@
             118.31762779999994,
             300.0182765999998,
             129.80385559999993
-        ]
+        ],
+        "match": 68
     },
     {
         "content": "are restricted by the additive noise of (1). In addition, we",
@@ -3797,7 +4176,8 @@
             107.66707839999994,
             300.0215199999999,
             117.62967839999993
-        ]
+        ],
+        "match": 68
     },
     {
         "content": "have chosen to model Xk using two sub\u2212models, one for each",
@@ -3807,7 +4187,8 @@
             95.01708279999994,
             300.02497159999984,
             105.89385559999994
-        ]
+        ],
+        "match": 68
     },
     {
         "content": "value of Y as in (11). This, however, is not the only option",
@@ -3817,7 +4198,8 @@
             83.75707839999994,
             300.0174727999999,
             93.93885559999994
-        ]
+        ],
+        "match": 68
     },
     {
         "content": "Algorithm 2 bIMP",
@@ -3827,7 +4209,8 @@
             707.5229661999999,
             391.9567084,
             717.5254166
-        ]
+        ],
+        "match": 65
     },
     {
         "content": "Input: Y e, for each e \u2208 Etrain, and X e, for each e \u2208 Eobs",
@@ -3837,7 +4220,8 @@
             693.3746592,
             547.2306082000001,
             705.6108828
-        ]
+        ],
+        "match": null
     },
     {
         "content": "Output: Estimate \u02c6Y test",
@@ -3847,7 +4231,8 @@
             682.2680783999999,
             407.09460820000004,
             694.8568556
-        ]
+        ],
+        "match": 65
     },
     {
         "content": "Identify the set of all invariant pairs Tinv using Algorithm 1",
@@ -3857,7 +4242,8 @@
             667.4716592,
             563.0389212000001,
             678.5018556
-        ]
+        ],
+        "match": 67
     },
     {
         "content": "Filter pairs from Tinv based on prediction score",
@@ -3867,7 +4253,8 @@
             655.5166591999999,
             515.2965992000001,
             666.5468556
-        ]
+        ],
+        "match": 67
     },
     {
         "content": "for each (k, S) in Tinv do",
@@ -3877,7 +4264,8 @@
             643.5606591999999,
             427.2885056,
             654.5918555999999
-        ]
+        ],
+        "match": 68
     },
     {
         "content": "Estimate EPe [Xk|XS, Y ] by regressing Xk on (XS, Y )",
@@ -3887,7 +4275,8 @@
             631.1496277999998,
             563.03645514,
             642.6368555999999
-        ]
+        ],
+        "match": 67
     },
     {
         "content": "Estimate EPtest [Xk|XS] by regressing X testk on X testS",
@@ -3897,7 +4286,8 @@
             618.4070827999999,
             548.6816082000001,
             631.7344591999998
-        ]
+        ],
+        "match": 67
     },
     {
         "content": "Using (8), compute \u02c6Y testk,S for the pair (k, S)",
@@ -3907,7 +4297,8 @@
             606.1900827999999,
             516.6054551400002,
             620.8718555999999
-        ]
+        ],
+        "match": 67
     },
     {
         "content": "\u02c6Y test = 1",
@@ -3917,7 +4308,8 @@
             592.2992555999998,
             365.8135791000002,
             604.6688555999999
-        ]
+        ],
+        "match": 61
     },
     {
         "content": "|Tinv| (cid:80)(k,S)\u2208Tinv",
@@ -3927,7 +4319,8 @@
             588.7240392000001,
             419.4808494,
             605.6890400000001
-        ]
+        ],
+        "match": null
     },
     {
         "content": "\u02c6Y testk,S",
@@ -3937,7 +4330,8 @@
             589.9880828000001,
             441.09060819999996,
             604.6688556000001
-        ]
+        ],
+        "match": null
     },
     {
         "content": "process regression could be used for nonlinear models. In",
@@ -3947,7 +4341,8 @@
             551.4230784,
             563.0355200000002,
             561.3856784000001
-        ]
+        ],
+        "match": 68
     },
     {
         "content": "practice, we found estimating each model using OLS to be the",
@@ -3957,7 +4352,8 @@
             539.4680784,
             563.0355200000001,
             549.4306784
-        ]
+        ],
+        "match": 68
     },
     {
         "content": "most efficient, as fitting two nonlinear models for all possible",
@@ -3967,7 +4363,8 @@
             527.5130783999999,
             563.0355200000001,
             537.4756784
-        ]
+        ],
+        "match": 68
     },
     {
         "content": "(k, S) pairs can be computationally expensive.",
@@ -3977,7 +4374,8 @@
             515.5570783999999,
             502.9127620000001,
             525.7388556
-        ]
+        ],
+        "match": 68
     },
     {
         "content": "Remark 2. There are several challenges with this approach",
@@ -3987,7 +4385,8 @@
             497.4658165999999,
             563.0350748000002,
             507.58781819999996
-        ]
+        ],
+        "match": 69
     },
     {
         "content": "that we leave for future work. We observe that nonlinear",
@@ -3997,7 +4396,8 @@
             485.67021819999997,
             563.0355200000001,
             495.6328182
-        ]
+        ],
+        "match": 69
     },
     {
         "content": "implementations of the invariance test (Algorithm 1) may lead",
@@ -4007,7 +4407,8 @@
             473.7152182,
             563.0355200000002,
             483.6778182
-        ]
+        ],
+        "match": 69
     },
     {
         "content": "to erroneously accepted invariant pairs. In addition to this, the",
@@ -4017,7 +4418,8 @@
             461.7602182,
             563.0355200000002,
             471.7228182
-        ]
+        ],
+        "match": 69
     },
     {
         "content": "complexity of training a nonlinear model for all possible (k, S)",
@@ -4027,7 +4429,8 @@
             449.7952556,
             563.03645514,
             459.7678182
-        ]
+        ],
+        "match": 69
     },
     {
         "content": "pairs can be high. Finally, the effects of model misspecification",
@@ -4037,7 +4440,8 @@
             437.85021820000003,
             563.0355200000002,
             447.81281820000004
-        ]
+        ],
+        "match": 69
     },
     {
         "content": "can be challenging to analyze.",
@@ -4047,7 +4451,8 @@
             425.8942182,
             437.13814380000014,
             435.8568182
-        ]
+        ],
+        "match": 69
     },
     {
         "content": "VI. EXPERIMENTS",
@@ -4057,7 +4462,8 @@
             405.0450784,
             477.77069330000006,
             415.00767840000003
-        ]
+        ],
+        "match": 70
     },
     {
         "content": "We provide one synthetic and two real datasets to test the",
@@ -4067,7 +4473,8 @@
             388.5820784,
             563.0349200000002,
             398.54467839999995
-        ]
+        ],
+        "match": 71
     },
     {
         "content": "effectiveness of bIMP and compare with the following two",
@@ -4077,7 +4484,8 @@
             376.6270784,
             563.0337764000002,
             386.6195662
-        ]
+        ],
+        "match": 71
     },
     {
         "content": "baselines: (1) a binary adaptation of Method II from [9] (ICP),",
@@ -4087,7 +4495,8 @@
             364.67207840000003,
             563.0361958,
             374.6645662
-        ]
+        ],
+        "match": 71
     },
     {
         "content": "and (2) logistic regression (LR). While we do not expect LR to",
@@ -4097,7 +4506,8 @@
             352.71707840000005,
             563.0359028000001,
             362.70956620000004
-        ]
+        ],
+        "match": 71
     },
     {
         "content": "perform well on unknown environments, it serves as a natural",
@@ -4107,7 +4517,8 @@
             340.76207840000006,
             563.0355200000002,
             350.7246784
-        ]
+        ],
+        "match": 71
     },
     {
         "content": "baseline. While ICP can handle the binary response setting",
@@ -4117,7 +4528,8 @@
             328.80607840000005,
             563.0331850000001,
             338.79856620000004
-        ]
+        ],
+        "match": 71
     },
     {
         "content": "via logistic regression, SR is specific to regression settings",
@@ -4127,7 +4539,8 @@
             316.85107840000006,
             563.0350350000001,
             326.84356620000005
-        ]
+        ],
+        "match": 71
     },
     {
         "content": "and thus not reported. In all experiments, we set \u03b1 = 0.1.",
@@ -4137,7 +4550,8 @@
             304.8960784000001,
             549.6696500000002,
             315.0778556000001
-        ]
+        ],
+        "match": 71
     },
     {
         "content": "Fig. 2: Simulation accuracy over 1000 simulated datsets.",
@@ -4147,7 +4561,8 @@
             149.3850784,
             553.8103085999999,
             159.5668556
-        ]
+        ],
+        "match": 74
     },
     {
         "content": "As there is some degree of freedom in selecting how the",
@@ -4157,7 +4572,8 @@
             131.9750784,
             563.03492,
             141.9376784
-        ]
+        ],
+        "match": 73
     },
     {
         "content": "sub\u2212models in bIMP are trained, we explore two variants of",
@@ -4167,7 +4583,8 @@
             120.02007840000002,
             563.0354272,
             130.0125662
-        ]
+        ],
+        "match": 73
     },
     {
         "content": "bIMP: bIMP (linear) and bIMP (GAM). For both variants, we",
@@ -4177,7 +4594,8 @@
             108.06507840000002,
             563.0403478,
             118.05756620000001
-        ]
+        ],
+        "match": 73
     },
     {
         "content": "follow the invariance test in Algorithm 1 and estimate g1 and",
@@ -4187,7 +4605,8 @@
             95.41408280000002,
             563.0359943999999,
             106.29185560000002
-        ]
+        ],
+        "match": 73
     },
     {
         "content": "g0 using OLS. We estimate EPe[Xk|XS] using OLS for bIMP",
@@ -4197,7 +4616,8 @@
             82.84962780000002,
             563.0367083999996,
             94.33685560000002
-        ]
+        ],
+        "match": 73
     },
     {
         "content": "and depends on the invariance test used. When estimating each",
@@ -4207,7 +4627,8 @@
             71.80207839999994,
             300.0215199999999,
             81.76467839999994
-        ]
+        ],
+        "match": 68
     },
     {
         "content": "(linear), and a GAM for bIMP (GAM).",
@@ -4217,7 +4638,8 @@
             72.19907840000002,
             473.9994873999996,
             82.19156620000001
-        ]
+        ],
+        "match": 73
     },
     {
         "content": "model, ordinary least squares (OLS) could be used for linear",
@@ -4227,7 +4649,8 @@
             59.84707839999994,
             300.02151999999995,
             69.80967839999994
-        ]
+        ],
+        "match": 68
     },
     {
         "content": "models, and a generalized additive model (GAM) or Gaussian",
@@ -4237,7 +4660,8 @@
             47.891078399999934,
             300.02151999999995,
             57.853678399999936
-        ]
+        ],
+        "match": 68
     },
     {
         "content": "Synthetic data. The simulated dataset is generated as follows.",
@@ -4247,7 +4671,8 @@
             60.0160784,
             563.0320546,
             70.04841660000001
-        ]
+        ],
+        "match": 73
     },
     {
         "content": "We generate data from three environments, e1, e2 \u2208 Etrain, and",
@@ -4257,7 +4682,8 @@
             47.0426592,
             563.0349382,
             59.279882799999996
-        ]
+        ],
+        "match": 73
     },
     {
         "content": "etest. The number of predictors m is randomly selected from",
@@ -4267,7 +4693,8 @@
             705.4260783999999,
             300.0221824000001,
             716.6604592
-        ]
+        ],
+        "match": 71
     },
     {
         "content": "The mushroom dataset contains 16 features related to",
@@ -4277,7 +4704,8 @@
             705.4260783999999,
             563.034613,
             715.6178182
-        ]
+        ],
+        "match": 66
     },
     {
         "content": "{3, . . . , 7}. For each i \u2208 {2, . . . , m} and e \u2208 Etrain, X ei \u223c",
@@ -4287,7 +4715,8 @@
             691.6760828,
             300.02291028,
             704.8588828
-        ]
+        ],
+        "match": null
     },
     {
         "content": "N (\u00b5ei , 1), and \u00b5ei is randomly selected on the interval [\u22122, 0]",
@@ -4297,7 +4726,8 @@
             679.7210828000001,
             300.0229102799999,
             692.9038828000001
-        ]
+        ],
+        "match": 71
     },
     {
         "content": "for e = e1, [0, 2] for e = e2, and [0, 3] for e = etest. Then,",
@@ -4307,7 +4737,8 @@
             669.5600784000002,
             300.0258472,
             680.9488828000002
-        ]
+        ],
+        "match": null
     },
     {
         "content": "where S1 = {2, . . . , m}, Y e|X eS1 follows a logistic model",
@@ -4317,7 +4748,8 @@
             655.0506278000001,
             300.02244339999993,
             668.9938828000002
-        ]
+        ],
+        "match": null
     },
     {
         "content": "such that Pe(Y = 1|XS1) = 1/(1 + e\u2212XS1 \u03b2e ) for e \u2208 Etrain.",
@@ -4327,7 +4759,8 @@
             643.7936278000002,
             300.0226499999999,
             657.8869278000002
-        ]
+        ],
+        "match": null
     },
     {
         "content": "For etest, Y test|X testS1 follows a probit model such that Y test = 1,\nif X testS1 \u03b2test + \u03f5 < 0, where \u03f5 \u223c N (0, 1). For all e \u2208 Eobs,",
@@ -4337,7 +4770,8 @@
             618.5636278000002,
             300.0226499999999,
             644.3774592000002
-        ]
+        ],
+        "match": null
     },
     {
         "content": "randomly select \u03b2e as \u03b2e \u223c Unif[0, 1]. The coefficients are",
@@ -4347,7 +4781,8 @@
             609.2330784000001,
             300.0197009999999,
             620.6208828000001
-        ]
+        ],
+        "match": 71
     },
     {
         "content": "then scaled such that they sum to one. For all e \u2208 Eobs,",
@@ -4357,7 +4792,8 @@
             596.4286592000001,
             300.0226499999998,
             607.4588556000001
-        ]
+        ],
+        "match": null
     },
     {
         "content": "the variable X e1 is then simulated similarly to X ek in (11).",
@@ -4367,7 +4803,8 @@
             583.3000827999999,
             300.01929239999987,
             596.7108828
-        ]
+        ],
+        "match": 71
     },
     {
         "content": "Specifically, g1(X eS1) = X eS1\u03b71 and g0(X eS1 ) = X eS1\u03b70. The",
@@ -4377,7 +4814,8 @@
             570.8126277999999,
             300.02030859999985,
             584.7548827999999
-        ]
+        ],
+        "match": null
     },
     {
         "content": "noise term associated with X e1 is a standard normal. The",
@@ -4387,7 +4825,8 @@
             559.7380827999999,
             300.01793119999985,
             572.7998827999999
-        ]
+        ],
+        "match": 71
     },
     {
         "content": "coefficients \u03b71,i \u223c Unif[0, 1] and \u03b70,i \u223c Unif[0, 1] do not vary",
@@ -4397,7 +4836,8 @@
             548.7610827999998,
             300.02619419999974,
             559.6388555999998
-        ]
+        ],
+        "match": 71
     },
     {
         "content": "over the environment. The number of samples per environment",
@@ -4407,7 +4847,8 @@
             537.5020783999997,
             300.02151999999995,
             547.4646783999998
-        ]
+        ],
+        "match": 71
     },
     {
         "content": "is fixed to 1000.",
@@ -4417,7 +4858,8 @@
             525.5460783999997,
             116.01264999999981,
             535.7278555999998
-        ]
+        ],
+        "match": 71
     },
     {
         "content": "Simulation results on both accuracy and mean squared",
@@ -4427,7 +4869,8 @@
             512.5430783999997,
             300.0219199999999,
             522.5056783999997
-        ]
+        ],
+        "match": 74
     },
     {
         "content": "error (MSE) indicate that bIMP can generalize to the test",
@@ -4437,7 +4880,8 @@
             500.58807839999974,
             300.0183951999998,
             510.58056619999974
-        ]
+        ],
+        "match": 74
     },
     {
         "content": "environment while LR and ICP are not (Fig 2). In addition,",
@@ -4447,7 +4891,8 @@
             488.63307839999976,
             300.02145919999987,
             498.62556619999975
-        ]
+        ],
+        "match": 74
     },
     {
         "content": "bIMP (linear) slightly outperforms bIMP (GAM). While we",
@@ -4457,7 +4902,8 @@
             476.6780783999998,
             300.0251045999998,
             486.67056619999977
-        ]
+        ],
+        "match": 74
     },
     {
         "content": "expect LR to behave poorly, ICP also performs poorly as all",
@@ -4467,7 +4913,8 @@
             464.72207839999976,
             300.02629899999977,
             474.71456619999975
-        ]
+        ],
+        "match": 74
     },
     {
         "content": "parents of Y are intervened in every simulation.",
@@ -4477,7 +4924,8 @@
             452.7670783999998,
             246.5497133999998,
             462.9488555999998
-        ]
+        ],
+        "match": 74
     },
     {
         "content": "Environment Accuracy",
@@ -4487,7 +4935,8 @@
             421.0802576,
             220.23778240000001,
             430.0466576
-        ]
+        ],
+        "match": 74
     },
     {
         "content": "born in US 85.0 84.9 78.2",
@@ -4497,7 +4946,8 @@
             410.71825759999996,
             273.98083296,
             419.88191839999996
-        ]
+        ],
+        "match": 75
     },
     {
         "content": "overtime 68.4 59.1 77.0",
@@ -4507,7 +4957,8 @@
             400.75625759999997,
             273.98083296,
             409.9199184
-        ]
+        ],
+        "match": 75
     },
     {
         "content": "caucasian 85.0 85.2 78.1",
@@ -4517,7 +4968,8 @@
             390.7932576,
             273.98083296,
             399.9569184
-        ]
+        ],
+        "match": 75
     },
     {
         "content": "bIMP (linear) bIMP (GAM) LR",
@@ -4527,7 +4979,8 @@
             433.4332576,
             271.51905919999996,
             442.4265568
-        ]
+        ],
+        "match": 65
     },
     {
         "content": "TABLE I: census: performance and training environments.",
@@ -4537,7 +4990,8 @@
             372.84507840000003,
             294.2734440000001,
             383.0368182
-        ]
+        ],
+        "match": 75
     },
     {
         "content": "Two real\u2212world data. We also include experiments on two",
@@ -4547,7 +5001,8 @@
             350.4880784,
             300.0227942000001,
             360.5204166
-        ]
+        ],
+        "match": null
     },
     {
         "content": "real datasets: census [18] and mushroom [19]. The census",
@@ -4557,7 +5012,8 @@
             338.5330784,
             300.02450539999995,
             348.7248182
-        ]
+        ],
+        "match": null
     },
     {
         "content": "dataset is data gathered from the 1994 US census and contains",
@@ -4567,7 +5023,8 @@
             326.57807840000004,
             300.01783,
             336.75985560000004
-        ]
+        ],
+        "match": 68
     },
     {
         "content": "14 societal and demographic variables such as age, education,",
@@ -4577,7 +5034,8 @@
             314.6220784,
             300.01840180000016,
             324.8038556
-        ]
+        ],
+        "match": null
     },
     {
         "content": "marital status, and working class. The target variable used is",
@@ -4587,7 +5045,8 @@
             302.66707840000004,
             300.0215200000001,
             312.6296784
-        ]
+        ],
+        "match": 68
     },
     {
         "content": "whether or not an individual\u2019s income exceeded 50k/yr. The",
@@ -4597,7 +5056,8 @@
             290.71207840000005,
             300.0222638,
             300.89385560000005
-        ]
+        ],
+        "match": null
     },
     {
         "content": "data is first split into test and training data by whether or not a",
@@ -4607,7 +5067,8 @@
             278.75707840000007,
             300.0215200000002,
             288.7196784
-        ]
+        ],
+        "match": 68
     },
     {
         "content": "person graduated from a college. Thus, we train only on those",
@@ -4617,7 +5078,8 @@
             266.8020784000001,
             300.0215200000001,
             276.7646784000001
-        ]
+        ],
+        "match": 68
     },
     {
         "content": "who did not graduate college with the aim of extending our",
@@ -4627,7 +5089,8 @@
             254.84707840000007,
             300.0215200000001,
             264.80967840000005
-        ]
+        ],
+        "match": 68
     },
     {
         "content": "trained model to those who did. We further split the training",
@@ -4637,7 +5100,8 @@
             242.89107840000008,
             300.02152000000007,
             252.8536784000001
-        ]
+        ],
+        "match": 68
     },
     {
         "content": "data and run the methods on each set of training environments.",
@@ -4647,7 +5111,8 @@
             230.93607840000007,
             300.0215200000002,
             240.89867840000008
-        ]
+        ],
+        "match": 68
     },
     {
         "content": "The variables used to split the training data into environments",
@@ -4657,7 +5122,8 @@
             218.98107840000006,
             300.0215200000001,
             228.94367840000007
-        ]
+        ],
+        "match": 69
     },
     {
         "content": "are \u201cwas the person born in the US\", \u201cdo they regularly",
@@ -4667,7 +5133,8 @@
             207.02607840000005,
             300.0215200000001,
             216.98867840000005
-        ]
+        ],
+        "match": 68
     },
     {
         "content": "work more than 40hr/week\", and \u201cdoes the person identify",
@@ -4677,7 +5144,8 @@
             195.07107840000003,
             300.0236586000001,
             205.25285560000003
-        ]
+        ],
+        "match": 68
     },
     {
         "content": "as Caucasian\". The experiment shows that bIMP outperforms",
@@ -4687,7 +5155,8 @@
             183.11507840000004,
             300.0231888,
             193.10756620000006
-        ]
+        ],
+        "match": 68
     },
     {
         "content": "LR and ICP in all environments aside from the overtime",
@@ -4697,7 +5166,8 @@
             171.16007840000003,
             300.02251140000004,
             181.35181820000003
-        ]
+        ],
+        "match": 68
     },
     {
         "content": "environment (Table I). The ICP method returns no invariant",
@@ -4707,7 +5177,8 @@
             159.20507840000002,
             300.02442360000003,
             169.19756620000004
-        ]
+        ],
+        "match": 68
     },
     {
         "content": "predictors for any environment, thus no predictions can be",
@@ -4717,7 +5188,8 @@
             147.2500784,
             300.0215200000001,
             157.21267840000002
-        ]
+        ],
+        "match": 69
     },
     {
         "content": "made and no accuracy is reported; this is also the case for the",
@@ -4727,7 +5199,8 @@
             135.2950784,
             300.0215200000001,
             145.2576784
-        ]
+        ],
+        "match": 68
     },
     {
         "content": "mushroom data below.",
@@ -4737,7 +5210,8 @@
             123.34007840000001,
             140.09221200000002,
             133.5318182
-        ]
+        ],
+        "match": null
     },
     {
         "content": "Environment Accuracy",
@@ -4747,7 +5221,8 @@
             93.6892576,
             220.23778240000001,
             102.65565760000001
-        ]
+        ],
+        "match": 74
     },
     {
         "content": "meadows 76.0 87.5 46.2",
@@ -4757,7 +5232,8 @@
             83.3282576,
             273.98083296,
             92.4919184
-        ]
+        ],
+        "match": null
     },
     {
         "content": "paths 88.1 90.9 11.8",
@@ -4767,7 +5243,8 @@
             73.3652576,
             273.98083296,
             82.52891840000001
-        ]
+        ],
+        "match": null
     },
     {
         "content": "bIMP (linear) bIMP (GAM) LR",
@@ -4777,7 +5254,8 @@
             106.0432576,
             271.51905919999996,
             115.0365568
-        ]
+        ],
+        "match": 65
     },
     {
         "content": "naturally growing mushrooms\u2019 size, shape, and color and",
@@ -4787,7 +5265,8 @@
             693.4710783999999,
             563.0355200000001,
             703.4336784
-        ]
+        ],
+        "match": null
     },
     {
         "content": "showcases how the proposed approach can handle discrete and",
@@ -4797,7 +5276,8 @@
             681.5160783999999,
             563.0355200000001,
             691.4786783999999
-        ]
+        ],
+        "match": 66
     },
     {
         "content": "categorical data. We aim to predict whether or not a mushroom",
@@ -4807,7 +5287,8 @@
             669.5600783999998,
             563.03552,
             679.5226783999999
-        ]
+        ],
+        "match": 66
     },
     {
         "content": "is edible based on these factors. The environments on which",
@@ -4817,7 +5298,8 @@
             657.6050783999998,
             563.0355200000002,
             667.5676783999999
-        ]
+        ],
+        "match": 66
     },
     {
         "content": "we predict are the habitats in which the mushrooms grow.",
@@ -4827,7 +5309,8 @@
             645.6500783999998,
             563.03552,
             655.6126783999998
-        ]
+        ],
+        "match": 66
     },
     {
         "content": "Specifically, we train on mushrooms that grow in grass or",
@@ -4837,7 +5320,8 @@
             633.6950783999997,
             563.03552,
             643.6576783999998
-        ]
+        ],
+        "match": 66
     },
     {
         "content": "urban habitats and test on mushrooms that grow in meadows",
@@ -4847,7 +5331,8 @@
             621.7400783999997,
             563.03552,
             631.7026783999997
-        ]
+        ],
+        "match": 66
     },
     {
         "content": "or paths. Results in Table II indicate that bIMP outperforms",
@@ -4857,7 +5342,8 @@
             609.7840783999997,
             563.0361887999999,
             619.7765661999997
-        ]
+        ],
+        "match": null
     },
     {
         "content": "ICP and LR for both the linear and GAM variants, while the",
@@ -4867,7 +5353,8 @@
             597.8290783999996,
             563.0389662,
             607.8215661999997
-        ]
+        ],
+        "match": 66
     },
     {
         "content": "GAM variant performed the best.",
@@ -4877,7 +5364,8 @@
             585.8740783999996,
             448.79438580000004,
             595.8366783999996
-        ]
+        ],
+        "match": 66
     },
     {
         "content": "We thank the anonymous reviewers for their helpful com\u2212",
@@ -4887,7 +5375,8 @@
             553.5080783999996,
             563.0349200000002,
             563.4706783999997
-        ]
+        ],
+        "match": 59
     },
     {
         "content": "ments that improved the quality of this work.",
@@ -4897,7 +5386,8 @@
             541.5530783999995,
             498.42805900000013,
             551.5156783999996
-        ]
+        ],
+        "match": 47
     },
     {
         "content": "VII. ACKNOWLEDGEMENTS",
@@ -4907,7 +5397,8 @@
             568.4010783999996,
             497.74493730000006,
             578.3636783999997
-        ]
+        ],
+        "match": null
     },
     {
         "content": "Proof of Proposition 1. First, we show that (8) holds for any",
@@ -4917,7 +5408,8 @@
             509.1870783999996,
             563.0351086000002,
             519.3788181999996
-        ]
+        ],
+        "match": 49
     },
     {
         "content": "e \u2208 Eobs. Without loss of generality, let X ei be continuous for",
@@ -4927,7 +5419,8 @@
             495.4380827999996,
             563.033468,
             508.6208827999996
-        ]
+        ],
+        "match": null
     },
     {
         "content": "all i \u2208 {1, . . . , m}. The pdf of X ek|X eS for any e \u2208 Eobs is",
@@ -4937,7 +5430,8 @@
             483.25408279999965,
             549.1860542000002,
             496.66488279999965
-        ]
+        ],
+        "match": null
     },
     {
         "content": "APPENDIX",
@@ -4947,7 +5441,8 @@
             524.0800783999996,
             459.65469920000004,
             534.0426783999997
-        ]
+        ],
+        "match": 41
     },
     {
         "content": "f X ek|X eS (xk|x)",
@@ -4957,7 +5452,8 @@
             464.46562779999965,
             370.09345514000023,
             477.6728555999997
-        ]
+        ],
+        "match": null
     },
     {
         "content": "= fX ek|X eS ,Y e (xk|x, 1) \u00b7 pY e|X eS (1|x)",
@@ -4967,7 +5463,8 @@
             448.8976277999996,
             468.3814551400003,
             462.10485559999967
-        ]
+        ],
+        "match": null
     },
     {
         "content": "+ fX ek|X eS ,Y e(xk|x, 0) \u00b7 pY e|X eS (0|x)",
@@ -4977,7 +5474,8 @@
             433.32962779999957,
             487.1994551400004,
             446.5368555999996
-        ]
+        ],
+        "match": null
     },
     {
         "content": "= fX ek|X eS ,Y e (xk|x, 1) \u00b7 pY e|X eS (1|x)",
@@ -4987,7 +5485,8 @@
             417.76162779999953,
             468.3814551400004,
             430.9678555999996
-        ]
+        ],
+        "match": null
     },
     {
         "content": "+ fX ek|X eS ,Y e(xk|x, 0) \u00b7 (cid:104)1 \u2212 pY e|X eS (1|x)(cid:105)",
@@ -4997,7 +5496,8 @@
             399.10462779999943,
             513.7663397200006,
             419.3250399999995
-        ]
+        ],
+        "match": null
     },
     {
         "content": "= pY e|X eS (1|x) (cid:104)fX ek|X eS ,Y e(xk|x, 1) \u2212 fX ek|X eS ,Y e (xk|x, 0)(cid:105)",
@@ -5007,7 +5507,8 @@
             378.18262779999935,
             563.520339720001,
             398.4040399999995
-        ]
+        ],
+        "match": null
     },
     {
         "content": "+ fX ek|X eS ,Y e (xk|x, 0).",
@@ -5017,7 +5518,8 @@
             360.3496277999993,
             431.88561028000095,
             373.5568555999994
-        ]
+        ],
+        "match": 55
     },
     {
         "content": "(12)",
@@ -5027,7 +5529,8 @@
             363.3750783999993,
             563.036691600001,
             373.3376783999993
-        ]
+        ],
+        "match": null
     },
     {
         "content": "Then using (12), we can write EPe [Xk|XS = x] as",
@@ -5037,7 +5540,8 @@
             344.2836277999993,
             522.174845800001,
             355.7708555999993
-        ]
+        ],
+        "match": 63
     },
     {
         "content": "(cid:90) \u221e",
@@ -5047,7 +5551,8 @@
             332.9014399999993,
             354.23646082000107,
             342.8640399999993
-        ]
+        ],
+        "match": null
     },
     {
         "content": "\u2212\u221e",
@@ -5057,7 +5562,8 @@
             314.8890827999993,
             356.0353668400011,
             321.8628827999993
-        ]
+        ],
+        "match": null
     },
     {
         "content": "xk \u00b7 fX ek|X eS (xk|x) dxk",
@@ -5067,7 +5573,8 @@
             320.14162779999924,
             449.8021887400012,
             333.3488555999993
-        ]
+        ],
+        "match": null
     },
     {
         "content": "= EPe[Y |XS = x] \u00b7 EPe [Xk|XS = x, Y = 1]",
@@ -5077,7 +5584,8 @@
             300.5966277999991,
             521.5284233600012,
             312.08385559999925
-        ]
+        ],
+        "match": 64
     },
     {
         "content": "\u2212 EPe [Y |XS = x] \u00b7 EPe [Xk|XS = x, Y = 0]",
@@ -5087,7 +5595,8 @@
             285.652627799999,
             540.3464233600013,
             297.1398555999991
-        ]
+        ],
+        "match": null
     },
     {
         "content": "+ EPe [Xk|XS = x, Y = 0].",
@@ -5097,7 +5606,8 @@
             270.7086277999989,
             470.6526102800013,
             282.195855599999
-        ]
+        ],
+        "match": 61
     },
     {
         "content": "(13)",
@@ -5107,7 +5617,8 @@
             272.01407839999894,
             563.0366916000013,
             281.97667839999895
-        ]
+        ],
+        "match": null
     },
     {
         "content": "Thus, EPe[Y |XS] can be written as",
@@ -5117,7 +5628,8 @@
             252.9226277999989,
             457.87040480000127,
             264.40985559999893
-        ]
+        ],
+        "match": 63
     },
     {
         "content": "EPe [Xk|XS] \u2212 EPe [Xk|XS, Y = 0]",
@@ -5127,7 +5639,8 @@
             237.1286277999989,
             509.004423360001,
             248.6158555999989
-        ]
+        ],
+        "match": null
     },
     {
         "content": "EPe [Xk|XS, Y = 1] \u2212 EPe [Xk|XS, Y = 0] . (14)",
@@ -5137,7 +5650,8 @@
             223.5556278,
             563.0356915999998,
             241.8758556
-        ]
+        ],
+        "match": null
     },
     {
         "content": "We now show (I) EPe [Xk|XS = x, Y = y] does not depend",
@@ -5147,7 +5661,8 @@
             207.9626278,
             563.0349551999999,
             219.4498556
-        ]
+        ],
+        "match": 49
     },
     {
         "content": "on e and (II) the denominator of (14) is non\u2212zero. Since X eS =\n(X eR, X eQ),",
@@ -5157,7 +5672,8 @@
             183.4120828,
             563.0359102799998,
             208.70088280000004
-        ]
+        ],
+        "match": null
     },
     {
         "content": "EPe [Xk|XS, Y ] = EPe[Xk|XR, XQ, Y ] (a)= EPe[Xk|XR, Y ]",
@@ -5167,7 +5683,8 @@
             161.3886278,
             563.5056102799999,
             176.9718828
-        ]
+        ],
+        "match": null
     },
     {
         "content": "(b)= EPe[g(XR, Y ) + \u03f5|XR, Y ] = g(X eR, Y e), (15)",
@@ -5177,7 +5694,8 @@
             141.72308280000001,
             563.0356916,
             157.66488280000002
-        ]
+        ],
+        "match": null
     },
     {
         "content": "where (a) follows since X eQ \u22a5\u22a5 X ek|X eR, Y e, (b) follows from",
@@ -5187,7 +5705,8 @@
             123.57808280000003,
             563.0366500000001,
             136.98888280000003
-        ]
+        ],
+        "match": null
     },
     {
         "content": "the assumption X ek = g(X eR, Y e) + \u03f5e, and (c) follows since",
@@ -5197,7 +5716,8 @@
             111.62308280000003,
             563.0400774000003,
             125.03288280000002
-        ]
+        ],
+        "match": 73
     },
     {
         "content": "\u03f5 has zero mean. Thus, the EPe[Xk|XS = (xQ, xR), Y = y]",
@@ -5207,7 +5727,8 @@
             100.38462780000003,
             563.0366102800001,
             111.87185560000003
-        ]
+        ],
+        "match": null
     },
     {
         "content": "does not depend on e as EPe[Xk|XS = (xQ, xR), Y = y] =",
@@ -5217,7 +5738,8 @@
             88.42962780000003,
             563.03214116,
             99.91685560000003
-        ]
+        ],
+        "match": null
     },
     {
         "content": "g(xR, y). As the output of the function g is not constant with",
@@ -5227,7 +5749,8 @@
             77.08408280000003,
             563.0362292000002,
             87.96085560000003
-        ]
+        ],
+        "match": 73
     },
     {
         "content": "regards to any of its inputs as in (1), the denominator of (14)",
@@ -5237,7 +5760,8 @@
             65.82407840000003,
             563.0355200000002,
             75.78667840000003
-        ]
+        ],
+        "match": 73
     },
     {
         "content": "TABLE II: mushroom: performance and training environments.",
@@ -5247,7 +5771,8 @@
             55.4170784,
             300.0216480000001,
             65.6088182
-        ]
+        ],
+        "match": 75
     },
     {
         "content": "is non\u2212zero.",
@@ -5257,7 +5782,8 @@
             53.86907840000003,
             360.0076946000002,
             63.83167840000003
-        ]
+        ],
+        "match": 73
     },
     {
         "content": "REFERENCES",
@@ -5267,7 +5793,8 @@
             705.4260783999999,
             202.39846050000003,
             715.3886784
-        ]
+        ],
+        "match": null
     },
     {
         "content": "[1] N. Meinshausen, A. Hauser, J. M. Mooij, J. Peters, P. Versteeg, and",
@@ -5277,7 +5804,8 @@
             691.0614584,
             300.02210000000014,
             699.0315584
-        ]
+        ],
+        "match": 77
     },
     {
         "content": "P. B\u00fchlmann, \u201cMethods for causal inference from gene perturbation",
@@ -5287,7 +5815,8 @@
             682.0954584,
             300.02165090000017,
             690.0655584
-        ]
+        ],
+        "match": 77
     },
     {
         "content": "experiments and validation,\u201d Proceedings of the National Academy of",
@@ -5297,7 +5826,8 @@
             673.1294584,
             300.02310200000005,
             681.2828707
-        ]
+        ],
+        "match": 77
     },
     {
         "content": "Sciences, vol. 113, no. 27, pp. 7361\u20137368, 2016.",
@@ -5307,7 +5837,8 @@
             664.1624584,
             227.82843080000004,
             672.3158707
-        ]
+        ],
+        "match": 77
     },
     {
         "content": "[2] A. V. Goddard, Y. Xiang, and C. J. Bryan, \u201cInvariance\u2212based causal",
@@ -5317,7 +5848,8 @@
             655.1964584,
             300.0221000000002,
             663.1665584
-        ]
+        ],
+        "match": 78
     },
     {
         "content": "prediction to identify the direct causes of suicidal behavior,\u201d Frontiers",
@@ -5327,7 +5859,8 @@
             646.2304584,
             300.0223268,
             654.3838707
-        ]
+        ],
+        "match": 78
     },
     {
         "content": "in psychiatry, p. 2598, 2022.",
@@ -5337,7 +5870,8 @@
             637.2634584,
             161.501155,
             645.4168707
-        ]
+        ],
+        "match": 78
     },
     {
         "content": "[3] T. Haavelmo, \u201cThe probability approach in econometrics,\u201d Economet\u2212",
@@ -5347,7 +5881,8 @@
             628.2974584,
             300.0224732,
             636.4508707
-        ]
+        ],
+        "match": 79
     },
     {
         "content": "rica: Journal of the Econometric Society, vol. 12, pp. 1\u2013115, 1944.",
@@ -5357,7 +5892,8 @@
             619.3304584,
             288.67986080000003,
             627.4838707
-        ]
+        ],
+        "match": 79
     },
     {
         "content": "[4] J. Aldrich, \u201cAutonomy,\u201d Oxford Economic Papers, vol. 41, no. 1, pp.",
@@ -5367,7 +5903,8 @@
             610.3644584,
             300.0220792,
             618.5178707
-        ]
+        ],
+        "match": 80
     },
     {
         "content": "15\u201334, 1989.",
@@ -5377,7 +5914,8 @@
             601.3984584,
             109.86303500000002,
             609.3685584
-        ]
+        ],
+        "match": 80
     },
     {
         "content": "[5] K. D. Hoover, \u201cThe logic of causal inference: Econometrics and the",
@@ -5387,7 +5925,8 @@
             592.4314584,
             300.02210000000025,
             600.4015584
-        ]
+        ],
+        "match": 81
     },
     {
         "content": "conditional analysis of causation,\u201d Economics & Philosophy, vol. 6,",
@@ -5397,7 +5936,8 @@
             583.4654584,
             300.02351280000005,
             591.6188707
-        ]
+        ],
+        "match": 81
     },
     {
         "content": "no. 2, pp. 207\u2013234, 1990.",
@@ -5407,7 +5947,8 @@
             574.4994584,
             152.10456500000004,
             582.4695584
-        ]
+        ],
+        "match": 81
     },
     {
         "content": "[6] B. Sch\u00f6lkopf, D. Janzing, J. Peters, E. Sgouritsa, K. Zhang, and J. Mooij,",
@@ -5417,7 +5958,8 @@
             565.5324584,
             300.02210000000014,
             573.5025584
-        ]
+        ],
+        "match": null
     },
     {
         "content": "\u201cOn causal and anticausal learning,\u201d arXiv preprint arXiv:1206.6471,",
@@ -5427,7 +5969,8 @@
             556.5664584,
             300.0225250000001,
             564.7198707
-        ]
+        ],
+        "match": 82
     },
     {
         "content": "2012.",
@@ -5437,7 +5980,8 @@
             547.5994584,
             85.1557250000001,
             555.5695584
-        ]
+        ],
+        "match": 82
     },
     {
         "content": "[7] A. P. Dawid and V. Didelez, \u201cIdentifying the consequences of dynamic",
@@ -5447,7 +5991,8 @@
             538.6334584,
             300.02210000000025,
             546.6035584
-        ]
+        ],
+        "match": 83
     },
     {
         "content": "treatment strategies: A decision\u2212theoretic overview,\u201d Statistics Surveys,",
@@ -5457,7 +6002,8 @@
             529.6674584,
             300.0225250000001,
             537.8208707
-        ]
+        ],
+        "match": 83
     },
     {
         "content": "vol. 4, pp. 184\u2013231, 2010.",
@@ -5467,7 +6013,8 @@
             520.7004584,
             154.1608508000001,
             528.6705584
-        ]
+        ],
+        "match": 83
     },
     {
         "content": "[8] J. Pearl, Causality. Cambridge university press, 2009.",
@@ -5477,7 +6024,8 @@
             511.7344584,
             248.43875590000016,
             519.8878707
-        ]
+        ],
+        "match": 84
     },
     {
         "content": "[9] J. Peters, P. B\u00fchlmann, and N. Meinshausen, \u201cCausal inference by using",
@@ -5487,7 +6035,8 @@
             502.7684584,
             300.02210000000025,
             510.7385584
-        ]
+        ],
+        "match": 85
     },
     {
         "content": "invariant prediction: identification and confidence intervals,\u201d Journal of",
@@ -5497,7 +6046,8 @@
             493.8014584,
             300.0191210000001,
             501.9548707
-        ]
+        ],
+        "match": 85
     },
     {
         "content": "the Royal Statistical Society. Series B (Statistical Methodology), pp. 947\u2013",
@@ -5507,7 +6057,8 @@
             484.8354584,
             300.0185362000001,
             492.9888707
-        ]
+        ],
+        "match": 85
     },
     {
         "content": "1012, 2016.",
@@ -5517,7 +6068,8 @@
             475.8684584,
             105.87798500000011,
             483.8385584
-        ]
+        ],
+        "match": 85
     },
     {
         "content": "[10] C. Heinze\u2212Deml, J. Peters, and N. Meinshausen, \u201cInvariant causal",
@@ -5527,7 +6079,8 @@
             705.8564584,
             563.0361500000001,
             713.8265584
-        ]
+        ],
+        "match": 86
     },
     {
         "content": "prediction for nonlinear models,\u201d Journal of Causal Inference, vol. 6,",
@@ -5537,7 +6090,8 @@
             696.8904583999999,
             563.0360742000001,
             705.0438707
-        ]
+        ],
+        "match": 86
     },
     {
         "content": "no. 2, 2018.",
@@ -5547,7 +6101,8 @@
             687.9234584,
             369.6889950000001,
             695.8935584
-        ]
+        ],
+        "match": 86
     },
     {
         "content": "[11] N. Pfister, P. B\u00fchlmann, and J. Peters, \u201cInvariant causal prediction for",
@@ -5557,7 +6112,8 @@
             678.9574584,
             563.0361500000004,
             686.9275584
-        ]
+        ],
+        "match": 87
     },
     {
         "content": "sequential data,\u201d Journal of the American Statistical Association, vol.",
@@ -5567,7 +6123,8 @@
             669.9914583999999,
             563.0354891000001,
             678.1448707
-        ]
+        ],
+        "match": 87
     },
     {
         "content": "114, no. 527, pp. 1264\u20131276, 2019.",
@@ -5577,7 +6134,8 @@
             661.0244584,
             447.7959750000001,
             668.9945584
-        ]
+        ],
+        "match": 87
     },
     {
         "content": "[12] M. Rojas\u2212Carulla, B. Sch\u00f6lkopf, R. Turner, and J. Peters, \u201cInvariant",
@@ -5587,7 +6145,8 @@
             652.0584584,
             563.0361500000001,
             660.0285584
-        ]
+        ],
+        "match": null
     },
     {
         "content": "models for causal transfer learning,\u201d The Journal of Machine Learning",
@@ -5597,7 +6156,8 @@
             643.0914584,
             563.0394631000001,
             651.2448707
-        ]
+        ],
+        "match": 88
     },
     {
         "content": "Research, vol. 19, no. 1, pp. 1309\u20131342, 2018.",
@@ -5607,7 +6167,8 @@
             634.1254584,
             484.67333080000014,
             642.2788707
-        ]
+        ],
+        "match": 88
     },
     {
         "content": "[13] D. Rothenh\u00e4usler, N. Meinshausen, P. B\u00fchlmann, and J. Peters, \u201cAnchor",
@@ -5617,7 +6178,8 @@
             625.1594584,
             563.0361500000004,
             633.1295584
-        ]
+        ],
+        "match": null
     },
     {
         "content": "regression: Heterogeneous data meet causality,\u201d Journal of the Royal",
@@ -5627,7 +6189,8 @@
             616.1924584,
             563.0387305,
             624.3458707
-        ]
+        ],
+        "match": 89
     },
     {
         "content": "Statistical Society Series B: Statistical Methodology, vol. 83, no. 2, pp.",
@@ -5637,7 +6200,8 @@
             607.2264584,
             563.0349661000001,
             615.3798707
-        ]
+        ],
+        "match": 89
     },
     {
         "content": "215\u2013246, 2021.",
@@ -5647,7 +6211,8 @@
             598.2604584,
             380.84713500000015,
             606.2305584
-        ]
+        ],
+        "match": 89
     },
     {
         "content": "[14] N. Pfister, E. G. Williams, J. Peters, R. Aebersold, and P. B\u00fchlmann,",
@@ -5657,7 +6222,8 @@
             589.2934584,
             563.0361500000002,
             597.2635584
-        ]
+        ],
+        "match": 90
     },
     {
         "content": "\u201cStabilizing variable selection and regression,\u201d The Annals of Applied",
@@ -5667,7 +6233,8 @@
             580.3274584,
             563.0332523000002,
             588.4808707
-        ]
+        ],
+        "match": 90
     },
     {
         "content": "Statistics, vol. 15, no. 3, pp. 1220\u20131246, 2021.",
@@ -5677,7 +6244,8 @@
             571.3604584,
             484.2183308000002,
             579.5138707
-        ]
+        ],
+        "match": 90
     },
     {
         "content": "[15] K. Du and Y. Xiang, \u201cLearning invariant representations under general",
@@ -5687,7 +6255,8 @@
             562.3944584,
             563.0361500000004,
             570.3645584
-        ]
+        ],
+        "match": 91
     },
     {
         "content": "interventions on the response,\u201d IEEE Journal on Selected Areas in",
@@ -5697,7 +6266,8 @@
             553.4284584,
             563.0344935000003,
             561.5818707
-        ]
+        ],
+        "match": 91
     },
     {
         "content": "Information Theory, 2023.",
@@ -5707,7 +6277,8 @@
             544.4614584,
             416.4017850000002,
             552.6148707
-        ]
+        ],
+        "match": 91
     },
     {
         "content": "[16] \u2014\u2014, \u201cGeneralized invariant matching property via lasso,\u201d in ICASSP",
@@ -5717,7 +6288,8 @@
             535.4954584,
             563.0356622000002,
             543.6488707
-        ]
+        ],
+        "match": 92
     },
     {
         "content": "2023\u22122023 IEEE International Conference on Acoustics, Speech and",
@@ -5727,7 +6299,8 @@
             526.7127707,
             563.0356509000003,
             534.6828707
-        ]
+        ],
+        "match": 92
     },
     {
         "content": "Signal Processing (ICASSP). IEEE, 2023.",
@@ -5737,7 +6310,8 @@
             517.5624584,
             472.17564660000016,
             525.7158707
-        ]
+        ],
+        "match": 92
     },
     {
         "content": "[17] A. Goddard, Y. Xiang, and I. Soloveychik, \u201cError probability bounds",
@@ -5747,7 +6321,8 @@
             508.59645839999996,
             563.0361500000004,
             516.5665584
-        ]
+        ],
+        "match": 93
     },
     {
         "content": "for invariant causal prediction via multiple access channels,\u201d Asilomar",
@@ -5757,7 +6332,8 @@
             499.6294584,
             563.0363567000002,
             507.7828707
-        ]
+        ],
+        "match": 93
     },
     {
         "content": "Conference on Signals, Systems, and Computers, 2023.",
@@ -5767,7 +6343,8 @@
             490.66345839999997,
             510.8627850000002,
             498.8168707
-        ]
+        ],
+        "match": 93
     },
     {
         "content": "[18] B. Becker and R. Kohavi, \u201cAdult,\u201d UCI Machine Learning Repository,",
@@ -5777,7 +6354,8 @@
             481.69745839999996,
             563.0361500000004,
             489.66755839999996
-        ]
+        ],
+        "match": 94
     },
     {
         "content": "[19] \u201cMushroom,\u201d UCI Machine Learning Repository, 1987, DOI:",
@@ -5787,7 +6365,8 @@
             463.76445839999997,
             563.0361500000002,
             471.73455839999997
-        ]
+        ],
+        "match": 95
     },
     {
         "content": "1996, DOI: https://doi.org/10.24432/C5XW20.",
@@ -5797,7 +6376,8 @@
             472.7304584,
             481.79642160000014,
             480.7005584
-        ]
+        ],
+        "match": 94
     },
     {
         "content": "https://doi.org/10.24432/C5959T.",
@@ -5807,6 +6387,7 @@
             454.79845839999996,
             436.8928782000002,
             462.76855839999996
-        ]
+        ],
+        "match": 95
     }
 ]

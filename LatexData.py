@@ -314,8 +314,15 @@ class LatexData:
         for pattern in patterns:
             text = re.sub(r'\\' + pattern + r'\{(.*?)\}', lambda match: match.group(1), text)
 
-        text = re.sub(r'\n', ' ', text)
-        text = re.sub(r'\\noindent', ' ', text)
+        patterns = [
+            '\n',
+            '\\noindent',
+        ]
+        for pattern in patterns:
+            text = re.sub(r'' + pattern, ' ', text)
+        text = text.replace('\\newblock', '')
+        text = re.sub(r'{\\em (.*?)}', r'\1', text)
+        text = re.sub(r'{([A-Z]+)}', r'\1', text)
 
         def translate_equations(text):
             return LatexNodes2Text().latex_to_text(text)

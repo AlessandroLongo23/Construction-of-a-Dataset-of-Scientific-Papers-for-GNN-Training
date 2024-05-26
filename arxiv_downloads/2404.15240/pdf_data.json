@@ -360,7 +360,7 @@
             36.34,
             251.98
         ],
-        "match": 138
+        "match": null
     },
     {
         "content": "r",
@@ -932,7 +932,7 @@
             284.59295872,
             685.0619006000001
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "M \u03bb(Cn) \u2014\u2192 Cn/Sn,",
@@ -954,7 +954,7 @@
             119.71795872000015,
             639.8189006
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "M \u03bb(Cn) agrees with the number m of non\u2212zero parts of \u03bb, and that the normalization of",
@@ -1251,7 +1251,7 @@
             123.60439192000037,
             275.79973459999985
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "A partition \u03bb = (\u03bb1, . . . , \u03bbm) of n is a sequence of non\u2212increasing positive integers such",
@@ -1482,7 +1482,7 @@
             379.13154797999994,
             643.7241000000001
         ],
-        "match": 246
+        "match": null
     },
     {
         "content": "j<k\u2208[l]",
@@ -1493,7 +1493,7 @@
             327.83544831,
             629.3241
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "By convention, \u2206(i) = 1. For a tableau T of shape \u03bb with l columns, we denote by Ti the",
@@ -1559,7 +1559,7 @@
             359.9189131299999,
             503.71709999999996
         ],
-        "match": 48
+        "match": null
     },
     {
         "content": "= (x9 \u2212 x2)(x9 \u2212 x5)(x2 \u2212 x5)(x3 \u2212 x1)(x3 \u2212 x7)(x1 \u2212 x7)(x6 \u2212 x8).",
@@ -1570,7 +1570,7 @@
             478.35354798000014,
             486.85909999999996
         ],
-        "match": 27
+        "match": null
     },
     {
         "content": "For a group G acting linearly on a complex vector space V we denote the action of a group",
@@ -1669,7 +1669,7 @@
             346.45554797999995,
             548.1997346
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "[Spe37] that these representations are indeed irreducible and pairwise non\u2212isomorphic.",
@@ -1988,7 +1988,7 @@
             262.9756842099999,
             675.5511
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "T \u2236= xi(w(S))1",
@@ -2076,7 +2076,7 @@
             366.65868420999965,
             635.9891000000001
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "T \u2208 P.",
@@ -2087,7 +2087,7 @@
             387.58864497999963,
             633.2311000000001
         ],
-        "match": 30
+        "match": 37
     },
     {
         "content": "Theorem 2.1 ([TY93]). The \u03bb\u2212part of the isotypic decomposition of the coinvariant algebra",
@@ -2153,7 +2153,7 @@
             330.8866842099992,
             516.5281000000001
         ],
-        "match": 27
+        "match": null
     },
     {
         "content": "For any \u03bb there exists a unique standard tableau S0 of shape \u03bb such that the sum of the",
@@ -2186,7 +2186,7 @@
             512.5225479799994,
             497.8921000000002
         ],
-        "match": 31
+        "match": null
     },
     {
         "content": "nomial F S0T then coincides with the Specht polynomial spT up to a multiplicative constant.",
@@ -2362,7 +2362,7 @@
             522.3370979800002,
             227.3751
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "Newton identities.",
@@ -2549,7 +2549,7 @@
             382.4215479799999,
             612.4839006
         ],
-        "match": 50
+        "match": null
     },
     {
         "content": "where the former denotes the Zariski tangent space at [Z] and the latter denotes the vector\nspace of A\u2212linear G\u2212equivariant homomorphisms I \u2192 A/I.",
@@ -2791,7 +2791,7 @@
             393.80454798000017,
             272.02610000000016
         ],
-        "match": 31
+        "match": null
     },
     {
         "content": "where 1n is the identity matrix and 1n is the matrix filled with ones only. An explicit",
@@ -2835,7 +2835,7 @@
             390.41027601000013,
             223.9201000000001
         ],
-        "match": 51
+        "match": null
     },
     {
         "content": "n 1n.",
@@ -2945,7 +2945,7 @@
             412.42276362,
             722.7079006
         ],
-        "match": 61
+        "match": 2
     },
     {
         "content": "2.4. The associated graded. From now on, we abbreviate H\u03c1 \u2236= HilbSn\u03c1 (Cn). Let C\u2217 act",
@@ -3011,7 +3011,7 @@
             315.32548480000014,
             634.2132064000001
         ],
-        "match": 59
+        "match": null
     },
     {
         "content": "\u03c1,h (Cn), I \u21a6 gr I",
@@ -3198,7 +3198,7 @@
             396.3053104400003,
             472.41710000000006
         ],
-        "match": 61
+        "match": 5
     },
     {
         "content": "for some partitions \u03bb1, . . . , \u03bbN of n.",
@@ -3220,7 +3220,7 @@
             355.02454798000036,
             376.92094560000004
         ],
-        "match": 63
+        "match": null
     },
     {
         "content": "Proof. Let I \u2286 P = C[x1, . . . , xn] be a radical symmetric ideal such that P /I \u2245 \u03c1 as Sn\u2212",
@@ -3231,7 +3231,7 @@
             522.3360030300005,
             338.4411000000001
         ],
-        "match": 66
+        "match": null
     },
     {
         "content": "modules. The vanishing set of I is a symmetric point configuration, consisting of some",
@@ -3242,7 +3242,7 @@
             522.3385855700005,
             323.3727346000001
         ],
-        "match": 66
+        "match": 6
     },
     {
         "content": "number N of disjoint Sn\u2212orbits with vanishing ideals I1, . . . , IN . The Chinese remainder",
@@ -3253,7 +3253,7 @@
             522.3350123900005,
             310.4217346000001
         ],
-        "match": 66
+        "match": null
     },
     {
         "content": "theorem provides a canonical algebra isomorphism P /I \u2245 \u2295Ni=1 P /Ii which is Sn\u2212equivariant,",
@@ -3264,7 +3264,7 @@
             522.3417770500006,
             299.5861000000001
         ],
-        "match": 66
+        "match": null
     },
     {
         "content": "so it suffices to prove the case of only one orbit. Let q1, . . . , qk \u2208 Cn be the distinct points",
@@ -3275,7 +3275,7 @@
             522.3387224600006,
             286.6351000000001
         ],
-        "match": 66
+        "match": null
     },
     {
         "content": "of this orbit and let \u03bb = (\u03bb1 \u2265 \u03bb2 \u2265 \u22ef \u2265 \u03bbm \u2265 1) \u22a2 n be the corresponding partition, i.e.,",
@@ -3286,7 +3286,7 @@
             522.3373254400007,
             273.68410000000006
         ],
-        "match": 66
+        "match": null
     },
     {
         "content": "each qi has m distinct coordinates which occur with multiplicities \u03bb1, . . . , \u03bbm. Again by",
@@ -3297,7 +3297,7 @@
             522.3328645600006,
             258.61573460000005
         ],
-        "match": 66
+        "match": null
     },
     {
         "content": "the Chinese remainder theorem we obtain a canonical isomorphism P /I \u2245 \u2295ki=1 P /mqi of",
@@ -3308,7 +3308,7 @@
             522.3373709600007,
             247.78110000000004
         ],
-        "match": 66
+        "match": null
     },
     {
         "content": "algebras, in particular of vector spaces. We define an Sn\u2212module structure on the direct",
@@ -3319,7 +3319,7 @@
             522.3368552900007,
             232.71273460000003
         ],
-        "match": 66
+        "match": null
     },
     {
         "content": "sum by",
@@ -3330,7 +3330,7 @@
             124.27530157000066,
             219.76173460000004
         ],
-        "match": 66
+        "match": 6
     },
     {
         "content": "f \u2208 P /mqi \u21d2 \u03c3(f ) \u2236= \u03c3(f ) \u2208 P /m\u03c3(qi).",
@@ -3341,7 +3341,7 @@
             404.3125479799999,
             208.31509999999997
         ],
-        "match": 66
+        "match": null
     },
     {
         "content": "In this way, the Chinese remainder isomorphism is also Sn\u2212equivariant. The canonical",
@@ -3363,7 +3363,7 @@
             522.3360979799999,
             179.8971
         ],
-        "match": 66
+        "match": null
     },
     {
         "content": "Definition 3.2. Let \u03c1 be a direct sum of permutation modules. The closure of the locus",
@@ -3374,7 +3374,7 @@
             522.3323569599997,
             158.39173459999995
         ],
-        "match": 67
+        "match": 7
     },
     {
         "content": "of radical ideals in H\u03c1 is called the smoothable component.",
@@ -3385,7 +3385,7 @@
             368.2845479799999,
             147.55709999999996
         ],
-        "match": 67
+        "match": 7
     },
     {
         "content": "The smoothable component is indeed an irreducible component. The reason is that every",
@@ -3396,7 +3396,7 @@
             522.3349869599994,
             126.05173459999997
         ],
-        "match": 68
+        "match": 11
     },
     {
         "content": "radical ideal in the usual Hilbert scheme of points Hilbdim \u03c1(Cn) has an open neighborhood",
@@ -3407,7 +3407,7 @@
             522.3334680099999,
             115.21609999999997
         ],
-        "match": 68
+        "match": 11
     },
     {
         "content": "containing only radical ideals, so the same is true for the closed subscheme HilbSn\u03c1 (Cn).",
@@ -3418,7 +3418,7 @@
             522.33654798,
             100.93690059999996
         ],
-        "match": 68
+        "match": null
     },
     {
         "content": "Moreover, every radical ideal is a smooth point of H\u03c1 because the same is true for the",
@@ -3451,7 +3451,7 @@
             136.96367577999993,
             675.2637346
         ],
-        "match": 223
+        "match": null
     },
     {
         "content": "Remark 3.3. Every symmetric monomial ideal lies in the smoothable component of some",
@@ -3583,7 +3583,7 @@
             522.33216621,
             522.1620999999999
         ],
-        "match": 81
+        "match": null
     },
     {
         "content": "\u03b3\u2236 HM \u03bb \u2014\u2192 Cn/Sn is finite and all fibers over points in O(\u03bb)/Sn are singletons. Finally,",
@@ -3594,7 +3594,7 @@
             506.69127222000003,
             507.7851
         ],
-        "match": 81
+        "match": null
     },
     {
         "content": "O(\u03bb)/Sn \u2286 im(\u03b3) \u2286 \u22c3",
@@ -3605,7 +3605,7 @@
             334.2987362100001,
             488.8741
         ],
-        "match": 66
+        "match": null
     },
     {
         "content": "\u00b5\u22b5\u03bb",
@@ -3627,7 +3627,7 @@
             382.67854798,
             488.8741
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "The proof of Theorem 3.4 will be given in the next subsection. As a consequence, HM \u03bb",
@@ -3748,7 +3748,7 @@
             390.02332347000004,
             302.36010000000005
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "\u03c6\u03bb",
@@ -3759,7 +3759,7 @@
             316.87911135999997,
             304.80590060000003
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "Cm/Sm1 \u00d7 \u22ef \u00d7 Smk ,",
@@ -3968,7 +3968,7 @@
             522.3415324199999,
             634.0287346
         ],
-        "match": 83
+        "match": null
     },
     {
         "content": "and Proposition 3.12 below, the latter proving the case m = 2. The answer is positive also",
@@ -3979,7 +3979,7 @@
             522.3396644400001,
             623.1940999999999
         ],
-        "match": 83
+        "match": 7
     },
     {
         "content": "in the cases m = 1 and m = n where the proof is much simpler. In fact, for m = 1 and m = n",
@@ -3990,7 +3990,7 @@
             522.3356418200001,
             610.2430999999999
         ],
-        "match": 83
+        "match": null
     },
     {
         "content": "the Tanisaki ideals are, respectively, the homogeneous maximal ideal m and the complete",
@@ -4001,7 +4001,7 @@
             522.3365240900001,
             595.2292801
         ],
-        "match": 83
+        "match": 7
     },
     {
         "content": "intersection (p1, p2, . . . , pn).",
@@ -4012,7 +4012,7 @@
             220.4075479800001,
             584.3400999999999
         ],
-        "match": 83
+        "match": null
     },
     {
         "content": "3.2. Tanisaki ideals. We start with the following lemma which can be found in [NC19,",
@@ -4023,7 +4023,7 @@
             522.33944863,
             558.6307346
         ],
-        "match": 85
+        "match": 27
     },
     {
         "content": "Theorem 10.2]. We include a proof since it is of central importance for Theorem 3.4.",
@@ -4034,7 +4034,7 @@
             494.21051893999976,
             545.6797346
         ],
-        "match": 85
+        "match": 27
     },
     {
         "content": "Lemma 3.7. Let F ST be a higher Specht polynomial with T any Young tableau of shape",
@@ -4045,7 +4045,7 @@
             522.3328396500001,
             526.4759005999999
         ],
-        "match": 27
+        "match": null
     },
     {
         "content": "\u03bb \u22a2 n and S a standard Young tableau of the same shape. Then F ST is divisible by the",
@@ -4133,7 +4133,7 @@
             227.6726417499999,
             404.2821000000001
         ],
-        "match": 98
+        "match": 27
     },
     {
         "content": "\u239d \u2211",
@@ -4144,7 +4144,7 @@
             247.90791876999992,
             395.2541000000001
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "\u03c3\u2208R(T )",
@@ -4155,7 +4155,7 @@
             256.5276842099999,
             381.70310000000006
         ],
-        "match": 86
+        "match": 28
     },
     {
         "content": "\u2211",
@@ -4177,7 +4177,7 @@
             286.7236842099998,
             381.70310000000006
         ],
-        "match": 19
+        "match": null
     },
     {
         "content": "sgn(\u03c4 )(\u03b1 \u25cb \u03c4 ) \u25cb \u03c3\u239e",
@@ -4188,7 +4188,7 @@
             374.70164174999985,
             404.28210000000007
         ],
-        "match": 185
+        "match": null
     },
     {
         "content": "\u23a0 (xi(S)",
@@ -4199,7 +4199,7 @@
             403.4026842099998,
             398.86010000000005
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "T )",
@@ -4221,7 +4221,7 @@
             235.84364174999982,
             366.4161000000001
         ],
-        "match": 87
+        "match": 18
     },
     {
         "content": "\u239d \u2211",
@@ -4232,7 +4232,7 @@
             256.0789187699998,
             357.3881000000001
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "\u03c3\u2208R(T )",
@@ -4243,7 +4243,7 @@
             264.6986842099998,
             343.8361000000001
         ],
-        "match": 86
+        "match": 28
     },
     {
         "content": "= \u2212 \u239b",
@@ -4254,7 +4254,7 @@
             235.84364174999973,
             328.5491000000001
         ],
-        "match": 87
+        "match": 18
     },
     {
         "content": "\u239d \u2211",
@@ -4265,7 +4265,7 @@
             256.07891876999975,
             319.5211000000001
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "\u03c3\u2208R(T )",
@@ -4276,7 +4276,7 @@
             264.6986842099997,
             305.9691000000001
         ],
-        "match": 86
+        "match": 28
     },
     {
         "content": "\u2211",
@@ -4298,7 +4298,7 @@
             294.89468420999975,
             343.8361000000001
         ],
-        "match": 19
+        "match": null
     },
     {
         "content": "\u2211",
@@ -4320,7 +4320,7 @@
             294.89468420999964,
             305.9691000000001
         ],
-        "match": 19
+        "match": null
     },
     {
         "content": "sgn(\u03b1 \u25cb \u03c4 )(\u03b1 \u25cb \u03c4 ) \u25cb \u03c3\u239e",
@@ -4331,7 +4331,7 @@
             399.41064174999985,
             366.41610000000014
         ],
-        "match": 185
+        "match": null
     },
     {
         "content": "\u23a0 (xi(S)",
@@ -4342,7 +4342,7 @@
             428.11268420999977,
             360.9941000000001
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "T )",
@@ -4364,7 +4364,7 @@
             356.6386417499997,
             328.5491000000001
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "\u23a0 (xi(S)",
@@ -4375,7 +4375,7 @@
             385.34068420999967,
             323.1271000000001
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "T ) = \u2212F ST ,",
@@ -4386,7 +4386,7 @@
             426.22554797999965,
             320.60190060000014
         ],
-        "match": 91
+        "match": 39
     },
     {
         "content": "so ev(F ST ) = ev(\u03b1(F ST )) = \u2212 ev(F ST ), hence ev(F ST ) = 0. \u25a1",
@@ -4397,7 +4397,7 @@
             522.3360979799996,
             288.6231000000004
         ],
-        "match": 98
+        "match": null
     },
     {
         "content": "In fact, the proof shows that there is nothing special here about xi(S)",
@@ -4419,7 +4419,7 @@
             522.3403478799996,
             261.8497346000004
         ],
-        "match": 28
+        "match": null
     },
     {
         "content": "the Young symmetrizer \u2211\u03c3\u2208R(T ) \u2211\u03c4 \u2208C(T ) sgn(\u03c4 )\u03c4 \u25cb \u03c3 to any polynomial results in a multiple",
@@ -4430,7 +4430,7 @@
             522.3354888499995,
             251.01410000000038
         ],
-        "match": 26
+        "match": null
     },
     {
         "content": "of spT (possibly zero, of course). By the theory of higher Specht polynomials [ATY97,",
@@ -4463,7 +4463,7 @@
             522.3360594899996,
             210.86510000000035
         ],
-        "match": 26
+        "match": null
     },
     {
         "content": "polynomials of shape \u03bb.",
@@ -4485,7 +4485,7 @@
             257.58858451999953,
             182.59673460000033
         ],
-        "match": 90
+        "match": 35
     },
     {
         "content": "This pairing is Sn\u2212equivariant in the sense that \u03c3(\u27e8f, g\u27e9) = \u27e8\u03c3(f ), \u03c3(g)\u27e9. For every d, it",
@@ -4540,7 +4540,7 @@
             428.9275479799996,
             156.97610000000034
         ],
-        "match": 91
+        "match": null
     },
     {
         "content": "restriction to R\u2212coefficients yields an inner product. Let now \u00b51 and \u00b52 be two distinct parti\u2212",
@@ -4991,7 +4991,7 @@
             522.3370979799998,
             193.59709999999993
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "Corollary 3.9. The Hilbert\u2013Chow morphism \u03b3\u2236 HM \u03bb \u2014\u2192 Cn/Sn is finite.",
@@ -5068,7 +5068,7 @@
             522.3370979799998,
             100.57309999999993
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "10",
@@ -5090,7 +5090,7 @@
             412.41718454999994,
             722.7079006
         ],
-        "match": 102
+        "match": 2
     },
     {
         "content": "Proposition 3.10. Let q \u2208 O(\u03bb). Then the fiber of the Hilbert\u2013Chow morphism \u03b3\u2236 HM \u03bb \u2014\u2192",
@@ -5101,7 +5101,7 @@
             522.33565012,
             702.5521
         ],
-        "match": 101
+        "match": 36
     },
     {
         "content": "Cn/Sn over the point corresponding to the orbit Sn \u22c5 q is a singleton.",
@@ -5112,7 +5112,7 @@
             416.78005465000007,
             689.6001
         ],
-        "match": 101
+        "match": 36
     },
     {
         "content": "For the proof, we need a few facts from the theory of higher Specht polynomials in the",
@@ -5123,7 +5123,7 @@
             522.3360778699998,
             665.1297346
         ],
-        "match": 102
+        "match": 34
     },
     {
         "content": "case of products of symmetric groups G \u2236= Sl1 \u00d7 \u22ef \u00d7 Slk , \u2211ki=1 li = n, acting on the polynomial",
@@ -5134,7 +5134,7 @@
             522.3366491700001,
             654.3591
         ],
-        "match": 102
+        "match": 34
     },
     {
         "content": "ring P via G \u2286 Sn, see [ATY97]. Fundamentally, the irreducible representations of G are",
@@ -5145,7 +5145,7 @@
             522.33664851,
             641.1591
         ],
-        "match": 102
+        "match": 34
     },
     {
         "content": "exactly the tensor products of Specht modules S\u03bd1 \u2297 \u22ef \u2297 S\u03bdk , \u03bdi \u22a2 li. This tensor product",
@@ -5156,7 +5156,7 @@
             522.3379048600002,
             627.1939456000001
         ],
-        "match": 102
+        "match": 34
     },
     {
         "content": "can be realized concretely as a G\u2212submodule of Pd(\u03bd1)+...+d(\u03bdk) spanned by the products of",
@@ -5167,7 +5167,7 @@
             522.3338368300002,
             611.0647346000001
         ],
-        "match": 102
+        "match": 34
     },
     {
         "content": "the Specht polynomials for the \u03bdi. In fact, the smallest degree d such that Pd contains a",
@@ -5178,7 +5178,7 @@
             522.3407679700003,
             597.7789006
         ],
-        "match": 102
+        "match": 34
     },
     {
         "content": "copy of S\u03bd1 \u2297 \u22ef \u2297 S\u03bdk is precisely d(\u03bd1) + . . . + d(\u03bdk), and in this degree the multiplicity of",
@@ -5189,7 +5189,7 @@
             522.3415154600003,
             584.7329456000002
         ],
-        "match": 102
+        "match": 34
     },
     {
         "content": "S\u03bd1 \u2297 \u22ef \u2297 S\u03bdk is 1. Denote by T \u2236= (T1, . . . , Tk) a k\u2212tuple of tableaux with Ti of shape \u03bdi,",
@@ -5200,7 +5200,7 @@
             522.3365479800003,
             569.7669456000002
         ],
-        "match": 102
+        "match": 34
     },
     {
         "content": "filled in such a way that the integers l1 + . . . + li\u22121 + 1, . . . , l1 + . . . + li all appear exactly once",
@@ -5211,7 +5211,7 @@
             522.3399094400003,
             555.7551000000001
         ],
-        "match": 102
+        "match": null
     },
     {
         "content": "in Ti. We write FT \u2236= \u220fki=1 FTi. Lemma 3.7 generalizes to this setting, i.e., every higher",
@@ -5222,7 +5222,7 @@
             522.3378709700003,
             542.8681000000001
         ],
-        "match": 102
+        "match": null
     },
     {
         "content": "Specht polynomial F ST (see [ATY97] for the notation) is divisible by FT. This can be proven",
@@ -5233,7 +5233,7 @@
             522.3336265900003,
             528.7179006000003
         ],
-        "match": 102
+        "match": 34
     },
     {
         "content": "similarly as Lemma 3.7.",
@@ -5244,7 +5244,7 @@
             203.60300404000026,
             513.9627346000003
         ],
-        "match": 102
+        "match": null
     },
     {
         "content": "Proof of Proposition 3.10. We extend the proof of Proposition 3.8. Let q \u2208 O(\u03bb) \u2286 Cn. Up",
@@ -5299,7 +5299,7 @@
             522.3366489900001,
             437.7301
         ],
-        "match": 40
+        "match": null
     },
     {
         "content": "partition given by those parts of \u03bb indexed by l\u22121(i). We now denote by q = q1, q2, . . . , qs the",
@@ -5310,7 +5310,7 @@
             522.3366489900002,
             424.29909999999995
         ],
-        "match": 40
+        "match": null
     },
     {
         "content": "distinct points of the Sn\u2212orbit of q. For every ideal I \u2286 P in the fiber of the Hilbert\u2013Chow",
@@ -5354,7 +5354,7 @@
             405.9695479800002,
             366.1380999999999
         ],
-        "match": 91
+        "match": 27
     },
     {
         "content": "where the Sn\u2212module structure on the right side is defined similarly as in the proof of",
@@ -5365,7 +5365,7 @@
             522.33230573,
             343.6817345999999
         ],
-        "match": 108
+        "match": 28
     },
     {
         "content": "Proposition 3.1. For the uniqueness of I it will be enough to prove the uniqueness of the",
@@ -5376,7 +5376,7 @@
             522.3391028900002,
             330.7297345999999
         ],
-        "match": 108
+        "match": 28
     },
     {
         "content": "Iqi because I = \u22c2si=1 Iqi. Without loss of generality we only show the uniqueness of Iq.",
@@ -5387,7 +5387,7 @@
             498.0665479800003,
             319.8950999999999
         ],
-        "match": 108
+        "match": 28
     },
     {
         "content": "Let G = Sl1 \u00d7 \u22ef \u00d7 Slk denote the stabilizer of q, so that P /Iq is a G\u2212module. We define",
@@ -5398,7 +5398,7 @@
             522.3390789600004,
             306.94409999999993
         ],
-        "match": 92
+        "match": 50
     },
     {
         "content": "I \u2032 \u2286 P to be the apolar ideal to the G\u2212module",
@@ -5409,7 +5409,7 @@
             307.76830480000035,
             295.22509999999994
         ],
-        "match": 95
+        "match": 27
     },
     {
         "content": "all direct summands embedded in the smallest possible degrees d(\u00b51), . . . , d(\u00b5k), i.e., V is",
@@ -5420,7 +5420,7 @@
             522.3360970200004,
             242.80209999999994
         ],
-        "match": 102
+        "match": null
     },
     {
         "content": "V \u2236= (S\u00b51 \u2297 1 \u2297 \u22ef \u2297 1) \u2295 \u22ef \u2295 (1 \u2297 1 \u2297 \u22ef \u2297 S\u00b5k ) \u2286 P,",
@@ -5431,7 +5431,7 @@
             427.4726449800003,
             270.9769455999999
         ],
-        "match": 105
+        "match": null
     },
     {
         "content": "spanned by all Specht polynomials for the partitions \u00b51, . . . , \u00b5k in the respective sets of",
@@ -5442,7 +5442,7 @@
             522.3370068800003,
             229.11990059999994
         ],
-        "match": 102
+        "match": 26
     },
     {
         "content": "variables. (If some of the \u00b5i = (li) are trivial, we do not include the corresponding direct",
@@ -5453,7 +5453,7 @@
             522.3402187100004,
             216.48109999999994
         ],
-        "match": 102
+        "match": 26
     },
     {
         "content": "summands into V .) For any f \u2208 P we can write f = f 1 + . . . + f k + g, where f i is the sum",
@@ -5464,7 +5464,7 @@
             522.3325871400003,
             203.05109999999993
         ],
-        "match": 102
+        "match": null
     },
     {
         "content": "of all terms of f which only involve the i\u2212th set of variables, i.e., those indexed by l1 + . . . +",
@@ -5475,7 +5475,7 @@
             522.3362781900001,
             190.09909999999994
         ],
-        "match": 102
+        "match": 26
     },
     {
         "content": "li\u22121 + 1, . . . , l1 + . . . + li, and g is the sum of all remaining terms. Certainly, differentiating",
@@ -5486,7 +5486,7 @@
             522.3416946100001,
             177.14809999999994
         ],
-        "match": 102
+        "match": 26
     },
     {
         "content": "a polynomial with respect to a variable it does not contain gives zero. Therefore, since the",
@@ -5497,7 +5497,7 @@
             522.3396332899997,
             162.07973459999994
         ],
-        "match": 102
+        "match": 26
     },
     {
         "content": "i\u2212th direct summand of V only involves the i\u2212th set of variables, it is clear that \u27e8f, V \u27e9 = 0 if",
@@ -5508,7 +5508,7 @@
             522.3371945400003,
             151.24509999999995
         ],
-        "match": 102
+        "match": 26
     },
     {
         "content": "and only if \u27e8f i, S\u00b5i\u27e9 = 0 for all i = 1, . . . , k, where S\u00b5i is understood again as the span of all",
@@ -5519,7 +5519,7 @@
             522.3401488500002,
             137.53094559999997
         ],
-        "match": 102
+        "match": null
     },
     {
         "content": "Specht polynomials of type \u00b5i in the i\u2212th set of variables. This proves",
@@ -5530,7 +5530,7 @@
             423.13876263000014,
             123.05390059999996
         ],
-        "match": 102
+        "match": 26
     },
     {
         "content": "P /I \u2032 \u2245 (C[x1, . . . , xl1]/I \u2032",
@@ -5541,7 +5541,7 @@
             287.0340944600002,
             102.53909999999998
         ],
-        "match": 95
+        "match": 27
     },
     {
         "content": "1) \u2297 \u22ef \u2297 (C[xn\u2212lk+1, . . . , xn]/I \u2032",
@@ -5552,7 +5552,7 @@
             428.5260944600002,
             102.53909999999998
         ],
-        "match": 98
+        "match": null
     },
     {
         "content": "k) ,",
@@ -5563,7 +5563,7 @@
             439.8985479800002,
             100.90409999999997
         ],
-        "match": 91
+        "match": 39
     },
     {
         "content": "where I \u2032",
@@ -5574,7 +5574,7 @@
             128.72509446000004,
             703.4741
         ],
-        "match": 104
+        "match": 141
     },
     {
         "content": "1 is the apolar ideal to S\u00b51 \u2286 C[x1, . . . , xl1]d(\u00b51) etc., i.e., the I \u2032",
@@ -5596,7 +5596,7 @@
             522.3375175600002,
             702.2411
         ],
-        "match": 96
+        "match": 142
     },
     {
         "content": "ideals corresponding to the partition \u00b5i \u22a2 li. In particular, P /I \u2032 \u2245 M \u00b51 \u2297 \u22ef \u2297 M \u00b5k as G\u2212",
@@ -5607,7 +5607,7 @@
             522.33600303,
             686.8221
         ],
-        "match": 101
+        "match": null
     },
     {
         "content": "11",
@@ -5640,7 +5640,7 @@
             153.71609446000002,
             660.9191
         ],
-        "match": 104
+        "match": 145
     },
     {
         "content": "q be the translate of I \u2032 whose only support point is q; this translation is G\u2212",
@@ -5651,7 +5651,7 @@
             522.33600303,
             660.9191
         ],
-        "match": 104
+        "match": null
     },
     {
         "content": "equivariant. We claim Iq \u2286 I \u2032",
@@ -5662,7 +5662,7 @@
             226.17409446000005,
             647.2271
         ],
-        "match": 104
+        "match": null
     },
     {
         "content": "q. For this, we first observe that the canonical map V \u2192 P /Iq is",
@@ -5673,7 +5673,7 @@
             522.3360970200001,
             645.9940999999999
         ],
-        "match": 104
+        "match": null
     },
     {
         "content": "injective, i.e., no direct summand of V is contained in Iq. The reason is that the restriction",
@@ -5684,7 +5684,7 @@
             522.33350112,
             630.9257345999999
         ],
-        "match": 104
+        "match": null
     },
     {
         "content": "of the Chinese remainder isomorphism above to S\u03bb \u2286 Pd(\u03bb) is injective. Now, S\u03bb \u2286 Pd(\u03bb) is",
@@ -5695,7 +5695,7 @@
             522.3360970200001,
             619.1530999999999
         ],
-        "match": 104
+        "match": null
     },
     {
         "content": "generated by the Specht polynomials of shape \u03bb, each of which is a multiple of the product",
@@ -5706,7 +5706,7 @@
             522.3349887100001,
             604.0857345999999
         ],
-        "match": 104
+        "match": 145
     },
     {
         "content": "of the corresponding Specht polynomials of the \u00b5i. In particular, any Specht polynomial",
@@ -5717,7 +5717,7 @@
             522.3318847400001,
             592.9379005999999
         ],
-        "match": 104
+        "match": null
     },
     {
         "content": "for \u00b5i is non\u2212zero in P /Iqi, hence indeed V injects into P /Iq. To see that Iq \u2286 I \u2032",
@@ -5728,7 +5728,7 @@
             480.9240944600001,
             581.5320999999999
         ],
-        "match": 104
+        "match": null
     },
     {
         "content": "first translate both ideals G\u2212equivariantly into the origin. Note that V still injects into P /I0",
@@ -5739,7 +5739,7 @@
             521.8385141300001,
             566.8160999999999
         ],
-        "match": 104
+        "match": null
     },
     {
         "content": "q, we can",
@@ -5750,7 +5750,7 @@
             522.3376699400001,
             578.1827345999999
         ],
-        "match": 104
+        "match": 145
     },
     {
         "content": "because the Specht polynomials generating V are not affected by this translation. Now",
@@ -5761,7 +5761,7 @@
             522.3373522400001,
             551.7487345999999
         ],
-        "match": 104
+        "match": null
     },
     {
         "content": "assume that there exists f \u2208 I0 \u2216 I \u2032. Writing f = f 1 + . . . + f k + g as above, we can assume",
@@ -5772,7 +5772,7 @@
             522.3311898700001,
             542.1470999999999
         ],
-        "match": 104
+        "match": 145
     },
     {
         "content": "without loss of generality that \u27e8f 1, S\u00b51\u27e9 \u2260 0. Multiplying f by some monomial h appearing",
@@ -5783,7 +5783,7 @@
             522.3400391700002,
             527.8529456
         ],
-        "match": 104
+        "match": null
     },
     {
         "content": "in \u27e8f 1, S\u00b51\u27e9, we may replace f by hf , so that we can assume that the degree d(\u00b51) part",
@@ -5794,7 +5794,7 @@
             522.3372894200002,
             513.1859456
         ],
-        "match": 104
+        "match": 145
     },
     {
         "content": "of f 1 does not annihilate S\u00b51. Hence the G\u2212submodule of I0 generated by f contains an",
@@ -5805,7 +5805,7 @@
             522.34077313,
             498.5199456
         ],
-        "match": 104
+        "match": null
     },
     {
         "content": "element f \u2032 which spans a G\u2212submodule isomorphic to S\u00b51 \u2297 1 \u2297 \u22ef \u2297 1 such that the degree",
@@ -5816,7 +5816,7 @@
             522.3359977800001,
             484.5701000000001
         ],
-        "match": 104
+        "match": null
     },
     {
         "content": "d(\u00b51) part of f \u2032 is a Specht polynomial in S\u00b51. Moreover, f \u2032 does not have any non\u2212zero",
@@ -5827,7 +5827,7 @@
             522.3343830100001,
             470.4491000000002
         ],
-        "match": 104
+        "match": null
     },
     {
         "content": "homogeneous components of smaller degrees because P<d(\u00b51) does not contain any copy of",
@@ -5838,7 +5838,7 @@
             522.3404791000002,
             454.1477346000002
         ],
-        "match": 104
+        "match": null
     },
     {
         "content": "S\u00b51 \u22971\u2297\u22ef\u22971. Therefore, we may assume f \u2032 = a+b with a \u2208 S\u00b51 \u2286 Pd(\u00b51) a Specht polynomial",
@@ -5849,7 +5849,7 @@
             522.3344431200001,
             441.14410000000026
         ],
-        "match": 104
+        "match": null
     },
     {
         "content": "and b \u2208 P>d(\u00b51). As f \u2032 spans a G\u2212module isomorphic to S\u00b51 \u2297 1 \u2297 \u22ef \u2297 1, the polynomial",
@@ -5860,7 +5860,7 @@
             522.3320713400001,
             424.7911000000003
         ],
-        "match": 104
+        "match": null
     },
     {
         "content": "b lies in the corresponding isotypic component of P and is divisible by a by Lemma 3.7.",
@@ -5871,7 +5871,7 @@
             522.3414242000001,
             408.48973460000036
         ],
-        "match": 104
+        "match": null
     },
     {
         "content": "Thus inductively, since mN \u2286 I0 for some N , we obtain a \u2208 I0. Therefore, the canonical map",
@@ -5882,7 +5882,7 @@
             522.3387584000002,
             397.65510000000035
         ],
-        "match": 104
+        "match": null
     },
     {
         "content": "V \u2192 P /I0 has a non\u2212trivial kernel, contradicting what we said above. So indeed, Iq \u2286 I \u2032",
@@ -5893,7 +5893,7 @@
             518.1840944600002,
             385.93610000000035
         ],
-        "match": 104
+        "match": null
     },
     {
         "content": "q.",
@@ -5904,7 +5904,7 @@
             522.3365479800003,
             382.5867346000004
         ],
-        "match": 104
+        "match": null
     },
     {
         "content": "This implies",
@@ -5915,7 +5915,7 @@
             147.96332131000028,
             369.6357346000004
         ],
-        "match": 104
+        "match": 145
     },
     {
         "content": "( l1",
@@ -5926,7 +5926,7 @@
             142.10151413000028,
             349.97773460000036
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "\u00b51)\u22ef( lk",
@@ -5937,7 +5937,7 @@
             173.7190593200003,
             349.97773460000036
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "\u00b5k) = dimC(P /I \u2032",
@@ -5959,7 +5959,7 @@
             382.96291313000035,
             352.0941000000004
         ],
-        "match": 98
+        "match": 108
     },
     {
         "content": "r",
@@ -6047,7 +6047,7 @@
             350.25832347,
             321.3809006000001
         ],
-        "match": 112
+        "match": null
     },
     {
         "content": "\u2223Sn\u2223/\u2223G\u2223 = (n",
@@ -6102,7 +6102,7 @@
             408.94859584,
             295.0919006
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": ") = ( l1",
@@ -6113,7 +6113,7 @@
             442.02951412999994,
             317.4167346
         ],
-        "match": 107
+        "match": 111
     },
     {
         "content": "\u00b51)\u22ef( lk",
@@ -6124,7 +6124,7 @@
             473.6470593199999,
             317.4167346
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "\u00b5k),",
@@ -6135,7 +6135,7 @@
             484.7835479799999,
             312.2061
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "agrees with the dimension of its image. So it remains to prove that all partitions \u00b5 for",
@@ -6234,7 +6234,7 @@
             522.33609798,
             124.4691
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "Remarkably, it is possible to give explicit generators for the Tanisaki ideal I\u03bb, as follows.",
@@ -6278,7 +6278,7 @@
             522.3331012599999,
             704.5161
         ],
-        "match": 22
+        "match": null
     },
     {
         "content": "write er(xS) for the elementary symmetric polynomial of degree r in the variables indexed",
@@ -6311,7 +6311,7 @@
             220.09674060999987,
             664.7751
         ],
-        "match": 22
+        "match": null
     },
     {
         "content": "i=1 \u03bb\u2032",
@@ -6322,7 +6322,7 @@
             231.16109445999987,
             663.2501
         ],
-        "match": 20
+        "match": null
     },
     {
         "content": "i.",
@@ -6344,7 +6344,7 @@
             522.3333260799998,
             641.9800999999999
         ],
-        "match": 9
+        "match": null
     },
     {
         "content": "assumption, if S \u2286 S\u2032, then r\u03bb(\u2223S\u2223) \u2265 r\u03bb(\u2223S\u2032\u2223). This together with the relation er(xS\u2216i) =",
@@ -6366,7 +6366,7 @@
             522.3323727199997,
             616.0770999999999
         ],
-        "match": 9
+        "match": null
     },
     {
         "content": "symmetric polynomials er(x[n]) for 1 \u2264 r \u2264 n and by the er\u03bb(\u2223S\u2223)(xS). In fact, among the",
@@ -6454,7 +6454,7 @@
             522.3356490399999,
             496.84609999999986
         ],
-        "match": 7
+        "match": null
     },
     {
         "content": "in the smoothable component of HM \u03bb which has dimension 2, it is enough to show that the",
@@ -6498,7 +6498,7 @@
             522.33720534,
             445.0400999999998
         ],
-        "match": 5
+        "match": null
     },
     {
         "content": "the relation er(xS\u2216i) = er(xS) \u2212 xier\u22121(xS\u2216i) for all i \u2208 S. First we can observe that",
@@ -6509,7 +6509,7 @@
             486.49128967,
             431.56809999999984
         ],
-        "match": 5
+        "match": null
     },
     {
         "content": "hence x2n \u2208 I\u03bb. Let I \u2236= (p1, x2i ) \u2286 I\u03bb. Using the Newton identities and the last equation we",
@@ -6531,7 +6531,7 @@
             522.3372359400004,
             379.3580999999999
         ],
-        "match": 27
+        "match": null
     },
     {
         "content": "using the same idea, for all l \u2264 \u03bb2 we have",
@@ -6553,7 +6553,7 @@
             414.9125479800002,
             412.6829005999998
         ],
-        "match": 27
+        "match": null
     },
     {
         "content": "er(x[n\u2212l]) = er(x[n\u2212l]\u222an) \u2212 xner\u22121(x[n\u2212l])",
@@ -6564,7 +6564,7 @@
             355.6069131300006,
             347.8540999999999
         ],
-        "match": 11
+        "match": null
     },
     {
         "content": "= er(x[n\u2212l]\u222an) \u2212 xner\u22121(x[n\u2212l]\u222an) + x2ner\u22122(x[n\u2212l]),",
@@ -6575,7 +6575,7 @@
             446.30254798000084,
             329.61490059999994
         ],
-        "match": 11
+        "match": null
     },
     {
         "content": "and for r \u2265 r\u03bb(n \u2212 l) = l + 1 = r\u03bb(n \u2212 l + 1) + 1 all three terms lie in I. If \u03bb1 \u2264 \u03bb2 + 1, this implies",
@@ -6586,7 +6586,7 @@
             522.3317820600008,
             310.1611
         ],
-        "match": 27
+        "match": null
     },
     {
         "content": "I\u03bb = I. If \u03bb1 \u2265 \u03bb2+2, we continue as follows: For all l in the range \u03bb1\u22121 \u2265 l \u2265 \u03bb2+1, the partial",
@@ -6597,7 +6597,7 @@
             522.3360505500008,
             297.21009999999995
         ],
-        "match": 27
+        "match": null
     },
     {
         "content": "elementary symmetric polynomials er\u03bb(\u2223S\u2223)(xS), \u2223S\u2223 = n \u2212 l, all have the same degree \u03bb2 + 1,",
@@ -6608,7 +6608,7 @@
             522.3370979800009,
             284.25809999999996
         ],
-        "match": 27
+        "match": null
     },
     {
         "content": "and for \u2223S\u2223 = n \u2212 \u03bb1 + 1 = \u03bb2 + 1 we get the square\u2212free monomial of degree \u03bb2 + 1, so all other",
@@ -6619,7 +6619,7 @@
             522.3395084400008,
             270.7861
         ],
-        "match": 27
+        "match": 35
     },
     {
         "content": "generators in this range are redundant. In the end we obtain I\u03bb = (p1, x2i , Sn(x1x2\u22efx\u03bb2+1)).",
@@ -6630,7 +6630,7 @@
             522.336547980001,
             257.8151
         ],
-        "match": 27
+        "match": null
     },
     {
         "content": "On the other hand, P /I\u03bb \u2245 M \u03bb = \u22950\u2264k\u2264\u03bb2S(n\u2212k,k) as follows from the combinatorial formula",
@@ -6641,7 +6641,7 @@
             522.3343470600009,
             244.81709999999995
         ],
-        "match": 27
+        "match": null
     },
     {
         "content": "for the Kostka numbers. These two facts together give even more: If \u03bb1 \u2265 \u03bb2 + 2, what",
@@ -6652,7 +6652,7 @@
             522.339667250001,
             230.63209999999995
         ],
-        "match": 28
+        "match": null
     },
     {
         "content": "we have proven so far applied to the partition \u00b5 \u2236= (\u03bb1 \u2212 1, \u03bb2 + 1) shows further that I\u03bb is",
@@ -6663,7 +6663,7 @@
             522.3360970200008,
             217.92909999999995
         ],
-        "match": 27
+        "match": null
     },
     {
         "content": "already generated by I together with only the Specht polynomials of shape \u00b5 = (\u03bb1\u22121, \u03bb2+1).",
@@ -6674,7 +6674,7 @@
             522.3365479800008,
             204.72909999999996
         ],
-        "match": 27
+        "match": 35
     },
     {
         "content": "Indeed, the canonical surjection",
@@ -6685,7 +6685,7 @@
             241.2721263400007,
             189.66173459999996
         ],
-        "match": 27
+        "match": 35
     },
     {
         "content": "has kernel S\u00b5, embedded in degree d(\u00b5) = \u03bb2 + 1. Moreover, each Specht module S(n\u2212k,k)",
@@ -6696,7 +6696,7 @@
             521.8376842100006,
             153.6121
         ],
-        "match": 35
+        "match": null
     },
     {
         "content": "in P /I\u03bb is embedded in degree k, hence in degree < \u03bb2 + 1. Therefore, if I \u2032 denotes the",
@@ -6707,7 +6707,7 @@
             522.3395918200006,
             140.6611
         ],
-        "match": 35
+        "match": null
     },
     {
         "content": "\u22950\u2264k\u2264\u03bb2+1S(n\u2212k,k) \u2245 P /I\u00b5 \u21a0 P /I\u03bb \u2245 \u22950\u2264k\u2264\u03bb2S(n\u2212k,k)",
@@ -6718,7 +6718,7 @@
             425.4616842100007,
             174.1161
         ],
-        "match": 35
+        "match": null
     },
     {
         "content": "ideal generated by I and all Specht polynomials of shape \u00b5, we have a canonical surjection",
@@ -6740,7 +6740,7 @@
             522.3393637500008,
             114.75810000000001
         ],
-        "match": 35
+        "match": null
     },
     {
         "content": "\u2264 \u03bb2 + 1, so I \u2032 = I\u03bb.",
@@ -6751,7 +6751,7 @@
             179.1055479800007,
             101.80610000000001
         ],
-        "match": 35
+        "match": null
     },
     {
         "content": "Since M \u03bb does not contain any copy of S\u00b5, we deduce that a homomorphism f \u2208",
@@ -6762,7 +6762,7 @@
             522.3362766500001,
             703.2831
         ],
-        "match": 7
+        "match": null
     },
     {
         "content": "13",
@@ -6784,7 +6784,7 @@
             522.3384785199999,
             690.2339006000001
         ],
-        "match": 7
+        "match": null
     },
     {
         "content": "f (x2i \u2212 x2j ) = \u03b3 \u22c5 (xi \u2212 xj) for some \u03b1, \u03b2, \u03b3 \u2208 C. Hence it suffices to show that \u03b1, \u03b2, \u03b3",
@@ -6795,7 +6795,7 @@
             521.72964107,
             676.0091000000001
         ],
-        "match": 7
+        "match": null
     },
     {
         "content": "must satisfy some non\u2212trivial linear relation. If \u03bb1 > \u03bb2 we will show that necessarily \u03b2 = 0",
@@ -6806,7 +6806,7 @@
             522.33655,
             662.8281000000001
         ],
-        "match": 7
+        "match": null
     },
     {
         "content": "and if \u03bb1 = \u03bb2 = n",
@@ -6828,7 +6828,7 @@
             521.3399113600001,
             636.6881
         ],
-        "match": 7
+        "match": null
     },
     {
         "content": "as a sum of its graded pieces. Then x21x2\u22efx\u03bb2+1 \u2208 I\u03bb is both a multiple of x21 and of",
@@ -6861,7 +6861,7 @@
             522.33339066,
             649.8770999999999
         ],
-        "match": 7
+        "match": null
     },
     {
         "content": "x1x2\u22efx\u03bb2+1 and therefore maps to both \u03b2",
@@ -6872,7 +6872,7 @@
             300.08377362000016,
             609.5029006000001
         ],
-        "match": 7
+        "match": null
     },
     {
         "content": "n x2\u22efx\u03bb2+1 and x1f (x1x2\u22efx\u03bb2+1) at the same",
@@ -6883,7 +6883,7 @@
             522.3317766900002,
             608.9150999999999
         ],
-        "match": 7
+        "match": null
     },
     {
         "content": "time. Therefore, all graded pieces of the two must be equal in P /I\u03bb, in particular",
@@ -6905,7 +6905,7 @@
             522.3306098700002,
             555.0847346
         ],
-        "match": 22
+        "match": 19
     },
     {
         "content": "\u03bb1 > \u03bb2, there exists a Specht polynomial not involving the variable x1 at all (putting the 1 in",
@@ -6916,7 +6916,7 @@
             522.3405409100003,
             544.2501
         ],
-        "match": 22
+        "match": 19
     },
     {
         "content": "the upper right corner of the tableau) and containing the monomial x2\u22efx\u03bb2+1 (putting these",
@@ -6927,7 +6927,7 @@
             522.3396009000003,
             531.2981
         ],
-        "match": 22
+        "match": 19
     },
     {
         "content": "\u03b2x2\u22efx\u03bb2+1 \u2212 nx1f\u03bb2\u22121 \u2208 I\u03bb.",
@@ -6949,7 +6949,7 @@
             522.33854238,
             516.2307346
         ],
-        "match": 22
+        "match": 19
     },
     {
         "content": "by the above polynomial if and only if \u03b2 = 0.",
@@ -6960,7 +6960,7 @@
             302.5880979800004,
             505.3951
         ],
-        "match": 22
+        "match": 19
     },
     {
         "content": "If \u03bb1 = \u03bb2 = n",
@@ -6982,7 +6982,7 @@
             522.3365479800001,
             492.6931000000001
         ],
-        "match": 37
+        "match": null
     },
     {
         "content": "Then",
@@ -7004,7 +7004,7 @@
             276.95791877000005,
             464.69410000000005
         ],
-        "match": 11
+        "match": 7
     },
     {
         "content": "i odd",
@@ -7037,7 +7037,7 @@
             322.63751412999994,
             456.91310000000004
         ],
-        "match": 20
+        "match": null
     },
     {
         "content": "(x2i \u2212 x2i+1).",
@@ -7048,7 +7048,7 @@
             377.78654798,
             464.92690060000007
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "This implies that (\u03b1 \u2212 n",
@@ -7081,7 +7081,7 @@
             522.33609798,
             426.3791
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "possible if \u03b1 = n",
@@ -7114,7 +7114,7 @@
             522.3325141399998,
             401.2787346
         ],
-        "match": 35
+        "match": null
     },
     {
         "content": "ments of a certain ideal generated by Specht polynomials, a simple monomial ideal and the",
@@ -7147,7 +7147,7 @@
             479.93377976999966,
             362.42473459999997
         ],
-        "match": 35
+        "match": null
     },
     {
         "content": "For a partition \u00b5 \u22a2 n of length m and 1 \u2264 k \u2264 m \u2212 1 we define Rk(\u00b5) \u2236= \u00b5m + \u00b5m\u22121 + . . . +",
@@ -7180,7 +7180,7 @@
             453.8985479799998,
             317.7797346
         ],
-        "match": 22
+        "match": null
     },
     {
         "content": "We claim \u02dcI\u00b5 \u2286 I\u00b5 and (p1, . . . , pm\u22121, spT \u2223 sh(T ) /\u22b5 \u00b5) \u2286 I\u00b5. The Tanisaki ideal of \u00b5 is",
@@ -7235,7 +7235,7 @@
             522.3341170299999,
             243.7461
         ],
-        "match": 7
+        "match": null
     },
     {
         "content": "pigeonhole principle. Thus the polynomial \u220fRk(\u00b5)",
@@ -7312,7 +7312,7 @@
             149.41968615999997,
             160.08973459999996
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "Lemma 3.13. We have (p1, . . . , pn, spT \u2236 sh(T ) /\u22b5 \u00b5) \u2286 \u02dcI\u00b5 \u2286 I\u00b5.",
@@ -7323,7 +7323,7 @@
             384.85154798,
             141.58873459999995
         ],
-        "match": 23
+        "match": null
     },
     {
         "content": "Proof. It remains to prove the first inclusion. For this, we show the stronger containment",
@@ -7345,7 +7345,7 @@
             457.35954798,
             101.05590059999996
         ],
-        "match": 28
+        "match": null
     },
     {
         "content": "14",
@@ -7433,7 +7433,7 @@
             315.11475197000004,
             661.2710999999999
         ],
-        "match": 19
+        "match": null
     },
     {
         "content": "i,j\u2208Ck",
@@ -7444,7 +7444,7 @@
             320.9515958400001,
             653.0800999999999
         ],
-        "match": 95
+        "match": null
     },
     {
         "content": "(xi \u2212 xj).",
@@ -7455,7 +7455,7 @@
             365.3965479800001,
             674.9360999999999
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "x\u2223C1\u2223\u22121",
@@ -7510,7 +7510,7 @@
             377.3785141300001,
             617.8311
         ],
-        "match": 28
+        "match": null
     },
     {
         "content": "\u2223C1\u2223+...+\u2223Cl\u22121\u2223\u2212l+2\u22efx1\u2223C1\u2223+...+\u2223Cl\u2223\u2212l.",
@@ -7521,7 +7521,7 @@
             494.3485479800002,
             615.3059006
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "This monomial lies in the ideal (Sn \u22c5 xm1 , Sn \u22c5 (x1x2\u22efxRk(\u00b5))k\u22231 \u2264 k \u2264 m \u2212 1) if and only if",
@@ -7576,7 +7576,7 @@
             193.34491877000008,
             527.7899006
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "i=1",
@@ -7653,7 +7653,7 @@
             319.92291877,
             491.0189006
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "i=1,\u2223Ci\u2223=t",
@@ -7730,7 +7730,7 @@
             369.44718591999987,
             422.17210000000006
         ],
-        "match": 66
+        "match": null
     },
     {
         "content": "r\u22651",
@@ -7752,7 +7752,7 @@
             430.33473753999976,
             398.2481000000001
         ],
-        "match": 22
+        "match": null
     },
     {
         "content": "= \u03bbk+1 + \u03bbk+2 + \u03bbk+3 + . . .",
@@ -7763,7 +7763,7 @@
             387.79473753999974,
             382.0551000000001
         ],
-        "match": 22
+        "match": null
     },
     {
         "content": "= Rk(\u03bb) \u2212 1.",
@@ -7785,7 +7785,7 @@
             522.3373685899996,
             345.3921000000001
         ],
-        "match": 21
+        "match": null
     },
     {
         "content": "\u03bb1 + . . . + \u03bbs. However, this is equivalent to n \u2212 (\u00b51 + . . . + \u00b5s) < n \u2212 (\u03bb1 + . . . + \u03bbs) which in turn",
@@ -7796,7 +7796,7 @@
             522.3405073799995,
             331.2071000000001
         ],
-        "match": 21
+        "match": null
     },
     {
         "content": "is equivalent to \u00b5m + . . . + \u00b5s+1 + 1 < \u03bblen(\u03bb) + . . . + \u03bbs+1 + 1. The left hand side equals Rs(\u00b5)",
@@ -7807,7 +7807,7 @@
             522.3359131299995,
             318.25610000000006
         ],
-        "match": 21
+        "match": null
     },
     {
         "content": "and the right hand side equals Rs(\u03bb). Thus, we obtain Rs(\u00b5) \u2264 Rs(\u03bb) \u2212 1, as desired. \u25a1",
@@ -7851,7 +7851,7 @@
             522.3384652999995,
             218.16873460000002
         ],
-        "match": 3
+        "match": 27
     },
     {
         "content": "Specht polynomials [TY93]. These polynomials can be used to produce an explicit isotypic",
@@ -7862,7 +7862,7 @@
             522.3330878299992,
             205.21773460000003
         ],
-        "match": 3
+        "match": 27
     },
     {
         "content": "decomposition of the degree d part Pd of the polynomial ring P . This decomposition becomes",
@@ -7873,7 +7873,7 @@
             522.3397544099996,
             192.26573460000003
         ],
-        "match": 3
+        "match": 27
     },
     {
         "content": "uniform if the number of variables n is at least 2d [RTAL13].",
@@ -7884,7 +7884,7 @@
             380.6446772699995,
             179.31473460000004
         ],
-        "match": 3
+        "match": 27
     },
     {
         "content": "4. Classification for r \u2264 2n",
@@ -7939,7 +7939,7 @@
             207.7517347699995,
             119.50373460000007
         ],
-        "match": 92
+        "match": null
     },
     {
         "content": "P1 = \u27e8p1\u27e9 \u2295 \u27e8xi \u2212 xj\u27e9 = S(n) \u2295 S(n\u22121,1).",
@@ -7972,7 +7972,7 @@
             173.77958434000004,
             703.2831
         ],
-        "match": 28
+        "match": 23
     },
     {
         "content": "while for n = 3 instead",
@@ -8005,7 +8005,7 @@
             365.36145808000003,
             664.7119006
         ],
-        "match": 31
+        "match": null
     },
     {
         "content": "\u2295 \u27e8(xi \u2212 xj)(xk \u2212 xl)\u27e9",
@@ -8016,7 +8016,7 @@
             343.1843712100001,
             647.6221
         ],
-        "match": 31
+        "match": null
     },
     {
         "content": "= 2S(n) \u2295 2S(n\u22121,1) \u2295 S(n\u22122,2),",
@@ -8027,7 +8027,7 @@
             383.03654798,
             630.0611
         ],
-        "match": 31
+        "match": null
     },
     {
         "content": "P2 = \u27e8p21\u27e9 \u2295 \u27e8p2\u27e9",
@@ -8049,7 +8049,7 @@
             374.19945808000017,
             569.3769006
         ],
-        "match": 31
+        "match": null
     },
     {
         "content": "= 2S(3) \u2295 2S(2,1).",
@@ -8071,7 +8071,7 @@
             173.77958434000004,
             529.4700999999999
         ],
-        "match": 28
+        "match": 23
     },
     {
         "content": "P3 = \u27e8p31\u27e9 \u2295 \u27e8p1p2\u27e9 \u2295 \u27e8p3\u27e9",
@@ -8093,7 +8093,7 @@
             431.89745808000004,
             490.8999006000002
         ],
-        "match": 98
+        "match": null
     },
     {
         "content": "\u2295 \u27e8p1(xi \u2212 xj)(xk \u2212 xl)\u27e9 \u2295 \u27e8(xi + xj + xk + xl)(xi \u2212 xj)(xk \u2212 xl)\u27e9",
@@ -8104,7 +8104,7 @@
             461.07737121000014,
             473.8091000000002
         ],
-        "match": 98
+        "match": null
     },
     {
         "content": "\u2295 \u27e8(xi \u2212 xj)(xi \u2212 xk)(xj \u2212 xk)\u27e9",
@@ -8115,7 +8115,7 @@
             307.93337121000013,
             456.9511000000002
         ],
-        "match": 98
+        "match": null
     },
     {
         "content": "\u2295 \u27e8(xi \u2212 xj)(xk \u2212 xl)(xs \u2212 xt)\u27e9",
@@ -8126,7 +8126,7 @@
             306.1403712100002,
             440.0931000000002
         ],
-        "match": 98
+        "match": null
     },
     {
         "content": "= 3S(n) \u2295 4S(n\u22121,1) \u2295 2S(n\u22122,2) \u2295 S(n\u22122,1,1) \u2295 S(n\u22123,3),",
@@ -8137,7 +8137,7 @@
             413.62354798,
             422.5321000000002
         ],
-        "match": 98
+        "match": null
     },
     {
         "content": "while for n = 5,",
@@ -8192,7 +8192,7 @@
             431.8974580800001,
             361.82790060000025
         ],
-        "match": 98
+        "match": null
     },
     {
         "content": "\u2295 \u27e8p1(xi \u2212 xj)(xk \u2212 xl)\u27e9 \u2295 \u27e8(xi + xj + xk + xl)(xi \u2212 xj)(xk \u2212 xl)\u27e9",
@@ -8203,7 +8203,7 @@
             461.0773712100001,
             344.7371000000003
         ],
-        "match": 98
+        "match": null
     },
     {
         "content": "\u2295 \u27e8(xi \u2212 xj)(xi \u2212 xk)(xj \u2212 xk)\u27e9",
@@ -8214,7 +8214,7 @@
             307.93337121000013,
             327.8791000000003
         ],
-        "match": 98
+        "match": null
     },
     {
         "content": "= 3S(5) \u2295 4S(4,1) \u2295 2S(3,2) \u2295 S(3,1,1),",
@@ -8225,7 +8225,7 @@
             333.86054798000004,
             310.3191000000003
         ],
-        "match": 98
+        "match": null
     },
     {
         "content": "P3 = \u27e8p31\u27e9 \u2295 \u27e8p1p2\u27e9 \u2295 \u27e8p3\u27e9",
@@ -8247,7 +8247,7 @@
             446.4874580800001,
             249.61490060000025
         ],
-        "match": 31
+        "match": null
     },
     {
         "content": "\u2295 \u27e8p1(xi \u2212 xj)(xk \u2212 xl)\u27e9",
@@ -8269,7 +8269,7 @@
             322.52337121000016,
             215.66610000000026
         ],
-        "match": 31
+        "match": null
     },
     {
         "content": "= 3S(4) \u2295 4S(3,1) \u2295 S(2,2) \u2295 S(2,1,1),",
@@ -8280,7 +8280,7 @@
             342.99654798000006,
             198.10510000000028
         ],
-        "match": 31
+        "match": null
     },
     {
         "content": "P3 = \u27e8p31\u27e9 \u2295 \u27e8p1p2\u27e9 \u2295 \u27e8p3\u27e9",
@@ -8302,7 +8302,7 @@
             419.87537121000014,
             137.40090060000028
         ],
-        "match": 31
+        "match": null
     },
     {
         "content": "\u2295 \u27e8(x1 \u2212 x2)(x1 \u2212 x3)(x2 \u2212 x3)\u27e9",
@@ -8313,7 +8313,7 @@
             351.76337121000023,
             120.31110000000028
         ],
-        "match": 31
+        "match": null
     },
     {
         "content": "= 3S(3) \u2295 3S(2,1) \u2295 S(1,1,1).",
@@ -8379,7 +8379,7 @@
             403.0925141299999,
             676.1651
         ],
-        "match": 258
+        "match": null
     },
     {
         "content": "(p1(xi \u2212 xj), x2i \u2212 x2j , (xi \u2212 xj)(xk \u2212 xl)) + mr\u2212n",
@@ -8390,7 +8390,7 @@
             465.8003234700001,
             662.9701000000001
         ],
-        "match": 258
+        "match": null
     },
     {
         "content": "3 S(n) \u2295 S(n\u22121,1)",
@@ -8401,7 +8401,7 @@
             189.24468421000006,
             647.7871
         ],
-        "match": 258
+        "match": null
     },
     {
         "content": "(xi \u2212 xj) + mr",
@@ -8434,7 +8434,7 @@
             362.93551413,
             632.6489006
         ],
-        "match": 272
+        "match": null
     },
     {
         "content": "(p1, x2i \u2212 x2j , (xi \u2212 xj)(xk \u2212 xl)) + m3",
@@ -8445,7 +8445,7 @@
             440.39951413000006,
             619.7681
         ],
-        "match": 258
+        "match": null
     },
     {
         "content": "5 3S(n) \u2295 S(n\u22121,1) (ap21 + bp2, p1(xi \u2212 xj), x2i \u2212 x2j , (xi \u2212 xj)(xk \u2212 xl)) + m3 [\u22121 \u2236 n]",
@@ -8456,7 +8456,7 @@
             540.6564580800001,
             605.8171
         ],
-        "match": 258
+        "match": null
     },
     {
         "content": "6 S(n) \u2295 2S(n\u22121,1) (p1, p2, (xi \u2212 xj)(xk \u2212 xl)) + m3 smooth",
@@ -8467,7 +8467,7 @@
             540.69630182,
             590.6341
         ],
-        "match": 258
+        "match": null
     },
     {
         "content": "7 2S(n) \u2295 2S(n\u22121,1)",
@@ -8489,7 +8489,7 @@
             202.75168421000006,
             535.4701
         ],
-        "match": 249
+        "match": null
     },
     {
         "content": "9 S(4) \u2295 S(3,1) \u2295 S(2,2)",
@@ -8500,7 +8500,7 @@
             202.75168421000006,
             520.2861
         ],
-        "match": 249
+        "match": null
     },
     {
         "content": "10 2S(4) \u2295 S(3,1) \u2295 S(2,2)",
@@ -8511,7 +8511,7 @@
             205.47868421000004,
             498.57410000000004
         ],
-        "match": 257
+        "match": null
     },
     {
         "content": "(p21, p2, ap1(xi \u2212 xj) + b(x2i \u2212 x2j ), (xi \u2212 xj)(xk \u2212 xl)) + m3",
@@ -8522,7 +8522,7 @@
             488.84251413000004,
             549.4201
         ],
-        "match": 258
+        "match": null
     },
     {
         "content": "(p1, (xi \u2212 xj)(xk \u2212 xl)) + m3",
@@ -8533,7 +8533,7 @@
             421.67751412999996,
             575.8081
         ],
-        "match": 258
+        "match": null
     },
     {
         "content": "(p1, p2, (xi \u2212 xj)(xk \u2212 xl)) + m4",
@@ -8544,7 +8544,7 @@
             429.11151412999993,
             562.6141
         ],
-        "match": 258
+        "match": null
     },
     {
         "content": "(p1, p2, x2i \u2212 x2j ) + m3",
@@ -8588,7 +8588,7 @@
             432.30951412999997,
             490.8201000000002
         ],
-        "match": 258
+        "match": null
     },
     {
         "content": "11 3S(4) \u2295 S(3,1) \u2295 S(2,2) (ap21 + bp2, p1(xi \u2212 xj), x2i \u2212 x2j ) + m3 smooth",
@@ -8599,7 +8599,7 @@
             540.69630182,
             476.8691
         ],
-        "match": 258
+        "match": null
     },
     {
         "content": "12 S(3) \u2295 2S(2,1) \u2295 S(1,1,1)",
@@ -8610,7 +8610,7 @@
             208.77168421000007,
             461.6861
         ],
-        "match": 257
+        "match": null
     },
     {
         "content": "(p1, p2, p3)",
@@ -8621,7 +8621,7 @@
             381.70891313000004,
             460.4531
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "13 2S(3) \u2295 2S(2,1) (p1, p2, (x1 \u2212 x2)(x1 \u2212 x3)(x2 \u2212 x3)) smooth",
@@ -8632,7 +8632,7 @@
             540.69630182,
             447.22610000000003
         ],
-        "match": 257
+        "match": null
     },
     {
         "content": "smooth",
@@ -8797,7 +8797,7 @@
             522.34151171,
             375.9231
         ],
-        "match": 261
+        "match": null
     },
     {
         "content": "Table 1. The homogeneous symmetric ideals for r \u2264 2n",
@@ -8819,7 +8819,7 @@
             522.33852105,
             360.85573459999995
         ],
-        "match": 261
+        "match": null
     },
     {
         "content": "all of [n]. The generators of the form (xi \u2212 xj)(xk \u2212 xl) must therefore be interpreted as",
@@ -8841,7 +8841,7 @@
             522.33665665,
             337.06909999999993
         ],
-        "match": 261
+        "match": null
     },
     {
         "content": "row 5 for [a \u2236 b] = [\u22121 \u2236 n]. Finally, the second ideal of row 7 has colength 7 > 2n for n = 3,",
@@ -8874,7 +8874,7 @@
             522.3363685899998,
             277.8050999999999
         ],
-        "match": 258
+        "match": null
     },
     {
         "content": "r \u2264 2n together with the isomorphism class of the Sn\u2212module P /I. For all occurring rep\u2212\nresentations \u03c1, the invariant Hilbert scheme H\u03c1 is irreducible. Moreover, each point of H\u03c1",
@@ -9171,7 +9171,7 @@
             521.83851413,
             517.4801000000002
         ],
-        "match": 140
+        "match": null
     },
     {
         "content": "since already dim(P /I)\u22642 = 2n. This ideal is the first ideal in row 7 of Table 1. If p2 \u2208 I but",
@@ -9204,7 +9204,7 @@
             522.3374654300001,
             476.81810000000024
         ],
-        "match": 140
+        "match": null
     },
     {
         "content": "all n \u2265 4, as the following equation shows:",
@@ -9226,7 +9226,7 @@
             441.2179131300002,
             445.15110000000027
         ],
-        "match": 140
+        "match": null
     },
     {
         "content": "+ (x1 \u2212 x2) \u22c5 (x1 \u2212 x3)(x2 \u2212 x4).",
@@ -9237,7 +9237,7 @@
             443.7825479800003,
             428.29310000000027
         ],
-        "match": 138
+        "match": null
     },
     {
         "content": "For n = 3 there are two more possibilities here, namely rows 12 and 13. If both p2 \u2208 I",
@@ -9248,7 +9248,7 @@
             521.4806403600003,
             409.57310000000024
         ],
-        "match": 170
+        "match": null
     },
     {
         "content": "and x2i \u2212 x2j \u2208 I, then I = (p1) + m2, row 3. Otherwise, x2i \u2212 x2j \u2208 I but p2 /\u2208 I. Applying the",
@@ -9259,7 +9259,7 @@
             522.3321501900003,
             396.62110000000024
         ],
-        "match": 170
+        "match": null
     },
     {
         "content": "Reynolds operator to (x21\u2212x22)x1 gives a scalar multiple of np3\u2212p2p1, hence p3 \u2208 I. Therefore,",
@@ -9281,7 +9281,7 @@
             522.3355925100004,
             368.75610000000034
         ],
-        "match": 170
+        "match": null
     },
     {
         "content": "(x1 \u2212 x2)(x1 \u2212 x3)(x2 \u2212 x3) \u2208 (x2i \u2212 x2j ) for all n \u2265 3. Indeed, the formula",
@@ -9292,7 +9292,7 @@
             430.0876346200004,
             355.78510000000045
         ],
-        "match": 170
+        "match": null
     },
     {
         "content": "(x1 \u2212 x2)(x1 \u2212 x3)(x2 \u2212 x3) = x1(x23 \u2212 x22) + x2(x21 \u2212 x23) + x3(x22 \u2212 x21)",
@@ -9303,7 +9303,7 @@
             466.4569131300008,
             334.7949006000007
         ],
-        "match": 144
+        "match": null
     },
     {
         "content": "can easily be verified. Moreover, by Lemma 4.4, for all n \u2265 3 we have p2(xi \u2212 xj), x3i \u2212 x3j \u2208",
@@ -9325,7 +9325,7 @@
             522.3391220600012,
             300.88310000000087
         ],
-        "match": 144
+        "match": null
     },
     {
         "content": "of row 4.",
@@ -9347,7 +9347,7 @@
             522.336097980001,
             274.7501000000009
         ],
-        "match": 140
+        "match": null
     },
     {
         "content": "then necessarily I = (p1, p2, x2i \u2212 x2j ) + m3 for dimension reasons, which is row 8. If n = 4,",
@@ -9380,7 +9380,7 @@
             522.3316138100012,
             231.43210000000087
         ],
-        "match": 140
+        "match": null
     },
     {
         "content": "instead p2 /\u2208 I, then we get the first ideal of row 10. This finishes the case I1 = \u27e8p1\u27e9.",
@@ -9402,7 +9402,7 @@
             522.3323382200011,
             192.5781000000009
         ],
-        "match": 145
+        "match": null
     },
     {
         "content": "Sn\u2212representations except for the trivial and the alternating one have dimension \u2265 n \u2212 1.",
@@ -9413,7 +9413,7 @@
             522.3360979800012,
             179.6271000000009
         ],
-        "match": 145
+        "match": null
     },
     {
         "content": "Moreover, the least degree k such that Pk contains an alternating representation is k = (n",
@@ -9424,7 +9424,7 @@
             517.2863234700013,
             167.1719006000009
         ],
-        "match": 145
+        "match": null
     },
     {
         "content": "which is > n for all n \u2265 4. Hence, for all n \u2265 5, this forces that (P /I)\u22652 is either 0, a",
@@ -9435,7 +9435,7 @@
             522.3374166800014,
             153.2661000000009
         ],
-        "match": 144
+        "match": null
     },
     {
         "content": "direct sum of only trivial representations or S(n\u22121,1), and in the last case (even for n = 3, 4)",
@@ -9446,7 +9446,7 @@
             522.3360989900015,
             140.6611000000009
         ],
-        "match": 145
+        "match": null
     },
     {
         "content": "2)",
@@ -9468,7 +9468,7 @@
             522.3361919000012,
             126.47610000000091
         ],
-        "match": 145
+        "match": null
     },
     {
         "content": "(a, b) \u2260 (0, 0). If (P /I)2 = 0, then I = m2, so we get the first ideal of row 4 (even for",
@@ -9479,7 +9479,7 @@
             522.3320024100016,
             113.52510000000092
         ],
-        "match": 145
+        "match": null
     },
     {
         "content": "n = 3, 4). Otherwise, assume we have any n \u2265 3 and that (P /I)\u22652 only consists of trivial",
@@ -9490,7 +9490,7 @@
             522.3405440500015,
             100.57310000000092
         ],
-        "match": 144
+        "match": null
     },
     {
         "content": "18",
@@ -9534,7 +9534,7 @@
             522.3359131299999,
             690.3311
         ],
-        "match": 253
+        "match": null
     },
     {
         "content": "gives the same as the first ideal of row 2). The reasoning is as follows. Let J be the ideal",
@@ -9556,7 +9556,7 @@
             522.33412194,
             664.4281
         ],
-        "match": 252
+        "match": null
     },
     {
         "content": "clearly, J \u2286 I. But we also know J \u2286 (xi \u2212 xj)\u22652 + mn. Next, we claim that (P /J)k has",
@@ -9578,7 +9578,7 @@
             522.3374654300001,
             637.5880999999999
         ],
-        "match": 253
+        "match": null
     },
     {
         "content": "all k \u2265 2 for dimension reasons. Applying again the Reynolds operator to pd(x1 \u2212 x2)x1,",
@@ -9589,7 +9589,7 @@
             522.33654798,
             623.7420999999999
         ],
-        "match": 253
+        "match": null
     },
     {
         "content": "d \u2208 {1, 2}, and to (xk1 \u2212 xk2)x1 gives scalar multiples of npdp2 \u2212 pdp21 and npk+1 \u2212 pkp1,",
@@ -9600,7 +9600,7 @@
             522.3365479799999,
             610.3730999999999
         ],
-        "match": 253
+        "match": null
     },
     {
         "content": "respectively. The claim dim(P /J)k \u2264 1 for all k \u2265 3 easily follows from this. For dimension",
@@ -9611,7 +9611,7 @@
             522.3359802099998,
             597.4220999999999
         ],
-        "match": 253
+        "match": null
     },
     {
         "content": "reasons, then, Jk = (xi \u2212 xj)k or Ik = Pk for all k \u2265 3. Hence, the same is true for Ik for all",
@@ -9622,7 +9622,7 @@
             522.33356909,
             584.4700999999999
         ],
-        "match": 252
+        "match": null
     },
     {
         "content": "k \u2265 3. This shows that we indeed get one of the three ideals in rows 2 and 5.",
@@ -9633,7 +9633,7 @@
             455.2595629299996,
             571.5190999999999
         ],
-        "match": 252
+        "match": null
     },
     {
         "content": "The only remaining cases are n \u2208 {3, 4} and such that (P /I)\u22652 contains some non\u2212trivial",
@@ -9655,7 +9655,7 @@
             521.8376842099999,
             545.9621
         ],
-        "match": 257
+        "match": null
     },
     {
         "content": "in (P /I)2, i.e., (xi \u2212 xj)(xk \u2212 xl) /\u2208 I. Hence, dim(P /I)\u22642 \u2265 7. Moreover, both p1(xi \u2212 xj)",
@@ -9666,7 +9666,7 @@
             522.33591313,
             531.7780999999999
         ],
-        "match": 256
+        "match": null
     },
     {
         "content": "and x2i \u2212 x2j are necessarily in I for dimension reasons, and some linear combination of p21",
@@ -9721,7 +9721,7 @@
             522.33654798,
             465.71110000000004
         ],
-        "match": 257
+        "match": null
     },
     {
         "content": "Then I contains (p1(xi \u2212 xj), x2i \u2212 x2j ) for dimension reasons. But we have already seen that",
@@ -9732,7 +9732,7 @@
             522.3397568800001,
             451.50710000000015
         ],
-        "match": 256
+        "match": null
     },
     {
         "content": "then automatically (x1 \u2212 x2)(x1 \u2212 x3)(x2 \u2212 x3) \u2208 I as well, so this is impossible. \u25a1",
@@ -9743,7 +9743,7 @@
             522.3360979800001,
             437.6621000000001
         ],
-        "match": 257
+        "match": null
     },
     {
         "content": "Lemma 4.4. For all n \u2265 3 we have",
@@ -9765,7 +9765,7 @@
             466.8125479800003,
             401.0119006000003
         ],
-        "match": 258
+        "match": null
     },
     {
         "content": "p2(x1 \u2212 x2), x31 \u2212 x32 \u2208 (xnp1(x1 \u2212 x2), x2i \u2212 x2j , (xi \u2212 xj)(xk \u2212 xl)).",
@@ -9776,7 +9776,7 @@
             456.8545479800005,
             382.5399006000005
         ],
-        "match": 258
+        "match": null
     },
     {
         "content": "Proof. All claims follow from the containments f, g \u2208 ((xi \u2212 xj)(xk \u2212 xl)), where",
@@ -9798,7 +9798,7 @@
             387.35191313000064,
             343.92010000000056
         ],
-        "match": 252
+        "match": null
     },
     {
         "content": "\u2212 (2n \u2212 3)p1(x21 \u2212 x22) + n(n \u2212 2)xnp1(x1 \u2212 x2),",
@@ -9809,7 +9809,7 @@
             388.1045479800008,
             325.43190060000063
         ],
-        "match": 252
+        "match": null
     },
     {
         "content": "g \u2236= (n \u2212 2)p2(x1 \u2212 x2) \u2212 nxnp1(x1 \u2212 x2) + nxn(x21 \u2212 x22)",
@@ -9820,7 +9820,7 @@
             421.059913130001,
             306.9771000000007
         ],
-        "match": 252
+        "match": null
     },
     {
         "content": "\u2212 n(n \u2212 2)(x1 \u2212 x2)(x21 \u2212 x2n) + (n \u2212 2)(x1 \u2212 x2) n\u2211",
@@ -9919,7 +9919,7 @@
             522.3360979800013,
             191.25510000000088
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "computations.",
@@ -9930,7 +9930,7 @@
             156.99723793000135,
             189.13873460000087
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "4.2. Singular points in Table 1. We now indicate how to obtain the last column of",
@@ -9941,7 +9941,7 @@
             522.3405738400013,
             169.71173460000088
         ],
-        "match": 239
+        "match": 244
     },
     {
         "content": "Table 1, i.e., how to decide which ideals correspond to smooth points of H\u03c1. For all ideals",
@@ -9952,7 +9952,7 @@
             522.3326038900015,
             158.8771000000009
         ],
-        "match": 239
+        "match": null
     },
     {
         "content": "in rows 8\u201313 we have checked smoothness via Macaulay2, implementing the algorithm of",
@@ -9963,7 +9963,7 @@
             522.3308564900015,
             143.8087346000009
         ],
-        "match": 239
+        "match": 244
     },
     {
         "content": "Lehn and Terpereau [LT15, Section 5] for computing the tangent space. For smoothness",
@@ -9974,7 +9974,7 @@
             522.339724200001,
             130.8577346000009
         ],
-        "match": 239
+        "match": 244
     },
     {
         "content": "1This was first proved by Haiman and Woo in an unpublished manuscript titled \u201cGarnir modules, Springer",
@@ -10249,7 +10249,7 @@
             249.07248479999998,
             431.3422064
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "where the upper row is exact and \u03b2 \u2236 P \u2297 N2 \u2192 P \u2297 N1 is the canonical map. Now,",
@@ -10315,7 +10315,7 @@
             423.0565479799999,
             323.7041
         ],
-        "match": 158
+        "match": null
     },
     {
         "content": "ker(\u03b2\u2217) \u2229 HomSn(N1, \u03c1),",
@@ -10326,7 +10326,7 @@
             364.5325479799997,
             275.3861
         ],
-        "match": 261
+        "match": null
     },
     {
         "content": "giving an effective method to compute the dimension of T[I]H\u03c1, since \u03b2\u2217 can be represented",
@@ -10359,7 +10359,7 @@
             374.6964848,
             400.7932064
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "HomP (P \u2297 N2, P /I),",
@@ -10524,7 +10524,7 @@
             472.05554798,
             669.4389006
         ],
-        "match": 31
+        "match": null
     },
     {
         "content": "Moreover, P /I = dS(n) \u2295 S(n\u22121,1) = \u27e81\u27e9 \u2295 \u27e8p1\u27e9 \u2295 \u22ef \u2295 \u27e8pd\u221211 \u27e9 \u2295 \u27e8xi \u2212 xj\u27e9. Hence, any f \u2208",
@@ -10535,7 +10535,7 @@
             522.3362766500001,
             647.8111
         ],
-        "match": 27
+        "match": null
     },
     {
         "content": "HomSn(N1, P /I) is of the form",
@@ -10546,7 +10546,7 @@
             237.66123543,
             633.6261
         ],
-        "match": 27
+        "match": 7
     },
     {
         "content": "f ((xi \u2212 xj)(xk \u2212 xl)) = 0,",
@@ -10557,7 +10557,7 @@
             343.86454797999994,
             613.4651
         ],
-        "match": 7
+        "match": null
     },
     {
         "content": "f (x2i \u2212 x2j ) = \u03b1(xi \u2212 xj),",
@@ -10568,7 +10568,7 @@
             386.21954798,
             595.2259006
         ],
-        "match": 7
+        "match": null
     },
     {
         "content": "f (p1(xi \u2212 xj)) = \u03b2(xi \u2212 xj),",
@@ -10579,7 +10579,7 @@
             385.94754797999997,
             578.1351000000001
         ],
-        "match": 7
+        "match": null
     },
     {
         "content": "f (p21 \u2212 np2) = d\u22121\u2211",
@@ -10601,7 +10601,7 @@
             348.07451412999995,
             537.8321000000001
         ],
-        "match": 92
+        "match": null
     },
     {
         "content": "\u03b3ipi1,",
@@ -10612,7 +10612,7 @@
             372.91654797999996,
             551.7289006000001
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "f (pd1) = d\u22121\u2211",
@@ -10634,7 +10634,7 @@
             348.07451412999995,
             503.7601000000002
         ],
-        "match": 92
+        "match": null
     },
     {
         "content": "\u03b4ipi1.",
@@ -10645,7 +10645,7 @@
             372.1175479799999,
             517.6579006000002
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "If this f lies in HomSnP (I, P /I), then necessarily \u03b30 = \u03b31 = \u22ef = \u03b3d\u22122 = 0. Indeed, applying",
@@ -10656,7 +10656,7 @@
             522.3377138500001,
             487.4699006000003
         ],
-        "match": 19
+        "match": null
     },
     {
         "content": "the Reynolds operator to p1(x1 \u2212 x2)x1 \u2208 I gives a non\u2212zero rational multiple of p1(p21 \u2212 np2),",
@@ -10667,7 +10667,7 @@
             522.33554798,
             473.24610000000035
         ],
-        "match": 19
+        "match": 3
     },
     {
         "content": "hence f maps the latter to both a non\u2212zero rational multiple of \u2211d\u22121i=0 \u03b3ipi+11 and also to a",
@@ -10678,7 +10678,7 @@
             522.33959853,
             460.84910000000036
         ],
-        "match": 19
+        "match": 3
     },
     {
         "content": "multiple of the Reynolds operator applied to \u03b2(x1 \u2212 x2)x1, which in turn is a multiple of",
@@ -10689,7 +10689,7 @@
             522.3345802600002,
             446.3541000000004
         ],
-        "match": 19
+        "match": 3
     },
     {
         "content": "p21 \u2212 np2 and hence 0 in P /I.",
@@ -10700,7 +10700,7 @@
             226.2315479800001,
             433.38310000000047
         ],
-        "match": 19
+        "match": 3
     },
     {
         "content": "We claim that also \u03b40 = 0. For this, observe that p1(x1 \u2212 x2) \u22c5 pd\u221211 maps to both \u03b2(x1 \u2212",
@@ -10711,7 +10711,7 @@
             522.3362781900001,
             420.9861000000005
         ],
-        "match": 7
+        "match": 5
     },
     {
         "content": "x2) \u22c5 pd\u221211 = 0 (mod I) and to (x1 \u2212 x2) \u2211d\u22121i=0 \u03b4ipi1 = \u03b40(x1 \u2212 x2) (mod I), hence \u03b40 = 0.",
@@ -10722,7 +10722,7 @@
             491.27809798000027,
             407.3561000000006
         ],
-        "match": 31
+        "match": null
     },
     {
         "content": "So far we have proved dimC(HomSnP (I, P /I)) \u2264 d + 2. We claim that equality holds. For",
@@ -10788,7 +10788,7 @@
             522.3389985100006,
             324.84073460000064
         ],
-        "match": 7
+        "match": null
     },
     {
         "content": "syzygy of the generators of N1 such that the coefficient g of pd1 is a homogeneous polynomial",
@@ -10810,7 +10810,7 @@
             522.3364654300007,
             300.37610000000075
         ],
-        "match": 7
+        "match": null
     },
     {
         "content": "and k = 1) is contained in (xi \u2212 xj)\u22652. Therefore, the only case left is g \u2208 \u27e8xi \u2212 xj\u27e9. But",
@@ -10832,7 +10832,7 @@
             522.3370597700008,
             260.8431000000008
         ],
-        "match": 7
+        "match": null
     },
     {
         "content": "dimC(HomSnP (I, P /I)) = d + 2.",
@@ -10843,7 +10843,7 @@
             232.33209798000075,
             247.79390060000077
         ],
-        "match": 7
+        "match": null
     },
     {
         "content": "Finally, in order to show that I is actually a singular point of H\u03c1, where \u03c1 = dS(n) \u2295",
@@ -10876,7 +10876,7 @@
             522.3333887700009,
             205.39310000000077
         ],
-        "match": 7
+        "match": null
     },
     {
         "content": "distinct. Define J(a,b,c2,c3,...,cd) to be the vanishing ideal of the points given by the Sn\u2212orbit",
@@ -10898,7 +10898,7 @@
             522.333787880001,
             178.96910000000076
         ],
-        "match": 7
+        "match": null
     },
     {
         "content": "of the d polynomials p1 \u2212 ((n \u2212 1)a + b) and p1 \u2212 nci clearly lies in J, and its top degree",
@@ -10942,7 +10942,7 @@
             522.3355479800009,
             126.74610000000078
         ],
-        "match": 7
+        "match": null
     },
     {
         "content": "Fixing c2, . . . , cd and letting (a, b) tend to (0, 0) linearly, i.e., along the family (ta, tb), we",
@@ -10953,7 +10953,7 @@
             522.3356527400009,
             113.79410000000078
         ],
-        "match": 7
+        "match": null
     },
     {
         "content": "obtain the ideal J(c2,...,cd) = ((p1) + m2) \u2229 m(c2,...,c2) \u2229 \u22ef \u2229 m(cd,...,cd). For all distinct c2, . . . , cd,",
@@ -10964,7 +10964,7 @@
             522.335547980001,
             100.82410000000078
         ],
-        "match": 7
+        "match": null
     },
     {
         "content": "this ideal therefore lies in the smoothable component. Moreover, it still contains the above",
@@ -11239,7 +11239,7 @@
             385.83754798000064,
             301.56090060000014
         ],
-        "match": 179
+        "match": null
     },
     {
         "content": "f ((xi \u2212 xj)(xk \u2212 xl)) = 0,",
@@ -11393,7 +11393,7 @@
             412.41718454999994,
             722.7079006
         ],
-        "match": 185
+        "match": 187
     },
     {
         "content": "f \u2208 HomSnP (I, P /I) has the form",
@@ -11404,7 +11404,7 @@
             242.48723214999998,
             703.3139006
         ],
-        "match": 187
+        "match": 179
     },
     {
         "content": "f (p21) = \u03b1 \u22c5 1 + \u03b2p1 + \u03b3p2,",
@@ -11459,7 +11459,7 @@
             522.3365479800002,
             610.6201000000001
         ],
-        "match": 185
+        "match": null
     },
     {
         "content": "Hence, dimC(HomSnP (I, P /I)) \u2264 4, and the dimension of the smoothable component of H\u03c1 is",
@@ -11470,7 +11470,7 @@
             522.3360970200002,
             596.5069006000002
         ],
-        "match": 185
+        "match": 152
     },
     {
         "content": "4 as well. So finally we prove that I lies in the smoothable component. For this we can pick",
@@ -11481,7 +11481,7 @@
             522.3365810700001,
             581.1957346000003
         ],
-        "match": 185
+        "match": 152
     },
     {
         "content": "the vanishing ideal J of two distinct diagonal points (c, . . . , c), (d, . . . , d) and the Sn\u2212orbit of",
@@ -11492,7 +11492,7 @@
             522.3380321900003,
             570.3611000000002
         ],
-        "match": 185
+        "match": null
     },
     {
         "content": "(b, a, a, . . . , a) for a \u2260 b where we assume (n\u22121)a+b = nc. Then, clearly, (p1 \u2212nc)(p1 \u2212nd) \u2208 J",
@@ -11503,7 +11503,7 @@
             521.2870959500002,
             557.4091000000002
         ],
-        "match": 185
+        "match": null
     },
     {
         "content": "with top degree part p21. Hence, the associated graded of J must be I.",
@@ -11514,7 +11514,7 @@
             425.3325479800002,
             544.1259006000003
         ],
-        "match": 185
+        "match": 152
     },
     {
         "content": "4.2.6. Row 6. I = (p1, p2, (xi \u2212 xj)(xk \u2212 xl)) + m3. We assume n \u2265 4; the case n = 3 is similar",
@@ -11613,7 +11613,7 @@
             204.87400510000026,
             390.0157346000004
         ],
-        "match": 189
+        "match": 124
     },
     {
         "content": "which can be proven as before using the radicality of ((xi \u2212 xj)(xk \u2212 xl)). Hence,",
@@ -11635,7 +11635,7 @@
             468.62954798000044,
             373.90610000000044
         ],
-        "match": 173
+        "match": null
     },
     {
         "content": "0 = f (p) = \u2212\u03b2(x21 \u2212 x22) + \u03b3(x1 \u2212 x2).",
@@ -11745,7 +11745,7 @@
             384.02354798000096,
             121.81510000000057
         ],
-        "match": 185
+        "match": 170
     },
     {
         "content": "f ((xi \u2212 xj)(xk \u2212 xl)) = 0.",
@@ -11767,7 +11767,7 @@
             385.824547980001,
             155.53110000000058
         ],
-        "match": 184
+        "match": 170
     },
     {
         "content": "f (p3) = \u03b3 \u22c5 1 + \u03b4p2,",
@@ -11778,7 +11778,7 @@
             383.574547980001,
             138.67310000000057
         ],
-        "match": 184
+        "match": 170
     },
     {
         "content": "We claim \u03b1 = 0. For this, we again look at the first polynomial in the proof of Lemma 4.4:",
@@ -11800,7 +11800,7 @@
             366.65891313000014,
             680.0881
         ],
-        "match": 220
+        "match": null
     },
     {
         "content": "\u2212 (2n \u2212 3)p1(x21 \u2212 x22) + n(n \u2212 2)xnp1(x1 \u2212 x2) \u2208 ((xi \u2212 xj)(xk \u2212 xl)).",
@@ -11811,7 +11811,7 @@
             469.2585479800003,
             661.6009006
         ],
-        "match": 187
+        "match": null
     },
     {
         "content": "Therefore, f (p) = 0. At the same time, x31 \u2212 x32 \u2208 I spans a copy of S(n\u22121,1), so it must map",
@@ -11844,7 +11844,7 @@
             522.33702826,
             722.7079006
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "0 = f (p) = (n(n \u2212 1)\u03f5\u2032 \u2212 (n2 \u2212 3n + 3)\u03f5) (x1 \u2212 x2)",
@@ -11866,7 +11866,7 @@
             431.63273565000026,
             580.1619006
         ],
-        "match": 187
+        "match": null
     },
     {
         "content": "Hence, the coefficient of x1 \u2212 x2 must vanish. Moreover, if \u03b1 was non\u2212zero, then necessarily",
@@ -11910,7 +11910,7 @@
             417.1470981400004,
             533.3081
         ],
-        "match": 220
+        "match": null
     },
     {
         "content": "polynomial g vanishes on all the points with b not occurring as the first or second coordinate.",
@@ -11998,7 +11998,7 @@
             522.3358076800006,
             355.2740999999999
         ],
-        "match": 204
+        "match": null
     },
     {
         "content": "in (p1, p2, (xi \u2212 xj)(xk \u2212 xl)), so these generators form a minimal Sn\u2212stable basis of N1.",
@@ -12009,7 +12009,7 @@
             522.3365479800005,
             342.3230999999999
         ],
-        "match": 204
+        "match": null
     },
     {
         "content": "Moreover, \u03c1 = P /I = \u27e81\u27e9 \u2295 \u27e8p3\u27e9 \u2295 \u27e8xi \u2212 xj\u27e9 \u2295 \u27e8x2i \u2212 x2j \u27e9 = 2S(n) \u2295 2S(n\u22121,1). Hence, any",
@@ -12020,7 +12020,7 @@
             522.3362376800004,
             329.1981
         ],
-        "match": 205
+        "match": null
     },
     {
         "content": "f \u2208 HomSnP (I, P /I) has the form",
@@ -12119,7 +12119,7 @@
             522.3331161600007,
             166.2031000000001
         ],
-        "match": 183
+        "match": null
     },
     {
         "content": "the 2\u2212dimensional torus T fixes this 1\u2212dimensional set of ideals and there are precisely two",
@@ -12185,7 +12185,7 @@
             412.41718454999994,
             722.7079006
         ],
-        "match": 215
+        "match": 216
     },
     {
         "content": "2S(n) \u2295 2S(n\u22121,1). Hence, any f \u2208 HomSnP (I, P /I) has the form",
@@ -12251,7 +12251,7 @@
             311.11454798000017,
             614.1741000000001
         ],
-        "match": 210
+        "match": 222
     },
     {
         "content": "We claim \u03b10 = \u03b20 = \u03b30 = 0. This follows again from the containment",
@@ -12262,7 +12262,7 @@
             411.0451721000001,
             595.8951000000001
         ],
-        "match": 210
+        "match": 222
     },
     {
         "content": "p3(x1 \u2212 x2) \u2212 p2(x21 \u2212 x22) + p1x1x2(x1 \u2212 x2) \u2208 ((xi \u2212 xj)(xk \u2212 xl)).",
@@ -12273,7 +12273,7 @@
             459.3395479800004,
             577.8329006000001
         ],
-        "match": 244
+        "match": null
     },
     {
         "content": "Applying f , we obtain",
@@ -12284,7 +12284,7 @@
             196.4844078300004,
             557.2097346000002
         ],
-        "match": 212
+        "match": 252
     },
     {
         "content": "0 = \u03b30(x1 \u2212 x2) \u2212 \u03b20(x21 \u2212 x22) + \u03b10",
@@ -12515,7 +12515,7 @@
             475.0735500000012,
             254.0271000000002
         ],
-        "match": 214
+        "match": null
     },
     {
         "content": "p1(x1 \u2212 x2)g + p21g\u2032 + p2g\u2032\u2032 \u2208 ((xi \u2212 xj)(xk \u2212 xl)),",
@@ -12537,7 +12537,7 @@
             522.3408304200013,
             233.9731000000002
         ],
-        "match": 303
+        "match": null
     },
     {
         "content": "the coefficients of g\u2032 and g\u2032\u2032, must vanish. A computation shows that the only way in which",
@@ -12548,7 +12548,7 @@
             522.3315255200013,
             209.3041000000002
         ],
-        "match": 303
+        "match": null
     },
     {
         "content": "this is possible is that g\u2032 = \u00b5(x1 \u2212 x2) and g\u2032\u2032 = \u03bd(x1 \u2212 x2) for some \u00b5, \u03bd \u2208 C. Coming back",
@@ -12559,7 +12559,7 @@
             522.3391503500014,
             196.3521000000002
         ],
-        "match": 303
+        "match": null
     },
     {
         "content": "to p1(x1 \u2212 x2)g + p21g\u2032 + p2g\u2032\u2032, applying the transposition (1, 2) to this polynomial, adding",
@@ -12570,7 +12570,7 @@
             522.3361976700014,
             183.38110000000017
         ],
-        "match": 303
+        "match": null
     },
     {
         "content": "the result to it and evaluating on (b, a, a, . . . , a) shows that g = \u03bb(x1 + x2) for some \u03bb \u2208 C.",
@@ -12581,7 +12581,7 @@
             522.3355479800016,
             169.19710000000018
         ],
-        "match": 303
+        "match": null
     },
     {
         "content": "Hence, the polynomial",
@@ -12603,7 +12603,7 @@
             362.45351413000145,
             142.71690060000017
         ],
-        "match": 221
+        "match": 228
     },
     {
         "content": "must vanish on (b, a, a, . . . , a) for all a, b \u2208 C. It can be checked that this is only possible if",
@@ -12614,7 +12614,7 @@
             522.3405495300015,
             126.47610000000019
         ],
-        "match": 222
+        "match": null
     },
     {
         "content": "\u03bb = \u00b5 = \u03bd = 0. In particular, we obtain g = 0, so a g with the desired properties does not",
@@ -12625,7 +12625,7 @@
             522.3345096700016,
             113.52410000000019
         ],
-        "match": 222
+        "match": null
     },
     {
         "content": "exist.",
@@ -12636,7 +12636,7 @@
             114.87502101000149,
             98.45673460000019
         ],
-        "match": 222
+        "match": null
     },
     {
         "content": "Finally, any syzygy in degree \u2265 4 does not yield any linear relation among the re\u2212",
@@ -12746,7 +12746,7 @@
             443.8535479800001,
             576.9339006000001
         ],
-        "match": 241
+        "match": null
     },
     {
         "content": "Moreover, \u03c1 = P /I = \u27e81\u27e9 \u2295 \u27e8p1\u27e9 \u2295 \u27e8xi \u2212 xj\u27e9 \u2295 \u27e8p1(xi \u2212 xj)\u27e9 = 2S(n) \u2295 2S(n\u22121,1). Hence, any",
@@ -12757,7 +12757,7 @@
             522.33823468,
             557.0441000000002
         ],
-        "match": 241
+        "match": null
     },
     {
         "content": "f \u2208 HomSnP (I, P /I) has the form",
@@ -12779,7 +12779,7 @@
             444.4625479800002,
             486.3589006000005
         ],
-        "match": 244
+        "match": null
     },
     {
         "content": "f ((xi \u2212 xj)(xk \u2212 xl)) = 0.",
@@ -12834,7 +12834,7 @@
             344.50891313000034,
             432.66610000000054
         ],
-        "match": 232
+        "match": null
     },
     {
         "content": "\u2212 (n \u2212 1)(\u22122p1(x1 \u2212 x2) + n(x21 \u2212 x22))(x1 \u2212 x2)",
@@ -12845,7 +12845,7 @@
             363.69791313000053,
             414.17790060000067
         ],
-        "match": 252
+        "match": null
     },
     {
         "content": "Hence,",
@@ -12867,7 +12867,7 @@
             474.02954798000076,
             395.7059006000007
         ],
-        "match": 252
+        "match": null
     },
     {
         "content": "0 = f (p) = ((n \u2212 2)\u03b10 \u2212 n(n \u2212 2)\u03b20)(x1 \u2212 x2) + ((n \u2212 2)\u03b11 \u2212 n(n \u2212 2)\u03b21)p1(x1 \u2212 x2)",
@@ -12878,7 +12878,7 @@
             498.7829131300009,
             358.6271000000007
         ],
-        "match": 252
+        "match": null
     },
     {
         "content": "\u2212 (n \u2212 1)\u03b30(x1 \u2212 x2)2 + 2(n \u2212 1)\u03b30(x1 \u2212 x2)(x1 \u2212 x3).",
@@ -12889,7 +12889,7 @@
             400.00454798000095,
             340.38790060000076
         ],
-        "match": 252
+        "match": null
     },
     {
         "content": "We obtain \u03b10 = n\u03b20 and at least one more non\u2212trivial linear relation among \u03b11, \u03b21, \u03b30, hence",
@@ -12966,7 +12966,7 @@
             426.77491313000127,
             242.95190060000076
         ],
-        "match": 234
+        "match": null
     },
     {
         "content": "lies in J. With this it is easy to see that all generators of I lie in the associated graded of",
@@ -12999,7 +12999,7 @@
             522.3360979800012,
             213.61110000000076
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "J, hence the latter must agree with I.",
@@ -13186,7 +13186,7 @@
             470.5404580800001,
             628.4439006
         ],
-        "match": 227
+        "match": null
     },
     {
         "content": "(xi \u2212 xj)(xk \u2212 xl),",
@@ -13197,7 +13197,7 @@
             348.54554798000015,
             582.5181
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "p1(xi \u2212 xj) + a1(xi \u2212 xj),",
@@ -13263,7 +13263,7 @@
             334.90954798000024,
             502.3109006000002
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "for some a1, a2, b1, b2, ci \u2208 C. For instance, since (xi \u2212 xj)(xk \u2212 xl) \u2208 I and I is the associated",
@@ -13384,7 +13384,7 @@
             421.0435141300011,
             355.99010000000015
         ],
-        "match": 244
+        "match": null
     },
     {
         "content": "k=0",
@@ -13406,7 +13406,7 @@
             458.4912778100012,
             347.7669006000002
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "= c0(x1 \u2212 x2) \u2212 a1",
@@ -13428,7 +13428,7 @@
             260.5025141300012,
             321.6521000000002
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "k=0",
@@ -13450,7 +13450,7 @@
             334.34291313000125,
             313.4289006000002
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "\u2261 ((\u2212a1)d + cd\u22121(\u2212a1)d\u22121 + . . . + c0) (x1 \u2212 x2) (mod J).",
@@ -13505,7 +13505,7 @@
             206.13095872000002,
             219.88809999999998
         ],
-        "match": 25
+        "match": null
     },
     {
         "content": "\u03c3(x1(p1(x1 \u2212 x2) + a1(x1 \u2212 x2))) \u2212 p1(p21 \u2212 np2 + b1p1 + b2)",
@@ -13538,7 +13538,7 @@
             330.8185479800003,
             188.41390060000003
         ],
-        "match": 244
+        "match": null
     },
     {
         "content": "Since d \u2265 3, we obtain b1 = 0 and hence also b2 = 0. Together with the previous equation we",
@@ -13791,7 +13791,7 @@
             522.3365479800007,
             476.0940999999999
         ],
-        "match": 252
+        "match": null
     },
     {
         "content": "Both are geometrically prime, i.e., prime over C, even if n is regarded as an integer again.",
@@ -13956,7 +13956,7 @@
             445.37445808000086,
             267.2349005999998
         ],
-        "match": 208
+        "match": null
     },
     {
         "content": "(xi \u2212 xj)(xk \u2212 xl),",
@@ -13967,7 +13967,7 @@
             363.18954798000084,
             227.09409999999977
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "p21 + Ap1 + B,",
@@ -14484,7 +14484,7 @@
             363.6624848,
             209.12490059999976
         ],
-        "match": 258
+        "match": null
     },
     {
         "content": "\u03c1,h (Cn).",
@@ -14561,7 +14561,7 @@
             522.3360979800003,
             100.57309999999978
         ],
-        "match": 0
+        "match": null
     },
     {
         "content": "5. Conclusion",
@@ -14715,7 +14715,7 @@
             360.85891313000013,
             503.54290060000005
         ],
-        "match": 158
+        "match": null
     },
     {
         "content": "is an isomorphism.",
@@ -14781,7 +14781,7 @@
             400.6859131300003,
             404.30790060000004
         ],
-        "match": 183
+        "match": null
     },
     {
         "content": "sends an Sn\u2212stable quasi\u2212coherent ideal sheaf I \u2286 OT [x1, . . . , xn] to its invariant subsheaf",
@@ -14814,7 +14814,7 @@
             419.8475479800003,
             321.5571
         ],
-        "match": 252
+        "match": null
     },
     {
         "content": "This map is well\u2212defined because OT [x1, . . . , xn] is a free module over OT [p1, . . . , pn] of rank",
@@ -14869,7 +14869,7 @@
             417.46845808000035,
             268.7181
         ],
-        "match": 258
+        "match": null
     },
     {
         "content": "I Sn \u2286 OT [p1, . . . , pn].",
@@ -14913,7 +14913,7 @@
             390.7695479800005,
             178.90590059999994
         ],
-        "match": 258
+        "match": null
     },
     {
         "content": "The two natural surjections induced by these inclusions are surjections of locally free OT \u2212",
@@ -15034,7 +15034,7 @@
             522.33379023,
             654.7897346000001
         ],
-        "match": 274
+        "match": null
     },
     {
         "content": "k \u2265 k0 we have H\u03c1(k) \u2245 H\u03c1(k+1)?",
@@ -15122,7 +15122,7 @@
             321.1846879999998,
             524.2879184000002
         ],
-        "match": 280
+        "match": 278
     },
     {
         "content": "[ATY97] Susumu Ariki, Tomohide Terasoma, and Hiro\u2212Fumi Yamada. Higher Specht polynomials. Hi\u2212",
@@ -15364,7 +15364,7 @@
             160.9762812799997,
             283.1919184
         ],
-        "match": 257
+        "match": null
     },
     {
         "content": "[GP92] A. M. Garsia and C. Procesi. On certain graded Sn\u2212modules and the q\u2212Kostka polynomials. Adv.",
@@ -15386,7 +15386,7 @@
             279.7236198399997,
             261.2739184
         ],
-        "match": 280
+        "match": 290
     },
     {
         "content": "[Gri22] Sean T Griffin. Orbit harmonics for the union of two orbits. arXiv:2204.04566, 2022. 16",

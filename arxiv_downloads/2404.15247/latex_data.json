@@ -320,7 +320,7 @@
                                                                                                     "leaf id": 41,
                                                                                                     "key": "doc/body/sec0/sec9/sub0/sub4/sub2/sec2/sub1/ssb1/sub5/equation2/split0",
                                                                                                     "block type": "split",
-                                                                                                    "content": "\\overline{W^l} = \\sum_{i=1}^{N}\\alpha_{i}^lW_{i}^l"
+                                                                                                    "content": "\\overline{W^l} = \\sum_{i=1}^N\\alpha_{i}^lW_{i}^l"
                                                                                                 }
                                                                                             ]
                                                                                         },
@@ -328,7 +328,7 @@
                                                                                             "leaf id": 42,
                                                                                             "key": "doc/body/sec0/sec9/sub0/sub4/sub2/sec2/sub1/ssb1/sub5/par3",
                                                                                             "block type": "par",
-                                                                                            "content": "where W^l denotes the merged parameter of all N experts and \u03b1_i^l denotes the learnable mixing coefficient of expert W_i^l. We consider a neural network f(x; \u03b8) with input x and parameters \u03b8. For loss \u2112 and instruction dataset {(x_i,y_i)}_i=1^m, such mixing coefficients \u03b1 of all the L layers can be learned via:"
+                                                                                            "content": "where W^l denotes the merged parameter of all N experts and \u03b1_i^l denotes the learnable mixing coefficient of expert W_i^l. We consider a neural network f(x; \u03b8) with input x and parameters \u03b8. For loss  and instruction dataset {(x_i,y_i)}_i=1^m, such mixing coefficients \u03b1 of all the L layers can be learned via:"
                                                                                         },
                                                                                         {
                                                                                             "key": "doc/body/sec0/sec9/sub0/sub4/sub2/sec2/sub1/ssb1/sub5/equation4",
@@ -338,7 +338,7 @@
                                                                                                     "leaf id": 43,
                                                                                                     "key": "doc/body/sec0/sec9/sub0/sub4/sub2/sec2/sub1/ssb1/sub5/equation4/split0",
                                                                                                     "block type": "split",
-                                                                                                    "content": "\\arg\\min_{\\alpha}\\sum_{j=1}^{m}\\mathcal{L}(f(x_j; \\theta_{o}, (\\sum_{i=1}^{N}\\alpha_{i}^lW_{i}^l)_{1:L}), y_i)"
+                                                                                                    "content": "\\arg\\min_{\\alpha}\\sum_{j=1}^{m}\\mathcalL(f(x_j; \\theta_{o}, (\\sum_{i=1}^N\\alpha_{i}^lW_{i}^l)_{1:L}), y_i)"
                                                                                                 }
                                                                                             ]
                                                                                         },
@@ -364,7 +364,7 @@
                                                                                             "leaf id": 47,
                                                                                             "key": "doc/body/sec0/sec9/sub0/sub4/sub2/sec2/sub1/ssb1/sub5/gather8",
                                                                                             "block type": "gather",
-                                                                                            "content": "\\overline{W^l} = \\lambda W_{1}^l + \\sum_{i=2}^{N}\\alpha_{i}^lW_{i}^l\\label{formula:merging1new}\\\\ \\arg\\min_{\\alpha}\\sum_{j=1}^{m}\\mathcal{L}(f(x_j; \\theta_o, \\overline{W^l}_{1:L}), y_i)\\label{formula:merging2new}"
+                                                                                            "content": "\\overline{W^l} = \\lambda W_{1}^l + \\sum_{i=2}^N\\alpha_{i}^lW_{i}^l\\label{formula:merging1new}\\\\ \\arg\\min_{\\alpha}\\sum_{j=1}^{m}\\mathcalL(f(x_j; \\theta_o, \\overline{W^l}_{1:L}), y_i)\\label{formula:merging2new}"
                                                                                         },
                                                                                         {
                                                                                             "leaf id": 48,
@@ -876,241 +876,241 @@
             "leaf id": 105,
             "key": "doc/bib0",
             "block type": "bibliography",
-            "content": "Jacob Austin, Augustus Odena, Maxwell Nye, Maarten Bosma, Henryk Michalewski, David Dohan, Ellen Jiang, Carrie Cai, Michael Terry, Quoc Le, and Charles Sutton. 2021. \\newblock \\href {http://arxiv.org/abs/2108.07732} {Program synthesis with large language models}."
+            "content": "Jacob Austin, Augustus Odena, Maxwell Nye, Maarten Bosma, Henryk Michalewski, David Dohan, Ellen Jiang, Carrie Cai, Michael Terry, Quoc Le, and Charles Sutton. 2021.  \\href {http://arxiv.org/abs/2108.07732} {Program synthesis with large language models}."
         },
         {
             "leaf id": 106,
             "key": "doc/bib1",
             "block type": "bibliography",
-            "content": "Loubna Ben~Allal, Niklas Muennighoff, Logesh Kumar~Umapathi, Ben Lipkin, and Leandro von Werra. 2022. \\newblock A framework for the evaluation of code generation models. \\newblock \\url{https://github.com/bigcode-project/bigcode-evaluation-harness}."
+            "content": "Loubna Ben~Allal, Niklas Muennighoff, Logesh Kumar~Umapathi, Ben Lipkin, and Leandro von Werra. 2022.  A framework for the evaluation of code generation models.  \\url{https://github.com/bigcode-project/bigcode-evaluation-harness}."
         },
         {
             "leaf id": 107,
             "key": "doc/bib2",
             "block type": "bibliography",
-            "content": "Federico Cassano, John Gouwar, Daniel Nguyen, Sydney Nguyen, Luna Phipps-Costin, Donald Pinckney, Ming-Ho Yee, Yangtian Zi, Carolyn~Jane Anderson, Molly~Q Feldman, Arjun Guha, Michael Greenberg, and Abhinav Jangda. 2022. \\newblock \\href {http://arxiv.org/abs/2208.08227} {Multipl-e: A scalable and extensible approach to benchmarking neural code generation}."
+            "content": "Federico Cassano, John Gouwar, Daniel Nguyen, Sydney Nguyen, Luna Phipps-Costin, Donald Pinckney, Ming-Ho Yee, Yangtian Zi, Carolyn~Jane Anderson, Molly~Q Feldman, Arjun Guha, Michael Greenberg, and Abhinav Jangda. 2022.  \\href {http://arxiv.org/abs/2208.08227} {Multipl-e: A scalable and extensible approach to benchmarking neural code generation}."
         },
         {
             "leaf id": 108,
             "key": "doc/bib3",
             "block type": "bibliography",
-            "content": "Sahil Chaudhary. 2023. \\newblock Code alpaca: An instruction-following llama model for code generation. \\newblock \\url{https://github.com/sahil280114/codealpaca}."
+            "content": "Sahil Chaudhary. 2023.  Code alpaca: An instruction-following llama model for code generation.  \\url{https://github.com/sahil280114/codealpaca}."
         },
         {
             "leaf id": 109,
             "key": "doc/bib4",
             "block type": "bibliography",
-            "content": "Guanzheng Chen, Fangyu Liu, Zaiqiao Meng, and Shangsong Liang. 2022. \\newblock \\href {http://arxiv.org/abs/2202.07962} {Revisiting parameter-efficient tuning: Are we really there yet?}"
+            "content": "Guanzheng Chen, Fangyu Liu, Zaiqiao Meng, and Shangsong Liang. 2022.  \\href {http://arxiv.org/abs/2202.07962} {Revisiting parameter-efficient tuning: Are we really there yet?}"
         },
         {
             "leaf id": 110,
             "key": "doc/bib5",
             "block type": "bibliography",
-            "content": "Mark Chen, Jerry Tworek, Heewoo Jun, Qiming Yuan, Henrique~Ponde de~Oliveira~Pinto, Jared Kaplan, Harri Edwards, Yuri Burda, Nicholas Joseph, Greg Brockman, Alex Ray, Raul Puri, Gretchen Krueger, Michael Petrov, Heidy Khlaaf, Girish Sastry, Pamela Mishkin, Brooke Chan, Scott Gray, Nick Ryder, Mikhail Pavlov, Alethea Power, Lukasz Kaiser, Mohammad Bavarian, Clemens Winter, Philippe Tillet, Felipe~Petroski Such, Dave Cummings, Matthias Plappert, Fotios Chantzis, Elizabeth Barnes, Ariel Herbert-Voss, William~Hebgen Guss, Alex Nichol, Alex Paino, Nikolas Tezak, Jie Tang, Igor Babuschkin, Suchir Balaji, Shantanu Jain, William Saunders, Christopher Hesse, Andrew~N. Carr, Jan Leike, Josh Achiam, Vedant Misra, Evan Morikawa, Alec Radford, Matthew Knight, Miles Brundage, Mira Murati, Katie Mayer, Peter Welinder, Bob McGrew, Dario Amodei, Sam McCandlish, Ilya Sutskever, and Wojciech Zaremba. 2021. \\newblock \\href {http://arxiv.org/abs/2107.03374} {Evaluating large language models trained on code}."
+            "content": "Mark Chen, Jerry Tworek, Heewoo Jun, Qiming Yuan, Henrique~Ponde de~Oliveira~Pinto, Jared Kaplan, Harri Edwards, Yuri Burda, Nicholas Joseph, Greg Brockman, Alex Ray, Raul Puri, Gretchen Krueger, Michael Petrov, Heidy Khlaaf, Girish Sastry, Pamela Mishkin, Brooke Chan, Scott Gray, Nick Ryder, Mikhail Pavlov, Alethea Power, Lukasz Kaiser, Mohammad Bavarian, Clemens Winter, Philippe Tillet, Felipe~Petroski Such, Dave Cummings, Matthias Plappert, Fotios Chantzis, Elizabeth Barnes, Ariel Herbert-Voss, William~Hebgen Guss, Alex Nichol, Alex Paino, Nikolas Tezak, Jie Tang, Igor Babuschkin, Suchir Balaji, Shantanu Jain, William Saunders, Christopher Hesse, Andrew~N. Carr, Jan Leike, Josh Achiam, Vedant Misra, Evan Morikawa, Alec Radford, Matthew Knight, Miles Brundage, Mira Murati, Katie Mayer, Peter Welinder, Bob McGrew, Dario Amodei, Sam McCandlish, Ilya Sutskever, and Wojciech Zaremba. 2021.  \\href {http://arxiv.org/abs/2107.03374} {Evaluating large language models trained on code}."
         },
         {
             "leaf id": 111,
             "key": "doc/bib6",
             "block type": "bibliography",
-            "content": "Damai Dai, Chengqi Deng, Chenggang Zhao, R.~X. Xu, Huazuo Gao, Deli Chen, Jiashi Li, Wangding Zeng, Xingkai Yu, Y.~Wu, Zhenda Xie, Y.~K. Li, Panpan Huang, Fuli Luo, Chong Ruan, Zhifang Sui, and Wenfeng Liang. 2024. \\newblock \\href {http://arxiv.org/abs/2401.06066} {Deepseekmoe: Towards ultimate expert specialization in mixture-of-experts language models}."
+            "content": "Damai Dai, Chengqi Deng, Chenggang Zhao, R.~X. Xu, Huazuo Gao, Deli Chen, Jiashi Li, Wangding Zeng, Xingkai Yu, Y.~Wu, Zhenda Xie, Y.~K. Li, Panpan Huang, Fuli Luo, Chong Ruan, Zhifang Sui, and Wenfeng Liang. 2024.  \\href {http://arxiv.org/abs/2401.06066} {Deepseekmoe: Towards ultimate expert specialization in mixture-of-experts language models}."
         },
         {
             "leaf id": 112,
             "key": "doc/bib7",
             "block type": "bibliography",
-            "content": "Shihan Dou, Enyu Zhou, Yan Liu, Songyang Gao, Jun Zhao, Wei Shen, Yuhao Zhou, Zhiheng Xi, Xiao Wang, Xiaoran Fan, Shiliang Pu, Jiang Zhu, Rui Zheng, Tao Gui, Qi~Zhang, and Xuanjing Huang. 2023. \\newblock \\href {http://arxiv.org/abs/2312.09979} {Loramoe: Revolutionizing mixture of experts for maintaining world knowledge in language model alignment}."
+            "content": "Shihan Dou, Enyu Zhou, Yan Liu, Songyang Gao, Jun Zhao, Wei Shen, Yuhao Zhou, Zhiheng Xi, Xiao Wang, Xiaoran Fan, Shiliang Pu, Jiang Zhu, Rui Zheng, Tao Gui, Qi~Zhang, and Xuanjing Huang. 2023.  \\href {http://arxiv.org/abs/2312.09979} {Loramoe: Revolutionizing mixture of experts for maintaining world knowledge in language model alignment}."
         },
         {
             "leaf id": 113,
             "key": "doc/bib8",
             "block type": "bibliography",
-            "content": "Rotem Dror, Gili Baumer, Segev Shlomov, and Roi Reichart. 2018. \\newblock \\href {https://doi.org/10.18653/v1/P18-1128} {The hitchhiker{'}s guide to testing statistical significance in natural language processing}. \\newblock In Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 1383--1392, Melbourne, Australia. Association for Computational Linguistics."
+            "content": "Rotem Dror, Gili Baumer, Segev Shlomov, and Roi Reichart. 2018.  \\href {https://doi.org/10.18653/v1/P18-1128} {The hitchhiker{'}s guide to testing statistical significance in natural language processing}.  In Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 1383--1392, Melbourne, Australia. Association for Computational Linguistics."
         },
         {
             "leaf id": 114,
             "key": "doc/bib9",
             "block type": "bibliography",
-            "content": "Nan Du, Yanping Huang, Andrew~M. Dai, Simon Tong, Dmitry Lepikhin, Yuanzhong Xu, Maxim Krikun, Yanqi Zhou, Adams~Wei Yu, Orhan Firat, Barret Zoph, Liam Fedus, Maarten Bosma, Zongwei Zhou, Tao Wang, Yu~Emma Wang, Kellie Webster, Marie Pellat, Kevin Robinson, Kathleen Meier-Hellstern, Toju Duke, Lucas Dixon, Kun Zhang, Quoc~V Le, Yonghui Wu, Zhifeng Chen, and Claire Cui. 2022. \\newblock \\href {http://arxiv.org/abs/2112.06905} {Glam: Efficient scaling of language models with mixture-of-experts}."
+            "content": "Nan Du, Yanping Huang, Andrew~M. Dai, Simon Tong, Dmitry Lepikhin, Yuanzhong Xu, Maxim Krikun, Yanqi Zhou, Adams~Wei Yu, Orhan Firat, Barret Zoph, Liam Fedus, Maarten Bosma, Zongwei Zhou, Tao Wang, Yu~Emma Wang, Kellie Webster, Marie Pellat, Kevin Robinson, Kathleen Meier-Hellstern, Toju Duke, Lucas Dixon, Kun Zhang, Quoc~V Le, Yonghui Wu, Zhifeng Chen, and Claire Cui. 2022.  \\href {http://arxiv.org/abs/2112.06905} {Glam: Efficient scaling of language models with mixture-of-experts}."
         },
         {
             "leaf id": 115,
             "key": "doc/bib10",
             "block type": "bibliography",
-            "content": "William Fedus, Barret Zoph, and Noam Shazeer. 2022. \\newblock \\href {http://arxiv.org/abs/2101.03961} {Switch transformers: Scaling to trillion parameter models with simple and efficient sparsity}."
+            "content": "William Fedus, Barret Zoph, and Noam Shazeer. 2022.  \\href {http://arxiv.org/abs/2101.03961} {Switch transformers: Scaling to trillion parameter models with simple and efficient sparsity}."
         },
         {
             "leaf id": 116,
             "key": "doc/bib11",
             "block type": "bibliography",
-            "content": "Yunhao Gou, Zhili Liu, Kai Chen, Lanqing Hong, Hang Xu, Aoxue Li, Dit-Yan Yeung, James~T. Kwok, and Yu~Zhang. 2024. \\newblock \\href {http://arxiv.org/abs/2312.12379} {Mixture of cluster-conditional lora experts for vision-language instruction tuning}."
+            "content": "Yunhao Gou, Zhili Liu, Kai Chen, Lanqing Hong, Hang Xu, Aoxue Li, Dit-Yan Yeung, James~T. Kwok, and Yu~Zhang. 2024.  \\href {http://arxiv.org/abs/2312.12379} {Mixture of cluster-conditional lora experts for vision-language instruction tuning}."
         },
         {
             "leaf id": 117,
             "key": "doc/bib12",
             "block type": "bibliography",
-            "content": "Daya Guo, Qihao Zhu, Dejian Yang, Zhenda Xie, Kai Dong, Wentao Zhang, Guanting Chen, Xiao Bi, Y.~Wu, Y.~K. Li, Fuli Luo, Yingfei Xiong, and Wenfeng Liang. 2024. \\newblock \\href {http://arxiv.org/abs/2401.14196} {Deepseek-coder: When the large language model meets programming -- the rise of code intelligence}."
+            "content": "Daya Guo, Qihao Zhu, Dejian Yang, Zhenda Xie, Kai Dong, Wentao Zhang, Guanting Chen, Xiao Bi, Y.~Wu, Y.~K. Li, Fuli Luo, Yingfei Xiong, and Wenfeng Liang. 2024.  \\href {http://arxiv.org/abs/2401.14196} {Deepseek-coder: When the large language model meets programming -- the rise of code intelligence}."
         },
         {
             "leaf id": 118,
             "key": "doc/bib13",
             "block type": "bibliography",
-            "content": "Dan Hendrycks, Collin Burns, Steven Basart, Andy Zou, Mantas Mazeika, Dawn Song, and Jacob Steinhardt. 2021. \\newblock \\href {http://arxiv.org/abs/2009.03300} {Measuring massive multitask language understanding}."
+            "content": "Dan Hendrycks, Collin Burns, Steven Basart, Andy Zou, Mantas Mazeika, Dawn Song, and Jacob Steinhardt. 2021.  \\href {http://arxiv.org/abs/2009.03300} {Measuring massive multitask language understanding}."
         },
         {
             "leaf id": 119,
             "key": "doc/bib14",
             "block type": "bibliography",
-            "content": "Yongqi Huang, Peng Ye, Xiaoshui Huang, Sheng Li, Tao Chen, Tong He, and Wanli Ouyang. 2023. \\newblock \\href {http://arxiv.org/abs/2308.06093} {Experts weights averaging: A new general training scheme for vision transformers}."
+            "content": "Yongqi Huang, Peng Ye, Xiaoshui Huang, Sheng Li, Tao Chen, Tong He, and Wanli Ouyang. 2023.  \\href {http://arxiv.org/abs/2308.06093} {Experts weights averaging: A new general training scheme for vision transformers}."
         },
         {
             "leaf id": 120,
             "key": "doc/bib15",
             "block type": "bibliography",
-            "content": "Albert~Q. Jiang, Alexandre Sablayrolles, Antoine Roux, Arthur Mensch, Blanche Savary, Chris Bamford, Devendra~Singh Chaplot, Diego de~las Casas, Emma~Bou Hanna, Florian Bressand, Gianna Lengyel, Guillaume Bour, Guillaume Lample, L\u00e9lio~Renard Lavaud, Lucile Saulnier, Marie-Anne Lachaux, Pierre Stock, Sandeep Subramanian, Sophia Yang, Szymon Antoniak, Teven~Le Scao, Th\u00e9ophile Gervet, Thibaut Lavril, Thomas Wang, Timoth\u00e9e Lacroix, and William~El Sayed. 2024. \\newblock \\href {http://arxiv.org/abs/2401.04088} {Mixtral of experts}."
+            "content": "Albert~Q. Jiang, Alexandre Sablayrolles, Antoine Roux, Arthur Mensch, Blanche Savary, Chris Bamford, Devendra~Singh Chaplot, Diego de~las Casas, Emma~Bou Hanna, Florian Bressand, Gianna Lengyel, Guillaume Bour, Guillaume Lample, L\u00e9lio~Renard Lavaud, Lucile Saulnier, Marie-Anne Lachaux, Pierre Stock, Sandeep Subramanian, Sophia Yang, Szymon Antoniak, Teven~Le Scao, Th\u00e9ophile Gervet, Thibaut Lavril, Thomas Wang, Timoth\u00e9e Lacroix, and William~El Sayed. 2024.  \\href {http://arxiv.org/abs/2401.04088} {Mixtral of experts}."
         },
         {
             "leaf id": 121,
             "key": "doc/bib16",
             "block type": "bibliography",
-            "content": "Jared Kaplan, Sam McCandlish, Tom Henighan, Tom~B. Brown, Benjamin Chess, Rewon Child, Scott Gray, Alec Radford, Jeffrey Wu, and Dario Amodei. 2020. \\newblock \\href {http://arxiv.org/abs/2001.08361} {Scaling laws for neural language models}."
+            "content": "Jared Kaplan, Sam McCandlish, Tom Henighan, Tom~B. Brown, Benjamin Chess, Rewon Child, Scott Gray, Alec Radford, Jeffrey Wu, and Dario Amodei. 2020.  \\href {http://arxiv.org/abs/2001.08361} {Scaling laws for neural language models}."
         },
         {
             "leaf id": 122,
             "key": "doc/bib17",
             "block type": "bibliography",
-            "content": "Aran Komatsuzaki, Joan Puigcerver, James Lee-Thorp, Carlos~Riquelme Ruiz, Basil Mustafa, Joshua Ainslie, Yi~Tay, Mostafa Dehghani, and Neil Houlsby. 2023. \\newblock \\href {http://arxiv.org/abs/2212.05055} {Sparse upcycling: Training mixture-of-experts from dense checkpoints}."
+            "content": "Aran Komatsuzaki, Joan Puigcerver, James Lee-Thorp, Carlos~Riquelme Ruiz, Basil Mustafa, Joshua Ainslie, Yi~Tay, Mostafa Dehghani, and Neil Houlsby. 2023.  \\href {http://arxiv.org/abs/2212.05055} {Sparse upcycling: Training mixture-of-experts from dense checkpoints}."
         },
         {
             "leaf id": 123,
             "key": "doc/bib18",
             "block type": "bibliography",
-            "content": "Yuhang Lai, Chengxi Li, Yiming Wang, Tianyi Zhang, Ruiqi Zhong, Luke Zettlemoyer, Scott~Wen tau Yih, Daniel Fried, Sida Wang, and Tao Yu. 2022. \\newblock \\href {http://arxiv.org/abs/2211.11501} {Ds-1000: A natural and reliable benchmark for data science code generation}."
+            "content": "Yuhang Lai, Chengxi Li, Yiming Wang, Tianyi Zhang, Ruiqi Zhong, Luke Zettlemoyer, Scott~Wen tau Yih, Daniel Fried, Sida Wang, and Tao Yu. 2022.  \\href {http://arxiv.org/abs/2211.11501} {Ds-1000: A natural and reliable benchmark for data science code generation}."
         },
         {
             "leaf id": 124,
             "key": "doc/bib19",
             "block type": "bibliography",
-            "content": "Dmitry Lepikhin, HyoukJoong Lee, Yuanzhong Xu, Dehao Chen, Orhan Firat, Yanping Huang, Maxim Krikun, Noam Shazeer, and Zhifeng Chen. 2020. \\newblock \\href {http://arxiv.org/abs/2006.16668} {Gshard: Scaling giant models with conditional computation and automatic sharding}."
+            "content": "Dmitry Lepikhin, HyoukJoong Lee, Yuanzhong Xu, Dehao Chen, Orhan Firat, Yanping Huang, Maxim Krikun, Noam Shazeer, and Zhifeng Chen. 2020.  \\href {http://arxiv.org/abs/2006.16668} {Gshard: Scaling giant models with conditional computation and automatic sharding}."
         },
         {
             "leaf id": 125,
             "key": "doc/bib20",
             "block type": "bibliography",
-            "content": "Jiawei Liu, Chunqiu~Steven Xia, Yuyao Wang, and Lingming Zhang. 2023. \\newblock \\href {https://openreview.net/forum?id=1qvx610Cu7} {Is your code generated by chat{GPT} really correct? rigorous evaluation of large language models for code generation}. \\newblock In Thirty-seventh Conference on Neural Information Processing Systems."
+            "content": "Jiawei Liu, Chunqiu~Steven Xia, Yuyao Wang, and Lingming Zhang. 2023.  \\href {https://openreview.net/forum?id=1qvx610Cu7} {Is your code generated by chatGPT really correct? rigorous evaluation of large language models for code generation}.  In Thirty-seventh Conference on Neural Information Processing Systems."
         },
         {
             "leaf id": 126,
             "key": "doc/bib21",
             "block type": "bibliography",
-            "content": "{LLaMA-MoE Team}. 2023. \\newblock \\href {https://github.com/pjlab-sys4nlp/llama-moe} {Llama-moe: Building mixture-of-experts from llama with continual pre-training}."
+            "content": "{LLaMA-MoE Team}. 2023.  \\href {https://github.com/pjlab-sys4nlp/llama-moe} {Llama-moe: Building mixture-of-experts from llama with continual pre-training}."
         },
         {
             "leaf id": 127,
             "key": "doc/bib22",
             "block type": "bibliography",
-            "content": "Anton Lozhkov, Raymond Li, Loubna~Ben Allal, Federico Cassano, Joel Lamy-Poirier, Nouamane Tazi, Ao~Tang, Dmytro Pykhtar, Jiawei Liu, Yuxiang Wei, Tianyang Liu, Max Tian, Denis Kocetkov, Arthur Zucker, Younes Belkada, Zijian Wang, Qian Liu, Dmitry Abulkhanov, Indraneil Paul, Zhuang Li, Wen-Ding Li, Megan Risdal, Jia Li, Jian Zhu, Terry~Yue Zhuo, Evgenii Zheltonozhskii, Nii Osae~Osae Dade, Wenhao Yu, Lucas Krau\u00df, Naman Jain, Yixuan Su, Xuanli He, Manan Dey, Edoardo Abati, Yekun Chai, Niklas Muennighoff, Xiangru Tang, Muhtasham Oblokulov, Christopher Akiki, Marc Marone, Chenghao Mou, Mayank Mishra, Alex Gu, Binyuan Hui, Tri Dao, Armel Zebaze, Olivier Dehaene, Nicolas Patry, Canwen Xu, Julian McAuley, Han Hu, Torsten Scholak, Sebastien Paquet, Jennifer Robinson, Carolyn~Jane Anderson, Nicolas Chapados, Mostofa Patwary, Nima Tajbakhsh, Yacine Jernite, Carlos~Mu\u00f1oz Ferrandis, Lingming Zhang, Sean Hughes, Thomas Wolf, Arjun Guha, Leandro von Werra, and Harm de~Vries. 2024. \\newblock \\href {http://arxiv.org/abs/2402.19173} {Starcoder 2 and the stack v2: The next generation}."
+            "content": "Anton Lozhkov, Raymond Li, Loubna~Ben Allal, Federico Cassano, Joel Lamy-Poirier, Nouamane Tazi, Ao~Tang, Dmytro Pykhtar, Jiawei Liu, Yuxiang Wei, Tianyang Liu, Max Tian, Denis Kocetkov, Arthur Zucker, Younes Belkada, Zijian Wang, Qian Liu, Dmitry Abulkhanov, Indraneil Paul, Zhuang Li, Wen-Ding Li, Megan Risdal, Jia Li, Jian Zhu, Terry~Yue Zhuo, Evgenii Zheltonozhskii, Nii Osae~Osae Dade, Wenhao Yu, Lucas Krau\u00df, Naman Jain, Yixuan Su, Xuanli He, Manan Dey, Edoardo Abati, Yekun Chai, Niklas Muennighoff, Xiangru Tang, Muhtasham Oblokulov, Christopher Akiki, Marc Marone, Chenghao Mou, Mayank Mishra, Alex Gu, Binyuan Hui, Tri Dao, Armel Zebaze, Olivier Dehaene, Nicolas Patry, Canwen Xu, Julian McAuley, Han Hu, Torsten Scholak, Sebastien Paquet, Jennifer Robinson, Carolyn~Jane Anderson, Nicolas Chapados, Mostofa Patwary, Nima Tajbakhsh, Yacine Jernite, Carlos~Mu\u00f1oz Ferrandis, Lingming Zhang, Sean Hughes, Thomas Wolf, Arjun Guha, Leandro von Werra, and Harm de~Vries. 2024.  \\href {http://arxiv.org/abs/2402.19173} {Starcoder 2 and the stack v2: The next generation}."
         },
         {
             "leaf id": 128,
             "key": "doc/bib23",
             "block type": "bibliography",
-            "content": "Ziyang Luo, Can Xu, Pu~Zhao, Qingfeng Sun, Xiubo Geng, Wenxiang Hu, Chongyang Tao, Jing Ma, Qingwei Lin, and Daxin Jiang. 2023. \\newblock \\href {http://arxiv.org/abs/2306.08568} {Wizardcoder: Empowering code large language models with evol-instruct}."
+            "content": "Ziyang Luo, Can Xu, Pu~Zhao, Qingfeng Sun, Xiubo Geng, Wenxiang Hu, Chongyang Tao, Jing Ma, Qingwei Lin, and Daxin Jiang. 2023.  \\href {http://arxiv.org/abs/2306.08568} {Wizardcoder: Empowering code large language models with evol-instruct}."
         },
         {
             "leaf id": 129,
             "key": "doc/bib24",
             "block type": "bibliography",
-            "content": "Zohar Manna and Richard~J Waldinger. 1971. \\newblock Toward automatic program synthesis. \\newblock Communications of the ACM, 14(3):151--165."
+            "content": "Zohar Manna and Richard~J Waldinger. 1971.  Toward automatic program synthesis.  Communications of the ACM, 14(3):151--165."
         },
         {
             "leaf id": 130,
             "key": "doc/bib25",
             "block type": "bibliography",
-            "content": "Nikhil Pinnaparaju, Reshinth Adithyan, Duy Phung, Jonathan Tow, James Baicoianu, , and Nathan Cooper. 2024. \\newblock \\href {[https://huggingface.co/stabilityai/stable-code-3b](https://huggingface.co/stabilityai/stable-code-3b)} {Stable code 3b}."
+            "content": "Nikhil Pinnaparaju, Reshinth Adithyan, Duy Phung, Jonathan Tow, James Baicoianu, , and Nathan Cooper. 2024.  \\href {[https://huggingface.co/stabilityai/stable-code-3b](https://huggingface.co/stabilityai/stable-code-3b)} {Stable code 3b}."
         },
         {
             "leaf id": 131,
             "key": "doc/bib26",
             "block type": "bibliography",
-            "content": "Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le, Geoffrey Hinton, and Jeff Dean. 2017. \\newblock \\href {http://arxiv.org/abs/1701.06538} {Outrageously large neural networks: The sparsely-gated mixture-of-experts layer}."
+            "content": "Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le, Geoffrey Hinton, and Jeff Dean. 2017.  \\href {http://arxiv.org/abs/1701.06538} {Outrageously large neural networks: The sparsely-gated mixture-of-experts layer}."
         },
         {
             "leaf id": 132,
             "key": "doc/bib27",
             "block type": "bibliography",
-            "content": "Anders S{\\o}gaard, Anders Johannsen, Barbara Plank, Dirk Hovy, and Hector Mart{\\'\\i}nez~Alonso. 2014. \\newblock \\href {https://doi.org/10.3115/v1/W14-1601} {What{'}s in a p-value in {NLP}?} \\newblock In Proceedings of the Eighteenth Conference on Computational Natural Language Learning, pages 1--10, Ann Arbor, Michigan. Association for Computational Linguistics."
+            "content": "Anders S{\\o}gaard, Anders Johannsen, Barbara Plank, Dirk Hovy, and Hector Mart{\\'\\i}nez~Alonso. 2014.  \\href {https://doi.org/10.3115/v1/W14-1601} {What{'}s in a p-value in NLP?}  In Proceedings of the Eighteenth Conference on Computational Natural Language Learning, pages 1--10, Ann Arbor, Michigan. Association for Computational Linguistics."
         },
         {
             "leaf id": 133,
             "key": "doc/bib28",
             "block type": "bibliography",
-            "content": "Yizhong Wang, Yeganeh Kordi, Swaroop Mishra, Alisa Liu, Noah~A. Smith, Daniel Khashabi, and Hannaneh Hajishirzi. 2023. \\newblock \\href {http://arxiv.org/abs/2212.10560} {Self-instruct: Aligning language models with self-generated instructions}."
+            "content": "Yizhong Wang, Yeganeh Kordi, Swaroop Mishra, Alisa Liu, Noah~A. Smith, Daniel Khashabi, and Hannaneh Hajishirzi. 2023.  \\href {http://arxiv.org/abs/2212.10560} {Self-instruct: Aligning language models with self-generated instructions}."
         },
         {
             "leaf id": 134,
             "key": "doc/bib29",
             "block type": "bibliography",
-            "content": "Jason Wei, Maarten Bosma, Vincent~Y. Zhao, Kelvin Guu, Adams~Wei Yu, Brian Lester, Nan Du, Andrew~M. Dai, and Quoc~V. Le. 2022. \\newblock \\href {http://arxiv.org/abs/2109.01652} {Finetuned language models are zero-shot learners}."
+            "content": "Jason Wei, Maarten Bosma, Vincent~Y. Zhao, Kelvin Guu, Adams~Wei Yu, Brian Lester, Nan Du, Andrew~M. Dai, and Quoc~V. Le. 2022.  \\href {http://arxiv.org/abs/2109.01652} {Finetuned language models are zero-shot learners}."
         },
         {
             "leaf id": 135,
             "key": "doc/bib30",
             "block type": "bibliography",
-            "content": "Yuxiang Wei, Zhe Wang, Jiawei Liu, Yifeng Ding, and Lingming Zhang. 2023. \\newblock Magicoder: Source code is all you need. \\newblock arXiv preprint arXiv:2312.02120."
+            "content": "Yuxiang Wei, Zhe Wang, Jiawei Liu, Yifeng Ding, and Lingming Zhang. 2023.  Magicoder: Source code is all you need.  arXiv preprint arXiv:2312.02120."
         },
         {
             "leaf id": 136,
             "key": "doc/bib31",
             "block type": "bibliography",
-            "content": "Frank. Wilcoxon. 1945. \\newblock \\href {https://api.semanticscholar.org/CorpusID:53662922} {Individual comparisons by ranking methods}. \\newblock Biometrics, 1:196--202."
+            "content": "Frank. Wilcoxon. 1945.  \\href {https://api.semanticscholar.org/CorpusID:53662922} {Individual comparisons by ranking methods}.  Biometrics, 1:196--202."
         },
         {
             "leaf id": 137,
             "key": "doc/bib32",
             "block type": "bibliography",
-            "content": "Mitchell Wortsman, Gabriel Ilharco, Samir~Yitzhak Gadre, Rebecca Roelofs, Raphael Gontijo-Lopes, Ari~S. Morcos, Hongseok Namkoong, Ali Farhadi, Yair Carmon, Simon Kornblith, and Ludwig Schmidt. 2022. \\newblock \\href {http://arxiv.org/abs/2203.05482} {Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time}."
+            "content": "Mitchell Wortsman, Gabriel Ilharco, Samir~Yitzhak Gadre, Rebecca Roelofs, Raphael Gontijo-Lopes, Ari~S. Morcos, Hongseok Namkoong, Ali Farhadi, Yair Carmon, Simon Kornblith, and Ludwig Schmidt. 2022.  \\href {http://arxiv.org/abs/2203.05482} {Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time}."
         },
         {
             "leaf id": 138,
             "key": "doc/bib33",
             "block type": "bibliography",
-            "content": "Haoyuan Wu, Haisheng Zheng, and Bei Yu. 2024. \\newblock \\href {http://arxiv.org/abs/2401.02731} {Parameter-efficient sparsity crafting from dense to mixture-of-experts for instruction tuning on general tasks}."
+            "content": "Haoyuan Wu, Haisheng Zheng, and Bei Yu. 2024.  \\href {http://arxiv.org/abs/2401.02731} {Parameter-efficient sparsity crafting from dense to mixture-of-experts for instruction tuning on general tasks}."
         },
         {
             "leaf id": 139,
             "key": "doc/bib34",
             "block type": "bibliography",
-            "content": "Lemeng Wu, Mengchen Liu, Yinpeng Chen, Dongdong Chen, Xiyang Dai, and Lu~Yuan. 2022. \\newblock \\href {http://arxiv.org/abs/2204.09636} {Residual mixture of experts}."
+            "content": "Lemeng Wu, Mengchen Liu, Yinpeng Chen, Dongdong Chen, Xiyang Dai, and Lu~Yuan. 2022.  \\href {http://arxiv.org/abs/2204.09636} {Residual mixture of experts}."
         },
         {
             "leaf id": 140,
             "key": "doc/bib35",
             "block type": "bibliography",
-            "content": "Can Xu, Qingfeng Sun, Kai Zheng, Xiubo Geng, Pu~Zhao, Jiazhan Feng, Chongyang Tao, and Daxin Jiang. 2023. \\newblock \\href {http://arxiv.org/abs/2304.12244} {Wizardlm: Empowering large language models to follow complex instructions}."
+            "content": "Can Xu, Qingfeng Sun, Kai Zheng, Xiubo Geng, Pu~Zhao, Jiazhan Feng, Chongyang Tao, and Daxin Jiang. 2023.  \\href {http://arxiv.org/abs/2304.12244} {Wizardlm: Empowering large language models to follow complex instructions}."
         },
         {
             "leaf id": 141,
             "key": "doc/bib36",
             "block type": "bibliography",
-            "content": "Fuzhao Xue, Xiaoxin He, Xiaozhe Ren, Yuxuan Lou, and Yang You. 2022. \\newblock \\href {http://arxiv.org/abs/2201.10890} {One student knows all experts know: From sparse to dense}."
+            "content": "Fuzhao Xue, Xiaoxin He, Xiaozhe Ren, Yuxuan Lou, and Yang You. 2022.  \\href {http://arxiv.org/abs/2201.10890} {One student knows all experts know: From sparse to dense}."
         },
         {
             "leaf id": 142,
             "key": "doc/bib37",
             "block type": "bibliography",
-            "content": "Fuzhao Xue, Zian Zheng, Yao Fu, Jinjie Ni, Zangwei Zheng, Wangchunshu Zhou, and Yang You. 2024. \\newblock Openmoe: An early effort on open mixture-of-experts language models. \\newblock arXiv preprint arXiv:2402.01739."
+            "content": "Fuzhao Xue, Zian Zheng, Yao Fu, Jinjie Ni, Zangwei Zheng, Wangchunshu Zhou, and Yang You. 2024.  Openmoe: An early effort on open mixture-of-experts language models.  arXiv preprint arXiv:2402.01739."
         },
         {
             "leaf id": 143,
             "key": "doc/bib38",
             "block type": "bibliography",
-            "content": "Peiyuan Zhang, Guangtao Zeng, Tianduo Wang, and Wei Lu. 2024. \\newblock \\href {http://arxiv.org/abs/2401.02385} {Tinyllama: An open-source small language model}."
+            "content": "Peiyuan Zhang, Guangtao Zeng, Tianduo Wang, and Wei Lu. 2024.  \\href {http://arxiv.org/abs/2401.02385} {Tinyllama: An open-source small language model}."
         },
         {
             "leaf id": 144,
             "key": "doc/bib39",
             "block type": "bibliography",
-            "content": "Shengyu Zhang, Linfeng Dong, Xiaoya Li, Sen Zhang, Xiaofei Sun, Shuhe Wang, Jiwei Li, Runyi Hu, Tianwei Zhang, Fei Wu, and Guoyin Wang. 2023. \\newblock \\href {http://arxiv.org/abs/2308.10792} {Instruction tuning for large language models: A survey}."
+            "content": "Shengyu Zhang, Linfeng Dong, Xiaoya Li, Sen Zhang, Xiaofei Sun, Shuhe Wang, Jiwei Li, Runyi Hu, Tianwei Zhang, Fei Wu, and Guoyin Wang. 2023.  \\href {http://arxiv.org/abs/2308.10792} {Instruction tuning for large language models: A survey}."
         }
     ]
 }

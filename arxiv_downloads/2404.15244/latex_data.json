@@ -194,7 +194,7 @@
                                                     "leaf id": 26,
                                                     "key": "doc/body/sec0/sec6/sec0/sub11/equation1",
                                                     "block type": "equation",
-                                                    "content": "\\label{eq:loss}     \\loss_{total} = \\frac{1}{N}\\sum_\\idx^N\\sum_{\\Glayer}^\\NGlayer \\lossCoef_\\Glayer\\loss_\\Glayer,\\,\\,{where}\\ \\forall \\Glayer<\\Glayer', \\lossCoef_\\Glayer<\\lossCoef_{\\Glayer'}\\,,"
+                                                    "content": "\\label{eq:loss}     \\loss_{total} = \\frac{1}N\\sum_\\idx^N\\sum_{\\Glayer}^\\NGlayer \\lossCoef_\\Glayer\\loss_\\Glayer,\\,\\,{where}\\ \\forall \\Glayer<\\Glayer', \\lossCoef_\\Glayer<\\lossCoef_{\\Glayer'}\\,,"
                                                 },
                                                 {
                                                     "leaf id": 27,

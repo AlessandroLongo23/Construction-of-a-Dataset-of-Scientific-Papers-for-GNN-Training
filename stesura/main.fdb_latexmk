@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1716651224.35536 "main.aux" "main.bbl" "main" 1716651227.11146 0
+["bibtex main"] 1716651224.35536 "main.aux" "main.bbl" "main" 1716655422.5018 0
   "./biblio.bib" 1716330050 9089 6eed56c7c4e2d23d3ddb5f5f6b1876d5 ""
   "C:/Users/longo/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/unsrt.bst" 1291864736 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "main.aux" 1716651225 3610 2824ffe198316c675be1cca65659e06d "pdflatex"
+  "main.aux" 1716655421 3610 2824ffe198316c675be1cca65659e06d "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1716651224.68908 "c:/Programmazione/Python/Tesi/stesura/main.tex" "main.pdf" "main" 1716651227.11225 0
+["pdflatex"] 1716655420.09038 "c:/Programmazione/Python/Tesi/stesura/main.tex" "main.pdf" "main" 1716655422.50251 0
   "C:/Users/longo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1716386803 83768 1dfcc9bfcc372116339a53680b610536 ""
   "C:/Users/longo/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk" 1700856840 28976 0d1149392d031c40b1108c7240fa2581 ""
   "C:/Users/longo/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1700857354 31952 71a2fa879f8911518cfed42af25599f1 ""
@@ -146,23 +146,23 @@
   "C:/Users/longo/AppData/Local/Programs/MiKTeX/tex/latex/trimspaces/trimspaces.sty" 1253169183 1380 971a51b00a14503ddf754cab24c3f209 ""
   "C:/Users/longo/AppData/Local/Programs/MiKTeX/tex/latex/ucs/utf8x.def" 1700127473 8944 e3433baec74c4b7b278c6b6a547ff9ec ""
   "C:/Users/longo/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Programmazione/Python/Tesi/stesura/main.tex" 1716642633 1239 821d8cec8b124a8a8c252457a9a32cb5 ""
+  "c:/Programmazione/Python/Tesi/stesura/main.tex" 1716653767 1239 821d8cec8b124a8a8c252457a9a32cb5 ""
   "capitolo_1.tex" 1716650872 2122 9d3a02ff3b96f46c9b911699d735fc36 ""
-  "capitolo_2.tex" 1716651221 2695 cd3c980bc9a9b72d849a59ee531408a5 ""
+  "capitolo_2.tex" 1716655419 2695 0a34787d0ceb12c2a69b82f34812ac40 ""
   "capitolo_3.tex" 1716630266 75 fac0d6bc78509181b63aff364eb501c0 ""
   "conclusioni.tex" 1716328152 107 d8712bc5fc7d18bbee5361aa3d148529 ""
   "imgs/logo_universita.eps" 1716328152 3010714 6ef1ea91b336d70de59fe1bc494657d1 ""
   "introduction.tex" 1716649168 1404 af7257c237b61185753331f313d33787 ""
-  "main-frn.tex" 1716651225 557 4c68574291256fd5e45b97d7e8702ffc "pdflatex"
-  "main.aux" 1716651225 3610 2824ffe198316c675be1cca65659e06d "pdflatex"
+  "main-frn.tex" 1716655421 556 45bb85448449208064ea5a24dc4e5f9c "pdflatex"
+  "main.aux" 1716655421 3610 2824ffe198316c675be1cca65659e06d "pdflatex"
   "main.bbl" 1716651224 52 0eba253fc001332e731e8aba3f23127b "bibtex main"
-  "main.lof" 1716651225 120 3f6acbd09ad3b26e533c391fd6bd8d37 "pdflatex"
-  "main.lot" 1716651225 120 3f6acbd09ad3b26e533c391fd6bd8d37 "pdflatex"
-  "main.out" 1716651225 4485 ec1058f641902ebe0207c6bec9ad0d18 "pdflatex"
-  "main.tex" 1716642633 1239 821d8cec8b124a8a8c252457a9a32cb5 ""
-  "main.toc" 1716651225 2077 9b22ef1c41e62b64bfd31ca2b202ab04 "pdflatex"
+  "main.lof" 1716655421 120 3f6acbd09ad3b26e533c391fd6bd8d37 "pdflatex"
+  "main.lot" 1716655421 120 3f6acbd09ad3b26e533c391fd6bd8d37 "pdflatex"
+  "main.out" 1716655421 4485 ec1058f641902ebe0207c6bec9ad0d18 "pdflatex"
+  "main.tex" 1716653767 1239 821d8cec8b124a8a8c252457a9a32cb5 ""
+  "main.toc" 1716655421 2077 9b22ef1c41e62b64bfd31ca2b202ab04 "pdflatex"
   "nomencl.tex" 1716651150 498 35cb7c71441fe0823c75798169f43554 ""
-  "preamble.tex" 1716329890 2076 44e43244469b4dd0efbe160897356312 ""
+  "preamble.tex" 1716653741 2074 1bff712808d070443f373a442cce960d ""
   "ringraziamenti.tex" 1716649920 562 60721b73ee3004fe78bf18f662916fbc ""
   "titlepage.tex" 1716330035 892 d6d6ee62f5b49757ec3e543252bb2766 ""
   (generated)

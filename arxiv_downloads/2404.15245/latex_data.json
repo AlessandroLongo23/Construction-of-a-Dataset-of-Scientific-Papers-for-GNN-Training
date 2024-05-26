@@ -44,7 +44,7 @@
                             "leaf id": 5,
                             "key": "doc/body/sec0/par1",
                             "block type": "par",
-                            "content": "The invariant causal prediction (\\textsf{ICP}) framework~\\cite{peters2016causal}, along with its various extensions~\\cite{heinze2018invariant,pfister2019invariant}, employ the invariance principle to identify invariant predictors across environments. Following this framework, various domain adaptation approaches have been developed~\\cite{rojas2018invariant,rothenhausler2021anchor,pfister2021stabilizing}. Specifically, the stabilized regression (\\textsf{SR})~\\cite{pfister2021stabilizing} approach relies on a weaker form of invariance dependent on expectation as opposed to probability. The common assumption for the approaches mentioned is that the assignment of Y does not change over environments. In a causal sense, from which much of the literature in this area stems, this is referred to as an intervention on Y~\\cite{pearl2009causality}. When Y is intervened, the invariance principle, as well as the frameworks mentioned above,  fail. In a series of recent works\\cite{du2023learning,du2023generalized}, an alternative approach called the invariant matching property (\\textsf{IMP}) has been developed to detect linear invariant models in a regression setting even when the assignment of Y is altered over environment."
+                            "content": "The invariant causal prediction (\\textsfICP) framework~\\cite{peters2016causal}, along with its various extensions~\\cite{heinze2018invariant,pfister2019invariant}, employ the invariance principle to identify invariant predictors across environments. Following this framework, various domain adaptation approaches have been developed~\\cite{rojas2018invariant,rothenhausler2021anchor,pfister2021stabilizing}. Specifically, the stabilized regression (\\textsfSR)~\\cite{pfister2021stabilizing} approach relies on a weaker form of invariance dependent on expectation as opposed to probability. The common assumption for the approaches mentioned is that the assignment of Y does not change over environments. In a causal sense, from which much of the literature in this area stems, this is referred to as an intervention on Y~\\cite{pearl2009causality}. When Y is intervened, the invariance principle, as well as the frameworks mentioned above,  fail. In a series of recent works\\cite{du2023learning,du2023generalized}, an alternative approach called the invariant matching property (\\textsfIMP) has been developed to detect linear invariant models in a regression setting even when the assignment of Y is altered over environment."
                         },
                         {
                             "leaf id": 6,
@@ -66,7 +66,7 @@
                                     "leaf id": 8,
                                     "key": "doc/body/sec0/sec3/par0",
                                     "block type": "par",
-                                    "content": "Consider the following setting. For different environmental conditions indexed by the set \u2130, we have a random vector X=(X_1,\u2026, X_m) and a binary random variable Y whose elements form a joint distribution _e := _e^X,Y dependent on e\u2208\u2130. Denote X and Y as X^e and Y^e for a specific e\u2208\u2130, respectively. The supports of X and Y are \ud835\udcb3=\u211d^m and \ud835\udcb4={0,1}, respectively. Let X_S be a random vector containing the elements in X indexed by the set S\u2286{1,\u2026,m}, and let _S be its support. To simplify notation, let X_0^e:=Y^e. For each e\u2208\u2130, we keep the distribution _e general, with the exception that there exists an X^e_i generated according to the form"
+                                    "content": "Consider the following setting. For different environmental conditions indexed by the set , we have a random vector X=(X_1,\u2026, X_m) and a binary random variable Y whose elements form a joint distribution _e := _e^X,Y dependent on e\u2208. Denote X and Y as X^e and Y^e for a specific e\u2208, respectively. The supports of X and Y are =^m and ={0,1}, respectively. Let X_S be a random vector containing the elements in X indexed by the set S\u2286{1,\u2026,m}, and let _S be its support. To simplify notation, let X_0^e:=Y^e. For each e\u2208, we keep the distribution _e general, with the exception that there exists an X^e_i generated according to the form"
                                 },
                                 {
                                     "leaf id": 9,
@@ -90,7 +90,7 @@
                                     "leaf id": 12,
                                     "key": "doc/body/sec0/sec3/par4",
                                     "block type": "par",
-                                    "content": "We assume only a subset of all environments are observed and denote this set by _obs\u2286\u2130. Where _obs = _train\u222a{e^test}, and Y^test:=Y^e^test, our goal is to make predictions on Y^test, given a set of training environments _train.  As such, we aim to find a function \u03d5_e:\ud835\udcb3\ud835\udcb2 such that, the probability of Y given \u03d5_e(X) does not vary over any environment. Specifically, for all w\u2208\ud835\udcb2 and e,h\u2208_obs,"
+                                    "content": "We assume only a subset of all environments are observed and denote this set by _obs\u2286. Where _obs = _train\u222a{e^test}, and Y^test:=Y^e^test, our goal is to make predictions on Y^test, given a set of training environments _train.  As such, we aim to find a function \u03d5_e: such that, the probability of Y given \u03d5_e(X) does not vary over any environment. Specifically, for all w\u2208 and e,h\u2208_obs,"
                                 },
                                 {
                                     "leaf id": 13,
@@ -102,7 +102,7 @@
                                     "leaf id": 14,
                                     "key": "doc/body/sec0/sec3/par6",
                                     "block type": "par",
-                                    "content": "As Y is binary, it is equivalent to write~\\eqref{equ::invar} in the form: __e[Y|\u03d5_e(X)=w] = __h[Y|\u03d5_h(X)=w],  for all  w\u2208\ud835\udcb2 and e,h\u2208_obs. It is well-known that~\\eqref{equ::invar} is satisfied if \u03d5_e(X) = X_S_Y and for S_Y\u2286{1,\u2026,m},"
+                                    "content": "As Y is binary, it is equivalent to write~\\eqref{equ::invar} in the form: __e[Y|\u03d5_e(X)=w] = __h[Y|\u03d5_h(X)=w],  for all  w\u2208 and e,h\u2208_obs. It is well-known that~\\eqref{equ::invar} is satisfied if \u03d5_e(X) = X_S_Y and for S_Y\u2286{1,\u2026,m},"
                                 },
                                 {
                                     "leaf id": 15,
@@ -130,7 +130,7 @@
                                             "leaf id": 18,
                                             "key": "doc/body/sec0/sec3/sec9/par0",
                                             "block type": "par",
-                                            "content": "Consider the following setting with X^e = (X^e_1,X^e_2,X^e_3).  Let X^e_1 and X^e_2 be independent and follow X^e_1 \u223c\ud835\udca9(\u03bc_1^e,\u03c3^2_1) and X^e_2 \u223c\ud835\udca9(\u03bc_2^e,\u03c3^2_2). The variable Y^e is generated such that Y^e|X^e_1,X^e_2 forms a probit model. Specifically,"
+                                            "content": "Consider the following setting with X^e = (X^e_1,X^e_2,X^e_3).  Let X^e_1 and X^e_2 be independent and follow X^e_1 \u223c(\u03bc_1^e,\u03c3^2_1) and X^e_2 \u223c(\u03bc_2^e,\u03c3^2_2). The variable Y^e is generated such that Y^e|X^e_1,X^e_2 forms a probit model. Specifically,"
                                         },
                                         {
                                             "key": "doc/body/sec0/sec3/sec9/equation*1",
@@ -166,7 +166,7 @@
                                             "leaf id": 22,
                                             "key": "doc/body/sec0/sec3/sec9/par4",
                                             "block type": "par",
-                                            "content": "The noise variables \u03f5_Y and \u03f5_3 are \\iid \ud835\udca9(0, \u03c3^2). Suppose we wish to predict Y^e given only X^e_1.  Predicting Y^e for a particular e\u2208\u2130 becomes difficult as \u03b2_1^e and \u03bc^e_2 vary with environment. Specifically,"
+                                            "content": "The noise variables \u03f5_Y and \u03f5_3 are \\iid (0, \u03c3^2). Suppose we wish to predict Y^e given only X^e_1.  Predicting Y^e for a particular e\u2208 becomes difficult as \u03b2_1^e and \u03bc^e_2 vary with environment. Specifically,"
                                         },
                                         {
                                             "leaf id": 23,
@@ -226,19 +226,19 @@
                                             "leaf id": 32,
                                             "key": "doc/body/sec0/sec3/sec9/equation14",
                                             "block type": "equation",
-                                            "content": "\\hat{Y}^{test}_i =: \\frac{\\E_{\\Pc_{test}}[X_i|X_1]-\\E_{\\Pc_e}[X_i|X_1,Y=0]}{\\E_{\\Pc_e}[X_i|X_1,Y=1]-\\E_{\\Pc_e}[X_i|X_1,Y=0]},"
+                                            "content": "\\hatY^{test}_i =: \\frac{\\E_{\\Pc_{test}}[X_i|X_1]-\\E_{\\Pc_e}[X_i|X_1,Y=0]}{\\E_{\\Pc_e}[X_i|X_1,Y=1]-\\E_{\\Pc_e}[X_i|X_1,Y=0]},"
                                         },
                                         {
                                             "leaf id": 33,
                                             "key": "doc/body/sec0/sec3/sec9/par15",
                                             "block type": "par",
-                                            "content": "where e\u2208_train. As __e[X_3|X_1,Y] is invariant and __e[X_2|X_1,Y] is not invariant as discussed above, \u0176^test_3 will provide a good estimate of Y^test, while \u0176^test_2 will not."
+                                            "content": "where e\u2208_train. As __e[X_3|X_1,Y] is invariant and __e[X_2|X_1,Y] is not invariant as discussed above, ^test_3 will provide a good estimate of Y^test, while ^test_2 will not."
                                         },
                                         {
                                             "leaf id": 34,
                                             "key": "doc/body/sec0/sec3/sec9/par16",
                                             "block type": "par",
-                                            "content": "In Fig.~\\ref{fig:example} we compare  \u0176^test_3 and  \u0176^test_2 by simulating (x^test,y^test) pairs for a set of specific parameters. The estimate \u0176^test_2 does not fit the data as many x_1^test corresponding to y^test=0 will be incorrectly classified to one. However, this is not the case when \u0176^test_3 is used, and the fit is greatly improved (Fig.~\\ref{fig:example}). The poor fit on \u0176^test_2 is a result of __e[X_2|X_1,Y] varying across environments."
+                                            "content": "In Fig.~\\ref{fig:example} we compare  ^test_3 and  ^test_2 by simulating (x^test,y^test) pairs for a set of specific parameters. The estimate ^test_2 does not fit the data as many x_1^test corresponding to y^test=0 will be incorrectly classified to one. However, this is not the case when ^test_3 is used, and the fit is greatly improved (Fig.~\\ref{fig:example}). The poor fit on ^test_2 is a result of __e[X_2|X_1,Y] varying across environments."
                                         },
                                         {
                                             "key": "doc/body/sec0/sec3/sec9/center17",
@@ -366,7 +366,7 @@
                                                             "leaf id": 49,
                                                             "key": "doc/body/sec0/sec3/sec9/sec18/sub8/par0",
                                                             "block type": "par",
-                                                            "content": "While the sufficient conditions in Theorem~\\ref{the:1} may seem abstract, we now show that, in fact, they have a specific meaning in a causal sense. To do so, we introduce the structural causal model (SCM)~\\cite{pearl2009causality}. Here, X^e and Y^e are part of an SCM \ud835\udcae^e that varies over environment such that"
+                                                            "content": "While the sufficient conditions in Theorem~\\ref{the:1} may seem abstract, we now show that, in fact, they have a specific meaning in a causal sense. To do so, we introduce the structural causal model (SCM)~\\cite{pearl2009causality}. Here, X^e and Y^e are part of an SCM ^e that varies over environment such that"
                                                         },
                                                         {
                                                             "key": "doc/body/sec0/sec3/sec9/sec18/sub8/equation1",
@@ -390,13 +390,13 @@
                                                             "leaf id": 52,
                                                             "key": "doc/body/sec0/sec3/sec9/sec18/sub8/par3",
                                                             "block type": "par",
-                                                            "content": "As in Section~\\ref{sec::formulation}, Y^e is binary. Additionally, at least one structural assignment (i.e., f_i^e(\u00b7)) in \ud835\udcae^e is an additive noise function that does not vary over environment. Specifically, for some i\u2208{0,\u2026,m},  let f_i^e(X_PA(X_i^e)^e,\u03f5^e_i) = g(X_PA(X_i^e)^e) + \u03f5^e_i, where \u03f5^e_i has zero mean. An intervention on a variable from {X_1^e,\u2026,X_m^e,Y^e} occurs if the structural assignment changes for some e\u2208\u2130. Relating the SCM to the formation in Section~\\ref{sec::formulation} gives insight into the types of interventions that may occur.  While many methods~\\cite{peters2016causal,pfister2021stabilizing,du2023learning} make various assumptions on the types of interventions (e.g., shifts in the mean or variance), the setting in~\\eqref{equ:SCM} allows for very general interventions, including general interventions on Y^e, which many other approaches do not allow."
+                                                            "content": "As in Section~\\ref{sec::formulation}, Y^e is binary. Additionally, at least one structural assignment (i.e., f_i^e(\u00b7)) in ^e is an additive noise function that does not vary over environment. Specifically, for some i\u2208{0,\u2026,m},  let f_i^e(X_PA(X_i^e)^e,\u03f5^e_i) = g(X_PA(X_i^e)^e) + \u03f5^e_i, where \u03f5^e_i has zero mean. An intervention on a variable from {X_1^e,\u2026,X_m^e,Y^e} occurs if the structural assignment changes for some e\u2208. Relating the SCM to the formation in Section~\\ref{sec::formulation} gives insight into the types of interventions that may occur.  While many methods~\\cite{peters2016causal,pfister2021stabilizing,du2023learning} make various assumptions on the types of interventions (e.g., shifts in the mean or variance), the setting in~\\eqref{equ:SCM} allows for very general interventions, including general interventions on Y^e, which many other approaches do not allow."
                                                         },
                                                         {
                                                             "leaf id": 53,
                                                             "key": "doc/body/sec0/sec3/sec9/sec18/sub8/par4",
                                                             "block type": "par",
-                                                            "content": "Given  \ud835\udcae^e for all e\u2208_obs, we can express the conditions of Proposition~\\ref{prop::suff} in the language of SCMs, detailed below."
+                                                            "content": "Given  ^e for all e\u2208_obs, we can express the conditions of Proposition~\\ref{prop::suff} in the language of SCMs, detailed below."
                                                         },
                                                         {
                                                             "key": "doc/body/sec0/sec3/sec9/sec18/sub8/corollary5",
@@ -406,7 +406,7 @@
                                                                     "leaf id": 54,
                                                                     "key": "doc/body/sec0/sec3/sec9/sec18/sub8/corollary5/par0",
                                                                     "block type": "par",
-                                                                    "content": "Let k \u2208{1,\u2026,m} and S = R \u222a Q where R,Q \u2286{1,\u2026,m}\u2216 k and R \u2229 Q = \u2205. For the SCM \ud835\udcae^e, the pair (k,S) satisfies the bIMP for all e\u2208_obs if the following cases hold."
+                                                                    "content": "Let k \u2208{1,\u2026,m} and S = R \u222a Q where R,Q \u2286{1,\u2026,m}\u2216 k and R \u2229 Q = \u2205. For the SCM ^e, the pair (k,S) satisfies the bIMP for all e\u2208_obs if the following cases hold."
                                                                 },
                                                                 {
                                                                     "leaf id": 55,
@@ -442,7 +442,7 @@
                                                                     "leaf id": 59,
                                                                     "key": "doc/body/sec0/sec3/sec9/sec18/sub8/sec8/par0",
                                                                     "block type": "par",
-                                                                    "content": "For each e\u2208_train, we have n^e samples, represented as a matrix X^e\u2208\u211d^n_e\u00d7 m, and a vector Y^e\u2208{0,1}^n_e (see~\\cite{goddard2023error} for a discussion on the impact of different environments). Additionally, we have n_test samples in the test environment, and we denote X^test\u2208\u211d^n_test\u00d7 m and Y^test as the predictor matrix and target vector for the environment e^test, respectively. We denote X as the pooled predictor matrix over all e\u2208_train, and X_Y=y as the matrix comprising the rows of X in which Y=y, for y\u2208{0,1}. Let X^-e be the matrix of samples indexed only by those samples not in e\u2208_train."
+                                                                    "content": "For each e\u2208_train, we have n^e samples, represented as a matrix ^e\u2208^n_e\u00d7 m, and a vector ^e\u2208{0,1}^n_e (see~\\cite{goddard2023error} for a discussion on the impact of different environments). Additionally, we have n_test samples in the test environment, and we denote ^test\u2208^n_test\u00d7 m and ^test as the predictor matrix and target vector for the environment e^test, respectively. We denote  as the pooled predictor matrix over all e\u2208_train, and _Y=y as the matrix comprising the rows of  in which Y=y, for y\u2208{0,1}. Let ^-e be the matrix of samples indexed only by those samples not in e\u2208_train."
                                                                 },
                                                                 {
                                                                     "leaf id": 60,
@@ -454,7 +454,7 @@
                                                                     "leaf id": 61,
                                                                     "key": "doc/body/sec0/sec3/sec9/sec18/sub8/sec8/par2",
                                                                     "block type": "par",
-                                                                    "content": "Thus, our goal in a practical setting is to identify (k,S) pairs that may satisfy the bIMP overall e\u2208_train. Simply put, we test whether __e[X_k|X_S,Y] is invariant. To do so, we consider a special form of the model in~\\eqref{equ::Xi_def} where X_k^e = g(X^e_S,Y^e) + \u03f5^e with \u03f5^e\u223c\ud835\udca9(0, (\u03c3^e)^2) is assigned a different nonlinear additive noise function for each value of Y^e. Specifically,"
+                                                                    "content": "Thus, our goal in a practical setting is to identify (k,S) pairs that may satisfy the bIMP overall e\u2208_train. Simply put, we test whether __e[X_k|X_S,Y] is invariant. To do so, we consider a special form of the model in~\\eqref{equ::Xi_def} where X_k^e = g(X^e_S,Y^e) + \u03f5^e with \u03f5^e\u223c(0, (\u03c3^e)^2) is assigned a different nonlinear additive noise function for each value of Y^e. Specifically,"
                                                                 },
                                                                 {
                                                                     "key": "doc/body/sec0/sec3/sec9/sec18/sub8/sec8/equation3",
@@ -482,7 +482,7 @@
                                                                             "leaf id": 64,
                                                                             "key": "doc/body/sec0/sec3/sec9/sec18/sub8/sec8/algorithm5/algorithmic0",
                                                                             "block type": "algorithmic",
-                                                                            "content": "\\State Regress X_k,Y=i on X_S,Y=i to get \u011d_i, for i\u2208{0,1}  \\For{each e\u2208_train and i\u2208{0,1}} \\State R^e_i = X^e_k,Y=i - \u011d_i(X^e_S,Y=i) \\State R^-e_i = X^-e_k,Y=i - \u011d_i(X^-e_S,Y=i) \\State pval_i^e = t-test(R^e_i,R^-e_i) \\EndFor \\State Combine p-values in pval_1^e and pval_0^e via Bonferroni correction  \\If{min_e\u2208_trainpval_1^e > \u03b1  and  min_e\u2208_trainpval_2^e > \u03b1}  \\State return accepted \\Else  return rejected \\EndIf"
+                                                                            "content": "\\State Regress _k,Y=i on _S,Y=i to get \u011d_i, for i\u2208{0,1}  \\For{each e\u2208_train and i\u2208{0,1}} \\State ^e_i = ^e_k,Y=i - \u011d_i(^e_S,Y=i) \\State ^-e_i = ^-e_k,Y=i - \u011d_i(^-e_S,Y=i) \\State pval_i^e = t-test(^e_i,^-e_i) \\EndFor \\State Combine p-values in pval_1^e and pval_0^e via Bonferroni correction  \\If{min_e\u2208_trainpval_1^e > \u03b1  and  min_e\u2208_trainpval_2^e > \u03b1}  \\State return accepted \\Else  return rejected \\EndIf"
                                                                         }
                                                                     ]
                                                                 },
@@ -506,7 +506,7 @@
                                                                             "leaf id": 67,
                                                                             "key": "doc/body/sec0/sec3/sec9/sec18/sub8/sec8/algorithm8/algorithmic0",
                                                                             "block type": "algorithmic",
-                                                                            "content": "\\State   Identify the set of all invariant pairs _inv using Algorithm~\\ref{alg:var_test} \\State  Filter pairs from _inv based on prediction score   \\For{each (k,S) in _inv} \\State Estimate __e[X_k|X_S,Y] by regressing X_k on (X_S,Y) \\State Estimate __test[X_k|X_S] by regressing X_k^test on X^test_S  \\State Using~\\eqref{equ::EjgXs}, compute \u0176_k,S^test for the pair (k,S) \\EndFor \\State \u0176^test = 1/|_inv|\u2211_(k,S)\u2208_inv\u0176_k,S^test"
+                                                                            "content": "\\State   Identify the set of all invariant pairs _inv using Algorithm~\\ref{alg:var_test} \\State  Filter pairs from _inv based on prediction score   \\For{each (k,S) in _inv} \\State Estimate __e[X_k|X_S,Y] by regressing _k on (_S,) \\State Estimate __test[X_k|X_S] by regressing _k^test on ^test_S  \\State Using~\\eqref{equ::EjgXs}, compute _k,S^test for the pair (k,S) \\EndFor \\State ^test = 1/|_inv|\u2211_(k,S)\u2208_inv_k,S^test"
                                                                         }
                                                                     ]
                                                                 },
@@ -536,7 +536,7 @@
                                                                             "leaf id": 71,
                                                                             "key": "doc/body/sec0/sec3/sec9/sec18/sub8/sec8/sec11/par0",
                                                                             "block type": "par",
-                                                                            "content": "We provide one synthetic and two real datasets to test the effectiveness of \\textsf{bIMP} and compare with the following two baselines: (1) a binary adaptation of Method~II from~\\cite{peters2016causal} (\\textsf{ICP}), and (2) logistic regression (\\textsf{LR}). While we do not expect \\textsf{LR} to perform well on unknown environments, it serves as a natural baseline. While \\textsf{ICP} can handle the binary response setting via logistic regression, \\textsf{SR} is specific to regression settings and thus not reported. In all experiments, we set \u03b1 = 0.1."
+                                                                            "content": "We provide one synthetic and two real datasets to test the effectiveness of \\textsf{bIMP} and compare with the following two baselines: (1) a binary adaptation of Method~II from~\\cite{peters2016causal} (\\textsfICP), and (2) logistic regression (\\textsfLR). While we do not expect \\textsfLR to perform well on unknown environments, it serves as a natural baseline. While \\textsfICP can handle the binary response setting via logistic regression, \\textsfSR is specific to regression settings and thus not reported. In all experiments, we set \u03b1 = 0.1."
                                                                         },
                                                                         {
                                                                             "key": "doc/body/sec0/sec3/sec9/sec18/sub8/sec8/sec11/center1",
@@ -566,13 +566,13 @@
                                                                             "leaf id": 74,
                                                                             "key": "doc/body/sec0/sec3/sec9/sec18/sub8/sec8/sec11/par3",
                                                                             "block type": "par",
-                                                                            "content": "Simulation results on both accuracy and mean squared error (MSE) indicate that \\textsf{bIMP} can generalize to the test environment while \\textsf{LR} and \\textsf{ICP} are not (Fig~\\ref{fig:sim}). In addition, \\textsf{bIMP} (linear) slightly outperforms \\textsf{bIMP} (GAM). While we expect \\textsf{LR} to behave poorly, \\textsf{ICP} also performs poorly as all parents of Y are intervened in every simulation."
+                                                                            "content": "Simulation results on both accuracy and mean squared error (MSE) indicate that \\textsf{bIMP} can generalize to the test environment while \\textsfLR and \\textsfICP are not (Fig~\\ref{fig:sim}). In addition, \\textsf{bIMP} (linear) slightly outperforms \\textsf{bIMP} (GAM). While we expect \\textsfLR to behave poorly, \\textsfICP also performs poorly as all parents of Y are intervened in every simulation."
                                                                         },
                                                                         {
                                                                             "leaf id": 75,
                                                                             "key": "doc/body/sec0/sec3/sec9/sec18/sub8/sec8/sec11/center4",
                                                                             "block type": "center",
-                                                                            "content": "\\begin{table}[h!]  {\\small \\begin{tabular}{ |c||c|c|c|c|  } \\hline    & \\textsf{bIMP} (linear) & \\textsf{bIMP} (GAM)  & \\textsf{LR}\\\\   \\hline  \\hline  Environment & \\multicolumn{3}{|c|}{Accuracy} \\\\  \\hline  born in US & 85.0 & 84.9 & 78.2 \\\\  overtime   & 68.4 & 59.1 & 77.0 \\\\  caucasian  & 85.0 & 85.2 & 78.1 \\\\  \\hline               \\end{tabular} }  census: performance and training environments.\\label{tbl::census}"
+                                                                            "content": "\\begin{table}[h!]  {\\small \\begin{tabular}{ |c||c|c|c|c|  } \\hline    & \\textsf{bIMP} (linear) & \\textsf{bIMP} (GAM)  & \\textsfLR\\\\   \\hline  \\hline  Environment & \\multicolumn{3}{|c|}{Accuracy} \\\\  \\hline  born in US & 85.0 & 84.9 & 78.2 \\\\  overtime   & 68.4 & 59.1 & 77.0 \\\\  caucasian  & 85.0 & 85.2 & 78.1 \\\\  \\hline               \\end{tabular} }  census: performance and training environments.\\label{tbl::census}"
                                                                         },
                                                                         {
                                                                             "leaf id": 76,
@@ -702,13 +702,13 @@
             "leaf id": 94,
             "key": "doc/bib17",
             "block type": "bibliography",
-            "content": "B.~Becker and R.~Kohavi, ``{Adult},'' UCI Machine Learning Repository, 1996, {DOI}: https://doi.org/10.24432/C5XW20."
+            "content": "B.~Becker and R.~Kohavi, ``{Adult},'' UCI Machine Learning Repository, 1996, DOI: https://doi.org/10.24432/C5XW20."
         },
         {
             "leaf id": 95,
             "key": "doc/bib18",
             "block type": "bibliography",
-            "content": "``{Mushroom},'' UCI Machine Learning Repository, 1987, {DOI}: https://doi.org/10.24432/C5959T."
+            "content": "``{Mushroom},'' UCI Machine Learning Repository, 1987, DOI: https://doi.org/10.24432/C5959T."
         }
     ]
 }
