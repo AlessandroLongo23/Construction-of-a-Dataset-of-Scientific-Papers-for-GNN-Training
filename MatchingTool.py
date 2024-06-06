@@ -167,11 +167,6 @@ class MatchingTool:
                     else:
                         pt[i][j] = min(pt[i][j - 1], pt[i - 1][j], pt[i - 1][j - 1]) + 1
 
-        # r = 'improves performance'
-        # s = '2:1'
-        # if (r in a2 and r in b) or (s in a2 and s in b):
-        #     print(f'a2: {a2}\n\nb: {b}\n\nscore: {dp[m][n] / m}\n\n\n\n')
-
         if dp[m][n] / m == 0:
             return [0, None, None] 
 
@@ -190,6 +185,8 @@ class MatchingTool:
                 i -= 1
                 j -= 1
                 index -= len(words_b[j])
+                if index <= 0:
+                    break
                 if b[index - 1] == ' ':
                     index = index - 1
             elif dp[i - 1][j] > dp[i][j - 1]:
@@ -197,6 +194,8 @@ class MatchingTool:
             else:
                 j -= 1
                 index -= len(words_b[j])
+                if index <= 0:
+                    break
                 if b[index - 1] == ' ':
                     index -= 1
 
@@ -280,7 +279,7 @@ class MatchingTool:
 
         best_matches = []
         for tex_line in search_tex_lines:
-            equation = any(block_type in tex_line.block_type for block_type in equation_block_types)
+            equation = pdf_line.equation_hit or any(block_type in tex_line.block_type for block_type in equation_block_types)
             match = self.longest_common_subsequence(pdf_line.prefix, pdf_line.content, pdf_line.suffix, tex_line.leftover, equation)
             if match[1] is None or match[2] is None:
                 continue
@@ -331,7 +330,7 @@ class MatchingTool:
     def best_guess_match(self, tex_lines, pdf_lines, threshold, difference, leave_equations):
         num_nearest_lines = 4
         num_nearest_blocks = 2
-        for pdf_line in tqdm(pdf_lines, desc=f"- best guess matching with {threshold * 100}% threshold: ", leave=False):
+        for pdf_line in tqdm(pdf_lines, desc=f"   - best guess matching with {threshold * 100}% threshold: ", leave=False):
             if pdf_line.assigned:
                 continue
 
@@ -413,7 +412,7 @@ class MatchingTool:
                 pdf_lines.remove(cc[i])
 
     def leftover_match(self, tex_lines, pdf_lines):
-        for pdf_line in tqdm(pdf_lines, desc=f"- leftover matching: ", leave=False):
+        for pdf_line in tqdm(pdf_lines, desc=f"   - leftover matching: ", leave=False):
             if not pdf_line.assigned:
                 indexes = [sibling.matches[0][0] for sibling in pdf_line.parent.children if sibling.assigned and sibling is not pdf_line]
                 if len(indexes) == 0:
