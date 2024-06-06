@@ -171,6 +171,7 @@ class LatexData:
             '\\noindent',
             '\\appendix',
             '\\item',
+            '\\medskip'
         ]
         for pattern in patterns:
             self.tex_content = self.tex_content.replace(pattern, '')
@@ -179,15 +180,21 @@ class LatexData:
             'textbf',
             'texttt',
             'textit',
+        ]
+        for pattern in patterns:
+            self.tex_content = re.sub(r'\\' + pattern + r'\{(.*?)\}', lambda match: match.group(1), self.tex_content)
+        
+        patterns = [
             'cite',
             'citet',
         ]
         for pattern in patterns:
-            self.tex_content = re.sub(r'\\' + pattern + r'\{(.*?)\}', lambda match: match.group(1), self.tex_content)
+            self.tex_content = re.sub(r'\\' + pattern + r'\{(.*?)\}', '', self.tex_content)
 
         keywords = [
-            'label',
+            # 'label',
             'autoref',
+            'cref',
         ]
         for keyword in keywords:
             pattern = r'\\' + keyword + r'\{.*?\}'
@@ -287,18 +294,21 @@ class LatexData:
             if block_title:
                 self.content_tree.insert(this_key, f"{this_key}/tit", 'title', block_title)
 
-            if leaf is False:
+            equation_block_types = [
+                'algorithmic',
+                'equation',
+                'align',
+                'gather',
+                'cases',
+                'frm',
+            ]
+
+            if leaf is False and not any(block_type in parent_key.split('/')[-1] for block_type in equation_block_types):
                 self.extract_children(this_key, block_content)
             tex_content = tex_content.replace(block_container, '')
             block_index += 1
 
     def extract_next_child(self, tex_content):
-        section_pattern = r'\\section\{([^{}]+)(?:\\label\{([^{}]+)\})?\}|\\section\{(?:[^{}]*\{[^{}]*\}[^{}]*)*\}'
-        subsection_pattern = r'\\subsection\{([^{}]+)(?:\\label\{([^{}]+)\})?\}|\\subsection\{(?:[^{}]*\{[^{}]*\}[^{}]*)*\}'
-        subsubsection_pattern = r'\\subsubsection\{([^{}]+)(?:\\label\{([^{}]+)\})?\}|\\subsubsection\{(?:[^{}]*\{[^{}]*\}[^{}]*)*\}'
-        paragraph_pattern = r'\\paragraph\{([^{}]+)(?:\\label\{([^{}]+)\})?\}|\\paragraph\{(?:[^{}]*\{[^{}]*\}[^{}]*)*\}'
-        subparagraph_pattern = r'\\subparagraph\{([^{}]+)(?:\\label\{([^{}]+)\})?\}|\\subparagraph\{(?:[^{}]*\{[^{}]*\}[^{}]*)*\}'
-        text_line_pattern = re.compile(r'^(?![\s\$\\]).*?(?=(?:\n\s*\n|\n\\|\Z))', re.DOTALL | re.MULTILINE)
         begend_pattern = re.compile(r'\\begin\{([^{}]+)\}', re.DOTALL | re.MULTILINE)
         caption_pattern = r'\\caption\{'
         formula_pattern = re.compile(r'\$\$.*?\$\$', re.DOTALL | re.MULTILINE)
@@ -327,14 +337,30 @@ class LatexData:
 
             return all_matches
 
-        def get_element_content(tex_content, start_index, pattern, element):
-            block_end_index = tex_content.find(rf"\{element}{{", start_index + 1)
-            block_end_index = block_end_index if block_end_index != -1 else len(tex_content)
+        def get_element_content(tex_content, block_start_index, element):
+            pattern = rf"\\{element}\{{"
+            block_end_index = tex_content.find(pattern, block_start_index + 1)
+            if block_end_index == -1:
+                block_end_index = len(tex_content)
                     
-            container = tex_content[start_index:block_end_index]
-            content = re.sub(pattern, '', container, count=1).strip()
-            return container, content
+            container = tex_content[block_start_index:block_end_index]
+            match = re.search(pattern, container)
 
+            title_start_index = match.end()
+            title_end_index = None
+            i = title_start_index
+            bracket_count = 1
+            while title_end_index is None:
+                if container[i] == '{':
+                    bracket_count += 1
+                elif container[i] == '}':
+                    bracket_count -= 1
+                    if bracket_count == 0:
+                        title_end_index = i
+                i += 1
+
+            return container, container[title_start_index:title_end_index], container[title_end_index + 1:]
+        
         elements_with_indexes = find_start_indexes(tex_content)
         if not elements_with_indexes:
             return [None] * 5
@@ -343,29 +369,23 @@ class LatexData:
 
         block_start_index, corresponding_element = min(elements_with_indexes)
         if corresponding_element == 'section':
-            container, content = get_element_content(tex_content, block_start_index, section_pattern, 'section')
-            block_title = re.findall(section_pattern, container)[0][0]
+            container, block_title, content = get_element_content(tex_content, block_start_index, corresponding_element)
             return 'sec', block_title, container, content, leaf
 
         elif corresponding_element == 'subsection':
-            container, content = get_element_content(tex_content, block_start_index, subsection_pattern, 'subsection')
-            block_title = re.findall(subsection_pattern, container)
-            if block_title:
-                return 'sub', block_title[0][0], container, content, leaf
+            container, block_title, content = get_element_content(tex_content, block_start_index, corresponding_element)
+            return 'sub', block_title, container, content, leaf
 
         elif corresponding_element == 'subsubsection':
-            container, content = get_element_content(tex_content, block_start_index, subsubsection_pattern, 'subsubsection')
-            block_title = re.findall(subsubsection_pattern, container)[0][0]
+            container, block_title, content = get_element_content(tex_content, block_start_index, corresponding_element)
             return 'ssb', block_title, container, content, leaf
         
         elif corresponding_element == 'paragraph':
-            container, content = get_element_content(tex_content, block_start_index, paragraph_pattern, 'paragraph')
-            block_title = re.findall(paragraph_pattern, container)[0][0]
+            container, block_title, content = get_element_content(tex_content, block_start_index, corresponding_element)
             return 'par', block_title, container, content, leaf
         
         elif corresponding_element == 'subparagraph':
-            container, content = get_element_content(tex_content, block_start_index, subparagraph_pattern, 'subparagraph')
-            block_title = re.findall(subparagraph_pattern, container)[0][0]
+            container, block_title, content = get_element_content(tex_content, block_start_index, corresponding_element)
             return 'sbp', block_title, container, content, leaf
         
         elif corresponding_element == "formula":

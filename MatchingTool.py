@@ -4,7 +4,7 @@ import fitz
 import os
 import re
 from tqdm import tqdm
-
+from collections import Counter
 
 # class ConnectedComponent:
 #     def __init__(self, nodes=[]):
@@ -65,8 +65,7 @@ class MatchingTool:
         self.pdf_data = pdf_data
         self.latex_data = latex_data
         self.folder_path = folder_path
-        self.offset = 5
-        self.threshold = 0.4
+        self.equation_dist_threshold = 15
 
         self.perform_matching()
 
@@ -78,21 +77,26 @@ class MatchingTool:
         self.mark_pdf('pdf_processing')
 
         steps = [
-            ['accurate', 1.00, 0.33, True],
-            ['leftover', 0.66, 0.33, True],
-            ['leftover', 0.33, 0.33, True],
-            ['leftover', 0.10, 0.33, True],
+            ['accurate', 0.90, 0.33, True],
+            ['best_guess', 0.66, 0.33, True],
+            ['best_guess', 0.33, 0.33, True],
+            ['best_guess', 0.10, 0.33, True],
             ['equation'],
-            ['leftover', 0.05, 0.33, False],
+            ['accurate', 0.90, 0.33, False],
+            ['best_guess', 0.66, 0.33, False],
+            ['best_guess', 0.33, 0.33, False],
+            ['leftover'],
         ]
 
         for step in tqdm(steps, desc=f'- matching: '):
             if step[0] == 'accurate':
                 self.accurate_match(tex_lines, pdf_lines, step[1], step[2], step[3])
-            elif step[0] == 'leftover':
-                self.leftover_match(tex_lines, pdf_lines, step[1], step[2], step[3])
+            elif step[0] == 'best_guess':
+                self.best_guess_match(tex_lines, pdf_lines, step[1], step[2], step[3])
             elif step[0] == 'equation':
                 self.aggregate_equations(pdf_lines)
+            elif step[0] == 'leftover':
+                self.leftover_match(tex_lines, pdf_lines)
 
         # self.calculate_remainings(accurate_match_pdf_path)
 
@@ -163,6 +167,11 @@ class MatchingTool:
                     else:
                         pt[i][j] = min(pt[i][j - 1], pt[i - 1][j], pt[i - 1][j - 1]) + 1
 
+        # r = 'improves performance'
+        # s = '2:1'
+        # if (r in a2 and r in b) or (s in a2 and s in b):
+        #     print(f'a2: {a2}\n\nb: {b}\n\nscore: {dp[m][n] / m}\n\n\n\n')
+
         if dp[m][n] / m == 0:
             return [0, None, None] 
 
@@ -193,7 +202,7 @@ class MatchingTool:
 
         if start_index is None or end_index is None:
             return [0, None, None]
-        
+
         if abs(end_index - start_index - len(a2)) > 16:
             return [0, None, None]
 
@@ -223,21 +232,42 @@ class MatchingTool:
 
     #     return 1 if first else mult
 
-    def find_best_matches(self, pdf_line, tex_lines, threshold, difference, leave_equations):
+    def find_best_matches(self, pdf_line, tex_lines, max_threshold, difference, leave_equations):
         if leave_equations and pdf_line.equation_hit:
             return []
         
         search_tex_lines = [tex_lines[match[0]] for match in pdf_line.matches]
 
         if len(search_tex_lines) == 0:
-            search_tex_lines = tex_lines
-            parent_container = pdf_line.parent
-            if parent_container is not None:
-                for sibling in parent_container.children:
-                    if sibling.assigned and sibling is not pdf_line:
-                        center_index = sibling.matches[0][0]
-                        search_tex_lines = tex_lines[max(0, center_index - self.offset):min(center_index + self.offset, len(tex_lines))]
-                        break
+            nearest_lines = []
+            offset = 3
+            for sibling in pdf_line.parent.children:
+                if sibling.assigned and sibling is not pdf_line:
+                    nearest_lines.append((self.distance(pdf_line, sibling), sibling))
+            
+            if len(nearest_lines) == 0:
+                offset = 20
+                nearest_blocks = []
+                for block in self.pdf_data.elements['containers']:
+                    if pdf_line.page_index == block.page_index and block != pdf_line.parent:
+                        nearest_blocks.append((self.distance(pdf_line.parent, block), block))
+
+                nearest_blocks.sort(key=lambda x: x[0])
+                nearest_blocks = [block[1] for block in nearest_blocks[:2]]
+
+                for nearest_block in nearest_blocks:
+                    for cousin in nearest_block.children:
+                        if cousin.assigned:
+                            nearest_lines.append((self.distance(pdf_line, cousin), cousin))
+
+            if len(nearest_lines) == 0:
+                search_tex_lines = tex_lines
+            else:
+                nearest_lines.sort(key=lambda x: x[0])
+                nearest_lines = [line[1] for line in nearest_lines[:4]]
+
+                center_index = round(sum(nearest_line.matches[0][0] for nearest_line in nearest_lines) / len(nearest_lines))
+                search_tex_lines = tex_lines[max(0, center_index - offset):min(center_index + offset, len(tex_lines))]
 
         equation_block_types = [
             'algorithmic'
@@ -252,38 +282,41 @@ class MatchingTool:
         for tex_line in search_tex_lines:
             equation = any(block_type in tex_line.block_type for block_type in equation_block_types)
             match = self.longest_common_subsequence(pdf_line.prefix, pdf_line.content, pdf_line.suffix, tex_line.leftover, equation)
-            if match[0] >= threshold and match[1] is not None and match[2] is not None:
-                best_matches.append([tex_line.id, match[0], match[1], match[2]]) 
+            if match[1] is None or match[2] is None:
+                continue
+
+            if match[0] > max_threshold and leave_equations and any(block_type in tex_line.block_type for block_type in equation_block_types):  
+                pdf_line.equation_hit = True
+                best_matches = []
+                break
+
+            best_matches.append([tex_line.id, match[0], match[1], match[2]]) 
 
         if len(best_matches) == 0:
             return []
 
-        if leave_equations:    
-            new_best_matches = []
-            for match in best_matches:
-                if any(block_type in tex_lines[match[0]].block_type for block_type in equation_block_types):
-                    pdf_line.equation_hit = True
-                    break
-                else:
-                    new_best_matches.append(match)
-
-            best_matches = new_best_matches
-
-        if len(best_matches) == 0: return []
-        if len(best_matches) == 1: return best_matches
-
         best_matches.sort(reverse=True, key=lambda x: x[1])
+
+        if best_matches[0][1] < max_threshold:
+            return []
+         
+        if len(best_matches) == 1:
+            return best_matches
+
         for k in range(1, len(best_matches)):
             if best_matches[0][1] - best_matches[k][1] > difference:
                 break
 
         return best_matches[:k]
     
-    def assign_match(self, pdf_line, tex_line):
+    def assign_match(self, pdf_line, tex_line, leftover=False):
         pdf_line.assigned = True
-        start, end = pdf_line.matches[0][2], pdf_line.matches[0][3]
-        tex_line.matches.append({"pdf_id": f"{pdf_line.page_index}.{pdf_line.index}", "matching_string": tex_line.leftover[start:end]})
-        tex_line.leftover = tex_line.leftover[:start] + tex_line.leftover[end:]
+        if leftover:
+            pdf_line.matches = [(tex_line.id, None, None, None)]
+        else:
+            start, end = pdf_line.matches[0][2], pdf_line.matches[0][3]
+            tex_line.matches.append({"pdf_id": f"{pdf_line.page_index}.{pdf_line.index}", "matching_string": tex_line.leftover[start:end]})
+            tex_line.leftover = tex_line.leftover[:start] + tex_line.leftover[end:]
 
     def accurate_match(self, tex_lines, pdf_lines, threshold, difference, leave_equations):
         for pdf_line in tqdm(pdf_lines, desc=f"   - accurate matching with {threshold * 100}% threshold", leave=False):
@@ -295,10 +328,10 @@ class MatchingTool:
             if len(pdf_line.matches) == 1:
                 self.assign_match(pdf_line, tex_lines[pdf_line.matches[0][0]])
 
-    def leftover_match(self, tex_lines, pdf_lines, threshold, difference, leave_equations):
+    def best_guess_match(self, tex_lines, pdf_lines, threshold, difference, leave_equations):
         num_nearest_lines = 4
         num_nearest_blocks = 2
-        for pdf_line in tqdm(pdf_lines, desc=f"- leftover matching with {threshold * 100}% threshold: ", leave=False):
+        for pdf_line in tqdm(pdf_lines, desc=f"- best guess matching with {threshold * 100}% threshold: ", leave=False):
             if pdf_line.assigned:
                 continue
 
@@ -316,9 +349,6 @@ class MatchingTool:
                 if sibling.assigned and sibling is not pdf_line:
                     nearest_lines.append((self.distance(pdf_line, sibling), sibling))
 
-            nearest_lines.sort(key=lambda x: x[0])
-            nearest_lines = [line[1] for line in nearest_lines[:num_nearest_lines]]
-
             if len(nearest_lines) == 0:
                 nearest_blocks = []
                 for block in self.pdf_data.elements['containers']:
@@ -333,8 +363,8 @@ class MatchingTool:
                         if cousin.assigned:
                             nearest_lines.append((self.distance(pdf_line, cousin), cousin))
                 
-                nearest_lines.sort(key=lambda x: x[0])
-                nearest_lines = [line[1] for line in nearest_lines[:num_nearest_lines]]
+            nearest_lines.sort(key=lambda x: x[0])
+            nearest_lines = [line[1] for line in nearest_lines[:num_nearest_lines]]
 
             if len(nearest_lines) > 0:
                 mean_index = sum(nearest_line.matches[0][0] for nearest_line in nearest_lines) / len(nearest_lines)
@@ -343,12 +373,11 @@ class MatchingTool:
                 self.assign_match(pdf_line, tex_lines[pdf_line.matches[0][0]])
 
     def aggregate_equations(self, pdf_lines):
-        dist_threshold = 10
         equation_pdf_lines = [pdf_line for pdf_line in pdf_lines if pdf_line.equation_hit]
 
         for this in equation_pdf_lines:
             for other in equation_pdf_lines:
-                if this.page_index == other.page_index and self.distance(this, other) < dist_threshold and this.index < other.index:
+                if this.page_index == other.page_index and self.distance(this, other) < self.equation_dist_threshold and this.index < other.index:
                     this.eq_neighbours.append(other)
                     other.eq_neighbours.append(this)
 
@@ -382,6 +411,18 @@ class MatchingTool:
                 bbox_list[3] = max(cc[0].element.bbox[3], cc[i].element.bbox[3])
                 cc[0].element.bbox = tuple(bbox_list)
                 pdf_lines.remove(cc[i])
+
+    def leftover_match(self, tex_lines, pdf_lines):
+        for pdf_line in tqdm(pdf_lines, desc=f"- leftover matching: ", leave=False):
+            if not pdf_line.assigned:
+                indexes = [sibling.matches[0][0] for sibling in pdf_line.parent.children if sibling.assigned and sibling is not pdf_line]
+                if len(indexes) == 0:
+                    continue
+
+                counter = Counter(indexes)
+                most_common_element, _ = counter.most_common(1)[0]
+                self.assign_match(pdf_line, tex_lines[most_common_element], leftover=True)
+
 
     def distance(self, a, b):
         x1, y1, w1, h1 = a.element.bbox[0], a.element.bbox[1], a.element.bbox[2] - a.element.bbox[0], a.element.bbox[3] - a.element.bbox[1]
