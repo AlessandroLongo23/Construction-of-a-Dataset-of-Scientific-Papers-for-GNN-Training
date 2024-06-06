@@ -1,0 +1,14 @@
+node_modules
+unarXive_230324_open_subset
+unarXive_230324_open_subset.tar.xz
+unarXive_230324_open_subset copy
+arxiv_downloads
+auxil
+stesura
+package-lock.json
+package.json
+.vscode
+.venv
+.idea
+__pycache__
+
