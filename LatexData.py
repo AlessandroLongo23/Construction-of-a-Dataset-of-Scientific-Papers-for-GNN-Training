@@ -90,20 +90,21 @@ class LatexData:
             except FileNotFoundError:
                 return f"% File not found: {input_path}"
 
-        pattern = r'\\input\*?\{([^\}]+)\}'
-        self.tex_content = re.sub(pattern, replace_input, self.tex_content)
-        pattern = r'\\include\*?\{([^\}]+)\}'
-        self.tex_content = re.sub(pattern, replace_input, self.tex_content)
+        for input_pattern in [r'\\input\*?\{([^\}]+)\}', r'\\include\*?\{([^\}]+)\}']:
+            self.tex_content = re.sub(input_pattern, replace_input, self.tex_content)
 
     def remove_comments(self):
-        comment_pattern = r'(?m)^\%.*\n?'
-        self.tex_content = re.sub(comment_pattern, '', self.tex_content, flags=re.MULTILINE) 
+        for comment_pattern in [r'(?<!\\)%.*?$', r'\\begin{comment}.*?\\end{comment}']:
+            self.tex_content = re.sub(comment_pattern, '', self.tex_content, flags=re.DOTALL | re.MULTILINE)
 
-        comment_pattern = r'(?<!\\)%.*?$'
-        self.tex_content = re.sub(comment_pattern, '', self.tex_content, flags=re.MULTILINE)
+        # comment_pattern = r'(?m)^\%.*\n?'
+        # self.tex_content = re.sub(comment_pattern, '', self.tex_content, flags=re.DOTALL | re.MULTILINE)
 
-        comment_pattern = r'\\begin{comment}.*?\\end{comment}'
-        self.tex_content = re.sub(comment_pattern, '', self.tex_content, flags=re.DOTALL)
+        # comment_pattern = r'(?<!\\)%.*?$'
+        # self.tex_content = re.sub(comment_pattern, '', self.tex_content, flags=re.DOTALL | re.MULTILINE)
+
+        # comment_pattern = r'\\begin{comment}.*?\\end{comment}'
+        # self.tex_content = re.sub(comment_pattern, '', self.tex_content, flags=re.DOTALL | re.MULTILINE)
 
     def replace_command_definitions(self):
         command_keywords = [
@@ -149,21 +150,13 @@ class LatexData:
                     self.tex_content = self.tex_content[:start_index] + content + self.tex_content[close_index:]
 
     def remove_useless_commands(self):
-        patterns = [
-            '\\noindent',
-            '\\appendix',
-            '\\item',
-            '\\medskip',
-        ]
-        for pattern in patterns:
+        special_characters_pattern = r'\\[ \'\`\"\^\"\~c\=.uv.Hv]*\{\w\}|\\[\`]\w' 
+        self.tex_content = re.sub(special_characters_pattern, lambda match: LatexNodes2Text().latex_to_text(match.group(0)), self.tex_content)
+
+        for pattern in ['\\noindent', '\\appendix', '\\item', '\\medskip']:
             self.tex_content = self.tex_content.replace(pattern, '')
 
-        patterns = [
-            'textbf',
-            'texttt',
-            'textit',
-        ]
-        for pattern in patterns:
+        for pattern in ['textbf', 'texttt', 'textit']:
             while True:
                 match = re.search(r'\\' + pattern + r'\{', self.tex_content)
                 if match is None: break
@@ -171,7 +164,7 @@ class LatexData:
                 open_index, close_index = self.extract_brackets_content(self.tex_content, match.end() - 1)
                 self.tex_content = self.tex_content[:match.start()] + self.tex_content[open_index + 1:close_index - 1] + self.tex_content[close_index:]
         
-        patterns = [
+        citation_patterns = [
             'cite',
             'citet',
             'citep',
@@ -187,20 +180,15 @@ class LatexData:
             'citenum',
             'citeonline',
         ]
-        for pattern in patterns:
+        for citation_pattern in citation_patterns:
             while True:
-                match = re.search(r'\\' + pattern + r'\{', self.tex_content)
+                match = re.search(r'\\' + citation_pattern + r'\{', self.tex_content)
                 if match is None: break
 
                 _, close_index = self.extract_brackets_content(self.tex_content, match.end() - 1)
                 self.tex_content = self.tex_content[:match.start()] + self.tex_content[close_index:]
 
-        keywords = [
-            'label',
-            'autoref',
-            'cref',
-        ]
-        for keyword in keywords:
+        for keyword in ['label', 'autoref', 'cref']:
             pattern = r'\\' + keyword + r'\{'
             while True:
                 match = re.search(pattern, self.tex_content)
@@ -209,91 +197,81 @@ class LatexData:
                 _, close_index = self.extract_brackets_content(self.tex_content, match.end() - 1)
                 self.tex_content = self.tex_content[:match.start()] + self.tex_content[close_index:]
 
-        # patterns = [
-        #     'widetext',
-        #     'minipage',
-        #     'wrapfigure',
-        # ]
-        # for pattern in patterns:
+        # for pattern in ['widetext', 'minipage', 'wrapfigure']:
         #     self.tex_content = re.sub(r'\\begin\{' + pattern + r'\}(.*?)\\end\{' + pattern + r'\}', lambda match: match.group(1), self.tex_content, flags=re.DOTALL)
 
     def extract_title(self):
         title_pattern = r'\\title\s*(\[[^\]]*\])?\s*\{\s*([^}]*(\n[^}]*)*)\s*\}'
         title_match = re.search(title_pattern, self.tex_content, re.DOTALL)
-        if title_match:
-            title_text = title_match.group(0)
-            title_content = title_match.group(2).strip()
-            self.content_tree.insert("doc", "doc/tit", "title", title_content)
-            self.tex_content = self.tex_content.replace(title_text, '', 1)
+        if not title_match:
+            print("ERROR: Title not found.")
+            return
+        
+        title_text = title_match.group(0)
+        title_content = title_match.group(2).strip()
+        self.content_tree.insert("doc", "doc/tit", "title", title_content)
+        self.tex_content = self.tex_content.replace(title_text, '', 1)
 
     def extract_authors(self):
         author_found = 0
-        while author_found is not None:
+        while True:
             author_matches = list(re.finditer(r'\\author', self.tex_content))
             affiliation_matches = list(re.finditer(r'\\affiliation', self.tex_content))
             orcid_matches = list(re.finditer(r'\\orcid', self.tex_content))
             email_matches = list(re.finditer(r'\\email', self.tex_content))
 
             all_matches = author_matches + affiliation_matches + orcid_matches + email_matches
+            if not all_matches:
+                return
+
             all_matches_sorted = sorted(all_matches, key=lambda match: match.start())
             sorted_matches_info = [(match.start(), match.group()) for match in all_matches_sorted]
 
-            if not sorted_matches_info:
-                break
-
-            count = 0
-            for index, match in enumerate(sorted_matches_info):
-                if match[1] == "\\author":
-                    count += 1
-                    if count == 1:
-                        author_block_start = match[0]
-                    elif count == 2:
-                        author_block_end = match[0]
-                        author_block = self.tex_content[author_block_start:author_block_end]
-                        self.content_tree.insert("doc", "doc/aut" + str(author_found), "author", author_block[len('\\author{'):-1])
-                        author_found += 1
-                        self.tex_content = ''.join(self.tex_content.split(author_block))
-                        sorted_matches_info = sorted_matches_info[index:]
-
-            if count < 2:
-                last_author_block = sorted_matches_info[-1]
-                bracket_count = 0
-                i = last_author_block[0]
-                closing_index = None
-
-                while closing_index is None:
-                    if self.tex_content[i] == '{':
-                        bracket_count += 1
-                    elif self.tex_content[i] == '}':
-                        bracket_count -= 1
-                        if bracket_count == 0:
-                            closing_index = i
+            author_block_start = sorted_matches_info[0][0]
+            i = 1
+            while i < len(sorted_matches_info):
+                if sorted_matches_info[i][1] != "\\author":
                     i += 1
+                    continue
 
-                author_block = self.tex_content[sorted_matches_info[0][0]:closing_index + 1]
-                self.content_tree.insert("doc", "doc/aut" + str(author_found), "author", author_block[len('\\author{'):-1])
+                author_block_end = sorted_matches_info[i][0]
+                author_block = self.tex_content[author_block_start:author_block_end]
+                self.content_tree.insert("doc", "doc/aut" + str(author_found), "author", author_block[len('\author{'):])
                 author_found += 1
                 self.tex_content = ''.join(self.tex_content.split(author_block))
+                sorted_matches_info = sorted_matches_info[i:]
+                break
 
-                author_found = None
+            if i == len(sorted_matches_info):
+                author_block_start = sorted_matches_info[0][0]
+                last_author_block = sorted_matches_info[-1]
+                _, close_index = self.extract_brackets_content(self.tex_content, last_author_block[0])
+
+                author_block = self.tex_content[author_block_start:close_index]
+                self.content_tree.insert("doc", "doc/aut" + str(author_found), "author", author_block[len('\author{'):])
+                author_found += 1
+                self.tex_content = ''.join(self.tex_content.split(author_block))
+                break
 
     def extract_abstract(self):
-        abstract_begin_pattern = r'\\begin{abstract}'
-        abstract_begin = re.search(abstract_begin_pattern, self.tex_content)
-        abstract_end_pattern = r'\\end{abstract}'
-        abstract_end = re.search(abstract_end_pattern, self.tex_content)
-        if abstract_begin and abstract_end:
-            self.content_tree.insert("doc", "doc/abs", "abstract", self.tex_content[abstract_begin.end():abstract_end.start()])
-            self.tex_content = self.tex_content[:abstract_begin.start()] + self.tex_content[abstract_end.end():]
+        begin_pattern, end_pattern = r'\\begin{abstract}', r'\\end{abstract}'
+        begin, end = re.search(begin_pattern, self.tex_content), re.search(end_pattern, self.tex_content)
+        if not begin or not end:
+            print("ERROR: Abstract not found.")
+            return
+        
+        self.content_tree.insert("doc", "doc/abs", "abstract", self.tex_content[begin.end():end.start()])
+        self.tex_content = self.tex_content[:begin.start()] + self.tex_content[end.end():]
 
     def extract_body(self):
-        document_begin_pattern = r'\\begin{document}'
-        document_begin = re.search(document_begin_pattern, self.tex_content)
-        document_end_pattern = r'\\end{document}'
-        document_end = re.search(document_end_pattern, self.tex_content)
-        if document_begin and document_end:
-            self.content_tree.insert("doc", "doc/body", "body", self.tex_content[document_begin.end():document_end.start()])
-            self.extract_children("doc/body", self.tex_content[document_begin.end():document_end.start()])
+        begin_pattern, end_pattern = r'\\begin{document}', r'\\end{document}'
+        begin, end = re.search(begin_pattern, self.tex_content), re.search(end_pattern, self.tex_content)
+        if not begin or not end:
+            print("ERROR: Document not found.")
+            return
+        
+        self.content_tree.insert("doc", "doc/body", "body", self.tex_content[begin.end():end.start()])
+        self.extract_children("doc/body", self.tex_content[begin.end():end.start()])
 
     def extract_children(self, parent_key, tex_content):
         block_index = 0
@@ -307,14 +285,7 @@ class LatexData:
             if block_title:
                 self.content_tree.insert(this_key, f"{this_key}/tit", 'title', block_title)
 
-            equation_block_types = [
-                'algorithmic',
-                'equation',
-                'align',
-                'gather',
-                'cases',
-                'frm',
-            ]
+            equation_block_types = ['algorithmic', 'equation', 'align', 'gather', 'cases', 'frm']
 
             if leaf is False and not any(block_type in parent_key.split('/')[-1] for block_type in equation_block_types):
                 self.extract_children(this_key, block_content)
@@ -322,9 +293,6 @@ class LatexData:
             block_index += 1
 
     def extract_next_child(self, tex_content):
-        caption_pattern = r'\\caption\{'
-        formula_pattern = re.compile(r'\$\$.*?\$\$', re.DOTALL | re.MULTILINE)
-
         def find_start_indexes(tex_content):
             patterns = {
                 'section': re.compile(r'\\section\{'),
@@ -386,6 +354,7 @@ class LatexData:
                 return dsc[1], block_title, container, content, leaf 
         
         if corresponding_element == "formula":
+            formula_pattern = re.compile(r'\$\$.*?\$\$', re.DOTALL | re.MULTILINE)
             matches = re.findall(formula_pattern, tex_content)
             block_end_index = tex_content.find('$$', block_start_index + 1)
             if block_end_index == -1:
@@ -397,6 +366,7 @@ class LatexData:
             return "frm", None, container, content, True
 
         elif corresponding_element == 'caption':
+            caption_pattern = r'\\caption\{'
             matches = re.findall(caption_pattern, tex_content)
             open_index, close_index = self.extract_brackets_content(tex_content, block_start_index)
             container = tex_content[block_start_index:close_index]
@@ -407,7 +377,7 @@ class LatexData:
         elif corresponding_element == 'begend':
             begend_pattern = re.compile(r'\\begin\{([^{}]+)\}', re.DOTALL | re.MULTILINE)
             matches = re.findall(begend_pattern, tex_content)
-            block_end_index = tex_content.find(r'\end{' + matches[0] + r'}')
+            block_end_index = tex_content.find(r'\end{' + matches[0] + r'}', block_start_index + 1)
             if block_end_index == -1:
                 print(f"ERROR: Cannot find closing tag for {matches[0]}")
                 return [None] * 5
@@ -463,22 +433,14 @@ class LatexData:
 
     def remove_commands(self, leaf):
         patterns = [
-            'author',
-            'email',
-            'orcid',
-            'affiliation',
-            'caption',
-            'footnote',
-            'text',
-            'textit',
-            'texttt',
+            'author', 'email', 'orcid', 'affiliation',
+            'caption', 'footnote',
+            'text', 'textit','texttt',
             'emph',
-            'mathrm',
-            'mathbf',
+            'mathrm', 'mathbf',
         ]
         
         text = leaf.content
-        print(text)
         for pattern in patterns:
             while True:
                 match = re.search(r'\\' + pattern + r'\{', text)
@@ -489,37 +451,38 @@ class LatexData:
                 text = text[:match.start()] + text[open_index + 1:close_index - 1] + text[close_index:]
 
         patterns = [
-            '\n',
+            ('\n', ' '),
+            ('\\newblock', ''),
         ]
         for pattern in patterns:
-            text = re.sub(r'' + pattern, ' ', text)
+            text = re.sub(r'' + pattern[0], pattern[1], text)
 
-        text = text.replace('\\newblock', '')
-        text = text.replace('\\{', '{')
-        text = text.replace('\\}', '}')
-        text = text.replace('\\@', '@')
-        text = text.replace('\\#', '#')
-        text = text.replace('\\&', '&')
-        text = text.replace('\\%', '%')
+        symbols_replacements = [
+            ('\\_', '_'),
+            ('\\{', '{'),
+            ('\\}', '}'),
+            ('\\@', '@'),
+            ('\\#', '#'),
+            ('\\&', '&'),
+            ('\\%', '%'),
+        ]
+        for symbol_replacement in symbols_replacements:
+            text = text.replace(symbol_replacement[0], symbol_replacement[1])
 
         # text = re.sub(r'{\\em (.*?)}', r'\1', text)
         # text = re.sub(r'{([A-Z]+)}', r'\1', text)
 
-        def translate_equations(text):
-            return LatexNodes2Text().latex_to_text(text)
-        
         equation_blocks = [
             r'\$\$(.*?)\$\$',
             r'\$(.*?)\$',
             r'\\\[(.*?)\\\]',
             r'\\\((.*?)\\\)',
         ]
-
         for equation_block in equation_blocks:
-            text = re.sub(equation_block, lambda match: translate_equations(match.group(0)), text)
+            text = re.sub(equation_block, lambda match: LatexNodes2Text().latex_to_text(match.group(0)), text)
 
         unicode_pattern = r'\\u[0-9a-fA-F]{4}'
-        text = re.sub(unicode_pattern, lambda match: translate_equations(match.group(0)), text)
+        text = re.sub(unicode_pattern, lambda match: LatexNodes2Text().latex_to_text(match.group(0)), text)
 
         while True:
             href_match = re.search(r'\\href', text)
@@ -540,27 +503,16 @@ class LatexData:
 
             text = text[:url_start] + text[link_url_start + 1:link_url_end - 1] + text[link_url_end:]
 
-        equation_block_types = [
-            'algorithmic',
-            'equation',
-            'align',
-            'gather',
-            'cases',
-            'frm',
-        ]
-
+        equation_block_types = ['algorithmic', 'equation', 'align', 'gather', 'cases', 'frm']
         if any(block_type in leaf.block_type for block_type in equation_block_types):
-            text = translate_equations(text)
+            text = LatexNodes2Text().latex_to_text(text)
 
         return text
     
     def extract_brackets_content(self, text, i, bracket_type='curly'):
-        if bracket_type == 'round':
-            open_bracket, close_bracket = '(', ')'
-        elif bracket_type == 'square':
-            open_bracket, close_bracket = '[', ']'
-        elif bracket_type == 'curly':
-            open_bracket, close_bracket = '{', '}'
+        if bracket_type == 'round': open_bracket, close_bracket = '(', ')'
+        elif bracket_type == 'square': open_bracket, close_bracket = '[', ']'
+        elif bracket_type == 'curly': open_bracket, close_bracket = '{', '}'
 
         start = None
         end = None
@@ -568,12 +520,11 @@ class LatexData:
         while end is None:
             if text[i] == open_bracket:
                 bracket_count += 1
-                if start == None:
-                    start = i
+                if start == None: start = i
             elif text[i] == close_bracket:
                 bracket_count -= 1
-                if bracket_count == 0:
-                    end = i + 1
+                if bracket_count == 0: end = i + 1
+            
             i += 1
 
         return start, end
