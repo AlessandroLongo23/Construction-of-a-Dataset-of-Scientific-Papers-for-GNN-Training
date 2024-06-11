@@ -1,0 +1,33 @@
+\section{Related Work}\label{sec:related}
+
+\noindent\textbf{Visual Program Induction.}
+Visual program induction is a subfield of program synthesis that is focused on recovering a \emph{graphics} program from a given visual target~\citep{gulwani2017program}.
+Graphics programs, also known as procedural or symbolic programs, offer a concise, structured, and interpretable representation for scenes and have garnered significant attention in the field -- see \citet{ritchie2023neurosymbolic} for an in-depth overview.
+Commonly employed program types include constructive-solid geometry (CSG)~\citep{du2018inversecsg, kania2020ucsg, ren2022extrudenet, sharma2018csgnet, yu2022capri}, computer-aided design (CAD)~\cite{ganin2018synthesizing, li2020sketch2cad, li2022free2cad, seff2021vitruvion, xu2021inferring}, vector graphics (e.g., SVG)~\citep{reddy2021im2vec, reddy2021multi}, and L-systems~\citep{guo2020inverse}, as well as custom program domains~\citep{ellis2018learning, tian2019learning, deng2022unsupervised, hu2022inverse}.
+Program discovery can be achieved from simplified representations of the same modality, such as 2D hand drawings or synthetic patterns~\citep{stava2010inverse, stava2014inverse, sharma2018csgnet, ellis2019write, riso2022pop, ganeshan2023improving, seff2021vitruvion}, as well as 3D meshes and voxels~\citep{ganeshan2023improving, jones2022plad, tian2019learning, bokeloh2010connection, willis2021fusion, sharma2018csgnet, ellis2019write}. 
+There have also been efforts in recovering 3D scenes from natural 2D images using graphics programs~\citep{mansinghka2013approximate, kulkarni2015picture, wu2017neural, yi2018neural, mao2019neuro, liu2019learning, li2020multi, gothoskar20213dp3,ganin2018synthesizing, kar2019meta, devaranjan2020metasim2}. 
+\citet{kulkarni2015picture} propose a probabilistic programming language for representing arbitrary 2D/3D scenes, demonstrating preliminary results for analysis of faces, bodies, and objects.
+\citet{wu2017neural} infer custom-designed markup code from images that can be easily translated to renderer-friendly inputs.
+The work can handle scenes with a number of objects, but cannot generalize beyond the training data distribution.
+In follow-up work, \citet{yi2018neural} investigate how graphics programs can be used for visual question answering (VQA).
+However, their scene reconstruction also struggles with generalization problems, particularly to unseen attribute combinations.
+\citet{liu2019learning} present a new language for representing scenes, along with a hierarchical approach for inference.
+Meta-SIM~\citep{kar2019meta, devaranjan2020metasim2} uses probabilistic scene grammars to recover synthetic scenes from natural images, which are then used to train a generative scene-synthesis model.
+Despite promising results, such methods require special training data and complex modular architectures, and are difficult to generalize beyond their training distribution.
+
+\noindent\textbf{Vision as Inverse Graphics.}
+Dating back to Larry Roberts's Blocks-World thesis~\citep{roberts1963machine}, there has been a long history of work that treats computer vision as the inverse problem to computer graphics. 
+Efforts have included estimating object pose~\citep{lepetit2009ep, tejani2014latent, pavlakos20176dof, xiang2017posecnn, wang2021gdr, wang2019normalized, wang2021NeMo, ma2022robust, labbe2020cosypose} and reconstructing shape~\citep{choy20163d, fan2017point, groueix2018papier, mescheder2019occupancy, wang2018pixel2mesh, sitzmann2019scene,park2019deepsdf} from single images.
+Multi-object scenes have also been recovered via geometric approaches~\citep{gkioxari2019mesh,denninger20203d, shin20193d}, but they often overlook the semantics and interrelation between objects, hindering further reasoning.
+Holistic 3D-scene understanding takes the approach a step further by reconstructing individual objects together with the scene layout.
+Early methods focus on estimating 3D bounding-box representations~\citep{hedau2009recovering,lee2009geometric,mallya2015learning,ren2017coarse, dasgupta2016delay}, whereas more-recent works emphasize the reconstruction of finer shapes~\citep{zhang2021holistic, liu2022towards, gkioxari2022learning}
+along with instance segmentations~\citep{kundu2022panoptic, yao20183d, dahnert2021panoptic, nie2020total3dunderstanding, zhang2023uni, nie2023learning}.
+Closely related are methods that perform CAD or mesh-model retrieval followed by 6-DOF pose estimation of individual objects~\citep{aubry2014seeing,bansal2016marr,lim2014fpm, tulsiani2015viewpoints} or scenes~\citep{izadinia2017im2cad,huang2018holistic, salas2013slam,kundu20183d,gumeli2022roca,kuo2020mask2cad,kuo2021patch2cad,engelmann2021points}.
+An alternative to detailed shape reconstruction is \emph{primitive} reconstruction, where objects or scenes are explained by a limited set of geometric primitives, offering a higher level of abstraction.
+This direction has been studied extensively~\citep{roberts1963machine,binford1975visual, hedau2009recovering, gupta2010blocks,gupta2010estimating}, and it is still actively researched~\citep{van2015part, tulsiani2017learning, paschalidou2019superquadrics, paschalidou2020learning, paschalidou2021neuralparts, deng2020cvxnet, kluger2021cuboids,monnier2023dbw,vavilala2023convex}.
+While these works typically produce accurate reconstructions, they involve complex pipelines with multiple modules and require special training data, limiting generalization under distribution shifts.
+In contrast, we explore the use of LLMs as a potentially simpler and more-generalizable solution to the inverse-graphics problem.
+
+\noindent\textbf{LLMs and 3D Understanding.}
+Recent and concurrent efforts have explored the use of LLMs for 3D-related tasks, including 3D question answering~\citep{hong2023_3D_LLM, dwedari2023generating}, navigation~\citep{hong2023_3D_LLM,zhang2023building}, text-to-3D~\citep{sun2023_3D_GPT}, procedural model editing~\citep{kodnongbua23reparamCAD}, and multi-modal representation learning~\citep{xue2023ulip, hong2023_3D_LLM}.
+To the best of our knowledge, our work is the first to investigate the application of LLMs to inverse-graphics tasks.

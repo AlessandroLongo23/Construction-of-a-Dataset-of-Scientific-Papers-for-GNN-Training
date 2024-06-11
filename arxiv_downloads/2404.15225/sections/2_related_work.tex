@@ -1,0 +1,42 @@
+\section{Related Work}\label{sec:related works}
+
+\subsection{Link Prediction}
+
+\noindent\textbf{Heuristic Methods.}
+Heuristic-based approaches to LP compute the predefined structural features within the observed nodes and edges of the graph. 
+Classic methods, such as common neighbors~\cite{adamic2003friends}, Adamic-Adar~\cite{adamic2003friends}, Jaccard coefficient~\cite{lu2011link}, and preferential attachment~\cite{barabasi1999emergence}, rely on simple heuristics that capture certain aspects of node relationships. 
+Zhou \textit{et al.}~\cite{zhou2009predicting} proposed a local random walk method, whereas Jeh and Widom~\cite{jeh2002simrank} developed SimRank to quantify similarity based on the structural context. 
+Although heuristic methods provide a preliminary understanding of LP, they are limited by their inability to capture complex relationships within graphs.
+Furthermore, heuristic methods are effective only when the defined heuristics align with the graph structure; therefore, applying heuristic methods across all graph datasets can be challenging.
+
+
+\noindent\textbf{Embedding Methods.}
+Embedding methods map nodes from the graph into a low-dimensional vector space where geometric relationships mirror the graph structure. 
+Koren \textit{et al.}~\cite{koren2009matrix} demonstrated the power of matrix factorization for collaborative filtering. 
+Perozzi \textit{et al.}~\cite{perozzi2014deepwalk} introduced DeepWalk, using random walks to generate node sequences and employing the skip-gram model to produce embeddings. 
+Tang \textit{et al.}~\cite{tang2015line} developed large-scale information network embedding (LINE), which preserves local and global structures. 
+Grover and Leskovec~\cite{grover2016node2vec} further advanced this approach with Node2Vec (N2V), proposing a flexible notion of the neighborhood to capture diverse node relationships.
+
+Embedding methods are advantageous due to their applicability regardless of the data characteristics using optimization. Node representations capture global properties and long-range effects through the learning process. However, these methods often require significantly large dimensions to express basic heuristics, resulting in lower performance than heuristic methods~\cite{nickel2014reducing}.
+Moreover, in embedding methods, Ribeiro \textit{et al.}~\cite{ribeiro2017struc2vec} explained that two nodes with similar neighborhood structures may have vastly different embedded vectors, especially when they are far apart in the graph, leading to incorrect predictions.
+
+\noindent\textbf{GNN-Based Methods.}
+The GNN has become a pivotal approach to LP due to its ability to grasp graph-structured data. 
+By effectively incorporating local and global information through message passing and graph aggregation layers, GNNs enhance LP performance.
+The model by Zhang \textit{et el.}~\cite{zhang2018link} uses subgraphs as the primary structural units to learn and predict connections, resulting in significant improvement. 
+This paradigm shift led to research focusing on refining and advancing subgraph methods in the context of GNNs~\cite{yun2021neo, mavromatis2020graph, pan2021neural}. 
+Following this trend, Pan \textit{et al.}~\cite{pan2021neural} proposed WalkPool (WP), a new pooling mechanism that uses attention to jointly encode node representations and graph topology into learned topological features.
+However, despite their superior performance, GNN-based methods pose a challenge in comprehending the underlying mechanisms driving their predictions.
+Within this context,
+we develop the PHLP, based on PH, with performance comparable to GNN-based models.
+
+\subsection{Persistent Homology on Graph Data}
+In recent years, PH, a method of analyzing the topological features of data, has been widely used to analyze graph data. 
+It has demonstrated its effectiveness in graph classification tasks by analyzing the topology of graphs~\cite{horn2021topological, ye2023treph, carriere2020perslay, taiwo2024explaining, wen2024tensor, immonen2024going, ying2024boosting, zhao2019learning} and has been applied to node classification tasks~\cite{horn2021topological, chen2021topological, zhao2020persistence}. 
+However, its suitability for LP tasks has been limited, and research on applying PH for LP has progressed slowly.
+Yan \textit{et al.}~\cite{yan2021link} proposed an intriguing approach by integrating PH with GNNs. 
+While their model demonstrates the potential of PH for capturing topological features of graph data, it relies on GNN structures.
+Additionally, the TLC-GNN requires further research on datasets without node attributes.
+
+Although PH has demonstrated success in graph and node classification tasks, its filtration technique, tailored to analyzing the entire graph structure, might not be optimal for LP as the role of each node in LP differs from that in graph or node classification tasks. 
+To address this challenge and advance research in LP, we develop a filtration method tailored explicitly to LP tasks.

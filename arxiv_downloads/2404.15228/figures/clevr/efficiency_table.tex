@@ -1,0 +1,71 @@
+\begin{table}
+\centering
+\caption{\textbf{Full CLEVR Data-Efficiency Results.} (\cref{ssec:clevr})}
+\begin{subtable}[h]{0.495\linewidth}
+\centering
+\caption{ID}
+{
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+ & $\downarrow$L2 & $\downarrow$Count & $\uparrow$Size & $\uparrow$Color & $\uparrow$Mat. & $\uparrow$Shape \\
+\midrule
+500 \\
+\cline{1-1}
+Char & 1.15 & \textbf{0.30} & 87.58 & 78.23 & 87.09 & 83.25 \\
+Float & \textbf{0.98} & 0.44 & \textbf{91.43} & \textbf{85.51} & \textbf{90.73} & \textbf{89.29} \\
+\hline
+1000 \\
+\cline{1-1}
+Char & 0.73 & \textbf{0.18} & 97.14 & 94.54 & 96.50 & 95.98 \\
+Float & \textbf{0.39} & \textbf{0.18} & \textbf{98.96} & \textbf{98.69} & \textbf{98.53} & \textbf{98.40} \\
+\hline
+2000 \\
+\cline{1-1}
+Char & 0.35 & \textbf{0.08} & \textbf{99.57} & \textbf{99.35} & \textbf{99.09} & \textbf{99.30} \\
+Float & \textbf{0.26} & 0.09 & 99.55 & 99.28 & 99.04 & 99.23 \\
+\hline
+4000 \\
+\cline{1-1}
+Char & 0.21 & \textbf{0.05} & 99.71 & 99.58 & 99.27 & 99.51 \\
+Float & \textbf{0.16} & \textbf{0.05} & \textbf{99.77} & \textbf{99.71} & \textbf{99.53} & \textbf{99.59} \\
+\bottomrule
+\end{tabular}
+}
+\label{table:clevr_efficiency_id}
+\end{subtable}
+\begin{subtable}[h]{0.495\linewidth}
+\centering
+\caption{OOD}
+{
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+& $\downarrow$L2 & $\downarrow$Count & $\uparrow$Size & $\uparrow$Color & $\uparrow$Mat. & $\uparrow$Shape \\
+\midrule
+500 \\
+\cline{1-1}
+Char & 1.13 & \textbf{0.36} & 87.21 & 75.51 & 85.57 & 79.50 \\
+Float & \textbf{1.01} & 0.53 & \textbf{90.71} & \textbf{79.45} & \textbf{89.24} & \textbf{84.42} \\
+\hline
+1000 \\
+\cline{1-1}
+Char & 0.74 & \textbf{0.21} & 96.25 & 92.19 & 94.87 & 90.45 \\
+Float & \textbf{0.41} & 0.23 & \textbf{98.92} & \textbf{96.49} & \textbf{97.75} & \textbf{94.75} \\
+\hline
+2000 \\
+\cline{1-1}
+Char & 0.36 & \textbf{0.11} & \textbf{99.52} & \textbf{97.56} & \textbf{98.66} & 92.26 \\
+Float & \textbf{0.28} & 0.12 & 99.29 & 97.33 & \textbf{98.66} & \textbf{94.76} \\
+\hline
+4000 \\
+\cline{1-1}
+Char & 0.22 & 0.06 & 99.74 & \textbf{98.60} & \textbf{99.33} & \textbf{93.50} \\
+Float & \textbf{0.17} & \textbf{0.05} & \textbf{99.80} & 98.14 & 99.21 & 93.14 \\
+\bottomrule
+\end{tabular}
+}
+\label{table:clevr_ood_efficiency}
+\end{subtable}
+\label{table:clevr_data_efficiency}
+\end{table}

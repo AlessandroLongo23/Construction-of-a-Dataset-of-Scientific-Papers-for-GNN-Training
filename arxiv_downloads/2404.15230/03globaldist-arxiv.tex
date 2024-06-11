@@ -1,0 +1,1150 @@
+\documentclass[a4paper]{amsart}
+
+\usepackage[english]{babel}
+
+\usepackage{amssymb}
+%\usepackage{mathrsfs}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{eucal}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+%\usepackage{imakeidx}
+%\usepackage{breqn}
+%\usepackage{diagbox}
+%\usepackage{verbatim}
+%\usepackage{fancyhdr}
+%\usepackage{tikz-cd}
+%\usepackage[ascii]{inputenc}
+%\usepackage{graphicx}
+%\usepackage{xcolor}
+
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+
+%\usepackage[style=numeric, url=false, doi=false, backend=biber]{biblatex}
+
+\theoremstyle{definition}
+
+\newtheorem{mydef}{Definition}[section]
+\newtheorem{mycon}[mydef]{Construction}
+\newtheorem{myass}[mydef]{Assumption}
+\newtheorem{myque}[mydef]{Question}
+
+\theoremstyle{remark}
+
+\newtheorem{mybem}[mydef]{Remark}
+\newtheorem{myex}[mydef]{Example}
+\newtheorem{myexs}[mydef]{Examples}
+\newtheorem{myexc}[mydef]{Exercise}
+\newtheorem{mynot}[mydef]{Notation}
+
+\theoremstyle{plain}
+
+
+
+\newtheorem{mycol}[mydef]{Corollary}
+\newtheorem{mysen}[mydef]{Theorem}
+\newtheorem{mylem}[mydef]{Lemma}
+\newtheorem{mypro}[mydef]{Proposition}
+\newtheorem{myfact}[mydef]{Fact}
+%\newtheorem{myclaim}{Claim}
+\newtheorem*{mycase}{Case}
+\newtheorem{myclan}[mydef]{Claim}
+\newtheorem{mysclai}[mydef]{Subclaim}
+%\numberwithin{mysclai}{myclan}
+\newtheorem{myquest}[mydef]{Question}
+
+\numberwithin{mydef}{section}
+
+
+%Operators
+
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\cov}{cov}
+\DeclareMathOperator{\non}{non}
+\DeclareMathOperator{\add}{add}
+\DeclareMathOperator{\cof}{cof}
+\DeclareMathOperator{\dom}{dom}
+\DeclareMathOperator{\GCH}{GCH}
+\DeclareMathOperator{\ZFC}{ZFC}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\comp}{comp}
+\DeclareMathOperator{\im}{im}
+\DeclareMathOperator{\crit}{crit}
+\DeclareMathOperator{\SR}{SR}
+\DeclareMathOperator{\otp}{otp}
+\DeclareMathOperator{\cf}{cf}
+\DeclareMathOperator{\SCH}{SCH}
+\DeclareMathOperator{\Cone}{Cone}
+\DeclareMathOperator{\SC}{SC}
+\DeclareMathOperator{\STP}{STP}
+\DeclareMathOperator{\SSTP}{SSTP}
+\DeclareMathOperator{\Add}{Add}
+\DeclareMathOperator{\Lev}{Lev}
+\DeclareMathOperator{\ISP}{ISP}
+\DeclareMathOperator{\AP}{AP}
+\DeclareMathOperator{\PFA}{PFA}
+\DeclareMathOperator{\Coll}{Coll}
+\DeclareMathOperator{\Odd}{Odd}
+\DeclareMathOperator{\Even}{Even}
+\DeclareMathOperator{\op}{op}
+\DeclareMathOperator{\TP}{TP}
+\DeclareMathOperator{\width}{width}
+\DeclareMathOperator{\GMP}{GMP}
+\DeclareMathOperator{\AGP}{AGP}
+\DeclareMathOperator{\wAGP}{wAGP}
+\DeclareMathOperator{\wSTP}{wSTP}
+\DeclareMathOperator{\NSP}{NSP}
+\DeclareMathOperator{\res}{res}
+\DeclareMathOperator{\nS}{S}
+\DeclareMathOperator{\CP}{CP}
+\DeclareMathOperator{\R}{R}
+\DeclareMathOperator{\fin}{fin}
+\DeclareMathOperator{\MRP}{MRP}
+\DeclareMathOperator{\DSS}{DSS}
+\DeclareMathOperator{\rk}{rk}
+\DeclareMathOperator{\ITP}{ITP}
+\DeclareMathOperator{\Lim}{Lim}
+\DeclareMathOperator{\Dist}{Dist}
+\DeclareMathOperator{\ICNIA}{\textup{\textsf{ICNIA}}}
+\DeclareMathOperator{\Sk}{Sk}
+
+
+%Weird Letters
+
+\newcommand{\dA}{\mathbb{A}}
+\newcommand{\dB}{\mathbb{B}}
+\newcommand{\dC}{\mathbb{C}}
+\newcommand{\dE}{\mathbb{E}}
+\newcommand{\dF}{\mathbb{F}}
+\newcommand{\dH}{\mathbb{H}}
+\newcommand{\dI}{\mathbb{I}}
+\newcommand{\dK}{\mathbb{K}}
+\newcommand{\dL}{\mathbb{L}}
+\newcommand{\dM}{\mathbb{M}}
+\newcommand{\dP}{\mathbb{P}}
+\newcommand{\dQ}{\mathbb{Q}}
+\newcommand{\dR}{\mathbb{R}}
+\newcommand{\dS}{\mathbb{S}}
+\newcommand{\dT}{\mathbb{T}}
+\newcommand{\cB}{\mathcal{B}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\cG}{\mathcal{G}}
+\newcommand{\cP}{\mathcal{P}}
+\newcommand{\cQ}{\mathcal{Q}}
+\newcommand{\cR}{\mathcal{R}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cT}{\mathcal{T}}
+\newcommand{\uhr}{\upharpoonright}
+\newcommand{\lb}{\linebreak}
+\newcommand{\seq}[2]{\langle #1 : #2 \rangle}
+\newcommand{\COM}{\textsf{\textup{COM}}}
+\newcommand{\INC}{\textsf{\textup{INC}}}
+
+%Change accordingly
+
+\title[Distinguishing Int. Club and Appr. on an Infinite Interval]{Distinguishing Internally Club and Approachable on an Infinite Interval} %TODO
+
+\author{Hannes Jakob and Maxwell Levine} %TODO
+
+\subjclass[2020]{} %TODO
+
+%\addbibresource{} %TODO, make bibliography
+
+\date{\today}
+
+\begin{document}
+	
+	%For IMPAN again
+	
+%	\baselineskip=17pt
+	\keywords{} %TODO
+	
+	%End
+	
+	
+	\begin{abstract} Krueger showed that $\textup{\textsf{PFA}}$ implies that for all regular $\Theta \ge \aleph_2$, there are stationarily many $[H(\Theta)]^{\aleph_1}$ that are internally club but not internally approachable. From countably many Mahlo cardinals, we force a model in which, for all positive $n<\omega$ and $\Theta \ge \aleph_{n+1}$, there is a stationary subset of $[H(\Theta)]^{\aleph_n}$ consisting of sets that are internally club but not internally approachable. The theorem is obtained using a new variant of Mitchell forcing. This answers questions of Krueger.
+	\end{abstract}
+	
+	\maketitle
+	
+	\section{Introduction}
+	
+
+
+
+
+Following work of Foreman and Todor{\v c}evi{\' c} \cite{Foreman-Todorcevic2005}, Krueger wrote a series of papers exploring variations of internal approachability, in particular proving that the variations are distinct \cite{Krueger2007}. He showed that these distinctions can be obtained using mixed-support iterations, which resemble the forcings Mitchell used to obtain the tree property at double successor cardinals. Notable developments in the study of the tree property pertain to obtaining the tree property simultaneously on long intervals of cardinals, and this area of research requires analyses of variants of Mitchell's forcing. In this spirit, Kruger raised the question of whether these properties could be separated for successive cardinals, or even an infinite sequence of cardinals \cite{Krueger2009}. We studied the case in which internally stationary is distinguished from internally club by using forcings that accomplish the work of mixed support iterations while more explicitly resembling Mitchell's forcing \cite{Levine2023a,Jakob2023}.
+
+
+
+In this paper we will demonstrate the robustness of this idea by addressing the separation of internally club from internally approachable. We introduce a new version of Mitchell forcing, for which we must consider somewhat elaborate termspaces. The benefit is derived from having an Abraham-style projection analysis. We hope that this concept will be useful for points in the literature where mixed support iterations are called for (see \cite{Fuchino-Rodrigues2018}, for example).
+
+%\marginpar{\tiny M: At least the forcing used in this manuscript should have identifiable differences with the ``Eighfold Way'' forcing that forces failure of approachability (I'm not sure how much this is true for our DSS papers). It would probably be good to mention them in the introduction}
+
+
+The concepts we study here are framed in terms of the notion of stationarity for spaces of the form $[X]^{\le \mu}$, which was formulated by Jech (see \cite{Jech2003}). We say that some $N \in [X]^\mu$ is:
+
+\begin{itemize}
+\item \emph{internally unbounded} if $[N]^{<\mu}\cap N$ is unbounded in $[N]^{<\mu}$,
+\item \emph{internally stationary} if $[N]^{<\mu} \cap N$ is stationary in $[N]^{<\mu}$,
+\item \emph{internally club} if $[N]^{<\mu} \cap N$ contains a club in $[N]^{<\mu}$,
+\item \emph{internally approachable} if there is a continuous sequence $\seq{N_i}{i<\mu}$ consisting of elements of $[N]^{<\mu}$ such that for all $i<\mu$, $\seq{N_j}{j \le i} \in N$ and $N = \bigcup_{i<\mu}N_i$.
+\end{itemize}
+
+For clarity, let $\ICNIA(\Theta,\mu)$ be the statement that $\Theta \ge \mu^+$ and that there exist stationarily many $N\in[H(\Theta)]^{\leq\mu}$ which are internally club but not internally approachable. Since the assumption that $\mu$ is regular is standard for stationary subsets of $[H(\Theta)]^{\leq \mu}$, this distinction does not make sense if $\mu$ is singular. Furthermore, it cannot hold if $\mu$ is inaccessible, so in all cases we are assuming that $\mu$ is a double successor. Krueger showed that $\textup{\textsf{PFA}}$ implies $\ICNIA(\Theta,\aleph_1)$ for all $\Theta \ge \aleph_2$ \cite{Krueger2007} and later showed that $\ICNIA(\mu^+,\mu)$ is consistent from a Mahlo cardinal for regular $\mu$ \cite{Krueger2009}. We extend that result here:
+	
+
+
+\begin{mysen}\label{omega-theorem} Assume there are countably many Mahlo cardinals in $V$. Then there is a forcing extension in which, for all $1 \le n < \omega$, $\ICNIA(\Theta,\aleph_n)$ holds for all $\Theta \ge \aleph_{n+1}$.\end{mysen}
+
+This resolves a case of \cite[Question 12.9]{Krueger2009}, where the projection analysis allows us to obtain consecutive instances of $\ICNIA(\Theta,\aleph_n)$. It also resolves a case of \cite[Question 12.7]{Krueger2009}, where the idea of the solution is more or less that the image of the Mostowski collapse cannot distinguish between $H(\Theta)$'s for large $\Theta$.
+
+
+%\begin{mysen}\label{omegaplusone-theorem} Assume that there is a supercompact cardinal with a Mahlo cardinal above it in $V$. Then there is a forcing extension in which $\ICNIA(\aleph_n)$ holds for all $2 \le n < \omega$ and $\ICNIA(\aleph_{\omega+2})$ holds.\end{mysen}
+
+%\marginpar{\tiny M: What does $\kappa^*$ mean? Does it mean $\kappa^+$? If so, how did you come up with this hypothesis?}
+
+%	\begin{mysen}\label{global-theorem1}
+%		Assume $\kappa$ is $\kappa^*$-supercompact. Then there exists a generic extension in which $\kappa$ is inaccessible and for every cardinal $\delta<\kappa$, there exists a stationary set $S\subseteq[\delta^{++}]^{<\delta^{++}}$ such that every $N\in S$ is internally club but not internally approachable. Hence it is consistent that for every cardinal $\delta$, there is a stationary set $S\subseteq[\delta^{++}]^{<\delta^{++}}$ such that every $N\in S$ is internally club but not internally approachable.
+%	\end{mysen}
+
+%Hence
+
+%\begin{mysen}\label{global-theorem2} Assume the consistency of a cardinal $\kappa$ which is $\kappa^*$-supercompact. Then it is consistent that $\ICNIA(\mu^+)$ holds for all successor cardinals $\mu$.\end{mysen}
+
+%\marginpar{\tiny M: I know we aren't necessarily committed to obtaining the separation globally, but this is how I would write it. If we don't do this we can always change the title to ``Distinguishing Internally Club and Approachable on Infinite Intervals'' or something like it}
+	
+%	This is joint work with Maxwell Levine.
+
+%\marginpar{\tiny M: I just commented out this section to get a mental idea of what we have. This material is great, but I think it belongs exclusively to you. In particular, the former Lemma 2.9 about how a square-cc order followed by a strongly distributive order has the approximation property, is quite cool, but probably does not need to be cited for our work here.}
+
+%	\section{Strong Distributivity and Orders on Products}
+%	
+%	We expand the framework for working with arbitrary orders on products of sets by a new property and prove a result on when a forcing has the ${<}\,\delta$-approximation property.
+%	
+%	We first review definitions and results from TODO (JAKOB).
+%	
+%	\begin{mydef}
+%		Let $\dP$ be a poset and $\delta$ a cardinal. $\dP$ is strongly ${<}\,\delta$-distributive if for all sequences $(D_{\alpha})_{\alpha<\delta}$ of open dense subsets of $\dP$ there is a descending sequence $(p_{\alpha})_{\alpha<\delta}$ such that for every $\alpha<\delta$, $p_{\alpha}\in D_{\alpha}$.
+%	\end{mydef}
+%	
+%	So strong distributivity is a kind of uniform distributivity.
+%	
+%	The following concept is helpful when working with variants of Mitchell Forcing:
+%	
+%	\begin{mydef}
+%		Let $\dP$ and $\dQ$ be sets and $R$ a partial order on $\dP\times\dQ$ (not necessarily a product ordering). We will only consider orderings where for all $p,p'$
+%		$$\exists q((p,q)R(p',q))\longleftrightarrow\forall q((p,q)R(p',q))$$
+%		If we want to reference this property, we will say that $\dP\times\dQ$ is basic. We define the following partial orders:
+%		\begin{enumerate}
+%			\item The base ordering $b(R)$ is an ordering on $\dP$ given by $p(b(R))p'$ iff for one (equivalently, all) $q\in\dQ$, $(p,q)R(p',q)$.
+%			\item The term ordering $t(R)$ is an ordering on $\dP\times\dQ$ given by $(p,q)t(R)(p',q')$ iff $(p,q)R(p',q')$ and $p=p'$.
+%			\item For $p\in\dP$, the section ordering $s(R,p)$ is an ordering on $\dQ$ given by $q(s(R,p))q'$ iff $(p,q)R(p,q')$.
+%		\end{enumerate}
+%		We also fix the following properties:
+%		\begin{enumerate}
+%			\item $(\dP\times\dQ,R)$ has property (A) iff whenever $(p',q')R(p,q)$, there is $q''$ such that $(p,q'')R(p,q)$ and $(p',q'')R(p',q')R(p',q'')$.
+%			\item $(\dP\times\dQ,R)$ has property (B) iff $p'(b(R)) p$ implies that $s(R,p')$ refines $s(R,p)$, i.e. whenever $(p,q')R(p,q)$ and $p'(b(R)) p$, also $(p',q')R(p',q)$.
+%			\item $(\dP,\times\dQ,R)$ has property (C) iff whenever $(p,q_0),(p,q_1)R(p,q)$, there are $p_0,p_1\in\dP$ and $q'$ with $(p,q')R(p,q)$ such that $(p_i,q')R(p,q_i)$.
+%		\end{enumerate}
+%		We say that $(\dP\times\dQ,R)$ is iteration-like iff $(\dP\times\dQ,R)$ has properties (A), (B) and (C).
+%	\end{mydef}
+%	
+%	Properties (A) and (B) hold in almost all cases, and always for iterations and products. They are necessary for most of the relevant techniques.
+%	
+%	\begin{mylem}\label{(A)ImpliesProjection}
+%		If $(\dP\times\dQ,R)$ has properties (A) and (B), there is a projection from $(\dP,b(R))\times(\dQ,s(R,1_{\dP}))$ onto $(\dP\times\dQ,R)$.
+%	\end{mylem}
+%	
+%	Cones in orders on products can be regarded again as orders on products if property (A) holds.
+%	
+%	\begin{mylem}\label{ConeIsProduct}
+%		If $(\dP\times\dQ,R)$ has property (A) and $(p,q)\in\dP\times\dQ$, $\{p'\in\dP\;|\;p'(b(R)) p\}\times\{q'\in\dQ\;|\;(p,q')R(p,q)\}$ is dense in $\{(p',q')\in\dP\times\dQ\;|\;(p',q')R(p,q)\}$.
+%	\end{mylem}
+%	
+%	\begin{mydef}
+%		A notion of forcing $\dP$ is \emph{strongly ${<}\,\kappa$-distributive} if for any sequence $(D_{\alpha})_{\alpha<\kappa}$ of open dense sets and any $p\in\dP$, there is a descending sequence $(p_{\alpha})_{\alpha<\kappa}$ such that $p_0\leq p$ and $\forall\alpha<\kappa$, $p_{\alpha}\in D_{\alpha}$. Such a sequence will be called a \emph{thread} through $(D_{\alpha})_{\alpha<\kappa}$.
+%	\end{mydef}
+%	
+%	Like distributivity, strong distributivity is related to the completeness game which we will define now:
+%	
+%	\begin{mydef}
+%		Let $\dP$ be a forcing order, $\delta$ an ordinal. The \emph{completeness game} $G(\dP,\delta)$ on $\dP$ with length $\delta$ has players COM (complete) and INC (incomplete) playing elements of $\dP$ with COM playing at even ordinals (and limits) and INC playing at odd ordinals. COM starts by playing $1_{\dP}$, afterwards $p_{\alpha}$ has to be a lower bound of $(p_{\beta})_{\beta<\alpha}$. INC wins if COM is unable to play at some point $<\delta$. Otherwise, COM wins.
+%	\end{mydef}
+%	
+%	A forcing order $\dP$ is ${<}\,\kappa$-distributive if and only if for all $\alpha<\kappa$, INC does not have a winning strategy in $G(\dP,\alpha)$. The proof adapts to show the following:
+%	
+%	\begin{mysen}
+%		$\dP$ is strongly ${<}\,\kappa$-distributive if and only if INC does not have a winning strategy in $G(\dP,\kappa)$.
+%	\end{mysen}
+%	
+%	A stronger property is the following:
+%	
+%	\begin{mydef}
+%		Let $\kappa$ be a cardinal. A forcing order $\dP$ is $\kappa$-strategically closed if COM has a winning strategy in $G(\dP,\kappa)$.
+%	\end{mydef}
+%	
+%	We now combine the previous concepts to obtain our main criterion for the approximation property:
+%	
+%	\begin{mylem}\label{ApproxProp}
+%		Assume $(\dP\times\dQ,R)$ is iteration-like and for some cardinal $\kappa$, $b(R)^2$ is $\kappa$-cc. and $t(R)$ is strongly $<\kappa$-distributive. Then $(\dP\times\dQ,R)$ has the $<\kappa$-approximation property.
+%	\end{mylem}
+%	
+%	We begin with a helping lemma:
+%	
+%	\begin{mylem}\label{DecisionByP}
+%		Let $\dP\times\dQ$ be a iteration-like partial order.\\
+%		If $(p,q)$ forces $\dot{x}\in V$ but not $\dot{x}=\check{y}$ for any $y\in V$, there are $q'\in\dQ$, $p_0,p_1 b(R) p$ and $y_0\neq y_1$ such that $(p,q'')R (p,q)$ and for $i\in 2$, $(p_i,q')\Vdash\dot{x}=\check{y}_i$.
+%	\end{mylem}
+%	
+%	\begin{proof}
+%		We check two cases:
+%		\begin{enumerate}
+%			\item There is $q_0$ such that $(p,q_0)R(p,q)$ and $(p,q_0)\Vdash\dot{x}=\check{y}_0$. In this case, let $(p',q')R(p,q)$ force $\dot{x}=\check{y}_1$ for some $y_1\neq y_0$. By property (A), let $q_1$ be such that $(p,q_1)R(p,q)$ and $(p',q_1)R(p',q')$. By property (B), $(p',q_1)R(p',q)$ and $(p',q_0)R(p',q)$. By property (A), there are $q''$ and $p_0,p_1R p'$ such that $(p_i,q'')R(p',q_i)$. It follows directly that they are as required.
+%			\item For all $q_0$ with $(p,q_0)R(p,q)$, $(p,q_0)\not\Vdash\dot{x}=\check{y}_0$ for any $y_0$. Again, let $(p_0,q'')\Vdash\dot{x}=\check{y}_0$. By property (A), assume $(p,q'')R(p,q)$. It follows that $(p,q'')\not\Vdash\dot{x}=\check{y}_0$, so there is $(p_1,q')R(p,q'')$ forcing $\dot{x}=\check{y}_1$ for some $y_1\neq y_0$. Since we can again assume $(p,q')R(p,q'')R(p,q)$, it follows that $(p_0,q')R(p_0,q'')$, so we are done.
+%		\end{enumerate}
+%	\end{proof}
+%	
+%	Now we can finish the proof of Lemma \ref{ApproxProp}.
+%	
+%	\begin{proof}
+%		Let $\dot{f}$ be a $\dP\times\dQ$-name such that some $(p,q)$ forces every $<\delta$-approximation to be in $V$, but $\dot{f}$ itself to be outside of $V$. For simplicity, assume $(p,q)=1_{\dP\times\dQ}$. We will construct a winning strategy for INC in the completeness game of length $\delta$ played on $(\dQ,s(R,1_{\dP}))$. In any run of the game, we will construct $(p_{\gamma}^0,p_{\gamma}^1,y_{\gamma})_{\gamma\in\Odd}$ such that
+%		\begin{enumerate}
+%			\item $y_{\gamma}\in [V]^{<\delta}\cap V$, the sequence $(y_{\gamma})_{\gamma\in\Odd}$ is increasing
+%			\item $(p_{\gamma}^0,q_{\gamma})$ and $(p_{\gamma}^1,q_{\gamma})$ decide $\dot{f}\uhr \check{y}_{\alpha}$ equally for $\alpha<\gamma$, but differently for $\alpha=\gamma$
+%		\end{enumerate}
+%		Assume the game has been played until some even ordinal $\gamma<\delta$. Let $y_{\gamma+1}':=\bigcup_{\alpha<\gamma}y_{\gamma}$, which has size $<\delta$. Because $\dot{f}$ is forced not to be in $V$, there is $y_{\gamma+1}\supseteq y_{\gamma+1}'$ of size $<\delta$ such that $(1_{\dP},q_{\gamma})$ does not decide $\dot{f}\uhr\check{y}_{\gamma+1}$. Thus, we find all required objects by appealing to Lemma \ref{DecisionByP}.
+%		
+%		Lastly, assume this strategy does not win, i.e. there is a game of length $\delta$. In this case, we claim that $\{(p_{\gamma}^0,p_{\gamma}^1)\;|\;\gamma\in\Odd\}$ is an antichain in $\dP$, obtaining a contradiction. To this end, assume $(p^0,p^1) b(R) (p_{\gamma}^0,p_{\gamma}^1),(p_{\gamma'}^0,p_{\gamma'}^1)$ with $\gamma<\gamma'$. Because $p^0 b(R) p_{\gamma'}^0$ and $p^1 b(R) p_{\gamma'}^1$, $(p^0,q_{\gamma}) R (p^0,q_{\gamma'}) R (p_{\gamma'}^0,q_{\gamma'})$ and $(p^1,q_{\gamma}) R (p^1,q_{\gamma'}) R (p_{\gamma'}^1,q_{\gamma'})$ decide $\dot{f}\uhr\check{y}_{\gamma'}$ equally, but because $p^0 b(R) p_{\gamma'}^0$ and $p^1 b(R) p_{\gamma'}^1$, $(p^0,q_{\gamma}) R (p_{\gamma}^0,q_{\gamma})$ and $(p^1,q_{\gamma}) R (p_{\gamma}^1, q_{\gamma})$ decide $\dot{f}\uhr\check{y}_{\gamma'}$ differently, a contradiction.
+%	\end{proof}
+%	
+	\section{The New Forcing}
+	
+	In this section we will define the new forcing and present a simple application before moving on to the proof of our main theorem.
+	
+	\subsection{Defining the Forcing}
+	
+	The idea of our forcing is to take the two-step iteration used to establish $\ICNIA(\Theta,\aleph_1)$ and build it into a variant of Mitchell forcing that enjoys some of the nice properties of the more standard variants. First, we need the collapse that Krueger used, which forces a chain through a stationary set.
+	
+	\begin{mydef}[see \cite{Krueger2007}]\label{CollapseClub}
+		Let $\mu\leq\delta$ be cardinals and $S\subseteq[X]^{<\mu}$ be stationary for some set $X$. $\dP(S)$ consists of closed sequences of length $<\mu$ through $S$, i.e$.$ it consists of sequences $s$ such that $\dom(s)$ is a successor ordinal below $\mu$, $s(\alpha)\in S$ for all $\alpha\in\dom(s)$, and $s(\gamma)=\bigcup_{\alpha<\gamma}s(\alpha)$ for all limit $\gamma\in\dom(s)$. 
+	\end{mydef}
+	
+The poset $\dP(S)$ is used because it allows us to collapse $\delta$ while retaining both the approximation property and the clubness of the ``old'' sets.
+	
+	\begin{myfact}
+		Let $\mu\leq\delta$ be cardinals and $S\subseteq[H(\delta)]^{<\mu}$ stationary.
+		\begin{enumerate}
+			\item $\dP(S)$ adds an increasing and continuous sequence of elements $\seq{S_i}{i<\mu}$ of $S$ with union $H(\delta)^V$, thus collapsing $\delta$ to have cardinality $\mu$.
+			\item If $\delta^{<\delta}=\delta$, then $\dP(S)$ has cardinality $\delta$ and therefore is $\delta^+$-cc.
+		\end{enumerate}
+	\end{myfact}
+	
+	Note that to obtain ${<}\,\mu$-distributivity of $\dP(S)$, $S$ needs to satisfy some additional assumptions.
+	
+	Now we are ready to define our Mitchell forcing. We need to take some care regarding the model in which the Cohen sets are defined. This is analogous to constructions in which the tree property holds on an interval of cardinals (see \cite{Cummings-Foreman1998}), and is done here in anticipation of the iteration used to prove Theorem~\ref{omega-theorem}. We will therefore use the following basic fact from here on without comment:
+	
+	\begin{myfact} Suppose that $W \subseteq V$ are models of set theory such that $\tau$ is regular and $\kappa$ is inaccessible in in $W$. Suppose also that $\tau$ and $\kappa$ are cardinals in $V$ and that the extension $W \subseteq V$ has the $\kappa$-covering property. Then $\Add^W(\tau,\kappa)$, the version of $\Add(\tau,\kappa)$ defined in $W$, has the $\kappa$-Knaster property in $V$. (See \cite[Lemma 2.6]{Cummings-Foreman1998} and \cite{Abraham1983}.)\end{myfact}
+	
+	% However, in our case we will obtain distributivity in another way because of the choice of $S$.
+	
+%	\marginpar{\tiny M: I've been sloppy with the issue regarding the way the $\Add$ conditions are taken from inner models}
+	
+	\begin{mydef}\label{DefM3}
+		Let $W \subseteq V$ be models of $\textup{\textsf{ZFC}}$ containing the ordinals such $(\Add(\tau,\kappa))^W$ is $\mu$-Knaster. Let $\tau<\mu<\kappa$ be cardinals in $V$ such that $\tau^{<\tau}=\tau$ and $\kappa$ is inaccessible. Then we define $\dM^\oplus(\tau,\mu,\kappa,W)$ in $V$ to be the poset consists of pairs $(p,q)$ such that:
+		\begin{enumerate}
+			\item $p\in (\Add(\tau,\kappa))^W$
+			\item $q$ is a $<\mu$-sized function on $\kappa$ such that
+			\begin{itemize}
+				\item[(a)] for each $\alpha\in\dom(q)$, $\alpha=\delta+1$ for an inaccessible cardinal $\delta$,
+				\item[(b)] $q(\alpha)$ is an $(\Add(\tau,\alpha))^W$-name for an element in the chain forcing $\dP([H(\delta)]^{<\mu}\cap V[(\Add(\tau,\delta))^W])$.
+				\end{itemize}
+		\end{enumerate}
+		We let $(p',q')\leq_{\dM^\oplus(\tau,\mu,\kappa,W)}(p,q)$ if
+		\begin{enumerate}
+			\item $p'\leq_{(\Add(\tau,\kappa))^W} p$
+			\item $\dom(q')\supseteq\dom(q)$ and for all $\alpha\in\dom(q)$,
+			$$p'\uhr\alpha\Vdash q'(\alpha)\leq_{\Add(\tau,\alpha)^W} q(\alpha).$$
+		\end{enumerate}
+		For simplicity, we define $\dM^{\oplus}(\tau,\mu,\kappa):=\dM^{\oplus}(\tau,\mu,\kappa,V)$.
+	\end{mydef}
+	
+		 Given our definition of the Mitchell forcing, it then becomes clear that we can define a termspace forcing, which is essentially the main benefit of this presentation.
+
+
+	
+\begin{mydef} Let $\dT=\dT(\dM^\oplus(\tau,\mu,\kappa,W))$ be the termspace of $\dM^\oplus(\tau,\mu,\kappa,W)$. For the sake of explicitness, this is the poset consisting of conditions $q$ such that:
+
+\begin{enumerate}
+
+\item[(2)] $q$ is a $<\mu$-sized function such that for each $\alpha\in\dom(q)$:
+
+\begin{itemize}
+\item[(a)] $\alpha=\delta+1$ for an inaccessible cardinal $\delta$,
+\item[(b)] $q(\alpha)$ is an $(\Add(\tau,\alpha))^W$-name for an element in the chain forcing $\dP([H(\delta)]^{<\mu}\cap V[(\Add(\tau,\delta))^W])$.
+\end{itemize}
+
+
+\end{enumerate}
+
+Most importantly, we let $q \le q'$ if and only if:
+
+\begin{enumerate}
+
+\item $\dom q \supseteq \dom q'$,
+
+\item for all $\alpha \in \dom q$, $\Vdash_{\dP([H(\delta)]^{<\mu}\cap V[(\Add(\tau,\delta))^W])} ``q(\alpha) \le q'(\alpha)$''.
+
+\end{enumerate}
+\end{mydef}
+
+
+%We let let $\dT(\kappa_{n-1},\kappa_n,\kappa_{n+1})$ be the term ordering induced by $1_{\Add(\kappa_{n-1},\kappa_{n+1})}$ via $\dM(\kappa_{n-1},\kappa_n,\kappa_{n+1})$. As the term ordering is $\kappa_n$-strategically closed, so are $\dT(\kappa_{n-1},\kappa_n,\kappa_{n+1})$ and $\dP_0^n$.
+
+
+	
+
+
+%\begin{mydef}\cite{Jakob2023}
+%		Let $\dP$ be a poset and $\delta$ a cardinal. $\dP$ is \emph{strongly ${<}\,\delta$-distributive} if for all sequences $(D_{\alpha})_{\alpha<\delta}$ of open dense subsets of $\dP$ there is a descending sequence $(p_{\alpha})_{\alpha<\delta}$ such that for every $\alpha<\delta$, $p_{\alpha}\in D_{\alpha}$.
+%	\end{mydef}
+
+Next we will establish strategic closure properties of our forcing.
+	
+	\begin{mydef}
+		Let $\dP$ be a forcing order, $\delta$ an ordinal. The \emph{completeness game} $G(\dP,\delta)$ on $\dP$ with length $\delta$ has players $\COM$ (complete) and $\INC$ (incomplete) playing elements of $\dP$ with $\COM$ playing at even ordinals (i.e$.$ limit ordinals and ordinals of the form $\alpha+n$ for $\alpha$ a limit and $n<\omega$) and $\INC$ playing at odd ordinals. $\COM$ starts by playing $1_{\dP}$, afterwards $p_{\alpha}$ has to be a lower bound of $(p_{\beta})_{\beta<\alpha}$. $\INC$ wins if either player is unable to play at some point $<\delta$. Otherwise, $\COM$ wins.
+		
+	A poset $\dP$ is \emph{$\delta$-strategically closed} if $\COM$ has a winning strategy for the game $G(\dP,\delta)$. We say that $\dP$ is \emph{strongly $\delta$-strategically closed} if $\COM$ has a winning strategy for the version of the game where they play at odd ordinals and $\INC$ plays at even ordinals (see \cite{Handbook-Cummings} for background on these definitions).
+	\end{mydef}
+	
+%	A forcing order $\dP$ is ${<}\,\kappa$-distributive if and only if for all $\alpha<\kappa$, $\textup{\textsf{INC}}$ does not have a winning strategy in $G(\dP,\alpha)$. The proof adapts to show the following:
+	
+%	\begin{myfact}
+%		$\dP$ is strongly ${<}\,\kappa$-distributive if and only if $\textsf{\textup{INC}}$ does not have a winning strategy in $G(\dP,\kappa)$.
+%	\end{myfact}
+
+
+		
+		The subtlety here is that, even though $\dP(S)$ is in most cases not $\mu$-strategically closed since it destroys the stationarity of a subset of $[\delta]^{<\mu}$, the term ordering on $\Add(\tau)*\dP([\delta]^{<\mu}\cap V)$ is $\mu$-strongly strategically closed.
+
+
+	\begin{mylem}\label{StratClosed}
+		Let $\tau<\mu<\delta$ be cardinals such that $\tau^{<\tau}=\tau$. Then the term forcing $\dT(\dM^\oplus(\tau,\mu,\kappa,W))$ is strongly $\mu$-strategically closed.
+	\end{mylem}
+
+%	\begin{mylem}\label{M3TermOrderStratClos}
+%		Let $\tau<\mu<\delta$ be cardinals such that $\tau^{<\tau}=\tau$. Then the direct extension ordering on $\Add(\tau)*\dP([\delta]^{<\mu}\cap V)$ is $\mu$-strongly strategically closed.
+%	\end{mylem}
+	
+	\begin{proof} Since products of strongly $\mu$-strategically closed forcings are strongly $\mu$-strategically closed, it is sufficient to argue that the direct extension ordering on $\Add(\tau)^W *\dP([\delta]^{<\mu}\cap V)$, i.e$.$ the ordering $\le^*$ for which $(p,q) \le^* (p',q')$ holds if and only if $p = p'$ and $q \le q'$, is $\mu$-strongly strategically closed.\footnote{The strategicaly closure of the direct extension ordering was first noticed by Krueger with a different proof \cite{Krueger2008b}.} We will suppress notation for the inner model $W$ in this proof for the sake of readability.
+	
+	
+	
+		We give a winning strategy for $\COM$ by describing a play of the game of the form $\seq{(p,q_\gamma)}{\gamma<\mu}$ where $p\in\Add(\tau)$. At any odd stage $\gamma$, $\COM$ will play $\dot{q}_{\gamma}$ such that the following holds:
+		\begin{enumerate}
+			\item There is $\nu_{\gamma}$ such that $p\Vdash\dom(\dot{q}_{\gamma})=\check{\nu}_{\gamma}+1$
+			\item There is $x_{\gamma} \in V$ such that $p\Vdash\dot{q}_{\gamma}(\check{\nu}_{\gamma})=\check{x}_{\gamma}$.
+		\end{enumerate}
+We will argue both that this choice will be possible at every stage and that this is sufficient to keep the game going.
+		
+		Suppose that $\gamma$ is a limit ordinal: If $\COM$ has played according to the strategy until $\gamma$, we let $\nu_{\gamma}:=\bigcup\{ \nu_{\alpha}:\alpha<\gamma,\alpha \in \Odd\}$ and $x_{\gamma}:=\bigcup \{x_{\alpha}:\alpha<\gamma,\alpha \in \Odd\}$. Then we can find a lower bound: Let $\dot{q}_{\gamma}$ be a name for a condition with domain $\nu_\gamma+1$ such that $\dot{q}_{\gamma}(\alpha)=\dot{q}_{\beta}(\alpha)$ for some $\beta<\alpha$ whenever $\alpha<\nu_{\gamma}$ and such that $\dot{q}_{\gamma}(\nu_{\gamma})=x_{\gamma}$. In particular, this works because we have made it explicit that $x_\gamma \in V$.
+		
+		Now assume $\gamma=\beta+1$ is a successor ordinal and $\INC$ has just played $\dot{q}_{\beta}$. Because $\Add(\tau)$ is $\mu$-Knaster and in particular has the $<\mu$-covering property, $\nu_{\gamma}':=\sup\{\nu\;|\;\exists p'\leq p(p'\Vdash\dom(\dot{q}_{\beta})=\check{\nu})\}$ is below $\mu$ and $x_{\gamma}:=\{\epsilon\;|\;\exists p'\leq p(p'\Vdash\check{\epsilon}\in\bigcup\dot{q}_{\beta})\}$ has size $<\mu$. Let $\dot{q}_{\gamma}$ be a function with domain $\nu_{\gamma}'+1$ extending $\dot{q}_\beta$ and such that $\dot{q}_{\gamma}(\nu_{\gamma}')=\check{x}_{\gamma}$.
+		
+		%$\dot{q}_{\gamma}$ repeats $\dot{q}_{\beta}(\dom(\dot{q}_{\beta})-1)$ for every ordinal between $\dom(\dot{q}_{\beta})-1$ and $\nu_{\gamma}'$, and $\dot{q}_{\gamma}(\nu_{\gamma}')=\check{x}_{\gamma}$.
+		
+%		\marginpar{\tiny M: I don't know if we're allowed to repeat $\dot{q}_{\beta}(\dom(\dot{q}_{\beta})-1)$ since the poset might be expected to consist of increasing sequences. There's no reason you should be aware of this, but this is at least how it is in Definition 4.3 of ``On the structure of stationary sets'' by Feng, Jech, and Zapletal}
+		
+		We show that $\dot{q}_{\gamma}$ is as required: $\dot{q}_{\gamma}$ is obviously forced to extend $\dot{q}_{\beta}$. Furthermore, the values of $\dot{q}_{\gamma}$ are forced to be elements of $V$: Until $\nu_{\gamma}'$ this holds because $\dot{q}_{\beta}$ is forced to be in $\dP([\delta]^{<\mu}\cap S)$. At $\nu'_\gamma$, it holds because $\dot{q}_{\gamma}(\nu_{\gamma}')$ is the check-name $\check{x}_\gamma$. Lastly, $\dot{q}_{\gamma}$ is continuous at every limit and increasing. Because $\dom(\dot{q}_{\gamma})=\check{\nu_{\gamma}+\alpha+1}$ and $\dot{q}_{\gamma}(\check{\nu}_{\gamma}+\alpha)=\check{x}_{\gamma}$, we are done.
+	\end{proof}
+	
+	
+	In particular, by Easton's Lemma, $\dP([\delta]^{<\mu}\cap V)$ is ${<}\,\mu$-distributive (actually strongly ${<}\,\mu$-distributive) in $V[\Add(\tau)]$.
+	
+		We note that what we have given is actually a winning \emph{tactic}, i.e$.$ in successor stages the play by $\COM$ depends only on the last play of $\INC$, not on the plays before that (see \cite{Yoshinobu2017}).
+		
+		% Additionally, in limit stages we can play any lower bound.
+	
+%	As an easy generalization, we obtain that the term ordering of $\dM^\oplus$ is $\mu$-strategically closed at every point.
+	
+%	 For this lemma, recall the notion of strong strategic closure, which is a bit stronger than strong distributivity: In this case we consider a game in which $\COM$ plays only at odd ordinals and $\INC$ plays at even ordinals, and in which $\COM$ loses if there is a stage at which either player cannot play .
+	
+%	\begin{mycol}\label{StratClosed}
+%		Let $\tau<\mu<\delta$ be cardinals such that $\tau^{<\tau}=\tau$. The term ordering on $\Add(\tau,\delta+1)*\dP([\delta]^{<\mu}\cap V[\Add(\tau,\delta)])$ is $\mu$-strategically closed.
+%	\end{mycol}
+
+
+%
+%	\begin{mylem}\label{StratClosed}
+%		Let $\tau<\mu<\delta$ be cardinals such that $\tau^{<\tau}=\tau$. Then the term forcing $\dT(\dM^\oplus(\tau,\mu,\kappa,W))$ is strongly $\mu$-strategically closed.
+%	\end{mylem}
+%	
+%	\begin{proof} Since products of  For this argument, we will suppress the notation indicating that we are using the $\Add(\tau,\alpha)$ poset from the model $W$.\marginpar{\tiny M: This first line may be a problematic point, but I'm moving on for now}
+%	
+%	 Let $\Theta$ be large enough that $H(\Theta)$ contains the relevant parameters. We will describe the strategy by simultaneously describing a play $\seq{q_i}{i<\mu}$ in the game and a sequence of elementary substructures $\seq{N_i}{i<\mu,i \text{ even}}$ of $H(\Theta)$. We begin with an appropriate $N_0 \prec H(\Theta)$. Player $\COM$ will choose $q_i$'s so that for all $\alpha = \delta +1 \in \dom q_i$, the maximal element of $q_i(\alpha)$ will be a canonical name for $N_i \cap H(\delta)$. We will use the inductive hypothesis that for all $i$ odd with $i=i'+1$, $q_{i}$ is chosen such that for all $\alpha = \delta+1 \in q_i$,  $q_i(\alpha)$ is a sequence containing $N_i \cap H(\delta)$.
+%	
+%	Suppose $i$ is odd and we have defined $\seq{q_j}{j \le i}$ and $\seq{N_j}{j<i}$. Let $N_{i+1} \prec H(\Theta)$ be large enough so that $N_{i+1} \supseteq N_{i-1}$ and for all $\alpha=\delta+1 \in \dom q_i$, the empty condition of the $\alpha$'th coordinate of $\Add(\tau,\alpha)$ forces that $N_{i+1}$ covers $q_i(\alpha)(\dom(q_i(\alpha)+1)$ (using the fact that $\Add(\tau,\alpha)$ has the $\tau^+$-chain condition). Then Player $\textup{\textsf{II}}$ will play a condition $q_{i+1}$ where $\dom(q_{i+1}) = \dom(q_i) \subseteq \kappa$ and such that for all $\alpha = \delta+1 \in \dom(q_{i+1})$, $\dom(q_{i+1}(\alpha))=\dom(q_i(\alpha))+1$ and $q_{i+1}(\dom(q_i(\alpha)+1)$ is a canonical $\Add(\tau,\alpha)$-name for $N_{i+1} \cap H(\delta)$.	(Note that the operator $\dom$ is being used both for the domains of the $q$'s and the domains of the arguments of the $q$'s.)
+%	
+%	
+%	Now suppose that $i$ is a limit and that $q_j$ and $N_j$ have been defined for $j<i$. Then let $N_i = \bigcup_{j<i}N_j$. Then $\INC$ will be forced to play a condition $q_i$ such that $\dom q_i \supseteq \bigcup_{j<i}\dom q_j$ and such that for all $\alpha=\delta+1 \in \dom q_i$, $q_i(\alpha)$ is forced to be a lower bound of $\seq{q_j(\alpha)}{j<i,i \textup{ even}}$ with the maximal element being equal above $N_i \cap H(\delta)$.\end{proof}
+%%	
+
+	
+	Now we can show that $\dM^\oplus$ has similar properties to more standard versions of Mitchell forcing:
+
+
+\begin{mypro} Let $\dM^\oplus = \dM^\oplus(\tau,\mu,\kappa,W)$:
+
+\begin{enumerate}
+\item $\dM^\oplus$ is $\kappa$-Knaster,
+\item $\dM^\oplus$ is a projection of the product $\Add(\tau,\kappa)^W \times \dT(\dM^\oplus(\tau,\mu,\kappa,W))$,
+\item $\dM^\oplus$ forces $\kappa = 2^\tau = \mu^+ = \tau^{++}$.
+\end{enumerate}\end{mypro}
+
+\begin{proof}[Sketch] Recall that the first point follows from a $\Delta$-system argument, the second point uses some mixing of forcing names, and the third point uses the first two points along with Easton's Lemma.\end{proof}
+
+
+
+%	\begin{mylem}
+%		Let $\tau<\mu<\nu$ be cardinals such that $\tau^{<\tau}=\tau$ and $\nu$ is inaccessible.
+%		\begin{enumerate}
+%			\item $\dM(\tau,\mu,\nu)$ is $\nu$-Knaster.
+%			\item The base ordering on $\dM(\tau,\mu,\nu)$ is $\tau^+$-Knaster.
+%			\item The term ordering on $\dM(\tau,\mu,\nu)$ is $\mu$-strategically closed.
+%			\item The ordering on $\dM(\tau,\mu,\nu)$ is iteration-like.
+%		\end{enumerate}
+%	\end{mylem}
+%	
+%	\begin{proof}
+%		All properties except (3) and (4) are standard.
+%		
+%		For (3), our strategy consists of replying to a play $(p,q_{\beta})$ by playing $q_{\gamma}$ with $\dom(q_{\beta})=\dom(q_{\gamma})$ and pointwise according to the corresponding strategy from Corollary \ref{StratClosed}.
+%		
+%%		We prove (4). Regarding property (A), Given $(p',q')\leq(p,q)$, let $q''$ be a function with domain $\dom(q')$ such that for all $\alpha\in\dom(q')$, $q''(\alpha)$ is forced by $p'$ to be equal to $q'(\alpha)$ and by conditions incompatible to $p'$ to be equal to $q(\alpha)$ (or $\emptyset$, if $q(\alpha)$ is not defined).
+%		
+%%		Property (B) is clear since stronger conditions force more.
+%		
+%%		For property (C), let $(p,q_0),(p,q_1)\leq (p,q)$. Let $p_0,p_1$ be extensions of $p$ such that $p_0(0)$ and $p_0(1)$ are incompatible. Let $q'$ be a function with domain $\dom(q_0)\cup\dom(q_1)$. Let $\alpha\in\dom(q')$. Then $p_0\uhr\alpha$ and $p_1\uhr\alpha$ are incompatible since $\alpha$ is the successor of a cardinal. So we can let $q'(\alpha)$ be such that it is forced by $p_0\uhr\alpha$ to be equal to $q_0(\alpha)$ (or $\emptyset$, if $q_0(\alpha)$ is not defined) and by conditions incompatible with $p_0\uhr\alpha$ (in particular, $p_1\uhr\alpha$) to be equal to $q_1(\alpha)$ (or $\emptyset$, if $q_1(\alpha)$ is not defined). It follows that $(p,q')\leq(p,q)$ because we mixed conditions below $q$ and $(p_i,q')\leq(p,q_i)$.
+%	\end{proof}
+	
+The next point will be the crux of what is needed to bring Krueger's arguments into our context.
+	
+			\begin{mylem}\label{ApproxProp}
+$\dM^{\oplus}(\tau,\mu,\kappa,W)$ has the $<\mu$-approximation property.\end{mylem}
+
+	The argument uses the fact that $\dM^{\oplus}(\tau,\mu,\kappa,W)$ is \emph{iteration-like}, meaning that we can mix the conditions in the second coordinate to ``move disagreements into the first coordinate''.\footnote{See \cite{Jakob2023} for a generalization that uses the notion of strong distributivity, due to the first author.} Our argument here uses ideas of Usuba \cite{Usuba2014} and Unger \cite{Unger2015}. 
+		
+
+	\begin{proof}[Proof of Lemma~\ref{ApproxProp}]
+	
+	Let us abbreviate $\dM^{\oplus}(\tau,\mu,\kappa,W)$ as $\dM$.
+	
+	
+	\begin{myclan}\label{DecisionByP}
+		Suppose that $(p,q) \in \dM$ forces $\dot{x}\in V$ but that there is no $y\in V$ such that $(p,q)$ forces $\dot{x}=\check{y}$. Then there are $q',p_0,p_1 \le p$ and $y_0\neq y_1$ such that $q' \le_\dT q$ and $y_i \in V$ and $(p_i,q')\Vdash\dot{x}=\check{y}_i$ for $i\in 2$.
+	\end{myclan}
+	
+%		\begin{myclan}\label{DecisionByP}
+%		Suppose that $(p,q) \in \dM$ forces $\dot{x}\in V$ but that there is no $y\in V$ such that $(p,q)$ forces $\dot{x}=\check{y}$. Then there are $q'\in\dQ$, $p_0,p_1 \le p$ and $y_0\neq y_1$ such that $(p,q') \le_{\dM} (p,q)$ and for $i\in 2$, $y_i \in V$ and $(p_i,q')\Vdash\dot{x}=\check{y}_i$.
+%	\end{myclan}
+	
+	\begin{proof}
+		We consider two possible cases:
+
+
+
+\emph{Case 1:} There are $q^*$ and $y_0$ such that $(p,q^*) \le_{\dM} (p,q)$ and $(p,q^*)\Vdash\dot{x}=\check{y}_0$. 
+
+Then choose $(p_1,q^{**}) \le_{\dM} (p,q)$ and some $y_1$ such that $(p_1,q^{**}) \Vdash \dot{x} = \check{y}_1$. Strengthen if necessary to assume that $p_1$ is strictly below $p$ and choose $p_0 \le p$ incompatible with $p_1$. Using standard arguments for the construction of names, there is $q'$ such that $q' \le_\dT q$ and such that for all $\alpha \in \dom q^{**}$, $p_1 \Vdash q^{**}(\alpha)=q'(\alpha)$ and for all $\alpha \in \dom q^*$, $p_0 \Vdash q^*(\alpha) = q'(\alpha)$. Then we have $(p_0,q') \le_{\dM} (p_0,q^*) \le_{\dM} (p,q^*) \le_{\dM} (p,q)$ and $(p_1,q') \le_{\dM} (p_1,q^{**}) \le_{\dM} (p,q)$, and so have this case of the claim.
+
+
+
+\emph{Case 2:} For all $q^*$ with $(p,q^*)\le_{\dM}(p,q)$, $(p,q^*)\not\Vdash\dot{x}=\check{y}_0$ for any $y_0$. 
+
+Then choose $(p_0,q^*) \le_{\dM} (p,q)$ forcing $\dot{x}=\check{y}_0$ for some $y_0$. Using the mixing of names, we can assume that $q^* \le_{\dT} q$, and hence that $(p,q^*) \le_{\dM} (p,q)$. The present case implies that $(p,q^*) \not\Vdash\dot{x}=\check{y}_0$, so there is some $(p_1,q') \le_{\dM} (p,q^*)$ forcing $\dot{x}=y_1$ for some $y_1 \ne y_0$. Again we can assume that $q' \le_{\dT} q^*$. Therefore $(p_0,q') \le_{\dM} (p_0,q^*) \le_{\dM} (p,q^*) \le_{\dM} (p,q)$ and $(p_1,q') \le_{\dM} (p,q^*) \le (p,q)$.\end{proof}	
+	
+%	\emph{Case 1:} There is $q_0$ such that $(p,q_0) \le_{\dM} (p,q)$ and $(p,q_0)\Vdash\dot{x}=\check{y}_0$. Then let $(p',q') \le_{\dM}(p,q)$ force $\dot{x}=\check{y}_1$ for some $y_1\neq y_0$. Using standard arguments for the construction of names, we can choose a condition $q_1$ in $\dT$ such that $(p,q_1)\le_{\dM}(p,q)$ and $(p',q_1)\le_{\dM}(p',q')$. Then we immediately have $(p',q_1)\le_{\dM} (p',q)$ and $(p',q_0)\le_{\dM}(p',q)$. It follows directly that they are as required.
+%
+%
+%
+%\emph{Case 2:} For all $q_0$ with $(p,q_0)\le_{\dM}(p,q)$, $(p,q_0)\not\Vdash\dot{x}=\check{y}_0$ for any $y_0$. Again, let $(p_0,q'')\Vdash\dot{x}=\check{y}_0$. We can assume $(p,q'')\le_{\dM}(p,q)$. It follows that $(p,q'')\not\Vdash\dot{x}=\check{y}_0$, so there is $(p_1,q')\le_{\dM}(p,q'')$ forcing $\dot{x}=\check{y}_1$ for some $y_1\neq y_0$. Since we can again assume $(p,q')\le_{\dM}(p,q'')\le_{\dM}(p,q)$, it follows that $(p_0,q')\le_{\dM}(p_0,q'')$, so we are done.
+%	
+	
+	
+		Now suppose for contradiction that the lemma is false. Let $\dot{f}$ be an $\dM$-name such that some $(p,q)$ forces every $<\mu$-approximation to be in $V$, but $\dot{f}$ itself to be outside of $V$. For simplicity, assume $(p,q)=1_{\dM}$.
+		
+	We will use the winning strategy for $\COM$ in the completeness game of length $\mu$ played on $\dT$. More precisely, the values of $q_\gamma$ chosen for $\gamma \in \Even$ are chosen by $\INC$, and the construction continues because of the winning strategy for $\COM$.
+	
+	We will construct $(p_{\gamma}^0,p_{\gamma}^1,q_\gamma,y_{\gamma})_{\gamma\in\Even}$ such that
+	
+	
+		\begin{enumerate}
+			\item $y_{\gamma}\in [V]^{<\mu}\cap V$, the sequence $(y_{\gamma})_{\gamma\in\Even}$ is $\subseteq$-increasing,
+			\item the $q_\gamma$'s are $\le_\dT$-decreasing,
+			\item $(p_{\gamma}^0,q_{\gamma})$ and $(p_{\gamma}^1,q_{\gamma})$ decide $\dot{f}\uhr \check{y}_{\alpha}$ the same way for $\alpha<\gamma$, but differently for $\alpha=\gamma$.
+		\end{enumerate}
+		Assume the game has been played until some even ordinal $\gamma<\mu$. Let $y_{\gamma+1}':=\bigcup_{\alpha<\gamma}y_{\gamma}$, which has size $<\mu$. Because $\dot{f}$ is forced not to be in $V$, there is $y_{\gamma+1}\supseteq y_{\gamma+1}'$ of size $<\mu$ such that $(1_{\dA},q_{\gamma})$ does not decide $\dot{f}\uhr\check{y}_{\gamma+1}$. Thus, we find all required objects by appealing to Claim~\ref{DecisionByP}. Formally, we can choose the plitting below $(p_\gamma^0,q_\gamma)$ at every step.
+		
+		
+		We claim that $\{(p_{\gamma}^0,p_{\gamma}^1)\;|\;\gamma\in\Even\}$ is an antichain in $\dA \times \dA$ where $\dA:=\Add(\tau,\kappa)^W$, obtaining a contradiction since it is known that $\dA \times \dA$ has the $\mu$-chain condition. To this end, assume $(p^0,p^1) \le_{\dA \times \dA} (p_{\gamma}^0,p_{\gamma}^1),(p_{\gamma'}^0,p_{\gamma'}^1)$ with $\gamma>\gamma'$. Because $p^0 \le_{\dA} p_{\gamma'}^0$ and $p^1 \le_{\dA} p_{\gamma'}^1$, $(p^0,q_{\gamma}) \le_{\dM} (p^0,q_{\gamma'}) \le_{\dM} (p_{\gamma'}^0,q_{\gamma'})$ and $(p^1,q_{\gamma}) \le_{\dM} (p^1,q_{\gamma'}) \le_{\dM} (p_{\gamma'}^1,q_{\gamma'})$ decide $\dot{f}\uhr\check{y}_{\gamma'}$ differently, but because $p^0 \le_{\dA} p_{\gamma}^0$ and $p^1 \le_{\dA} p_{\gamma}^1$, $(p^0,q_{\gamma}) \le_{\dM} (p_{\gamma}^0,q_{\gamma})$ and $(p^1,q_{\gamma}) \le_{\dM} (p_{\gamma}^1, q_{\gamma})$ decide $\dot{f}\uhr\check{y}_{\gamma'}$ the same way, a contradiction.
+	\end{proof}
+	
+
+	
+%	\begin{mybem} Lemma~\autoref{ApproxProp} can also be proved in the context of strong distributivity.\end{mybem}
+	
+	\subsection{Considering Quotients}
+
+	
+	As is common when working with variants of Mitchell forcing, we give an explicit description of the quotient forcing. In this subsection we will define and state what we need in order to carry out the proof of our main theorem, leaving out some of the details that are addressed elsewhere in the literature.	
+	
+	\begin{mydef}
+		Let $\tau<\mu<\nu<\kappa$ be cardinals such that $\Add(\tau,\kappa)^W$ is $\mu$-Knaster. Let $G\subseteq\dM^\oplus(\tau,\mu,\nu,W)$ be a generic filter. In $V[G]$, define $\dM^\oplus(G,\tau,\mu,\kappa\smallsetminus\nu,W)$ to consist of $(p,q)$ such that
+		\begin{enumerate}
+			\item $p\in\Add(\tau,\kappa\smallsetminus\nu)^W$
+			\item $q$ is a partial function on $\kappa\smallsetminus\nu$ of size $<\mu$ such that for each $\alpha\in\dom(q)$, $\alpha=\nu+1$ for an inaccessible cardinal $\nu$ and $q(\alpha)$ is an $\Add(\tau,\alpha\smallsetminus\nu)$-name for an element of $\dP([\nu]^{<\mu}\cap V[G][\Add(\tau,\nu\smallsetminus\nu)])$.
+		\end{enumerate}
+		We let $(p',q')\leq(p,q)$ if
+		\begin{enumerate}
+			\item $p'\leq p$
+			\item $\dom(q')\supseteq\dom(q)$ and for all $\alpha\in\dom(q)$,
+			$$p'\uhr\alpha\Vdash q'(\alpha)\leq q(\alpha).$$
+		\end{enumerate}
+	\end{mydef}
+	
+	We remark that we technically do not need the generic $G$ to define the quotient.
+	
+	The next lemma follows similarly to other known variants of Mitchell Forcing.
+	
+	\begin{mylem}\label{M3Decom}
+		Let $\tau<\mu<\nu<\kappa$ be regular cardinals such that $\tau^{<\tau}=\tau$ and $\nu,\kappa$ are inaccessible. There is a dense embedding from $\dM^\oplus(\tau,\mu,\kappa,W)$ into $\dM^\oplus(\tau,\mu,\nu,W)*\dM^\oplus(G,\tau,\mu,\kappa\smallsetminus\nu,W)$.
+	\end{mylem}
+	
+	\begin{proof}
+		As in other versions of Mitchell Forcing, we define
+		$$(p,q)\mapsto(p\uhr\nu,q\uhr\nu,\op(\check{p\uhr(\kappa\smallsetminus\nu)},\overline{q}))$$
+		where $\overline{q}$ reimagines $q\uhr(\kappa\smallsetminus\nu)$ as an $\dM^\oplus(\tau,\mu,\nu)$-name.
+	\end{proof}
+	
+	Similarly, we have the following:
+	
+	\begin{mypro}\label{little-factors} Let $\tau<\mu<\nu<\kappa$ be cardinals such that $\tau^{<\tau}=\tau$ and $\nu,\kappa$ are inaccessible and let $G$ be $\dM^\oplus(\tau,\mu,\nu,W)$-generic over and let $H$ be $\dM^\oplus(G,\tau,\mu,\kappa \setminus \nu,W)$-generic over $V[G]$. Then there is a filter $K_A$ that is $\Add(\tau)$-generic over $V[G]$ and a filter $K_C$ that is $\dP([\nu]^{<\mu} \cap V[G])$-generic over $V[G][K_A]$ such that $V[G][H]$ is a forcing extension of $V[G][K_A][K_C]$.\end{mypro}
+
+%\[
+%\dM^\oplus(G,\tau,\mu,\kappa \setminus \nu) \simeq \dot{\Add}(\tau) \ast \dot{\dP}([\nu]^{<\mu} \cap V[\dM^\oplus(\tau,\mu,\kappa)][\Add(\tau)]) \ast \dot{\dQ}.
+%\]
+
+\begin{proof} Use a map similar to the one from the previous lemma. This is where we use the fact that $\dom(q)$ consists of ordinal successors of inaccessibles for $(p,q) \in \dM^\oplus(\tau,\mu,\kappa,W)$. Here we also note that $\dP([\nu]^{<\mu} \cap V[G]) = \dP([\nu]^{<\mu} \cap V[A])$ where $A$ is the $\Add(\tau,\nu)$-generic induced by $G$.\end{proof}
+	
+	In $V[G]$, $\dM^\oplus(G,\tau,\mu,\kappa\smallsetminus\nu,W)$ has similar properties to $\dM^\oplus(\tau,\mu,\kappa,W)$ using arguments similar to the ones we detailed:
+	
+	\begin{mylem}\label{M3DecProp}
+		Let $\tau<\mu<\nu<\kappa$ be cardinals such that $\Add(\tau,\kappa)^W$ is $\mu$-Knaster and $\nu,\kappa$ are inaccessible. Let $G$ be $\dM^\oplus(\tau,\mu,\nu,W)$-generic. The following holds in $V[G]$:
+		\begin{enumerate}
+			\item $\dM^\oplus(G,\tau,\mu,\kappa\smallsetminus\nu,W)$ is $\kappa$-Knaster.
+%			\item The base ordering on $\dM(G,\tau,\mu,\kappa\smallsetminus\nu)$ is $\tau^+$-Knaster.
+			\item The term ordering on $\dM^\oplus(G,\tau,\mu,\kappa\smallsetminus\nu,W)$ is $\mu$-strongly strategically closed.
+%			\item The ordering on $\dM(G,\tau,\mu,\kappa\smallsetminus\nu)$ is iteration-like.
+		\end{enumerate}
+	\end{mylem}
+	
+%	We note that property (C) holds because we chose to collapse not at the point $\delta$ for $\delta$ inaccessible but at $\delta+1$.
+	
+%	Applying Lemma \ref{ApproxProp}, we obtain:
+	
+
+
+It is crucial for us to obtain the approximation property for quotients, which we can obtain from trivial modifications of the proof of Lemma~\autoref{ApproxProp}. 
+
+
+	
+	\begin{mylem}\label{quotient-approx}
+		Let $\tau<\mu<\nu<\kappa$ be cardinals such that $\tau^{<\tau}=\tau$ and $\nu,\kappa$ are inaccessible. Let $G$ be $\dM^\oplus(\tau,\mu,\nu,W)$-generic. In $V[G]$, $\dM^\oplus(G,\tau,\mu,\kappa\smallsetminus\nu,W)$ has the $<\mu$-approximation property.
+	\end{mylem}
+	
+%	\section{Distinguishing Internally Club and Approachable for a Single Cardinal}
+
+\subsection{Distinguishing Internally Club and Approachable for a Single Cardinal}
+	
+	In this subsection we show that $\dM^\oplus(\tau,\mu,\kappa,W)$ forces $\ICNIA(\kappa,\mu)$ to hold at $\kappa=\mu^+$. Technically, the next theorem will become redundant after giving the proof of Lemma \ref{Extension}. However, the proof serves as a gentle introduction to these arguments.
+	
+
+	
+	\begin{mydef}\cite{Harrington-Shelah1985} Let $K$ be a model of some fragment of $\textup{\textsf{ZFC}}$. We say that $M \prec K$ is \emph{rich} or \emph{rich with respect to $\kappa$} if the following hold: 
+
+\begin{enumerate}
+\item $\kappa \in M$;
+\item $\bar{\kappa}:=M \cap \kappa \in \kappa$ and $\bar{\kappa}<\kappa$;
+\item $\bar \kappa$ is an inaccessible cardinal in $K$;
+\item The cardinality of $M$ is $\bar{\kappa}$;
+\item $M$ is closed under $<\!\bar{\kappa}$-sequences.
+\end{enumerate}
+	 \end{mydef}
+	 
+It is easy to show that:	 
+	 
+	 \begin{myfact}\label{wegotrichmodels} If $\kappa$ is Mahlo and $K$ is a model of a sufficiently rich fragment of $\textup{\textup{ZFC}}$ with $\kappa+1 \subseteq K$, then for all $a \in [K]^{<\kappa}$, there is a model $M \prec K$ such that $a \subseteq M$ and $M$ is rich with respect to $\kappa$. 
+	 \end{myfact} 
+	
+	\begin{mysen}\label{M3ForcesDist}
+		$\dM^\oplus(\tau,\mu,\kappa)$ forces that there exist stationarily many $N\in[H(\kappa)]^{\leq\mu}$ such that $N$ is internally club but not internally approachable.
+	\end{mysen}
+	
+	\begin{proof}
+		To aid in the legibility, we let $\dM^\oplus:=\dM^\oplus(\tau,\mu,\kappa)$.
+		
+		Let $\dot{C}$ be an $\dM^\oplus$-name for a club. Let $\dot{F}$ be an $\dM^\oplus$-name for a function $[H(\kappa)]^{<\omega}\to[H(\kappa)]^{<\kappa}$ such that the closure points of $\dot{F}$ are contained in $\dot{C}$. Let $\Theta$ be a cardinal such that $\dot{F}\in H(\Theta)$ and let $M'\prec H(\Theta)$ be rich with respect to $\kappa$ such that $\dot{F},\dM^\oplus,\tau,\mu,\kappa\in M'$, $\mu\subseteq M'$.
+		
+
+
+		
+		Let $G$ be $\dM^\oplus$-generic and consider $M'[G]$: Since $\dot{F}^G\in M'[G]$, $M'[G]\cap H(\kappa)$ is closed under $\dot{F}^G$ and thus $M'[G]\cap H(\kappa)\in\dot{C}^G$. Furthermore, because $\dM^\oplus$ is $\kappa$-cc., $M'[G]\cap H(\kappa)=(M'\cap H(\kappa)^V)[G]=:M[G]$. We will show that $M[G]$ is as required.
+		
+		Let $\pi:M\to N$ be the Mostowski-Collapse of $M$. Because $\dM^\oplus$ is $\kappa$-cc., $M[G]\cap V=M$ and thus $\pi$ extends to $\pi:M[G]\to N[G']$, where $G':=\pi[G]$. Looking at the proof of Lemma \ref{M3Decom}, $G'$ is also equal to the $\dM^\oplus(\tau,\mu,\nu)$-generic filter induced by $G$ and there is an $\dM^\oplus(G',\tau,\mu,\kappa\smallsetminus\nu)$-generic filter (over $V[G']$) $G''$ such that $G=G'*G''$.
+		
+%		\setcounter{myclan}{0}
+		
+		\begin{myclan}
+			$M[G]$ is internally club.
+		\end{myclan}
+		
+		\begin{proof}
+			We first show that $N[G']$ is internally club. We have $N[G']\subseteq V[G']$. Additionally, the reverse inclusion holds for many sets:
+			\begin{mysclai}
+				If $x\in [N[G']]^{<\mu}\cap V[G']$, $x\in N[G']$.
+			\end{mysclai}
+			\begin{proof}
+				If $x\in [N[G']]^{<\mu}\cap V[G']$, $x$ has been added by $\Add(\tau,\nu)$. Let $\dot{x}$ be an $\Add(\tau,\nu)$-name for $x$. By the $\tau^+$-cc. of $\Add(\tau,\nu)$, we can assume that $\dot{x}$ is a ${<}\,\mu$-sized subset of $N$ (since $\dot{x}(\alpha)$ is an element of $N[G']$ for every $\alpha$). Then $\dot{x}\in N$ and thus $\dot{x}^{G'}\in N[G']$.
+			\end{proof}
+			\begin{mysclai}
+				$N[G']$ is internally club.
+			\end{mysclai}
+			\begin{proof}
+				By the previous claim, $[N[G']]^{<\mu}\cap V[G']=[N[G']]^{<\mu}\cap N[G']$. $\dM^\oplus(\nu+2)$ collapses $\nu$ by adding a continuous and cofinal sequence into $[\nu]^{<\mu}\cap V[\Add(\tau,\nu)]$ by Proposition~\autoref{little-factors}. This is isomorphic to $[N[G']]^{<\mu}\cap V[G']$ since $|N[G']|=|N|=\nu$. Hence, $\dM^\oplus(\nu+2)$ forces that we can write $N[G']=\bigcup_{i<\mu}N_i$ where $N_i\in [N[G']]^{<\mu}\cap V[G']=[N[G']]^{<\mu}\cap N[G']$ for every $i<\mu$.
+			\end{proof}
+			Since $\pi$ is an ``internal'' isomorphism of $M[G]$ and $N[G']$, $M$ is also internally club: Write $N[G']=\bigcup_{i<\mu}N_i$ such that $N_i\in [N[G']]^{<\mu}\cap N[G']$ for every $i$. Then $M[G]=\bigcup_{i<\mu}\pi^{-1}[N_i]$ and $\pi^{-1}[N_i]=\pi^{-1}(N_i)\in [M[G]]^{<\mu}\cap M[G]$ for every $i$ (since $\otp(N_i)<\mu<\crit(\pi^{-1})$).
+		\end{proof}
+		
+		Thus we are finished after showing:
+		
+		\begin{myclan}
+			$M[G]$ is not internally approachable.
+		\end{myclan}
+		\begin{proof}
+			Again, we show the following first:
+			\begin{mysclai}
+				$N[G']$ is not internally approachable.
+			\end{mysclai}
+			\begin{proof}
+				Assume toward a contradiction that $N[G']=\bigcup_{i<\mu}N_i$ such that for each $j$, $(N_i)_{i<j}\in N[G']$. In particular, $(N_i)_{i<j}\in V[G']$. Because $G=G'*G''$ and $G''$ is generic for an ordering with the $<\mu$-approximation property (\autoref{quotient-approx}), $(N_i)_{i<\mu}\in V[G']$. However, this implies that $N[G']$ has size $\mu$ in $V[G']$, a contradiction as $\dM^\oplus(\tau,\mu,\nu)$ is $\nu$-cc. and $|N[G']|=|N|=|\nu|$.
+			\end{proof}
+			Now assume $M[G]=\bigcup_{i<\mu}M_i$ such that for each $j<\mu$, $(M_i)_{i<j}\in M[G]$. Then $N[G']=\bigcup_{i<\mu}\pi[N_i]$ and for each $j<\mu$, $(\pi[N_i])_{i<j}=(\pi(N_i))_{i<j}=\pi((N_i)_{i<j})\in N[G']$, since $\pi(\mu)=\mu$, giving us a contradiction.
+		\end{proof}
+		Thus we have produced a set in $\dot{C}^G$ which is internally club but not internally approachable.
+	\end{proof}
+	
+	\section{Distinguishing Internally Club and Approachable on an Infinite Interval}
+	
+	In this section we apply the previous results to obtain the distinction between internally club and approachable on the interval $[\aleph_2,\aleph_{\omega})$, thus obtaining our main theorem.
+	
+	\subsection{Preservation of the Distinction}
+	
+	First we do some preliminary work by establishing some conditions under which $\ICNIA(\Theta,\aleph_n)$ is preserved by sufficiently well-behaved forcings.
+	
+	
+	To obtain the model for \autoref{omega-theorem}, we will make use of a projection analysis, showing that, for a given $n$, the distinction holds in an outer model of the target model. With this intention, we introduce a slight strengthening of $\ICNIA$ which is more easily preserved downwards.
+	
+%	\marginpar{\tiny H: Changed the definition a bit, the resulting property is more natural (and probably much harder to distinguish from $\ICNIA$). I think that $\ICNIA^+(\mu^+,\mu)$ is maybe equivalent to the existence of a disjoint stationary sequence without any cardinal arithmetic assumptions.}
+	
+	\begin{mydef}\label{plus-version}
+		Let $\ICNIA^+(\Theta,\mu)$ be the statement that $\Theta\geq\mu^+$ and there exist stationarily many $N\in[H(\Theta)]^{\leq\mu}$ such that
+		\begin{enumerate}
+			\item $N$ is internally club.
+			\item There is no sequence $(X_i)_{i<\mu}$ of elements of $[\Theta]^{<\mu}$ such that $\bigcup_{i<\mu}X_i=N\cap \Theta$ and $(X_i)_{i<j}\in N$ for all $j<\mu$.
+		\end{enumerate}
+		
+		 We say that \emph{$N$ is not ordinal-internally approachable} if clause (2) holds.
+	\end{mydef}
+	
+	We easily see that $\ICNIA^+(\Theta,\mu)$ implies $\ICNIA(\Theta,\mu)$: if $N$ is internally approachable, simply intersect the approaching sequence with the class of ordinals.
+	
+	\begin{mypro}\label{ClubApprDown}
+		Assume $W$ is a forcing extension of $V$ by a forcing order $\dP$ which is ${<}\,\mu^+$-distributive. If $\ICNIA^+(\Theta,\mu)$ holds in $W$, $\ICNIA^+(\Theta,\mu)$ holds in $V$.
+	\end{mypro}
+	
+	\begin{proof}
+		In $V$, let $C$ be club in $[H(\Theta)^V]^{\leq\mu}$. Then in $W:=V[G]$, $C$ is club in $[H(\Theta)^V]^{\leq\mu}$ by the distributivity. Let $\Theta'$ be larger than $\Theta$ and at least so large that $\dP\in H(\Theta')$. We have the following statement whose form connects it to notions of properness:
+		\begin{myclan}
+			In $V[G]$, the set
+			$$D':=\{M\in[H(\Theta')^V]^{\mu}\;|\;M[G]\cap V=M\}$$
+			is club in $[H(\Theta')^V]^{\mu}$.
+		\end{myclan}
+		\begin{proof}
+			For closure, notice that
+			$$\left(\bigcup_{i<\mu}M_i\right)[G]\cap V=\left(\bigcup_{i<\mu}M_i[G]\right)\cap V=\bigcup_{i<\mu}(M_i[G]\cap V).$$
+			For unboundedness, let $M_0\in[H(\Theta')^V]^{\mu}$ be arbitrary. Inductively define $M_{n+1}:=M_n\cup (M_n[G]\cap V)$. Then
+			$$\left(\bigcup_{n\in\omega}M_n\right)[G]\cap V=\bigcup_{n\in\omega}M_n$$
+			since, given some $\tau\in M_n$ with $\tau^G\in V$, $\tau^G\in M_n[G]\cap V=M_{n+1}$.
+		\end{proof}
+		Additionally, $C':=\{M\in[H(\Theta')^V]^{\mu}\;|\;M\cap H(\Theta)^V \in C\}$ is club in $[H(\Theta')^V]^{\mu}$. Thus
+		$$E':=\{M[G]\;|\;M\in D'\cap C'\}$$
+		is club in $[H(\Theta')^V[G]]^{\mu}$ which equals $[H(\Theta')^W]^{\mu}$ by the size of $\Theta'$. This implies that the set
+		$$E:=\{M[G]\cap H(\Theta)^W\;|\;M[G]\in E'\}$$
+		contains a club in $[H(\Theta)^W]^{\mu}$.
+		
+		Thus there exists $M\in D'\cap C'$ such that $M[G]\cap H(\Theta)^W$ is internally club but $\mu^+$ is not ordinal internally approachable in $M[G]\cap H(\Theta)^W$. We aim to show that, in $V$, $M\cap H(\Theta)^V$ is internally club but $\mu^+$ is not approachable in $M\cap H(\Theta)^V$.
+		
+		\begin{myclan}
+			$M\cap H^V(\Theta)$ is internally club in the model $V$.
+		\end{myclan}
+		
+		\begin{proof}
+			We can write $M[G]\cap H^W(\Theta)=\bigcup_{i<\mu}M_i$, where the union is continuous and increasing and each $M_i$ is in $[M[G]\cap H(\Theta)]^{<\mu}\cap M[G]\cap H(\Theta)$. Because $M\in D'$, $M=M[G]\cap V$, so
+\begin{align*}
+M\cap H^V(\Theta)= & (M[G]\cap V)\cap H^W(\Theta)=(M[G]\cap H^W(\Theta))\cap V = \\ = & \bigcup_{i<\mu}M_i\cap V=\bigcup_{i<\mu}M_i\cap H^V(\Theta),
+\end{align*}
+using that $H^V(\Theta)=H(\Theta)\cap V$ as $\dP$ does not collapse cardinals. As $M[G]\cap V=M$, $M_i\cap H^V(\Theta')=M_i\cap H^V(\Theta)\in M[G]$ for every $i<\mu$. Additionally, $M_i\cap H^V(\Theta)$ is a subset of $H^V(\Theta)$ of size ${<}\,\mu$, so $M_i\cap H^V(\Theta)\in H^V(\Theta)$: $M_i\in V$ by distributivity and has hereditary size ${<}\,\Theta$. Again, as $M\in D$, $M_i\cap H^V(\Theta)\in M[G]\cap V=M$, so in summary $M_i\cap H^V(\Theta)\in M\cap H^V(\Theta)$.
+		\end{proof}
+		
+		\begin{myclan}
+			$M\cap H^V(\Theta)$ is not ordinal-internally approachable in the model $V$.
+		\end{myclan}
+		
+		\begin{proof}
+			Since $M[G]\cap V=M$, $(M[G]\cap H^W(\Theta))\cap\Theta=(M\cap H^V(\Theta))\cap\Theta$. Thus, if $M\cap H^V(\Theta)$ were ordinal-internally approachable in the model $V$, the same would be the case in the model $W$ (witnessed by the same sequence), a contradiction.
+		\end{proof}
+		Thus we have produced an element of $C$ which is as required.
+	\end{proof}
+	
+%	
+%	We will also require some upwards preservation, which will make use of another definition:
+%	
+%\begin{mydef} We say that $N \in [X]^\mu$ is \emph{weakly internally approachable} if there is a continuous sequence $\seq{N_i}{n<\mu}$ of $N_i \in [N]^\mu$ such that for all $i<\mu$, $\seq{N_j}{j \le i} \in N_{i+1}$ and $N = \bigcup_{i<\mu}N_i$.\end{mydef}
+%
+%\marginpar{\tiny M: Added more stuff here}
+%
+%Hence the difference between weakly internal approachable and internally approachable is that the $N_i$'s are allowed to have cardinality $\mu$ for the former, whereas the latter requires the $N_i$'s to have cardinality strictly less than $\mu$. The definition of weak internal approachability appears as the stated version of internally approachability in some work of Krueger---at least in the sense of a set being internally approachable as opposed to being internally approachable of some length $\xi$. However, the relevant question of Foreman and Todor{\v c}evi{\' c} pertains to the unmodified definition of internal approachability. 
+%
+%As an example, we can show that $\ICNIA(\Theta,\mu)$ was witnessed by weakly internally approachable sets in the model for Theorem~\ref{M3ForcesDist}.
+%
+%	\marginpar{\tiny H: Added that $N$ is weakly internally approachable. This Proposition is unnecessary if we do the other projection analysis.}
+%
+%	\begin{mypro} If $\kappa$ is Mahlo, then $\dM^\oplus(\tau,\mu,\kappa)$ forces that there are stationarily many $N\in[H(\Theta)]^{\leq\mu}$ such that $N$ is internally club and weakly internally approachable but not internally approachable.\end{mypro}
+%	
+%	\begin{proof} Let $G$ be $\dM^\oplus:=\dM^\oplus(\tau,\mu,\kappa)$-generic over $V$. By the proof of Theorem \autoref{M3ForcesDist}, it is enough to show that for any $N \prec H(\Theta)$ that is rich with respect to $\kappa$, $N[G]$ is weakly internally approachable. Given the most natural way to prove \autoref{wegotrichmodels}, we can assume that $N$ is the Skolem hull $\Sk^{H(\Theta)}(a \cup \nu)$ where $\nu=|N|$ and $a \in [H(\Theta)]^{<\nu}$. We can inductively define $\seq{N_i}{i<\nu}$ such that $\seq{N_i[G]}{i<\nu}$ is continous and such that $\seq{N_j[G]}{j \le i} \in N_{i+1}[G]$ for all $i<\nu$. Specifically we will choose $\nu_i<\nu$ such that $N_i:=\Sk^{H(\Theta)}(\nu \cup a)$. In particular, this means that we will have $|N_i[G]|=|N_i|^{V[G]} = \mu$.
+%	
+%	
+%	For the successor case, suppose that $N_i$ has been defined. Then $\{N_j:j \le i\} \in M$ by $M^{<\nu} \subseteq M$, so in particular $\seq{N_j}{j \le i} \in M$. Since $M = \Sk^{H(\Theta)}(a \cup \nu)$, there is a large enough $\nu'<\nu$ such that $\seq{N_j}{j \le i} \in \Sk^{H(\Theta)}(a \cup \nu')$, so we let $N_{i+1} = \Sk^{H(\Theta)}(a \cup \nu')$ (note that $\nu \ge i$). Then we will also have $\seq{N_j[G]}{j \le i} \in N_{i+1}[G]$ since there is a name for $\seq{N_j[\Gamma]}{j \le i}$ in $N_{i+1}$ where $\Gamma$ is the canonical name for the $\dM^\oplus$-generic filter.
+%	
+%		For the limit case, suppose that $N_j$ has been defined for $j<i$. Then simply let $\nu_i = \sup_{j<i}\nu_j$ and $N_i = \Sk^{H(\Theta)}(a \cup \nu_i)$. It follows that $\bigcup_{j<i}N_i[G]=\left(\bigcup_{j<i}N_j \right)[G] = N_i[G]$.\end{proof}
+%	
+%	\marginpar{\tiny H: This is also unnecessary if we do the other projection analysis.}
+%	
+%	\begin{mypro}\label{ClubApprUp}
+%		Assume $W$ is a forcing extension of $V$ by a forcing order $\dP$ which is $(\mu+1)$-strategically closed. Suppose that $\ICNIA(\Theta,\mu)$ is witnessed in $V$ be a stationary set $S \subseteq [H(\Theta)]^\mu$ such that every $N \in S$ is weakly internally approachable. Then $\ICNIA(\Theta,\mu)$ holds in $W$.
+%	\end{mypro}
+%	
+%	\begin{proof} Let $G$ be $\dP$-generic over $V$. In $V[G]$, the set $S$ remains stationary as a subset of $[H(\Theta)^V]^\mu$ by using weak internal approachability and the strategic closure of $\dP$.
+%	
+%	We can then argue as in Lemma~\ref{ClubApprDown} that the set $S':=\{N[G]:N \in S\}$ \marginpar{\tiny H: I dont think this is actually the case, since we dont have $H(\Theta)^{V[G]}=H(\Theta)[G]$}is stationary in $[H(\Theta)^{V[G]}]^\mu$ and witnesses $\ICNIA(\Theta,\mu)$ in $V[G]$. 	Given $N' \in S'$, we have $N'=N[G]$ for some $N \in S \cap [V]^\mu$, so $N = \bigcup_{i < \lambda}M_i$ where $\seq{M_i}{i<\mu}$ is a club of sets of size $<\mu$. Then $N[G] = \bigcup_{i<\mu}M_i[G]$, showing that $N'$ is internally club. Hence all $N' \in S'$ are internally club. Now suppose for contradiction that there is some $N' \in S' \cap [V[G]]^\mu$ that is internally approachable as winessed by some $\seq{M'_i}{i<\mu}$. Take a sequence $\seq{\dot{M}'_i}{i<\mu}$ of names. Then we can choose a descending sequence $\seq{p_i}{i<\mu}$ of conditions in $\dP$ so that $p_i \Vdash \dot{M}'_i = M_i[\Gamma(\dP)]$ \marginpar{\tiny H: I do not understand why we can assume $\dot{M}_i'$ to be of this form} (where $\Gamma(\dP)$ is the canonical name for the generic). Moreover, let the run $\seq{p_i}{i<\mu}$ be chosen so that $\textup{\textsf{INC}}$ chooses elements of $P_\mu(N)$ to be covered. If $\bar{p}$ is a lower bound, then $\seq{M_i}{i<\mu}$ witnesses internal approachability of $N$, a contradiction.\end{proof}
+%	
+%	\marginpar{\tiny H: I tried to write a different proof but that also fails since we do not have $H(\Theta)^{V[G]}=H(\Theta)[G]$. I added a different possible factorisation below.}
+%	
+
+	
+%We will make use of another similar definition:
+
+
+%
+%We use the notion of weak internal approachability because we want to preserve some stationary sets that are not internally approachable in the stronger sense. In particular, we have:
+%
+%	\begin{myfact}\label{weak-stat-pres} If $S \subseteq [X]^\mu$ is stationary and all $N \in S$ are weakly internally approachable, then $S$ is stationary as a subset of $[X]^\mu$ in $\mu^+$-closed forcing extensions.
+%	\end{myfact}
+%
+%This follows in the same way as the argument for the stronger version of internal approachability. The reader can see the details through a stronger lemma that we will need.
+%	
+%		\begin{mylem}\label{strange-pres} Suppose that $\dP$ is $\nu$-cc, and $\dQ$ is $\nu$-strategically closed and let $\mu<\nu$. Let $S \subseteq [H(\Theta)]^\mu$ be stationary in $V$ and consist of weakly internally approachable sets and let $\dot{U}$ be the $\dP$-name for $\{N[\Gamma(\dP)]:N \in S\}$.\footnote{We are using the notation where $\Gamma(\dP)$ is the canonical name for a generic filter.} Then $\dot{U}$ is forced to be a stationary subset of $[H(\Theta)[\Gamma(\dP)]]^\mu$ in the extension by $(\dP \times \dQ)$.\footnote{See \cite[6.3.2]{Gilton-thesis} for a somewhat similar statement.}\end{mylem}
+%		
+%	
+%%	\begin{mylem}\label{strange-pres} Suppose that $S \subseteq P_\mu(H(\Theta))$ is stationary in $V$ and consists of internally approachable sets, $\dP$ is $\mu$-cc, and $\dQ$ is $\mu$-strategically closed. Then if $\dot{S}$ is the $\dP \times \dQ$-name for $\{N[\Gamma(\mathbb{U})]:N \in S\}$ for some projection $\mathbb{U}$ of $\dP$, then $\dot{S}$ is forced to be a stationary subset of $P_\mu(H(\Theta)[\mathbb{U}])^V$ in the extension by $(\dP \times \dQ)$.\footnote{See \cite[6.3.2]{Gilton-thesis} for a somewhat similar statement.}\end{mylem}
+%
+%
+%	
+%	\begin{proof}[Proof of Lemma~\autoref{strange-pres}] Suppose that $(\bar{p},\bar{q})$ forces that $\dot{C}$ is a name for a club in $(H(\Theta)[\Gamma(\dP)])^{V[\dP]}$. Let $\seq{M_\eta}{\eta<\mu}$ witness internal approachability of some $N \in S$ such that $(\bar{p},\bar{q}),\dP \times \dQ,\dot{C} \in N$. We can assume that $N$ is equipped with a predicate for a fixed well-ordering $<_\Theta$ of $H(\Theta)$.
+%	
+%		 
+%		
+%		Let $H$ be a $\dQ$-generic over $V$ that contains $q'$ and work in $V[H]$, in which $\dP$ still has the $\nu$-cc. (This part of Easton's Lemma easily generalizes to $\nu$-strategically closed posets.)
+%		
+%		Let $D_\eta$ be the set of $q \in \dQ$ such that there is a maximal antichain $A_q \subseteq \dP$ and a matrix $\{X^\eta_{p,q}:p \in A_q\} \subseteq V$ such that for each $p \in A_q$, $(p,q) \Vdash \textup{``}M_\eta[\Gamma(\dP)] \subseteq \dot{Z} \subseteq X^\eta_{p,q}[\Gamma(\dP)]$ for some $\dot{Z} \in \dot{C}\textup{''}$. We argue that $D_\eta$ is dense. Let $H$ be a $\dQ$-generic filter containing $q$. work in $V[H]$, in which $\dP$ still has the $\nu$-cc. (This part of Easton's Lemma easily generalizes to $\nu$-strategically closed posets.) Therefore we can take a maximal antichain deciding such values using the fact that $\dP$ has the $\nu$-covering property, and this will be $A_q$. Then we will have $A_q \in V$ by closure.
+%		
+%
+%%The club $\dot{C}$ is forced to have club-many elements of the form $X[\Gamma(\dP)]$ for some $X \in V$. 
+%	 
+%Now we will inductively define a sequence $\seq{q_\eta}{\eta \le \mu}$ of conditions in $\dQ$ such that for all $\zeta<\mu$, $\seq{q_\eta}{\eta<\zeta} \in N$. Suppose that these objects have been defined for $\eta<\zeta$. If $\zeta$ is a limit then we let $q_\zeta$ be the $<_\Theta$-least lower bound of $\seq{q_\eta}{\eta<\zeta}$. Since $\seq{q_\eta}{\eta<\zeta} \in N$ we will have $q_\zeta \in N$. Otherwise, if $\zeta = \xi+1$, we let $q_\zeta$ be the $<_\Theta$-least condition below $q_\xi$ such that $q_\zeta \in D_\xi$.
+%
+%Finally let $q_\mu$ be a lower bound of $\seq{q_\eta}{\eta<\zeta}$. We argue that $(\bar{p},q_\mu)$ forces that $N[\Gamma(\dP)] \in \dot{C}$. This is because for all $\eta<\mu$, $(\bar{p},q_\mu)$ forces that elements of $\dot{C}$ interleave the sequence of $M_\eta[\Gamma(\dP)$'s.	\end{proof}
+%
+%
+%		
+%		\begin{mypro}\label{crude-statpres} Let $S \subseteq [H(\Theta)^V]^\mu$ be a stationary set such that $N$ is internally approachable for all $N \in S$, and let $\dP$ be a $(\mu+1)$-strategically closed forcing. Then if $G$ is $\dP$-generic over $V$, it follows that $\{N[G]:N \in S\}$ is a stationary subset of $[H(\Theta)[G]]^\mu$ in $V[G]$.\end{mypro}
+%		
+%		Let $S \subseteq [H(\Theta)^V]^\mu$ be a stationary set such that $N$ is internally approachable for all $N \in S$, and let $\dP$ be a $(\mu+1)$-strategically closed forcing. If $G$ be $\dP$-generic over $V$,
+%		
+%			\begin{proof} Fix $S$, $\dP$, and $G$, and let $C$ be a club subset of $[H(\Theta)[G]]^\mu$. We know that in the model $V[G]$, $S$ is a stationary subset of $[H(\Theta)^V]^\mu$ by the properties of $S$ and $\dP$. Let $S':=\{N[G]:N \in S\}$. We want to show that $C \cap S' \ne \emptyset$ while working in $V[G]$.
+%			
+%	Let $C^* = \{N \in [H(\Theta)^V]^\mu : \exists M \in C, M = N[G]\}$. We argue that $C^*$ is a club in $[H(\Theta)^V]^\mu$. First, for unboundedness, consider some $Z \in [H(\Theta)^V]^\mu$ and choose $M \in C$ such that $Z \subseteq M$. Then inductively define $N_k$ for $k<\omega$ by letting $N_k = M \cap V$ and by letting $N_{k+1} = N_k[G] \cap V$. Then we have 	
+%\[
+%\left(\bigcup_{k\in\omega}N_k\right)[G]\cap V=\bigcup_{k\in\omega}N_k,
+%\]
+%and so it follows that $\bigcup_{k<\omega}N_k \in C^*$.
+%	
+%	Next, for closure, suppose $\seq{M_i}{i<\mu}$ is a $\subseteq$-increasing sequence of elements of $C^*$ where we have $M_i = N_i[G]$ with $N_i \in C$ for $i<\mu$. Since we have
+%\[
+%\left(\bigcup_{i<\mu}N_i\right)[G]\cap V=\left(\bigcup_{i<\mu}N_i[G]\right)\cap V=\bigcup_{i<\mu}(N_i[G]\cap V),
+%\]
+%it follows that $N:=\bigcup_{i<\mu}N_i$, which is in $C$, witnesses that $\bigcup_{i<\mu}N_i[G]$ is in $C^*$.
+%
+%Now let $N \in C^* \cap S$. Since $N \in C^*$, there is some $M \in C$ such that $M=N[G]$, and since $N \in S$, this means that $M=N[G] \in S' \cap C$.\end{proof}
+%	
+%		
+%	Now let $N \in C^* \cap S$. Since $N \in C^*$, there is some $M \in C$ such that $M=N[G]$, and since $N \in S$, this means that $M=N[G] \in S' \cap C$.
+%
+%	Now let $S' = \{M \in [H(\Theta)^{V[G]}]^\mu:M \cap H(\Theta)^V \in S\}$. Since $S$ is stationary as a subset of $[H(\Theta)^V]^\mu$ in $V[G]$, $S'$ is stationary as subset of $[H(\Theta)^{V[G]}]^\mu$ in $V[G]$. We can argue that every $M \in S'$ is internally club but not internally approachable. If $M \in S'$ and $N \in S$ is such that $M \cap H(\Theta)^V = N$, let  $\seq{N_i}{i<\mu}$ witness that $N$ is internally club in $V$. Observe that $\{N' \in P_\mu(H(\Theta)^V):\exists M' \in P_\mu(H(\Theta)^{V[G]}), M' \cap H(\Theta)^V = N'\}$ is club using the equality
+%
+%for appropriately chosen chains for closure and
+%$$\left(\bigcup_{n\in\omega}M_n\right)[G]\cap V=\bigcup_{n\in\omega}M_n$$
+%for unboundedness.
+%
+%Then we can see that  $\seq{N_i[G]}{i<\mu}$ witnesses is internal clubness for elements in $S'$. By closure of $\dP$, elements of $S'$ are not internally approachable.
+%		
+%	\begin{proof} Let $S \subseteq [H(\Theta)^V]^\mu$ be a stationary set and let $\dP$ be a $\mu^+$-distributive forcing. Let $G$ be $\dP$-generic over $V$.
+%	
+%	By \autoref{weak-stat-pres}, $S$ is stationary in $V[G]$. Moreover, for all $N \in S$, $N$ is internally club in $V[\dP]$ by upwards absoluteness and is not internally approachable by $\mu^+$-closure.
+%	
+%	Now let $S' = \{M \in [H(\Theta)^{V[G]}]^\mu:M \cap H(\Theta)^V \in S\}$. Since $S$ is stationary as a subset of $[H(\Theta)^V]^\mu$ in $V[G]$, $S'$ is stationary as subset of $[H(\Theta)^{V[G]}]^\mu$ in $V[G]$. We can argue that every $M \in S'$ is internally club but not internally approachable. If $M \in S'$ and $N \in S$ is such that $M \cap H(\Theta)^V = N$, let  $\seq{N_i}{i<\mu}$ witness that $N$ is internally club in $V$. Observe that $\{N' \in P_\mu(H(\Theta)^V):\exists M' \in P_\mu(H(\Theta)^{V[G]}), M' \cap H(\Theta)^V = N'\}$ is club using the equality
+%$$
+%\left(\bigcup_{i<\mu}M_i\right)[G]\cap V=\left(\bigcup_{i<\mu}M_i[G]\right)\cap V=\bigcup_{i<\mu}(M_i[G]\cap V).
+%$$
+%for appropriately chosen chains for closure and
+%$$\left(\bigcup_{n\in\omega}M_n\right)[G]\cap V=\bigcup_{n\in\omega}M_n$$
+%for unboundedness.
+%
+%Then we can see that  $\seq{N_i[G]}{i<\mu}$ witnesses is internal clubness for elements in $S'$. By closure of $\dP$, elements of $S'$ are not internally approachable.
+%	\end{proof}
+%	
+%				\begin{mypro}\label{distinction-pres} Suppose that $\ICNIA(\Theta,\mu)$ holds in $V$ and in particular is witnessed by some $S \subseteq [H(\Theta)]^\mu$ such that all $N \in S$ is weakly internally approachable, then $\ICNIA(\Theta,\mu)$ holds in $\mu^+$-strategically closed forcing extensions.
+%	\end{mypro}
+%	
+%	
+%	\begin{proof} Let $G$ be $\dP$-generic over $V$ for some $\mu^+$-strategically closed forcing. If $S \subseteq P_\mu(H(\Theta))$ witnesses $\ICNIA(\Theta,\mu)$ in $V$, then $S' := \{N[G]:N \in S\}$ is a stationary subset of $P_\mu(H(\Theta)[G])$ in $V[G]$ by Proposition~\ref{crude-statpres}. We will argue that $S'$ witnesses $\ICNIA(\Theta,\mu)$ in $V[G]$.
+%	
+%	Given $N' \in S'$, we have $N'=N[G]$ for some $N \in S \cap [V]^\mu$, so $N = \bigcup_{i < \lambda}M_i$ where $\seq{M_i}{i<\mu}$ is a club of sets of size $<\mu$. Then $N[G] = \bigcup_{i<\mu}M_i[G]$, showing that $N'$ is internally club. Hence all $N' \in S'$ are internally club. Now suppose for contradiction that there is some $N' \in S' \cap [V[G]]^\mu$ that is internally approachable as winessed by some $\seq{M'_i}{i<\mu}$. Take a sequence $\seq{\dot{M}'_i}{i<\mu}$ of names. Then we can choose a descending sequence $\seq{p_i}{i<\mu}$ of conditions in $\dP$ so that $p_i \Vdash \dot{M}'_i = M_i[\Gamma(\dP)]$ (where $\Gamma(\dP)$ is the canonical name for the generic). Moreover, let the run $\seq{p_i}{i<\mu}$ be chosen so that $\textup{\textsf{INC}}$ chooses elements of $P_\mu(N)$ to be covered. If $\bar{p}$ is a lower bound, then $\seq{M_i}{i<\mu}$ witnesses internal approachability of $N$, a contradiction.\end{proof}
+%	
+%
+%	
+
+	
+	
+	\subsection{Proving the Main Theorem}
+	
+	Now we will set up the proof of Theorem~\autoref{omega-theorem}. Let $(\kappa_n)_{n\in\omega}$ be a sequence of Mahlo cardinals. We force with the full support iteration $\dI = \seq{\dP_n}{n<\omega}$ where $\dP_0 = \dM^\oplus(\omega,\omega_1,\kappa_0,V)$ and given $\dP_n$ we let
+	\[
+	\dP_{n+1} = \dP_n \ast \dot{\dM}^\oplus(\kappa_{n-1},\kappa_0,\kappa_{n+1},V[\dP_{n-1}])
+\]	
+where $\kappa_{-2}=\omega$, $\kappa_{-1}=\omega_1$, and $V[\dP_{-1}]=V$ for simplicity. Observe that the iteration will turn $\kappa_n$ into $\aleph_{n+2}$ for all $0 \le n<\omega$.
+
+
+%Assume $2^{\omega}=\omega_1$ holds in the ground model.\marginpar{\tiny M: Where do we use CH?}
+	%$$\dI:=\prod_{n\in\omega}\dM^\oplus(\kappa_{n-2},\kappa_{n-1},\kappa_n)$$
+	
+%	We show two preservation lemmas. 
+
+%\marginpar{\tiny M: Moved the clunky notation for the distinction to be in the introduction}
+	
+%	As a rough guide, t
+	
+
+	% We will show that $\dM^\oplus(\tau,\mu,\kappa)$ even forces the distinction at $\kappa$ if we take the product of it with $\Add(\mu,\gamma)$ for some ordinal $\gamma$ and a $\mu$-cc. forcing of size $\mu$ (we mean $\dP_2^n$).
+	
+	% Then all that is left is to show that the distinction is ``downwards absolute'' for certain pairs of models.
+	
+%		\begin{mylem}\label{Extension}
+%		Let $\tau<\mu<\kappa$ be cardinals such that $\tau^{<\tau}=\tau$, $\mu=\mu^{<\mu}$ and $\kappa$ is Mahlo. If $\dP$ is $\mu$-Knaster and $\gamma$ is any ordinal, $\dM^\oplus(\tau,\mu,\kappa)\times\dP\times\Add(\mu,\gamma)$ forces $\ICNIA(\Theta,\mu^+)$ for all regular $\Theta \ge \kappa$.
+%	\end{mylem}
+	
+%			\begin{mylem}\label{Extension}
+%		Let $\tau<\mu<\kappa$ be cardinals such that $\tau^{<\tau}=\tau$, $\mu=\mu^{<\mu}$ and $\kappa$ is Mahlo. If $\gamma$ is any ordinal, $\dM^\oplus(\tau,\mu,\kappa,W)\times\Add(\mu,\gamma)$ forces $\ICNIA^+(\Theta,\mu)$ for all regular $\Theta \ge \kappa$.
+%	\end{mylem}
+
+%The plan now is as follows: We will show that, after forcing with $\dP_\textup{low}^n$, $\dP_\textup{next}^n*\dot{\dP}_\textup{high}^n$ is a projection of the product of  $\dM^{\oplus}(\kappa_{n-2},\kappa_{n-1},\kappa_n)\times\Add(\kappa_{n-1},\kappa_{n+1})$ and some ${<}\,\kappa_n$-strategically closed forcing. Then we will show that $\dM^{\oplus}(\kappa_{n-2},\kappa_{n-1},\kappa_n)\times\Add(\kappa_{n-1},\kappa_{n+1})$ forces $\ICNIA(\Theta,\kappa_{n-1})$ and (because of the projection analysis and the downward preservation) this is preserved even when moving from $V[\dP_\textup{low}*(\dM^{\oplus}(\kappa_{n-2},\kappa_{n-1},\kappa_n)\times\Add(\kappa_{n-1},\kappa_{n+1}))]$ to $V[\dP]$.
+
+We start with a small improvement of Theorem \ref{M3ForcesDist}:
+
+		\begin{mylem}\label{Extension}
+		Let $\tau<\mu<\kappa$ be cardinals such that $\tau^{<\tau}=\tau$, $\mu=\mu^{<\mu}$ and $\kappa$ is Mahlo. If $\gamma$ is any ordinal, $\dM^\oplus(\tau,\mu,\kappa,W)\times\Add(\mu,\gamma)$ forces $\ICNIA^+(\Theta,\mu)$ for all regular $\Theta \ge \kappa$.
+	\end{mylem}
+
+%This will be sufficient for the proof of Theorem~\autoref{omega-theorem}:  Because of its cardinality $\dP_\textup{low}^n$, preserves the Mahloness of $\kappa_n$. Working in an extension by $\dP_\textup{low}^n$, we apply Lemma~\autoref{Extension}. Then Lemma~\autoref{distinction-pres} tells us that $\dP^n_\textup{high}$ preserves $\ICNIA(\Theta,\mu^+)$ upwards.
+	
+%	\setcounter{myclan}{0}
+	
+	\begin{proof}[Proof of Lemma~\ref{Extension}]
+		We modify the proof of Theorem \ref{M3ForcesDist}.
+		
+		Define $\dQ:=\dM^\oplus(\tau,\mu,\kappa,W)\times\Add(\mu,\gamma)$. We will abbreviate this product as $\dM \times \dA_\textup{big}$. We will write the product that projects onto $\dM$ as $\dT \times \dA_\textup{small}$.
+		
+		 Let $\dot{C}$ be a $\dQ$-name for a club in $[H(\Theta)]^{\leq\mu}$ and $\dot{F}$ a name for the corresponding function. Let $\dot{X}$ be the $\dM \times \dA_\textup{big}$-name for $H(\Theta)^{V[\dM \times \dA_\textup{big}]}$. Suppose for contradiction that there is a condition $\tilde{q} \in \dQ$ forcing that $\dot{C}$ avoids the set of elements in $[H(\Theta)]^{\leq\mu}$ that are internally club and in which $\dot{X}$ is not ordinal internally approachable. (This formulation is necessary because we are using Mahlo embeddings.) Let $\Theta'>\Theta$ be such that $H(\Theta')$ contains $\dot{F}$ and choose a rich model $M\prec H(\Theta)$ with respect to $\kappa$ of cardinality $\nu$ such that $M$ contains $\tilde{q}$, $\dQ$ and $\dot{F}$.
+		 
+		 Let $\bar{\dM} = \dM \cap M = \pi_M(\dM)= \dM(\tau,\mu,\nu,W)$. Let $\bar{\mathbb{A}}_\textup{big} = \mathbb{A}_\textup{big} \cap M = \pi_M(\dM)$.
+		 
+		Now we will argue that we can choose the generics in a way that will suit us. Let $G' \times H'$ be a $\bar{\dM} \times \bar{\dA}_\textup{big}$-generic filter containing $\tilde{q}$. We can find $G''_1 \times G_2''$, a product of filters that are $\dT \times \mathbb{A}_\textup{small}$-generic over $V[G']$ such that $\dT$ induces a generic $G''_0$ for $\dM/G$ using Lemma~\ref{M3DecProp}. Now we let $G = G' \ast G''$. Since $\mathbb{A}_\textup{big} = \pi_M(\mathbb{A}_\textup{big}) \times \mathbb{A}'_\textup{big}$ where $\mathbb{A}'_\textup{big}$ is a remainder, there is $H''$ such that $H=H' \times H''$ is $\mathbb{A}_\textup{big}$-generic and $\pi_M(G \times H) = G' \times H'$. (This can be formulated in terms of $j_M$, the reverse of the Mostowski collapse $\pi_M$, and applying Silver's classical lifting criterion.)
+		 
+%		 		 		\begin{myfact}[Absorption Theorem, see \cite{Handbook-Cummings}] Suppose $\kappa$ is a regular cardinal and that $\dP$ is a separative and $\kappa$-strongly strategically closed poset such that $|\dP|<\lambda$. Then there is a complete embedding $\iota: \dP \to \operatorname{Col}(\kappa,<\lambda)$ such that if $G$ is $\dP$-generic over $V$, then $\operatorname{Col}(\kappa,<\lambda)$ is forcing-equivalent to $\operatorname{Col}(\kappa,<\lambda)/\iota(G)$. Moreover, this works if $\operatorname{Col}(\kappa,<\lambda)$ is replaced by $\operatorname{Col}(\kappa,A)$ where $\sup A = \lambda$.\end{myfact}
+		  
+		  %, noting that ${}^{<\nu}[M'\cap H(\kappa)]\subseteq M'$.
+		
+		We will argue that $(M \cap H(\Theta))[G][H]$ is internally club and $X:=\dot{X}^{G \times H}$ is not internally approachable in $(M\cap H(\Theta))[G][H]$ in the model $V[G][H]$. Since $(M \cap H(\Theta))[G][H]$ is closed under $\dot{F}^{G\times H}$, this suffices. We will argue using $N$, the image $\pi_M:M \to N$.
+		
+
+		
+%		 choose $M'\prec H(\Theta)$ such that
+%		\begin{enumerate}
+%			\item $\nu:=|M'|=M'\cap\kappa\in\kappa$ is inaccessible
+%			\item $\dot{F},\dQ,\tau,\mu,\nu,\kappa\in M'$, $\mu\subseteq M'$
+%			\item ${}^{<\nu}[M'\cap H(\kappa)]\subseteq M'$
+%		\end{enumerate}
+		
+%		Let $G$ be $\dQ$-generic over $V$ and consider $M'[G]$. As before, $M'[G]\cap H(\kappa)\in \dot{C}^G$. Write $G=H\times I\times J$ for corresponding generic filters. As before, $H':=\pi[H]$ is $\dM^\oplus(\tau,\mu,\nu)$-generic over $V$ and there is a $\dM^\oplus(H',\tau,\mu,\kappa\smallsetminus\nu)$-generic filter $H''$ such that $H=H'* H''$. Because $\dQ$ is $\kappa$-cc., $M'[G]\cap H(\kappa)=(M'[G]\cap H(\kappa)^V)[G]=:M[G]$. Let $\pi:M\longrightarrow N$ be the Mostowski-Collapse and extend it to $\pi:M[G]\longrightarrow N[G']$ with $G':=\pi[G]$.
+		
+		\begin{myclan}
+			$(M \cap H(\Theta))[G][H]$ is internally club.
+		\end{myclan}
+		\begin{proof}
+			This holds as in the proof of Theorem \ref{M3ForcesDist}: The Mostowski-Collapse of $(M\cap H(\Theta))[G][H]$ is equal to $\pi(H(\Theta))[G'][H']$ which is closed under ${<}\,\nu$-sequences in $V[G'][H']$. As before, $G\times H$ adds a club in $[\pi(H(\Theta))[G'][H']]^{<\mu}$ consisting of elements of $\pi(H(\Theta))[G'][H']$.
+		\end{proof}
+			
+			% because every $<\mu$-sized subset has been added by a $\mu$-Knaster forcing.
+	
+		
+		The slightly harder claim is:
+		
+		\begin{myclan}
+			$(M\cap H(\Theta))[G][H]$ is not ordinal-internally approachable.
+		\end{myclan}
+		
+		\begin{proof}
+			Assume towards a contradiction that there is a sequence $(X_i)_{i<\mu}$ of elements of $[\Theta]^{<\mu}$ such that $(X_i)_{i<j}\in (M\cap H(\Theta))[G][H]$ for every $j<\mu$ and $\bigcup_{i<\mu}X_i=(M\cap H(\Theta))[G][H]\cap\Theta=\nu$. It follows that, for every $j<\mu$, $\pi((X_i)_{i<j})=(\pi[X_i])_{i<j}=(X_i)_{i<j}\in N[G'][H']\subseteq V[G'][H']\subseteq V[G'][H]$. However, $V[G][H]$ is an extension of $V[G'][H]$ by $\dM(G',\tau,\mu,\kappa\smallsetminus\nu)$ which has the ${<}\,\mu$-approximation property in $V[G'][H]$: one easily checks that the proof of Lemma~\autoref{quotient-approx} still works because $\Add(\mu,\gamma)$ is ${<}\,\mu$-distributive and therefore does not change the definition of $\dM(G',\tau,\mu,\kappa\smallsetminus\nu)$. Hence $(X_i)_{i<\mu}\in V[G'][H]$. This implies that $\Theta\geq\nu$ has size $\mu$ in $V[G'][H]$, a contradiction, as $G'\times H$ is generic for a $\nu$-Knaster forcing. 
+		\end{proof}			
+		
+
+		
+			% Thus let $N[G']=\bigcup_{i<\mu}N_i$ with $(N_i)_{i<j}\in N[G']$ for any $j<\mu$. In particular, $(N_i)_{i<j}\in V[H'\times I\times J]$ for any $j<\mu$. By the product Lemma, $H''$ is $\dM^\oplus(H',\tau,\mu,\kappa\smallsetminus\nu)$-generic over $V[H'\times I\times J]$.
+			
+			
+%			\begin{mysclai}
+%				$\dM^\oplus(H',\tau,\mu,\kappa\smallsetminus\nu)^{V[H']}$ has the ${<}\,\mu$-approximation property in $V[H'\times I\times J]$.
+%			\end{mysclai}
+%			\begin{proof}
+%				
+%			It is sufficient to show that 
+%				
+%				%We aim to show that the requirements of Lemma \ref{ApproxProp}, which hold in $V[H']$ by Lemma \ref{M3DecProp}, also hold in $V[H'\times I\times J]$.
+%				
+%				
+%				%Being iteration-like is absolute.
+%
+%
+%				We first deal with the term ordering: As stated, this is ${<}\,\mu$-closed in $V[H']$. As $\Add(\mu,\gamma)$ is ${<}\,\mu$-distributive in $V[H']$, the term ordering is still ${<}\,\mu$-closed in $V[H'][J]$. In $V[H'][J]$, $\dP$ is still $\mu$-cc. since we can project onto $\dM^\oplus(\tau,\mu,\nu)\times\Add(\mu,\gamma)$ from the product of a $\mu$-Knaster and a $\mu$-strategically closed forcing, so in $V[H'][J][I]=V[H'\times I\times J]$, the term ordering is strongly ${<}\,\mu$-distributive.
+%				
+%				The base ordering is just $\Add(\tau,\kappa\smallsetminus\nu)^V$. This is $\tau^+$-Knaster in $V$. Because $\dM^\oplus(\tau,\mu,\nu)\times\Add(\mu,\nu)$ can be projected onto from the product of a $\mu$-Knaster and a $\mu$-strategically closed partial order, the base ordering is square-$\mu$-cc. in $V[H'\times I\times J]$
+%			\end{proof}
+%			Thus $(N_i)_{i<\mu}\in V[H'\times I\times J]$. However, the forcing $\dM^\oplus(\tau,\mu,\nu)\times\dP\times\Add(\mu,\gamma)$ is $\nu$-cc., so we obtain a contradiction from $|N[G']|=|N|=|\nu|=\mu$ in $V[H'\times I\times J]$.
+	
+		Again, we have produced $(M \cap H(\Theta))[G][H]\in\dot{C}^{G \times H}$ which is internally club but not internally approachable. This contradicts the choice of $\tilde{q}$.\end{proof}
+	
+%	Lastly, we finish by showing that $\ICNIA(\mu^+)$ is absolute between models with the same $\mu$-sequences.
+
+	
+%	\begin{mylem}
+%		Let $\mu$ be a cardinal and $V\subseteq W$ models of set theory such that ${}^\mu V\subseteq V$ in $W$. If $\ICNIA(\Theta)$ holds in $W$, it holds in $V$.
+%	\end{mylem}
+%	
+%	\begin{proof}	
+%		Let $V\ni C\subseteq ([H(\mu^+)]^{\leq\mu})^V$ be a club. In $W$, $C$ is still club in $([H(\mu^+)]^{\leq\mu})^V=[H(\mu^+)]^{\leq\mu}$ because ${}^{\mu}V\subseteq V$. Thus there is $M\in C$ which is internally club but not internally approachable. Because $C\in V$, $M\in V$ and is still internally club there (the witnessing sequence is a $\mu$-sequence of elements of $V$ and thus in $V$) and not internally approachable (this is downwards absolute).
+%	\end{proof}
+	
+%	Since $V[\dI]$ and $V[\dP_0^n\times\dP_1^n\times\dP_2^n]$ satisfy the hypotheses of the Lemma, $\ICNIA(\mu^+)$ holds in $V[\dI]$.
+
+Now we can finish the proof of Theorem~\autoref{omega-theorem}: Let $n\in\omega$ be arbitrary.
+
+
+	
+	
+		To obtain $\ICNIA(\Theta,\kappa_{n-1})$ we will view the iteration as a factorization $\dP_\textup{low}^n\ast \dot{\dP}_\textup{next}^n \ast \dot{\dP}_\textup{high}^n$, where
+	
+%		\dP_\textup{low} ^n & :=\prod_{0 \le k<n}\dM^\oplus(\kappa_{k-2},\kappa_{k-1},\kappa_k) \\
+	
+
+\begin{itemize}
+
+\item $\dP_\textup{low}^n :=\dP_{n-1}$,
+
+\item $\dot{\dP}_\textup{next}^n$ is a $\dP_{n-1}$-name for
+\begin{align*}\dM^{\oplus}(\kappa_{n-2},\kappa_{n-1},\kappa_n,V[\dP_{n-2}])& \ast \\ \dot{\dM}^{\oplus}(\kappa_{n-1},\kappa_n, & \kappa_{n+1},V[\dP_{n-1}])\ast \\  & \dot{\dM}^{\oplus}(\kappa_n,\kappa_{n+1},\kappa_{n+2},V[\dP_n])\end{align*}
+
+\item and $\dot{\dP}_\textup{high}^n$ is a $\dP_\textup{low}^n \ast \dot{\dP}_\textup{next}^n$-name for
+\[
+\seq{\dM^\oplus(\kappa_{k-2},\kappa_{k-1},\kappa_k,V[\dP_{k-2}])}{n+3 \le k<\omega}.
+\]
+\end{itemize}
+	We want to show that $\dP$ forces $\ICNIA(\Theta,\kappa_{n-1})$. Let $G_\textup{low}$ be $\dP_\textup{low}^n$-generic over $V$ and work in $V[G_{\textup{low}}]$. Because $|\dP_\textup{low}^n|<\kappa_n$, $\kappa_n$ remains Mahlo in this model.
+
+Now we need to perform a termspace argument. Here we will use the notation in which $A(\dP_1,\dot{\dP_2})$ is the termspace forcing in which $\dot{\dP_2}$ is the underying forcing and the ordering is taken with respect to what is forced by the empty condition of $\dP_1$ (see \cite[Section 22]{Handbook-Cummings}).
+
+By standard termspace arguments, $\dP_\textup{next}^n\ast\dot{\dP}_\textup{high}^n$ is a projection of $\dP_\textup{next}^n\times A(\dP_\textup{next}^n,\dot{\dP}_\textup{high}^n)$. Since $\dP_\textup{next}^n$ forces $\dot{\dP}_\textup{high}^n$ to be ${<}\,\kappa_n$-strategically closed (using similar arguments to \cite{Cummings-Foreman1998}), $A(\dP_\textup{next}^n,\dot{\dP}_\textup{high}^n)$ is ${<}\,\kappa_n$-strategically closed. Now we focus on $\dP_\textup{next}^n$. Writing $\dM^{\oplus}(\tau,\mu,\kappa,W)$ as $\Add(\tau,\kappa)^W*\dT(\tau,\mu,\kappa)$, we have
+\begin{align*}
+	\dP_\textup{next}^n & =(\dM^{\oplus}(\kappa_{n-2},\kappa_{n-1},\kappa_n,V[\dP_{n-2}])\times\Add(\kappa_{n-1},\kappa_{n+1})) \\
+	& \ast (\dT(\kappa_{n-1},\kappa_n,\kappa_{n+1})*\Add(\kappa_n,\kappa_{n+2})^{V[\dP_n]}*\dT(\kappa_n,\kappa_{n+1},\kappa_{n+2})).
+\end{align*}
+
+Let $$\dP_\textup{mid}^n:=\dM^{\oplus}(\kappa_{n-2},\kappa_{n-1},\kappa_n,V[\dP_{n-2}])\times\Add(\kappa_{n-1},\kappa_{n+1})$$
+and
+\begin{align*}
+	\dT_\textup{next}^n & :=\dT(\dM^{\oplus}(\kappa_{n-1},\kappa_n,\kappa_{n+1}))\times A(\dM^{\oplus}(\kappa_{n-2},\kappa_{n-1},\kappa_n),\Add(\kappa_n,\kappa_{n+2})^{V[\dP_n]})\\
+	& \times A(\dM^{\oplus}(\kappa_{n-2},\kappa_{n-1},\kappa_n)*\dM^{\oplus}(\kappa_{n-1},\kappa_n,\kappa_{n+1}),\dT(\dM^{\oplus}(\kappa_n,\kappa_{n+1},\kappa_{n+2}))),
+\end{align*}
+which is ${<}\,\kappa_n$-strategically closed.
+Then $\dP_\textup{next}^n$ is easily seen to be a projection of $\dP_\textup{mid}^n\times\dT_\textup{next}^n$.
+
+So in summary, $\dP_\textup{next}^n*\dP_\textup{high}^n$ is a projection of $\dP_\textup{mid}^n\times\dT_\textup{high}^n$, where
+$$\dT_\textup{high}^n:=\dT_\textup{next}^n\times A(\dP_\textup{next}^n,\dP_\textup{high}^n).$$
+
+
+We can consider any extension by $\dP_\textup{mid}^n\times\dT_\textup{high}^n$ as an extension first by $\dT_\textup{high}^n$ and then by $\dP_\textup{mid}^n$. In such an extension, $\ICNIA^+(\Theta,\kappa_{n-1})$ holds: $\dT_\textup{high}^n$ preserves the Mahloness of $\kappa_n$ by its strategic closure and does not add any new conditions to $\dP_\textup{mid}^n$. Ergo, by Lemma \ref{Extension}, $\dP_\textup{mid}^n$ forces $\ICNIA^+(\Theta,\kappa_{n-1})$. Furthermore, any ${<}\,\kappa_n$-sequence added by $\dP_\textup{mid}^n\times\dT_\textup{high}^n$ has been added by $\dP_\textup{mid}^n$, so $\ICNIA^+(\Theta,\kappa_{n-1})$ also holds in any extension by $\dP_\textup{next}^n*\dP_\textup{high}^n$ by Proposition~\autoref{ClubApprDown}.
+
+%In $V[G_\textup{low}]$, the term ordering on $\dP_\textup{mid}^n*\dot{\dP}_\textup{high}^n$ is ${<}\,\kappa_n$-strategically closed, so we can project onto $\dP_\textup{mid}^n*\dot{\dP}_\textup{high}^n$ from the product of $\dP_\textup{mid}^n$ with a ${<}\,\kappa_n$-strategically closed poset $\dT_\textup{high}^n$. Thus, any extension by $\dP_\textup{mid}^n*\dot{\dP}_\textup{high}^n$ is contained in an extension by $\dP_\textup{mid}^n\times\dT_\textup{high}^n$. We can view the latter extension as an extension first by $\dT_\textup{high}^n$ and then by $\dP_\textup{mid}^n$. By the strategic closure of $\dT_\textup{high}^n$ (which does not add any new conditions satisfying the definition of $\dP_\textup{mid}^n$ and preserves the Mahloness of $\kappa_n$), in the extension by $\dT_\textup{high}^n$, $\dP_\textup{mid}^n$ forces $\ICNIA^+(\Theta,\kappa_n)$. In summary, the distinction holds after forcing with $\dP_\textup{low}^n*(\dot{\dP}_\textup{mid}^n\times\dot{\dT}_\textup{high}^n)$. 
+
+%\marginpar{\tiny H: Removed that i used downwards absoluteness since we do that too.}
+
+\begin{mybem} The first author obtained a proof of Theorem \autoref{omega-theorem} using a product rather than an iteration \cite{Jakob-thesis}.\end{mybem}
+
+Here is a question related to the technical aspects of this paper:
+
+\begin{myquest} Suppose $\dP$ is a $\nu^+$-closed forcing and $S \subseteq P_\nu(H(\Theta))$ is a stationary set of internally club sets. Is $S$ stationary in an extension by $\dP$?\end{myquest}
+
+
+%We also note that in any model constructed for $\ICNIA(\Theta,\mu)$, one actually has that $\ICNIA^+(\Theta,\mu)$ holds as well. Thus we ask:
+%\begin{myquest}
+%	Does $\ICNIA(\Theta,\mu)$ imply $\ICNIA^+(\Theta,\mu)$?
+%\end{myquest}
+
+\bibliography{bibliography}
+\bibliographystyle{plain}
+
+
+\end{document}

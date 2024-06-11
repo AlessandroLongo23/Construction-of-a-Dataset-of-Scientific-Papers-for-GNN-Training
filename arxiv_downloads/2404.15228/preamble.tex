@@ -1,0 +1,21 @@
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[frozencache,cachedir=.]{minted}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+
+\usepackage{hyperref}
+\usepackage{cleveref}
+
+\crefname{appendix}{Appendix}{Appendices}
+\crefname{equation}{Eq.}{Eqs.}
+\crefname{figure}{Fig.}{Figs.}
+\crefname{section}{Sec.}{Secs.}
+\crefname{table}{Tab.}{Tabs.}
+
+\newcommand\blfootnote[1]{
+  \begin{NoHyper}
+  \renewcommand\thefootnote{}\footnotetext{#1}
+  \addtocounter{footnote}{-1}
+  \end{NoHyper}
+}

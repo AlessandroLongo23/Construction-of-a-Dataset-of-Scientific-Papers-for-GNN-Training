@@ -1,0 +1,61 @@
+\begin{table}
+\centering
+\caption{\textbf{Full SO(3) Range-Gap Results.} (\cref{sssec:so3})}
+\begin{subtable}[h]{0.495\linewidth}
+\centering
+\caption{ID}
+{
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{lrrrrr}
+\toprule
+& $\downarrow$Geod.\ & $\uparrow$Size & $\uparrow$Color & $\uparrow$Mat. & $\uparrow$Shape \\
+\midrule
+Char \\
+\cline{1-1}
+Ext-Euler & 67.31 & 99.80 & 100.00 & 97.80 & 98.70 \\
+Int-Euler & \textbf{46.86} & 99.90 & 100.00 & 97.10 & 98.30 \\
+AA & \underline{53.74} & 100.00 & 100.00 & 97.40 & 98.30 \\
+6D & 77.69 & 100.00 & 99.90 & 97.40 & 98.60 \\
+\hline
+Float \\
+\cline{1-1}
+Ext-Euler & 41.25 & 100.00 & 100.00 & 98.00 & 98.60 \\
+Int-Euler & 27.05 & 99.90 & 100.00 & 97.70 & 99.30 \\
+AA & \underline{26.58} & 100.00 & 100.00 & 97.50 & 99.00 \\
+6D & \textbf{17.76} & 100.00 & 100.00 & 97.40 & 99.30 \\
+\bottomrule
+\end{tabular}
+}
+\label{table:so3_id}
+\end{subtable}
+\hfill
+\begin{subtable}[h]{0.495\linewidth}
+\centering
+\caption{OOD}
+{
+\setlength{\tabcolsep}{2pt}
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{lrrrrr}
+\toprule
+& $\downarrow$Geod.\ & $\uparrow$Size & $\uparrow$Color & $\uparrow$Mat. & $\uparrow$Shape \\
+\midrule
+Char \\
+\cline{1-1}
+Ext-Euler & 78.21 & 100.00 & 99.90 & 97.50 & 99.40 \\
+Int-Euler & \underline{68.50} & 100.00 & 100.00 & 97.90 & 99.30 \\
+AA & \textbf{62.80} & 100.00 & 100.00 & 98.10 & 99.30 \\
+6D & 104.53 & 100.00 & 99.90 & 97.20 & 99.00 \\
+\hline
+Float \\
+\cline{1-1}
+Ext-Euler & 42.03 & 100.00 & 100.00 & 97.20 & 99.10 \\
+Int-Euler & 43.49 & 100.00 & 100.00 & 97.30 & 99.40 \\
+AA & \textbf{24.96} & 100.00 & 100.00 & 97.80 & 99.40 \\
+6D & \underline{27.12} & 100.00 & 100.00 & 98.10 & 99.50 \\
+\bottomrule
+\end{tabular}
+}
+\label{table:so3_ood}
+\end{subtable}
+\label{table:so3}
+\end{table}

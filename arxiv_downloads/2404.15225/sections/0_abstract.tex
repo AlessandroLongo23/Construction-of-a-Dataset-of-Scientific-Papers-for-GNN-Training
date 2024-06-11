@@ -1,0 +1,10 @@
+\begin{abstract}\label{abstract}
+Link prediction (LP), inferring the connectivity between nodes, is a significant research area in graph data, where a link represents essential information on relationships between nodes. 
+Although graph neural network (GNN)-based models have achieved high performance in LP, understanding why they perform well is challenging because most comprise complex neural networks. 
+We employ persistent homology (PH), a topological data analysis method that helps analyze the topological information of graphs, to explain the reasons for the high performance. 
+We propose a novel method that employs PH for LP (PHLP) focusing on how the presence or absence of target links influences the overall topology. 
+The PHLP utilizes the \textit{angle hop subgraph} and new node labeling called \textit{degree double radius node labeling (Degree DRNL)}, distinguishing the information of graphs better than DRNL. Using only a classifier, PHLP performs similarly to state-of-the-art (SOTA) models on most benchmark datasets. 
+Incorporating the outputs calculated using PHLP into the existing GNN-based SOTA models improves performance across all benchmark datasets. 
+To the best of our knowledge, PHLP is the first method of applying PH to LP without GNNs. 
+The proposed approach, employing PH while not relying on neural networks, enables the identification of crucial factors for improving performance.
+\end{abstract}

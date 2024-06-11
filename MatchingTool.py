@@ -65,7 +65,7 @@ class MatchingTool:
         self.pdf_data = pdf_data
         self.latex_data = latex_data
         self.folder_path = folder_path
-        self.equation_dist_threshold = 15
+        self.equation_dist_threshold = 10
 
         self.perform_matching()
 
@@ -73,22 +73,27 @@ class MatchingTool:
         tex_lines = self.latex_data.get_leaves()
         pdf_lines = self.pdf_data.elements['text_boxes']
 
-        print('\nLaTeX-PDF matching:')
         self.mark_pdf('pdf_processing')
 
         steps = [
-            ['accurate', 0.90, 0.33, True],
-            ['best_guess', 0.66, 0.33, True],
-            ['best_guess', 0.33, 0.33, True],
-            ['best_guess', 0.10, 0.33, True],
+            ['accurate', 0.90, 0.40, True],
+            ['accurate', 0.75, 0.35, True],
+            ['best_guess', 0.60, 0.30, True],
+            ['accurate', 0.40, 0.30, True],
+            ['best_guess', 0.30, 0.30, True],
+            ['accurate', 0.10, 0.30, True],
             ['equation'],
-            ['accurate', 0.90, 0.33, False],
-            ['best_guess', 0.66, 0.33, False],
-            ['best_guess', 0.33, 0.33, False],
+            ['accurate', 0.90, 0.40, False],
+            ['accurate', 0.75, 0.35, False],
+            ['best_guess', 0.60, 0.30, False],
+            ['accurate', 0.40, 0.30, False],
+            ['best_guess', 0.30, 0.30, False],
+            ['accurate', 0.10, 0.30, False],
+            ['best_guess', 0.00, 0.33, False],
             ['leftover'],
         ]
 
-        for step in tqdm(steps, desc=f'- matching: '):
+        for step in tqdm(steps, desc=f'- LaTeX-PDF matching: ', leave=False):
             if step[0] == 'accurate':
                 self.accurate_match(tex_lines, pdf_lines, step[1], step[2], step[3])
             elif step[0] == 'best_guess':
@@ -103,9 +108,39 @@ class MatchingTool:
         self.pdf_data.export_to_json()
         self.latex_data.export_to_json()
         self.mark_pdf('output')
+        print('LaTeX-PDF matching done')
 
+    # def bag_of_words(self, text):
+    #     text = text.lower()
+    #     text = re.sub(r'\s+', ' ', text)
+    #     text = re.sub(r'[^\w\s]', '', text)
+    #     text = re.sub(r'\s+', ' ', text)
+    #     words = text.split(' ')
+    #     return words
+    
+    def bag_of_words_matching_score(self, a, b):
+        bag_a = [[char, False] for char in a if char != ' ']
+        bag_b = [[char, False] for char in b if char != ' ']
+        
+        if len(bag_a) == 0 or len(bag_b) == 0:
+            return [0, None, None]
+        
+        union = len(bag_a) + len(bag_b)
+        intersection = 0
+        for char in bag_a:
+            for other in bag_b:
+                if char[0] == 'Ỽ':
+                    intersection += 2
+                    break
+                
+                if char[0] == other[0] and not other[1]:
+                    intersection += 2
+                    other[1] = True
+                    break
 
-    def longest_common_subsequence(self, a1, a2, a3, b, equation=False):
+        return [intersection / union, None, None]
+
+    def longest_common_subsequence(self, a1, a2, a3, b):
         # def is_equal(x, y, equation=False):
         #     x = x if equation else x.lower()
         #     y = y if equation else y.lower()
@@ -137,12 +172,15 @@ class MatchingTool:
             
             return result
         
+        if len(a2) == 0 or len(b) == 0:
+            return [0, None, None]
+
         a = a1 + a2 + a3
 
-        words_a = re.findall(r'\[.*?\]|[\w−]+[^\w\s]*|\S', a) if not equation else a
-        words_a1 = re.findall(r'\[.*?\]|[\w−]+[^\w\s]*|\S', a1) if not equation else a1
-        words_a12 = re.findall(r'\[.*?\]|[\w−]+[^\w\s]*|\S', a1 + a2) if not equation else a1 + a2
-        words_b = split_special(b) if not equation else b
+        words_a = re.findall(r'\[.*?\]|[\w−]+[^\w\s]*|\S', a)
+        words_a1 = re.findall(r'\[.*?\]|[\w−]+[^\w\s]*|\S', a1)
+        words_a12 = re.findall(r'\[.*?\]|[\w−]+[^\w\s]*|\S', a1 + a2)
+        words_b = split_special(b)
 
         m, n = len(words_a), len(words_b)
         dp = [[0] * (n + 1) for _ in range(m + 1)]
@@ -154,7 +192,7 @@ class MatchingTool:
 
         for i in range(1, m + 1):
             for j in range(1, n + 1):
-                if words_a[i - 1] == words_b[j - 1]:
+                if words_a[i - 1].lower() == words_b[j - 1].lower():
                     if i == 1 or j == 1:
                         dp[i][j] = 1
                     else:
@@ -167,16 +205,14 @@ class MatchingTool:
                     else:
                         pt[i][j] = min(pt[i][j - 1], pt[i - 1][j], pt[i - 1][j - 1]) + 1
 
-        if dp[m][n] / m == 0:
+        if m == 0 or dp[m][n] / m == 0:
             return [0, None, None] 
 
         index = len(b)
-        if index > 0 and b[index - 1] == ' ':
-            index = index - 1
-        end_index = None
-        start_index = None
+        start_index, end_index = None, None
         i, j = m, n
-        while i > 0 and j > 0:
+        while i > 0 and j > 0 and index > 0:
+            index -= b[index - 1] == ' '
             if pt[i][j] == 0:
                 if len(words_a1) < i <= len(words_a12):
                     if end_index is None:
@@ -185,30 +221,16 @@ class MatchingTool:
                 i -= 1
                 j -= 1
                 index -= len(words_b[j])
-                if index <= 0:
-                    break
-                if b[index - 1] == ' ':
-                    index = index - 1
             elif dp[i - 1][j] > dp[i][j - 1]:
                 i -= 1
             else:
                 j -= 1
                 index -= len(words_b[j])
-                if index <= 0:
-                    break
-                if b[index - 1] == ' ':
-                    index -= 1
 
-        if start_index is None or end_index is None:
+        if m == 0 or start_index is None or end_index is None or start_index > end_index or abs(end_index - start_index - len(a2)) > 16:
             return [0, None, None]
 
-        if abs(end_index - start_index - len(a2)) > 16:
-            return [0, None, None]
-
-        if start_index <= end_index:
-            return [dp[m][n] / m, start_index, end_index]
-        
-        return [0, None, None]
+        return [dp[m][n] / m, start_index, end_index]
 
     # def locality_bonus(self, pdf_lines, pdf_line, tex_line_index):
     #     mult = 1
@@ -231,28 +253,31 @@ class MatchingTool:
 
     #     return 1 if first else mult
 
-    def find_best_matches(self, pdf_line, tex_lines, max_threshold, difference, leave_equations):
-        if leave_equations and pdf_line.equation_hit:
-            return []
-        
+    def find_best_matches(self, pdf_line, tex_lines, max_threshold, difference):
         search_tex_lines = [tex_lines[match[0]] for match in pdf_line.matches]
 
         if len(search_tex_lines) == 0:
+            num_nearest_blocks = 2
+            num_nearest_lines = 4
             nearest_lines = []
             offset = 3
-            for sibling in pdf_line.parent.children:
-                if sibling.assigned and sibling is not pdf_line:
-                    nearest_lines.append((self.distance(pdf_line, sibling), sibling))
+            parent_block = pdf_line.parent
+            if parent_block is not None:
+                for sibling in parent_block.children:
+                    if sibling.assigned and sibling is not pdf_line:
+                        nearest_lines.append((self.distance(pdf_line, sibling), sibling))
             
             if len(nearest_lines) == 0:
                 offset = 20
                 nearest_blocks = []
                 for block in self.pdf_data.elements['containers']:
                     if pdf_line.page_index == block.page_index and block != pdf_line.parent:
-                        nearest_blocks.append((self.distance(pdf_line.parent, block), block))
+                        parent_block = pdf_line.parent
+                        if parent_block is not None:
+                            nearest_blocks.append((self.distance(parent_block, block), block))
 
                 nearest_blocks.sort(key=lambda x: x[0])
-                nearest_blocks = [block[1] for block in nearest_blocks[:2]]
+                nearest_blocks = [block[1] for block in nearest_blocks[:num_nearest_blocks]]
 
                 for nearest_block in nearest_blocks:
                     for cousin in nearest_block.children:
@@ -263,95 +288,96 @@ class MatchingTool:
                 search_tex_lines = tex_lines
             else:
                 nearest_lines.sort(key=lambda x: x[0])
-                nearest_lines = [line[1] for line in nearest_lines[:4]]
+                nearest_lines = [line[1] for line in nearest_lines[:num_nearest_lines]]
 
                 center_index = round(sum(nearest_line.matches[0][0] for nearest_line in nearest_lines) / len(nearest_lines))
                 search_tex_lines = tex_lines[max(0, center_index - offset):min(center_index + offset, len(tex_lines))]
 
-        equation_block_types = [
-            'algorithmic'
-            'equation',
-            'align',
-            'gather',
-            'cases',
-            'frm',
-        ]
+        search_tex_lines = [line for line in search_tex_lines if line.content.strip() != '']
+        if len(search_tex_lines) == 0:
+            return []
 
-        best_matches = []
+        equation_block_types = ['algorithmic', 'equation', 'align', 'gather', 'cases', 'frm', 'table']
+
+        matches = []
         for tex_line in search_tex_lines:
-            equation = pdf_line.equation_hit or any(block_type in tex_line.block_type for block_type in equation_block_types)
-            match = self.longest_common_subsequence(pdf_line.prefix, pdf_line.content, pdf_line.suffix, tex_line.leftover, equation)
-            if match[1] is None or match[2] is None:
-                continue
+            if pdf_line.equation_hit or any(block_type in tex_line.block_type for block_type in equation_block_types):
+                match = self.bag_of_words_matching_score(pdf_line.content, tex_line.leftover)
+            else:
+                match = self.longest_common_subsequence(pdf_line.prefix, pdf_line.content, pdf_line.suffix, tex_line.leftover)
+                if match[1] is None or match[2] is None:
+                    continue
 
-            if match[0] > max_threshold and leave_equations and any(block_type in tex_line.block_type for block_type in equation_block_types):  
-                pdf_line.equation_hit = True
-                best_matches = []
+            matches.append([tex_line.id, match[0], match[1], match[2]]) 
+
+        if len(matches) == 0:
+            return []
+        
+        matches.sort(reverse=True, key=lambda x: x[1])
+        if matches[0][1] < max_threshold:
+            return []
+            
+        k = 1
+        for k in range(1, len(matches)):
+            if matches[0][1] - matches[k][1] > difference:
                 break
 
-            best_matches.append([tex_line.id, match[0], match[1], match[2]]) 
-
-        if len(best_matches) == 0:
-            return []
-
-        best_matches.sort(reverse=True, key=lambda x: x[1])
-
-        if best_matches[0][1] < max_threshold:
-            return []
-         
-        if len(best_matches) == 1:
-            return best_matches
-
-        for k in range(1, len(best_matches)):
-            if best_matches[0][1] - best_matches[k][1] > difference:
-                break
-
-        return best_matches[:k]
+        return matches[:k]
     
-    def assign_match(self, pdf_line, tex_line, leftover=False):
+    def assign_match(self, pdf_line, tex_line, skip_equations=False):
+        if skip_equations and pdf_line.equation_hit:
+            return
+        
+        equation_block_types = ['algorithmic', 'equation', 'align', 'gather', 'cases', 'frm', 'table']
+        if skip_equations and any(block_type in tex_line.block_type for block_type in equation_block_types):
+            pdf_line.equation_hit = tex_line.leftover[pdf_line.matches[0][2]:pdf_line.matches[0][3]]
+            return
+        
+        leftover = True if pdf_line.matches[0][2] == None else False
         pdf_line.assigned = True
-        if leftover:
-            pdf_line.matches = [(tex_line.id, None, None, None)]
-        else:
-            start, end = pdf_line.matches[0][2], pdf_line.matches[0][3]
-            tex_line.matches.append({"pdf_id": f"{pdf_line.page_index}.{pdf_line.index}", "matching_string": tex_line.leftover[start:end]})
-            tex_line.leftover = tex_line.leftover[:start] + tex_line.leftover[end:]
+        start = 0 if leftover else pdf_line.matches[0][2]
+        end = len(tex_line.leftover) if leftover else pdf_line.matches[0][3]
 
-    def accurate_match(self, tex_lines, pdf_lines, threshold, difference, leave_equations):
+        tex_line.matches.append({"pdf_id": f"{pdf_line.page_index}.{pdf_line.index}", "matching_string": tex_line.leftover[start:end]})
+        tex_line.leftover = tex_line.leftover[:start] + tex_line.leftover[end:]
+
+    def accurate_match(self, tex_lines, pdf_lines, threshold, difference, skip_equations):
         for pdf_line in tqdm(pdf_lines, desc=f"   - accurate matching with {threshold * 100}% threshold", leave=False):
             if pdf_line.assigned:
                 continue
 
-            pdf_line.matches = self.find_best_matches(pdf_line, tex_lines, threshold, difference, leave_equations)
+            pdf_line.matches = self.find_best_matches(pdf_line, tex_lines, threshold, difference)
             
             if len(pdf_line.matches) == 1:
-                self.assign_match(pdf_line, tex_lines[pdf_line.matches[0][0]])
+                self.assign_match(pdf_line, tex_lines[pdf_line.matches[0][0]], skip_equations)
 
-    def best_guess_match(self, tex_lines, pdf_lines, threshold, difference, leave_equations):
+    def best_guess_match(self, tex_lines, pdf_lines, threshold, difference, skip_equations):
         num_nearest_lines = 4
         num_nearest_blocks = 2
         for pdf_line in tqdm(pdf_lines, desc=f"   - best guess matching with {threshold * 100}% threshold: ", leave=False):
             if pdf_line.assigned:
                 continue
 
-            pdf_line.matches = self.find_best_matches(pdf_line, tex_lines, threshold, difference, leave_equations)
+            pdf_line.matches = self.find_best_matches(pdf_line, tex_lines, threshold, difference)
             
             if len(pdf_line.matches) == 0:
                 continue
 
             if len(pdf_line.matches) == 1:
-                self.assign_match(pdf_line, tex_lines[pdf_line.matches[0][0]])
+                self.assign_match(pdf_line, tex_lines[pdf_line.matches[0][0]], skip_equations)
                 continue
 
             nearest_lines = []
-            for sibling in pdf_line.parent.children:
-                if sibling.assigned and sibling is not pdf_line:
-                    nearest_lines.append((self.distance(pdf_line, sibling), sibling))
+            parent_block = pdf_line.parent
+            if parent_block is not None:
+                for sibling in parent_block.children:
+                    if sibling.assigned and sibling is not pdf_line:
+                        nearest_lines.append((self.distance(pdf_line, sibling), sibling))
 
             if len(nearest_lines) == 0:
                 nearest_blocks = []
                 for block in self.pdf_data.elements['containers']:
-                    if pdf_line.page_index == block.page_index and block != pdf_line.parent:
+                    if block and pdf_line.page_index == block.page_index and block != pdf_line.parent:
                         nearest_blocks.append((self.distance(pdf_line.parent, block), block))
 
                 nearest_blocks.sort(key=lambda x: x[0])
@@ -369,7 +395,7 @@ class MatchingTool:
                 mean_index = sum(nearest_line.matches[0][0] for nearest_line in nearest_lines) / len(nearest_lines)
                 pdf_line.matches = [min(pdf_line.matches, key=lambda match: abs(match[0] - mean_index))]
                 
-                self.assign_match(pdf_line, tex_lines[pdf_line.matches[0][0]])
+                self.assign_match(pdf_line, tex_lines[pdf_line.matches[0][0]], skip_equations)
 
     def aggregate_equations(self, pdf_lines):
         equation_pdf_lines = [pdf_line for pdf_line in pdf_lines if pdf_line.equation_hit]
@@ -420,8 +446,8 @@ class MatchingTool:
 
                 counter = Counter(indexes)
                 most_common_element, _ = counter.most_common(1)[0]
-                self.assign_match(pdf_line, tex_lines[most_common_element], leftover=True)
-
+                pdf_line.matches = [[most_common_element, None, None, None]]
+                self.assign_match(pdf_line, tex_lines[pdf_line.matches[0][0]], False)
 
     def distance(self, a, b):
         x1, y1, w1, h1 = a.element.bbox[0], a.element.bbox[1], a.element.bbox[2] - a.element.bbox[0], a.element.bbox[3] - a.element.bbox[1]
@@ -435,11 +461,6 @@ class MatchingTool:
         
         horizontal_distance = max(left2 - right1, left1 - right2, 0)
         vertical_distance = max(bottom2 - top1, bottom1 - top2, 0)
-        
-        if horizontal_distance > 0 and vertical_distance == 0:
-            return horizontal_distance
-        if vertical_distance > 0 and horizontal_distance == 0:
-            return vertical_distance
         
         return (horizontal_distance ** 2 + vertical_distance ** 2) ** 0.5
 
@@ -553,20 +574,16 @@ class MatchingTool:
         with open(self.pdf_data.input_file_path, 'rb') as f:
             pdf_document = fitz.open(self.pdf_data.input_file_path)
 
-            for text_box in self.pdf_data.elements['text_boxes']:
-                self.draw_bounding_box(pdf_document, text_box, (.25, .25, .25))
-
-            for figure in self.pdf_data.elements['figures']:
-                self.draw_bounding_box(pdf_document, figure, (.25, .25, 1))
-
-            for rect in self.pdf_data.elements['rects']:
-                self.draw_bounding_box(pdf_document, rect, (.25, 0, 0))
-
-            for component in self.pdf_data.elements['components']:
-                self.draw_bounding_box(pdf_document, component, (.25, 0, .25))
-
-            for container in self.pdf_data.elements['containers']:
-                self.draw_bounding_box(pdf_document, container, (.25, .25, .25))
+            elements = [
+                ('text_boxes', (.25, .25, .25, 1)),
+                ('figures', (.25, .25, 1, 1)),
+                ('rects', (.25, 0, 0, 1)),
+                ('components', (.25, 0, .25, 1)),
+                ('containers', (0, 0, 0, .25)),
+            ] 
+            for element_type, color in elements:
+                for el in self.pdf_data.elements[element_type]:
+                    self.draw_bounding_box(pdf_document, el, color)
 
             output_file_path = os.path.join(self.folder_path, 'output', name + '.pdf')
             pdf_document.save(output_file_path)

@@ -1,0 +1,170 @@
+\begin{thebibliography}{30}
+\newcommand{\enquote}[1]{``#1''}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[\protect\citeauthoryear{Amaral, Buldyrev, Havlin, Leschhorn, Maass,
+  Salinger, Stanley, and Stanley}{Amaral et~al.}{1997}]{amaral1997scaling}
+\textsc{Amaral, L. A.~N., S.~V. Buldyrev, S.~Havlin, H.~Leschhorn, P.~Maass,
+  M.~A. Salinger, H.~E. Stanley, and M.~H. Stanley} (1997): \enquote{Scaling
+  Behavior in Economics: I. Empirical Results for Company Growth,}
+  \emph{Journal de Physique I}, 7, 621--633.
+
+\bibitem[\protect\citeauthoryear{Ameijeiras-Alonso, Crujeiras, and
+  Rodríguez-Casal}{Ameijeiras-Alonso et~al.}{2019}]{ameijeiras_et_al_2019}
+\textsc{Ameijeiras-Alonso, J., R.~Crujeiras, and A.~Rodríguez-Casal} (2019):
+  \enquote{Mode testing, critical bandwidth and excess mass,} \emph{Test}, 28,
+  900--919.
+
+\bibitem[\protect\citeauthoryear{Andrews and Mallows}{Andrews and
+  Mallows}{1974}]{andrewsmallows1974}
+\textsc{Andrews, D.~F. and C.~L. Mallows} (1974): \enquote{Scale Mixtures of
+  Normal Distributions,} \emph{Journal of the Royal Statistical Society. Series
+  B (Methodological)}, 36, 99--102.
+
+\bibitem[\protect\citeauthoryear{Axtell}{Axtell}{2001}]{axtell2001}
+\textsc{Axtell, R.~L.} (2001): \enquote{Zipf Distribution of U.S. Firm Sizes,}
+  \emph{Science}, 293, 1818--1820.
+
+\bibitem[\protect\citeauthoryear{Bouchaud and M{\'{e}}zard}{Bouchaud and
+  M{\'{e}}zard}{2000}]{Bouchaud2000}
+\textsc{Bouchaud, J.-P. and M.~M{\'{e}}zard} (2000): \enquote{Wealth
+  condensation in a simple model of economy,} \emph{Physica A: Statistical
+  Mechanics and its Applications}, 282, 536--545.
+
+\bibitem[\protect\citeauthoryear{Bouchaud and Potters}{Bouchaud and
+  Potters}{2003}]{bouchaud2003theory}
+\textsc{Bouchaud, J.-P. and M.~Potters} (2003): \emph{Theory of financial risks
+  (2nd Edition)}, vol.~12, Cambridge University Press, Cambridge From
+  Statistical Physics to Risk.
+
+\bibitem[\protect\citeauthoryear{Buldyrev, Pammolli, Riccaboni, and
+  Stanley}{Buldyrev et~al.}{2020}]{buldyrev2020rise}
+\textsc{Buldyrev, S.~V., F.~Pammolli, M.~Riccaboni, and H.~E. Stanley} (2020):
+  \emph{The rise and fall of business firms: A stochastic framework on
+  innovation, creative destruction and growth}, Cambridge University Press.
+
+\bibitem[\protect\citeauthoryear{Buldyrev, Riccaboni, Growiec, Stanley, and
+  Pammolli}{Buldyrev et~al.}{2007}]{Buldyrev_et_al_2007}
+\textsc{Buldyrev, S.~V., M.~Riccaboni, J.~Growiec, H.~E. Stanley, and
+  F.~Pammolli} (2007): \enquote{The Growth of Business Firms: Facts and
+  Theory,} \emph{Journal of the European Economic Association}, 5, 574--584.
+
+\bibitem[\protect\citeauthoryear{Castaldi and Dosi}{Castaldi and
+  Dosi}{2008}]{Castaldi2008}
+\textsc{Castaldi, C. and G.~Dosi} (2008): \enquote{The patterns of output
+  growth of firms and countries: Scale invariances and scale specificities,}
+  \emph{Empirical Economics}, 37, 475--495.
+
+\bibitem[\protect\citeauthoryear{Derrida}{Derrida}{1997}]{derridaRandomWalksSpin1997}
+\textsc{Derrida, B.} (1997): \enquote{From Random Walks to Spin Glasses,}
+  \emph{Physica D: Nonlinear Phenomena}, 107, 186--198.
+
+\bibitem[\protect\citeauthoryear{Dosi}{Dosi}{2023}]{dosi2023foundations}
+\textsc{Dosi, G.} (2023): \emph{The Foundations of Complex Evolving Economies:
+  Part One: Innovation, Organization, and Industrial Dynamics}, The Foundations
+  of Complex Evolving Economies, Oxford University Press.
+
+\bibitem[\protect\citeauthoryear{Fontanelli, Napoletano, and Secchi}{Fontanelli
+  et~al.}{2024}]{fonase2024}
+\textsc{Fontanelli, L., M.~Napoletano, and A.~Secchi} (2024):
+  \enquote{Uncovering the inverse J-Shaped Relationship between Firm Growth
+  Rate Volatility and Size,} Unpublished.
+
+\bibitem[\protect\citeauthoryear{Fu, Pammolli, Buldyrev, Riccaboni, Matia,
+  Yamasaki, and Stanley}{Fu et~al.}{2005}]{Fu_et_al_2005}
+\textsc{Fu, D., F.~Pammolli, S.~V. Buldyrev, M.~Riccaboni, K.~Matia,
+  K.~Yamasaki, and H.~E. Stanley} (2005): \enquote{The growth of business
+  firms: Theoretical framework and empirical evidence,} \emph{Proceedings of
+  the National Academy of Sciences}, 102, 18801--18806.
+
+\bibitem[\protect\citeauthoryear{Gabaix}{Gabaix}{2009}]{Gabaix2009}
+\textsc{Gabaix, X.} (2009): \enquote{Power Laws in Economics and Finance,}
+  \emph{Annual Review of Economics}, 1, 255–294.
+
+\bibitem[\protect\citeauthoryear{Gabaix}{Gabaix}{2011}]{Gabaix_2011}
+---\hspace{-.1pt}---\hspace{-.1pt}--- (2011): \enquote{The Granular Origins of
+  Aggregate Fluctuations,} \emph{Econometrica}, 79, 733--772.
+
+\bibitem[\protect\citeauthoryear{Gibrat}{Gibrat}{1931}]{gibrat1931inegalites}
+\textsc{Gibrat, R.} (1931): \emph{Les in{\'e}galit{\'e}s {\'e}conomiques:
+  applications: aux in{\'e}galit{\'e}s des richesses, {\`a} la concentration
+  des entreprises, aux populations des villes, aux statistiques des familles,
+  etc., d'une loi nouvelle, la loi de l'effect proportionnel}, Recueil Sirey.
+
+\bibitem[\protect\citeauthoryear{Gnedenko and Kolmogorov}{Gnedenko and
+  Kolmogorov}{1953}]{gnedenko1953}
+\textsc{Gnedenko, B.~V. and A.~N. Kolmogorov} (1953): \emph{Distributions for
+  Sums of Independent Random Variables}, Addison-Wesley Publishing Co.
+
+\bibitem[\protect\citeauthoryear{Haltiwanger}{Haltiwanger}{1997}]{haltiwanger_1997}
+\textsc{Haltiwanger, J.} (1997): \enquote{Measuring and analyzing aggregate
+  fluctuations: the importance of building from microeconomic evidence,}
+  \emph{IMF Review}, 55--78.
+
+\bibitem[\protect\citeauthoryear{Herskovic, Kelly, Lustig, and
+  Van~Nieuwerburgh}{Herskovic et~al.}{2020}]{herskovic2020firm}
+\textsc{Herskovic, B., B.~Kelly, H.~Lustig, and S.~Van~Nieuwerburgh} (2020):
+  \enquote{Firm volatility in granular networks,} \emph{Journal of Political
+  Economy}, 128, 4097--4162.
+
+\bibitem[\protect\citeauthoryear{Hymer and Pashigian}{Hymer and
+  Pashigian}{1962}]{hymer_pashigian_1962}
+\textsc{Hymer, S. and P.~Pashigian} (1962): \enquote{Firm Size and Rate of
+  Growth,} \emph{Journal of Political Economy}, 70, 556--569.
+
+\bibitem[\protect\citeauthoryear{Kramarz, Martin, and Mejean}{Kramarz
+  et~al.}{2020}]{Kramarz2020}
+\textsc{Kramarz, F., J.~Martin, and I.~Mejean} (2020): \enquote{Volatility in
+  the small and in the large: The lack of diversification in international
+  trade,} \emph{Journal of International Economics}, 122, 103276.
+
+\bibitem[\protect\citeauthoryear{Larsen-Hallock, Rej, and
+  Thesmar}{Larsen-Hallock et~al.}{2022}]{larsen-hallock_etal_2022}
+\textsc{Larsen-Hallock, E., A.~Rej, and D.~Thesmar} (2022):
+  \enquote{Expectations Formation with Fat-tailed Processes: Evidence from
+  Sales Forecasts,} ArXiv 2210.10169.
+
+\bibitem[\protect\citeauthoryear{Lee, Amaral, Canning, Meyer, and Stanley}{Lee
+  et~al.}{1998}]{Lee_Amaral_Canning_Meyer_Stanley_1998}
+\textsc{Lee, Y., L.~A.~N. Amaral, D.~Canning, M.~Meyer, and H.~E. Stanley}
+  (1998): \enquote{Universal features in the growth dynamics of complex
+  organizations,} \emph{Physical Review Letters}, 81, 3275--3278, arXiv:
+  cond-mat/9804100.
+
+\bibitem[\protect\citeauthoryear{Moran and Riccaboni}{Moran and
+  Riccaboni}{2024}]{moranriccaboni}
+\textsc{Moran, J. and M.~Riccaboni} (2024): \enquote{Compositional Growth
+  Models,} ArXiv 2404.07935.
+
+\bibitem[\protect\citeauthoryear{Schwarzkopf, Axtell, and Farmer}{Schwarzkopf
+  et~al.}{2010}]{schwarzkopf_et_al_2010}
+\textsc{Schwarzkopf, Y., R.~L. Axtell, and J.~D. Farmer} (2010): \enquote{The
+  cause of universality in growth fluctuations,} ArXiv 1004.5397.
+
+\bibitem[\protect\citeauthoryear{Stanley, Amaral, Buldyrev, Havlin, Leschhorn,
+  Maass, Salinger, and Stanley}{Stanley et~al.}{1996}]{stanley1996scaling}
+\textsc{Stanley, M. H.~R., L.~A.~N. Amaral, S.~V. Buldyrev, S.~Havlin,
+  H.~Leschhorn, P.~Maass, M.~A. Salinger, and H.~E. Stanley} (1996):
+  \enquote{Scaling behaviour in the growth of companies,} \emph{Nature}, 379,
+  804--806.
+
+\bibitem[\protect\citeauthoryear{Sutton}{Sutton}{1997}]{Sutton_1997}
+\textsc{Sutton, J.} (1997): \enquote{Gibrat's Legacy,} \emph{Journal of
+  Economic Literature}, 35, 40--59.
+
+\bibitem[\protect\citeauthoryear{Sutton}{Sutton}{2002}]{Sutton_2002}
+---\hspace{-.1pt}---\hspace{-.1pt}--- (2002): \enquote{The variance of firm
+  growth rates: the 'scaling' puzzle,} \emph{Physica A: Statistical Mechanics
+  and its Applications}, 312, 577--590.
+
+\bibitem[\protect\citeauthoryear{West}{West}{1987}]{west1987}
+\textsc{West, M.} (1987): \enquote{{On scale mixtures of normal
+  distributions},} \emph{Biometrika}, 74, 646--648.
+
+\bibitem[\protect\citeauthoryear{Wyart and Bouchaud}{Wyart and
+  Bouchaud}{2003}]{wyart2003statistical}
+\textsc{Wyart, M. and J.-P. Bouchaud} (2003): \enquote{Statistical models for
+  company growth,} \emph{Physica A: Statistical Mechanics and its
+  Applications}, 326, 241--255.
+
+\end{thebibliography}

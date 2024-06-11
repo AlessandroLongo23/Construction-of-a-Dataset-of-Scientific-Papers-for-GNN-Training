@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\caption{
+\textbf{CLEVR-CoGenT Results.} (\cref{ssec:clevr})
+While both our proposed framework and the baseline, NS-VQA, and are able to achieve \textgreater 99\% accuracy on the ID condition, the baseline fails to generalize, with its shape-recognition accuracy dropping by 66.12\%.
+\textit{Color}, \textit{Mat.}, and \textit{Shape} represent respective accuracies and $\uparrow$ indicates greater is better.
+}
+\begin{tabular}{lrrr|rrr}
+\toprule
+& \multicolumn{3}{c}{ID} & \multicolumn{3}{c}{OOD} \\
+& Char & Float & NS-VQA & Char & Float & NS-VQA \\
+\midrule
+$\downarrow$L2 & 0.21 & 0.16 & 0.18 & 0.22 & 0.17 & 0.18 \\
+$\uparrow$Size & 99.71 & 99.77 & 100.00 & 99.74 & 99.80 & 100.00 \\
+$\uparrow$Color & 99.58 & 99.71 & 100.00 & 98.60 & 98.14 & 99.95 \\
+$\uparrow$Shape & 99.51 & 99.59 & 100.00 & 93.50 & 93.14 & \fbox{33.88} \\
+\bottomrule
+\end{tabular}
+\label{table:clevr}
+\end{table}

@@ -1,0 +1,43 @@
+\section{Introduction}\label{sec:introduction}
+The formulation of vision as ``inverse graphics'' traces its roots back at least to \citet{baumgart1974geometric} (see also \citet{kersten1996introduction} and \citet{yuille2006vision}).
+While the term encompasses various ideas and approaches to vision problems, it is often equated with ``analysis by synthesis''~\citep{grenander}.
+What is typically meant here, however, is more akin to model fitting.
+This generally presupposes that one has models of the world, knows roughly where they are, and then fits them to image evidence.
+
+\input{figures/diagram/teaser}
+
+A more strict interpretation of inverse graphics targets the creation of a \emph{graphics program}~\citep{ritchie2023neurosymbolic}: a structured representation that can be used by a rendering engine to approximately reproduce the 3D scene.
+These programs are compact and interpretable representations of visual primitives~\citep{wu2017neural,jones2023shapecoder}, thereby aiding scene comprehension~\citep{wu2017neural, yi2018neural}.
+The objective extends beyond mere pixel- or object-level interpretation of an image; it seeks to leverage the inherent spatial and physical relationships among objects that are essential for holistic scene understanding.
+
+Our goal is to generate such a graphics program from a single image capable of reproducing the 3D scene and its constituent objects using a traditional graphics engine.
+This approach, known as visual program induction, has garnered significant attention, encompassing works on a variety of problem domains.
+\citet{wu2017neural} propose the concept of ``neural scene de-rendering,'' wherein custom markup code, translatable into renderer-friendly inputs, is inferred from images.
+While their method handles synthetic scenes featuring arbitrarily many objects, it grapples with generalization beyond its training-data distribution.
+Subsequent research \citep{yi2018neural} explores the utility of graphics programs for the downstream task of visual question answering (VQA).
+However, their scene-reconstruction method still struggles with generalization, particularly regarding objects with unseen attribute combinations (e.g., a known shape with a novel shape--color combination). 
+
+To address the problem of generalization, a method must possess a deep understanding of the visual world and its physical properties.
+Here, we explore whether we can exploit the generalization abilities of large language models (LLMs) for this purpose.
+LLMs have demonstrated remarkable performance across a wide variety of vision--language tasks, ranging from producing detailed textual descriptions of images~\citep{Alayrac2022FlamingoAV} and generating realistic images from text~\citep{koh2023generating}, to tasks such as visual question answering~\citep{ouyang2022training,OpenAI2023GPT4TR}, visual instruction following~\citep{liu2023llava,zhu2023minigpt}, and robot planning~\citep{huang2022language,singh2023progprompt}.
+Intriguingly, these models are designed with generic architectures and are initially trained with objectives that are not specifically tailored to a downstream task.
+The breadth of their training data endows them with the capacity for compositional reasoning about the world.
+However, their proficiency in conducting \emph{precise spatial reasoning} within the 3D Euclidean world remains largely unexplored.
+This prompts the question:
+Can LLMs, originally used to address \textit{semantic-level} queries, be applied to the \textit{precise} realm of inverse-graphics tasks?
+And if so, how?
+
+To address these questions, we investigate the potential of LLMs to perform such tasks.
+We hypothesize that LLMs can be trained with simple demonstrations to perform precise inverse-graphics reasoning.
+This idea draws inspiration from instruction tuning~\citep{alpaca,wei_2024_instruction} in the language-processing domain, where LLMs acquire instruction-following skills after being fine-tuned on a limited set of curated data.
+We anticipate that LLMs, endowed with broad knowledge about the physical world, can be taught to recover accurate graphics programs from images beyond the training distribution.
+This insight motivates a re-evaluation of the conventional inverse-graphics pipeline, leading to the proposal of a new LLM-based framework: the Inverse-Graphics Large Language Model (\emph{IG-LLM}).
+We fine-tune an LLM equipped with a pretrained text-aligned vision encoder, using an instruction-based synthetic dataset, and explore the model's capacity to infer graphics programs with accurate estimates of object quantity, shape, size, color, material, location, and orientation, as illustrated in \cref{fig:teaser}.
+
+However, a question arises regarding the suitability of LLMs and natural language for generating the precise measurements necessary for inverse graphics, given the discrete nature of their token-based output.
+This constraint poses challenges for reasoning within metric spaces such as Euclidean space.
+To address this, we explore the integration of a \emph{numeric head} in the language-based output (see \cref{fig:numeric_head}), where numbers are represented as continuous values rather than discrete-token sequences.
+We compare this approach and observe that our pipeline achieves improved precision and an expanded generalization capacity across evaluations.
+
+Our study is an examination of the adaptability of LLMs to novel domains and an attempt to understand how these powerful, semantically driven models can be repurposed and refined to gain a precise, metric understanding of the 3D world.
+While our investigation is preliminary, our work paves the way for further endeavors to capitalize on the rapid advancements in LLMs.

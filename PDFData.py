@@ -48,11 +48,23 @@ class PDFElement:
         unicode_pattern = r'\\u[0-9a-fA-F]{4}'
         text = re.sub(unicode_pattern, lambda match: translate_equations(match.group(0)), text)
 
-        text = text.replace('‘', "'")
-        text = text.replace('’', "'")
-        text = text.replace('“', "''")
-        text = text.replace('”', "''")
-        text = text.replace('`', "'")
+        replacements = [
+            ('‘', "'"),
+            ('’', "'"),
+            ('“', "''"),
+            ('”', "''"),
+            ('`', "'"),
+            ('−\n', ""),
+            ('-\n', ""),
+            ('\n', " "),
+            ('−', ""),
+            ('-', ""),
+            (' ,', ','),
+        ]
+        for pattern, replacement in replacements:
+            text = text.replace(pattern, replacement)
+
+        text = re.sub(r'\(cid:(\d+)\)', 'Ỽ', text)
         return text
 
 
@@ -81,7 +93,7 @@ class PDFData:
             laparams_containers = LAParams(
                 all_texts=True,
                 detect_vertical=False,
-                char_margin=20,
+                char_margin=50,
                 word_margin=0.1,
                 line_margin=0.35,
                 line_overlap=0.0,
@@ -93,7 +105,7 @@ class PDFData:
             laparams_elements = LAParams(
                 all_texts=True,
                 detect_vertical=False,
-                char_margin=20,
+                char_margin=50,
                 word_margin=0.1,
                 line_margin=0.0,
                 line_overlap=0.0,
@@ -107,7 +119,7 @@ class PDFData:
                 layout_containers = device_containers.get_result()
                 for index, element in enumerate(layout_containers):
                     el = PDFElement(element, page_index, index)
-                    if isinstance(element, LTTextBox):
+                    if isinstance(element, LTTextBox) and element.bbox[0] > 20:
                         self.elements['containers'].append(el)
 
                 interpreter_elements.process_page(page)
@@ -117,7 +129,7 @@ class PDFData:
                     if isinstance(element, LTFigure):
                         self.elements['figures'].append(el)
 
-                    elif isinstance(element, LTTextBox):
+                    elif isinstance(element, LTTextBox) and element.bbox[0] > 20:
                         self.elements['text_boxes'].append(el)
                         for container in self.elements['containers']:
                             if container.contains(el) and el.content in container.content:
@@ -132,43 +144,23 @@ class PDFData:
                         self.elements['components'].append(el)
 
     def calc_context(self, content, container):
-        context_words = 5
+        context_words = 1
         start_index = container.find(content)
         end_index = start_index + len(content)
 
         i = start_index
         count = context_words
-        while count > 0 and i >= 0:
+        while count > 0 and i > 0:
             i -= 1
-            if container[i] == ' ':
-                count -= 1
+            count -= container[i] == ' '
         prefix = container[i + 1:start_index]
-
-        prefix = prefix.replace('−\n', "")
-        prefix = prefix.replace('-\n', "")
-        prefix = prefix.replace('\n', " ")
-        prefix = prefix.replace('−', "")
-        prefix = prefix.replace('-', "")
-
-        content = content.replace('−\n', "")
-        content = content.replace('-\n', "")
-        content = content.replace('\n', " ")
-        content = content.replace('−', "")
-        content = content.replace('-', "")
 
         i = end_index
         count = context_words
         while count > 0 and i < len(container):
-            if container[i] == ' ':
-                count -= 1
+            count -= container[i] == ' '
             i += 1
         suffix = container[end_index:i - 1]
-
-        suffix = suffix.replace('−\n', "")
-        suffix = suffix.replace('-\n', "")
-        suffix = suffix.replace('\n', " ")
-        suffix = suffix.replace('−', "")
-        suffix = suffix.replace('-', "")
 
         return prefix, content, suffix
 
@@ -193,7 +185,7 @@ class PDFData:
             page_groups[el.page_index].append(el)
 
         data = []
-        for page_index, elements in page_groups.items():
+        for _, elements in page_groups.items():
             for index, el in enumerate(elements):
                 data.append(element_to_dict(el, index))
 

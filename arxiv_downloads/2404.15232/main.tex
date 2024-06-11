@@ -1,0 +1,267 @@
+\documentclass[superscriptaddress,twocolumn,showpacs,a4paper,
+amssymb,amsmath,nobibnotes,aps,prl,
+showkeys,
+nofootinbib,notitlepage]{revtex4-1}
+\usepackage{verbatim}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[american]{babel}
+\usepackage{epsfig}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{dcolumn}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{ulem}
+\usepackage{epstopdf}
+\usepackage{bm}
+\usepackage{siunitx}
+\usepackage{braket}
+\usepackage{enumitem}
+\usepackage{soul}
+\usepackage[table]{xcolor}
+\usepackage{color}
+\usepackage{transparent}
+\usepackage{pifont}
+\usepackage{enumitem}
+
+
+% Colors
+\definecolor{navyblue}{rgb}{0.0, 0.0, 0.5}
+\definecolor{royalblue}{rgb}{0.25, 0.41, 0.88}
+\definecolor{cadmiumgreen}{rgb}{0.0, 0.42, 0.24}
+\definecolor{blue-violet}{rgb}{0.54, 0.17, 0.89}
+\definecolor{darkviolet}{rgb}{0.58, 0.0, 0.83}
+\definecolor{orange(colorwheel)}{rgb}{1.0, 0.5, 0.0}
+
+% Hyperref
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true, % false: boxed links; true: colored links
+    linkcolor=royalblue, % color of internal links (change box color with linkbordercolor)
+    citecolor=magenta}
+
+
+
+% Tables
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{dcolumn}
+\usepackage{colortbl}
+
+\newcommand\vertsp{\rule[-2mm]{1mm}{0mm} &}
+\newcommand\horsp{\rule[-1.5mm]{0mm}{4.125mm}}
+\newcommand\morehorsp{\rule[-2.25mm]{0mm}{6mm}}
+\newcommand\ie{\emph{i.e.}}
+\newcommand{\siround}[2]{\num[round-mode=places,group-digits=false,round-precision=#2]{#1}}
+\newcommand{\lcdm}{\Lambda\mathrm{CDM}}
+\newcommand{\nq}[1]{%
+	\begin{tabular}{@{}c@{}}\strut#1\strut\end{tabular}%
+}
+
+\newcommand{\WG}[1]{{\textcolor{blue}{ WG: #1 } }}
+
+\newcommand{\RCN}[1]{{\textcolor{red}{RCN: #1 } }}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+
+%WG: better title to be found
+\title{Interacting Dark Energy after DESI Baryon Acoustic Oscillation measurements}
+
+\author{William Giar\`e}
+\email{w.giare@sheffield.ac.uk}
+\affiliation{School of Mathematics and Statistics, University of Sheffield, Hounsfield Road, Sheffield S3 7RH, United Kingdom}
+
+\author{Miguel A. Sabogal}
+\email{miguel.sabogal@ufrgs.br}
+\affiliation{Instituto de F\'{i}sica, Universidade Federal do Rio Grande do Sul, 91501-970 Porto Alegre RS, Brazil}
+
+\author{Rafael C. Nunes}
+\email{rafadcnunes@gmail.com}
+\affiliation{Instituto de F\'{i}sica, Universidade Federal do Rio Grande do Sul, 91501-970 Porto Alegre RS, Brazil}
+\affiliation{Divis\~{a}o de Astrof\'{i}sica, Instituto Nacional de Pesquisas Espaciais, Avenida dos Astronautas 1758, S\~{a}o Jos\'{e} dos Campos, 12227-010, S\~{a}o Paulo, Brazil}
+
+\author{Eleonora Di Valentino}
+\email{e.divalentino@sheffield.ac.uk}
+\affiliation{School of Mathematics and Statistics, University of Sheffield, Hounsfield Road, Sheffield S3 7RH, United Kingdom}
+
+\begin{abstract}
+\noindent
+We investigate the implications of the Baryon Acoustic Oscillation measurements released by the Dark Energy Spectroscopic Instrument (DESI) for Interacting Dark Energy (IDE) models characterized by an energy-momentum flow from Dark Matter to Dark Energy. By combining Planck-2018 and DESI data, we observe a preference for interactions exceeding the 95\% confidence level, yielding a present-day expansion rate $H_0=71.4\pm1.5$ km/s/Mpc, in agreement with SH0ES.  This preference remains robust when including measurements of the expansion rate $H(z)$ obtained from the relative ages of massive, early-time, and passively-evolving galaxies, as well as when considering distance moduli measurements from Type-Ia Supernovae sourced from the Pantheon-plus catalog using the SH0ES Cepheid host distances as calibrators. Overall, high and low redshift data can be equally or better explained within the IDE framework compared to $\Lambda$CDM, while also yielding higher values of $H_0$ in better agreement with the local distance ladder estimate.
+\end{abstract}
+
+\keywords{}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Introduction}
+
+The well-known discrepancy between the present-day expansion rate of the Universe ($H_0$) as measured by the SH0ES collaboration using local distance ladder measurements from Type Ia supernovae~\cite{Riess:2021jrx,Murakami:2023xuy,Breuval:2024lsv} ($H_0=73\pm1$ km/s/Mpc), and the value of the same parameter inferred by the Planck collaboration~\cite{Planck:2018vyg} from observations of temperature and polarization anisotropies in the Cosmic Microwave Background (CMB) radiation, assuming a $\Lambda$CDM cosmology ($H_0=67.4\pm0.5$ km/s/Mpc), has reached a statistical significance exceeding $5\sigma$. Barring any possible systematic origin of this discrepancy\footnote{This possibility appears increasingly unlikely given the extensive review of several potential sources of systematic error performed by the SH0ES collaboration~\cite{Riess:2021jrx,Riess:2024ohe,Brout:2023wol}.}, a fascinating possibility is that the Hubble tension might be pointing towards new physics beyond the standard $\Lambda$CDM model of cosmology.
+
+Numerous theoretical attempts have been proposed to increase the value of $H_0$ inferred from CMB data and restore cosmic concordance~\cite{DiValentino:2021izs,Abdalla:2022yfr,Khalife:2023qbu,Schoneberg:2021qvd}. However, a compelling solution to the problem remains elusive. The primary challenge stems from the highly precisely determined angular scale of the acoustic peaks in the CMB spectra~\cite{Planck:2018vyg}. This scale sets the ratio between the sound horizon at recombination and the angular diameter distance to the last scattering surface. Increasing the value of $H_0$ without disrupting the acoustic scale requires either a reduction in the value of the sound horizon or a different post-recombination expansion history of the Universe able to compensate for a higher $H_0$ while preserving the angular diameter distance from the last scattering surface~\cite{Knox:2019rjx}.
+
+Both of these possibilities face severe constraints. Reducing the value of the sound horizon requires new physics acting at very high redshifts, typically just prior to recombination. Even ignoring the common fine-tuned problems surrounding early-time solutions, they remain severely constrained by high redshift observations, most notably by CMB data. Conversely, late-time solutions require new physics altering cosmic distances to compensate for the higher values of $H_0$ while preserving the angular diameter distance from the CMB. In turn, cosmic distances are precisely measured by Baryon Acoustic Oscillations (BAO) and Type-Ia supernovae (SN) data that so far have not provided any evidence for deviations from a late-time $\Lambda$CDM cosmology, significantly reducing the room allowed for new physics at low redshift~\cite{Efstathiou:2021ocp,Keeley:2022ojz}.
+
+\begin{table*}[htpb!]
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{l c c c c c c c c c c c c c c c }
+\hline
+\textbf{Parameter} & \textbf{ Planck-2018+DESI } & \textbf{ Planck-2018+DESI+CC } & \textbf{ Planck-2018+DESI+SN } & \textbf{ Planck-2018+DESI+SN+CC } \\ 
+\hline\hline
+
+$ \Omega_\mathrm{b} h^2  $ & $  0.02244\pm 0.00013\, ( 0.02244^{+0.00027}_{-0.00026} ) $ & $  0.02244\pm 0.00013\, ( 0.02244^{+0.00026}_{-0.00026} ) $ & $  0.02255\pm 0.00014\, ( 0.02255^{+0.00027}_{-0.00027} ) $ & $  0.02255\pm 0.00014\, ( 0.02255^{+0.00027}_{-0.00026} ) $ \\ 
+$ \Omega_\mathrm{c} h^2  $ & $  0.070\pm 0.022\, ( 0.070^{+0.044}_{-0.048} ) $ & $  0.072\pm 0.022\, ( 0.072^{+0.045}_{-0.050} ) $ & $  0.0953\pm 0.0081\, ( 0.095^{+0.017}_{-0.018} ) $ & $  0.0954\pm 0.0080\, ( 0.095^{+0.017}_{-0.017} ) $ \\ 
+$ 100\theta_\mathrm{s}  $ & $  1.04200\pm 0.00029\, ( 1.04200^{+0.00057}_{-0.00056} ) $ & $  1.04198\pm 0.00028\, ( 1.04198^{+0.00056}_{-0.00054} ) $ & $  1.04211\pm 0.00028\, ( 1.04211^{+0.00055}_{-0.00055} ) $ & $  1.04211\pm 0.00028\, ( 1.04211^{+0.00055}_{-0.00054} ) $ \\ 
+$ \tau_\mathrm{reio}  $ & $  0.0553\pm 0.0075\, ( 0.055^{+0.017}_{-0.016} ) $ & $  0.0549\pm 0.0073\, ( 0.055^{+0.015}_{-0.014} ) $ & $  0.0599\pm 0.0077\, ( 0.060^{+0.016}_{-0.014} ) $ & $  0.0596\pm 0.0078\, ( 0.060^{+0.017}_{-0.016} ) $ \\ 
+$ n_\mathrm{s}  $ & $  0.9675\pm 0.0037\, ( 0.9675^{+0.0071}_{-0.0074} ) $ & $  0.9675\pm 0.0037\, ( 0.9675^{+0.0072}_{-0.0072} ) $ & $  0.9699\pm 0.0037\, ( 0.9699^{+0.0074}_{-0.0071} ) $ & $  0.9698\pm 0.0037\, ( 0.9698^{+0.0074}_{-0.0072} ) $ \\ 
+$ \log(10^{10} A_\mathrm{s})  $ & $  3.044\pm 0.015\, ( 3.044^{+0.030}_{-0.028} ) $ & $  3.044\pm 0.014\, ( 3.044^{+0.029}_{-0.028} ) $ & $  3.052\pm 0.015\, ( 3.052^{+0.031}_{-0.029} ) $ & $  3.051\pm 0.015\, ( 3.051^{+0.033}_{-0.032} ) $ \\ 
+$\xi$ & $  -0.38^{+0.18}_{-0.16}\, ( -0.38^{+0.33}_{-0.31} ) $ & $  -0.37^{+0.19}_{-0.16}\, ( -0.37^{+0.34}_{-0.31} ) $ & $  -0.192^{+0.080}_{-0.071}\, ( -0.19^{+0.15}_{-0.14} ) $ & $  -0.191\pm 0.068\, ( -0.19^{+0.15}_{-0.14} ) $ \\ 
+$ H_0  $ [km/s/Mpc]& $  71.4\pm 1.5\, ( 71.4^{+3.0}_{-2.8} ) $ & $  71.3\pm 1.5\, ( 71.3^{+3.3}_{-3.2} ) $ & $  70.0\pm 0.60\, ( 70.0^{+1.2}_{-1.1} ) $ & $  70.0\pm 0.59\, ( 70.0^{+1.2}_{-1.1} ) $ \\ 
+$ \Omega_\mathrm{m}  $ & $  0.185\pm 0.049\, ( 0.19^{+0.10}_{-0.11} ) $ & $  0.190\pm 0.051\, ( 0.19^{+0.11}_{-0.11} ) $ & $  0.242\pm 0.020\, ( 0.242^{+0.038}_{-0.041} ) $ & $  0.242\pm 0.020\, ( 0.242^{+0.038}_{-0.040} ) $ \\  
+$ r_\mathrm{d}  $ [Mpc] & $  147.30\pm 0.23\, ( 147.30^{+0.44}_{-0.44} ) $ & $  147.30\pm 0.23\, ( 147.30^{+0.45}_{-0.45} ) $ & $  147.45\pm 0.23\, ( 147.45^{+0.46}_{-0.45} ) $ & $  147.44\pm 0.23\, ( 147.44^{+0.45}_{-0.45} ) $ \\
+\hline
+$\Delta \chi^2$ & $-2.33$ & $-2.17$ & $-4.88$ & $-3.56$\\
+$\ln \mathcal B_{ij}$ & $-0.45$ & $-0.78$ & $-0.64$ & $-0.01$\\
+\hline \hline
+\end{tabular} }
+\end{center}
+\caption{Constraints at $68\%$ ($95\%$) CL on the parameters of the IDE model. For all datasets, we provide $\Delta \chi^2 = \chi^2_{\rm{IDE}} - \chi^2_{\Lambda\rm{CDM}}$ as well as the Bayes factors $\ln \mathcal{B}_{ij} = \ln \mathcal{Z}_{\Lambda\text{CDM}} - \ln \mathcal{Z}_{\text{IDE}}$ calculated as the difference between the evidence for $\Lambda$CDM and IDE model. Negative values of $\Delta \chi^2$ and $\ln \mathcal{B}_{ij}$ indicate a better fit and a preference for the IDE model over the $\Lambda$CDM, respectively.}
+\label{tab.results}
+\end{table*}
+
+Interestingly, recent BAO measurements released by the Dark Energy Spectroscopic Instrument~\cite{DESI:2024uvr,DESI:2024lzq,desicollaboration2024desi} (DESI) appear to point towards new physics in the dark energy sector of the cosmological model~\cite{desicollaboration2024desi}. Following the intrinsic interest sparked by these new observations~\cite{Wang:2024hks,Cortes:2024lgw,Colgain:2024xqj}, in this \textit{letter}, we examine their implications for cosmological models known as Interacting Dark Energy (IDE) where a non-gravitational interaction between Dark Matter (DM) and Dark Energy (DE) is postulated. Over the years, these models have been extensively explored as a potential avenue for resolving cosmological tensions \cite{Zhai:2023yny,Bernui:2023byc,Hoerning:2023hks,Pourtsidou:2016ico,DiValentino:2017iww,Kumar:2017dnp,Lucca:2020zjb}. Despite high-redshift data supporting IDE as solutions to the Hubble tension~\cite{Zhai:2023yny}, the situation remains somewhat unclear when examining low-redshift observations, as different probes yield somewhat discordant conclusions~\cite{Giare:2024ytc,Nunes:2022bhn,Yang:2022csz}. In this \textit{letter}, we demonstrate that the new DESI data give a preference for interactions exceeding the 95\% confidence level (CL) and that high- and low-redshift observations can be equally or better explained in IDE than in $\Lambda$CDM, while yielding higher values of $H_0$ compatible with SH0ES.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{The Model}
+\bigskip
+
+We consider a homogeneous and isotropic Universe and introduce an energy-momentum flow in the dark sector of the model by modifying the energy-momentum equation as
+\begin{equation}
+\label{DE_DM_1}
+\nabla_{\mu}T_{i}^{\mu \nu }=Q_{i}^{\nu}, \quad \sum\limits_{i}{Q_{i}^{\mu }}=0~.
+\end{equation}
+The degree of interaction is quantified by the four-vector
+\begin{equation}
+Q_{i}^{\mu}=(Q_{i}+\delta Q_{i})u^{\mu}+a^{-1}(0,\partial^{\mu}f_{i}),
+\end{equation}
+where $u^{\mu}$ represents the velocity four-vector, $Q_i$ is the background energy transfer, and the index $i$ runs over DM and DE. We adopt a widely recognized interaction kernel $Q = \mathcal{H} \xi \rho_{\rm DE}$~\cite{Gavela:2010tm,DiValentino:2019jae,Zhai:2023yny,silva2024nonlinear,DiValentino:2019ffd} where $\mathcal{H}$ is the (conformal) Hubble parameter, $\rho_{\rm DE}$ is the DE energy-density and $\xi$ dictates both the amount and the direction of energy-momentum flow. We require $\xi < 0$, forcing the energy-momentum transfer from DM to DE. Additionally, we fix the DE equation of state to $w\simeq-1$, resembling an interacting vacuum scenario.~\footnote{We regularize early-time super-horizon instabilities in the dynamics of cosmological perturbations~\cite{Valiviita:2008iv,Gavela:2010tm} by setting $w=-1+\epsilon$ and taking $\epsilon~\simeq 0.0001 \to0$.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Methodology and data}
+\bigskip
+We implement the theoretical model in a modified version of the Boltzmann solver code \texttt{CLASS}~\cite{Blas:2011rf} and use the publicly available sampler \texttt{COBAYA}~\cite{Torrado:2020dgo} to perform Markov Chain Monte Carlo (MCMC) analyses. We assume flat priors on the set of sampled cosmological parameters \{$\Omega_b h^2$, $\Omega_c h^2$, $\tau_{\rm reio}$, $\theta_{\mathrm{s}}$, $\log(10^{10} A_{\mathrm{s}})$, $n_{\mathrm{s}}$, $\xi$\}. Our baseline datasets include the \textbf{Planck-2018} CMB temperature polarization and lensing likelihoods~\cite{Planck:2019nip,Planck:2018vyg,Planck:2018nkj} and the \textbf{DESI} BAO measurements obtained from observations of galaxies $\&$ quasars~\cite{DESI:2024uvr}, and Lyman-$\alpha$~\cite{DESI:2024lzq} tracers summarized in Tab.~I of Ref.~\cite{desicollaboration2024desi}. These latter are characterized in terms of measurements of the transverse comoving distance ($D_{\mathrm{M}}/r_{\mathrm{d}}$), the Hubble horizon ($D_{\mathrm{H}}/r_{\mathrm{d}}$), and the angle-averaged distance ($D_{\mathrm{V}}/r_{\mathrm{d}}$), normalized to the (comoving) sound horizon at the drag epoch, $r_{\mathrm{d}}$. We account for the correlation between measurements of $D_{\mathrm{M}}/r_{\mathrm{d}}$ and $D_{\mathrm{H}}/r_{\mathrm{d}}$. In addition to CMB and BAO data, we also consider distance moduli measurements from Type Ia \textbf{SN} gathered from the Pantheon-plus sample~\cite{Brout:2022vxf}. For this latter we use the SH0ES Cepheid host distances as calibrators~\cite{Riess:2021jrx}. Finally, we include measurements of the expansion rate $H(z)$ derived from the relative ages of massive, early-time, passively-evolving galaxies, known as cosmic chronometers (\textbf{CC})~\cite{Jimenez:2001gg}. We conservatively use only 15 CC measurements in the redshift range $0.179<z<1.965$~\cite{Moresco:2012by,Moresco:2015cya,Moresco:2016mzx}, accounting for all non-diagonal terms in the covariance matrix and systematic contributions.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Results}
+%\label{sec:Results}
+
+\begin{figure}[htpb!]
+    \centering
+    \includegraphics[width=\columnwidth]{Figure1.pdf} \,\,\,
+    \caption{2D contours at $68\%$ and $95\%$ CL for the coupling parameter $\xi$ and the Hubble parameter $H_0$, as inferred by the different combinations of Planck-2018, DESI, and SN data listed in the legend. The olive-green band represents the value of $H_0$ measured by the SH0ES collaboration.}
+    \label{fig:H0}
+\end{figure}
+
+\begin{figure}[htpb!]
+    \centering
+    \includegraphics[width=\columnwidth]{Figure2.pdf} \,\,\,
+    \caption{\textit{Upper panel}: Best-fit predictions for (rescaled) distance-redshift relations for IDE (solid curves) and $\Lambda$CDM (dashed curves) obtained from the analysis of Planck-2018+DESI data. These predictions are presented for the three different types of distances probed by BAO measurements, each indicated by the colors reported in the legend. The error bars represent $\pm 1 \sigma$ uncertainties. \textit{Lower panel}: Difference between the model prediction and data-point for each BAO measurement, normalized by the observational uncertainties. The IDE predictions are represented by 'x'-shaped points while the $\Lambda$CDM predictions are represented by 'o'-shaped points.}
+    \label{fig:BAO}
+\end{figure}
+
+
+\bigskip
+
+We summarize the constraints on cosmological parameters at 68\% and 95\% CL in Tab.~\ref{tab.results}. The most important results read as follows:
+\begin{itemize}[leftmargin=*]
+
+\item The joint Planck+DESI analysis yields a preference for a non-vanishing $\xi = -0.38^{+0.18}_{-0.16}$, well exceeding the 95\% CL. Additionally, it provides a value $H_0 = 71.4 \pm 1.5$ km/s/Mpc, in perfect agreement with local distance ladder estimates. Therefore, focusing on Planck-2018 and DESI-BAO altogether, IDE can fully resolve the Hubble tension, see also Fig.~\ref{fig:H0}. Adding CC does not change this result, see also Tab.~\ref{tab.results}.
+
+\item Combining Planck-2018+DESI+SN, we still find a preference for $\xi \neq 0$ at more than 95\% CL, consistently yielding values of $H_0$ higher than in the standard cosmological model, see also Tab.~\ref{tab.results} and Fig.~\ref{fig:H0}. Again, this conclusion does not change considering CC. A non-vanishing energy-momentum flow from DM to DE is potentially supported by \textit{all} the main high and low redshift datasets analyzed in this work.
+
+\item For all the datasets listed in Tab.~\ref{tab.results}, we compare the best-fit $\chi^2_{\rm{IDE}}$ obtained within IDE to the best-fit $\chi^2_{\Lambda\rm{CDM}}$ obtained for $\Lambda$CDM. We find that $\Delta \chi^2 = \chi^2_{\rm{IDE}} - \chi^2_{\Lambda\rm{CDM}}$ is always negative. This means that IDE can fit data better than $\Lambda$CDM for \textit{all} the different combinations of data while simultaneously yielding higher values of $H_0$.
+
+\item To account for the fact that IDE has one more free parameter than $\Lambda$CDM, we perform a model comparison and calculate the Bayes factors $\ln \mathcal B_{ij}$ normalized (for each dataset) to a baseline $\Lambda$CDM scenario in such a way that a negative $\ln \mathcal B_{ij}$ indicate a preference for IDE over $\Lambda$CDM, and vice versa.\footnote{To do so, we employ the \texttt{MCEvidence} package, which is publicly available~\cite{Heavens:2017hkr,Heavens:2017afc} and can be accessed at the following link: \url{https://github.com/yabebalFantaye/MCEvidence}.} Despite a trend towards $\ln \mathcal B_{ij} < 0$, the evidence is always inconclusive, suggesting that IDE and $\Lambda$CDM can be deemed equally plausible to fit current observations. 
+
+\end{itemize}
+
+\begin{table}[tpb!]
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\resizebox{0.97 \columnwidth}{!}{
+\begin{tabular}{l c c c c}
+\hline
+ \textbf{Distance} & \textbf{Redshift} & \textbf{DESI} & \textbf{IDE ($\#\sigma$)} & \textbf{$\Lambda$CDM ($\#\sigma$) } \\ 
+ \hline
+ 
+&  & & \\
+
+$D_V(z)/(r_d \sqrt{z})$ & $0.3$ & $14.48 \pm 0.27$ & $+0.54\sigma$ & $ -1.18\sigma$ \\
+
+& $1.49$ & $21.36 \pm 0.55$ & $ -0.01\sigma$ & $+0.14\sigma$\\
+
+&  & & \\
+
+$D_M(z)/(r_d \sqrt{z})$ & $0.51$ & $19.07 \pm 0.35$ & $+2.33\sigma$ & $+0.91\sigma$\\
+& $0.71$ & $20.00 \pm 0.38$ & $-1.55\sigma$ & $-2.53\sigma$\\
+& $0.93$ & $22.51 \pm 0.29$ & $-0.31\sigma$ & $+0.55\sigma$\\
+& $1.32$ & $24.19 \pm 0.60$ & $-0.04\sigma$ & $ -0.22\sigma$\\
+& $2.33$ & $26.01 \pm 0.61$ & $+0.60\sigma$ & $0.66\sigma$\\
+
+&  & & \\
+
+$z D_H(z) / (r_d\sqrt{z})$ & $0.51$ & $14.98 \pm 0.43$ & $-2.92\sigma$ & $-2.72\sigma$\\
+& $0.71$ & $16.92 \pm 0.50$ & $-0.48\sigma$ & $+0.01\sigma$\\
+& $0.93$ & $17.24\pm 0.33$ & $-0.15\sigma$ & $+0.80\sigma$\\
+& $1.32$ & $15.88 \pm 0.48$ & $-1.28\sigma$ & $-0.65\sigma$\\
+& $2.33$ & $13.00\pm 0.26$ & $-1.34\sigma$ & $ -0.75\sigma$\\
+
+\hline \hline
+\end{tabular}
+}
+\end{center}
+\caption{The DESI results (and their 1$\sigma$ errors) are presented for three distinct types of distances investigated by BAO measurements. For each data point, we indicate the consistency between the best-fit predictions of the IDE and $\Lambda$CDM models and the observed data, expressed in units of observational uncertainties ($\# \sigma$).}
+\label{tab.BAOs}
+\end{table}
+
+
+Taking the results obtained by combining Planck-2018 and DESI BAO distance measurements at face value, there is solid ground to conclude that they lend weight to the possibility of non-vanishing energy-momentum transfer from DM to DE, resulting in the pronounced negative correlation between $\xi$ and $H_0$ depicted in Fig.~\ref{fig:H0}. This preference can be better understood by referring to Ref.~\cite{desicollaboration2024desi}. In this work, the DESI collaboration argued that both  within a minimal $w_0$CDM model and considering a dynamical $w_0w_a$CDM parameterization, Planck-2018+DESI data produce a strong preference for a (dynamical) DE equation of state showing a phantom behavior in the past. In IDE, upon straightforward manipulation of the continuity equation, one can rearrange the effective equation of state parameters to be $w_{\text{eff}} = -1 + \xi/3$. Consequently, the preference for a late-time phantom-like behavior is recast into an indication $\xi < 0$ here exceeding the 95\% CL. Focusing on Planck+DESI(+CC), this preference can fully resolve the Hubble tension. However, the significant fraction of energy-momentum transferred from DM to DE naturally implies lower values of the matter density parameter ($\Omega_m$) compared to the standard cosmological model. When SN data are included in the analysis, we observe a tendency towards higher values of $\Omega_m$ that reduces the value inferred for $H_0$. Having that said, $H_0$ always remains significantly larger than the value inferred within the standard cosmological model and in much better agreement with local distance ladder estimate.
+
+To better understand the role played by DESI data, we compare the theoretical distance predictions for IDE and $\Lambda$CDM against the observed cosmic distances. In particular, in Fig.~\ref{fig:BAO}, we compare the Planck-2018+DESI best-fit predictions for the three different types of (rescaled) distances probed by BAO measurements. In the bottom panel of the same figure, we show the distance between the observed DESI data points and the best-fit predictions obtained for $\Lambda$CDM (‘o’-shaped points) and IDE (‘x’-shaped points) in units of observational uncertainty $\sigma$. The same difference between the model predictions and DESI data is summarized in Tab.~\ref{tab.BAOs}. Comparing the best-fit predictions for IDE and $\Lambda$CDM, some important conclusions can be reached. Foremost, we see that the only two data points that are in disagreement with IDE at a level exceeding $2\sigma$ are the measurements of $D_M(z)/(r_d \sqrt{z})$ and $z D_H(z) / (r_d\sqrt{z})$ at $z=0.51$. However, the same two (correlated) data points are also in significant disagreement with $\Lambda$CDM, especially $z D_H(z) / (r_d\sqrt{z})$. Conversely, IDE is more successful in explaining $D_M(z)/(r_d \sqrt{z})$ at $z=0.71$ than $\Lambda$CDM. Overall, apart from the DESI distance measurements at $z=0.51$ (which -- repetita iuvant -- are at odds also with $\Lambda$CDM), there are no other BAO measurements in tension with the IDE best-fit predictions. Remarkably, the best-fit value for $H_0\sim 73.26$ obtained by Planck-2018+DESI is fully consistent with SH0ES. Last but not least, we stress that for Planck-2018+BAO, the larger part of the improvement in the total $\Delta \chi^2=-2.33$ over $\Lambda$CDM comes exactly from the DESI BAO measurement ($\Delta \chi^2_{\rm{DESI}}=-1.52$)\footnote{For Planck-2018+DESI+CC, such improvement in the fit of DESI BAO measurements becomes even more significant: $\Delta \chi^2_{\rm{DESI}}=-2.34$.}.
+
+As a final remark, in Fig.~\ref{fig:H(z)}, we present the theoretical predictions for $H(z)$ as obtained by simultaneously analyzing Planck-2018, DESI, CC, and SN. We display the best-fit predictions (along with their 1 and 2$\sigma$ uncertainties) for IDE and $\Lambda$CDM, comparing them against the data points released by DESI. As evident from the figure, even accounting for all datasets together, the DESI datapoint at $z=0.51$ remains essentially unexplained in both models. Conversely, IDE can fit $H(z)$ at $z=0.71$ and $z=0.93$ better than $\Lambda$CDM, simultaneously predicting a larger present-day expansion rate $H_0$, as evident when comparing the red and blue reconstructed curves at $z=0$. 
+
+In conclusion, barring any potential systematic errors, BAO measurements released by DESI significantly open up the possibility of addressing the Hubble tension through late-time new physics, as argued here for IDE.
+
+\begin{figure}[tpb!]
+    \centering
+    \includegraphics[width=\columnwidth]{Figure3.pdf} 
+    \caption{Statistical reconstruction of the (rescaled) expansion rate of the universe $H(z)/(1+z)$ at 1$\sigma$ and 2$\sigma$ confidence levels for $\Lambda$CDM and IDE models through the joint analysis of Planck-2018+DESI+SN+CC, compared to DESI measurements.}
+    \label{fig:H(z)}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Conclusion}
+%\label{sec:Conclusion}
+\bigskip
+In this \textit{letter}, we have studied the implications of the Baryon Acoustic Oscillations measurements released by the Dark Energy Spectroscopic Instrument for Interacting Dark Energy models characterized by an energy-momentum flow from Dark Matter to Dark Energy. Focusing on the minimal Planck-2018+DESI data combination, we found a preference for interactions exceeding the 95\% confidence level, yielding a present-day expansion rate $H_0=71.4\pm1.5$ km/s/Mpc which can resolve the Hubble tension. Combining Planck-2018+DESI with either measurements of the expansion rate $H(z)$ obtained from the relative ages of massive, early-time, and passively-evolving galaxies or with distance moduli measurements from Type-Ia Supernovae sourced from the Pantheon-plus catalog using the SH0ES Cepheid host distances as a calibrator, we still find a preference for $\xi \neq 0$ at more than 95\% CL. For all the different combinations of datasets, we observe an improvement in the $\chi^2$ of the fit over $\Lambda$CDM. Overall, accounting for DESI measurements, high and low redshift data are found to be equally or better explained within the IDE framework than $\Lambda$CDM, while consistently yielding values of $H_0$ that are higher than in the standard cosmological model and in much better agreement with local distance ladder estimates. In light of these results, we conclude that DESI data (re-)open up the possibility of addressing the Hubble tension through late-time new physics.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{acknowledgments}
+\bigskip
+\noindent MAS received support from the CAPES scholarship. RCN thanks the financial support from the Conselho Nacional de Desenvolvimento Cient\'{i}fico e Tecnologico (CNPq, National Council for Scientific and Technological Development) under the project No. 304306/2022-3, and the Fundação de Amparo à pesquisa do Estado do RS (FAPERGS, Research Support Foundation of the State of RS) for partial financial support under the project No. 23/2551-0000848-3. EDV is supported by a Royal Society Dorothy Hodgkin Research Fellowship. This article is based upon work from COST Action CA21136 Addressing observational tensions in cosmology with systematics and fundamental physics (CosmoVerse) supported by COST (European Cooperation in Science and Technology). We acknowledge IT Services at The University of Sheffield for the provision of services for High Performance Computing.
+\end{acknowledgments}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{apsrev4-1}
+\bibliography{IDE}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

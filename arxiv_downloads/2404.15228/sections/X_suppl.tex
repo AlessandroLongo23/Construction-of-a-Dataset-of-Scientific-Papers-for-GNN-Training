@@ -1,0 +1,54 @@
+\clearpage
+\appendix
+\renewcommand{\thefigure}{S.\arabic{figure}}
+\renewcommand{\thetable}{S.\arabic{table}}
+\renewcommand{\theequation}{S.\arabic{equation}}
+\setcounter{figure}{0}
+\setcounter{table}{0}
+\setcounter{equation}{0}
+
+\section{Further Training Details}\label{sec:further_training_details}
+We finetune the LLaMA 1-based Vicuna 1.3 model\footnote{\url{https://huggingface.co/lmsys/vicuna-7b-v1.3}} with LoRA~\citep{hu2022lora}.
+We use the HuggingFace Transformers and PEFT libraries, along with DeepSpeed \mbox{\texttt{ZeRO-2}}~\citep{zero}.
+In all experiments, we use a \mbox{\texttt{lora\_r}} of \mbox{\texttt{128}}, a \mbox{\texttt{lora\_alpha}} of \mbox{\texttt{256}}, a LoRA learning rate of \mbox{\texttt{2e-05}}, a linear projector learning rate of \mbox{\texttt{2e-05}}, a numeric head learning rate of \mbox{\texttt{2e-04}}, and a cosine learning-rate schedule.
+All models are trained with an effective batch size of \mbox{\texttt{32}} with \mbox{\texttt{bfloat16}} mixed-precision training.
+Both the cross-entropy next-token-prediction and mean-square-error losses are given a weight of 1.
+
+The models for the CLEVR and parameter-space generalization experiments are trained for \mbox{\texttt{40k}} steps.
+The 6-DoF pose-estimation models are trained for \mbox{\texttt{200k}} steps.
+
+We use the frozen CLIP visual tokenizer from \footnote{\url{https://huggingface.co/openai/clip-vit-large-patch14-336}}.
+This CLIP variant has an input size of 336x336 pixels.
+For the CLEVR evaluation, we render images at the original size of 480x320 to ensure compatibility with NS-VQA, but pad and resize them for use with our model.
+For the remaining evaluations we directly render images at a resolution of 336x336.
+
+We employ greedy token sampling across evaluations.
+
+\section{Further CLEVR Data-Generation Details}
+The original CLEVR dataset is rendered with random positional jitter in both the lights and camera.
+This information is not recorded in the public dataset, so we re-render CLEVR-CoGenT with a fixed camera position, but maintain the randomness in the lighting.
+
+\section{Further Numeric-Head Details}
+Our numeric head is composed of a tanh layer, followed by a linear layer, a GELU activation, and a final linear projection.
+The final LLaMA hidden state is passed through an RMS norm~\citep{rms_norm} before it is shared between the token head and numeric head, which re-scales but does not re-center the embedding.
+
+During training, the locations of these tokens in the ground-truth sequence are known so they can be masked to apply the MSE loss.
+During sampling, the position of these tokens is not pre-known and dependent on the generated sequence.
+We first generate the token-only sequence and then substitute the estimated numbers back in with a second pass.
+
+\input{figures/shapenet/rw_samples}
+
+\input{figures/clevr/efficiency_table}
+
+\input{figures/airplane/so3/table}
+
+\input{figures/samples/clevr}
+\input{figures/samples/2d}
+\input{figures/samples/so3}
+\input{figures/samples/single_object_6dof}
+\input{figures/samples/scene_level_6dof}
+
+\input{figures/clevr/samples_additional}
+\input{figures/shapenet/id_samples_additional}
+\input{figures/shapenet/ood_samples_additional}
+\input{figures/airplane/6dof/samples_additional}

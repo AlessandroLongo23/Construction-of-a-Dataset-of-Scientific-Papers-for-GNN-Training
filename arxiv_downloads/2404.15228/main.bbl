@@ -1,0 +1,737 @@
+\begin{thebibliography}{136}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Alayrac et~al.(2022)Alayrac, Donahue, Luc, Miech, Barr, Hasson, Lenc, Mensch, Millican, Reynolds, Ring, Rutherford, Cabi, Han, Gong, Samangooei, Monteiro, Menick, Borgeaud, Brock, Nematzadeh, Sharifzadeh, Bi\'{n}kowski, Barreira, Vinyals, Zisserman, and Simonyan]{Alayrac2022FlamingoAV}
+Jean-Baptiste Alayrac, Jeff Donahue, Pauline Luc, Antoine Miech, Iain Barr, Yana Hasson, Karel Lenc, Arthur Mensch, Katherine Millican, Malcolm Reynolds, Roman Ring, Eliza Rutherford, Serkan Cabi, Tengda Han, Zhitao Gong, Sina Samangooei, Marianne Monteiro, Jacob~L Menick, Sebastian Borgeaud, Andy Brock, Aida Nematzadeh, Sahand Sharifzadeh, Miko\l~aj Bi\'{n}kowski, Ricardo Barreira, Oriol Vinyals, Andrew Zisserman, and Kar\'{e}n Simonyan.
+\newblock Flamingo: A visual language model for few-shot learning.
+\newblock In S.~Koyejo, S.~Mohamed, A.~Agarwal, D.~Belgrave, K.~Cho, and A.~Oh (eds.), \emph{Advances in Neural Information Processing Systems}, volume~35, pp.\  23716--23736. Curran Associates, Inc., 2022.
+\newblock URL \url{https://proceedings.neurips.cc/paper_files/paper/2022/file/960a172bc7fbf0177ccccbb411a7d800-Paper-Conference.pdf}.
+
+\bibitem[Antol et~al.(2015)Antol, Agrawal, Lu, Mitchell, Batra, Zitnick, and Parikh]{Antol_2015_ICCV}
+Stanislaw Antol, Aishwarya Agrawal, Jiasen Lu, Margaret Mitchell, Dhruv Batra, C.~Lawrence Zitnick, and Devi Parikh.
+\newblock {VQA}: Visual question answering.
+\newblock In \emph{Proceedings of the IEEE International Conference on Computer Vision (ICCV)}, December 2015.
+
+\bibitem[Aubry et~al.(2014)Aubry, Maturana, Efros, Russell, and Sivic]{aubry2014seeing}
+Mathieu Aubry, Daniel Maturana, Alexei~A. Efros, Bryan~C. Russell, and Josef Sivic.
+\newblock Seeing {3D} chairs: Exemplar part-based {2D}-{3D} alignment using a large dataset of {CAD} models.
+\newblock In \emph{2014 {IEEE} Conference on Computer Vision and Pattern Recognition, {CVPR} 2014, Columbus, OH, USA, June 23-28, 2014}, pp.\  3762--3769, Los Alamitos, CA, USA, 2014. {IEEE} Computer Society.
+\newblock \doi{10.1109/CVPR.2014.487}.
+\newblock URL \url{https://doi.org/10.1109/CVPR.2014.487}.
+
+\bibitem[Bansal et~al.(2016)Bansal, Russell, and Gupta]{bansal2016marr}
+Aayush Bansal, Bryan~C. Russell, and Abhinav Gupta.
+\newblock Marr revisited: {2D}-{3D} alignment via surface normal prediction.
+\newblock In \emph{2016 {IEEE} Conference on Computer Vision and Pattern Recognition, {CVPR} 2016, Las Vegas, NV, USA, June 27-30, 2016}, pp.\  5965--5974, Los Alamitos, CA, USA, 2016. {IEEE} Computer Society.
+\newblock \doi{10.1109/CVPR.2016.642}.
+\newblock URL \url{https://doi.org/10.1109/CVPR.2016.642}.
+
+\bibitem[Baumgart(1974)]{baumgart1974geometric}
+Bruce~Guenther Baumgart.
+\newblock Geometric modeling for computer vision.
+\newblock Technical report, Stanford University CA Department of Computer Science, 1974.
+
+\bibitem[Bengio et~al.(2000)Bengio, Ducharme, and Vincent]{bengio_plm}
+Yoshua Bengio, R\'{e}jean Ducharme, and Pascal Vincent.
+\newblock A neural probabilistic language model.
+\newblock In T.~Leen, T.~Dietterich, and V.~Tresp (eds.), \emph{Advances in Neural Information Processing Systems}, volume~13. MIT Press, 2000.
+\newblock URL \url{https://proceedings.neurips.cc/paper_files/paper/2000/file/728f206c2a01bf572b5940d7d9a8fa4c-Paper.pdf}.
+
+\bibitem[Binford(1975)]{binford1975visual}
+Thomas Binford.
+\newblock Visual perception by computer.
+\newblock In \emph{Proceedings of the IEEE Conference on Systems and Control, 1975}, Los Alamitos, CA, USA, 1975. {IEEE} Computer Society.
+
+\bibitem[Blender(2018)]{blender}
+Blender.
+\newblock \emph{Blender -- A {3D} modelling and rendering package}.
+\newblock Blender Foundation, Stichting Blender Foundation, Amsterdam, 2018.
+\newblock URL \url{http://www.blender.org}.
+
+\bibitem[Bokeloh et~al.(2010)Bokeloh, Wand, and Seidel]{bokeloh2010connection}
+Martin Bokeloh, Michael Wand, and Hans-Peter Seidel.
+\newblock A connection between partial symmetry and inverse procedural modeling.
+\newblock In \emph{ACM SIGGRAPH 2010 Papers}, SIGGRAPH '10, New York, NY, USA, 2010. Association for Computing Machinery.
+\newblock ISBN 9781450302104.
+\newblock \doi{10.1145/1833349.1778841}.
+\newblock URL \url{https://doi.org/10.1145/1833349.1778841}.
+
+\bibitem[Brown et~al.(2020)Brown, Mann, Ryder, Subbiah, Kaplan, Dhariwal, Neelakantan, Shyam, Sastry, Askell, Agarwal, Herbert-Voss, Krueger, Henighan, Child, Ramesh, Ziegler, Wu, Winter, Hesse, Chen, Sigler, Litwin, Gray, Chess, Clark, Berner, McCandlish, Radford, Sutskever, and Amodei]{Brown2020LanguageMA}
+Tom Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared~D. Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, Sandhini Agarwal, Ariel Herbert-Voss, Gretchen Krueger, Tom Henighan, Rewon Child, Aditya Ramesh, Daniel Ziegler, Jeffrey Wu, Clemens Winter, Chris Hesse, Mark Chen, Eric Sigler, Mateusz Litwin, Scott Gray, Benjamin Chess, Jack Clark, Christopher Berner, Sam McCandlish, Alec Radford, Ilya Sutskever, and Dario Amodei.
+\newblock Language models are few-shot learners.
+\newblock In H.~Larochelle, M.~Ranzato, R.~Hadsell, M.F. Balcan, and H.~Lin (eds.), \emph{Advances in Neural Information Processing Systems}, volume~33, pp.\  1877--1901. Curran Associates, Inc., 2020.
+\newblock URL \url{https://proceedings.neurips.cc/paper_files/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf}.
+
+\bibitem[Chang et~al.(2015)Chang, Funkhouser, Guibas, Hanrahan, Huang, Li, Savarese, Savva, Song, Su, Xiao, Yi, and Yu]{shapenet2015}
+Angel~X. Chang, Thomas Funkhouser, Leonidas Guibas, Pat Hanrahan, Qixing Huang, Zimo Li, Silvio Savarese, Manolis Savva, Shuran Song, Hao Su, Jianxiong Xiao, Li~Yi, and Fisher Yu.
+\newblock {ShapeNet}: An information-rich {3D} model repository.
+\newblock Technical Report arXiv:1512.03012 [cs.GR], Stanford University --- Princeton University --- Toyota Technological Institute at Chicago, 2015.
+
+\bibitem[Chiang et~al.(2023)Chiang, Li, Lin, Sheng, Wu, Zhang, Zheng, Zhuang, Zhuang, Gonzalez, Stoica, and Xing]{vicuna2023}
+Wei-Lin Chiang, Zhuohan Li, Zi~Lin, Ying Sheng, Zhanghao Wu, Hao Zhang, Lianmin Zheng, Siyuan Zhuang, Yonghao Zhuang, Joseph~E. Gonzalez, Ion Stoica, and Eric~P. Xing.
+\newblock Vicuna: An open-source chatbot impressing {GPT-4} with 90\%* {ChatGPT} quality, March 2023.
+\newblock URL \url{https://lmsys.org/blog/2023-03-30-vicuna/}.
+
+\bibitem[Choy et~al.(2016)Choy, Xu, Gwak, Chen, and Savarese]{choy20163d}
+Christopher~B. Choy, Danfei Xu, JunYoung Gwak, Kevin Chen, and Silvio Savarese.
+\newblock {3D-R2N2}: A unified approach for single and multi-view {3D} object reconstruction.
+\newblock In Bastian Leibe, Jiri Matas, Nicu Sebe, and Max Welling (eds.), \emph{Computer Vision -- ECCV 2016}, pp.\  628--644, Cham, 2016. Springer International Publishing.
+\newblock ISBN 978-3-319-46484-8.
+
+\bibitem[Chung et~al.(2024)Chung, Hou, Longpre, Zoph, Tay, Fedus, Li, Wang, Dehghani, Brahma, Webson, Gu, Dai, Suzgun, Chen, Chowdhery, Castro-Ros, Pellat, Robinson, Valter, Narang, Mishra, Yu, Zhao, Huang, Dai, Yu, Petrov, Chi, Dean, Devlin, Roberts, Zhou, Le, and Wei]{wei_2024_instruction}
+Hyung~Won Chung, Le~Hou, Shayne Longpre, Barret Zoph, Yi~Tay, William Fedus, Yunxuan Li, Xuezhi Wang, Mostafa Dehghani, Siddhartha Brahma, Albert Webson, Shixiang~Shane Gu, Zhuyun Dai, Mirac Suzgun, Xinyun Chen, Aakanksha Chowdhery, Alex Castro-Ros, Marie Pellat, Kevin Robinson, Dasha Valter, Sharan Narang, Gaurav Mishra, Adams Yu, Vincent Zhao, Yanping Huang, Andrew Dai, Hongkun Yu, Slav Petrov, Ed~H. Chi, Jeff Dean, Jacob Devlin, Adam Roberts, Denny Zhou, Quoc~V. Le, and Jason Wei.
+\newblock Scaling instruction-finetuned language models.
+\newblock \emph{Journal of Machine Learning Research}, 25\penalty0 (70):\penalty0 1--53, 2024.
+\newblock URL \url{http://jmlr.org/papers/v25/23-0870.html}.
+
+\bibitem[Dahnert et~al.(2021)Dahnert, Hou, Niessner, and Dai]{dahnert2021panoptic}
+Manuel Dahnert, Ji~Hou, Matthias Niessner, and Angela Dai.
+\newblock Panoptic {3D} scene reconstruction from a single {RGB} image.
+\newblock In M.~Ranzato, A.~Beygelzimer, Y.~Dauphin, P.S. Liang, and J.~Wortman Vaughan (eds.), \emph{Advances in Neural Information Processing Systems}, volume~34, pp.\  8282--8293, Red Hook, NY, USA, 2021. Curran Associates, Inc.
+\newblock URL \url{https://proceedings.neurips.cc/paper_files/paper/2021/file/46031b3d04dc90994ca317a7c55c4289-Paper.pdf}.
+
+\bibitem[Dasgupta et~al.(2016)Dasgupta, Fang, Chen, and Savarese]{dasgupta2016delay}
+Saumitro Dasgupta, Kuan Fang, Kevin Chen, and Silvio Savarese.
+\newblock {DeLay}: Robust spatial layout estimation for cluttered indoor scenes.
+\newblock In \emph{Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, Los Alamitos, CA, USA, June 2016. {IEEE} Computer Society.
+
+\bibitem[Deng et~al.(2020)Deng, Genova, Yazdani, Bouaziz, Hinton, and Tagliasacchi]{deng2020cvxnet}
+Boyang Deng, Kyle Genova, Soroosh Yazdani, Sofien Bouaziz, Geoffrey Hinton, and Andrea Tagliasacchi.
+\newblock {CvxNet}: Learnable convex decomposition.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, June 2020.
+
+\bibitem[Deng et~al.(2022)Deng, Kulal, Dong, Deng, Tian, and Wu]{deng2022unsupervised}
+Boyang Deng, Sumith Kulal, Zhengyang Dong, Congyue Deng, Yonglong Tian, and Jiajun Wu.
+\newblock Unsupervised learning of shape programs with repeatable implicit parts.
+\newblock In S.~Koyejo, S.~Mohamed, A.~Agarwal, D.~Belgrave, K.~Cho, and A.~Oh (eds.), \emph{Advances in Neural Information Processing Systems}, volume~35, pp.\  37837--37850. Curran Associates, Inc., 2022.
+\newblock URL \url{https://proceedings.neurips.cc/paper_files/paper/2022/file/f6adf61977467560f79b95485d1f3a79-Paper-Conference.pdf}.
+
+\bibitem[Denninger \& Triebel(2020)Denninger and Triebel]{denninger20203d}
+Maximilian Denninger and Rudolph Triebel.
+\newblock {3D} scene reconstruction from a single viewport.
+\newblock In \emph{European Conference on Computer Vision}, pp.\  51--67. Springer, 2020.
+
+\bibitem[Devaranjan et~al.(2020)Devaranjan, Kar, and Fidler]{devaranjan2020metasim2}
+Jeevan Devaranjan, Amlan Kar, and Sanja Fidler.
+\newblock Meta-{S}im2: Unsupervised learning of scene structure for synthetic data generation.
+\newblock In \emph{Computer Vision--ECCV 2020: 16th European Conference, Glasgow, UK, August 23--28, 2020, Proceedings, Part XVII 16}, pp.\  715--733. Springer, 2020.
+
+\bibitem[Dosovitskiy et~al.(2021)Dosovitskiy, Beyer, Kolesnikov, Weissenborn, Zhai, Unterthiner, Dehghani, Minderer, Heigold, Gelly, Uszkoreit, and Houlsby]{Dosovitskiy2020AnII}
+Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Sylvain Gelly, Jakob Uszkoreit, and Neil Houlsby.
+\newblock An image is worth 16x16 words: Transformers for image recognition at scale.
+\newblock In \emph{International Conference on Learning Representations}, 2021.
+\newblock URL \url{https://openreview.net/forum?id=YicbFdNTTy}.
+
+\bibitem[Du et~al.(2018)Du, Inala, Pu, Spielberg, Schulz, Rus, Solar-Lezama, and Matusik]{du2018inversecsg}
+Tao Du, Jeevana~Priya Inala, Yewen Pu, Andrew Spielberg, Adriana Schulz, Daniela Rus, Armando Solar-Lezama, and Wojciech Matusik.
+\newblock {InverseCSG}: Automatic conversion of {3D} models to {CSG} trees.
+\newblock \emph{ACM Trans. Graph.}, 37\penalty0 (6), dec 2018.
+\newblock ISSN 0730-0301.
+\newblock \doi{10.1145/3272127.3275006}.
+\newblock URL \url{https://doi.org/10.1145/3272127.3275006}.
+
+\bibitem[Dwedari et~al.(2023)Dwedari, Niessner, and Chen]{dwedari2023generating}
+Mohammed~Munzer Dwedari, Matthias Niessner, and Dave~Zhenyu Chen.
+\newblock Generating context-aware natural answers for questions in {3D} scenes.
+\newblock \emph{arXiv preprint arXiv:2310.19516}, 2023.
+
+\bibitem[Ellis et~al.(2018)Ellis, Ritchie, Solar-Lezama, and Tenenbaum]{ellis2018learning}
+Kevin Ellis, Daniel Ritchie, Armando Solar-Lezama, and Josh Tenenbaum.
+\newblock Learning to infer graphics programs from hand-drawn images.
+\newblock In S.~Bengio, H.~Wallach, H.~Larochelle, K.~Grauman, N.~Cesa-Bianchi, and R.~Garnett (eds.), \emph{Advances in Neural Information Processing Systems}, volume~31. Curran Associates, Inc., 2018.
+\newblock URL \url{https://proceedings.neurips.cc/paper_files/paper/2018/file/6788076842014c83cedadbe6b0ba0314-Paper.pdf}.
+
+\bibitem[Ellis et~al.(2019)Ellis, Nye, Pu, Sosa, Tenenbaum, and Solar-Lezama]{ellis2019write}
+Kevin Ellis, Maxwell Nye, Yewen Pu, Felix Sosa, Josh Tenenbaum, and Armando Solar-Lezama.
+\newblock Write, execute, assess: Program synthesis with a {REPL}.
+\newblock In H.~Wallach, H.~Larochelle, A.~Beygelzimer, F.~d\textquotesingle Alch\'{e}-Buc, E.~Fox, and R.~Garnett (eds.), \emph{Advances in Neural Information Processing Systems}, volume~32. Curran Associates, Inc., 2019.
+\newblock URL \url{https://proceedings.neurips.cc/paper_files/paper/2019/file/50d2d2262762648589b1943078712aa6-Paper.pdf}.
+
+\bibitem[Engelmann et~al.(2021)Engelmann, Rematas, Leibe, and Ferrari]{engelmann2021points}
+Francis Engelmann, Konstantinos Rematas, Bastian Leibe, and Vittorio Ferrari.
+\newblock From points to multi-object {3D} reconstruction.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, pp.\  4588--4597, June 2021.
+
+\bibitem[Fan et~al.(2017)Fan, Su, and Guibas]{fan2017point}
+Haoqiang Fan, Hao Su, and Leonidas~J. Guibas.
+\newblock A point set generation network for {3D} object reconstruction from a single image.
+\newblock In \emph{Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, July 2017.
+
+\bibitem[Ganeshan et~al.(2023)Ganeshan, Jones, and Ritchie]{ganeshan2023improving}
+Aditya Ganeshan, R.~Kenny Jones, and Daniel Ritchie.
+\newblock Improving unsupervised visual program inference with code rewriting families.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)}, pp.\  15791--15801, October 2023.
+
+\bibitem[Ganin et~al.(2018)Ganin, Kulkarni, Babuschkin, Eslami, and Vinyals]{ganin2018synthesizing}
+Yaroslav Ganin, Tejas Kulkarni, Igor Babuschkin, S.M.~Ali Eslami, and Oriol Vinyals.
+\newblock Synthesizing programs for images using reinforced adversarial learning.
+\newblock In \emph{Proceedings of the 35th International Conference on Machine Learning}, volume~80 of \emph{Proceedings of Machine Learning Research}, pp.\  1666--1675. PMLR, 10--15 Jul 2018.
+
+\bibitem[Gkioxari et~al.(2019)Gkioxari, Malik, and Johnson]{gkioxari2019mesh}
+Georgia Gkioxari, Jitendra Malik, and Justin Johnson.
+\newblock Mesh {R-CNN}.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)}, October 2019.
+
+\bibitem[Gkioxari et~al.(2022)Gkioxari, Ravi, and Johnson]{gkioxari2022learning}
+Georgia Gkioxari, Nikhila Ravi, and Justin Johnson.
+\newblock Learning {3D} object shape and layout without {3D} supervision.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, pp.\  1695--1704, June 2022.
+
+\bibitem[Gothoskar et~al.(2021)Gothoskar, Cusumano-Towner, Zinberg, Ghavamizadeh, Pollok, Garrett, Tenenbaum, Gutfreund, and Mansinghka]{gothoskar20213dp3}
+Nishad Gothoskar, Marco Cusumano-Towner, Ben Zinberg, Matin Ghavamizadeh, Falk Pollok, Austin Garrett, Josh Tenenbaum, Dan Gutfreund, and Vikash Mansinghka.
+\newblock {3DP3}: {3D} scene perception via probabilistic programming.
+\newblock \emph{Advances in Neural Information Processing Systems}, 34:\penalty0 9600--9612, 2021.
+
+\bibitem[Grenander(1976--1981)]{grenander}
+Ulf Grenander.
+\newblock \emph{Lectures in Pattern Theory {I}, {II} and {III}: Pattern Analysis, Pattern Synthesis and Regular Structures}.
+\newblock Springer-Verlag, Heidelberg-New York, 1976--1981.
+
+\bibitem[Groueix et~al.(2018)Groueix, Fisher, Kim, Russell, and Aubry]{groueix2018papier}
+Thibault Groueix, Matthew Fisher, Vladimir~G. Kim, Bryan~C. Russell, and Mathieu Aubry.
+\newblock A papier-m{\^a}ch{\'e} approach to learning {3D} surface generation.
+\newblock In \emph{Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, pp.\  216--224, 2018.
+
+\bibitem[Gulwani et~al.(2017)Gulwani, Polozov, and Singh]{gulwani2017program}
+Sumit Gulwani, Oleksandr Polozov, and Rishabh Singh.
+\newblock Program synthesis.
+\newblock \emph{Foundations and Trends{\textregistered} in Programming Languages}, 4\penalty0 (1-2):\penalty0 1--119, 2017.
+\newblock ISSN 2325-1107.
+\newblock \doi{10.1561/2500000010}.
+\newblock URL \url{http://dx.doi.org/10.1561/2500000010}.
+
+\bibitem[G\"umeli et~al.(2022)G\"umeli, Dai, and Nie{\ss}ner]{gumeli2022roca}
+Can G\"umeli, Angela Dai, and Matthias Nie{\ss}ner.
+\newblock {ROCA}: Robust {CAD} model retrieval and alignment from a single image.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, pp.\  4022--4031, June 2022.
+
+\bibitem[Guo et~al.(2020)Guo, Jiang, Benes, Deussen, Zhang, Lischinski, and Huang]{guo2020inverse}
+Jianwei Guo, Haiyong Jiang, Bedrich Benes, Oliver Deussen, Xiaopeng Zhang, Dani Lischinski, and Hui Huang.
+\newblock Inverse procedural modeling of branching structures by inferring {L}-systems.
+\newblock \emph{ACM Trans. Graph.}, 39\penalty0 (5), jun 2020.
+\newblock ISSN 0730-0301.
+\newblock URL \url{https://doi.org/10.1145/3394105}.
+
+\bibitem[Gupta et~al.(2010{\natexlab{a}})Gupta, Efros, and Hebert]{gupta2010blocks}
+Abhinav Gupta, Alexei~A. Efros, and Martial Hebert.
+\newblock Blocks world revisited: Image understanding using qualitative geometry and mechanics.
+\newblock In \emph{Computer Vision--ECCV 2010: 11th European Conference on Computer Vision, Heraklion, Crete, Greece, September 5-11, 2010, Proceedings, Part IV 11}, pp.\  482--496. Springer, 2010{\natexlab{a}}.
+
+\bibitem[Gupta et~al.(2010{\natexlab{b}})Gupta, Hebert, Kanade, and Blei]{gupta2010estimating}
+Abhinav Gupta, Martial Hebert, Takeo Kanade, and David Blei.
+\newblock Estimating spatial layout of rooms using volumetric reasoning about objects and surfaces.
+\newblock \emph{Advances in Neural Information Processing Systems}, 23, 2010{\natexlab{b}}.
+
+\bibitem[Hedau et~al.(2009)Hedau, Hoiem, and Forsyth]{hedau2009recovering}
+Varsha Hedau, Derek Hoiem, and David Forsyth.
+\newblock Recovering the spatial layout of cluttered rooms.
+\newblock In \emph{2009 IEEE 12th International Conference on Computer Vision}, pp.\  1849--1856, 2009.
+\newblock \doi{10.1109/ICCV.2009.5459411}.
+
+\bibitem[Hong et~al.(2023)Hong, Zhen, Chen, Zheng, Du, Chen, and Gan]{hong2023_3D_LLM}
+Yining Hong, Haoyu Zhen, Peihao Chen, Shuhong Zheng, Yilun Du, Zhenfang Chen, and Chuang Gan.
+\newblock {3D-LLM}: Injecting the {3D} world into large language models.
+\newblock \emph{arXiv preprint arXiv:2307.12981}, 2023.
+
+\bibitem[Hu et~al.(2022{\natexlab{a}})Hu, yelong shen, Wallis, Allen-Zhu, Li, Wang, Wang, and Chen]{hu2022lora}
+Edward~J. Hu, yelong shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu~Wang, and Weizhu Chen.
+\newblock Lo{RA}: Low-rank adaptation of large language models.
+\newblock In \emph{International Conference on Learning Representations}, 2022{\natexlab{a}}.
+\newblock URL \url{https://openreview.net/forum?id=nZeVKeeFYf9}.
+
+\bibitem[Hu et~al.(2022{\natexlab{b}})Hu, He, Deschaintre, Dorsey, and Rushmeier]{hu2022inverse}
+Yiwei Hu, Chengan He, Valentin Deschaintre, Julie Dorsey, and Holly Rushmeier.
+\newblock An inverse procedural modeling pipeline for {SVBRDF} maps.
+\newblock \emph{ACM Trans. Graph.}, 41\penalty0 (2), 2022{\natexlab{b}}.
+
+\bibitem[Huang et~al.(2018)Huang, Qi, Zhu, Xiao, Xu, and Zhu]{huang2018holistic}
+Siyuan Huang, Siyuan Qi, Yixin Zhu, Yinxue Xiao, Yuanlu Xu, and Song-Chun Zhu.
+\newblock Holistic {3D} scene parsing and reconstruction from a single {RGB} image.
+\newblock In \emph{Proceedings of the European Conference on Computer Vision (ECCV)}, September 2018.
+
+\bibitem[Huang et~al.(2022)Huang, Abbeel, Pathak, and Mordatch]{huang2022language}
+Wenlong Huang, Pieter Abbeel, Deepak Pathak, and Igor Mordatch.
+\newblock Language models as zero-shot planners: Extracting actionable knowledge for embodied agents.
+\newblock In \emph{International Conference on Machine Learning}, pp.\  9118--9147. PMLR, 2022.
+
+\bibitem[Izadinia et~al.(2017)Izadinia, Shan, and Seitz]{izadinia2017im2cad}
+Hamid Izadinia, Qi~Shan, and Steven~M. Seitz.
+\newblock {IM2CAD}.
+\newblock In \emph{Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, July 2017.
+
+\bibitem[Johnson et~al.(2017)Johnson, Hariharan, van~der Maaten, Fei-Fei, Lawrence~Zitnick, and Girshick]{johnson2017clevr}
+Justin Johnson, Bharath Hariharan, Laurens van~der Maaten, Li~Fei-Fei, C.~Lawrence~Zitnick, and Ross Girshick.
+\newblock {CLEVR}: A diagnostic dataset for compositional language and elementary visual reasoning.
+\newblock In \emph{Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, July 2017.
+
+\bibitem[Jones et~al.(2022)Jones, Walke, and Ritchie]{jones2022plad}
+R.~Kenny Jones, Homer Walke, and Daniel Ritchie.
+\newblock {PLAD}: Learning to infer shape programs with pseudo-labels and approximate distributions.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, pp.\  9871--9880, June 2022.
+
+\bibitem[Jones et~al.(2023)Jones, Guerrero, Mitra, and Ritchie]{jones2023shapecoder}
+R.~Kenny Jones, Paul Guerrero, Niloy~J. Mitra, and Daniel Ritchie.
+\newblock {ShapeCoder}: Discovering abstractions for visual programs from unstructured primitives.
+\newblock \emph{ACM Trans. Graph.}, 42\penalty0 (4), 2023.
+
+\bibitem[Kania et~al.(2020)Kania, Zieba, and Kajdanowicz]{kania2020ucsg}
+Kacper Kania, Maciej Zieba, and Tomasz Kajdanowicz.
+\newblock {UCSG-NET}--{U}nsupervised discovering of constructive solid geometry tree.
+\newblock In H.~Larochelle, M.~Ranzato, R.~Hadsell, M.F. Balcan, and H.~Lin (eds.), \emph{Advances in Neural Information Processing Systems}, volume~33, pp.\  8776--8786. Curran Associates, Inc., 2020.
+\newblock URL \url{https://proceedings.neurips.cc/paper_files/paper/2020/file/63d5fb54a858dd033fe90e6e4a74b0f0-Paper.pdf}.
+
+\bibitem[Kar et~al.(2019)Kar, Prakash, Liu, Cameracci, Yuan, Rusiniak, Acuna, Torralba, and Fidler]{kar2019meta}
+Amlan Kar, Aayush Prakash, Ming-Yu Liu, Eric Cameracci, Justin Yuan, Matt Rusiniak, David Acuna, Antonio Torralba, and Sanja Fidler.
+\newblock Meta-{S}im: Learning to generate synthetic datasets.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on Computer Vision}, pp.\  4551--4560, 2019.
+
+\bibitem[Kersten \& Yuille(1996)Kersten and Yuille]{kersten1996introduction}
+D.~Knill~D. Kersten and A.~Yuille.
+\newblock Introduction: A {B}ayesian formulation of visual perception.
+\newblock \emph{Perception as Bayesian inference}, pp.\  1--21, 1996.
+
+\bibitem[Kluger et~al.(2021)Kluger, Ackermann, Brachmann, Yang, and Rosenhahn]{kluger2021cuboids}
+Florian Kluger, Hanno Ackermann, Eric Brachmann, Michael~Ying Yang, and Bodo Rosenhahn.
+\newblock Cuboids revisited: Learning robust {3D} shape fitting to single {RGB} images.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, pp.\  13070--13079, June 2021.
+
+\bibitem[Kodnongbua et~al.(2023)Kodnongbua, Jones, Ahmad, Kim, and Schulz]{kodnongbua23reparamCAD}
+Milin Kodnongbua, Benjamin~T. Jones, Maaz Bin~Safeer Ahmad, Vladimir~G. Kim, and Adriana Schulz.
+\newblock {ReparamCAD}: Zero-shot {CAD} re-parameterization for interactive manipulation.
+\newblock \emph{SIGGRAPH Asia (Conference track)}, 2023.
+
+\bibitem[Koh et~al.(2023)Koh, Fried, and Salakhutdinov]{koh2023generating}
+Jing~Yu Koh, Daniel Fried, and Ruslan Salakhutdinov.
+\newblock Generating images with multimodal language models.
+\newblock \emph{NeurIPS}, 2023.
+
+\bibitem[Kulkarni et~al.(2015)Kulkarni, Kohli, Tenenbaum, and Mansinghka]{kulkarni2015picture}
+Tejas~D. Kulkarni, Pushmeet Kohli, Joshua~B. Tenenbaum, and Vikash Mansinghka.
+\newblock Picture: A probabilistic programming language for scene perception.
+\newblock In \emph{Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, June 2015.
+
+\bibitem[Kundu et~al.(2018)Kundu, Li, and Rehg]{kundu20183d}
+Abhijit Kundu, Yin Li, and James~M. Rehg.
+\newblock {3D-RCNN}: Instance-level {3D} object reconstruction via render-and-compare.
+\newblock In \emph{Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, June 2018.
+
+\bibitem[Kundu et~al.(2022)Kundu, Genova, Yin, Fathi, Pantofaru, Guibas, Tagliasacchi, Dellaert, and Funkhouser]{kundu2022panoptic}
+Abhijit Kundu, Kyle Genova, Xiaoqi Yin, Alireza Fathi, Caroline Pantofaru, Leonidas~J. Guibas, Andrea Tagliasacchi, Frank Dellaert, and Thomas Funkhouser.
+\newblock Panoptic neural fields: A semantic object-aware neural scene representation.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pp.\  12871--12881, 2022.
+
+\bibitem[Kuo et~al.(2020)Kuo, Angelova, Lin, and Dai]{kuo2020mask2cad}
+Weicheng Kuo, Anelia Angelova, Tsung-Yi Lin, and Angela Dai.
+\newblock {Mask2CAD}: {3D} shape prediction by learning to segment and retrieve.
+\newblock In \emph{Computer Vision -- ECCV 2020}. Springer International Publishing, 2020.
+
+\bibitem[Kuo et~al.(2021)Kuo, Angelova, Lin, and Dai]{kuo2021patch2cad}
+Weicheng Kuo, Anelia Angelova, Tsung-Yi Lin, and Angela Dai.
+\newblock {Patch2CAD}: Patchwise embedding learning for in-the-wild shape retrieval from a single image.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)}, pp.\  12589--12599, October 2021.
+
+\bibitem[Labb{\'e} et~al.(2020)Labb{\'e}, Carpentier, Aubry, and Sivic]{labbe2020cosypose}
+Yann Labb{\'e}, Justin Carpentier, Mathieu Aubry, and Josef Sivic.
+\newblock {CosyPose}: Consistent multi-view multi-object {6D} pose estimation.
+\newblock In \emph{Computer Vision--ECCV 2020: 16th European Conference, Glasgow, UK, August 23--28, 2020, Proceedings, Part XVII 16}, pp.\  574--591. Springer, 2020.
+
+\bibitem[Lee et~al.(2009)Lee, Hebert, and Kanade]{lee2009geometric}
+David~C. Lee, Martial Hebert, and Takeo Kanade.
+\newblock Geometric reasoning for single image structure recovery.
+\newblock In \emph{2009 IEEE conference on computer vision and pattern recognition}, pp.\  2136--2143. IEEE, 2009.
+
+\bibitem[Lepetit et~al.(2009)Lepetit, Moreno-Noguer, and Fua]{lepetit2009ep}
+Vincent Lepetit, Francesc Moreno-Noguer, and Pascal Fua.
+\newblock {EPnP}: An accurate {O(n)} solution to the {PnP} problem.
+\newblock \emph{International Journal of Computer Vision}, 81\penalty0 (2):\penalty0 155--166, Feb 2009.
+\newblock ISSN 1573-1405.
+\newblock \doi{10.1007/s11263-008-0152-6}.
+\newblock URL \url{https://doi.org/10.1007/s11263-008-0152-6}.
+
+\bibitem[Li et~al.(2020{\natexlab{a}})Li, Pan, Bousseau, and Mitra]{li2020sketch2cad}
+Changjian Li, Hao Pan, Adrien Bousseau, and Niloy~J. Mitra.
+\newblock {Sketch2CAD}: Sequential {CAD} modeling by sketching in context.
+\newblock \emph{ACM Trans. Graph.}, 39\penalty0 (6), nov 2020{\natexlab{a}}.
+\newblock ISSN 0730-0301.
+\newblock \doi{10.1145/3414685.3417807}.
+\newblock URL \url{https://doi.org/10.1145/3414685.3417807}.
+
+\bibitem[Li et~al.(2022{\natexlab{a}})Li, Pan, Bousseau, and Mitra]{li2022free2cad}
+Changjian Li, Hao Pan, Adrien Bousseau, and Niloy~J. Mitra.
+\newblock {Free2CAD}: Parsing freehand drawings into {CAD} commands.
+\newblock \emph{ACM Trans. Graph.}, 41\penalty0 (4), jul 2022{\natexlab{a}}.
+
+\bibitem[Li et~al.(2022{\natexlab{b}})Li, Li, Xiong, and Hoi]{Li2022BLIPBL}
+Junnan Li, Dongxu Li, Caiming Xiong, and Steven Hoi.
+\newblock {BLIP}: Bootstrapping language-image pre-training for unified vision-language understanding and generation.
+\newblock In Kamalika Chaudhuri, Stefanie Jegelka, Le~Song, Csaba Szepesvari, Gang Niu, and Sivan Sabato (eds.), \emph{Proceedings of the 39th International Conference on Machine Learning}, volume 162 of \emph{Proceedings of Machine Learning Research}, pp.\  12888--12900. PMLR, 17--23 Jul 2022{\natexlab{b}}.
+\newblock URL \url{https://proceedings.mlr.press/v162/li22n.html}.
+
+\bibitem[Li et~al.(2020{\natexlab{b}})Li, Mao, Zhang, Freeman, Tenenbaum, Snavely, and Wu]{li2020multi}
+Yikai Li, Jiayuan Mao, Xiuming Zhang, Bill Freeman, Josh Tenenbaum, Noah Snavely, and Jiajun Wu.
+\newblock Multi-plane program induction with {3D} box priors.
+\newblock In H.~Larochelle, M.~Ranzato, R.~Hadsell, M.F. Balcan, and H.~Lin (eds.), \emph{Advances in Neural Information Processing Systems}, volume~33, pp.\  7425--7436. Curran Associates, Inc., 2020{\natexlab{b}}.
+\newblock URL \url{https://proceedings.neurips.cc/paper_files/paper/2020/file/5301c4d888f5204274439e6dcf5fdb54-Paper.pdf}.
+
+\bibitem[Li et~al.(2023)Li, Wang, Stengel-Eskin, Kortylewski, Ma, Van~Durme, and Yuille]{Li_2023_CVPR}
+Zhuowan Li, Xingrui Wang, Elias Stengel-Eskin, Adam Kortylewski, Wufei Ma, Benjamin Van~Durme, and Alan~L. Yuille.
+\newblock {Super-CLEVR}: A virtual benchmark to diagnose domain robustness in visual reasoning.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, pp.\  14963--14973, June 2023.
+
+\bibitem[Lim et~al.(2014)Lim, Khosla, and Torralba]{lim2014fpm}
+Joseph~J. Lim, Aditya Khosla, and Antonio Torralba.
+\newblock {FPM}: Fine pose parts-based model with {3D} {CAD} models.
+\newblock In \emph{Computer Vision--ECCV 2014: 13th European Conference, Zurich, Switzerland, September 6-12, 2014, Proceedings, Part VI 13}, pp.\  478--493. Springer, 2014.
+
+\bibitem[Liu et~al.(2022)Liu, Zheng, Chen, Cui, and Han]{liu2022towards}
+Haolin Liu, Yujian Zheng, Guanying Chen, Shuguang Cui, and Xiaoguang Han.
+\newblock Towards high-fidelity single-view holistic reconstruction of indoor scenes.
+\newblock In \emph{Computer Vision -- ECCV 2022}, pp.\  429--446. Springer Nature Switzerland, 2022.
+
+\bibitem[Liu et~al.(2023)Liu, Li, Wu, and Lee]{liu2023llava}
+Haotian Liu, Chunyuan Li, Qingyang Wu, and Yong~Jae Lee.
+\newblock Visual instruction tuning.
+\newblock In A.~Oh, T.~Neumann, A.~Globerson, K.~Saenko, M.~Hardt, and S.~Levine (eds.), \emph{Advances in Neural Information Processing Systems}, volume~36, pp.\  34892--34916. Curran Associates, Inc., 2023.
+\newblock URL \url{https://proceedings.neurips.cc/paper_files/paper/2023/file/6dcf277ea32ce3288914faf369fe6de0-Paper-Conference.pdf}.
+
+\bibitem[Liu et~al.(2019)Liu, Wu, Wu, Ritchie, Freeman, and Tenenbaum]{liu2019learning}
+Yunchao Liu, Jiajun Wu, Zheng Wu, Daniel Ritchie, William~T. Freeman, and Joshua~B. Tenenbaum.
+\newblock Learning to describe scenes with programs.
+\newblock In \emph{International Conference on Learning Representations}, 2019.
+\newblock URL \url{https://openreview.net/forum?id=SyNPk2R9K7}.
+
+\bibitem[Ma et~al.(2022)Ma, Wang, Yuille, and Kortylewski]{ma2022robust}
+Wufei Ma, Angtian Wang, Alan Yuille, and Adam Kortylewski.
+\newblock Robust category-level {6D} pose estimation with coarse-to-fine rendering of neural features.
+\newblock In \emph{European Conference on Computer Vision}, pp.\  492--508. Springer, 2022.
+
+\bibitem[Mallya \& Lazebnik(2015)Mallya and Lazebnik]{mallya2015learning}
+Arun Mallya and Svetlana Lazebnik.
+\newblock Learning informative edge maps for indoor scene layout prediction.
+\newblock In \emph{Proceedings of the IEEE international conference on computer vision}, pp.\  936--944, 2015.
+
+\bibitem[Mansinghka et~al.(2013)Mansinghka, Kulkarni, Perov, and Tenenbaum]{mansinghka2013approximate}
+Vikash~K. Mansinghka, Tejas~D. Kulkarni, Yura~N. Perov, and Josh Tenenbaum.
+\newblock Approximate {B}ayesian image interpretation using generative probabilistic graphics programs.
+\newblock In C.J. Burges, L.~Bottou, M.~Welling, Z.~Ghahramani, and K.Q. Weinberger (eds.), \emph{Advances in Neural Information Processing Systems}, volume~26. Curran Associates, Inc., 2013.
+\newblock URL \url{https://proceedings.neurips.cc/paper_files/paper/2013/file/fa14d4fe2f19414de3ebd9f63d5c0169-Paper.pdf}.
+
+\bibitem[Mao et~al.(2019)Mao, Gan, Kohli, Tenenbaum, and Wu]{mao2019neuro}
+Jiayuan Mao, Chuang Gan, Pushmeet Kohli, Joshua~B. Tenenbaum, and Jiajun Wu.
+\newblock The neuro-symbolic concept learner: Interpreting scenes, words, and sentences from natural supervision.
+\newblock In \emph{International Conference on Learning Representations}, 2019.
+\newblock URL \url{https://openreview.net/forum?id=rJgMlhRctm}.
+
+\bibitem[Mescheder et~al.(2019)Mescheder, Oechsle, Niemeyer, Nowozin, and Geiger]{mescheder2019occupancy}
+Lars Mescheder, Michael Oechsle, Michael Niemeyer, Sebastian Nowozin, and Andreas Geiger.
+\newblock Occupancy networks: Learning {3D} reconstruction in function space.
+\newblock In \emph{Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}, pp.\  4460--4470, 2019.
+
+\bibitem[Monnier et~al.(2023)Monnier, Austin, Kanazawa, Efros, and Aubry]{monnier2023dbw}
+Tom Monnier, Jake Austin, Angjoo Kanazawa, Alexei~A. Efros, and Mathieu Aubry.
+\newblock {Differentiable Blocks World: Qualitative {3D} Decomposition by Rendering Primitives}.
+\newblock In \emph{{NeurIPS}}, 2023.
+
+\bibitem[Nie et~al.(2020)Nie, Han, Guo, Zheng, Chang, and Zhang]{nie2020total3dunderstanding}
+Yinyu Nie, Xiaoguang Han, Shihui Guo, Yujian Zheng, Jian Chang, and Jian~Jun Zhang.
+\newblock {Total3DUnderstanding}: Joint layout, object pose and mesh reconstruction for indoor scenes from a single image.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, June 2020.
+
+\bibitem[Nie et~al.(2023)Nie, Dai, Han, and Nie{\ss}ner]{nie2023learning}
+Yinyu Nie, Angela Dai, Xiaoguang Han, and Matthias Nie{\ss}ner.
+\newblock Learning {3D} scene priors with {2D} supervision.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, pp.\  792--802, June 2023.
+
+\bibitem[OpenAI(2023)]{OpenAI2023GPT4TR}
+OpenAI.
+\newblock {GPT-4} technical report.
+\newblock \emph{ArXiv preprint arXiv:2303.08774}, 2023.
+
+\bibitem[Ouyang et~al.(2022)Ouyang, Wu, Jiang, Almeida, Wainwright, Mishkin, Zhang, Agarwal, Slama, Ray, et~al.]{ouyang2022training}
+Long Ouyang, Jeffrey Wu, Xu~Jiang, Diogo Almeida, Carroll Wainwright, Pamela Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama, Alex Ray, et~al.
+\newblock Training language models to follow instructions with human feedback.
+\newblock \emph{Advances in Neural Information Processing Systems}, 35:\penalty0 27730--27744, 2022.
+
+\bibitem[Park et~al.(2019)Park, Florence, Straub, Newcombe, and Lovegrove]{park2019deepsdf}
+Jeong~Joon Park, Peter Florence, Julian Straub, Richard Newcombe, and Steven Lovegrove.
+\newblock {DeepSDF}: Learning continuous signed distance functions for shape representation.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, June 2019.
+
+\bibitem[Paschalidou et~al.(2019)Paschalidou, Ulusoy, and Geiger]{paschalidou2019superquadrics}
+Despoina Paschalidou, Ali~Osman Ulusoy, and Andreas Geiger.
+\newblock Superquadrics revisited: Learning {3D} shape parsing beyond cuboids.
+\newblock In \emph{Proceedings IEEE Conf. on Computer Vision and Pattern Recognition (CVPR)}, June 2019.
+
+\bibitem[Paschalidou et~al.(2020)Paschalidou, Gool, and Geiger]{paschalidou2020learning}
+Despoina Paschalidou, Luc~Van Gool, and Andreas Geiger.
+\newblock Learning unsupervised hierarchical part decomposition of {3D} objects from a single {RGB} image.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pp.\  1060--1070, 2020.
+
+\bibitem[Paschalidou et~al.(2021)Paschalidou, Katharopoulos, Geiger, and Fidler]{paschalidou2021neuralparts}
+Despoina Paschalidou, Angelos Katharopoulos, Andreas Geiger, and Sanja Fidler.
+\newblock Neural parts: Learning expressive {3D} shape abstractions with invertible neural networks.
+\newblock In \emph{Proceedings IEEE Conf. on Computer Vision and Pattern Recognition (CVPR)}, June 2021.
+
+\bibitem[Pavlakos et~al.(2017)Pavlakos, Zhou, Chan, Derpanis, and Daniilidis]{pavlakos20176dof}
+Georgios Pavlakos, Xiaowei Zhou, Aaron Chan, Konstantinos~G. Derpanis, and Kostas Daniilidis.
+\newblock {6-DOF} object pose from semantic keypoints.
+\newblock In \emph{2017 IEEE international conference on robotics and automation (ICRA)}, pp.\  2011--2018. IEEE, 2017.
+
+\bibitem[Peng et~al.(2023)Peng, Li, He, Galley, and Gao]{peng2023instruction}
+Baolin Peng, Chunyuan Li, Pengcheng He, Michel Galley, and Jianfeng Gao.
+\newblock Instruction tuning with {GPT-4}, 2023.
+
+\bibitem[Radford et~al.(2019)Radford, Wu, Child, Luan, Amodei, and Sutskever]{Radford2019LanguageMA}
+Alec Radford, Jeff Wu, Rewon Child, David Luan, Dario Amodei, and Ilya Sutskever.
+\newblock Language models are unsupervised multitask learners, 2019.
+
+\bibitem[Radford et~al.(2021)Radford, Kim, Hallacy, Ramesh, Goh, Agarwal, Sastry, Askell, Mishkin, Clark, Krueger, and Sutskever]{radford2021learning}
+Alec Radford, Jong~Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, Gretchen Krueger, and Ilya Sutskever.
+\newblock Learning transferable visual models from natural language supervision.
+\newblock In Marina Meila and Tong Zhang (eds.), \emph{Proceedings of the 38th International Conference on Machine Learning}, volume 139 of \emph{Proceedings of Machine Learning Research}, pp.\  8748--8763, 18--24 Jul 2021.
+
+\bibitem[Rajbhandari et~al.(2020)Rajbhandari, Rasley, Ruwase, and He]{zero}
+Samyam Rajbhandari, Jeff Rasley, Olatunji Ruwase, and Yuxiong He.
+\newblock {ZeRO}: Memory optimizations toward training trillion parameter models.
+\newblock In \emph{Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis}, SC '20. IEEE Press, 2020.
+\newblock ISBN 9781728199986.
+
+\bibitem[Reddy et~al.(2021{\natexlab{a}})Reddy, Gharbi, Lukac, and Mitra]{reddy2021im2vec}
+Pradyumna Reddy, Michael Gharbi, Michal Lukac, and Niloy~J. Mitra.
+\newblock {Im2Vec}: Synthesizing vector graphics without vector supervision.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, pp.\  7342--7351, June 2021{\natexlab{a}}.
+
+\bibitem[Reddy et~al.(2021{\natexlab{b}})Reddy, Zhang, Wang, Fisher, Jin, and Mitra]{reddy2021multi}
+Pradyumna Reddy, Zhifei Zhang, Zhaowen Wang, Matthew Fisher, Hailin Jin, and Niloy Mitra.
+\newblock A multi-implicit neural representation for fonts.
+\newblock In M.~Ranzato, A.~Beygelzimer, Y.~Dauphin, P.S. Liang, and J.~Wortman Vaughan (eds.), \emph{Advances in Neural Information Processing Systems}, volume~34, pp.\  12637--12647. Curran Associates, Inc., 2021{\natexlab{b}}.
+\newblock URL \url{https://proceedings.neurips.cc/paper_files/paper/2021/file/6948bd44c91acd2b54ecdd1b132f10fb-Paper.pdf}.
+
+\bibitem[Ren et~al.(2022)Ren, Zheng, Cai, Li, and Zhang]{ren2022extrudenet}
+Daxuan Ren, Jianmin Zheng, Jianfei Cai, Jiatong Li, and Junzhe Zhang.
+\newblock {ExtrudeNet}: Unsupervised inverse sketch-and-extrude for shape parsing.
+\newblock In \emph{Computer Vision -- ECCV 2022}, pp.\  482--498, Cham, 2022. Springer Nature Switzerland.
+
+\bibitem[Ren et~al.(2017)Ren, Li, Chen, and Kuo]{ren2017coarse}
+Yuzhuo Ren, Shangwen Li, Chen Chen, and C-C~Jay Kuo.
+\newblock A coarse-to-fine indoor layout estimation ({CFILE}) method.
+\newblock In \emph{Computer Vision--ACCV 2016: 13th Asian Conference on Computer Vision, Taipei, Taiwan, November 20-24, 2016, Revised Selected Papers, Part V 13}, pp.\  36--51. Springer, 2017.
+
+\bibitem[Riso et~al.(2022)Riso, Sforza, and Pellacini]{riso2022pop}
+Marzia Riso, Davide Sforza, and Fabio Pellacini.
+\newblock {pOp}: Parameter optimization of differentiable vector patterns.
+\newblock \emph{Computer Graphics Forum}, 41\penalty0 (4):\penalty0 161--168, 2022.
+
+\bibitem[Ritchie et~al.(2023)Ritchie, Guerrero, Jones, Mitra, Schulz, Willis, and Wu]{ritchie2023neurosymbolic}
+Daniel Ritchie, Paul Guerrero, R.~Kenny Jones, Niloy~J. Mitra, Adriana Schulz, Karl D.~D. Willis, and Jiajun Wu.
+\newblock Neurosymbolic models for computer graphics.
+\newblock \emph{Computer Graphics Forum}, 42\penalty0 (2):\penalty0 545--568, 2023.
+\newblock \doi{https://doi.org/10.1111/cgf.14775}.
+
+\bibitem[Roberts(1963)]{roberts1963machine}
+Lawrence~G. Roberts.
+\newblock \emph{Machine perception of three-dimensional solids}.
+\newblock PhD thesis, Massachusetts Institute of Technology, 1963.
+
+\bibitem[Salas-Moreno et~al.(2013)Salas-Moreno, Newcombe, Strasdat, Kelly, and Davison]{salas2013slam}
+Renato~F. Salas-Moreno, Richard~A. Newcombe, Hauke Strasdat, Paul~HJ Kelly, and Andrew~J. Davison.
+\newblock {SLAM}++: Simultaneous localisation and mapping at the level of objects.
+\newblock In \emph{Proceedings of the IEEE conference on computer vision and pattern recognition}, pp.\  1352--1359, 2013.
+
+\bibitem[Seff et~al.(2022)Seff, Zhou, Richardson, and Adams]{seff2021vitruvion}
+Ari Seff, Wenda Zhou, Nick Richardson, and Ryan~P. Adams.
+\newblock Vitruvion: A generative model of parametric {CAD} sketches.
+\newblock In \emph{International Conference on Learning Representations}, 2022.
+\newblock URL \url{https://openreview.net/forum?id=Ow1C7s3UcY}.
+
+\bibitem[Sharma et~al.(2018{\natexlab{a}})Sharma, Goyal, Liu, Kalogerakis, and Maji]{sharma2018csgnet}
+Gopal Sharma, Rishabh Goyal, Difan Liu, Evangelos Kalogerakis, and Subhransu Maji.
+\newblock {CSGNet}: Neural shape parser for constructive solid geometry.
+\newblock In \emph{The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, June 2018{\natexlab{a}}.
+
+\bibitem[Sharma et~al.(2018{\natexlab{b}})Sharma, Ding, Goodman, and Soricut]{sharma2018conceptual}
+Piyush Sharma, Nan Ding, Sebastian Goodman, and Radu Soricut.
+\newblock {Conceptual Captions}: A cleaned, hypernymed, image alt-text dataset for automatic image captioning.
+\newblock In \emph{Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}, pp.\  2556--2565. Association for Computational Linguistics, July 2018{\natexlab{b}}.
+\newblock \doi{10.18653/v1/P18-1238}.
+
+\bibitem[Shin et~al.(2019)Shin, Ren, Sudderth, and Fowlkes]{shin20193d}
+Daeyun Shin, Zhile Ren, Erik~B. Sudderth, and Charless~C Fowlkes.
+\newblock {3D} scene reconstruction with multi-layer depth and epipolar transformers.
+\newblock In \emph{Proceedings of the IEEE/CVF international conference on computer vision}, pp.\  2172--2182, 2019.
+
+\bibitem[Singh et~al.(2023)Singh, Blukis, Mousavian, Goyal, Xu, Tremblay, Fox, Thomason, and Garg]{singh2023progprompt}
+Ishika Singh, Valts Blukis, Arsalan Mousavian, Ankit Goyal, Danfei Xu, Jonathan Tremblay, Dieter Fox, Jesse Thomason, and Animesh Garg.
+\newblock {ProgPrompt}: Generating situated robot task plans using large language models.
+\newblock In \emph{2023 IEEE International Conference on Robotics and Automation (ICRA)}, pp.\  11523--11530, 2023.
+\newblock \doi{10.1109/ICRA48891.2023.10161317}.
+
+\bibitem[Sitzmann et~al.(2019)Sitzmann, Zollh{\"o}fer, and Wetzstein]{sitzmann2019scene}
+Vincent Sitzmann, Michael Zollh{\"o}fer, and Gordon Wetzstein.
+\newblock Scene representation networks: Continuous {3D}-structure-aware neural scene representations.
+\newblock \emph{Advances in Neural Information Processing Systems}, 32, 2019.
+
+\bibitem[Sun et~al.(2023)Sun, Han, Deng, Wang, Qin, and Gould]{sun2023_3D_GPT}
+Chunyi Sun, Junlin Han, Weijian Deng, Xinlong Wang, Zishan Qin, and Stephen Gould.
+\newblock {3D-GPT}: Procedural {3D} modeling with large language models.
+\newblock \emph{arXiv preprint arXiv:2310.12945}, 2023.
+
+\bibitem[Taori et~al.(2023)Taori, Gulrajani, Zhang, Dubois, Li, Guestrin, Liang, and Hashimoto]{alpaca}
+Rohan Taori, Ishaan Gulrajani, Tianyi Zhang, Yann Dubois, Xuechen Li, Carlos Guestrin, Percy Liang, and Tatsunori~B. Hashimoto.
+\newblock Stanford {Alpaca}: An instruction-following {LLaMA} model.
+\newblock \url{https://github.com/tatsu-lab/stanford_alpaca}, 2023.
+
+\bibitem[Tejani et~al.(2014)Tejani, Tang, Kouskouridas, and Kim]{tejani2014latent}
+Alykhan Tejani, Danhang Tang, Rigas Kouskouridas, and Tae-Kyun Kim.
+\newblock Latent-class {Hough} forests for {3D} object detection and pose estimation.
+\newblock In \emph{Computer Vision -- ECCV 2014}, pp.\  462--477. Springer International Publishing, 2014.
+
+\bibitem[Tian et~al.(2019)Tian, Luo, Sun, Ellis, Freeman, Tenenbaum, and Wu]{tian2019learning}
+Yonglong Tian, Andrew Luo, Xingyuan Sun, Kevin Ellis, William~T. Freeman, Joshua~B. Tenenbaum, and Jiajun Wu.
+\newblock Learning to infer and execute {3D} shape programs.
+\newblock In \emph{International Conference on Learning Representations}, 2019.
+\newblock URL \url{https://openreview.net/forum?id=rylNH20qFQ}.
+
+\bibitem[Touvron et~al.(2023)Touvron, Lavril, Izacard, Martinet, Lachaux, Lacroix, Rozière, Goyal, Hambro, Azhar, Rodriguez, Joulin, Grave, and Lample]{touvron2023llama}
+Hugo Touvron, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothée Lacroix, Baptiste Rozière, Naman Goyal, Eric Hambro, Faisal Azhar, Aurelien Rodriguez, Armand Joulin, Edouard Grave, and Guillaume Lample.
+\newblock {LLaMA}: Open and efficient foundation language models, 2023.
+
+\bibitem[Tulsiani \& Malik(2015)Tulsiani and Malik]{tulsiani2015viewpoints}
+Shubham Tulsiani and Jitendra Malik.
+\newblock Viewpoints and keypoints.
+\newblock In \emph{Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition}, pp.\  1510--1519, 2015.
+
+\bibitem[Tulsiani et~al.(2017)Tulsiani, Su, Guibas, Efros, and Malik]{tulsiani2017learning}
+Shubham Tulsiani, Hao Su, Leonidas~J. Guibas, Alexei~A. Efros, and Jitendra Malik.
+\newblock Learning shape abstractions by assembling volumetric primitives.
+\newblock In \emph{Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition}, pp.\  2635--2643, 2017.
+
+\bibitem[van~den Hengel et~al.(2015)van~den Hengel, Russell, Dick, Bastian, Pooley, Fleming, and Agapito]{van2015part}
+Anton van~den Hengel, Chris Russell, Anthony Dick, John Bastian, Daniel Pooley, Lachlan Fleming, and Lourdes Agapito.
+\newblock Part-based modelling of compound scenes from images.
+\newblock In \emph{Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition}, pp.\  878--886, 2015.
+
+\bibitem[Vavilala \& Forsyth(2023)Vavilala and Forsyth]{vavilala2023convex}
+Vaibhav Vavilala and David Forsyth.
+\newblock Convex decomposition of indoor scenes.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on Computer Vision}, pp.\  9176--9186, 2023.
+
+\bibitem[\v{S}t'ava et~al.(2010)\v{S}t'ava, Bene{\v{s}}, M{\v{e}}ch, Aliaga, and Kri{\v{s}}tof]{stava2010inverse}
+O.~\v{S}t'ava, B.~Bene{\v{s}}, R.~M{\v{e}}ch, D.~G. Aliaga, and P.~Kri{\v{s}}tof.
+\newblock Inverse procedural modeling by automatic generation of {L}-systems.
+\newblock \emph{Computer Graphics Forum}, 29\penalty0 (2):\penalty0 665--674, 2010.
+
+\bibitem[\v{S}t'ava et~al.(2014)\v{S}t'ava, Pirk, Kratt, Chen, M\v{e}ch, Deussen, and Benes]{stava2014inverse}
+O.~\v{S}t'ava, S.~Pirk, J.~Kratt, B.~Chen, R.~M\v{e}ch, O.~Deussen, and B.~Benes.
+\newblock Inverse procedural modelling of trees.
+\newblock \emph{Computer Graphics Forum}, 33\penalty0 (6):\penalty0 118--131, 2014.
+
+\bibitem[Wang et~al.(2021{\natexlab{a}})Wang, Kortylewski, and Yuille]{wang2021NeMo}
+Angtian Wang, Adam Kortylewski, and Alan~L. Yuille.
+\newblock {NeMo}: Neural mesh models of contrastive features for robust {3D} pose estimation.
+\newblock In \emph{9th International Conference on Learning Representations, {ICLR} 2021, Virtual Event, Austria, May 3-7, 2021}. OpenReview.net, 2021{\natexlab{a}}.
+\newblock URL \url{https://openreview.net/forum?id=pmj131uIL9H}.
+
+\bibitem[Wang et~al.(2021{\natexlab{b}})Wang, Manhardt, Tombari, and Ji]{wang2021gdr}
+Gu~Wang, Fabian Manhardt, Federico Tombari, and Xiangyang Ji.
+\newblock {GDR-Net}: Geometry-guided direct regression network for monocular {6D} object pose estimation.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, pp.\  16611--16621, June 2021{\natexlab{b}}.
+
+\bibitem[Wang et~al.(2019)Wang, Sridhar, Huang, Valentin, Song, and Guibas]{wang2019normalized}
+He~Wang, Srinath Sridhar, Jingwei Huang, Julien Valentin, Shuran Song, and Leonidas~J. Guibas.
+\newblock Normalized object coordinate space for category-level {6D} object pose and size estimation.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pp.\  2642--2651, 2019.
+
+\bibitem[Wang et~al.(2018)Wang, Zhang, Li, Fu, Liu, and Jiang]{wang2018pixel2mesh}
+Nanyang Wang, Yinda Zhang, Zhuwen Li, Yanwei Fu, Wei Liu, and Yu-Gang Jiang.
+\newblock {Pixel2Mesh}: Generating {3D} mesh models from single {RGB} images.
+\newblock In \emph{Proceedings of the European Conference on Computer Vision (ECCV)}, September 2018.
+
+\bibitem[Wang et~al.(2023)Wang, Kordi, Mishra, Liu, Smith, Khashabi, and Hajishirzi]{Wang2022SelfInstructAL}
+Yizhong Wang, Yeganeh Kordi, Swaroop Mishra, Alisa Liu, Noah~A. Smith, Daniel Khashabi, and Hannaneh Hajishirzi.
+\newblock Self-instruct: Aligning language models with self-generated instructions.
+\newblock In Anna Rogers, Jordan Boyd-Graber, and Naoaki Okazaki (eds.), \emph{Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}, pp.\  13484--13508, Toronto, Canada, July 2023. Association for Computational Linguistics.
+\newblock \doi{10.18653/v1/2023.acl-long.754}.
+\newblock URL \url{https://aclanthology.org/2023.acl-long.754}.
+
+\bibitem[Willis et~al.(2021)Willis, Pu, Luo, Chu, Du, Lambourne, Solar-Lezama, and Matusik]{willis2021fusion}
+Karl~DD Willis, Yewen Pu, Jieliang Luo, Hang Chu, Tao Du, Joseph~G. Lambourne, Armando Solar-Lezama, and Wojciech Matusik.
+\newblock Fusion 360 gallery: A dataset and environment for programmatic {CAD} construction from human design sequences.
+\newblock \emph{ACM Transactions on Graphics (TOG)}, 40\penalty0 (4):\penalty0 1--24, 2021.
+
+\bibitem[Wu et~al.(2017)Wu, Tenenbaum, and Kohli]{wu2017neural}
+Jiajun Wu, Joshua~B. Tenenbaum, and Pushmeet Kohli.
+\newblock Neural scene de-rendering.
+\newblock In \emph{Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition}, pp.\  699--707, 2017.
+
+\bibitem[Xiang et~al.(2018)Xiang, Schmidt, Narayanan, and Fox]{xiang2017posecnn}
+Yu~Xiang, Tanner Schmidt, Venkatraman Narayanan, and Dieter Fox.
+\newblock {PoseCNN}: A convolutional neural network for {6D} object pose estimation in cluttered scenes, 2018.
+
+\bibitem[Xu et~al.(2021)Xu, Peng, Cheng, Willis, and Ritchie]{xu2021inferring}
+Xianghao Xu, Wenzhe Peng, Chin-Yi Cheng, Karl~D.D. Willis, and Daniel Ritchie.
+\newblock Inferring {CAD} modeling sequences using zone graphs.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, pp.\  6062--6070, June 2021.
+
+\bibitem[Xue et~al.(2023)Xue, Gao, Xing, Mart{\'\i}n-Mart{\'\i}n, Wu, Xiong, Xu, Niebles, and Savarese]{xue2023ulip}
+Le~Xue, Mingfei Gao, Chen Xing, Roberto Mart{\'\i}n-Mart{\'\i}n, Jiajun Wu, Caiming Xiong, Ran Xu, Juan~Carlos Niebles, and Silvio Savarese.
+\newblock {ULIP}: Learning a unified representation of language, images, and point clouds for {3D} understanding.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pp.\  1179--1189, 2023.
+
+\bibitem[Yao et~al.(2018)Yao, Hsu, Zhu, Wu, Torralba, Freeman, and Tenenbaum]{yao20183d}
+Shunyu Yao, Tzu~Ming Hsu, Jun-Yan Zhu, Jiajun Wu, Antonio Torralba, Bill Freeman, and Josh Tenenbaum.
+\newblock {3D}-aware scene manipulation via inverse graphics.
+\newblock \emph{Advances in Neural Information Processing Systems}, 31, 2018.
+
+\bibitem[Yi et~al.(2018)Yi, Wu, Gan, Torralba, Kohli, and Tenenbaum]{yi2018neural}
+Kexin Yi, Jiajun Wu, Chuang Gan, Antonio Torralba, Pushmeet Kohli, and Josh Tenenbaum.
+\newblock Neural-symbolic {VQA}: Disentangling reasoning from vision and language understanding.
+\newblock In S.~Bengio, H.~Wallach, H.~Larochelle, K.~Grauman, N.~Cesa-Bianchi, and R.~Garnett (eds.), \emph{Advances in Neural Information Processing Systems}, volume~31. Curran Associates, Inc., 2018.
+\newblock URL \url{https://proceedings.neurips.cc/paper_files/paper/2018/file/5e388103a391daabe3de1d76a6739ccd-Paper.pdf}.
+
+\bibitem[Yu et~al.(2022)Yu, Chen, Li, Sanghi, Shayani, Mahdavi-Amiri, and Zhang]{yu2022capri}
+Fenggen Yu, Zhiqin Chen, Manyi Li, Aditya Sanghi, Hooman Shayani, Ali Mahdavi-Amiri, and Hao Zhang.
+\newblock {CAPRI-Net}: Learning compact {CAD} shapes with adaptive primitive assembly.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, pp.\  11768--11778, June 2022.
+
+\bibitem[Yuille \& Kersten(2006)Yuille and Kersten]{yuille2006vision}
+Alan Yuille and Daniel Kersten.
+\newblock Vision as {B}ayesian inference: {A}nalysis by synthesis?
+\newblock \emph{Trends in cognitive sciences}, 10\penalty0 (7):\penalty0 301--308, 2006.
+
+\bibitem[Zhang \& Sennrich(2019)Zhang and Sennrich]{rms_norm}
+Biao Zhang and Rico Sennrich.
+\newblock Root mean square layer normalization.
+\newblock In H.~Wallach, H.~Larochelle, A.~Beygelzimer, F.~d\textquotesingle Alch\'{e}-Buc, E.~Fox, and R.~Garnett (eds.), \emph{Advances in Neural Information Processing Systems}, volume~32. Curran Associates, Inc., 2019.
+\newblock URL \url{https://proceedings.neurips.cc/paper_files/paper/2019/file/1e8a19426224ca89e83cef47f1e7f53b-Paper.pdf}.
+
+\bibitem[Zhang et~al.(2021)Zhang, Cui, Zhang, Zeng, Pollefeys, and Liu]{zhang2021holistic}
+Cheng Zhang, Zhaopeng Cui, Yinda Zhang, Bing Zeng, Marc Pollefeys, and Shuaicheng Liu.
+\newblock Holistic {3D} scene understanding from a single image with implicit representation.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, pp.\  8833--8842, June 2021.
+
+\bibitem[Zhang et~al.(2023{\natexlab{a}})Zhang, Du, Shan, Zhou, Du, Tenenbaum, Shu, and Gan]{zhang2023building}
+Hongxin Zhang, Weihua Du, Jiaming Shan, Qinhong Zhou, Yilun Du, Joshua~B. Tenenbaum, Tianmin Shu, and Chuang Gan.
+\newblock Building cooperative embodied agents modularly with large language models.
+\newblock \emph{arXiv preprint arXiv:2307.02485}, 2023{\natexlab{a}}.
+
+\bibitem[Zhang et~al.(2023{\natexlab{b}})Zhang, Chen, Wei, and Tu]{zhang2023uni}
+Xiang Zhang, Zeyuan Chen, Fangyin Wei, and Zhuowen Tu.
+\newblock {Uni-3D}: A universal model for panoptic {3D} scene reconstruction.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on Computer Vision}, pp.\  9256--9266, 2023{\natexlab{b}}.
+
+\bibitem[Zhou et~al.(2019)Zhou, Barnes, Lu, Yang, and Li]{Zhou_2019_CVPR}
+Yi~Zhou, Connelly Barnes, Jingwan Lu, Jimei Yang, and Hao Li.
+\newblock On the continuity of rotation representations in neural networks.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, June 2019.
+
+\bibitem[Zhu et~al.(2023)Zhu, Chen, Shen, Li, and Elhoseiny]{zhu2023minigpt}
+Deyao Zhu, Jun Chen, Xiaoqian Shen, Xiang Li, and Mohamed Elhoseiny.
+\newblock {MiniGPT-4}: Enhancing vision-language understanding with advanced large language models.
+\newblock \emph{arXiv preprint arXiv:2304.10592}, 2023.
+
+\end{thebibliography}

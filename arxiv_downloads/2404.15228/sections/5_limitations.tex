@@ -1,0 +1,17 @@
+\section{Discussion and Limitations}
+Through our investigation, we demonstrated the ability of LLMs to facilitate inverse-graphics tasks across a variety of domain shifts, albeit within controlled settings.
+In designing targeted evaluations to analyze the model's generalization ability, our goal was to lay the groundwork necessary for future advancements.
+However, scaling up these models to metrically reconstruct complex real-world scenes will undoubtedly pose additional challenges.
+
+The primary limitation of our approach lies in that its expressiveness is constrained by the expressiveness of the training-data-generation framework.
+We demonstrated its ability to learn to compositionally disentangle images of scenes into constituent elements, reconstructing scenes under distribution shifts.
+However, reproducing scenes as text, it can reconstruct scenes containing unknown objects in OOD configurations, but it does so in terms of the objects -- and language -- it is trained with.
+If it does not know the name of asset \mbox{\texttt{chairs\_0055}}, it will not be able to use it.
+Even if the model produces the name of a new color or shape from outside of the training data, the graphics engine rendering the LLM output must have an understanding of it in order to apply it.
+
+In contrast, the generality of our approach, which doesn't incorporate special task-specific inductive biases, allows it to scale with the diversity of the training data or the expressivity of the code format.
+Future work may explore more-scalable training-data generators or integrate self-supervision techniques to enable learning from unlabeled images.
+While we employ a relatively straightforward object-centric code representation across experiments for simplicity, more-expressive scene representations should also be explored.
+
+Our evaluation scenes feature only minor object occlusions and are relatively simple.
+While a generic next-token objective paired with MSE float supervision sufficed for these scenarios, addressing harder-to-disentangle scenes may require a trade-off between generality and inductive bias, to incorporate additional supervision.

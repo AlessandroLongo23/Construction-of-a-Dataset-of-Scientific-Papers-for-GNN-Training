@@ -1,0 +1,24 @@
+\begin{table}[b]
+\centering
+\caption{
+\textbf{ShapeNet 6-DoF Results.} (\cref{sssec:scene_6dof})
+The float-based model outperforms the char-based variant across all evaluations.
+\textit{Chamf.}~represents the Chamfer distance between the ground-truth and estimated scenes.
+\textit{Cat.}~represents category accuracy (sofa, chair, table).
+}
+\begin{tabular}{lrr|rr|rr}
+\toprule
+& \multicolumn{2}{c}{ID} & \multicolumn{2}{c}{OOD-T} & \multicolumn{2}{c}{OOD-T+S} \\
+& Char & Float & Char & Float & Char & Float \\
+\midrule
+$\downarrow$L2 & 0.22 & \textbf{0.18} & 0.31 & \textbf{0.26} & 0.52 & \textbf{0.40} \\
+$\downarrow$Geod. & 8.14 & \textbf{5.65} & 14.40 & \textbf{10.48} & 45.11 & \textbf{43.46} \\
+$\downarrow$Count & \textbf{0.01} & \textbf{0.01} & \textbf{0.08} & \textbf{0.08} & 0.09 & \textbf{0.08} \\
+$\uparrow$Color & 77.07 & \textbf{83.42} & N/A & N/A & N/A & N/A \\
+$\uparrow$Shape & 89.21 &\textbf{ 93.31} & 68.72 & \textbf{78.26} & N/A & N/A \\
+$\uparrow$Cat.\ & 97.27 & \textbf{98.33} & 94.55 & \textbf{96.58} & 85.99 & \textbf{86.71} \\
+$\downarrow$Chamf. & 0.45 & \textbf{0.22} & 1.17 & \textbf{0.57} & 14.63 & \textbf{2.58} \\
+\bottomrule
+\end{tabular}
+\label{table:scene_6dof}
+\end{table}

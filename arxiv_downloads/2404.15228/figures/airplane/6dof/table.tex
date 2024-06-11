@@ -1,0 +1,16 @@
+\begin{table}[b]
+\centering
+\caption{\textbf{Single-Object 6-DoF Results.} (\cref{sssec:single_6dof})
+When evaluating on ID data in the one-million-sample single-object 6-DoF eval, we observe little difference between models; both well-capture the distribution.
+\textit{Geod.}~represents geodesic distance in degrees.
+}
+\begin{tabular}{lrrrrr}
+\toprule
+& $\downarrow$L2 & $\downarrow$Geod.\ & $\uparrow$Color & $\uparrow$Mat.\ & $\uparrow$Shape \\
+\midrule
+Char & \textbf{0.02} & \textbf{5.03} & 79.10 & \textbf{99.00} & 99.80 \\
+Float & 0.04 & 6.18 & \textbf{81.90} & \textbf{99.00} & \textbf{100.00} \\
+\bottomrule
+\end{tabular}
+\label{table:single_6dof}
+\end{table}

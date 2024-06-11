@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{add}\PYG{p}{(}\PYG{n}{loc}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mf}{6.355}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{4.600}\PYG{p}{,} \PYG{l+m+mf}{4.206}\PYG{p}{),} \PYG{n}{color}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}Mahogany\PYGZsq{}}\PYG{p}{,} \PYG{n}{shape}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}jet\PYGZsq{}}\PYG{p}{,} \PYG{n}{material}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}matte\PYGZsq{}}\PYG{p}{,} \PYG{n}{rotation}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mf}{0.941}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{0.337}\PYG{p}{,} \PYG{l+m+mf}{0.022}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{0.303}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{0.815}\PYG{p}{,} \PYG{l+m+mf}{0.493}\PYG{p}{))}
+\end{Verbatim}

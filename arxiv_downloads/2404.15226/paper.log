@@ -1,0 +1,1104 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.24)  9 JUN 2024 23:33
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**c:/Programmazione/Python/Tesi/arxiv_downloads/2404.15226/paper.tex
+(c:/Programmazione/Python/Tesi/arxiv_downloads/2404.15226/paper.tex
+LaTeX2e <2023-11-01>
+L3 programming layer <2023-11-09>
+(C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
+File: size11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2023/11/11 v3.97 The Babel package
+\babel@savecnt=\count194
+\U@D=\dimen141
+\l@unhyphenated=\language79
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count195
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language73). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language73). Reported on input line 108.
+)) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\babel-english.tex
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 11.
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.sty
+Package: microtype 2024/03/29 v3.1b Micro-typographical refinements (RS)
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count196
+)
+\MT@toks=\toks18
+\MT@tempbox=\box51
+\MT@count=\count197
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1061.
+LaTeX Info: Redefining \leftprotrusion on input line 1062.
+\MT@prot@toks=\toks19
+LaTeX Info: Redefining \rightprotrusion on input line 1081.
+LaTeX Info: Redefining \textls on input line 1392.
+\MT@outer@kern=\dimen142
+LaTeX Info: Redefining \textmicrotypecontext on input line 2013.
+\MT@listname@count=\count198
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-pdftex.def
+File: microtype-pdftex.def 2024/03/29 v3.1b Definitions specific to pdftex (RS)
+LaTeX Info: Redefining \lsstyle on input line 902.
+LaTeX Info: Redefining \lslig on input line 902.
+\MT@outer@space=\skip50
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.cfg
+File: microtype.cfg 2024/03/29 v3.1b microtype main configuration file (RS)
+)) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/eurosym\eurosym.sty
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box52
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks20
+\inpenc@posthook=\toks21
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+)) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+\Gin@req@height=\dimen143
+\Gin@req@width=\dimen144
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/threeparttable\threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box53
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count199
+\float@exts=\toks22
+\float@box=\box54
+\@float@everytoks=\toks23
+\@floatcapt=\box55
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen145
+\captionmargin=\dimen146
+\caption@leftmargin=\dimen147
+\caption@rightmargin=\dimen148
+\caption@width=\dimen149
+\caption@indent=\dimen150
+\caption@parindent=\dimen151
+\caption@hangindent=\dimen152
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count266
+\c@continuedfloat=\count267
+Package caption Info: float package is loaded.
+Package caption Info: threeparttable package is loaded.
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip51
+\multirow@cntb=\count268
+\multirow@dima=\skip52
+\bigstrutjot=\dimen153
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/extsizes\extsizes.sty
+Package: extsizes 1996/10/08 v1.0 Non Standard LaTeX Package
+
+
+Package ExtSizes Warning: It is better to use one of the extsizes classes,
+ if you can.
+
+(C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
+File: size11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+LaTeX Info: Command `\normalsize' is already robust on input line 56.
+LaTeX Info: Redefining \small on input line 58.
+LaTeX Info: Redefining \footnotesize on input line 69.
+LaTeX Info: Redefining \scriptsize on input line 80.
+LaTeX Info: Redefining \tiny on input line 81.
+LaTeX Info: Redefining \large on input line 82.
+LaTeX Info: Redefining \Large on input line 83.
+LaTeX Info: Redefining \LARGE on input line 84.
+LaTeX Info: Redefining \huge on input line 85.
+LaTeX Info: Redefining \Huge on input line 86.
+)) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip53
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks24
+\ex@=\dimen154
+)) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen155
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count269
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count270
+\leftroot@=\count271
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count272
+\DOTSCASE@=\count273
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box56
+\strutbox@=\box57
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen156
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count274
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count275
+\dotsspace@=\muskip16
+\c@parentequation=\count276
+\dspbrk@lvl=\count277
+\tag@help=\toks25
+\row@=\count278
+\column@=\count279
+\maxfields@=\count280
+\andhelp@=\toks26
+\eqnshift@=\dimen157
+\alignsep@=\dimen158
+\tagshift@=\dimen159
+\tagwidth@=\dimen160
+\totwidth@=\dimen161
+\lineht@=\dimen162
+\@envbody=\toks27
+\multlinegap=\skip54
+\multlinetaggap=\skip55
+\mathdisplay@stack=\toks28
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks29
+\thm@bodyfont=\toks30
+\thm@headfont=\toks31
+\thm@notefont=\toks32
+\thm@headpunct=\toks33
+\thm@preskip=\skip56
+\thm@postskip=\skip57
+\thm@headsep=\skip58
+\dth@everypar=\toks34
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/doublestroke\dsfont.sty
+Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/ushort\ushort.sty
+ushort.sty by M. Vaeth: Release: 2.2 
+Package: ushort 2001/06/13 v2.2
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/braket\braket.sty)
+\c@theorem=\count281
+\c@prediction=\count282
+\c@assumption=\count283
+\c@proposition=\count284
+\c@lemma=\count285
+\c@corollary=\count286
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+Package: titlesec 2023/10/27 v2.16 Sectioning titles
+\ttl@box=\box58
+\beforetitleunit=\skip59
+\aftertitleunit=\skip60
+\ttl@plus=\dimen163
+\ttl@minus=\dimen164
+\ttl@toksa=\toks35
+\titlewidth=\dimen165
+\titlewidthlast=\dimen166
+\titlewidthfirst=\dimen167
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/titling\titling.sty
+Package: titling 2009/09/04 v2.1d maketitle typesetting
+\thanksmarkwidth=\skip61
+\thanksmargin=\skip62
+\droptitle=\skip63
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count287
+\Gm@cntv=\count288
+\c@Gm@tempcnt=\count289
+\Gm@bindingoffset=\dimen168
+\Gm@wd@mp=\dimen169
+\Gm@odd@mp=\dimen170
+\Gm@even@mp=\dimen171
+\Gm@layoutwidth=\dimen172
+\Gm@layoutheight=\dimen173
+\Gm@layouthoffset=\dimen174
+\Gm@layoutvoffset=\dimen175
+\Gm@dimlist=\toks36
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip64
+\enit@outerparindent=\dimen176
+\enit@toks=\toks37
+\enit@inbox=\box59
+\enit@count@id=\count290
+\enitdp@description=\count291
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen177
+\lightrulewidth=\dimen178
+\cmidrulewidth=\dimen179
+\belowrulesep=\dimen180
+\belowbottomsep=\dimen181
+\aboverulesep=\dimen182
+\abovetopsep=\dimen183
+\cmidrulesep=\dimen184
+\cmidrulekern=\dimen185
+\defaultaddspace=\dimen186
+\@cmidla=\count292
+\@cmidlb=\count293
+\@aboverulesep=\dimen187
+\@belowrulesep=\dimen188
+\@thisruleclass=\count294
+\@lastruleclass=\count295
+\@thisrulewidth=\dimen189
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip65
+\bibsep=\skip66
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count296
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/pstricks\pstricks.sty
+Package: pstricks 2024/02/02 v0.75 LaTeX wrapper for `PSTricks' (RN,HV)
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\pst-xkey.tex
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks38
+\XKV@tempa@toks=\toks39
+)
+\XKV@depth=\count297
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks.tex (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pst-fp.tex `pst-fp' v0.06, 2020/11/20 (hv)
+\pstFP@xs=\count298
+\pstFP@xia=\count299
+\pstFP@xib=\count300
+\pstFP@xfa=\count301
+\pstFP@xfb=\count302
+\pstFP@rega=\count303
+\pstFP@regb=\count304
+\pstFP@regs=\count305
+\pstFP@times=\count306
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
+\pgfutil@everybye=\toks40
+\pgfutil@tempdima=\dimen190
+\pgfutil@tempdimb=\dimen191
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+\pgfutil@abb=\box60
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks41
+\pgfkeys@temptoks=\toks42
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks43
+))) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex
+\pgf@x=\dimen192
+\pgf@xa=\dimen193
+\pgf@xb=\dimen194
+\pgf@xc=\dimen195
+\pgf@y=\dimen196
+\pgf@ya=\dimen197
+\pgf@yb=\dimen198
+\pgf@yc=\dimen199
+\c@pgf@counta=\count307
+\c@pgf@countb=\count308
+\c@pgf@countc=\count309
+\c@pgf@countd=\count310
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen256
+\pgfmath@count=\count311
+\pgfmath@box=\box61
+\pgfmath@toks=\toks44
+\pgfmath@stack@operand=\toks45
+\pgfmath@stack@operation=\toks46
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count312
+))) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen257
+\pgffor@skip=\dimen258
+\pgffor@stack=\toks47
+\pgffor@toks=\toks48
+))
+\psLoopIndex=\count313
+
+`PSTricks' v3.19c  <2024/02/02> (tvz,hv)
+\pst@dima=\dimen259
+\pst@dimb=\dimen260
+\pst@dimc=\dimen261
+\pst@dimd=\dimen262
+\pst@dimg=\dimen263
+\pst@dimh=\dimen264
+\pst@dimm=\dimen265
+\pst@dimn=\dimen266
+\pst@dimo=\dimen267
+\pst@dimp=\dimen268
+\pst@hbox=\box62
+\pst@ibox=\box63
+\pst@boxg=\box64
+\pst@cnta=\count314
+\pst@cntb=\count315
+\pst@cntc=\count316
+\pst@cntd=\count317
+\pst@cntg=\count318
+\pst@cnth=\count319
+\pst@cntm=\count320
+\pst@cntn=\count321
+\pst@cnto=\count322
+\pst@cntp=\count323
+\@zero=\count324
+\pst@toks=\toks49
+--- We are running latex or xelatex ---
+(C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks.con) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks-color.tex)
+\psunit=\dimen269
+\psxunit=\dimen270
+\psyunit=\dimen271
+\pst@C@@rType=\count325
+\pslinewidth=\dimen272
+\psk@startLW=\dimen273
+\psk@endLW=\dimen274
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks-arrows.tex
+\pshooklength=\dimen275
+\pshookwidth=\dimen276
+)
+\pst@customdefs=\toks50
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks-dots.tex)
+\pslinearc=\dimen277
+\pst@symbolStep=\dimen278
+\pst@symbolWidth=\dimen279
+\pst@symbolLinewidth=\dimen280
+\everypsbox=\toks51
+\psframesep=\dimen281
+\pslabelsep=\dimen282
+\sh@wgridXunit=\dimen283
+\sh@wgridYunit=\dimen284
+\pst@shift=\dimen285
+\ps@imagectr=\count326
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks.con))
+File: pstricks.tex 2024/02/02 v3.19c `PSTricks' (tvz,hv)
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pst-fp.tex `pst-fp' v0.06, 2020/11/20 (hv))
+File: pst-fp.tex 2020/11/20 v0.06 `PST-fp' (hv)
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2023-11-09 v7.01f Hypertext links for LaTeX
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2023-11-09 v2.55 Cross-referencing by name of section
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count327
+)
+\@linkdim=\dimen286
+\Hy@linkcounter=\count328
+\Hy@pagecounter=\count329
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2023-11-09 v7.01f Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count330
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2023-11-09 v7.01f Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4171.
+Package hyperref Info: Link nesting OFF on input line 4176.
+Package hyperref Info: Hyper index ON on input line 4179.
+Package hyperref Info: Plain pages OFF on input line 4186.
+Package hyperref Info: Backreferencing OFF on input line 4191.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4438.
+\c@Hy@tempcnt=\count331
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4776.
+\XeTeXLinkMargin=\dimen287
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count332
+\Field@Width=\dimen288
+\Fld@charsize=\dimen289
+Package hyperref Info: Hyper figures OFF on input line 6055.
+Package hyperref Info: Link nesting OFF on input line 6060.
+Package hyperref Info: Hyper index ON on input line 6063.
+Package hyperref Info: backreferencing OFF on input line 6070.
+Package hyperref Info: Link coloring OFF on input line 6075.
+Package hyperref Info: Link coloring with OCG OFF on input line 6080.
+Package hyperref Info: PDF/A mode OFF on input line 6085.
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count333
+\c@Item=\count334
+\c@Hfootnote=\count335
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2023-11-09 v7.01f Hyperref driver for pdfTeX
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+)
+\Fld@listcount=\count336
+\c@bookmark@seq@number=\count337
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+)
+\Hy@SectionHShift=\skip67
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/preprint\authblk.sty
+Package: authblk 2001/02/27 1.3 (PWD)
+\affilsep=\skip68
+\@affilsep=\skip69
+\c@Maxaffil=\count338
+\c@authors=\count339
+\c@affil=\count340
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 88.
+Package hyperref Info: Option `pdfnewwindow' set `true' on input line 88.
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen290
+\ar@mcellbox=\box65
+\extrarowheight=\dimen291
+\NC@list=\toks52
+\extratabsurround=\skip70
+\backup@length=\skip71
+\ar@cellbox=\box66
+)
+\TX@col@width=\dimen292
+\TX@old@table=\dimen293
+\TX@old@col=\dimen294
+\TX@target=\dimen295
+\TX@delta=\dimen296
+\TX@cols=\count341
+\TX@ftn=\toks53
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
+Package: colortbl 2024/02/20 v1.0g Color table columns (DPC)
+\everycr=\toks54
+\minrowclearance=\skip72
+\rownum=\count342
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/tools\dcolumn.sty
+Package: dcolumn 2023/07/08 v1.06 decimal alignment package (DPC)
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul.sty
+Package: soul 2023-06-14 v3.1 Permit use of UTF-8 characters in soul (HO)
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul-ori.sty
+Package: soul-ori 2023-06-14 v3.1 letterspacing/underlining (mf)
+\SOUL@word=\toks55
+\SOUL@lasttoken=\toks56
+\SOUL@syllable=\toks57
+\SOUL@cmds=\toks58
+\SOUL@buffer=\toks59
+\SOUL@token=\toks60
+\SOUL@syllgoal=\dimen297
+\SOUL@syllwidth=\dimen298
+\SOUL@charkern=\dimen299
+\SOUL@hyphkern=\dimen300
+\SOUL@dimen=\dimen301
+\SOUL@dimeni=\dimen302
+\SOUL@minus=\count343
+\SOUL@comma=\count344
+\SOUL@apo=\count345
+\SOUL@grave=\count346
+\SOUL@spaceskip=\skip73
+\SOUL@ttwidth=\dimen303
+\SOUL@uldp=\dimen304
+\SOUL@ulht=\dimen305
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+))
+LaTeX Info: Redefining \2sD on input line 129.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 137.
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-11-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count347
+\l__pdf_internal_box=\box67
+) (paper.aux)
+\openout1 = `paper.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Info: Redefining \microtypecontext on input line 137.
+Package microtype Info: Applying patch `item' on input line 137.
+Package microtype Info: Applying patch `toc' on input line 137.
+Package microtype Info: Applying patch `eqnum' on input line 137.
+Package microtype Info: Applying patch `footnote' on input line 137.
+Package microtype Info: Applying patch `verbatim' on input line 137.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+LaTeX Info: Redefining \showhyphens on input line 137.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count348
+\scratchdimen=\dimen306
+\scratchbox=\box68
+\nofMPsegments=\count349
+\nofMParguments=\count350
+\everyMPshowfont=\toks61
+\MPscratchCnt=\count351
+\MPscratchDim=\dimen307
+\MPnumerator=\count352
+\makeMPintoPDFobject=\count353
+\everyMPtoPDFconversion=\toks62
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 483.69684pt, 56.90553pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23582pt, 56.90552pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69684pt
+* \textheight=731.23582pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-15.36449pt
+* \headheight=0.0pt
+* \headsep=0.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=50.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package hyperref Info: Link coloring ON on input line 137.
+(paper.out) (paper.out)
+\@outlinefile=\write3
+\openout3 = `paper.out'.
+
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 140.
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 140.
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 140.
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 140.
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 140.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 140.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 140.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 140.
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 140.
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 140.
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+) [1
+Non-PDF special ignored!
+<special> header=pstricks.pro
+Non-PDF special ignored!
+<special> header=pst-algparser.pro
+Non-PDF special ignored!
+<special> header=pst-tools.pro
+Non-PDF special ignored!
+<special> header=pst-dots.pro
+
+Non-PDF special ignored!
+<special> ps: /pssetRGBcolor /setrgbcolor load def /pssetCMYKcolor /setcmyk...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@refangle 0.  def grestore  e...
+{C:/Users/longo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 207.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 209.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 209.
+ [2{C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}] (figures/fig_gr_norm_centered_empirical.tex
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 4.
+ (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+) (C:\Users\longo\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-ptm.cfg
+File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
+)
+\gptboxheight=\skip74
+\gptboxwidth=\skip75
+\gptboxtext=\box69
+<figures/fig_gr_norm_centered_empirical_pdf.pdf, id=201, 361.35pt x 216.81pt>
+File: figures/fig_gr_norm_centered_empirical_pdf.pdf Graphic file (type pdf)
+<use figures/fig_gr_norm_centered_empirical_pdf.pdf>
+Package pdftex.def Info: figures/fig_gr_norm_centered_empirical_pdf.pdf  used on input line 127.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+) (figures/fig_mad_norm_scaling_firm.tex
+<figures/fig_mad_norm_scaling_firm_pdf.pdf, id=202, 361.35pt x 216.81pt>
+File: figures/fig_mad_norm_scaling_firm_pdf.pdf Graphic file (type pdf)
+<use figures/fig_mad_norm_scaling_firm_pdf.pdf>
+Package pdftex.def Info: figures/fig_mad_norm_scaling_firm_pdf.pdf  used on input line 123.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+) [3{C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc} <./figures/fig_gr_norm_centered_empirical_pdf.pdf> <./figures/fig_mad_norm_scaling_firm_pdf.pdf
+
+pdfTeX warning: pdflatex (file ./figures/fig_mad_norm_scaling_firm_pdf.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [4] [5] [6] [7] (figures/fig_PsigmaS_gabaix.tex
+<figures/fig_PsigmaS_gabaix_pdf.pdf, id=332, 361.35pt x 216.81pt>
+File: figures/fig_PsigmaS_gabaix_pdf.pdf Graphic file (type pdf)
+<use figures/fig_PsigmaS_gabaix_pdf.pdf>
+Package pdftex.def Info: figures/fig_PsigmaS_gabaix_pdf.pdf  used on input line 105.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+)
+Overfull \hbox (12.27585pt too wide) in paragraph at lines 778--779
+[][] 
+ []
+
+(figures/fig_PsigmaS_wb.tex
+<figures/fig_PsigmaS_wb_pdf.pdf, id=333, 361.35pt x 216.81pt>
+File: figures/fig_PsigmaS_wb_pdf.pdf Graphic file (type pdf)
+<use figures/fig_PsigmaS_wb_pdf.pdf>
+Package pdftex.def Info: figures/fig_PsigmaS_wb_pdf.pdf  used on input line 109.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+)
+Overfull \hbox (12.27585pt too wide) in paragraph at lines 784--785
+[][] 
+ []
+
+[8 <./figures/fig_PsigmaS_gabaix_pdf.pdf> <./figures/fig_PsigmaS_wb_pdf.pdf
+
+pdfTeX warning: pdflatex (file ./figures/fig_PsigmaS_wb_pdf.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [9] [10] [11] [12] (figures/fig_MAD_binned.tex
+<figures/fig_MAD_binned_pdf.pdf, id=457, 361.35pt x 216.81pt>
+File: figures/fig_MAD_binned_pdf.pdf Graphic file (type pdf)
+<use figures/fig_MAD_binned_pdf.pdf>
+Package pdftex.def Info: figures/fig_MAD_binned_pdf.pdf  used on input line 121.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+) (figures/fig_MAD_rescaled_binned.tex
+<figures/fig_MAD_rescaled_binned_pdf.pdf, id=458, 361.35pt x 216.81pt>
+File: figures/fig_MAD_rescaled_binned_pdf.pdf Graphic file (type pdf)
+<use figures/fig_MAD_rescaled_binned_pdf.pdf>
+Package pdftex.def Info: figures/fig_MAD_rescaled_binned_pdf.pdf  used on input line 117.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+) [13]
+Overfull \hbox (6.90831pt too wide) in paragraph at lines 1421--1435
+[]\T1/lmr/m/n/10.95 (-20) A Max-i-mum Like-li-hood es-ti-ma-tion of the pa-ram-e-ters yields $\OT1/lmr/m/n/10.95 (-20) 4\OML/lmm/m/it/10.95 :\OT1/lmr/m/n/10.95 (-20) 788(0\OML/lmm/m/it/10.95 :\OT1/lmr/m/n/10.95 (-20) 139)$\T1/lmr/m/n/10.95 (-20) , $\OT1/lmr/m/n/10.95 (-20) 4\OML/lmm/m/it/10.95 :\OT1/lmr/m/n/10.95 (-20) 620(0\OML/lmm/m/it/10.95 :\OT1/lmr/m/n/10.95 (-20) 086)$ \T1/lmr/m/n/10.95 (-20) and $\OT1/lmr/m/n/10.95 (-20) 0\OML/lmm/m/it/10.95 :\OT1/lmr/m/n/10.95 (-20) 326(0\OML/lmm/m/it/10.95 :\OT1/lmr/m/n/10.95 (-20) 010)$
+ []
+
+[14 <./figures/fig_MAD_binned_pdf.pdf> <./figures/fig_MAD_rescaled_binned_pdf.pdf
+
+pdfTeX warning: pdflatex (file ./figures/fig_MAD_rescaled_binned_pdf.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] (figures/fig_scaling_MAD_procedure1b.tex
+<figures/fig_scaling_MAD_procedure1b_pdf.pdf, id=497, 361.35pt x 216.81pt>
+File: figures/fig_scaling_MAD_procedure1b_pdf.pdf Graphic file (type pdf)
+<use figures/fig_scaling_MAD_procedure1b_pdf.pdf>
+Package pdftex.def Info: figures/fig_scaling_MAD_procedure1b_pdf.pdf  used on input line 197.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+) [15 <./figures/fig_scaling_MAD_procedure1b_pdf.pdf>] (figures/fig_gr_norm_centered_mixtures.tex
+<figures/fig_gr_norm_centered_mixtures_pdf.pdf, id=523, 361.35pt x 216.81pt>
+File: figures/fig_gr_norm_centered_mixtures_pdf.pdf Graphic file (type pdf)
+<use figures/fig_gr_norm_centered_mixtures_pdf.pdf>
+Package pdftex.def Info: figures/fig_gr_norm_centered_mixtures_pdf.pdf  used on input line 131.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+) (figures/fig_gr_rescaled.tex
+<figures/fig_gr_rescaled_pdf.pdf, id=524, 361.35pt x 216.81pt>
+File: figures/fig_gr_rescaled_pdf.pdf Graphic file (type pdf)
+<use figures/fig_gr_rescaled_pdf.pdf>
+Package pdftex.def Info: figures/fig_gr_rescaled_pdf.pdf  used on input line 133.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+) [16] [17 <./figures/fig_gr_norm_centered_mixtures_pdf.pdf> <./figures/fig_gr_rescaled_pdf.pdf
+
+pdfTeX warning: pdflatex (file ./figures/fig_gr_rescaled_pdf.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] (tables/gaussianization_nbins25_sym_firm.tex) (figures/fig_gr_rescaled_dt_kdens.tex
+<figures/fig_gr_rescaled_dt_kdens_pdf.pdf, id=587, 361.35pt x 216.81pt>
+File: figures/fig_gr_rescaled_dt_kdens_pdf.pdf Graphic file (type pdf)
+<use figures/fig_gr_rescaled_dt_kdens_pdf.pdf>
+Package pdftex.def Info: figures/fig_gr_rescaled_dt_kdens_pdf.pdf  used on input line 131.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+) (figures/fig_gr_rescaled_dt_gse.tex
+<figures/fig_gr_rescaled_dt_gse_pdf.pdf, id=588, 361.35pt x 216.81pt>
+File: figures/fig_gr_rescaled_dt_gse_pdf.pdf Graphic file (type pdf)
+<use figures/fig_gr_rescaled_dt_gse_pdf.pdf>
+Package pdftex.def Info: figures/fig_gr_rescaled_dt_gse_pdf.pdf  used on input line 131.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+) [18] [19] (figures/fig_gr_rescaled_bin25_kdens_firm.tex
+<figures/fig_gr_rescaled_bin25_kdens_firm_pdf.pdf, id=615, 361.35pt x 216.81pt>
+File: figures/fig_gr_rescaled_bin25_kdens_firm_pdf.pdf Graphic file (type pdf)
+<use figures/fig_gr_rescaled_bin25_kdens_firm_pdf.pdf>
+Package pdftex.def Info: figures/fig_gr_rescaled_bin25_kdens_firm_pdf.pdf  used on input line 135.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+) (figures/fig_gr_rescaled_bin25_gse_firm.tex
+<figures/fig_gr_rescaled_bin25_gse_firm_pdf.pdf, id=616, 361.35pt x 216.81pt>
+File: figures/fig_gr_rescaled_bin25_gse_firm_pdf.pdf Graphic file (type pdf)
+<use figures/fig_gr_rescaled_bin25_gse_firm_pdf.pdf>
+Package pdftex.def Info: figures/fig_gr_rescaled_bin25_gse_firm_pdf.pdf  used on input line 135.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+) [20 <./figures/fig_gr_rescaled_dt_kdens_pdf.pdf> <./figures/fig_gr_rescaled_dt_gse_pdf.pdf
+
+pdfTeX warning: pdflatex (file ./figures/fig_gr_rescaled_dt_gse_pdf.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./figures/fig_gr_rescaled_bin25_kdens_firm_pdf.pdf
+
+pdfTeX warning: pdflatex (file ./figures/fig_gr_rescaled_bin25_kdens_firm_pdf.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./figures/fig_gr_rescaled_bin25_gse_firm_pdf.pdf
+
+pdfTeX warning: pdflatex (file ./figures/fig_gr_rescaled_bin25_gse_firm_pdf.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [21] [22] (paper.bbl
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/10'.
+(microtype)             Ignoring protrusion settings for this character.
+) [23] [24] [25]
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2232   F
+          or fixed $K\gg1$, the distribution of the Herfindahl-Hirschman
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2290   F
+          or all $q>0$, the moments of $\mathcal{H}$ conditional on $K$ are [26]
+Overfull \hbox (2.05554pt too wide) detected at line 2316
+[][][] []
+ []
+
+[27]
+Overfull \hbox (24.53822pt too wide) detected at line 2457
+[]
+ []
+
+[28] [29]
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2605   T
+          he firm size distribution behaves, for large $S$, as the sum of the
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2647   T
+          he distribution of growth rate volatilities conditional on size $S... [30]
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2704     F
+            or $1 \leq \alpha < \mu$, the integer moments of the growth rate
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2783   T
+          he distribution of growth rates conditional on size $S$ and on [31] [32]
+pdfTeX warning (ext4): destination with the same identifier (name{proposition.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2898   P
+          roposition~\ref{prop:fsd}, \ref{prop:vol_dist}, [33] (tables/desc.stats.tex) (tables/desc.stats_firm.tex) (tables/desc.stats.gr.firm.bin25.tex) [34] (figures/fig_MAD_binned_hump.tex
+<figures/fig_MAD_binned_hump_pdf.pdf, id=874, 361.35pt x 216.81pt>
+File: figures/fig_MAD_binned_hump_pdf.pdf Graphic file (type pdf)
+<use figures/fig_MAD_binned_hump_pdf.pdf>
+Package pdftex.def Info: figures/fig_MAD_binned_hump_pdf.pdf  used on input line 239.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+) (tables/bimodality.test.tex) (figures/fig_SD_binned.tex
+<figures/fig_SD_binned_pdf.pdf, id=877, 361.35pt x 216.81pt>
+File: figures/fig_SD_binned_pdf.pdf Graphic file (type pdf)
+<use figures/fig_SD_binned_pdf.pdf>
+Package pdftex.def Info: figures/fig_SD_binned_pdf.pdf  used on input line 119.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+) (figures/fig_SD_rescaled_binned.tex
+<figures/fig_SD_rescaled_binned_pdf.pdf, id=878, 361.35pt x 216.81pt>
+File: figures/fig_SD_rescaled_binned_pdf.pdf Graphic file (type pdf)
+<use figures/fig_SD_rescaled_binned_pdf.pdf>
+Package pdftex.def Info: figures/fig_SD_rescaled_binned_pdf.pdf  used on input line 117.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+) [35 <./figures/fig_MAD_binned_hump_pdf.pdf>] (figures/fig_scaling_SD_procedure1b.tex
+<figures/fig_scaling_SD_procedure1b_pdf.pdf, id=887, 361.35pt x 216.81pt>
+File: figures/fig_scaling_SD_procedure1b_pdf.pdf Graphic file (type pdf)
+<use figures/fig_scaling_SD_procedure1b_pdf.pdf>
+Package pdftex.def Info: figures/fig_scaling_SD_procedure1b_pdf.pdf  used on input line 205.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+) (tables/desc.stats_20obs.tex) [36 <./figures/fig_SD_binned_pdf.pdf> <./figures/fig_SD_rescaled_binned_pdf.pdf
+
+pdfTeX warning: pdflatex (file ./figures/fig_SD_rescaled_binned_pdf.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./figures/fig_scaling_SD_procedure1b_pdf.pdf
+
+pdfTeX warning: pdflatex (file ./figures/fig_scaling_SD_procedure1b_pdf.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] (tables/desc.stats_20obs_firm.tex) (figures/fig_MAD_binned_20obs.tex
+<figures/fig_MAD_binned_20obs_pdf.pdf, id=901, 361.35pt x 216.81pt>
+File: figures/fig_MAD_binned_20obs_pdf.pdf Graphic file (type pdf)
+<use figures/fig_MAD_binned_20obs_pdf.pdf>
+Package pdftex.def Info: figures/fig_MAD_binned_20obs_pdf.pdf  used on input line 123.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+) (figures/fig_MAD_rescaled_binned_20obs.tex
+<figures/fig_MAD_rescaled_binned_20obs_pdf.pdf, id=902, 361.35pt x 216.81pt>
+File: figures/fig_MAD_rescaled_binned_20obs_pdf.pdf Graphic file (type pdf)
+<use figures/fig_MAD_rescaled_binned_20obs_pdf.pdf>
+Package pdftex.def Info: figures/fig_MAD_rescaled_binned_20obs_pdf.pdf  used on input line 117.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+) (figures/fig_scaling_MAD_procedure1b_20obs.tex
+<figures/fig_scaling_MAD_procedure1b_20obs_pdf.pdf, id=903, 361.35pt x 216.81pt>
+File: figures/fig_scaling_MAD_procedure1b_20obs_pdf.pdf Graphic file (type pdf)
+<use figures/fig_scaling_MAD_procedure1b_20obs_pdf.pdf>
+Package pdftex.def Info: figures/fig_scaling_MAD_procedure1b_20obs_pdf.pdf  used on input line 205.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+) [37 <./figures/fig_MAD_binned_20obs_pdf.pdf> <./figures/fig_MAD_rescaled_binned_20obs_pdf.pdf
+
+pdfTeX warning: pdflatex (file ./figures/fig_MAD_rescaled_binned_20obs_pdf.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] (tables/gaussianization_nbins25_20obs_sym_firm.tex) [38 <./figures/fig_scaling_MAD_procedure1b_20obs_pdf.pdf>] (tables/desc.stats_fyr_end_Dec.tex) (tables/desc.stats_fyr_end_Dec_firm.tex) (figures/fig_MAD_binned_fyr_end_Dec.tex
+<figures/fig_MAD_binned_fyr_end_Dec_pdf.pdf, id=929, 361.35pt x 216.81pt>
+File: figures/fig_MAD_binned_fyr_end_Dec_pdf.pdf Graphic file (type pdf)
+<use figures/fig_MAD_binned_fyr_end_Dec_pdf.pdf>
+Package pdftex.def Info: figures/fig_MAD_binned_fyr_end_Dec_pdf.pdf  used on input line 123.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+) (figures/fig_MAD_rescaled_binned_fyr_end_Dec.tex
+<figures/fig_MAD_rescaled_binned_fyr_end_Dec_pdf.pdf, id=930, 361.35pt x 216.81pt>
+File: figures/fig_MAD_rescaled_binned_fyr_end_Dec_pdf.pdf Graphic file (type pdf)
+<use figures/fig_MAD_rescaled_binned_fyr_end_Dec_pdf.pdf>
+Package pdftex.def Info: figures/fig_MAD_rescaled_binned_fyr_end_Dec_pdf.pdf  used on input line 117.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+) (figures/fig_scaling_MAD_procedure1b_fyr_end_Dec.tex
+<figures/fig_scaling_MAD_procedure1b_fyr_end_Dec_pdf.pdf, id=931, 361.35pt x 216.81pt>
+File: figures/fig_scaling_MAD_procedure1b_fyr_end_Dec_pdf.pdf Graphic file (type pdf)
+<use figures/fig_scaling_MAD_procedure1b_fyr_end_Dec_pdf.pdf>
+Package pdftex.def Info: figures/fig_scaling_MAD_procedure1b_fyr_end_Dec_pdf.pdf  used on input line 207.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+) [39 <./figures/fig_MAD_binned_fyr_end_Dec_pdf.pdf> <./figures/fig_MAD_rescaled_binned_fyr_end_Dec_pdf.pdf
+
+pdfTeX warning: pdflatex (file ./figures/fig_MAD_rescaled_binned_fyr_end_Dec_pdf.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] (tables/gaussianization_nbins25_fyr_end_Dec_sym_firm.tex) [40 <./figures/fig_scaling_MAD_procedure1b_fyr_end_Dec_pdf.pdf>] (paper.aux)
+ ***********
+LaTeX2e <2023-11-01>
+L3 programming layer <2023-11-09>
+ ***********
+Package rerunfilecheck Info: File `paper.out' has not changed.
+(rerunfilecheck)             Checksum: AC61852043009BA018E52038A60AD3CD;4952.
+ ) 
+Here is how much of TeX's memory you used:
+ 26255 strings out of 474587
+ 463238 string characters out of 5745701
+ 1976558 words of memory out of 5000000
+ 47068 multiletter control sequences out of 15000+600000
+ 690031 words of font info for 380 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 75i,21n,79p,1059b,618s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri7.pfb><C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri8.pfb><C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy5.pfb><C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy9.pfb><C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb><C:/Users/longo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
+Output written on paper.pdf (40 pages, 2816580 bytes).
+PDF statistics:
+ 1147 PDF objects out of 1200 (max. 8388607)
+ 252 named destinations out of 1000 (max. 500000)
+ 57652 words of extra memory for PDF output out of 61914 (max. 10000000)
+
