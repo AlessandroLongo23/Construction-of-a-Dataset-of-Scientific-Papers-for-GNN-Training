@@ -1,0 +1,148 @@
+\documentclass{article} %
+\usepackage[preprint]{neurips_2023}
+
+
+
+\usepackage[utf8]{inputenc} %
+\usepackage[T1]{fontenc}    %
+\usepackage[hidelinks,colorlinks=true,linkcolor=blue,citecolor=blue]{hyperref}
+\usepackage{url}            %
+\usepackage{booktabs}       %
+\usepackage{amsfonts}       %
+\usepackage{nicefrac}       %
+\usepackage{microtype}      %
+\usepackage{xcolor}         %
+
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{graphicx}
+
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage[noend]{algpseudocode}
+\usepackage{std_definitions}
+\usepackage{longtable}
+\usepackage{bbm}
+
+
+\input{notation}
+
+\newcommand{\ggao}[1]{\textcolor{blue}{[GG: #1]}}
+\newcommand{\dipendra}[1]{\textcolor{red}{[DM: #1]}}
+
+\newcommand{\algorithmautorefname}{Algorithm}
+
+\newcommand{\framework}{PRELUDE}
+\newcommand{\algname}{CIPHER}
+
+\newcommand\cn{$^\clubsuit$}
+\newcommand\msr{$^\diamondsuit$}
+
+\usepackage{pgfplots}
+\usepackage{filecontents}
+\usepackage{subfig}
+\usepgfplotslibrary{groupplots}
+
+\usepackage{ulem}   %
+\normalem
+
+\definecolor{oracle}{HTML}{b7b7b7} %
+\definecolor{nolearning}{HTML}{000000} %
+\definecolor{continual}{HTML}{9900ff} %
+\definecolor{ee}{HTML}{9900ff} %
+\definecolor{iclbert}{HTML}{f1c232} %
+\definecolor{iclmpnet}{HTML}{e06666} %
+\definecolor{bert1}{HTML}{3c78d8}
+\definecolor{bert5}{HTML}{3c78d8} %
+\definecolor{mpnet1}{HTML}{3CB371} %
+\definecolor{mpnet5}{HTML}{3CB371}
+
+\definecolor{darkorange1}{HTML}{e69138} %
+
+
+\definecolor{context}{HTML}{e69138} %
+\definecolor{revision}{HTML}{cc4125} %
+\definecolor{response}{HTML}{6aa84f} %
+\definecolor{preference}{HTML}{3c78d8} %
+
+\newcommand{\context}[1]{\textbf{\textcolor{context}{#1}}}
+\newcommand{\response}[1]{\textbf{\textcolor{response}{#1}}}
+\newcommand{\preference}[1]{\textbf{\textcolor{preference}{#1}}}
+\newcommand{\revision}[1]{\textbf{\textcolor{revision}{#1}}}
+
+\newcounter{protocol}
+\makeatletter
+\newenvironment{protocol}[1][htb]{%
+  \let\c@algorithm\c@protocol
+  \renewcommand{\ALG@name}{Protocol}%
+  \begin{algorithm}[#1]%
+  }{\end{algorithm}
+}
+\makeatother
+
+
+\title{
+Aligning LLM Agents by Learning Latent Preference from User Edits
+}
+
+
+
+
+
+\author{
+Ge Gao\cn$^*$ \hspace{0.3em} Alexey Taymanov\msr$^*$  \hspace{0.3em} Eduardo Salinas\msr \hspace{0.3em}  Paul Mineiro\msr \hspace{0.3em} Dipendra Misra\msr  \\
+\hspace{0.05em} Department of Computer Science, Cornell University\cn \hspace{1.1em} Microsoft Research New York\msr \\
+\texttt{ggao@cs.cornell.edu}
+\hspace{0.2em} \texttt{\{ataymano, edus, pmineiro, dimisra\}@microsoft.com}  
+}
+
+
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+
+
+\begin{document}
+
+
+\maketitle
+
+\renewcommand*\thefootnote{\textbf{$*$}}\footnotetext{Equal contribution.}
+\renewcommand*{\thefootnote}{\arabic{footnote}}
+\setcounter{footnote}{0}
+
+\input{abstract}
+
+\input{introduction}
+
+\input{framework}
+
+\input{learning}
+
+\input{results}
+
+\input{related_work}
+
+\input{conclusion}
+
+
+\subsubsection*{Acknowledgments}
+Gao was a research intern in MSR NYC, and later was partially  supported by NSF project \#1901030. All content represents the opinion of the authors, which is not necessarily shared or endorsed by their respective employers and/or sponsors.
+We thank MSR NYC research community, Jonathan D. Chang, Daniel D. Lee, Claire Cardie, and Sasha Rush for helpful discussions and support. 
+
+
+\bibliography{neurips_2023}
+\bibliographystyle{iclr2024_conference}
+
+\newpage
+\appendix
+\section*{{\Large Appendix}}
+
+
+\input{app_implementation}
+
+\input{app_analysis}
+
+
+\end{document}

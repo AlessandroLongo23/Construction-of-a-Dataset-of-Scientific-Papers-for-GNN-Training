@@ -1,0 +1,479 @@
+
+\section{Experiment}
+
+In this section, we first introduce two interactive tasks for evaluating agents that learn from user edits. These tasks can be used more broadly even outside the \framework~framework, and can be of independent interest. We then describe our baselines and provide implementation details of~\algname. Finally, we provide quantitative results in terms of user edit cost and qualitative analysis of the learned preferences.\looseness=-1
+
+\subsection{Two Interactive Writing Assistant Environments for Learning from User Edits}
+
+\paragraph{Task.} We introduce two tasks inspired by the use of LLMs as writing assistants~\citep{mysore2023pearl,shen2023beyond,wang2023writing}. In the first task, we evaluate the agent's ability to summarize a given document. We use documents from 5 existing sources listed in~\pref{tab:latent_user_pref}.\footnote{\autoref{tab:context_link_example} in Appendix provides links to each source dataset, used as user-provided context in our tasks.}
+These sources represent a diverse category of documents that a writing assistant would typically encounter, including news articles that are formal and concise, movie reviews that are informal, and paper abstracts that are technical. 
+In the second task, we evaluate the agent's ability to compose an email given notes. For this task, we use notes from four different sources including a variety of tasks such as writing emails to friends, describing reports to managers, and writing reviews for colleagues. In any given round, the user is provided a context that is a document from one of the document sources for the given task. Importantly, the agent is \emph{unaware of the source of the given document} which as we discuss later, will determine the user preference. For both tasks, we run an experiment for $T = 200$ rounds, with an equal number of randomly sampled documents from each document source. We mix documents from different sources and shuffle them to remove any temporal correlation in document source across rounds.\looseness=-1%
+
+
+
+
+
+
+
+
+\begin{table}[t!]
+    \centering \small
+    \setlength{\tabcolsep}{4.5pt}
+    \caption{Latent user preference design, specific to the document source.}   
+    \begin{tabular}{p{0.2\linewidth} p{0.43\linewidth} p{0.3\linewidth}}
+        \toprule
+        \textbf{Doc Source} & \textbf{Latent User Preference} & \textbf{Scenario} \\
+        \midrule
+        \textbf{Summarization} & &  \\
+         News article\newline\citep{see-etal-2017-get} & targeted to young children, storytelling, short sentences, playful language, interactive, positive & introduce a political news to kids \\
+         Reddit post\newline\citep{Stiennon2020LearningTS} & second person narrative, brief, show emotions, invoke personal reflection, immersive & for character development in creative writing \\
+         Wikipedia page\newline\citep{wikidump} & bullet points, parallel structure, brief & take notes for key knowledge \\
+         Paper abstract\newline\citep{clement2019arxiv} & tweet style, simple English, inquisitive, skillful foreshadowing, with emojis & promote a paper to invoke more attention and interests \\
+         Movie review\newline\citep{maas-EtAl:2011:ACL-HLT2011} & question answering style, direct, concise & quickly get main opinions \\
+        \midrule
+         \textbf{Email Writing} & &  \\
+         Personal problem\newline\citep{Stiennon2020LearningTS} &  informal, conversational, short, no closing & share life with friends  \\
+         Paper review\newline\citep{hua-etal-2019-argument} & casual tone, positive, clear, call to action & peer review to colleague \\
+         Paper tweet\newline\citep{Bar_PaperTweet} & engaging, personalized, professional tone, thankful closing & networking emails for researchers \\
+         Paper summary\newline\citep{Kershaw2020ElsevierOC} & structured, straight to the points, respectful, professional greeting and closing & milestone report to superiors \\
+        \bottomrule
+    \end{tabular} 
+    \label{tab:latent_user_pref}
+\end{table}
+
+\paragraph{Two-Stage GPT-4 Simulated User.} We simulate a user that can edit a given response. We define a set of \emph{latent user preferences} for the user that vary based on the document source.~\pref{tab:latent_user_pref} lists the preference and the corresponding document source. This captures the context-dependent nature of user preferences as the document source influences the type of context. For example, the \emph{Personal problem} document source contains documents pertaining to discussions with a friend, and a user may have a different preference when writing an email to a friend compared to writing an email to a colleague. In real-world settings, the context dependence of the user preference can be more complex than just the document source. We assume that our user is aware of the document source $d_t$ of a given context $x_t$. This implies, that we can express the true user preference for $x_t$ as $f^\star_t = F(d_t)$ where $F$ maps a given document source to the user preference. Recall that the \emph{agent in our learning setup is never provided the document source of any context}.
+
+We model our user using GPT-4 with a two-stage approach. Given an agent response $y_t$ and the context $x_t$, we first query GPT-4 to check if the given response satisfies the preference in $f^\star_t$. If the answer is yes, then the user preforms no edits and returns $y'_t = y_t$. If the answer is no, then we use GPT-4 to generate the edited response $y'_t$ given $y_t$ and $f^\star_t$. We use prompting to condition GPT-4 on these latent preferences. %
+ We provide examples of edits made by our GPT-4 user in~\pref{tab:user_edits} in~\pref{app:addition_details}. We found that our two-stage GPT-4 user can generate high-quality edits, consistent with observations in prior work that LLM-written feedback is high-quality and useful to learn from~\citep{Bai2022ConstitutionalAH,Saunders2022SelfcritiquingMF}. We adopted a two-stage process since we found that using GPT-4 to directly edit the response $y_t$ always resulted in edits even when the response satisfied the preference $f^\star_t$. %
+We evaluated several different prompts for modeling our two-stage GPT-4 user until we found a prompt such that an oracle GPT-4 agent with access to $f^\star_t$ achieves a minimal user cost.\looseness=-1 %
+
+\paragraph{Evaluation Metric.} We propose three metrics for evaluating agents learning from user edits. Our main metric is the cumulative user edit cost $\sum_{t=1}^T c_t$ over $T$ rounds. In any given round, we compute the user edit cost $c_t = \cost(y_t, y'_t)$ using Levenshtein edit distance between agent response $y_t$ and user edits $y'_t$. To compute the edit distance, we perform BPE tokenization using Tiktoken tokenizer, and compute the edit distance in the token space.
+In general, one can learn a metric that better captures the cognitive load associated with a user edit.
+However, Levenshtein edit distance provides a clean, transparent metric that is easy to interpret. Additionally, it doesn't have concerns shared by learned metrics such as erroneous evaluations when applying the metric to examples not covered by the metric's training distribution.
+
+For \algname~and any other method in the \framework~framework, we additionally evaluate the accuracy of the inferred user preference $f_t$ used to generate the response $y_t$. Formally, given a context $x_t$ containing a document from source $d_t$, we evaluate if the inferred preference $f_t$ is closer to the true preference $f^\star_t = F(d_t)$ than preference $F(d)$ of any other document source $d \ne d_t$. Let there be $N$ document sources for a given task and we index $d \in \{1, 2, \cdots, N\}$. Then we compute this metric as $\frac{1}{T}\sum_{t=1}^{T} \mathbbm{1}\{d_t = \arg\max_{d \in [N]} \text{BERTScore}(f_t, F(d))\}$, where \text{BERTScore}~\citep{bert-score} is a popular text similarity metric.\footnote{We use the \textit{microsoft/deberta-xlarge-mnli} to implement BERTScore.}
+
+Finally, we evaluate the token expense associated with querying the LLM across all methods. We compute the total number of tokens both generated by or provided as input to the LLM across all rounds. This is a typical metric used by popular LLM providers to charge their customers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Details of \algname~and Comparison Systems}
+
+We use GPT-4 as our base LLM for \algname~and all baselines. We do not perform fine-tuning of the GPT-4 and do not add any additional parameters to the model. We use a prompt-based GPT-4 agent for all methods that uses a single prompt with greedy decoding to generate the response. Our main method \algname~and the baselines, can be extended to more complex language agents that perform multiple steps of reasoning on top of the base LLM before generating a response.
+
+\paragraph{\algname~Details.} We use a simple agent that uses GPT-4 with a prompt template to generate the response $y_t$ given the context $x_t$ and preference $f_t$. We list templates in~\pref{tab:agent_prompt_template} in~\pref{app:addition_details}. We experiment with MPNET~\citep{Song2020MPNetMA} and BERT~\citep{Devlin2019BERTPO} as our two context representation functions $\phi$, and use cosine similarity for retrieval. We experiment with two different values of the number of retrieved examples $k \in \{1, 5\}$. 
+
+
+
+\paragraph{Baselines.} We evaluate \algname~against baselines that either perform no learning, or learn context-agnostic preferences and against methods that do not learn preferences but directly use past user edits for generating a response. 
+
+
+    
+
+\begin{enumerate}
+    \item \textit{No learning:} The agent performs no learning based on interaction with the user. In each step, the agent generates a response $y_t$ given the context $x_t$.
+
+    \item \textit{Explore-then-exploit (E-then-e) LPI:} This baseline is based on the classic explore-then-exploit strategy in interactive learning~\citep{garivier2016explore}. The agent first generates responses for the first $T_e$ rounds without performing any learning (exploration stage). It then infers a single user preference $\tilde{f}_e$ using the user edits in the first $T_e$ rounds using the LPI step similar to~\pref{line:infer_preference} in \algname(\pref{alg:cipher}). It then uses the learned preference to generate the response for all remaining rounds (exploitation step).
+
+    \item \textit{Continual LPI:} This method is similar to explore-then-exploit except that it never stops exploring. In any given round $t$, it uses the data of all past edits~$\{(y_i, y'_i)\}_{i=1}^{t-1}$ to learn a preference $f_t$ by performing the LPI step. It then generates a response using this preference.
+In contrast, to explore-then-exploit approach, Continual LPI can avoid overfitting to the first $T_e$ rounds, but both approaches learn preferences that are independent of $x_t$.
+    \item \textit{ICL-edit:} This is a standard retrieval-based in-context learning (ICL) baseline~\citep{brown2020language}. In a given round $t$, the agent first retrieves the closest $k$ examples $\{(y_{z_\ell}, y'_{z_\ell})\}_{\ell=1}^k$ to the given context $x_t$ using the representation function $\phi$. It then creates an ICL prompt containing these $k$ examples where $y_{z_\ell}$ is presented as the input, and $y'_{z_\ell}$ is presented as the desired output. The agent then uses the context $x_t$ and the ICL prompt to generate the response. This approach doesn't infer preferences but must instead use the user edit data directly to align to the given user preference. However, unlike explore-then-exploit LPI and Continual LPI, this approach can perform context-dependent learning as the generated response attends on both the given context $x_t$ and the historical data.
+\end{enumerate}
+
+\paragraph{Baseline Hyperparameters.} For \textit{explore-then-exploit LPI} and \textit{continual LPI} baselines, we set the number of exploration $T_e$ as 5. For \textit{ICL-edit} baselines, we experiment with different $k$ values for retrieval, and report our best results with $k=5$.
+
+\paragraph{Oracle Method.} We additionally run an \textit{oracle preference} method to provide an approximated upper bound on performance. In each round $t$, we let the GPT-4 agent generate a response by conditioning on the ground-truth latent preference $f^\star_t$ and the context $x_t$. This method can test whether our setup is well-defined, e.g., in a poorly designed setup, the user always edits the agent response no matter what the agent generates including providing user edits back to the user, and thus no method can effectively minimize the cost over time in this case. If the oracle method achieves a zero or a minimal user edit cost, then learning the optimal preference leads to success.
+
+
+\subsection{Main Result and Discussion.} 
+
+
+
+
+
+
+
+\paragraph{Main Results.}
+\autoref{tab:pfm} reports the performance of baselines and our methods on summarization and email writing tasks on three metrics: \emph{edit distance} which measures cumulative user edit cost, \emph{accuracy} which measures mean preference classification accuracy, and \emph{expense} measuring the total BPE token cost of querying LLM.\footnote{\autoref{tab:expense_breakdown} in Appendix shows the breakdown of expense in terms of input and output.} We report the mean and standard deviation across 3 different random seeds.%
+\footnote{We randomize the context sampling from source datasets, so experiments on different seeds contain different sets of input contexts. On the same seed, experiments across different methods are strictly comparable, as both the set of input contexts and the order of input context seen are the same in our implementation.} %
+
+\begin{table}[h!]
+\centering \small
+\setlength{\tabcolsep}{5pt}
+\caption{Performance of baselines and our methods in terms of cumulative edit distance cost and classification accuracy. $\mu_\sigma$ denotes the mean $\mu$ and standard deviation $\sigma$ across 3 runs over different seeds. Expense column shows budget as the average number of input and output BPE tokens across 3 runs (unit is $\cdot 10^5$). We use \textit{-k} in method names to denote that we use $k$ retrieved examples. Numbers in bold are the best performance in each column excluding \textit{oracle preference} method, underline for the second best, and dotted underline for the third best.}
+\begin{tabular}{l c c c c c c }
+\toprule
+    \textbf{Method} & \multicolumn{3}{c}{\textbf{Summarization}} & \multicolumn{3}{c}{\textbf{Email Writing}} \\
+    & Edit Distance$\downarrow$ & Accuracy$\uparrow$ & Expense$\downarrow$ & Edit Distance$\downarrow$ & Accuracy$\uparrow$ & Expense$\downarrow$ \\
+\midrule
+    Oracle Preference & \hspace{2pt} 6,573\textsubscript{1,451} & 1.000 & 1.67 &  1,851\textsubscript{243}  & 1.000 & 1.62 \\
+\midrule
+    No Learning &  48,269\textsubscript{957} \hspace{2pt} & - & 1.50 & 31,103\textsubscript{900} \hspace{2pt}  & - & 1.65 \\
+    E-then-e LPI & \hspace{2pt} 65,218\textsubscript{17,466} &  0.218\textsubscript{0.003} & 1.99 & 24,562\textsubscript{1,022} & 0.263\textsubscript{0.003} & 1.73 \\
+    Continual LPI & 57,915\textsubscript{2,210} & 0.233\textsubscript{0.010} & 8.89 & 26,852\textsubscript{1,464} & 0.243\textsubscript{0.019} & 8.63 \\ %
+\midrule
+    ICL-edit-5-MPNET & 38,560\textsubscript{1,044} &  - & 8.00 & 32,405\textsubscript{1,307} & - & 12.12 \\
+    ICL-edit-5-BERT & 39,734\textsubscript{1,929} & - & 7.96 & 30,949\textsubscript{3,250} & - & 11.55 \\
+\midrule
+    CIPHER-1-MPNET & \underline{33,926}\textsubscript{4,000} & \underline{0.520}\textsubscript{0.022} & 2.74 & \dotuline{10,781}\textsubscript{1,711} & \dotuline{0.435}\textsubscript{0.084} & 1.94 \\
+    CIPHER-5-MPNET & \textbf{32,974}\textsubscript{195} \hspace{2pt} & \dotuline{0.478}\textsubscript{0.010} & 3.00 & \underline{10,058}\textsubscript{1,709} & \underline{0.467}\textsubscript{0.081}& 2.09 \\
+    CIPHER-1-BERT & 37,637\textsubscript{3,025} & \textbf{0.565}\textsubscript{0.053} & 2.81 & 12,634\textsubscript{4,868}& \textbf{0.487}\textsubscript{0.125}& 1.99 \\
+    CIPHER-5-BERT & \dotuline{35,811}\textsubscript{3,384} & \dotuline{0.478}\textsubscript{0.028} & 3.03 & \hspace{2pt} \textbf{8,391}\textsubscript{3,038} & 0.363\textsubscript{0.075}& 2.22 \\
+\bottomrule
+\end{tabular}
+    \label{tab:pfm}
+\end{table}
+
+
+
+\paragraph{Discussion of Main Result.} %
+We observe that not performing learning results in a high edit cost, whereas using the Oracle preferences achieves a significantly smaller edit cost. This shows that our environments are sound and well-conditioned. E-then-e LPI and Continual LPI learn context-agnostic preferences which cannot capture the context-dependent preferences in the environments and end up doing poorly. For the summarization task, they end up with a higher edit distance than even performing no learning. One explanation is that using context-agnostic preferences can push the model to specialize to a given preference much more than the base model, resulting in more edits when that preference is incorrect. We see this in preference accuracy which is low for both of these baselines, and lower for the summarization task than the email writing task where they outperform no learning baselines. Further, Continual LPI has a higher expense cost due to constantly querying the LLM to infer the user preference.
+
+ICL-edit baselines perform significantly better on the summarization task. However, using a list of user edits in the prompt results in a higher token expense cost, as the responses and their edits can be significantly long in practice. Further, the ICL-edit baselines provide no interpretable explanation for their response or for explaining user behavior.
+
+Finally, \algname~achieves the smallest edit distance cost reducing edits by 31\% in the summarization task and 73\% in the email writing task. We observe that retrieving $k=5$ preferences and aggregating them achieves lower edit distance, however, the choice of ideal representation $\phi$ seems task-dependent. Further, \algname~achieves the highest preference accuracy showing that \algname~can learn preferences that correlate more with the ground truth preference than preferences of other document sources. Note that the performance of a random preference classifier is only 20\% for summarization and 25\% for email writing. Further, \algname~achieves a smaller cost than ICL-edit and Continual LPI baselines, as it doesn't use long user edits in the prompt for generating a response. Overall, \algname~provides a cheap, more effective, and interpretable method than our baselines.
+
+
+\input{csv_data}
+
+\begin{figure*}[t!]
+\centering \small
+\caption{Learning curves of different methods based on cumulative cost over time (average across 3 seeds). In the legend, \textit{-k} means with top $k$ retrieved examples, \textit{-B} for BERT, and \textit{-M} for MPNET.}
+\begin{tikzpicture}
+\begin{groupplot}[
+       group style={
+          group size=2 by 1,
+          },
+       width=.51\textwidth,
+       height=.6\textwidth,
+       ymin=10, 
+       xmin=0, xmax=200, xtick distance=40],
+       \nextgroupplot[
+           title=\textbf{Summarization},title style={yshift=-1.5ex},
+           ylabel={Cumulative Cost}, ylabel style={yshift=-5ex},
+           ymin=50,
+           xlabel={Round},xlabel style={yshift=1ex},
+           legend style={at={(0.45, 0.71)}, anchor=east, 
+           legend cell align={left},
+           font=\scriptsize}
+       ]
+            \addplot [oracle, thick, smooth] table [x=idx, y=oracle, col sep=space] {summarization_cum_cost.csv};
+            \addplot [nolearning, densely dotted, thick, smooth] table [x=idx, y=no, col sep=space] {summarization_cum_cost.csv};
+            \addplot [ee, loosely dotted, thick,  smooth] table [x=idx, y=ee, col sep=space] {summarization_cum_cost.csv};
+            \addplot [continual, dotted, thick, smooth] table [x=idx, y=continual, col sep=space] {summarization_cum_cost.csv};
+            \addplot [iclbert, thick, smooth] table [x=idx, y=icl5bert, col sep=space] {summarization_cum_cost.csv};
+            \addplot [iclmpnet, thick, smooth] table [x=idx, y=icl5mpnet, col sep=space] {summarization_cum_cost.csv};
+            \addplot [bert1, dashed, thick, smooth] table [x=idx, y=bert1, col sep=space] {summarization_cum_cost.csv};
+            \addplot [bert5, thick, smooth] table [x=idx, y=bert5, col sep=space] {summarization_cum_cost.csv};
+            \addplot [mpnet1, dashdotted, thick, smooth] table [x=idx, y=mpnet1, col sep=space] {summarization_cum_cost.csv};
+            \addplot [mpnet5, thick, smooth] table [x=idx, y=mpnet5, col sep=space] {summarization_cum_cost.csv};
+
+            \addlegendimage{oracle}
+            \addlegendentry{Oracle}
+            \addlegendimage{nolearning, densely dotted}
+            \addlegendentry{No Learning}
+            \addlegendimage{ee, loosely dotted}
+            \addlegendentry{E-then-e}
+            \addlegendimage{continual, dotted}
+            \addlegendentry{Continual}
+            \addlegendimage{iclbert}
+            \addlegendentry{ICL-edit-B}
+            \addlegendimage{iclmpnet}
+            \addlegendentry{ICL-edit-M}
+            \addlegendimage{bert1, dashed}
+            \addlegendentry{CIPHER-1-B}
+            \addlegendimage{bert5}
+            \addlegendentry{CIPHER-5-B}
+            \addlegendimage{mpnet1, dashdotted}
+            \addlegendentry{CIPHER-1-M}
+            \addlegendimage{mpnet5}
+            \addlegendentry{CIPHER-5-M}
+
+
+       \nextgroupplot[
+           title=\textbf{Email Writing},title style={yshift=-1.5ex},
+           ylabel={Cumulative Cost}, ylabel style={yshift=-4ex},
+           xlabel={Round},xlabel style={yshift=1ex},
+           legend cell align={left},
+           legend style={at={(0.45, 0.71)}, anchor=east, 
+           font=\scriptsize}
+       ]
+            \addplot [oracle, thick, smooth] table [x=idx, y=oracle, col sep=space] {email_cum_cost.csv};
+            \addplot [nolearning, densely dotted, thick, smooth] table [x=idx, y=no, col sep=space] {email_cum_cost.csv};
+            \addplot [ee, loosely dotted, thick,  smooth] table [x=idx, y=ee, col sep=space] {email_cum_cost.csv};
+            \addplot [continual, dotted, thick, smooth] table [x=idx, y=continual, col sep=space] {email_cum_cost.csv};
+            \addplot [iclbert, thick, smooth] table [x=idx, y=icl5bert, col sep=space] {email_cum_cost.csv};
+            \addplot [iclmpnet, thick, smooth] table [x=idx, y=icl5mpnet, col sep=space] {email_cum_cost.csv};
+            \addplot [bert1, dashed, thick, smooth] table [x=idx, y=bert1, col sep=space] {email_cum_cost.csv};
+            \addplot [bert5, thick, smooth] table [x=idx, y=bert5, col sep=space] {email_cum_cost.csv};
+            \addplot [mpnet1, dashdotted, thick, smooth] table [x=idx, y=mpnet1, col sep=space] {email_cum_cost.csv};
+            \addplot [mpnet5, thick, smooth] table [x=idx, y=mpnet5, col sep=space] {email_cum_cost.csv};
+
+            \addlegendimage{oracle}
+            \addlegendentry{Oracle}
+            \addlegendimage{nolearning, densely dotted}
+            \addlegendentry{No Learning}
+            \addlegendimage{ee, loosely dotted}
+            \addlegendentry{E-then-e}
+            \addlegendimage{continual, dotted}
+            \addlegendentry{Continual}
+            \addlegendimage{iclbert}
+            \addlegendentry{ICL-edit-B}
+            \addlegendimage{iclmpnet}
+            \addlegendentry{ICL-edit-M}
+            \addlegendimage{bert1, dashed}
+            \addlegendentry{CIPHER-1-B}
+            \addlegendimage{bert5}
+            \addlegendentry{CIPHER-5-B}
+            \addlegendimage{mpnet1, dashdotted}
+            \addlegendentry{CIPHER-1-M}
+            \addlegendimage{mpnet5}
+            \addlegendentry{CIPHER-5-M}
+
+
+\end{groupplot}
+\end{tikzpicture}
+\label{fig:cumulative_cost}
+\vspace{-5pt}
+\end{figure*}
+
+\begin{filecontents*}{summarization_norm_cost.csv}
+idx	bert5	mpnet5	bert1	mpnet1	oracle
+0.0	0.6753636598587036	0.6362956762313843	0.6054462194442749	0.5897038578987122	0.08840475231409073
+1.0	0.6556925177574158	0.6245049238204956	0.6056128144264221	0.588263988494873	0.0975533053278923
+2.0	0.6698268055915833	0.6295325756072998	0.6165411472320557	0.6002307534217834	0.10092882066965103
+3.0	0.6658908128738403	0.6279641389846802	0.5993263721466064	0.5794553756713867	0.10940103232860565
+4.0	0.6763985753059387	0.6177546977996826	0.5986045598983765	0.5854026675224304	0.1266045719385147
+5.0	0.6363360285758972	0.5777470469474792	0.5541671514511108	0.540325403213501	0.1266045868396759
+6.0	0.6219873428344727	0.5640667676925659	0.5455933213233948	0.525288462638855	0.1094464659690857
+7.0	0.6192076206207275	0.5621858239173889	0.5518700480461121	0.5144451260566711	0.09867837280035019
+8.0	0.6179145574569702	0.5664615631103516	0.5739569664001465	0.4812667965888977	0.09289372712373734
+9.0	0.6070238351821899	0.5266585350036621	0.5558738708496094	0.44961461424827576	0.10488560050725937
+\end{filecontents*}
+
+\begin{filecontents*}{email_norm_cost.csv}
+
+idx	bert5	mpnet5	bert1	mpnet1	oracle
+0.0	0.22542321681976318	0.33194297552108765	0.2351323664188385	0.2653786242008209	0.03143947571516037
+1.0	0.2381657063961029	0.31878745555877686	0.22220838069915771	0.2667557895183563	0.021430032327771187
+2.0	0.23562169075012207	0.29396072030067444	0.2076101303100586	0.2670939564704895	0.021430032327771187
+3.0	0.20827631652355194	0.25417783856391907	0.19651563465595245	0.25664037466049194	0.021430032327771187
+4.0	0.1727907359600067	0.26683303713798523	0.19651563465595245	0.27121439576148987	0.021430032327771187
+5.0	0.1727907359600067	0.2591535449028015	0.1955079436302185	0.25112593173980713	0.012638230808079243
+6.0	0.17267851531505585	0.2591535449028015	0.1964525431394577	0.22028866410255432	0.012638230808079243
+7.0	0.17673301696777344	0.2591535449028015	0.2205398976802826	0.21874551475048065	0.02294934168457985
+8.0	0.19116201996803284	0.24772682785987854	0.19032590091228485	0.20416705310344696	0.02294934168457985
+9.0	0.1900297850370407	0.24903082847595215	0.1884804666042328	0.21733176708221436	0.03170057386159897
+
+
+\end{filecontents*}
+
+\begin{filecontents*}{summarization_zero_cost.csv}
+idx	bert5	mpnet5	bert1	mpnet1	oracle
+0.0	0.11666665971279144	0.18333332240581512	0.20000000298023224	0.23333331942558289	0.8333333730697632
+1.0	0.13333334028720856	0.18333333730697632	0.19999998807907104	0.23333331942558289	0.8166667222976685
+2.0	0.11666667461395264	0.18333333730697632	0.18333330750465393	0.21666666865348816	0.8166667819023132
+3.0	0.11666667461395264	0.18333333730697632	0.19999998807907104	0.23333331942558289	0.800000011920929
+4.0	0.10000000149011612	0.18333332240581512	0.19999997317790985	0.21666666865348816	0.7666667103767395
+5.0	0.15000000596046448	0.23333331942558289	0.2499999701976776	0.2666666805744171	0.7666667103767395
+6.0	0.1666666716337204	0.25	0.2666666507720947	0.28333336114883423	0.800000011920929
+7.0	0.1666666716337204	0.25	0.2666666507720947	0.30000001192092896	0.8166667222976685
+8.0	0.1666666716337204	0.25	0.25	0.3499999940395355	0.8333333730697632
+9.0	0.18333333730697632	0.30000001192092896	0.2666666507720947	0.38333335518836975	0.8166667222976685
+
+\end{filecontents*}
+\begin{filecontents*}{email_zero_cost.csv}
+idx	bert5	mpnet5	bert1	mpnet1	oracle
+0.0	0.699999988079071	0.5666666030883789	0.699999988079071	0.6333333253860474	0.949999988079071
+1.0	0.6833333969116211	0.5833333134651184	0.7166667580604553	0.6333333253860474	0.9666666984558105
+2.0	0.6833333969116211	0.6166666746139526	0.7333333492279053	0.6333333849906921	0.9666666984558105
+3.0	0.7166667580604553	0.6666666865348816	0.7500000596046448	0.6499999761581421	0.9666666984558105
+4.0	0.7666667699813843	0.6500000357627869	0.75	0.6333333849906921	0.9666666984558105
+5.0	0.7666667103767395	0.6666666865348816	0.7500000596046448	0.6666666865348816	0.98333340883255
+6.0	0.7666667103767395	0.6666666865348816	0.75	0.7166666984558105	0.98333340883255
+7.0	0.7666667103767395	0.6666666865348816	0.7166666984558105	0.7166666984558105	0.9666666984558105
+8.0	0.75	0.6833333373069763	0.75	0.7333333492279053	0.9666666984558105
+9.0	0.7500000596046448	0.6833333373069763	0.7500000596046448	0.7166666984558105	0.949999988079071
+\end{filecontents*}
+
+
+
+
+\begin{figure*}[t!]
+\centering \small
+\caption{Normalized cost and percentage of zero-cost examples of CIPHER over time, binned per 20 rounds to show the trend (average across 3 seeds). In the legend, \textit{-k} means with top $k$ retrieved examples, \textit{-B} for BERT, and \textit{-M} for MPNET.}
+\vspace{-5pt}
+\begin{tikzpicture}
+\begin{groupplot}[
+       group style={
+          group size=2 by 2,
+          vertical sep=25pt,
+          horizontal sep=40pt,
+          x descriptions at=edge bottom},
+       ylabel style={align=center, text width=.22\textwidth},
+       width=.51\textwidth,
+       height=.27\textwidth],
+       \nextgroupplot[
+              title=\textbf{Summarization},title style={yshift=-1.5ex},
+              ylabel={Normalized Cost}, ymin=0, ymax=0.7,
+              ylabel style={yshift=-3.5ex},
+              xmin=0, xmax=9, xtick distance=1.8,
+              xlabel={Round},xticklabels={-40,,40,80,120,160,200},
+              xlabel style={yshift=1ex},
+              legend style={at={(0.35, 1.35)}, anchor=west, font=\scriptsize,, legend columns=4},
+              ]
+            \addplot [bert5, mark=o, thick, smooth] table [x=idx, y=bert5, col sep=space] {summarization_norm_cost.csv};
+            \addplot [darkorange1, thick, dashdotted, smooth] table [x=idx, y=mpnet1, col sep=space] {summarization_norm_cost.csv};
+            \addplot [mpnet5, mark=x, thick, smooth] table [x=idx, y=mpnet5, col sep=space] {summarization_norm_cost.csv};
+            \addplot [black, dotted, thick, smooth] table [x=idx, y=oracle, col sep=space] {summarization_norm_cost.csv};
+
+
+            \addlegendimage{bert5}
+            \addlegendentry{CIPHER-5-B}
+            \addlegendimage{darkorange1}
+            \addlegendentry{CIPHER-1-M}
+            \addlegendimage{mpnet5}
+            \addlegendentry{CIPHER-5-M}
+            \addlegendimage{black}
+            \addlegendentry{Oracle}
+
+
+       \nextgroupplot[
+              title=\textbf{Email Writing},title style={yshift=-1.5ex},
+              ylabel={Normalized Cost}, ymin=0, ymax=0.5,
+              ylabel style={yshift=-3.5ex},
+              xmin=0, xmax=9, xtick distance=1.8,
+              xlabel={Round},xticklabels={-40,,40,80,120,160,200},
+              xlabel style={yshift=1ex},
+              legend style={font=\scriptsize}
+              ]
+            \addplot [bert5, mark=o, thick, smooth] table [x=idx, y=bert5, col sep=space] {email_norm_cost.csv};
+            \addplot [darkorange1, thick, dashdotted, smooth] table [x=idx, y=mpnet1, col sep=space] {email_norm_cost.csv};
+            \addplot [mpnet5, mark=x, thick, smooth] table [x=idx, y=mpnet5, col sep=space] {email_norm_cost.csv};
+            \addplot [black, dotted, thick, smooth] table [x=idx, y=oracle, col sep=space] {email_norm_cost.csv};
+
+
+
+
+        \nextgroupplot[
+              ylabel={\% Zero-cost Ex. per Bin}, ymin=0, ymax=0.9,
+              ylabel style={yshift=-2.5ex},
+              xlabel={Round},xmin=0, xmax=9, xtick distance=1.8, xticklabels={-40,,40,80,120,160,200},
+              xlabel style={yshift=1ex},
+              yticklabels={,0,0.2,0.4,0.6,0.8,1},
+              ]
+            \addplot [bert5, mark=o, thick, smooth] table [x=idx, y=bert5, col sep=space] {summarization_zero_cost.csv};
+            \addplot [darkorange1, thick, dashdotted, smooth] table [x=idx, y=mpnet1, col sep=space] {summarization_zero_cost.csv};
+            \addplot [mpnet5, mark=x, thick, smooth] table [x=idx, y=mpnet5, col sep=space] {summarization_zero_cost.csv};
+            \addplot [black, dotted, thick, smooth] table [x=idx, y=oracle, col sep=space] {summarization_zero_cost.csv};
+
+        
+
+       \nextgroupplot[
+              ylabel={\% Zero-cost Ex. per Bin}, ymin=0.5, ymax=1,
+              ylabel style={yshift=-2.5ex},
+              xlabel={Round},xmin=0, xmax=9, xtick distance=1.8, xticklabels={-40,,40,80,120,160,200},
+              xlabel style={yshift=1ex},
+              yticklabels={,0,0.2,0.4,0.6,0.8,1},
+              ]
+            \addplot [bert5, mark=o, thick, smooth] table [x=idx, y=bert5, col sep=space] {email_zero_cost.csv};
+            \addplot [darkorange1, thick, dashdotted, smooth] table [x=idx, y=mpnet1, col sep=space] {email_zero_cost.csv};
+            \addplot [mpnet5, mark=x, thick, smooth] table [x=idx, y=mpnet5, col sep=space] {email_zero_cost.csv};
+            \addplot [black, dotted, thick, smooth] table [x=idx, y=oracle, col sep=space] {email_zero_cost.csv};
+
+
+
+\end{groupplot}
+\end{tikzpicture}
+
+\label{fig:normalized_cost}
+\vspace{-10pt}
+\end{figure*}
+
+
+
+
+
+
+
+\subsection{More Analysis} 
+
+\paragraph{Learning Curves.} We plot mean cumulative user edit costs over rounds in~\pref{fig:cumulative_cost}. The cumulative user edit costs in~\pref{fig:cumulative_cost} show that the angle of the learning curves decreases for \algname~after an initial number of rounds, showing that learning helps decrease the rate at which user edits are accumulated. In contrast, the angle of the learning curve for the no-learning baseline remains unchanged.\looseness=-1
+
+\paragraph{Evaluating Normalized Edit Cost.} The cumulative user edit cost measures the total effort of the user but is susceptible to outlier examples, as the edit distance for a given round is potentially unbounded. Therefore, we also compute a \emph{normalized edit distance} $\cost(y_t, y'_t) / |y_t|$ by dividing the edit distance by $\max\{|y_t|, |y'_t|\}$, i.e. the max length of the agent output or user revised text. As Levenshtein distance $\cost(y_t, y'_t)$ is upper bounded by $\max\{|y_t|, |y'_t|\}$, therefore, the normalized cost is at most 1. \pref{fig:normalized_cost}~reports normalized cost over rounds for the top 3 methods. %
+We notice that for all variants of~\algname~for the summarization task, and for~\algname-5-M for the email writing task, the normalized cost decreases notably as training progresses indicating learning. As the cost is normalized by the response length, even a small decrease can lead to a significant reduction in the number of tokens edited.
+
+\paragraph{Evaluating Fraction of Edited Response.} Recall that the first stage of our GPT-4 user checks if the agent response satisfies the latent user preference $f^\star$. If it does, then the user performs no edits. Otherwise, in the second stage, the user edits the response. To measure how many times the agent response isn't edited, we also plot the percentage of examples with zero edit cost per 20 rounds bin in~\pref{fig:normalized_cost}. We notice a small increase in the number of examples with zero edit cost. This indicates that gains come from reducing edits across all examples, and not just by increasing the number of examples that avoid getting edited in stage 1 of our user.
+
+
+
+\paragraph{Qualitative Analysis of Learned Preferences.} We qualitatively analyze the learned preferences for~\algname~to understand the quality of learned preferences. We present our analysis on the summarization task, where our methods have a larger gap with the oracle performance compared to the email writing task. \pref{tab:learned_prefs} lists 3 learned preferences per document source for \textit{\algname-5-MPNET} which are randomly sampled at the beginning, middle, and end of the interaction history. We see that overall the agent can learn a reasonable description of the latent preference. For example, it can learn \emph{bullet points} preference for Wikipedia articles, and \emph{second person narrative} for Reddit posts, and \emph{QA style} for Movie reviews. \algname~can pick some preferences fairly early such as \emph{bullet points} for Wikipedia and \emph{emojis} for Paper abstract, whereas some are learned only later such as \emph{Structured Q$\&$A} for Movie reviews. This shows using \algname~can quickly learn useful preferences, but further interaction continues to help.
+
+
+\paragraph{Failure Cases.}~\algname~notably reduces the edit cost and learns useful preference, however, significant gaps to the oracle method remain, especially in the summarization task. 
+We manually analyze failure cases on summarization task with the best performing method \textit{CIPHER-5-MPNET}. ~\pref{tab:failures} in the Appendix reports the summary and example of our findings, categorized as preference inference from output-revision pair, consolidation of inferred preferences, and retrieval.\footnote{We provide additional analysis on the accuracy of retrieval in \autoref{tab:retrieval_acc}.} In brief, the most common type of failure is on the preference inference step given the agent output and user revision. For example, the agent often misses the exact keyword for \textit{brief} or \textit{short sentences}, and sometimes struggles with inferring the \textit{second-person narrative} aspect.
+
+
+
+\begin{table}[t!]
+    \centering \small
+    \setlength{\tabcolsep}{3pt}
+    \caption{Examples of learned preferences on summarization task with \textit{CIPHER-5-MPNET}, grouped based on the document source and corresponding latent preference. We randomly sample 3 examples per type at the beginning, middle, and end of the interaction history.}   
+    \begin{tabular}{p{0.25\linewidth} p{0.72\linewidth}} %
+        \toprule
+        \textbf{Latent User Preference} & \textbf{(Round) Learned Preference} \\
+        \midrule
+         \textbf{News article.} targeted to young children, storytelling, short sentences, playful language, interactive, positive & (22) Fairy tale narrative style, informal and conversational tone, use of rhetorical questions, simplified language.
+         \newline (115) Simplified, childlike storytelling with playful language and imagery
+         \newline (192) Simplified and playful storytelling language  \\
+        \midrule
+        \textbf{Reddit post:} second person narrative, brief, show emotions, invoke personal reflection, immersive   &  (14) Concise and coherent storytelling 
+         \newline (102) The user prefers a second-person narrative and a more direct, personal tone 
+         \newline (194) Poetic and descriptive language, narrative perspective shift to second person\\
+         \midrule
+         \textbf{Wikipedia page.} bullet points, parallel structure, brief & (19) Concise, Bullet-Pointed, Structured Summaries with a Narrative Q\&A Style
+         \newline (124) Concise and factual writing style, bullet-point formatting 
+            \newline (197) Concise and streamlined formatting, with bullet points and clear subheadings for easy scanning \\
+         \midrule
+         \textbf{Paper abstract.} tweet style, simple English, inquisitive, skillful foreshadowing, with emojis & (20) Concise, conversational summaries with bullet points and emojis. 
+         \newline 
+         (111) Concise, conversational, whimsical bullet-point summaries with emojis. \includegraphics[height=10pt]{graphs/tada.png} \includegraphics[height=10pt]{graphs/sparkles.png} \includegraphics[height=10pt]{graphs/write.png}
+                \newline
+                    (193) Concise, conversational, and whimsical bullet-point summaries with emojis. \includegraphics[height=10pt]{graphs/tada.png} \includegraphics[height=10pt]{graphs/sparkles.png} \includegraphics[height=10pt]{graphs/write.png} \includegraphics[height=10pt]{graphs/rocket.png} \\
+        \midrule
+        \textbf{Movie review.} question answering style & (12) The user prefers a straightforward, clear, and concise writing style with factual formatting.
+        \newline (123) The user prefers a clear and concise question and answer format with straightforward language. 
+        \newline (199) Concise, Structured Q\&A with Whimsical Clarity \\
+            
+                
+               
+        \bottomrule
+    \end{tabular} 
+    \label{tab:learned_prefs}
+\end{table}
+
+
+
+
+
+
+
+
+
+

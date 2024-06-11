@@ -1,0 +1,278 @@
+\begin{thebibliography}{10}\itemsep=-1pt
+
+\bibitem{alayrac2022flamingo}
+J.-B. Alayrac, J.~Donahue, P.~Luc, A.~Miech, I.~Barr, Y.~Hasson, K.~Lenc,
+  A.~Mensch, K.~Millican, M.~Reynolds, et~al.
+\newblock Flamingo: a visual language model for few-shot learning.
+\newblock {\em Advances in neural information processing systems},
+  35:23716--23736, 2022.
+
+\bibitem{an2021partial}
+X.~An, X.~Zhu, Y.~Gao, Y.~Xiao, Y.~Zhao, Z.~Feng, L.~Wu, B.~Qin, M.~Zhang,
+  D.~Zhang, et~al.
+\newblock Partial fc: Training 10 million identities on a single machine.
+\newblock In {\em Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}, pages 1445--1449, 2021.
+
+\bibitem{bae2023digiface}
+G.~Bae, M.~de~La~Gorce, T.~Baltru{\v{s}}aitis, C.~Hewitt, D.~Chen, J.~Valentin,
+  R.~Cipolla, and J.~Shen.
+\newblock Digiface-1m: 1 million digital face images for face recognition.
+\newblock In {\em Proceedings of the IEEE/CVF Winter Conference on Applications
+  of Computer Vision}, pages 3526--3535, 2023.
+
+\bibitem{boutros2022quantface}
+F.~Boutros, N.~Damer, and A.~Kuijper.
+\newblock Quantface: Towards lightweight face recognition by synthetic data
+  low-bit quantization.
+\newblock In {\em 2022 26th International Conference on Pattern Recognition
+  (ICPR)}, pages 855--862. IEEE, 2022.
+
+\bibitem{boutros2023idiff}
+F.~Boutros, J.~H. Grebe, A.~Kuijper, and N.~Damer.
+\newblock Idiff-face: Synthetic-based face recognition through fizzy
+  identity-conditioned diffusion model.
+\newblock In {\em Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}, pages 19650--19661, 2023.
+
+\bibitem{boutros2024sface2}
+F.~Boutros, M.~Huber, A.~T. Luu, P.~Siebke, and N.~Damer.
+\newblock Sface2: Synthetic-based face recognition with w-space identity-driven
+  sampling.
+\newblock {\em IEEE Transactions on Biometrics, Behavior, and Identity
+  Science}, 2024.
+
+\bibitem{boutros2022sface}
+F.~Boutros, M.~Huber, P.~Siebke, T.~Rieber, and N.~Damer.
+\newblock Sface: Privacy-friendly and accurate face recognition using synthetic
+  data.
+\newblock In {\em 2022 IEEE International Joint Conference on Biometrics
+  (IJCB)}, pages 1--11. IEEE, 2022.
+
+\bibitem{boutros2023unsupervised}
+F.~Boutros, M.~Klemt, M.~Fang, A.~Kuijper, and N.~Damer.
+\newblock Unsupervised face recognition using unlabeled synthetic data.
+\newblock In {\em 2023 IEEE 17th International Conference on Automatic Face and
+  Gesture Recognition (FG)}, pages 1--8. IEEE, 2023.
+
+\bibitem{cao2018vggface2}
+Q.~Cao, L.~Shen, W.~Xie, O.~M. Parkhi, and A.~Zisserman.
+\newblock Vggface2: A dataset for recognising faces across pose and age.
+\newblock In {\em 2018 13th IEEE international conference on automatic face \&
+  gesture recognition (FG 2018)}, pages 67--74. IEEE, 2018.
+
+\bibitem{davis2011remarks}
+R.~A. Davis, K.-S. Lii, and D.~N. Politis.
+\newblock Remarks on some nonparametric estimates of a density function.
+\newblock {\em Selected Works of Murray Rosenblatt}, pages 95--100, 2011.
+
+\bibitem{deandres2024frcsyn}
+I.~DeAndres-Tame, R.~Tolosana, P.~Melzi, R.~Vera-Rodriguez, M.~Kim, C.~Rathgeb,
+  X.~Liu, A.~Morales, J.~Fierrez, J.~Ortega-Garcia, et~al.
+\newblock Frcsyn challenge at cvpr 2024: Face recognition challenge in the era
+  of synthetic data.
+\newblock {\em arXiv preprint arXiv:2404.10378}, 2024.
+
+\bibitem{regulation2016regulation}
+{European Parliament} and {Council of the European Union}.
+\newblock Regulation ({EU}) 2016/679 of the {European} {Parliament} and of the
+  {Council}.
+
+\bibitem{Gonzalez2018Facial}
+E.~Gonzalez-Sosa, J.~Fierrez, R.~Vera-Rodriguez, and F.~Alonso-Fernandez.
+\newblock Facial {Soft} {Biometrics} for {Recognition} in the {Wild}: Recent
+  {Works}, {Annotation}, and {COTS} {Evaluation}.
+\newblock {\em IEEE Transactions on Information Forensics and Security},
+  13(8):2001--2014, 2018.
+
+\bibitem{goodfellow2014generative}
+I.~Goodfellow, J.~Pouget-Abadie, M.~Mirza, B.~Xu, D.~Warde-Farley, S.~Ozair,
+  A.~Courville, and Y.~Bengio.
+\newblock Generative adversarial nets.
+\newblock {\em Advances in neural information processing systems}, 27, 2014.
+
+\bibitem{huber2024bias}
+M.~Huber, A.~T. Luu, F.~Boutros, A.~Kuijper, and N.~Damer.
+\newblock Bias and diversity in synthetic-based face recognition.
+\newblock In {\em Proceedings of the IEEE/CVF Winter Conference on Applications
+  of Computer Vision}, pages 6215--6226, 2024.
+
+\bibitem{karkkainen2021fairface}
+K.~Karkkainen and J.~Joo.
+\newblock Fairface: Face {Attribute} {Dataset} for {Balanced} {Race}, {Gender},
+  and {Age} for {Bias} {Measurement} and {Mitigation}.
+\newblock In {\em 2021 {IEEE} {Winter} {Conference} on {Applications} of
+  {Computer} {Vision} ({WACV})}. IEEE, 2021.
+
+\bibitem{karras2018progressive}
+T.~Karras, T.~Aila, S.~Laine, and J.~Lehtinen.
+\newblock Progressive growing of gans for improved quality, stability, and
+  variation.
+\newblock In {\em 6th International Conference on Learning Representations,
+  {ICLR} 2018, Vancouver, BC, Canada, April 30 - May 3, 2018, Conference Track
+  Proceedings}. OpenReview.net, 2018.
+
+\bibitem{kim2023dcface}
+M.~Kim, F.~Liu, A.~Jain, and X.~Liu.
+\newblock Dcface: Synthetic face generation with dual condition diffusion
+  model.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}, pages 12715--12725, 2023.
+
+\bibitem{kolf2023identity}
+J.~N. Kolf, T.~Rieber, J.~Elliesen, F.~Boutros, A.~Kuijper, and N.~Damer.
+\newblock Identity-driven three-player generative adversarial network for
+  synthetic-based face recognition.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}, pages 806--816, 2023.
+
+\bibitem{kullback1951information}
+S.~Kullback and R.~A. Leibler.
+\newblock On information and sufficiency.
+\newblock {\em The annals of mathematical statistics}, 22(1):79--86, 1951.
+
+\bibitem{DBLP:conf/cvpr/LeePYL20}
+S.~Lee, E.~Park, H.~Yi, and S.~H. Lee.
+\newblock Strdan: Synthetic-to-real domain adaptation network for vehicle
+  re-identification.
+\newblock In {\em 2020 {IEEE/CVF} Conference on Computer Vision and Pattern
+  Recognition, {CVPR} Workshops 2020, Seattle, WA, USA, June 14-19, 2020},
+  pages 2590--2597. Computer Vision Foundation / {IEEE}, 2020.
+
+\bibitem{macqueen1967some}
+J.~MacQueen et~al.
+\newblock Some methods for classification and analysis of multivariate
+  observations.
+\newblock In {\em Proceedings of the fifth Berkeley symposium on mathematical
+  statistics and probability}, number~14 in 1, pages 281--297. Oakland, CA,
+  USA, 1967.
+
+\bibitem{meden2021privacy}
+B.~Meden, P.~Rot, P.~Terh{\"o}rst, N.~Damer, A.~Kuijper, W.~J. Scheirer,
+  A.~Ross, P.~Peer, and V.~{\v{S}}truc.
+\newblock Privacy--enhancing face biometrics: A comprehensive survey.
+\newblock {\em IEEE Transactions on Information Forensics and Security},
+  16:4147--4183, 2021.
+
+\bibitem{merler2019diversity}
+M.~Merler, N.~K. Ratha, R.~S. Feris, and J.~R. Smith.
+\newblock Diversity in {Faces}.
+\newblock {\em ArXiv}, abs/1901.10436, 2019.
+
+\bibitem{mirabet2023lvt}
+N.~Mirabet-Herranz and J.-L. Dugelay.
+\newblock Lvt face database: A benchmark database for visible and hidden face
+  biometrics.
+\newblock In {\em 2023 International Conference of the Biometrics Special
+  Interest Group (BIOSIG)}, pages 1--6. IEEE, 2023.
+
+\bibitem{NechMegaFace2017}
+A.~Nech and I.~Kemelmacher{-}Shlizerman.
+\newblock Level playing field for million scale face recognition.
+\newblock In {\em 2017 {IEEE} Conference on Computer Vision and Pattern
+  Recognition, {CVPR} 2017, Honolulu, HI, USA, July 21-26, 2017}, pages
+  3406--3415. {IEEE} Computer Society, 2017.
+
+\bibitem{neto2023compressed}
+P.~C. Neto, E.~Caldeira, J.~S. Cardoso, and A.~F. Sequeira.
+\newblock Compressed models decompress race biases: What quantized models
+  forget for fair face recognition.
+\newblock In {\em 2023 International Conference of the Biometrics Special
+  Interest Group (BIOSIG)}, pages 1--5. IEEE, 2023.
+
+\bibitem{parzen1962estimation}
+E.~Parzen.
+\newblock On estimation of a probability density function and mode.
+\newblock {\em The annals of mathematical statistics}, 33(3):1065--1076, 1962.
+
+\bibitem{qiu2021synface}
+H.~Qiu, B.~Yu, D.~Gong, Z.~Li, W.~Liu, and D.~Tao.
+\newblock Synface: Face recognition with synthetic data.
+\newblock In {\em Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}, pages 10880--10890, 2021.
+
+\bibitem{DBLP:conf/cvpr/Sankaranarayanan18}
+S.~Sankaranarayanan, Y.~Balaji, A.~Jain, S.~Lim, and R.~Chellappa.
+\newblock Learning from synthetic data: Addressing domain shift for semantic
+  segmentation.
+\newblock In {\em 2018 {IEEE} Conference on Computer Vision and Pattern
+  Recognition, {CVPR} 2018, Salt Lake City, UT, USA, June 18-22, 2018}, pages
+  3752--3761. Computer Vision Foundation / {IEEE} Computer Society, 2018.
+
+\bibitem{schroff2015facenet}
+F.~Schroff, D.~Kalenichenko, and J.~Philbin.
+\newblock Facenet: A unified embedding for face recognition and clustering.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, pages 815--823, 2015.
+
+\bibitem{taigman2014deepface}
+Y.~Taigman, M.~Yang, M.~Ranzato, and L.~Wolf.
+\newblock Deepface: Closing the gap to human-level performance in face
+  verification.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, pages 1701--1708, 2014.
+
+\bibitem{terhörst2020beyond}
+P.~Terh{\" o}rst, D.~F{\" a}hrmann, N.~Damer, F.~Kirchbuchner, and A.~Kuijper.
+\newblock Beyond {Identity}: What {Information} {Is} {Stored} in {Biometric}
+  {Face} {Templates}?
+\newblock In {\em International {Joint} {Conference} on {Biometrics} ({IJCB})},
+  pages 1--10, 2020.
+
+\bibitem{terhorst2021maadface}
+P.~Terhorst, D.~Fahrmann, J.~N. Kolf, N.~Damer, F.~Kirchbuchner, and
+  A.~Kuijper.
+\newblock Maad-{Face}: A {Massively} {Annotated} {Attribute} {Dataset} for
+  {Face} {Images}.
+\newblock {\em IEEE Transactions on Information Forensics and Security},
+  16:3942--3957, 2021.
+
+\bibitem{terhorst2019reliable}
+P.~Terhorst, M.~Huber, J.~N. Kolf, I.~Zelch, N.~Damer, F.~Kirchbuchner, and
+  A.~Kuijper.
+\newblock Reliable {Age} and {Gender} {Estimation} from {Face} {Images}:
+  Stating the {Confidence} of {Model} {Predictions}.
+\newblock In {\em 2019 {IEEE} 10th {International} {Conference} on {Biometrics}
+  {Theory}, {Applications} and {Systems} ({BTAS})}. IEEE, 2019.
+
+\bibitem{wang2021meta}
+M.~Wang, Y.~Zhang, and W.~Deng.
+\newblock Meta balanced network for fair face recognition.
+\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
+  44(11):8433--8448, 2021.
+
+\bibitem{DBLP:conf/aaai/XuZNLWTZ20}
+M.~Xu, J.~Zhang, B.~Ni, T.~Li, C.~Wang, Q.~Tian, and W.~Zhang.
+\newblock Adversarial domain adaptation with domain mixup.
+\newblock In {\em The Thirty-Fourth {AAAI} Conference on Artificial
+  Intelligence, {AAAI} 2020, The Thirty-Second Innovative Applications of
+  Artificial Intelligence Conference, {IAAI} 2020, The Tenth {AAAI} Symposium
+  on Educational Advances in Artificial Intelligence, {EAAI} 2020, New York,
+  NY, USA, February 7-12, 2020}, pages 6502--6509. {AAAI} Press, 2020.
+
+\bibitem{xu2022comprehensive}
+Y.~Xu, P.~Terh{\"o}rst, K.~Raja, and M.~Pedersen.
+\newblock A comprehensive analysis of ai biases in deepfake detection with
+  massively annotated databases.
+\newblock {\em arXiv preprint arXiv:2208.05845}, 2022.
+
+\bibitem{yi2014learning}
+D.~Yi, Z.~Lei, S.~Liao, and S.~Z. Li.
+\newblock Learning face representation from scratch.
+\newblock {\em arXiv preprint arXiv:1411.7923}, 2014.
+
+\bibitem{zhang2016joint}
+K.~Zhang, Z.~Zhang, Z.~Li, and Y.~Qiao.
+\newblock Joint face detection and alignment using multitask cascaded
+  convolutional networks.
+\newblock {\em IEEE signal processing letters}, 23(10):1499--1503, 2016.
+
+\bibitem{zhu2021webface260m}
+Z.~Zhu, G.~Huang, J.~Deng, Y.~Ye, J.~Huang, X.~Chen, J.~Zhu, T.~Yang, J.~Lu,
+  D.~Du, et~al.
+\newblock Webface260m: A benchmark unveiling the power of million-scale deep
+  face recognition.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}, pages 10492--10502, 2021.
+
+\end{thebibliography}

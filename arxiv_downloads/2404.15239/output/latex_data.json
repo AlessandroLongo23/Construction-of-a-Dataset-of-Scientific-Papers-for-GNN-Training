@@ -1,0 +1,2108 @@
+{
+    "key": "doc",
+    "block_type": "document",
+    "children": [
+        {
+            "leaf id": 0,
+            "key": "doc/tit",
+            "block type": "title",
+            "content": "Augmented Voices: An Augmented Reality Experience Highlighting the Social Injustices of GenderBased Violence in the Muslim SouthAsian Diaspora",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "0.32",
+                    "matching_string": "Augmented Voices: An Augmented Reality Experience Highlighting the Social "
+                },
+                {
+                    "pdf_id": "0.33",
+                    "matching_string": "Injustices of GenderBased Violence in the Muslim SouthAsian Diaspora"
+                }
+            ]
+        },
+        {
+            "leaf id": 1,
+            "key": "doc/aut0",
+            "block type": "author",
+            "content": "{Hamida Khatri} hamida.khatri@utdallas.edu 0000000265968413 \\institution{The University of Texas at Dallas} \\city{Richardson} \\state{Texas} \\countryUSA \\postcode{75080}",
+            "leftover": "{Hamida Khatri} hamida.khatri@utdallas.edu 0000000265968413 \\institution{The University of Texas at Dallas} \\city{Richardson} \\state{Texas} \\countryUSA \\postcode{75080}",
+            "matches": []
+        },
+        {
+            "leaf id": 2,
+            "key": "doc/abs",
+            "block type": "abstract",
+            "content": "This paper delves into the distressing prevalence of genderbased violence (GBV) and its deepseated psychological ramifications, particularly among Muslim South Asian women living in diasporic communities. Despite the gravity of GBV, these women often face formidable barriers in voicing their experiences and accessing support. \"Augmented Voices\" emerges as a technological beacon, harnessing the potential of augmented reality (AR) to bridge the digital and physical realms through mobile devices, enhancing the visibility of these oftensilenced voices. With its technological motivation firmly anchored in the convergence of AR and realworld interactions, \"Augmented Voices\" offers a digital platform where storytelling acts as a catalyst, bringing to the fore the experiences shared by these women. By superimposing their narratives onto physical locations via Geographic Information System (GIS) Mapping, the application \"augments their voices\" in the diaspora, providing a conduit for expression and solidarity. This project, currently at its developmental stage, aspires to elevate the stories of GBV victims to a level where their struggles are not just heard but felt, forging a powerful connection between the user and the narrative. \"Augmented Voices\" is designed to transcend the limitations of conventional storytelling, creating an \"augmented\" reality where voices that are often muted by societal constraints can resonate powerfully. Through this intimate and immersive engagement, the project underscores the urgent imperative to confront GBV, catalyzing societal transformation and fostering robust support networks for those in the margins. The project is a pioneering example of how technology can become a formidable ally in the fight for social justice and the empowerment of the oppressed. Additionally, this paper delves into the nuanced AR workflow of \"Augmented Voices,\" illustrating its relevance and contribution to the broader theme of sitespecific AR for social justice.",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "0.35",
+                    "matching_string": "This paper delves into the distressing prevalence of genderbased violence (GBV) and its deepseated psychological ramifications, "
+                },
+                {
+                    "pdf_id": "0.37",
+                    "matching_string": "face formidable barriers in voicing their experiences and accessing support. \"Augmented Voices\" emerges as a technological beacon, "
+                },
+                {
+                    "pdf_id": "0.39",
+                    "matching_string": "visibility of these oftensilenced voices. With its technological motivation firmly anchored in the convergence of AR and realworld "
+                },
+                {
+                    "pdf_id": "0.40",
+                    "matching_string": "interactions, \"Augmented Voices\" offers a digital platform where storytelling acts as a catalyst, bringing to the fore the experiences "
+                },
+                {
+                    "pdf_id": "0.41",
+                    "matching_string": "shared by these women. By superimposing their narratives onto physical locations via Geographic Information System (GIS) Mapping, "
+                },
+                {
+                    "pdf_id": "0.44",
+                    "matching_string": "powerful connection between the user and the narrative. \"Augmented Voices\" is designed to transcend the limitations of conventional "
+                },
+                {
+                    "pdf_id": "0.45",
+                    "matching_string": "storytelling, creating an \"augmented\" reality where voices that are often muted by societal constraints can resonate powerfully. "
+                },
+                {
+                    "pdf_id": "0.46",
+                    "matching_string": "Through this intimate and immersive engagement, the project underscores the urgent imperative to confront GBV, catalyzing societal "
+                },
+                {
+                    "pdf_id": "0.47",
+                    "matching_string": "transformation and fostering robust support networks for those in the margins. The project is a pioneering example of how technology "
+                },
+                {
+                    "pdf_id": "0.48",
+                    "matching_string": "can become a formidable ally in the fight for social justice and the empowerment of the oppressed. Additionally, this paper delves into "
+                },
+                {
+                    "pdf_id": "0.49",
+                    "matching_string": "the nuanced AR workflow of \"Augmented Voices,\" illustrating its relevance and contribution to the broader theme of sitespecific AR "
+                },
+                {
+                    "pdf_id": "0.50",
+                    "matching_string": "for social justice."
+                },
+                {
+                    "pdf_id": "0.36",
+                    "matching_string": "particularly among Muslim South Asian women living in diasporic communities. Despite the gravity of GBV, these women often "
+                },
+                {
+                    "pdf_id": "0.42",
+                    "matching_string": "the application \"augments their voices\" in the diaspora, providing a conduit for expression and solidarity. This project, currently at its "
+                },
+                {
+                    "pdf_id": "0.43",
+                    "matching_string": "developmental stage, aspires to elevate the stories of GBV victims to a level where their struggles are not just heard but felt, forging a "
+                },
+                {
+                    "pdf_id": "0.38",
+                    "matching_string": "harnessing the potential of augmented reality (AR) to bridge the digital and physical realms through mobile devices, enhancing the "
+                }
+            ]
+        },
+        {
+            "key": "doc/body",
+            "block_type": "body",
+            "children": [
+                {
+                    "leaf id": 3,
+                    "key": "doc/body/CCSXML0",
+                    "block type": "CCSXML",
+                    "content": "<ccs2012> <concept> <conceptid>10003120</conceptid> <conceptdesc>Humancentered computing</conceptdesc> <conceptsignificance>500</conceptsignificance> </concept> <concept> <conceptid>10010405</conceptid> <conceptdesc>Applied computing</conceptdesc> <conceptsignificance>500</conceptsignificance> </concept> <concept> <conceptid>10010583</conceptid> <conceptdesc>Hardware</conceptdesc> <conceptsignificance>500</conceptsignificance> </concept> </ccs2012>",
+                    "leftover": "<ccs2012> <concept> <conceptid>10003120</conceptid> <conceptdesc>Humancentered computing</conceptdesc> <conceptsignificance>500</conceptsignificance> </concept> <concept> <conceptid>10010405</conceptid> <conceptdesc>Applied computing</conceptdesc> <conceptsignificance>500</conceptsignificance> </concept> <concept> <conceptid>10010583</conceptid> <conceptdesc>Hardware</conceptdesc> <conceptsignificance>500</conceptsignificance> </concept> </ccs2012>",
+                    "matches": []
+                },
+                {
+                    "key": "doc/body/sec1",
+                    "block_type": "sec",
+                    "children": [
+                        {
+                            "leaf id": 4,
+                            "key": "doc/body/sec1/tit",
+                            "block type": "title",
+                            "content": "Introduction",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "0.59",
+                                    "matching_string": "Introduction"
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 5,
+                            "key": "doc/body/sec1/txl0",
+                            "block type": "txl",
+                            "content": "Genderbased violence (GBV) refers to any detrimental act committed against an individual's will, rooted in the societal roles assigned to different genders . This broad category encompasses various forms of violence such as domestic abuse, physical assault, rape, sexual harassment, female genital mutilation, enslavement, coerced prostitution, and involuntary or early marriages . While GBV can affect men, statistics show that globally, one in three women suffers from more intense sexual aggression, harsher physical violence, and greater domination by male counterparts . Studies indicate that women are up to eight times more likely to be victims of violence compared to men . The primary immediate impact on GBV victims is profound health and social repercussions, which subsequently lead to a variety of mental, emotional, and physical health challenges.",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "0.60",
+                                    "matching_string": "Genderbased violence (GBV) refers to any detrimental act committed against an individual's will, rooted in the societal "
+                                },
+                                {
+                                    "pdf_id": "0.61",
+                                    "matching_string": "roles assigned to different genders . This broad category encompasses various forms of violence such as domestic "
+                                },
+                                {
+                                    "pdf_id": "0.64",
+                                    "matching_string": "suffers from more intense sexual aggression, harsher physical violence, and greater domination by male counterparts "
+                                },
+                                {
+                                    "pdf_id": "1.1",
+                                    "matching_string": "primary immediate impact on GBV victims is profound health and social repercussions, which subsequently lead to a "
+                                },
+                                {
+                                    "pdf_id": "1.2",
+                                    "matching_string": "variety of mental, emotional, and physical health challenges."
+                                },
+                                {
+                                    "pdf_id": "0.62",
+                                    "matching_string": "abuse, physical assault, rape, sexual harassment, female genital mutilation, enslavement, coerced prostitution, and "
+                                },
+                                {
+                                    "pdf_id": "0.65",
+                                    "matching_string": ". Studies indicate that women are up to eight times more likely to be victims of violence compared to men . The "
+                                },
+                                {
+                                    "pdf_id": "0.63",
+                                    "matching_string": "involuntary or early marriages . While GBV can affect men, statistics show that globally, one in three women "
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "doc/body/sec2",
+                    "block_type": "sec",
+                    "children": [
+                        {
+                            "leaf id": 6,
+                            "key": "doc/body/sec2/tit",
+                            "block type": "title",
+                            "content": "GenderBased Violence Within the Muslim SouthAsian Diaspora",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "1.3",
+                                    "matching_string": "GenderBased Violence Within the Muslim SouthAsian Diaspora"
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 7,
+                            "key": "doc/body/sec2/txl0",
+                            "block type": "txl",
+                            "content": "GBV stands as a critical social issue within the United States (U.S.), raising national concern. Notably, within the Muslim SouthAsian diaspora, cultural dynamics contribute to the underreporting of any violence against women due to structural inequities and societal disempowerment of victims. This underreporting leads to varied findings regarding the prevalence of GBV, with physical violence reported as the most common form (48%), followed by emotional (38%), economic (35%), verbal (27%), immigrationrelated (26%), inlaws related (19%), and sexual abuse (11%), with higher prevalence rates among women for all violence types . Despite the South Asian community being one of the fastestgrowing immigrant groups in the U.S., with an estimated population of 5.4 million, research on GBV victimization rates within this group has been limited .",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "1.6",
+                                    "matching_string": "due to structural inequities and societal disempowerment of victims. This underreporting leads to varied findings "
+                                },
+                                {
+                                    "pdf_id": "1.7",
+                                    "matching_string": "regarding the prevalence of GBV, with physical violence reported as the most common form (48%), followed by emotional "
+                                },
+                                {
+                                    "pdf_id": "1.9",
+                                    "matching_string": "higher prevalence rates among women for all violence types . Despite the South Asian community being one "
+                                },
+                                {
+                                    "pdf_id": "1.10",
+                                    "matching_string": "of the fastestgrowing immigrant groups in the U.S., with an estimated population of 5.4 million, research on GBV "
+                                },
+                                {
+                                    "pdf_id": "1.5",
+                                    "matching_string": "Muslim SouthAsian diaspora, cultural dynamics contribute to the underreporting of any violence against women "
+                                },
+                                {
+                                    "pdf_id": "1.8",
+                                    "matching_string": "(38%), economic (35%), verbal (27%), immigrationrelated (26%), inlaws related (19%), and sexual abuse (11%), with "
+                                },
+                                {
+                                    "pdf_id": "1.11",
+                                    "matching_string": "victimization rates within this group has been limited ."
+                                },
+                                {
+                                    "pdf_id": "1.4",
+                                    "matching_string": "GBV stands as a critical social issue within the United States (U.S.), raising national concern. Notably, within the "
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 8,
+                            "key": "doc/body/sec2/txl1",
+                            "block type": "txl",
+                            "content": "The nature of GBV within South Asian communities is influenced by cultural values such as patriarchy, collectivism, and male dominance, leading to unique manifestations of violence against women, including abuse by inlaws due to the common practice of living with extended family . Studies have shown significant emotional abuse by inlaws and highlighted the role of acculturation in influencing GBV victimization risks, with both low and high levels of acculturation having potential to increase GBV risks due to conflicting genderrole behaviors and challenges to traditional family structures .",
+                            "leftover": "inlaws ",
+                            "matches": [
+                                {
+                                    "pdf_id": "1.12",
+                                    "matching_string": "The nature of GBV within South Asian communities is influenced by cultural values such as patriarchy, collectivism, "
+                                },
+                                {
+                                    "pdf_id": "1.16",
+                                    "matching_string": "of acculturation having potential to increase GBV risks due to conflicting genderrole behaviors and challenges to "
+                                },
+                                {
+                                    "pdf_id": "1.13",
+                                    "matching_string": "and male dominance, leading to unique manifestations of violence against women, including abuse by inlaws due "
+                                },
+                                {
+                                    "pdf_id": "1.15",
+                                    "matching_string": "and highlighted the role of acculturation in influencing GBV victimization risks, with both low and high levels "
+                                },
+                                {
+                                    "pdf_id": "1.14",
+                                    "matching_string": "to the common practice of living with extended family . Studies have shown significant emotional abuse by "
+                                },
+                                {
+                                    "pdf_id": "1.17",
+                                    "matching_string": "traditional family structures ."
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 9,
+                            "key": "doc/body/sec2/txl2",
+                            "block type": "txl",
+                            "content": "Furthermore, the collectivist nature of South Asian families affects marriage practices and the role of inlaws, often leading to abuse related to dowry demands and arranged marriages . For first generation immigrant women, the lack of a support network in the U.S. increases dependence on their husbands for economic, emotional, and immigrationrelated support, thereby exacerbating the risk of GBV victimization due to the power differential . Conversely, having social supports in the U.S. can serve as a protective factor by offering opportunities to disclose abuse and seek help, though informal support systems may sometimes discourage seeking external assistance . The complexity of these dynamics underscores the need for nuanced understanding and support strategies tailored to the unique experiences of GBV within the Muslim SouthAsian diaspora.",
+                            "leftover": "power differential . Conversely, having ",
+                            "matches": [
+                                {
+                                    "pdf_id": "1.18",
+                                    "matching_string": "Furthermore, the collectivist nature of South Asian families affects marriage practices and the role of inlaws, often "
+                                },
+                                {
+                                    "pdf_id": "1.20",
+                                    "matching_string": "lack of a support network in the U.S. increases dependence on their husbands for economic, emotional, and "
+                                },
+                                {
+                                    "pdf_id": "1.22",
+                                    "matching_string": "social supports in the U.S. can serve as a protective factor by offering opportunities to disclose abuse and seek help, "
+                                },
+                                {
+                                    "pdf_id": "1.23",
+                                    "matching_string": "though informal support systems may sometimes discourage seeking external assistance . The complexity of these "
+                                },
+                                {
+                                    "pdf_id": "1.24",
+                                    "matching_string": "dynamics underscores the need for nuanced understanding and support strategies tailored to the unique experiences of "
+                                },
+                                {
+                                    "pdf_id": "1.25",
+                                    "matching_string": "GBV within the Muslim SouthAsian diaspora."
+                                },
+                                {
+                                    "pdf_id": "0.34",
+                                    "matching_string": "the immigrationrelated support, thereby exacerbating the risk of "
+                                },
+                                {
+                                    "pdf_id": "11.14",
+                                    "matching_string": "leading to abuse related to dowry demands and arranged marriages . For first generation immigrant women, GBV victimization due to the "
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "doc/body/sec3",
+                    "block_type": "sec",
+                    "children": [
+                        {
+                            "leaf id": 10,
+                            "key": "doc/body/sec3/tit",
+                            "block type": "title",
+                            "content": "Storytelling as a Catalyst for Addressing GenderBased Violence",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "1.26",
+                                    "matching_string": "Storytelling as a Catalyst for Addressing GenderBased Violence"
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 11,
+                            "key": "doc/body/sec3/txl0",
+                            "block type": "txl",
+                            "content": "Traditionally, “disclosure” has been understood as the act of expressing one's innermost thoughts and emotions regarding distressing experiences either verbally or in writing . This concept has been particularly applied in the context of HIV, as well as to some extent in cases of GBV and other forms of victimization such as sexual abuse and dating violence . Research indicates that disclosing experiences of GBV can have positive outcomes, while the suppression of disclosure can act as a stressor .",
+                            "leftover": "disclosure can act as a stressor .",
+                            "matches": [
+                                {
+                                    "pdf_id": "1.29",
+                                    "matching_string": "HIV, as well as to some extent in cases of GBV and other forms of victimization such as sexual abuse and dating violence "
+                                },
+                                {
+                                    "pdf_id": "1.27",
+                                    "matching_string": "Traditionally, “disclosure” has been understood as the act of expressing one's innermost thoughts and emotions regarding "
+                                },
+                                {
+                                    "pdf_id": "1.30",
+                                    "matching_string": ". Research indicates that disclosing experiences of GBV can have positive outcomes, while the suppression of "
+                                },
+                                {
+                                    "pdf_id": "1.28",
+                                    "matching_string": "distressing experiences either verbally or in writing . This concept has been particularly applied in the context of "
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 12,
+                            "key": "doc/body/sec3/txl1",
+                            "block type": "txl",
+                            "content": "Traditional models of disclosure often depict the individual disclosing as solely responsible for conveying the event, but this overlooks the collaborative nature of the process, particularly in the context of GBV . Instead, a “discursive approach” to disclosure recognizes it as a shared construction of meaning between the individual disclosing and those supporting or listening . This approach emphasizes the role of language and social context in shaping what is disclosed and how it is understood. Furthermore, the act of disclosing GBV is not necessarily preceded by an awareness of the problem; rather, it may emerge through dialogue and mutual recognition of experiences . Additionally, disclosure and concealment of GBV are not mutually exclusive processes but may occur simultaneously and interactively .",
+                            "leftover": "approach” ",
+                            "matches": [
+                                {
+                                    "pdf_id": "1.32",
+                                    "matching_string": "Traditional models of disclosure often depict the individual disclosing as solely responsible for conveying the event, "
+                                },
+                                {
+                                    "pdf_id": "1.37",
+                                    "matching_string": "the problem; rather, it may emerge through dialogue and mutual recognition of experiences . Additionally, disclosure "
+                                },
+                                {
+                                    "pdf_id": "1.38",
+                                    "matching_string": "and concealment of GBV are not mutually exclusive processes but may occur simultaneously and interactively ."
+                                },
+                                {
+                                    "pdf_id": "1.33",
+                                    "matching_string": "but this overlooks the collaborative nature of the process, particularly in the context of GBV . Instead, a “discursive "
+                                },
+                                {
+                                    "pdf_id": "1.34",
+                                    "matching_string": "to disclosure recognizes it as a shared construction of meaning between the individual disclosing and those "
+                                },
+                                {
+                                    "pdf_id": "1.36",
+                                    "matching_string": "disclosed and how it is understood. Furthermore, the act of disclosing GBV is not necessarily preceded by an awareness of "
+                                },
+                                {
+                                    "pdf_id": "1.35",
+                                    "matching_string": "supporting or listening . This approach emphasizes the role of language and social context in shaping what is "
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 13,
+                            "key": "doc/body/sec3/txl2",
+                            "block type": "txl",
+                            "content": "While existing research has examined factors influencing disclosure, there is a lack of studies specifically analyzing the process of GBV disclosure itself, particularly from the perspectives of both the victims and survivors . “Magical realism,” as a narrative strategy, is employed to represent unspeakable historical traumas, offering a tool termed \"traumatic imagination,\" which facilitates the exploration and processing of trauma through empathetic storytelling . “Traumatic imagination” involves transforming traumatic memories into narratives of suffering through creative processes . Ayehsa et al. underscores the significance of storytelling in promoting the mental wellbeing of GBV victims and provides a literary perspective on how women's experiences of suffering are conveyed in traditional narratives . In contexts of conflict, storytelling becomes a crucial means of channeling trauma and fostering resilience.",
+                            "leftover": "realism,” ",
+                            "matches": [
+                                {
+                                    "pdf_id": "2.2",
+                                    "matching_string": "While existing research has examined factors influencing disclosure, there is a lack of studies specifically analyzing "
+                                },
+                                {
+                                    "pdf_id": "2.7",
+                                    "matching_string": "processes . Ayehsa et al. underscores the significance of storytelling in promoting the mental wellbeing of GBV victims "
+                                },
+                                {
+                                    "pdf_id": "2.8",
+                                    "matching_string": "and provides a literary perspective on how women's experiences of suffering are conveyed in traditional narratives . "
+                                },
+                                {
+                                    "pdf_id": "2.9",
+                                    "matching_string": "In contexts of conflict, storytelling becomes a crucial means of channeling trauma and fostering resilience."
+                                },
+                                {
+                                    "pdf_id": "2.3",
+                                    "matching_string": "the process of GBV disclosure itself, particularly from the perspectives of both the victims and survivors . “Magical "
+                                },
+                                {
+                                    "pdf_id": "2.4",
+                                    "matching_string": "as a narrative strategy, is employed to represent unspeakable historical traumas, offering a tool termed "
+                                },
+                                {
+                                    "pdf_id": "2.5",
+                                    "matching_string": "\"traumatic imagination,\" which facilitates the exploration and processing of trauma through empathetic storytelling "
+                                },
+                                {
+                                    "pdf_id": "2.6",
+                                    "matching_string": ". “Traumatic imagination” involves transforming traumatic memories into narratives of suffering through creative "
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 14,
+                            "key": "doc/body/sec3/txl3",
+                            "block type": "txl",
+                            "content": "Traditional storytelling, deeply rooted in oral traditions and poetry from the IndoPersian or premodern era, serves as a resource for women who have experienced violence, enabling them to articulate their suffering and shield themselves from potential harm or stigma . These stories, often infused with magical realism, allow for the assimilation of memories and legacies, while also challenging dominant narratives and patriarchal structures .",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "2.10",
+                                    "matching_string": "Traditional storytelling, deeply rooted in oral traditions and poetry from the IndoPersian or premodern era, serves as "
+                                },
+                                {
+                                    "pdf_id": "2.11",
+                                    "matching_string": "a resource for women who have experienced violence, enabling them to articulate their suffering and shield themselves "
+                                },
+                                {
+                                    "pdf_id": "2.12",
+                                    "matching_string": "from potential harm or stigma . These stories, often infused with magical realism, allow for the assimilation of "
+                                },
+                                {
+                                    "pdf_id": "2.13",
+                                    "matching_string": "memories and legacies, while also challenging dominant narratives and patriarchal structures ."
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 15,
+                            "key": "doc/body/sec3/txl4",
+                            "block type": "txl",
+                            "content": "In the premodern era, storytelling was considered an art form aimed at transmitting knowledge and wisdom. Walter Benjamin, in his renowned 1936 essay \"The Storyteller,\" emphasized the role of storytellers as conveyors of experience and insight . They passed down wisdom from generation to generation, encouraging their audience to maintain a sense of wonder and imagination. Utilizing their vast reservoir of memory, premodern storytellers recounted tales from ancient traditions, focusing not on practical solutions but on cultivating the ability to craft compelling narratives. This skill, according to Benjamin, allowed listeners to glimpse the richness of the world beyond mere scientific truths.",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "2.14",
+                                    "matching_string": "In the premodern era, storytelling was considered an art form aimed at transmitting knowledge and wisdom. Walter "
+                                },
+                                {
+                                    "pdf_id": "2.15",
+                                    "matching_string": "Benjamin, in his renowned 1936 essay \"The Storyteller,\" emphasized the role of storytellers as conveyors of experience "
+                                },
+                                {
+                                    "pdf_id": "2.16",
+                                    "matching_string": "and insight . They passed down wisdom from generation to generation, encouraging their audience to maintain a "
+                                },
+                                {
+                                    "pdf_id": "2.17",
+                                    "matching_string": "sense of wonder and imagination. Utilizing their vast reservoir of memory, premodern storytellers recounted tales from "
+                                },
+                                {
+                                    "pdf_id": "2.18",
+                                    "matching_string": "ancient traditions, focusing not on practical solutions but on cultivating the ability to craft compelling narratives. This "
+                                },
+                                {
+                                    "pdf_id": "2.19",
+                                    "matching_string": "skill, according to Benjamin, allowed listeners to glimpse the richness of the world beyond mere scientific truths."
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 16,
+                            "key": "doc/body/sec3/txl5",
+                            "block type": "txl",
+                            "content": "In Persianate India, storytelling served primarily as a tool for ethical development. Rather than being concerned with factual accuracy, these narratives focused on shaping individuals' inner selves and their relationships with others. The emphasis was on structuring human interiority and fostering moral growth. Magical realism, prevalent in Turkish literature, provides a platform for marginalized voices to be heard, evoking a sense of liminality that transcends boundaries and connects individual stories to broader human experiences . Through this narrative approach, experiences of trauma are transformed into narratives that offer meaning and healing for both storytellers and listeners. By integrating personal narratives with traditional stories, individuals and communities can engage in collective healing processes, drawing on family networks and communitybased interventions that utilize storytelling in trauma therapy and recovery.",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "2.20",
+                                    "matching_string": "In Persianate India, storytelling served primarily as a tool for ethical development. Rather than being concerned "
+                                },
+                                {
+                                    "pdf_id": "2.21",
+                                    "matching_string": "with factual accuracy, these narratives focused on shaping individuals' inner selves and their relationships with others. "
+                                },
+                                {
+                                    "pdf_id": "2.22",
+                                    "matching_string": "The emphasis was on structuring human interiority and fostering moral growth. Magical realism, prevalent in Turkish "
+                                },
+                                {
+                                    "pdf_id": "2.23",
+                                    "matching_string": "literature, provides a platform for marginalized voices to be heard, evoking a sense of liminality that transcends "
+                                },
+                                {
+                                    "pdf_id": "2.24",
+                                    "matching_string": "boundaries and connects individual stories to broader human experiences . Through this narrative approach, "
+                                },
+                                {
+                                    "pdf_id": "2.25",
+                                    "matching_string": "experiences of trauma are transformed into narratives that offer meaning and healing for both storytellers and listeners. "
+                                },
+                                {
+                                    "pdf_id": "2.26",
+                                    "matching_string": "By integrating personal narratives with traditional stories, individuals and communities can engage in collective healing "
+                                },
+                                {
+                                    "pdf_id": "2.27",
+                                    "matching_string": "processes, drawing on family networks and communitybased interventions that utilize storytelling in trauma therapy "
+                                },
+                                {
+                                    "pdf_id": "2.28",
+                                    "matching_string": "and recovery."
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 17,
+                            "key": "doc/body/sec3/txl6",
+                            "block type": "txl",
+                            "content": "Storytelling vividly brings to light the deeply personal and often harrowing experiences of women who have endured any form of GBV. One particularly striking account from Kameela (pseudonym) a woman in Kabul captures the essence of such violence, not only in its physical form but also through emotional and verbal abuse. She poignantly states, \"My husband doesn't always beat me–but his attitude and the bad names he calls me is worse than if he stabs me with a sword. With this sense of fear, my whole body shakes, especially my hands and whatever is in my hand, falls down and breaks down. Then he gets so angry and beats me that why did I break glasses and household utensils. When I want to tell him that I didn't break things intentionally, my tongue gets paralyzed and I can't speak a word—it's all the fear, I think it's better to die once than dying every day\" . This testimony reveals the severe impact of psychological torment and physical aggression. In another instance, Shazia (pseudonym), a 20yearold woman from Pakistan, shares her ordeal, saying, \"He grabbed me firmly, shoving me against the wall and unleashing a barrage of kicks and slaps. Then he picked up a metal pipe and started hitting me mercilessly\" . Her words lay bare the brutal reality of the violence she faced.",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "2.29",
+                                    "matching_string": "Storytelling vividly brings to light the deeply personal and often harrowing experiences of women who have endured "
+                                },
+                                {
+                                    "pdf_id": "2.30",
+                                    "matching_string": "any form of GBV. One particularly striking account from Kameela (pseudonym) a woman in Kabul captures the essence "
+                                },
+                                {
+                                    "pdf_id": "2.33",
+                                    "matching_string": "sword. With this sense of fear, my whole body shakes, especially my hands and whatever is in my hand, falls down "
+                                },
+                                {
+                                    "pdf_id": "2.36",
+                                    "matching_string": "fear, I think it's better to die once than dying every day\" . This testimony reveals the severe impact of psychological "
+                                },
+                                {
+                                    "pdf_id": "2.37",
+                                    "matching_string": "torment and physical aggression. In another instance, Shazia (pseudonym), a 20yearold woman from Pakistan, shares "
+                                },
+                                {
+                                    "pdf_id": "2.38",
+                                    "matching_string": "her ordeal, saying, \"He grabbed me firmly, shoving me against the wall and unleashing a barrage of kicks and slaps. "
+                                },
+                                {
+                                    "pdf_id": "2.39",
+                                    "matching_string": "Then he picked up a metal pipe and started hitting me mercilessly\" . Her words lay bare the brutal reality of the "
+                                },
+                                {
+                                    "pdf_id": "2.40",
+                                    "matching_string": "violence she faced."
+                                },
+                                {
+                                    "pdf_id": "2.35",
+                                    "matching_string": "want to tell him that I didn't break things intentionally, my tongue gets paralyzed and I can't speak a word—it's all the "
+                                },
+                                {
+                                    "pdf_id": "2.31",
+                                    "matching_string": "of such violence, not only in its physical form but also through emotional and verbal abuse. She poignantly states, \"My "
+                                },
+                                {
+                                    "pdf_id": "2.32",
+                                    "matching_string": "husband doesn't always beat me–but his attitude and the bad names he calls me is worse than if he stabs me with a "
+                                },
+                                {
+                                    "pdf_id": "2.34",
+                                    "matching_string": "and breaks down. Then he gets so angry and beats me that why did I break glasses and household utensils. When I "
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 18,
+                            "key": "doc/body/sec3/txl7",
+                            "block type": "txl",
+                            "content": "The obstacles to obtaining justice and support for victims are further highlighted by the narratives of women discussing their lack of access to legal information. One woman, in a focused group discussion by the Asia Foundation, expressed, \"There is no law for women like us. We are uneducated people and we don't know anything about laws. We cannot read newspapers—maybe we could have read them if we had an education. There is no facility to go outside, so where would we go for information?\" . This highlights a significant barrier to empowerment and protection against abuse. Adding to the discourse on gender inequality, another woman reflected on the societal attitudes that undermine women, \"A man is a man; he considers himself everything. Men don't respect women. It's their prerogative whether they want to take us anywhere; otherwise, a woman cannot go anywhere by her own will. There is no difference between our animals and us.\" In a candid admission that illustrates the depth of gender bias, a man admitted, \"We don't seek the opinion of the woman, and even if she gives us some good advice, we ignore her, considering her less intelligent. After that, she feels she has no value in the household,\" .",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "2.42",
+                                    "matching_string": "discussing their lack of access to legal information. One woman, in a focused group discussion by the Asia Foundation, "
+                                },
+                                {
+                                    "pdf_id": "3.2",
+                                    "matching_string": "cannot read newspapers—maybe we could have read them if we had an education. There is no facility to go outside, so "
+                                },
+                                {
+                                    "pdf_id": "3.3",
+                                    "matching_string": "where would we go for information?\" . This highlights a significant barrier to empowerment and protection against "
+                                },
+                                {
+                                    "pdf_id": "3.4",
+                                    "matching_string": "abuse. Adding to the discourse on gender inequality, another woman reflected on the societal attitudes that undermine "
+                                },
+                                {
+                                    "pdf_id": "3.5",
+                                    "matching_string": "women, \"A man is a man; he considers himself everything. Men don't respect women. It's their prerogative whether "
+                                },
+                                {
+                                    "pdf_id": "3.6",
+                                    "matching_string": "they want to take us anywhere; otherwise, a woman cannot go anywhere by her own will. There is no difference "
+                                },
+                                {
+                                    "pdf_id": "3.8",
+                                    "matching_string": "don't seek the opinion of the woman, and even if she gives us some good advice, we ignore her, considering her less "
+                                },
+                                {
+                                    "pdf_id": "3.9",
+                                    "matching_string": "intelligent. After that, she feels she has no value in the household,\" ."
+                                },
+                                {
+                                    "pdf_id": "3.7",
+                                    "matching_string": "between our animals and us.\" In a candid admission that illustrates the depth of gender bias, a man admitted, \"We "
+                                },
+                                {
+                                    "pdf_id": "3.1",
+                                    "matching_string": "expressed, \"There is no law for women like us. We are uneducated people and we don't know anything about laws. We "
+                                },
+                                {
+                                    "pdf_id": "2.41",
+                                    "matching_string": "The obstacles to obtaining justice and support for victims are further highlighted by the narratives of women "
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 19,
+                            "key": "doc/body/sec3/txl8",
+                            "block type": "txl",
+                            "content": "Incorporating the voices of those who have experienced GBV deepens the narrative, bringing to light the societal norms and legal challenges faced by women in South Asian communities. Muskaan (pseudonym) shares her reluctance to disclose the violence within her marriage, reflecting on societal expectations: “I didn't want to hurt [my family by disclosing the violence]. I thought it might change. Probably it won't get to a point where I have to tell them. Qnukay (because) there's norm like all the husbands beat their wives, not in my family, but . . .” . This highlights the normalization of domestic violence and the internal conflict faced by victims contemplating disclosure. The issue extends to the disturbing acceptance of honor killings in some South Asian societies, where female relatives can be murdered with societal and legal leniency under the guise of defending “family honor.” This grim reality is underscored by the fact that, \"In our society, honor killing, a man can kill his wife and there's laws to protect men,” revealing the legal protections afforded to perpetrators . Meena's (pseudonym) experience of sexual violence on her wedding night further illustrates the normalization of abuse within marriage, as she believed such brutality was an expected part of marital relations: “First day, almost he raped me. I'm crying, illiterate, crying and, just he finished his work and I'm, I'm so, I felt so bad, but I think, this is supposed to happen” .",
+                            "leftover": "[my family by disclosing the violence]. I thought it might change. Probably it won't get to a point where I have to tell them. ",
+                            "matches": [
+                                {
+                                    "pdf_id": "3.11",
+                                    "matching_string": "norms and legal challenges faced by women in South Asian communities. Muskaan (pseudonym) shares her reluctance "
+                                },
+                                {
+                                    "pdf_id": "3.15",
+                                    "matching_string": "the normalization of domestic violence and the internal conflict faced by victims contemplating disclosure. The issue "
+                                },
+                                {
+                                    "pdf_id": "3.16",
+                                    "matching_string": "extends to the disturbing acceptance of honor killings in some South Asian societies, where female relatives can be "
+                                },
+                                {
+                                    "pdf_id": "3.19",
+                                    "matching_string": "legal protections afforded to perpetrators . Meena's (pseudonym) experience of sexual violence on her wedding "
+                                },
+                                {
+                                    "pdf_id": "3.20",
+                                    "matching_string": "night further illustrates the normalization of abuse within marriage, as she believed such brutality was an expected "
+                                },
+                                {
+                                    "pdf_id": "3.14",
+                                    "matching_string": "Qnukay (because) there's norm like all the husbands beat their wives, not in my family, but . . .” . This highlights "
+                                },
+                                {
+                                    "pdf_id": "3.17",
+                                    "matching_string": "murdered with societal and legal leniency under the guise of defending “family honor.” This grim reality is underscored "
+                                },
+                                {
+                                    "pdf_id": "3.18",
+                                    "matching_string": "by the fact that, \"In our society, honor killing, a man can kill his wife and there's laws to protect men,” revealing the "
+                                },
+                                {
+                                    "pdf_id": "3.21",
+                                    "matching_string": "part of marital relations: “First day, almost he raped me. I'm crying, illiterate, crying and, just he finished his work and "
+                                },
+                                {
+                                    "pdf_id": "3.22",
+                                    "matching_string": "I'm, I'm so, I felt so bad, but I think, this is supposed to happen” ."
+                                },
+                                {
+                                    "pdf_id": "3.12",
+                                    "matching_string": "to disclose the violence within her marriage, reflecting on societal expectations: “I didn't want to hurt "
+                                },
+                                {
+                                    "pdf_id": "3.10",
+                                    "matching_string": "Incorporating the voices of those who have experienced GBV deepens the narrative, bringing to light the societal "
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 20,
+                            "key": "doc/body/sec3/txl9",
+                            "block type": "txl",
+                            "content": "Preeti (pseudonym) recounts the exploitation she endured when an uncle, who moved into her family's home under the pretext of immigration and establishing himself in the United States, abused her: “He was immigrating to the U.S. My father sponsored him to come. Until he could get on his feet and find a job and establish himself, he needed a place to stay...He had access to everything in our family. Our house was his house” . This account sheds light on the abuse of trust and power within familial settings. Kamelesh's (pseudonym) story further illustrates the complex dynamics of abuse within the community, detailing the shift from affectionate attention to aggression by her uncle as she began to resist his advances: “My father is the eldest son...He's everybody's big guardian. I mean the community doesn't even know how physically violent he can be...With my uncle, the abuse started when I was fifteen...It was only later that he began being aggressive with me, after I started to deny him access to me” . Her narrative highlights the contradiction between the community's perception of her family and her personal experiences of abuse.",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "3.23",
+                                    "matching_string": "Preeti (pseudonym) recounts the exploitation she endured when an uncle, who moved into her family's home under "
+                                },
+                                {
+                                    "pdf_id": "3.25",
+                                    "matching_string": "My father sponsored him to come. Until he could get on his feet and find a job and establish himself, he needed a "
+                                },
+                                {
+                                    "pdf_id": "3.27",
+                                    "matching_string": "the abuse of trust and power within familial settings. Kamelesh's (pseudonym) story further illustrates the complex "
+                                },
+                                {
+                                    "pdf_id": "3.28",
+                                    "matching_string": "dynamics of abuse within the community, detailing the shift from affectionate attention to aggression by her uncle as "
+                                },
+                                {
+                                    "pdf_id": "3.30",
+                                    "matching_string": "doesn't even know how physically violent he can be...With my uncle, the abuse started when I was fifteen...It was only "
+                                },
+                                {
+                                    "pdf_id": "3.32",
+                                    "matching_string": "the contradiction between the community's perception of her family and her personal experiences of abuse."
+                                },
+                                {
+                                    "pdf_id": "3.24",
+                                    "matching_string": "the pretext of immigration and establishing himself in the United States, abused her: “He was immigrating to the U.S. "
+                                },
+                                {
+                                    "pdf_id": "3.26",
+                                    "matching_string": "place to stay...He had access to everything in our family. Our house was his house” . This account sheds light on "
+                                },
+                                {
+                                    "pdf_id": "3.29",
+                                    "matching_string": "she began to resist his advances: “My father is the eldest son...He's everybody's big guardian. I mean the community "
+                                },
+                                {
+                                    "pdf_id": "3.31",
+                                    "matching_string": "later that he began being aggressive with me, after I started to deny him access to me” . Her narrative highlights "
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 21,
+                            "key": "doc/body/sec3/txl10",
+                            "block type": "txl",
+                            "content": "These narratives shed light on the complex layers of various forms of GBV, from physical abuse to the psychological aftermath and the systemic barriers that prevent women from seeking help. They underscore the critical need for societal change to ensure the safety and dignity of all women.",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "3.33",
+                                    "matching_string": "These narratives shed light on the complex layers of various forms of GBV, from physical abuse to the psychological "
+                                },
+                                {
+                                    "pdf_id": "3.34",
+                                    "matching_string": "aftermath and the systemic barriers that prevent women from seeking help. They underscore the critical need for "
+                                },
+                                {
+                                    "pdf_id": "3.35",
+                                    "matching_string": "societal change to ensure the safety and dignity of all women."
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 22,
+                            "key": "doc/body/sec3/txl11",
+                            "block type": "txl",
+                            "content": "Imagine a world where the complex layers of a victim's story, enriched with tangible evidence, are accessible through the simple touch of a mobile app. Here, the potent capabilities of AR give rise to a newfound empowerment, amplifying the voices of women striving for justice. Imagine each narrative, once muffled by the din of neglect, now resounding with clarity and strength, guiding us toward a reality where justice is not an abstract ideal but an attainable outcome. This is the driving force behind \"Augmented Voices.\"",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "3.36",
+                                    "matching_string": "Imagine a world where the complex layers of a victim's story, enriched with tangible evidence, are accessible through "
+                                },
+                                {
+                                    "pdf_id": "3.37",
+                                    "matching_string": "the simple touch of a mobile app. Here, the potent capabilities of AR give rise to a newfound empowerment, amplifying "
+                                },
+                                {
+                                    "pdf_id": "3.38",
+                                    "matching_string": "the voices of women striving for justice. Imagine each narrative, once muffled by the din of neglect, now resounding "
+                                },
+                                {
+                                    "pdf_id": "3.39",
+                                    "matching_string": "with clarity and strength, guiding us toward a reality where justice is not an abstract ideal but an attainable outcome. "
+                                },
+                                {
+                                    "pdf_id": "3.40",
+                                    "matching_string": "This is the driving force behind \"Augmented Voices.\""
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "doc/body/sec4",
+                    "block_type": "sec",
+                    "children": [
+                        {
+                            "leaf id": 23,
+                            "key": "doc/body/sec4/tit",
+                            "block type": "title",
+                            "content": "\"Augmented Voices\"  Combining Augmented Reality with Social Justice Storytelling",
+                            "leftover": "\"AStorytelling",
+                            "matches": [
+                                {
+                                    "pdf_id": "4.2",
+                                    "matching_string": "ugmented Voices\"  Combining Augmented Reality with Social Justice "
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 24,
+                            "key": "doc/body/sec4/txl0",
+                            "block type": "txl",
+                            "content": "\"Augmented Voices\" is a pioneering mobile augmented reality (AR) application solution that intricately blends the historical and presentday expereinces of social injustice into the Muslim South Asian GBV victim's realworld surroundings. This app embarks users on an engaging exploration of their environment, transforming specific locales into catalysts for unveiling stories, immersive visuals, and poignant soundscapes that collectively portray the struggles and resilience of marginalized South Asian Muslim women across various geographies. Though still in the concept development stage, the content of \"Augmented Voices\" will carefully be selected from a wide array of sources, encompassing archival documents, interviews, direct personal narratives submitted via the Mobile App, and seminal texts on social justice. This eclectic collection of stories will deliver a rich and nuanced understanding of injustice and endurance, providing users with deep insights into the lives of those who have stood up to systemic oppression and violence from a Muslim South Asian perspective. By presenting stories from historical episodes of discrimination to modernday accounts of GBV, the app aims to bridge the temporal divide, shedding light on the persistent nature of these conflicts while celebrating the courage and tenacity of affected individuals and groups.",
+                            "leftover": "historical ",
+                            "matches": [
+                                {
+                                    "pdf_id": "4.4",
+                                    "matching_string": "\"Augmented Voices\" is a pioneering mobile augmented reality (AR) application solution that intricately blends the "
+                                },
+                                {
+                                    "pdf_id": "4.5",
+                                    "matching_string": "and presentday expereinces of social injustice into the Muslim South Asian GBV victim's realworld surroundings. "
+                                },
+                                {
+                                    "pdf_id": "4.6",
+                                    "matching_string": "This app embarks users on an engaging exploration of their environment, transforming specific locales into catalysts "
+                                },
+                                {
+                                    "pdf_id": "4.7",
+                                    "matching_string": "for unveiling stories, immersive visuals, and poignant soundscapes that collectively portray the struggles and resilience "
+                                },
+                                {
+                                    "pdf_id": "4.8",
+                                    "matching_string": "of marginalized South Asian Muslim women across various geographies. Though still in the concept development "
+                                },
+                                {
+                                    "pdf_id": "4.9",
+                                    "matching_string": "stage, the content of \"Augmented Voices\" will carefully be selected from a wide array of sources, encompassing archival "
+                                },
+                                {
+                                    "pdf_id": "4.10",
+                                    "matching_string": "documents, interviews, direct personal narratives submitted via the Mobile App, and seminal texts on social justice. "
+                                },
+                                {
+                                    "pdf_id": "4.11",
+                                    "matching_string": "This eclectic collection of stories will deliver a rich and nuanced understanding of injustice and endurance, providing "
+                                },
+                                {
+                                    "pdf_id": "4.12",
+                                    "matching_string": "users with deep insights into the lives of those who have stood up to systemic oppression and violence from a Muslim "
+                                },
+                                {
+                                    "pdf_id": "4.13",
+                                    "matching_string": "South Asian perspective. By presenting stories from historical episodes of discrimination to modernday accounts "
+                                },
+                                {
+                                    "pdf_id": "4.14",
+                                    "matching_string": "of GBV, the app aims to bridge the temporal divide, shedding light on the persistent nature of these conflicts while "
+                                },
+                                {
+                                    "pdf_id": "4.15",
+                                    "matching_string": "celebrating the courage and tenacity of affected individuals and groups."
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 25,
+                            "key": "doc/body/sec4/txl1",
+                            "block type": "txl",
+                            "content": "\"Augmented Voices\" will leverage the cuttingedge AR technology to generate dynamic, contextaware visualizations that respond to the user's specific location and movements, significantly enriching the narrative immersion. This interactive dimension will not only amplify the narrative's impact but also motivate users to physically engage with their surroundings, thus enhancing their connection to the stories shared. The application's sound design will be integral in crafting this immersive environment, with a selection of audio pieces that perfectly accentuate the visual narrative, inviting users into the emotional and psychological realms of the stories.",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "4.16",
+                                    "matching_string": "\"Augmented Voices\" will leverage the cuttingedge AR technology to generate dynamic, contextaware visualizations "
+                                },
+                                {
+                                    "pdf_id": "4.19",
+                                    "matching_string": "their surroundings, thus enhancing their connection to the stories shared. The application's sound design will be "
+                                },
+                                {
+                                    "pdf_id": "4.20",
+                                    "matching_string": "integral in crafting this immersive environment, with a selection of audio pieces that perfectly accentuate the visual "
+                                },
+                                {
+                                    "pdf_id": "4.21",
+                                    "matching_string": "narrative, inviting users into the emotional and psychological realms of the stories."
+                                },
+                                {
+                                    "pdf_id": "4.17",
+                                    "matching_string": "that respond to the user's specific location and movements, significantly enriching the narrative immersion. This "
+                                },
+                                {
+                                    "pdf_id": "4.18",
+                                    "matching_string": "interactive dimension will not only amplify the narrative's impact but also motivate users to physically engage with "
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 26,
+                            "key": "doc/body/sec4/txl2",
+                            "block type": "txl",
+                            "content": "As an innovative educational and advocacy instrument, \"Augmented Voices\" hopes to play a vital role in raising awareness of the battles against social injustice with respect to GBV of the Muslim South Asian groups. It hopes to cultivate empathy and unity among users, prompting them to contemplate their contribution to uplifting and echoing the voices of marginalized individuals within their communities.",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "4.22",
+                                    "matching_string": "As an innovative educational and advocacy instrument, \"Augmented Voices\" hopes to play a vital role in raising "
+                                },
+                                {
+                                    "pdf_id": "4.24",
+                                    "matching_string": "cultivate empathy and unity among users, prompting them to contemplate their contribution to uplifting and echoing "
+                                },
+                                {
+                                    "pdf_id": "4.25",
+                                    "matching_string": "the voices of marginalized individuals within their communities."
+                                },
+                                {
+                                    "pdf_id": "4.23",
+                                    "matching_string": "awareness of the battles against social injustice with respect to GBV of the Muslim South Asian groups. It hopes to "
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "doc/body/sec5",
+                    "block_type": "sec",
+                    "children": [
+                        {
+                            "leaf id": 27,
+                            "key": "doc/body/sec5/tit",
+                            "block type": "title",
+                            "content": "Technological Motivation",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "4.26",
+                                    "matching_string": "Technological Motivation"
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 28,
+                            "key": "doc/body/sec5/txl0",
+                            "block type": "txl",
+                            "content": "AR represents a transformative technology at the intersection of the physical and digital worlds, adding a meaningful layer of content that enriches realworld environments. In the context of addressing GBV against Muslim South Asian women—often marginalized and voiceless—AR offers a powerful medium for engagement and advocacy. \"Augmented Voices\" will utilize Geographic Information System (GIS) mapping to anchor storytelling in specific geographical contexts, thereby creating a deep, situative experience for users.",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "4.27",
+                                    "matching_string": "AR represents a transformative technology at the intersection of the physical and digital worlds, adding a meaningful "
+                                },
+                                {
+                                    "pdf_id": "4.28",
+                                    "matching_string": "layer of content that enriches realworld environments. In the context of addressing GBV against Muslim South Asian "
+                                },
+                                {
+                                    "pdf_id": "4.29",
+                                    "matching_string": "women—often marginalized and voiceless—AR offers a powerful medium for engagement and advocacy. \"Augmented "
+                                },
+                                {
+                                    "pdf_id": "4.30",
+                                    "matching_string": "Voices\" will utilize Geographic Information System (GIS) mapping to anchor storytelling in specific geographical "
+                                },
+                                {
+                                    "pdf_id": "4.31",
+                                    "matching_string": "contexts, thereby creating a deep, situative experience for users."
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 29,
+                            "key": "doc/body/sec5/txl1",
+                            "block type": "txl",
+                            "content": "The core technological motivation behind integrating AR with storytelling in this social issue context lies in its ability to combine the tangible physical world with enriched, contextually relevant digital information. This blend facilitates meaningful experiences situated within the physical environments where these narratives unfold or are rooted. For victims of GBV, particularly Muslim South Asian women, such digital enhancement is not merely narrative but serves as a potent tool for awareness and understanding.",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "4.32",
+                                    "matching_string": "The core technological motivation behind integrating AR with storytelling in this social issue context lies in its "
+                                },
+                                {
+                                    "pdf_id": "4.33",
+                                    "matching_string": "ability to combine the tangible physical world with enriched, contextually relevant digital information. This blend "
+                                },
+                                {
+                                    "pdf_id": "4.34",
+                                    "matching_string": "facilitates meaningful experiences situated within the physical environments where these narratives unfold or are "
+                                },
+                                {
+                                    "pdf_id": "4.35",
+                                    "matching_string": "rooted. For victims of GBV, particularly Muslim South Asian women, such digital enhancement is not merely narrative "
+                                },
+                                {
+                                    "pdf_id": "4.36",
+                                    "matching_string": "but serves as a potent tool for awareness and understanding."
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 30,
+                            "key": "doc/body/sec5/txl2",
+                            "block type": "txl",
+                            "content": "According to Hope Schroeder, Rob Tokanel, Kyle Qian, and Khoi Le (2023), modern AR systems possess the capability to recognize locations (\"where things are\") but often lack the depth to understand the significance (\"what they are\" and \"why they matter\") of these places . This insight underlines the challenge and the potential of AR: to provide an \"overlay on reality\" where the physical presence of a place is augmented with historical, cultural, or personal significance through digital media.",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "4.37",
+                                    "matching_string": "According to Hope Schroeder, Rob Tokanel, Kyle Qian, and Khoi Le (2023), modern AR systems possess the capability "
+                                },
+                                {
+                                    "pdf_id": "4.39",
+                                    "matching_string": "\"why they matter\") of these places . This insight underlines the challenge and the potential of AR: to provide an "
+                                },
+                                {
+                                    "pdf_id": "5.2",
+                                    "matching_string": "\"overlay on reality\" where the physical presence of a place is augmented with historical, cultural, or personal significance "
+                                },
+                                {
+                                    "pdf_id": "5.3",
+                                    "matching_string": "through digital media."
+                                },
+                                {
+                                    "pdf_id": "4.38",
+                                    "matching_string": "to recognize locations (\"where things are\") but often lack the depth to understand the significance (\"what they are\" and "
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 31,
+                            "key": "doc/body/sec5/txl3",
+                            "block type": "txl",
+                            "content": "For \"Augmented Voices,\" visual markers will be used to trigger locationbased AR experiences. This will ensure that interactions are not just immersive but are integrally tied to the realworld locations that hold significance in the narratives of GBV. By leveraging AR's capability to utilize 3D space for sitespecific storytelling, the app not only hopes to tell a story, but it allows users to step \"into the story,\" enhancing engagement through interactive and immersive elements.",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "5.4",
+                                    "matching_string": "For \"Augmented Voices,\" visual markers will be used to trigger locationbased AR experiences. This will ensure "
+                                },
+                                {
+                                    "pdf_id": "5.6",
+                                    "matching_string": "narratives of GBV. By leveraging AR's capability to utilize 3D space for sitespecific storytelling, the app not only hopes "
+                                },
+                                {
+                                    "pdf_id": "5.7",
+                                    "matching_string": "to tell a story, but it allows users to step \"into the story,\" enhancing engagement through interactive and immersive "
+                                },
+                                {
+                                    "pdf_id": "5.8",
+                                    "matching_string": "elements."
+                                },
+                                {
+                                    "pdf_id": "5.5",
+                                    "matching_string": "that interactions are not just immersive but are integrally tied to the realworld locations that hold significance in the "
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 32,
+                            "key": "doc/body/sec5/txl4",
+                            "block type": "txl",
+                            "content": "Looking ahead, the development of sitespecific AR for \"Augmented Voices\" is in the planning phase and will progress over the coming months. The aim is to employ AR not just as a narrative tool but as a medium for \"traumatic imagination\" where users can confront and comprehend the realities of GBV in a visceral, impactful manner. This approach intends to transform how stories of social injustice and resilience are told and experienced, making AR a critical tool in the fight against GBV and in amplifying the voices of those who have been silenced.",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "5.9",
+                                    "matching_string": "Looking ahead, the development of sitespecific AR for \"Augmented Voices\" is in the planning phase and will "
+                                },
+                                {
+                                    "pdf_id": "5.10",
+                                    "matching_string": "progress over the coming months. The aim is to employ AR not just as a narrative tool but as a medium for \"traumatic "
+                                },
+                                {
+                                    "pdf_id": "5.11",
+                                    "matching_string": "imagination\" where users can confront and comprehend the realities of GBV in a visceral, impactful manner. This "
+                                },
+                                {
+                                    "pdf_id": "5.12",
+                                    "matching_string": "approach intends to transform how stories of social injustice and resilience are told and experienced, making AR a "
+                                },
+                                {
+                                    "pdf_id": "5.13",
+                                    "matching_string": "critical tool in the fight against GBV and in amplifying the voices of those who have been silenced."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "doc/body/sec6",
+                    "block_type": "sec",
+                    "children": [
+                        {
+                            "leaf id": 33,
+                            "key": "doc/body/sec6/tit",
+                            "block type": "title",
+                            "content": "Geographic Information System (GIS) Mapping",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "5.14",
+                                    "matching_string": "Geographic Information System (GIS) Mapping"
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 34,
+                            "key": "doc/body/sec6/txl0",
+                            "block type": "txl",
+                            "content": "The GIS Mapping component of \"Augmented Voices\" plays a pivotal role in providing a spatial dimension to the storytelling and engagement process. This integration allows users to experience a deeper connection with the narratives by situating them within specific geographic contexts. The workflow or systems architecture incorporating GIS mapping into the \"Augmented Voices\" app involves several key steps, designed to offer an intuitive and immersive user experience.",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "5.17",
+                                    "matching_string": "narratives by situating them within specific geographic contexts. The workflow or systems architecture incorporating "
+                                },
+                                {
+                                    "pdf_id": "5.18",
+                                    "matching_string": "GIS mapping into the \"Augmented Voices\" app involves several key steps, designed to offer an intuitive and immersive "
+                                },
+                                {
+                                    "pdf_id": "5.19",
+                                    "matching_string": "user experience."
+                                },
+                                {
+                                    "pdf_id": "5.16",
+                                    "matching_string": "storytelling and engagement process. This integration allows users to experience a deeper connection with the "
+                                },
+                                {
+                                    "pdf_id": "5.15",
+                                    "matching_string": "The GIS Mapping component of \"Augmented Voices\" plays a pivotal role in providing a spatial dimension to the "
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 35,
+                            "key": "doc/body/sec6/figure1",
+                            "block type": "figure",
+                            "content": "\\centering \\includegraphics[width=0.75\\linewidth]{incident.png} AR Story: represents the initial point where the story is marked and identified within the AR environment.",
+                            "leftover": "\\centering \\includegraphics[width=0.75\\linewidth]{incident.png} ",
+                            "matches": [
+                                {
+                                    "pdf_id": "5.1",
+                                    "matching_string": "AR Story: represents the initial point where the story is marked and identified within the AR environment."
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 36,
+                            "key": "doc/body/sec6/figure2",
+                            "block type": "figure",
+                            "content": "\\centering \\includegraphics[width=0.75\\linewidth]{options.png} Interactive AR Case Files for the Story: indicates the options for users to explore different aspects of the story, such as evidence and audio recordings, in a more interactive and detailed manner.",
+                            "leftover": "\\centering \\includegraphics[width=0.75\\linewidth]{options.png} ",
+                            "matches": [
+                                {
+                                    "pdf_id": "6.3",
+                                    "matching_string": "and audio recordings, in a more interactive and detailed manner."
+                                },
+                                {
+                                    "pdf_id": "6.2",
+                                    "matching_string": "Interactive AR Case Files for the Story: indicates the options for users to explore different aspects of the story, such as evidence "
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 37,
+                            "key": "doc/body/sec6/figure3",
+                            "block type": "figure",
+                            "content": "\\centering \\includegraphics[width=0.75\\linewidth]{audioexpanded.png} Expanded Audio Soundscape: audio feature within the app providing a more immersive experience of the story through sound.",
+                            "leftover": "\\centering \\includegraphics[width=0.75\\linewidth]{audioexpanded.png} ",
+                            "matches": [
+                                {
+                                    "pdf_id": "6.4",
+                                    "matching_string": "Expanded Audio Soundscape: audio feature within the app providing a more immersive experience of the story through sound."
+                                }
+                            ]
+                        },
+                        {
+                            "key": "doc/body/sec6/sub4",
+                            "block_type": "sub",
+                            "children": [
+                                {
+                                    "leaf id": 38,
+                                    "key": "doc/body/sec6/sub4/tit",
+                                    "block type": "title",
+                                    "content": "User Onboarding and Signup Process",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "6.5",
+                                            "matching_string": "User Onboarding and Signup Process"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 39,
+                                    "key": "doc/body/sec6/sub4/txl0",
+                                    "block type": "txl",
+                                    "content": "1. User Onboarding: Upon downloading the \"Augmented Voices\" app, users are greeted with an onboarding process that introduces the app's mission, features, and how to navigate through its content. This stage is crucial for setting the context and preparing users for the interactive experience.",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "6.6",
+                                            "matching_string": "1. User Onboarding: Upon downloading the \"Augmented Voices\" app, users are greeted with an onboarding process "
+                                        },
+                                        {
+                                            "pdf_id": "6.8",
+                                            "matching_string": "context and preparing users for the interactive experience."
+                                        },
+                                        {
+                                            "pdf_id": "6.7",
+                                            "matching_string": "that introduces the app's mission, features, and how to navigate through its content. This stage is crucial for setting the "
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 40,
+                                    "key": "doc/body/sec6/sub4/txl1",
+                                    "block type": "txl",
+                                    "content": "2. Signup: Users are prompted to create an account to personalize their experience. The signup process involves entering basic information and preferences, which could include interests in specific historical periods, regions, or types of social injustices. This data helps in curating content that aligns with the user's interests.",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "6.9",
+                                            "matching_string": "2. Signup: Users are prompted to create an account to personalize their experience. The signup process involves "
+                                        },
+                                        {
+                                            "pdf_id": "6.11",
+                                            "matching_string": "of social injustices. This data helps in curating content that aligns with the user's interests."
+                                        },
+                                        {
+                                            "pdf_id": "6.10",
+                                            "matching_string": "entering basic information and preferences, which could include interests in specific historical periods, regions, or types "
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "key": "doc/body/sec6/sub5",
+                            "block_type": "sub",
+                            "children": [
+                                {
+                                    "leaf id": 41,
+                                    "key": "doc/body/sec6/sub5/tit",
+                                    "block type": "title",
+                                    "content": "Content Discovery and GIS Mapping",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "7.1",
+                                            "matching_string": "Content Discovery and GIS Mapping"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 42,
+                                    "key": "doc/body/sec6/sub5/txl0",
+                                    "block type": "txl",
+                                    "content": "1. Discovery of Narratives: After the initial setup, users are directed to the app's main interface, where they can explore various narratives. The app employs GIS mapping to display stories relevant to the user's current location or locations of interest they select on the map.",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "7.2",
+                                            "matching_string": "1. Discovery of Narratives: After the initial setup, users are directed to the app's main interface, where they can "
+                                        },
+                                        {
+                                            "pdf_id": "7.3",
+                                            "matching_string": "explore various narratives. The app employs GIS mapping to display stories relevant to the user's current location or "
+                                        },
+                                        {
+                                            "pdf_id": "7.4",
+                                            "matching_string": "locations of interest they select on the map."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 43,
+                                    "key": "doc/body/sec6/sub5/txl1",
+                                    "block type": "txl",
+                                    "content": "2. Locationbased Triggers: As users move within their environment, the app uses their geographical location to trigger sitespecific stories. These triggers are based on proximity to locations that are significant to the narratives within the app. When a user approaches a trigger point, the app notifies them and presents the opportunity to engage with a story associated with that location.",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "7.5",
+                                            "matching_string": "2. Locationbased Triggers: As users move within their environment, the app uses their geographical location to "
+                                        },
+                                        {
+                                            "pdf_id": "7.7",
+                                            "matching_string": "within the app. When a user approaches a trigger point, the app notifies them and presents the opportunity to engage "
+                                        },
+                                        {
+                                            "pdf_id": "7.8",
+                                            "matching_string": "with a story associated with that location."
+                                        },
+                                        {
+                                            "pdf_id": "7.6",
+                                            "matching_string": "trigger sitespecific stories. These triggers are based on proximity to locations that are significant to the narratives "
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "key": "doc/body/sec6/sub6",
+                            "block_type": "sub",
+                            "children": [
+                                {
+                                    "leaf id": 44,
+                                    "key": "doc/body/sec6/sub6/tit",
+                                    "block type": "title",
+                                    "content": "Interactive Experience",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "7.9",
+                                            "matching_string": "Interactive Experience"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 45,
+                                    "key": "doc/body/sec6/sub6/txl0",
+                                    "block type": "txl",
+                                    "content": "1. Immersive Storytelling: Once a narrative is triggered, users are presented with immersive visualizations, detailed historical accounts, and evocative soundscapes that bring the story to life. This multidimensional approach, combining text, audio, and visual elements, enriches the user's understanding and emotional connection to the narrative.",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "7.10",
+                                            "matching_string": "1. Immersive Storytelling: Once a narrative is triggered, users are presented with immersive visualizations, detailed "
+                                        },
+                                        {
+                                            "pdf_id": "7.12",
+                                            "matching_string": "text, audio, and visual elements, enriches the user's understanding and emotional connection to the narrative."
+                                        },
+                                        {
+                                            "pdf_id": "7.11",
+                                            "matching_string": "historical accounts, and evocative soundscapes that bring the story to life. This multidimensional approach, combining "
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 46,
+                                    "key": "doc/body/sec6/sub6/txl1",
+                                    "block type": "txl",
+                                    "content": "2. Realtime Interaction: The GIS mapping component is designed to offer dynamic, contextsensitive visualizations that adapt to the user's location and movements. This realtime interaction encourages users to explore their physical surroundings, enhancing engagement with the content.",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "7.13",
+                                            "matching_string": "2. Realtime Interaction: The GIS mapping component is designed to offer dynamic, contextsensitive visualizations "
+                                        },
+                                        {
+                                            "pdf_id": "7.14",
+                                            "matching_string": "that adapt to the user's location and movements. This realtime interaction encourages users to explore their physical "
+                                        },
+                                        {
+                                            "pdf_id": "7.15",
+                                            "matching_string": "surroundings, enhancing engagement with the content."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "key": "doc/body/sec6/sub7",
+                            "block_type": "sub",
+                            "children": [
+                                {
+                                    "leaf id": 47,
+                                    "key": "doc/body/sec6/sub7/tit",
+                                    "block type": "title",
+                                    "content": "User Engagement and Community Building",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "7.16",
+                                            "matching_string": "User Engagement and Community Building"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 48,
+                                    "key": "doc/body/sec6/sub7/txl0",
+                                    "block type": "txl",
+                                    "content": "1. Community Engagement: Users can share their experiences and insights gained from the narratives with the \"Augmented Voices\" community. The app may feature discussion forums, social media integration, or options to share stories and locations with others, fostering a sense of solidarity and collective learning.",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "7.17",
+                                            "matching_string": "1. Community Engagement: Users can share their experiences and insights gained from the narratives with the "
+                                        },
+                                        {
+                                            "pdf_id": "7.19",
+                                            "matching_string": "stories and locations with others, fostering a sense of solidarity and collective learning."
+                                        },
+                                        {
+                                            "pdf_id": "7.18",
+                                            "matching_string": "\"Augmented Voices\" community. The app may feature discussion forums, social media integration, or options to share "
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 49,
+                                    "key": "doc/body/sec6/sub7/txl1",
+                                    "block type": "txl",
+                                    "content": "2. Feedback and Personalization: The app incorporates mechanisms for users to provide feedback on the stories and their overall experience. This feedback is used to refine and personalize future content, ensuring the app remains relevant and impactful for its user base.",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "7.20",
+                                            "matching_string": "2. Feedback and Personalization: The app incorporates mechanisms for users to provide feedback on the stories "
+                                        },
+                                        {
+                                            "pdf_id": "7.21",
+                                            "matching_string": "and their overall experience. This feedback is used to refine and personalize future content, ensuring the app remains "
+                                        },
+                                        {
+                                            "pdf_id": "7.22",
+                                            "matching_string": "relevant and impactful for its user base."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "key": "doc/body/sec6/sub8",
+                            "block_type": "sub",
+                            "children": [
+                                {
+                                    "leaf id": 50,
+                                    "key": "doc/body/sec6/sub8/tit",
+                                    "block type": "title",
+                                    "content": "User Story Submission",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "7.23",
+                                            "matching_string": "User Story Submission"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 51,
+                                    "key": "doc/body/sec6/sub8/txl0",
+                                    "block type": "txl",
+                                    "content": "Adding a usergenerated content feature to the \"Augmented Voices\" app significantly enhances its interactive and communitybuilding aspects. This functionality allows users, who are constrained to be Muslim SouthAsian demographic, to contribute their own stories or narratives related to social injustices and GBV, which then become part of the app's extensive storyboard. Here's how this process integrates into the system's architecture and user workflow: \\hspace{1cm}",
+                                    "leftover": "\\hspace{1cm}",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "7.24",
+                                            "matching_string": "Adding a usergenerated content feature to the \"Augmented Voices\" app significantly enhances its interactive "
+                                        },
+                                        {
+                                            "pdf_id": "7.25",
+                                            "matching_string": "and communitybuilding aspects. This functionality allows users, who are constrained to be Muslim SouthAsian "
+                                        },
+                                        {
+                                            "pdf_id": "7.26",
+                                            "matching_string": "demographic, to contribute their own stories or narratives related to social injustices and GBV, which then become part "
+                                        },
+                                        {
+                                            "pdf_id": "7.27",
+                                            "matching_string": "of the app's extensive storyboard. Here's how this process integrates into the system's architecture and user workflow: "
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 52,
+                                    "key": "doc/body/sec6/sub8/txl1",
+                                    "block type": "txl",
+                                    "content": "1. Narrative Contribution: Users can submit their own stories directly through the app. This process includes filling out a submission form where they can detail their narrative, attach relevant media (photos, videos, audio clips), and specify the geographic location associated with their story.",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "7.28",
+                                            "matching_string": "1. Narrative Contribution: Users can submit their own stories directly through the app. This process includes "
+                                        },
+                                        {
+                                            "pdf_id": "7.29",
+                                            "matching_string": "filling out a submission form where they can detail their narrative, attach relevant media (photos, videos, audio clips), "
+                                        },
+                                        {
+                                            "pdf_id": "7.30",
+                                            "matching_string": "and specify the geographic location associated with their story."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 53,
+                                    "key": "doc/body/sec6/sub8/txl2",
+                                    "block type": "txl",
+                                    "content": "2. Moderation and Approval: To maintain the integrity and sensitivity of the content, each submission goes through a moderation process. The app's team reviews the stories to ensure they align with the app's mission and content guidelines before approval.",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "7.31",
+                                            "matching_string": "2. Moderation and Approval: To maintain the integrity and sensitivity of the content, each submission goes "
+                                        },
+                                        {
+                                            "pdf_id": "7.32",
+                                            "matching_string": "through a moderation process. The app's team reviews the stories to ensure they align with the app's mission and "
+                                        },
+                                        {
+                                            "pdf_id": "7.33",
+                                            "matching_string": "content guidelines before approval."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 54,
+                                    "key": "doc/body/sec6/sub8/txl3",
+                                    "block type": "txl",
+                                    "content": "3. Geolocation Tagging: As part of the submission process, users tag their stories with specific geographic locations. This tagging is crucial for integrating the narrative into the GIS mapping system, allowing the story to be triggered by future users who visit or express interest in that location.",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "7.34",
+                                            "matching_string": "3. Geolocation Tagging: As part of the submission process, users tag their stories with specific geographic locations. "
+                                        },
+                                        {
+                                            "pdf_id": "7.35",
+                                            "matching_string": "This tagging is crucial for integrating the narrative into the GIS mapping system, allowing the story to be triggered by "
+                                        },
+                                        {
+                                            "pdf_id": "7.36",
+                                            "matching_string": "future users who visit or express interest in that location."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "key": "doc/body/sec6/sub9",
+                            "block_type": "sub",
+                            "children": [
+                                {
+                                    "leaf id": 55,
+                                    "key": "doc/body/sec6/sub9/tit",
+                                    "block type": "title",
+                                    "content": "Integration into GIS Mapping",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "8.2",
+                                            "matching_string": "Integration into GIS Mapping"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 56,
+                                    "key": "doc/body/sec6/sub9/txl0",
+                                    "block type": "txl",
+                                    "content": "1. Story Mapping: Once approved, the usergenerated narratives are added to the app's geolocated map. These contributions are visually represented on the map, making it easy for users to discover new, communityadded stories alongside the existing curated narratives.",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "8.3",
+                                            "matching_string": "1. Story Mapping: Once approved, the usergenerated narratives are added to the app's geolocated map. These "
+                                        },
+                                        {
+                                            "pdf_id": "8.5",
+                                            "matching_string": "alongside the existing curated narratives."
+                                        },
+                                        {
+                                            "pdf_id": "8.4",
+                                            "matching_string": "contributions are visually represented on the map, making it easy for users to discover new, communityadded stories "
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 57,
+                                    "key": "doc/body/sec6/sub9/txl1",
+                                    "block type": "txl",
+                                    "content": "2. Dynamic Content Discovery: The inclusion of usergenerated stories enriches the app's content library, offering a broader spectrum of experiences and perspectives. Users exploring the map can trigger these narratives in the same manner as the curated content, based on their physical location or selected areas of interest.",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "8.6",
+                                            "matching_string": "2. Dynamic Content Discovery: The inclusion of usergenerated stories enriches the app's content library, offering "
+                                        },
+                                        {
+                                            "pdf_id": "8.7",
+                                            "matching_string": "a broader spectrum of experiences and perspectives. Users exploring the map can trigger these narratives in the same "
+                                        },
+                                        {
+                                            "pdf_id": "8.8",
+                                            "matching_string": "manner as the curated content, based on their physical location or selected areas of interest."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "key": "doc/body/sec6/sub10",
+                            "block_type": "sub",
+                            "children": [
+                                {
+                                    "leaf id": 58,
+                                    "key": "doc/body/sec6/sub10/tit",
+                                    "block type": "title",
+                                    "content": "Engagement and Community Feedback",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "8.9",
+                                            "matching_string": "Engagement and Community Feedback"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 59,
+                                    "key": "doc/body/sec6/sub10/txl0",
+                                    "block type": "txl",
+                                    "content": "1. Interactive Engagement: Users can interact with these communitycontributed narratives by reading, listening to, or viewing them. Additionally, they have the option to leave comments, share reactions, or even share the narratives on social media, fostering a supportive community atmosphere.",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "8.10",
+                                            "matching_string": "1. Interactive Engagement: Users can interact with these communitycontributed narratives by reading, listening "
+                                        },
+                                        {
+                                            "pdf_id": "8.11",
+                                            "matching_string": "to, or viewing them. Additionally, they have the option to leave comments, share reactions, or even share the narratives "
+                                        },
+                                        {
+                                            "pdf_id": "8.12",
+                                            "matching_string": "on social media, fostering a supportive community atmosphere."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 60,
+                                    "key": "doc/body/sec6/sub10/txl1",
+                                    "block type": "txl",
+                                    "content": "2. Community Storyboard: All narratives, including user submissions, are displayed on a collective storyboard within the app. This storyboard serves as a central hub for discovering the diverse range of experiences and stories related to social injustices and genderbased violence, mapped across different geographic locations.",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "8.13",
+                                            "matching_string": "2. Community Storyboard: All narratives, including user submissions, are displayed on a collective storyboard "
+                                        },
+                                        {
+                                            "pdf_id": "8.14",
+                                            "matching_string": "within the app. This storyboard serves as a central hub for discovering the diverse range of experiences and stories "
+                                        },
+                                        {
+                                            "pdf_id": "8.15",
+                                            "matching_string": "related to social injustices and genderbased violence, mapped across different geographic locations."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "key": "doc/body/sec6/sub11",
+                            "block_type": "sub",
+                            "children": [
+                                {
+                                    "leaf id": 61,
+                                    "key": "doc/body/sec6/sub11/tit",
+                                    "block type": "title",
+                                    "content": "Personal and Collective Narratives",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "8.16",
+                                            "matching_string": "Personal and Collective Narratives"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 62,
+                                    "key": "doc/body/sec6/sub11/txl0",
+                                    "block type": "txl",
+                                    "content": "1. Empowering Voices: By enabling users to add their stories, \"Augmented Voices\" not only amplifies individual voices but also strengthens the collective narrative around social injustices and resilience. This participatory approach empowers users, making them active contributors to the app's mission of raising awareness and fostering empathy.",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "8.17",
+                                            "matching_string": "1. Empowering Voices: By enabling users to add their stories, \"Augmented Voices\" not only amplifies individual "
+                                        },
+                                        {
+                                            "pdf_id": "8.19",
+                                            "matching_string": "empowers users, making them active contributors to the app's mission of raising awareness and fostering empathy."
+                                        },
+                                        {
+                                            "pdf_id": "8.18",
+                                            "matching_string": "voices but also strengthens the collective narrative around social injustices and resilience. This participatory approach "
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 63,
+                                    "key": "doc/body/sec6/sub11/txl1",
+                                    "block type": "txl",
+                                    "content": "2. Continuous Growth: The feature ensures the app's content remains dynamic and evolving, reflecting the ongoing and diverse nature of social injustices globally. It encourages users to regularly engage with the app, exploring new stories and contributing their narratives, thereby continuously enriching the community's collective knowledge and empathy. \\hspace{1cm}",
+                                    "leftover": "\\hspace{1cm}",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "8.20",
+                                            "matching_string": "2. Continuous Growth: The feature ensures the app's content remains dynamic and evolving, reflecting the ongoing "
+                                        },
+                                        {
+                                            "pdf_id": "8.21",
+                                            "matching_string": "and diverse nature of social injustices globally. It encourages users to regularly engage with the app, exploring new "
+                                        },
+                                        {
+                                            "pdf_id": "8.22",
+                                            "matching_string": "stories and contributing their narratives, thereby continuously enriching the community's collective knowledge and "
+                                        },
+                                        {
+                                            "pdf_id": "8.23",
+                                            "matching_string": "empathy. "
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 64,
+                                    "key": "doc/body/sec6/sub11/txl2",
+                                    "block type": "txl",
+                                    "content": "Integrating usergenerated content through GIS mapping into \"Augmented Voices\" leverages the power of community storytelling, making the exploration of social injustices deeply personal yet universally accessible. This functionality will not only diversify the content available on the app but also foster a stronger, more engaged community committed to highlighting and combating GBV and social injustice worldwide. \\hspace{1cm}",
+                                    "leftover": "\\hspace{1cm}",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "8.25",
+                                            "matching_string": "storytelling, making the exploration of social injustices deeply personal yet universally accessible. This functionality "
+                                        },
+                                        {
+                                            "pdf_id": "8.26",
+                                            "matching_string": "will not only diversify the content available on the app but also foster a stronger, more engaged community committed "
+                                        },
+                                        {
+                                            "pdf_id": "8.27",
+                                            "matching_string": "to highlighting and combating GBV and social injustice worldwide. "
+                                        },
+                                        {
+                                            "pdf_id": "8.24",
+                                            "matching_string": "Integrating usergenerated content through GIS mapping into \"Augmented Voices\" leverages the power of community "
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "doc/body/sec7",
+                    "block_type": "sec",
+                    "children": [
+                        {
+                            "leaf id": 65,
+                            "key": "doc/body/sec7/tit",
+                            "block type": "title",
+                            "content": "Relevance to Social Justice and Augmented Reality",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "8.28",
+                                    "matching_string": "Relevance to Social Justice and Augmented Reality"
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 66,
+                            "key": "doc/body/sec7/txl0",
+                            "block type": "txl",
+                            "content": "The \"Augmented Voices\" initiative represents a pivotal intersection of technological innovation and social justice, harnessing AR's immersive potential to spotlight the experiences of marginalized groups. By seamlessly integrating AR with stories of adversity, resilience, and victory, the project transcends mere digital innovation to become a crucial instrument for fostering empathy and elevating awareness. It transforms impersonal data and historical accounts into vivid, interactive experiences that connect users emotionally with the narratives, effectively narrowing the divide between them and the firsthand experiences of social injustice.",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "8.29",
+                                    "matching_string": "The \"Augmented Voices\" initiative represents a pivotal intersection of technological innovation and social justice, "
+                                },
+                                {
+                                    "pdf_id": "8.30",
+                                    "matching_string": "harnessing AR's immersive potential to spotlight the experiences of marginalized groups. By seamlessly integrating AR "
+                                },
+                                {
+                                    "pdf_id": "8.31",
+                                    "matching_string": "with stories of adversity, resilience, and victory, the project transcends mere digital innovation to become a crucial "
+                                },
+                                {
+                                    "pdf_id": "8.32",
+                                    "matching_string": "instrument for fostering empathy and elevating awareness. It transforms impersonal data and historical accounts into "
+                                },
+                                {
+                                    "pdf_id": "8.33",
+                                    "matching_string": "vivid, interactive experiences that connect users emotionally with the narratives, effectively narrowing the divide "
+                                },
+                                {
+                                    "pdf_id": "8.34",
+                                    "matching_string": "between them and the firsthand experiences of social injustice."
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 67,
+                            "key": "doc/body/sec7/txl1",
+                            "block type": "txl",
+                            "content": "Crucially, the initiative offers a unique opportunity to engage with stories and viewpoints often sidelined in mainstream discussions. Through AR, users transition from passive information receivers to active story participants, immersing them in the harsh realities of discrimination, inequality, and violence still prevalent today. This profound engagement serves as an empathy catalyst, placing users within the very context of injustice, thereby promoting a more intimate understanding and connection with those who face these adversities.",
+                            "leftover": "mainstream ",
+                            "matches": [
+                                {
+                                    "pdf_id": "8.35",
+                                    "matching_string": "Crucially, the initiative offers a unique opportunity to engage with stories and viewpoints often sidelined in "
+                                },
+                                {
+                                    "pdf_id": "8.36",
+                                    "matching_string": "discussions. Through AR, users transition from passive information receivers to active story participants, "
+                                },
+                                {
+                                    "pdf_id": "9.1",
+                                    "matching_string": "immersing them in the harsh realities of discrimination, inequality, and violence still prevalent today. This profound "
+                                },
+                                {
+                                    "pdf_id": "9.2",
+                                    "matching_string": "engagement serves as an empathy catalyst, placing users within the very context of injustice, thereby promoting a "
+                                },
+                                {
+                                    "pdf_id": "9.3",
+                                    "matching_string": "more intimate understanding and connection with those who face these adversities."
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 68,
+                            "key": "doc/body/sec7/txl2",
+                            "block type": "txl",
+                            "content": "Moreover, \"Augmented Voices\" underscores AR's potential as an educational and activist tool. It exemplifies how advanced technology can facilitate social good, creating an interactive experience that educates and motivates users toward societal discourse and action. By rendering concepts of justice and equality more tangible and comprehensible, the project prompts users to introspect about their societal roles and how they might contribute to advocating for transformative change.",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "9.6",
+                                    "matching_string": "toward societal discourse and action. By rendering concepts of justice and equality more tangible and comprehensible, "
+                                },
+                                {
+                                    "pdf_id": "9.7",
+                                    "matching_string": "the project prompts users to introspect about their societal roles and how they might contribute to advocating for "
+                                },
+                                {
+                                    "pdf_id": "9.8",
+                                    "matching_string": "transformative change."
+                                },
+                                {
+                                    "pdf_id": "9.4",
+                                    "matching_string": "Moreover, \"Augmented Voices\" underscores AR's potential as an educational and activist tool. It exemplifies how "
+                                },
+                                {
+                                    "pdf_id": "9.5",
+                                    "matching_string": "advanced technology can facilitate social good, creating an interactive experience that educates and motivates users "
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 69,
+                            "key": "doc/body/sec7/txl3",
+                            "block type": "txl",
+                            "content": "At its core, \"Augmented Voices\" demonstrates the potential of technological progress, especially AR, to advance social justice. It introduces an innovative approach to activism and education, leveraging immersive storytelling's power to kindle empathy, awareness, and proactive engagement. The project not only sheds light on the plights of marginalized South Asian Muslims but also emphasizes technology's role as a catalyst for positive societal change towards a more equitable and just world.",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "9.9",
+                                    "matching_string": "At its core, \"Augmented Voices\" demonstrates the potential of technological progress, especially AR, to advance "
+                                },
+                                {
+                                    "pdf_id": "9.11",
+                                    "matching_string": "power to kindle empathy, awareness, and proactive engagement. The project not only sheds light on the plights of "
+                                },
+                                {
+                                    "pdf_id": "9.12",
+                                    "matching_string": "marginalized South Asian Muslims but also emphasizes technology's role as a catalyst for positive societal change "
+                                },
+                                {
+                                    "pdf_id": "9.13",
+                                    "matching_string": "towards a more equitable and just world."
+                                },
+                                {
+                                    "pdf_id": "9.10",
+                                    "matching_string": "social justice. It introduces an innovative approach to activism and education, leveraging immersive storytelling's "
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "doc/body/sec8",
+                    "block_type": "sec",
+                    "children": [
+                        {
+                            "leaf id": 70,
+                            "key": "doc/body/sec8/tit",
+                            "block type": "title",
+                            "content": "Future Considerations",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "9.14",
+                                    "matching_string": "Future Considerations"
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 71,
+                            "key": "doc/body/sec8/txl0",
+                            "block type": "txl",
+                            "content": "Moving forward with the project, a multifaceted approach is essential to ensure the wellbeing of users, especially considering the sensitive nature of GBV narratives. A content warning system could be introduced, giving users prior notice about the emotional impact of AR experiences and allowing them to engage with the content at their comfort level. The integration of immediate mental health resources, such as crisis hotlines and counseling services, directly within the app would provide crucial support for GBV victims and survivors. Moderation policies could also be put in place for story submissions to prevent retraumatization and protect the privacy of individuals, especially in ongoing abuse scenarios. This could include anonymous participation options to encourage sharing without fear of identification or repercussion. Incorporating local resources, like domestic violence hotlines and organizational contacts, tailored to the user's location, will provide practical support as well. Educational outreach initiatives could offer vital information on recognizing abuse and assisting others, thereby extending the app's influence beyond storytelling into actionable awareness. Feedback mechanisms are critical to the iterative improvement of the app, ensuring that the content remains sensitive to the victim and survivor needs while supporting their healing process. Ethical storytelling guidelines could be established to protect the dignity of the narratives shared. Lastly, conducting longterm impact studies could help in understanding the effect of such AR experiences on users and guide the responsible evolution of the app as a tool for awareness, education, and advocacy.",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "9.16",
+                                    "matching_string": "considering the sensitive nature of GBV narratives. A content warning system could be introduced, giving users prior "
+                                },
+                                {
+                                    "pdf_id": "9.17",
+                                    "matching_string": "notice about the emotional impact of AR experiences and allowing them to engage with the content at their comfort "
+                                },
+                                {
+                                    "pdf_id": "9.18",
+                                    "matching_string": "level. The integration of immediate mental health resources, such as crisis hotlines and counseling services, directly "
+                                },
+                                {
+                                    "pdf_id": "9.20",
+                                    "matching_string": "place for story submissions to prevent retraumatization and protect the privacy of individuals, especially in ongoing "
+                                },
+                                {
+                                    "pdf_id": "9.21",
+                                    "matching_string": "abuse scenarios. This could include anonymous participation options to encourage sharing without fear of identification "
+                                },
+                                {
+                                    "pdf_id": "9.23",
+                                    "matching_string": "the user's location, will provide practical support as well. Educational outreach initiatives could offer vital information "
+                                },
+                                {
+                                    "pdf_id": "9.24",
+                                    "matching_string": "on recognizing abuse and assisting others, thereby extending the app's influence beyond storytelling into actionable "
+                                },
+                                {
+                                    "pdf_id": "9.25",
+                                    "matching_string": "awareness. Feedback mechanisms are critical to the iterative improvement of the app, ensuring that the content remains "
+                                },
+                                {
+                                    "pdf_id": "9.27",
+                                    "matching_string": "be established to protect the dignity of the narratives shared. Lastly, conducting longterm impact studies could help in "
+                                },
+                                {
+                                    "pdf_id": "9.28",
+                                    "matching_string": "understanding the effect of such AR experiences on users and guide the responsible evolution of the app as a tool for "
+                                },
+                                {
+                                    "pdf_id": "9.29",
+                                    "matching_string": "awareness, education, and advocacy."
+                                },
+                                {
+                                    "pdf_id": "9.15",
+                                    "matching_string": "Moving forward with the project, a multifaceted approach is essential to ensure the wellbeing of users, especially "
+                                },
+                                {
+                                    "pdf_id": "9.19",
+                                    "matching_string": "within the app would provide crucial support for GBV victims and survivors. Moderation policies could also be put in "
+                                },
+                                {
+                                    "pdf_id": "9.22",
+                                    "matching_string": "or repercussion. Incorporating local resources, like domestic violence hotlines and organizational contacts, tailored to sensitive to "
+                                },
+                                {
+                                    "pdf_id": "9.26",
+                                    "matching_string": "the victim and survivor needs while supporting their healing process. Ethical storytelling guidelines could "
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "doc/body/sec9",
+                    "block_type": "sec",
+                    "children": [
+                        {
+                            "leaf id": 72,
+                            "key": "doc/body/sec9/tit",
+                            "block type": "title",
+                            "content": "Conclusion",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "9.30",
+                                    "matching_string": "Conclusion"
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 73,
+                            "key": "doc/body/sec9/txl0",
+                            "block type": "txl",
+                            "content": "In conclusion, the \"Augmented Voices\" project represents a pioneering fusion of AR, technology and social justice advocacy, offering a new paradigm for engaging with and understanding the narratives of marginalized communities especially Muslim South Asian women in the diaspora. Through its innovative use of AR to create immersive, geolocated storytelling experiences, this project transcends traditional educational methods, providing users with a deeply personal and empathetic insight into the realities of social injustice and inequality. By enabling users to not only consume but also contribute to the narrative landscape through the addition of their own stories, \"Augmented Voices\" democratizes the storytelling process, ensuring a diverse and authentic representation of experiences. This participatory element enriches the project's narrative tapestry and fosters a community of engaged and informed advocates for social change.",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "9.31",
+                                    "matching_string": "In conclusion, the \"Augmented Voices\" project represents a pioneering fusion of AR, technology and social justice "
+                                },
+                                {
+                                    "pdf_id": "9.32",
+                                    "matching_string": "advocacy, offering a new paradigm for engaging with and understanding the narratives of marginalized communities "
+                                },
+                                {
+                                    "pdf_id": "9.33",
+                                    "matching_string": "especially Muslim South Asian women in the diaspora. Through its innovative use of AR to create immersive, geolocated "
+                                },
+                                {
+                                    "pdf_id": "9.34",
+                                    "matching_string": "storytelling experiences, this project transcends traditional educational methods, providing users with a deeply personal "
+                                },
+                                {
+                                    "pdf_id": "9.35",
+                                    "matching_string": "and empathetic insight into the realities of social injustice and inequality. By enabling users to not only consume but "
+                                },
+                                {
+                                    "pdf_id": "9.36",
+                                    "matching_string": "also contribute to the narrative landscape through the addition of their own stories, \"Augmented Voices\" democratizes "
+                                },
+                                {
+                                    "pdf_id": "9.37",
+                                    "matching_string": "the storytelling process, ensuring a diverse and authentic representation of experiences. This participatory element "
+                                },
+                                {
+                                    "pdf_id": "9.38",
+                                    "matching_string": "enriches the project's narrative tapestry and fosters a community of engaged and informed advocates for social change."
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 74,
+                            "key": "doc/body/sec9/txl1",
+                            "block type": "txl",
+                            "content": "The significance of \"Augmented Voices\" lies not only in its technological achievements but also in its commitment to leveraging these advancements for the greater good. It challenges users to move beyond passive observation, inviting them to become active participants in a global dialogue on social justice. This project underscores the potential of AR as a powerful tool for education, activism, and empathybuilding, encouraging users to reflect on their roles within larger social structures and to take action towards fostering a more equitable world.",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "10.3",
+                                    "matching_string": "leveraging these advancements for the greater good. It challenges users to move beyond passive observation, inviting "
+                                },
+                                {
+                                    "pdf_id": "10.4",
+                                    "matching_string": "them to become active participants in a global dialogue on social justice. This project underscores the potential of AR "
+                                },
+                                {
+                                    "pdf_id": "10.5",
+                                    "matching_string": "as a powerful tool for education, activism, and empathybuilding, encouraging users to reflect on their roles within "
+                                },
+                                {
+                                    "pdf_id": "10.6",
+                                    "matching_string": "larger social structures and to take action towards fostering a more equitable world."
+                                },
+                                {
+                                    "pdf_id": "10.2",
+                                    "matching_string": "The significance of \"Augmented Voices\" lies not only in its technological achievements but also in its commitment to "
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 75,
+                            "key": "doc/body/sec9/txl2",
+                            "block type": "txl",
+                            "content": "As we look toward the future, the \"Augmented Voices\" project serves as a beacon of hope and a model for how technology can be harnessed to amplify marginalized voices, bridge cultural and geographical divides, and inspire collective action. It is a testament to the transformative power of combining innovation with compassion, highlighting the critical role of technology in advancing the cause of social justice and equity. Through \"Augmented Voices,\" we are reminded of the enduring impact of storytelling as a means to connect, educate, and mobilize communities around the globe in the pursuit of a more just and inclusive society. \\bibliographystyle{ACMReferenceFormat} \\bibliography{references.bib}",
+                            "leftover": "\\bibliographystyle{ACMReferenceFormat} \\bibliography{references.bib}",
+                            "matches": [
+                                {
+                                    "pdf_id": "10.7",
+                                    "matching_string": "As we look toward the future, the \"Augmented Voices\" project serves as a beacon of hope and a model for how "
+                                },
+                                {
+                                    "pdf_id": "10.8",
+                                    "matching_string": "technology can be harnessed to amplify marginalized voices, bridge cultural and geographical divides, and inspire "
+                                },
+                                {
+                                    "pdf_id": "10.9",
+                                    "matching_string": "collective action. It is a testament to the transformative power of combining innovation with compassion, highlighting "
+                                },
+                                {
+                                    "pdf_id": "10.10",
+                                    "matching_string": "the critical role of technology in advancing the cause of social justice and equity. Through \"Augmented Voices,\" we are "
+                                },
+                                {
+                                    "pdf_id": "10.11",
+                                    "matching_string": "reminded of the enduring impact of storytelling as a means to connect, educate, and mobilize communities around the globe in the "
+                                },
+                                {
+                                    "pdf_id": "10.12",
+                                    "matching_string": "pursuit of a more just and inclusive society. "
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

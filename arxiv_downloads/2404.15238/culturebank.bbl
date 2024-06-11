@@ -1,0 +1,254 @@
+\begin{thebibliography}{49}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[eHR()]{eHRAF}
+URL \url{https://ehrafworldcultures.yale.edu/}.
+
+\bibitem[Achiam et~al.(2023)Achiam, Adler, Agarwal, Ahmad, Akkaya, Aleman, Almeida, Altenschmidt, Altman, Anadkat, et~al.]{achiam2023gpt}
+Josh Achiam, Steven Adler, Sandhini Agarwal, Lama Ahmad, Ilge Akkaya, Florencia~Leoni Aleman, Diogo Almeida, Janko Altenschmidt, Sam Altman, Shyamal Anadkat, et~al.
+\newblock Gpt-4 technical report.
+\newblock \emph{arXiv preprint arXiv:2303.08774}, 2023.
+
+\bibitem[Adewole et~al.(2021)Adewole, Gharavi, Shpringer, Bolger, Sharma, Yang, and Brown]{adewole2021dialoguebased}
+Sodiq Adewole, Erfaneh Gharavi, Benjamin Shpringer, Martin Bolger, Vaibhav Sharma, Sung~Ming Yang, and Donald~E. Brown.
+\newblock Dialogue-based simulation for cultural awareness training, 2021.
+
+\bibitem[Afina~Putri et~al.(2024)Afina~Putri, Ghifari~Haznitrama, Adhista, and Oh]{afina2024can}
+Rifki Afina~Putri, Faiz Ghifari~Haznitrama, Dea Adhista, and Alice Oh.
+\newblock Can llm generate culturally relevant commonsense qa data? case study in indonesian and sundanese.
+\newblock \emph{arXiv e-prints}, pp.\  arXiv--2402, 2024.
+
+\bibitem[Arora et~al.(2022)Arora, Kaffee, and Augenstein]{arora2022probing}
+Arnav Arora, Lucie-Aim{\'e}e Kaffee, and Isabelle Augenstein.
+\newblock Probing pre-trained language models for cross-cultural differences in values.
+\newblock \emph{arXiv preprint arXiv:2203.13722}, 2022.
+
+\bibitem[Barth(2010)]{barth2010introduction}
+Fredrik Barth.
+\newblock Introduction to ethnic groups and boundaries: The social organization of cultural difference.
+\newblock \emph{Selected studies in international migration and immigrant incorporation}, 1:\penalty0 407, 2010.
+
+\bibitem[Brewer(1999)]{brewer1999psychology}
+Marilynn~B Brewer.
+\newblock The psychology of prejudice: Ingroup love and outgroup hate?
+\newblock \emph{Journal of social issues}, 55\penalty0 (3):\penalty0 429--444, 1999.
+
+\bibitem[Cao et~al.(2023)Cao, Zhou, Lee, Cabello, Chen, and Hershcovich]{Cao}
+Yong Cao, Li~Zhou, Seolhwa Lee, Laura Cabello, Min Chen, and Daniel Hershcovich.
+\newblock Assessing cross-cultural alignment between chatgpt and human societies: An empirical study, 2023.
+
+\bibitem[Deshpande et~al.(2022)Deshpande, Ruiter, Mosbach, and Klakow]{deshpande2022stereokg}
+Awantee Deshpande, Dana Ruiter, Marius Mosbach, and Dietrich Klakow.
+\newblock Stereokg: Data-driven knowledge graph construction for cultural knowledge and stereotypes.
+\newblock \emph{arXiv preprint arXiv:2205.14036}, 2022.
+
+\bibitem[Durmus et~al.(2023{\natexlab{a}})Durmus, Nyugen, Liao, Schiefer, Askell, Bakhtin, Chen, Hatfield-Dodds, Hernandez, Joseph, Lovitt, McCandlish, Sikder, Tamkin, Thamkul, Kaplan, Clark, and Ganguli]{Durmus}
+Esin Durmus, Karina Nyugen, Thomas~I. Liao, Nicholas Schiefer, Amanda Askell, Anton Bakhtin, Carol Chen, Zac Hatfield-Dodds, Danny Hernandez, Nicholas Joseph, Liane Lovitt, Sam McCandlish, Orowa Sikder, Alex Tamkin, Janel Thamkul, Jared Kaplan, Jack Clark, and Deep Ganguli.
+\newblock Towards measuring the representation of subjective global opinions in language models, 2023{\natexlab{a}}.
+
+\bibitem[Durmus et~al.(2023{\natexlab{b}})Durmus, Nyugen, Liao, Schiefer, Askell, Bakhtin, Chen, Hatfield-Dodds, Hernandez, Joseph, et~al.]{durmus2023towards}
+Esin Durmus, Karina Nyugen, Thomas~I Liao, Nicholas Schiefer, Amanda Askell, Anton Bakhtin, Carol Chen, Zac Hatfield-Dodds, Danny Hernandez, Nicholas Joseph, et~al.
+\newblock Towards measuring the representation of subjective global opinions in language models.
+\newblock \emph{arXiv preprint arXiv:2306.16388}, 2023{\natexlab{b}}.
+
+\bibitem[Fan et~al.(2023)Fan, Zhao, Li, Liu, Mei, Wang, Tang, and Li]{fan2023recommender}
+Wenqi Fan, Zihuai Zhao, Jiatong Li, Yunqing Liu, Xiaowei Mei, Yiqi Wang, Jiliang Tang, and Qing Li.
+\newblock Recommender systems in the era of large language models (llms).
+\newblock \emph{arXiv preprint arXiv:2307.02046}, 2023.
+
+\bibitem[Fung et~al.(2024)Fung, Zhao, Doo, Sun, and Ji]{fung2024massively}
+Yi~Fung, Ruining Zhao, Jae Doo, Chenkai Sun, and Heng Ji.
+\newblock Massively multi-cultural knowledge acquisition and lm benchmarking.
+\newblock \emph{arXiv preprint arXiv:2402.09369}, 2024.
+
+\bibitem[Goffman et~al.(2002)]{goffman2002presentation}
+Erving Goffman et~al.
+\newblock The presentation of self in everyday life. 1959.
+\newblock \emph{Garden City, NY}, 259, 2002.
+
+\bibitem[Guti{\'e}rrez et~al.(2016)Guti{\'e}rrez, Shutova, Lichtenstein, De~Melo, and Gilardi]{gutierrez2016detecting}
+E~Dario Guti{\'e}rrez, Ekaterina Shutova, Patricia Lichtenstein, Gerard De~Melo, and Luca Gilardi.
+\newblock Detecting cross-cultural differences using a multilingual topic model.
+\newblock \emph{Transactions of the Association for Computational Linguistics}, 4:\penalty0 47--60, 2016.
+
+\bibitem[Hovy \& Yang(2021)Hovy and Yang]{hovy-yang-2021-importance}
+Dirk Hovy and Diyi Yang.
+\newblock The importance of modeling social factors of language: Theory and practice.
+\newblock In Kristina Toutanova, Anna Rumshisky, Luke Zettlemoyer, Dilek Hakkani-Tur, Iz~Beltagy, Steven Bethard, Ryan Cotterell, Tanmoy Chakraborty, and Yichao Zhou (eds.), \emph{Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies}, pp.\  588--602, Online, June 2021. Association for Computational Linguistics.
+\newblock \doi{10.18653/v1/2021.naacl-main.49}.
+\newblock URL \url{https://aclanthology.org/2021.naacl-main.49}.
+
+\bibitem[Huang \& Yang(2023)Huang and Yang]{huang2023culturally}
+Jing Huang and Diyi Yang.
+\newblock Culturally aware natural language inference.
+\newblock In \emph{Findings of the Association for Computational Linguistics: EMNLP 2023}, pp.\  7591--7609, 2023.
+
+\bibitem[Hämmerl et~al.(2022)Hämmerl, Deiseroth, Schramowski, Libovický, Fraser, and Kersting]{hämmerl2022multilingual}
+Katharina Hämmerl, Björn Deiseroth, Patrick Schramowski, Jindřich Libovický, Alexander Fraser, and Kristian Kersting.
+\newblock Do multilingual language models capture differing moral norms?, 2022.
+
+\bibitem[Inglehart et~al.(2000)Inglehart, Basanez, Diez-Medrano, Halman, and Luijkx]{inglehart2000world}
+Ronald Inglehart, Miguel Basanez, Jaime Diez-Medrano, Loek Halman, and Ruud Luijkx.
+\newblock World values surveys and european values surveys, 1981-1984, 1990-1993, and 1995-1997.
+\newblock \emph{Ann Arbor-Michigan, Institute for Social Research, ICPSR version}, 2000.
+
+\bibitem[Iyengar et~al.(1999)Iyengar, Lepper, and Ross]{iyengar1999independence}
+Sheena~S Iyengar, Mark~R Lepper, and Lee Ross.
+\newblock Independence from whom? interdependence with whom? cultural perspectives on ingroups versus outgroups.
+\newblock \emph{Cultural divides: Understanding and overcoming group conflict}, pp.\  273--301, 1999.
+
+\bibitem[Jiang et~al.(2024)Jiang, Sablayrolles, Roux, Mensch, Savary, Bamford, Chaplot, Casas, Hanna, Bressand, et~al.]{jiang2024mixtral}
+Albert~Q Jiang, Alexandre Sablayrolles, Antoine Roux, Arthur Mensch, Blanche Savary, Chris Bamford, Devendra~Singh Chaplot, Diego de~las Casas, Emma~Bou Hanna, Florian Bressand, et~al.
+\newblock Mixtral of experts.
+\newblock \emph{arXiv preprint arXiv:2401.04088}, 2024.
+
+\bibitem[Jiang et~al.(2020)Jiang, Anastasopoulos, Araki, Ding, and Neubig]{jiang-etal-2020-x}
+Zhengbao Jiang, Antonios Anastasopoulos, Jun Araki, Haibo Ding, and Graham Neubig.
+\newblock {X}-{FACTR}: Multilingual factual knowledge retrieval from pretrained language models.
+\newblock In Bonnie Webber, Trevor Cohn, Yulan He, and Yang Liu (eds.), \emph{Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)}, pp.\  5943--5959, Online, November 2020. Association for Computational Linguistics.
+\newblock \doi{10.18653/v1/2020.emnlp-main.479}.
+\newblock URL \url{https://aclanthology.org/2020.emnlp-main.479}.
+
+\bibitem[Jin et~al.(2023)Jin, Kim, Lee, Yoo, Oh, and Lee]{jin2023kobbq}
+Jiho Jin, Jiseon Kim, Nayeon Lee, Haneul Yoo, Alice Oh, and Hwaran Lee.
+\newblock Kobbq: Korean bias benchmark for question answering.
+\newblock \emph{arXiv preprint arXiv:2307.16778}, 2023.
+
+\bibitem[Kim et~al.(2024)Kim, Suk, Oh, Yoo, Thorne, and Oh]{kim2024click}
+Eunsu Kim, Juyoung Suk, Philhoon Oh, Haneul Yoo, James Thorne, and Alice Oh.
+\newblock Click: A benchmark dataset of cultural and linguistic intelligence in korean.
+\newblock \emph{arXiv preprint arXiv:2403.06412}, 2024.
+
+\bibitem[Köksal et~al.(2023)Köksal, Yalcin, Akbiyik, Kilavuz, Korhonen, and Schütze]{köksal2023languageagnostic}
+Abdullatif Köksal, Omer~Faruk Yalcin, Ahmet Akbiyik, M.~Tahir Kilavuz, Anna Korhonen, and Hinrich Schütze.
+\newblock Language-agnostic bias detection in language models with bias probing, 2023.
+
+\bibitem[Lee et~al.(2023)Lee, Jung, Myung, Jin, Kim, and Oh]{lee2023crehate}
+Nayeon Lee, Chani Jung, Junho Myung, Jiho Jin, Juho Kim, and Alice Oh.
+\newblock Crehate: Cross-cultural re-annotation of english hate speech dataset.
+\newblock \emph{arXiv preprint arXiv:2308.16705}, 2023.
+
+\bibitem[Li et~al.(2024)Li, Chen, Wang, Sitaram, and Xie]{li2024culturellm}
+Cheng Li, Mengzhou Chen, Jindong Wang, Sunayana Sitaram, and Xing Xie.
+\newblock Culturellm: Incorporating cultural differences into large language models.
+\newblock \emph{arXiv preprint arXiv:2402.10946}, 2024.
+
+\bibitem[Li et~al.(2023)Li, Zhang, and Chen]{li2023prompt}
+Lei Li, Yongfeng Zhang, and Li~Chen.
+\newblock Prompt distillation for efficient llm-based recommendation.
+\newblock In \emph{Proceedings of the 32nd ACM International Conference on Information and Knowledge Management}, pp.\  1348--1357, 2023.
+
+\bibitem[Liu et~al.(2021)Liu, Bugliarello, Ponti, Reddy, Collier, and Elliott]{liu2021visually}
+Fangyu Liu, Emanuele Bugliarello, Edoardo~Maria Ponti, Siva Reddy, Nigel Collier, and Desmond Elliott.
+\newblock Visually grounded reasoning across languages and cultures.
+\newblock \emph{arXiv preprint arXiv:2109.13238}, 2021.
+
+\bibitem[Naous et~al.(2023)Naous, Ryan, and Xu]{naous2023having}
+Tarek Naous, Michael~J Ryan, and Wei Xu.
+\newblock Having beer after prayer? measuring cultural bias in large language models.
+\newblock \emph{arXiv preprint arXiv:2305.14456}, 2023.
+
+\bibitem[Nguyen et~al.(2023)Nguyen, Razniewski, Varde, and Weikum]{candle2023}
+Tuan-Phong Nguyen, Simon Razniewski, Aparna Varde, and Gerhard Weikum.
+\newblock Extracting cultural commonsense knowledge at scale.
+\newblock In \emph{Proceedings of the ACM Web Conference 2023}, WWW ’23. ACM, April 2023.
+\newblock \doi{10.1145/3543507.3583535}.
+\newblock URL \url{http://dx.doi.org/10.1145/3543507.3583535}.
+
+\bibitem[Pandya \& Holia(2023)Pandya and Holia]{pandya2023automating}
+Keivalya Pandya and Mehfuza Holia.
+\newblock Automating customer service using langchain: Building custom open-source gpt chatbot for organizations.
+\newblock \emph{arXiv preprint arXiv:2310.05421}, 2023.
+
+\bibitem[Penta et~al.(2011)Penta, Shadbolt, Smart, and Sieck]{Smart}
+Antonio Penta, Nigel Shadbolt, Paul Smart, and Winston~R. Sieck.
+\newblock Detection of cognitive features from web resources in support of cultural modeling and analysis.
+\newblock In \emph{Proceedings of the International Conference on Management of Emergent Digital EcoSystems}, MEDES '11, pp.\  53–60, New York, NY, USA, 2011. Association for Computing Machinery.
+\newblock ISBN 9781450310475.
+\newblock \doi{10.1145/2077489.2077499}.
+\newblock URL \url{https://doi.org/10.1145/2077489.2077499}.
+
+\bibitem[Rafailov et~al.(2024)Rafailov, Sharma, Mitchell, Manning, Ermon, and Finn]{rafailov2024direct}
+Rafael Rafailov, Archit Sharma, Eric Mitchell, Christopher~D Manning, Stefano Ermon, and Chelsea Finn.
+\newblock Direct preference optimization: Your language model is secretly a reward model.
+\newblock \emph{Advances in Neural Information Processing Systems}, 36, 2024.
+
+\bibitem[Raffel et~al.(2020)Raffel, Shazeer, Roberts, Lee, Narang, Matena, Zhou, Li, and Liu]{raffel2020exploring}
+Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, and Peter~J Liu.
+\newblock Exploring the limits of transfer learning with a unified text-to-text transformer.
+\newblock \emph{Journal of machine learning research}, 21\penalty0 (140):\penalty0 1--67, 2020.
+
+\bibitem[Ramezani \& Xu(2023)Ramezani and Xu]{ramezani2023knowledge}
+Aida Ramezani and Yang Xu.
+\newblock Knowledge of cultural moral norms in large language models, 2023.
+
+\bibitem[Reimers \& Gurevych(2019)Reimers and Gurevych]{reimers2019sentence}
+Nils Reimers and Iryna Gurevych.
+\newblock Sentence-bert: Sentence embeddings using siamese bert-networks.
+\newblock \emph{arXiv preprint arXiv:1908.10084}, 2019.
+
+\bibitem[Roberts et~al.(2023)Roberts, L{\"u}ddecke, Das, Han, and Albanie]{roberts2023gpt4geo}
+Jonathan Roberts, Timo L{\"u}ddecke, Sowmen Das, Kai Han, and Samuel Albanie.
+\newblock Gpt4geo: How a language model sees the world's geography.
+\newblock \emph{arXiv preprint arXiv:2306.00020}, 2023.
+
+\bibitem[Ryan et~al.(2024)Ryan, Held, and Yang]{ryan2024unintended}
+Michael~J Ryan, William Held, and Diyi Yang.
+\newblock Unintended impacts of llm alignment on global representation.
+\newblock \emph{arXiv preprint arXiv:2402.15018}, 2024.
+
+\bibitem[Sanh et~al.(2019)Sanh, Debut, Chaumond, and Wolf]{sanh2019distilbert}
+Victor Sanh, Lysandre Debut, Julien Chaumond, and Thomas Wolf.
+\newblock Distilbert, a distilled version of bert: smaller, faster, cheaper and lighter.
+\newblock \emph{arXiv preprint arXiv:1910.01108}, 2019.
+
+\bibitem[Santurkar et~al.(2023)Santurkar, Durmus, Ladhak, Lee, Liang, and Hashimoto]{santurkar2023whose}
+Shibani Santurkar, Esin Durmus, Faisal Ladhak, Cinoo Lee, Percy Liang, and Tatsunori Hashimoto.
+\newblock Whose opinions do language models reflect?
+\newblock In \emph{International Conference on Machine Learning}, pp.\  29971--30004. PMLR, 2023.
+
+\bibitem[Shafayat et~al.(2024)Shafayat, Kim, Oh, and Oh]{shafayat2024multi}
+Sheikh Shafayat, Eunsu Kim, Juhyun Oh, and Alice Oh.
+\newblock Multi-fact: Assessing multilingual llms' multi-regional knowledge using factscore.
+\newblock \emph{arXiv preprint arXiv:2402.18045}, 2024.
+
+\bibitem[Stenou(2002)]{stenou2002unesco}
+Kat{\'e}rina Stenou.
+\newblock Unesco universal declaration on cultural diversity: a vision, a conceptual platform, a pool of ideas for implementation, a new paradigm.
+\newblock 2002.
+
+\bibitem[Touvron et~al.(2023)Touvron, Martin, Stone, Albert, Almahairi, Babaei, Bashlykov, Batra, Bhargava, Bhosale, et~al.]{touvron2023llama}
+Hugo Touvron, Louis Martin, Kevin Stone, Peter Albert, Amjad Almahairi, Yasmine Babaei, Nikolay Bashlykov, Soumya Batra, Prajjwal Bhargava, Shruti Bhosale, et~al.
+\newblock Llama 2: Open foundation and fine-tuned chat models.
+\newblock \emph{arXiv preprint arXiv:2307.09288}, 2023.
+
+\bibitem[Wang et~al.(2023)Wang, Jiao, Huang, Dai, tse Huang, Tu, and Lyu]{wang2023countries}
+Wenxuan Wang, Wenxiang Jiao, Jingyuan Huang, Ruyi Dai, Jen tse Huang, Zhaopeng Tu, and Michael~R. Lyu.
+\newblock Not all countries celebrate thanksgiving: On the cultural dominance in large language models, 2023.
+
+\bibitem[Watkins(2012)]{watkins2012learning}
+David Watkins.
+\newblock Learning and teaching: A cross-cultural perspective.
+\newblock In \emph{School Leadership and Administration}, pp.\  61--76. Routledge, 2012.
+
+\bibitem[Yao et~al.(2023)Yao, Jiang, Yang, and Hu]{yao2023empowering}
+Binwei Yao, Ming Jiang, Diyi Yang, and Junjie Hu.
+\newblock Empowering llm-based machine translation with cultural awareness, 2023.
+
+\bibitem[Yin et~al.(2022)Yin, Bansal, Monajatipoor, Li, and Chang]{yin2022geomlama}
+Da~Yin, Hritik Bansal, Masoud Monajatipoor, Liunian~Harold Li, and Kai-Wei Chang.
+\newblock Geomlama: Geo-diverse commonsense probing on multilingual pre-trained language models.
+\newblock \emph{arXiv preprint arXiv:2205.12247}, 2022.
+
+\bibitem[Ziems et~al.(2023)Ziems, Dwivedi-Yu, Wang, Halevy, and Yang]{ziems-etal-2023-normbank}
+Caleb Ziems, Jane Dwivedi-Yu, Yi-Chia Wang, Alon Halevy, and Diyi Yang.
+\newblock {N}orm{B}ank: A knowledge bank of situational social norms.
+\newblock In Anna Rogers, Jordan Boyd-Graber, and Naoaki Okazaki (eds.), \emph{Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}, pp.\  7756--7776, Toronto, Canada, July 2023. Association for Computational Linguistics.
+\newblock \doi{10.18653/v1/2023.acl-long.429}.
+\newblock URL \url{https://aclanthology.org/2023.acl-long.429}.
+
+\end{thebibliography}

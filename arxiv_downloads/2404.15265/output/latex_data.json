@@ -1,0 +1,2913 @@
+{
+    "key": "doc",
+    "block_type": "document",
+    "children": [
+        {
+            "leaf id": 0,
+            "key": "doc/tit",
+            "block type": "title",
+            "content": "ColorKinematic Numerators for Fermion Compton Amplitudes",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "0.33",
+                    "matching_string": "ColorKinematic Numerators for Fermion "
+                },
+                {
+                    "pdf_id": "0.34",
+                    "matching_string": "Compton Amplitudes"
+                }
+            ]
+        },
+        {
+            "leaf id": 1,
+            "key": "doc/aut0",
+            "block type": "author",
+            "content": "{N. Emil J. BjerrumBohr^a,}",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "3.27",
+                    "matching_string": "{N. Emil J. BjerrumBohr^a,}"
+                }
+            ]
+        },
+        {
+            "leaf id": 2,
+            "key": "doc/aut1",
+            "block type": "author",
+            "content": "{Gang Chen^a,}",
+            "leftover": "{Gang Chen^a,}",
+            "matches": []
+        },
+        {
+            "leaf id": 3,
+            "key": "doc/aut2",
+            "block type": "author",
+            "content": "{Yuchan Miao^a,}",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "5.48",
+                    "matching_string": "{Yuchan Miao^a,}"
+                }
+            ]
+        },
+        {
+            "leaf id": 4,
+            "key": "doc/aut3",
+            "block type": "author",
+            "content": "{Marcos Skowronek^b} ^aNiels Bohr International Academy, Niels Bohr Institute, University of Copenhagen, Blegdamsvej 17, DK2100 Copenhagen \\O, Denmark ^bDepartment of Physics, Brown University, Providence, RI 02912, USA \\emailAdd{bjbohr@nbi.dk} \\emailAdd{gang.chen@nbi.ku.dk} \\emailAdd{sxh962@alumni.ku.dk} \\emailAdd{marcosskowroneksantos@brown.edu}",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "0.36",
+                    "matching_string": "aNiels Bohr International Academy, Niels Bohr Institute, University of Copenhagen, "
+                },
+                {
+                    "pdf_id": "0.38",
+                    "matching_string": "bDepartment of Physics, Brown University, Providence, RI 02912, USA "
+                },
+                {
+                    "pdf_id": "0.37",
+                    "matching_string": "Blegdamsvej 17, DK2100 Copenhagen \\O, Denmark "
+                },
+                {
+                    "pdf_id": "0.39",
+                    "matching_string": "bjbohr@nbi.dk} \\emailAdd{gang.chen@nbi.ku.dk} \\emailAdd{sxh962@alumni.ku.d"
+                },
+                {
+                    "pdf_id": "3.23",
+                    "matching_string": "{Marcos Skowronek^b} ^^\\emailAdd{k} \\emailAdd{marcosskowroneksantos@brown.edu}"
+                },
+                {
+                    "pdf_id": "0.40",
+                    "matching_string": ""
+                }
+            ]
+        },
+        {
+            "key": "doc/body",
+            "block_type": "body",
+            "children": [
+                {
+                    "key": "doc/body/txl0",
+                    "block_type": "txl",
+                    "children": [
+                        {
+                            "leaf id": 5,
+                            "key": "doc/body/txl0/txl0",
+                            "block type": "txl",
+                            "content": "We introduce a novel approach to compute Compton amplitudes involving a fermion pair inspired by Hopf algebra amplitude constructions. This approach features a recursive relation employing quasishuffle sets, directly verifiable by massive factorization properties. We derive results for minimal gauge invariant colorkinematic numerators with physical massive poles using this method. We have also deduced a graphical method for deriving numerators that simplifies the numerator generation and eliminates redundancies, thus providing several computational advantages. } \\keywords{Scattering Amplitudes,",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "0.41",
+                                    "matching_string": "We introduce a novel approach to compute Compton amplitudes involving "
+                                },
+                                {
+                                    "pdf_id": "0.42",
+                                    "matching_string": "a fermion pair inspired by Hopf algebra amplitude constructions. This approach "
+                                },
+                                {
+                                    "pdf_id": "0.44",
+                                    "matching_string": "by massive factorization properties. We derive results for minimal gauge invariant "
+                                },
+                                {
+                                    "pdf_id": "0.45",
+                                    "matching_string": "colorkinematic numerators with physical massive poles using this method. We have "
+                                },
+                                {
+                                    "pdf_id": "0.47",
+                                    "matching_string": "generation and eliminates redundancies, thus providing several computational "
+                                },
+                                {
+                                    "pdf_id": "0.48",
+                                    "matching_string": "advantages. "
+                                },
+                                {
+                                    "pdf_id": "0.46",
+                                    "matching_string": "also deduced a graphical method for deriving numerators that simplifies the numerator "
+                                },
+                                {
+                                    "pdf_id": "0.43",
+                                    "matching_string": "features a recursive relation employing quasishuffle sets, directly "
+                                },
+                                {
+                                    "pdf_id": "0.49",
+                                    "matching_string": "verifiable } \\keywords{Scattering Amplitudes,"
+                                },
+                                {
+                                    "pdf_id": "0.0",
+                                    "matching_string": ""
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "doc/body/txl1",
+                    "block_type": "txl",
+                    "children": [
+                        {
+                            "leaf id": 6,
+                            "key": "doc/body/txl1/txl0",
+                            "block type": "txl",
+                            "content": "ColorKinematic Numerators} \\tableofcontents",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "0.35",
+                                    "matching_string": "ColorKinematic Numerators} \\tableofcontents"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "doc/body/sec2",
+                    "block_type": "sec",
+                    "children": [
+                        {
+                            "leaf id": 7,
+                            "key": "doc/body/sec2/tit",
+                            "block type": "title",
+                            "content": "Introduction",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "1.1",
+                                    "matching_string": "Introduction"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "doc/body/sec2/txl0",
+                            "block_type": "txl",
+                            "children": [
+                                {
+                                    "leaf id": 8,
+                                    "key": "doc/body/sec2/txl0/txl0",
+                                    "block type": "txl",
+                                    "content": "The KawaiLewellenTye string theory relations combine gravity and YangMills theories and have led to the important discovery of a color and kinematics duality ; a cornerstone for efficient computation of amplitudes and motivation for examining core principles of quantum particle scattering .",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "1.26",
+                                            "matching_string": "theories and have led to the important discovery of a color and kinematics duality "
+                                        },
+                                        {
+                                            "pdf_id": "1.25",
+                                            "matching_string": "The KawaiLewellenTye string theory relations combine gravity and YangMills "
+                                        },
+                                        {
+                                            "pdf_id": "1.27",
+                                            "matching_string": "; a cornerstone for efficient computation of amplitudes and motivation for "
+                                        },
+                                        {
+                                            "pdf_id": "1.28",
+                                            "matching_string": "examining core principles of quantum particle scattering ."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "key": "doc/body/sec2/txl1",
+                            "block_type": "txl",
+                            "children": [
+                                {
+                                    "leaf id": 9,
+                                    "key": "doc/body/sec2/txl1/txl0",
+                                    "block type": "txl",
+                                    "content": "A considerable attraction over a decade has been finding a kinematic algebra that mimics that of the color group, and recently, there has been a breakthrough with the systematic framework developed by refs. . This framework uses infinitedimensional combinatorics and a direct numerator construction approach connected to quasishuffle Hopf algebras. The numerator technology developed this way is universal across many theories, including those with a spinless massive field, such as the heavymass effective field theory refs., scalar YangMills theory with finite mass, the α'F^3+α'^2F^4 higherderivative interaction theory (see also refs. ), and the DF^2+YM theory (see as well refs. ).",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "1.29",
+                                            "matching_string": "A considerable attraction over a decade has been finding a kinematic algebra that "
+                                        },
+                                        {
+                                            "pdf_id": "1.34",
+                                            "matching_string": "way is universal across many theories, including those with a spinless massive "
+                                        },
+                                        {
+                                            "pdf_id": "4.62",
+                                            "matching_string": "4 "
+                                        },
+                                        {
+                                            "pdf_id": "2.33",
+                                            "matching_string": ", "
+                                        },
+                                        {
+                                            "pdf_id": "1.31",
+                                            "matching_string": "the systematic framework developed by refs. . This framework uses "
+                                        },
+                                        {
+                                            "pdf_id": "1.33",
+                                            "matching_string": "connected to quasishuffle Hopf algebras. The numerator technology developed this "
+                                        },
+                                        {
+                                            "pdf_id": "1.35",
+                                            "matching_string": "such as the heavymass effective field theory refs., scalar YangMills "
+                                        },
+                                        {
+                                            "pdf_id": "0.32",
+                                            "matching_string": "a "
+                                        },
+                                        {
+                                            "pdf_id": "1.36",
+                                            "matching_string": "theory with finite mass, the α'F^3+α'^2F^higherderivative interaction theory "
+                                        },
+                                        {
+                                            "pdf_id": "1.30",
+                                            "matching_string": "mimics that of the color group, and recently, there has been a breakthrough with "
+                                        },
+                                        {
+                                            "pdf_id": "1.0",
+                                            "matching_string": "infinitedimensional combinatorics and direct numerator construction approach field, (see also refs. )and the DF^2+YM theory (see as well refs. )."
+                                        },
+                                        {
+                                            "pdf_id": "4.63",
+                                            "matching_string": ""
+                                        },
+                                        {
+                                            "pdf_id": "0.31",
+                                            "matching_string": ""
+                                        },
+                                        {
+                                            "pdf_id": "1.32",
+                                            "matching_string": ""
+                                        },
+                                        {
+                                            "pdf_id": "1.37",
+                                            "matching_string": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "key": "doc/body/sec2/txl2",
+                            "block_type": "txl",
+                            "children": [
+                                {
+                                    "leaf id": 10,
+                                    "key": "doc/body/sec2/txl2/txl0",
+                                    "block type": "txl",
+                                    "content": "This paper studies the kinematic algebra for the gauge invariant colorkinematic numerator associated with the generalized massive Compton amplitude with a fermion pair. Although this amplitude is considerably more complex than the spinless massive field case (see also refs. ), we show the realization of the algebra as a closedform quasishuffle product. The amplitudes discussed are of theoretical interest as they allow for structural insight into fermion factorization limits and are useful when generating inspiration for bootstrap methods for general spin amplitudes . We thus hope that progress in this area could potentially help develop computational methods for spinning black hole merger observables, for instance, using the modern amplitude techniques pioneered in refs. such as .",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "1.38",
+                                            "matching_string": "This paper studies the kinematic algebra for the gauge invariant colorkinematic "
+                                        },
+                                        {
+                                            "pdf_id": "1.39",
+                                            "matching_string": "numerator associated with the generalized massive Compton amplitude with a fermion "
+                                        },
+                                        {
+                                            "pdf_id": "1.40",
+                                            "matching_string": "pair. Although this amplitude is considerably more complex than the spinless massive "
+                                        },
+                                        {
+                                            "pdf_id": "1.43",
+                                            "matching_string": "as they allow for structural insight into fermion factorization limits and are "
+                                        },
+                                        {
+                                            "pdf_id": "2.2",
+                                            "matching_string": "methods for spinning black hole merger observables, for instance, using "
+                                        },
+                                        {
+                                            "pdf_id": "10.23",
+                                            "matching_string": ", "
+                                        },
+                                        {
+                                            "pdf_id": "1.42",
+                                            "matching_string": "closedform quasishuffle product. The amplitudes discussed are of theoretical interest "
+                                        },
+                                        {
+                                            "pdf_id": "2.0",
+                                            "matching_string": "useful when generating inspiration for bootstrap methods for general spin amplitudes "
+                                        },
+                                        {
+                                            "pdf_id": "2.1",
+                                            "matching_string": ". We thus hope that progress in this area could potentially help develop computational "
+                                        },
+                                        {
+                                            "pdf_id": "2.3",
+                                            "matching_string": "the modern amplitude techniques pioneered in refs. such as ."
+                                        },
+                                        {
+                                            "pdf_id": "2.12",
+                                            "matching_string": "field case (see also refs. )we show the realization of the algebra as a "
+                                        },
+                                        {
+                                            "pdf_id": "1.44",
+                                            "matching_string": ""
+                                        },
+                                        {
+                                            "pdf_id": "1.41",
+                                            "matching_string": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 11,
+                            "key": "doc/body/sec2/txl3",
+                            "block type": "txl",
+                            "content": "We present our work in this paper as follows. First, we introduce the kinematic Hopf algebra in section and define a new evaluation map for massive Compton amplitudes with fermion pairs. Next, we demonstrate the validity of this formalism through computation and employ factorization properties to outline a proof of the construction. In section, we provide an evaluation map that simplifies numerators using the onshell condition of the external massive fermion states. This graphical method streamlines numerator generation and thereby delivers computational benefits. Finally, in the final section, we provide an outlook for future research.",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "2.4",
+                                    "matching_string": "We present our work in this paper as follows. First, we introduce the kinematic "
+                                },
+                                {
+                                    "pdf_id": "2.6",
+                                    "matching_string": "amplitudes with fermion pairs. Next, we demonstrate the validity of this formalism "
+                                },
+                                {
+                                    "pdf_id": "2.7",
+                                    "matching_string": "through computation and employ factorization properties to outline a proof of the "
+                                },
+                                {
+                                    "pdf_id": "2.9",
+                                    "matching_string": "using the onshell condition of the external massive fermion states. This graphical "
+                                },
+                                {
+                                    "pdf_id": "7.8",
+                                    "matching_string": "In "
+                                },
+                                {
+                                    "pdf_id": "2.5",
+                                    "matching_string": "Hopf algebra in section and define a new evaluation map for massive Compton "
+                                },
+                                {
+                                    "pdf_id": "2.10",
+                                    "matching_string": "method streamlines numerator generation and thereby delivers computational "
+                                },
+                                {
+                                    "pdf_id": "2.11",
+                                    "matching_string": "Finally, in the final section, we provide an outlook for future research."
+                                },
+                                {
+                                    "pdf_id": "1.6",
+                                    "matching_string": "numerators "
+                                },
+                                {
+                                    "pdf_id": "1.3",
+                                    "matching_string": "construction. section, we provide an evaluation map that simplifies benefits. "
+                                },
+                                {
+                                    "pdf_id": "7.5",
+                                    "matching_string": ""
+                                },
+                                {
+                                    "pdf_id": "7.6",
+                                    "matching_string": ""
+                                },
+                                {
+                                    "pdf_id": "2.8",
+                                    "matching_string": ""
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "doc/body/sec3",
+                    "block_type": "sec",
+                    "children": [
+                        {
+                            "leaf id": 12,
+                            "key": "doc/body/sec3/tit",
+                            "block type": "title",
+                            "content": "Colorkinematic fermion pair numerators",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "1.2",
+                                    "matching_string": "Colorkinematic fermion pair numerators"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "doc/body/sec3/txl0",
+                            "block_type": "txl",
+                            "children": [
+                                {
+                                    "leaf id": 13,
+                                    "key": "doc/body/sec3/txl0/txl0",
+                                    "block type": "txl",
+                                    "content": "This section will deduce and demonstrate our algebraic construction for numerators. We will start by setting up a convenient and compact notation. A key element is an npoint massive fermion amplitude representation in terms of minimal colorkinematic numerators with (n3)! elements involving nested commutators. As an illustration of this, we consider ordered cubic vertex diagrams associated with gluon lines, 1, 2, and 3 connected through a propagator to gluon legs 4,5,…,n2 and two massive scalars n1, n.",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "2.13",
+                                            "matching_string": "This section will deduce and demonstrate our algebraic construction for numerators. "
+                                        },
+                                        {
+                                            "pdf_id": "2.14",
+                                            "matching_string": "We will start by setting up a convenient and compact notation. A key element "
+                                        },
+                                        {
+                                            "pdf_id": "2.15",
+                                            "matching_string": "is an npoint massive fermion amplitude representation in terms of minimal colorkinematic "
+                                        },
+                                        {
+                                            "pdf_id": "2.16",
+                                            "matching_string": "numerators with (n3)! elements involving nested commutators. As an "
+                                        },
+                                        {
+                                            "pdf_id": "2.17",
+                                            "matching_string": "illustration of this, we consider ordered cubic vertex diagrams associated with gluon "
+                                        },
+                                        {
+                                            "pdf_id": "2.19",
+                                            "matching_string": "massive scalars n1, n."
+                                        },
+                                        {
+                                            "pdf_id": "1.16",
+                                            "matching_string": "3 "
+                                        },
+                                        {
+                                            "pdf_id": "2.18",
+                                            "matching_string": "lines, 1, 2, and connected through a propagator to gluon legs 4,5,…,n2 and two "
+                                        },
+                                        {
+                                            "pdf_id": "2.20",
+                                            "matching_string": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 14,
+                            "key": "doc/body/sec3/equation1",
+                            "block type": "equation",
+                            "content": "[baseline=([yshift=0.8ex]current bounding box.center)]every node=[font=] (a)[]; [above=0.9cm of a](b)[dot]; [left=0.7cm of b](c); [left=0.28cm of b](c23); [above=0.23cm of c23](v23)[dot]; [above=.5cm of c](j1)p1; [right=.9cm of j1](j2)p2; [right=0.6cm of j2](j3)p3; *(a) – [thick] (b),(b) – [thick] (j1),(v23) – [thick] (j2),(b)–[thick](j3); [baseline=([yshift=0.8ex]current bounding box.center)]every node=[font=] (a)[]; [above=0.9cm of a](b)[dot]; [left=0.7cm of b](c); [right=0.29cm of b](c23); [above=0.23cm of c23](v23)[dot]; [above=.5cm of c](j1)p1; [right=.6cm of j1](j2)p2; [right=0.9cm of j2](j3)p3; *(a) – [thick] (b),(b) – [thick] (j1),(v23) – [thick] (j2),(b)–[thick](j3);",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "5.51",
+                                    "matching_string": "[baseline=([yshift=0.8ex]current bounding box.center)]every node=[font=] (a)[]; [above=0.9cm of a](b)[dot]; [left=0.7cm of b](c); [left=0.28cm of b](c23); [above=0.23cm of c23](v23)[dot]; [above=.5cm of c](j1)p1; [right=.9cm of j1](j2)p2; [right=0.6cm of j2](j3)p3; *(a) – [thick] (b),(b) – [thick] (j1),(v23) – [thick] (j2),(b)–[thick](j3); [baseline=([yshift=0.8ex]current bounding box.center)]every node=[font=] (a)[]; [above=0.9cm of a](b)[dot]; [left=0.7cm of b](c); [right=0.29cm of b](c23); [above=0.23cm of c23](v23)[dot]; [above=.5cm of c](j1)p1; [right=.6cm of j1](j2)p2; [right=0.9cm of j2](j3)p3; *(a) – [thick] (b),(b) – [thick] (j1),(v23) – [thick] (j2),(b)–[thick](j3);"
+                                },
+                                {
+                                    "pdf_id": "3.17",
+                                    "matching_string": ""
+                                },
+                                {
+                                    "pdf_id": "3.22",
+                                    "matching_string": ""
+                                },
+                                {
+                                    "pdf_id": "5.46",
+                                    "matching_string": ""
+                                },
+                                {
+                                    "pdf_id": "7.33",
+                                    "matching_string": ""
+                                },
+                                {
+                                    "pdf_id": "7.38",
+                                    "matching_string": ""
+                                },
+                                {
+                                    "pdf_id": "13.39",
+                                    "matching_string": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "doc/body/sec3/txl2",
+                            "block_type": "txl",
+                            "children": [
+                                {
+                                    "leaf id": 15,
+                                    "key": "doc/body/sec3/txl2/txl0",
+                                    "block type": "txl",
+                                    "content": "The two possible propagators respectively are p12^2p123^2 and p23^2p123^2, (defining pij≡ pi+pj and pij… k≡ pi+pj+...+pk) and it is easy to see that the colorkinematic duality holds writing out the Jacobi identity for numerators.",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "0.8",
+                                            "matching_string": "2 "
+                                        },
+                                        {
+                                            "pdf_id": "2.23",
+                                            "matching_string": "duality holds writing out the Jacobi identity for numerators."
+                                        },
+                                        {
+                                            "pdf_id": "2.21",
+                                            "matching_string": "The two possible propagators respectively are p12^2p123^and p23^2p123^2, (d"
+                                        },
+                                        {
+                                            "pdf_id": "2.22",
+                                            "matching_string": "pj and pij… k≡ pi+pj+...+pk) and it is easy to see that the colorkinematic "
+                                        },
+                                        {
+                                            "pdf_id": "0.9",
+                                            "matching_string": "efining pij≡ pi+"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 16,
+                            "key": "doc/body/sec3/align3",
+                            "block type": "align",
+                            "content": "⟨eq:newDCg Af(1,2,3,n1,n) = f([[1,2],3],n1,n)p12^2p123^2+ f([1,[2,3]],n1,n)p23^2p123^2 = ∑Γ∈ρ(3) f(Γ,n1,n)dΓ,",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "2.24",
+                                    "matching_string": "⟨eq:newDCg Af(1,2,3,n1,n) = f([[1,2],3],n1,n)p12^2p123^2+ f([1,[2,3]],n1,n)p23^2p123^2 = ∑Γ∈ρ(3) f(Γ,n1,n)dΓ,"
+                                },
+                                {
+                                    "pdf_id": "1.17",
+                                    "matching_string": ""
+                                },
+                                {
+                                    "pdf_id": "2.30",
+                                    "matching_string": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "doc/body/sec3/txl4",
+                            "block_type": "txl",
+                            "children": [
+                                {
+                                    "leaf id": 17,
+                                    "key": "doc/body/sec3/txl4/txl0",
+                                    "block type": "txl",
+                                    "content": "where Γ∈ρ(3)≡[[1,2],3],[1,[2,3]] and dΓ are massless propagators associated with numerators. This notation readily extends to any number of legs as follows",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "2.31",
+                                            "matching_string": "dΓ "
+                                        },
+                                        {
+                                            "pdf_id": "2.35",
+                                            "matching_string": "with numerators. This notation readily extends to any number of legs as follows"
+                                        },
+                                        {
+                                            "pdf_id": "10.64",
+                                            "matching_string": "where "
+                                        },
+                                        {
+                                            "pdf_id": "2.34",
+                                            "matching_string": "Γ∈ρ(3)≡[[1,2],3],[1,[2,3]] and are massless propagators associated "
+                                        },
+                                        {
+                                            "pdf_id": "2.29",
+                                            "matching_string": ""
+                                        },
+                                        {
+                                            "pdf_id": "2.32",
+                                            "matching_string": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 18,
+                            "key": "doc/body/sec3/align5",
+                            "block type": "align",
+                            "content": "⟨eq:newDCg Af(1…n2,n1,n) = ∑Γ∈ρ(n2) f(Γ,n1,n)dΓ,",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "2.36",
+                                    "matching_string": "⟨eq:newDCg Af(1…n2,n1,n) = ∑Γ∈ρ(n2) f(Γ,n1,n)dΓ,"
+                                },
+                                {
+                                    "pdf_id": "1.15",
+                                    "matching_string": ""
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "doc/body/sec4",
+                    "block_type": "sec",
+                    "children": [
+                        {
+                            "leaf id": 19,
+                            "key": "doc/body/sec4/tit",
+                            "block type": "title",
+                            "content": "An alternative evaluation map for generating simpler colorkinematic numerators",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "1.5",
+                                    "matching_string": "An alternative evaluation map for generating simpler colorkinematic "
+                                },
+                                {
+                                    "pdf_id": "9.17",
+                                    "matching_string": "numerators"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "doc/body/sec4/txl0",
+                            "block_type": "txl",
+                            "children": [
+                                {
+                                    "leaf id": 20,
+                                    "key": "doc/body/sec4/txl0/txl0",
+                                    "block type": "txl",
+                                    "content": "The previous section's evaluation map did not use the massive onshell state condition. This section explores using this auxiliary constraint to provide an alternative graphical evaluation map. This map removes expression redundancies and further simplifies the intricate Dirac matrix product in the numerators. We will start by considering numerator examples at four, five, and six points, which will form a basis for universal and more straightforward graphical rules for evaluating numerator expressions.",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "9.10",
+                                            "matching_string": "The previous section's evaluation map did not use the massive onshell state condition. "
+                                        },
+                                        {
+                                            "pdf_id": "9.12",
+                                            "matching_string": "graphical evaluation map. This map removes expression redundancies and further "
+                                        },
+                                        {
+                                            "pdf_id": "9.14",
+                                            "matching_string": "considering numerator examples at four, five, and six points, which will form a basis "
+                                        },
+                                        {
+                                            "pdf_id": "9.16",
+                                            "matching_string": "expressions."
+                                        },
+                                        {
+                                            "pdf_id": "9.11",
+                                            "matching_string": "This section explores using this auxiliary constraint to provide an alternative "
+                                        },
+                                        {
+                                            "pdf_id": "9.13",
+                                            "matching_string": "the intricate Dirac matrix product in the numerators. We will start by "
+                                        },
+                                        {
+                                            "pdf_id": "9.15",
+                                            "matching_string": "for universal and more straightforward graphical rules for evaluating numerator "
+                                        },
+                                        {
+                                            "pdf_id": "1.13",
+                                            "matching_string": "simplifies "
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "key": "doc/body/sec4/sub1",
+                            "block_type": "sub",
+                            "children": [
+                                {
+                                    "leaf id": 21,
+                                    "key": "doc/body/sec4/sub1/tit",
+                                    "block type": "title",
+                                    "content": "Fourpoint colorkinematic numerator",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "1.7",
+                                            "matching_string": "Fourpoint colorkinematic numerator"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "doc/body/sec4/sub1/txl0",
+                                    "block_type": "txl",
+                                    "children": [
+                                        {
+                                            "leaf id": 22,
+                                            "key": "doc/body/sec4/sub1/txl0/txl0",
+                                            "block type": "txl",
+                                            "content": "Our first example is the fourpoint colorkinematic numerator. Here, we get directly from the algebraic construction",
+                                            "leftover": "",
+                                            "matches": [
+                                                {
+                                                    "pdf_id": "9.19",
+                                                    "matching_string": "from the algebraic construction"
+                                                },
+                                                {
+                                                    "pdf_id": "9.18",
+                                                    "matching_string": "Our first example is the fourpoint colorkinematic numerator. Here, we get directly "
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 23,
+                                    "key": "doc/body/sec4/sub1/align1",
+                                    "block type": "align",
+                                    "content": "f(12,3,4)= ⟨⟨T(12)⟩⟩=v̅H12p^241m^2 u,",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "9.26",
+                                            "matching_string": "f(12,3,4)= ⟨⟨T(12)⟩⟩=v̅H12p^241m^2 u,"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 24,
+                                    "key": "doc/body/sec4/sub1/txl2",
+                                    "block type": "txl",
+                                    "content": "and an expression, which uses the onshell condition and H12=p4· F12 + 1 4F1(p1 · F2) from the general definition eq.~.",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "1.14",
+                                            "matching_string": "1 "
+                                        },
+                                        {
+                                            "pdf_id": "6.29",
+                                            "matching_string": "+ "
+                                        },
+                                        {
+                                            "pdf_id": "9.20",
+                                            "matching_string": "and an expression, which uses the onshell condition and H12=p4· F12 "
+                                        },
+                                        {
+                                            "pdf_id": "9.22",
+                                            "matching_string": "4F1(p1 · F2) from the general definition eq.~."
+                                        },
+                                        {
+                                            "pdf_id": "9.21",
+                                            "matching_string": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "key": "doc/body/sec4/sub2",
+                            "block_type": "sub",
+                            "children": [
+                                {
+                                    "leaf id": 25,
+                                    "key": "doc/body/sec4/sub2/tit",
+                                    "block type": "title",
+                                    "content": "Fivepoint colorkinematic numerator",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "1.8",
+                                            "matching_string": "Fivepoint colorkinematic numerator"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "doc/body/sec4/sub2/txl0",
+                                    "block_type": "txl",
+                                    "children": [
+                                        {
+                                            "leaf id": 26,
+                                            "key": "doc/body/sec4/sub2/txl0/txl0",
+                                            "block type": "txl",
+                                            "content": "At fivepoint, the algebraic construction yields:",
+                                            "leftover": "",
+                                            "matches": [
+                                                {
+                                                    "pdf_id": "9.29",
+                                                    "matching_string": "At fivepoint, the algebraic construction yields:"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 27,
+                                    "key": "doc/body/sec4/sub2/align1",
+                                    "block type": "align",
+                                    "content": "f(123,4,5)= ⟨⟨T(123)T(12),(3)T(13),(2)⟩⟩= v̅[ H123p^251m^2 H12p^251m^2p512mp^2512m^2(p12· F3) H13p^251m^2p513mp^2513m^2(p1· F2) ] u =v̅[ H123p^251m^2 H12p^251m^22(p12· F3· p5)+(p12· F3)p3 p^2512m^2  H13p^251m^22(p13· F2· p5)+(p13· F2)p2p^2513m^2 ] u .",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "10.62",
+                                            "matching_string": "f(123,4,5)= ⟨⟨T(123)T(12),(3)T(13),(2)⟩⟩= v̅[ H123p^251m^2 H12p^251m^2p512mp^2512m^2(p12· F3) H13p^251m^2p513mp^2513m^2(p1· F2) ] u =v̅[ H123p^251m^2 H12p^251m^22(p12· F3· p5)+(p12· F3)p3 p^2512m^2  H13p^251m^22(p13· F2· p5)+(p13· F2)p2p^2513m^2 ] u ."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "doc/body/sec4/sub2/txl2",
+                                    "block_type": "txl",
+                                    "children": [
+                                        {
+                                            "leaf id": 28,
+                                            "key": "doc/body/sec4/sub2/txl2/txl0",
+                                            "block type": "txl",
+                                            "content": "In the last step, we use the Clifford algebra and the onshell condition to reduce the rank of the two tensors to a scalar product and obtain a simpler tensor rank. The {\\it H} functions are",
+                                            "leftover": "{\\it H} ",
+                                            "matches": [
+                                                {
+                                                    "pdf_id": "10.12",
+                                                    "matching_string": "In the last step, we use the Clifford algebra and the onshell condition to reduce the "
+                                                },
+                                                {
+                                                    "pdf_id": "10.14",
+                                                    "matching_string": "functions are"
+                                                },
+                                                {
+                                                    "pdf_id": "10.13",
+                                                    "matching_string": "rank of the two tensors to a scalar product and obtain a simpler tensor rank. The "
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 29,
+                                    "key": "doc/body/sec4/sub2/align3",
+                                    "block type": "align",
+                                    "content": "H12 =p5· F12 + 14F1(p1 · F2),H13 =p5· F13 + 14F1(p1 · F3), H123 =p5· F123 + 14F1(p1 · F23) .",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "10.11",
+                                            "matching_string": "H12 =p5· F12 + 14F1(p1 · F2),H13 =p5· F13 + 14F1(p1 · F3), H123 =p5· F123 + 14F1(p1 · F23) ."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "key": "doc/body/sec4/sub3",
+                            "block_type": "sub",
+                            "children": [
+                                {
+                                    "leaf id": 30,
+                                    "key": "doc/body/sec4/sub3/tit",
+                                    "block type": "title",
+                                    "content": "Sixpoint colorkinematic numerator",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "1.9",
+                                            "matching_string": "Sixpoint colorkinematic numerator"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "doc/body/sec4/sub3/txl0",
+                                    "block_type": "txl",
+                                    "children": [
+                                        {
+                                            "leaf id": 31,
+                                            "key": "doc/body/sec4/sub3/txl0/txl0",
+                                            "block type": "txl",
+                                            "content": "Finally, we consider the sixpoint colorkinematic numerator. Our starting point is the algebraic construction of the numerator, which reads,",
+                                            "leftover": "",
+                                            "matches": [
+                                                {
+                                                    "pdf_id": "10.35",
+                                                    "matching_string": "Finally, we consider the sixpoint colorkinematic numerator. Our starting point is "
+                                                },
+                                                {
+                                                    "pdf_id": "10.36",
+                                                    "matching_string": "the algebraic construction of the numerator, which reads,"
+                                                },
+                                                {
+                                                    "pdf_id": "10.37",
+                                                    "matching_string": ""
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 32,
+                                    "key": "doc/body/sec4/sub3/align1",
+                                    "block type": "align",
+                                    "content": "⟨N6 f(1234,5,6) =⟨⟨T(12),(3),(4)T(12),(4),(3)+T(12),(34) T(13),(2),(4) T(13),(4),(2)+T(13),(24)T(14),(2),(3) T(14),(3),(2) +T(14),(23) +T(123),(4)+T(124),(3) +T(134),(2)T(1234)⟩⟩ .",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "10.31",
+                                            "matching_string": "⟨N6 f(1234,5,6) =⟨⟨T(12),(3),(4)T(12),(4),(3)+T(12),(34) T(13),(2),(4) T(13),(4),(2)+T(13),(24)T(14),(2),(3) T(14),(3),(2) +T(14),(23) +T(123),(4)+T(124),(3) +T(134),(2)T(1234)⟩⟩ ."
+                                        },
+                                        {
+                                            "pdf_id": "10.43",
+                                            "matching_string": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "doc/body/sec4/sub3/txl2",
+                                    "block_type": "txl",
+                                    "children": [
+                                        {
+                                            "leaf id": 33,
+                                            "key": "doc/body/sec4/sub3/txl2/txl0",
+                                            "block type": "txl",
+                                            "content": "Writing out the first one of these terms, we get:",
+                                            "leftover": "",
+                                            "matches": [
+                                                {
+                                                    "pdf_id": "10.44",
+                                                    "matching_string": "get:"
+                                                },
+                                                {
+                                                    "pdf_id": "9.28",
+                                                    "matching_string": "Writing out the first one of these terms, we "
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 34,
+                                    "key": "doc/body/sec4/sub3/align3",
+                                    "block type": "align",
+                                    "content": "⟨⟨T(12),(3),(4)T(12),(4),(3)+T(12),(34)⟩⟩ = ⟨⟨[baseline=([yshift=0.8ex]current bounding box.center)]every node=[font=] (a)[myblob]; [left=0.8cm of a] (a0)[myblob]; [right=0.8cm of a] (a2)[myblob]; [right=0.8cm of a2] (a4)[myblob]; [above=0.8cm of a] (b1)2; [above=0.8cm of a2] (b2)3; [above=0.8cm of a4] (b4)4; [above=0.8cm of a0] (b0)1; [above=0.8cm of a0](j1); [right=0.2cm of j1](j2); [right=1.4cm of j2](j4); [right=0.8cm of j4](j6); [right=0.0cm of j6](j8); *(a)–[very thick](a0),(a)–[very thick](a2),(a2)–[very thick](a3), (a3)–[very thick](a4),(a0) – [thick] (j1),(a) – [thick] (j2),(a2) – [thick] (j4),(a4) – [thick] (j8); ⟩⟩⟨⟨[baseline=([yshift=0.8ex]current bounding box.center)]every node=[font=] (a)[myblob]; [left=0.8cm of a] (a0)[myblob]; [right=0.8cm of a] (a2)[myblob]; [right=0.8cm of a2] (a4)[myblob]; [above=0.8cm of a] (b1)2; [above=0.8cm of a2] (b2)4; [above=0.8cm of a4] (b4)3; [above=0.8cm of a0] (b0)1; [above=0.8cm of a0](j1); [right=0.2cm of j1](j2); [right=1.4cm of j2](j4); [right=0.8cm of j4](j6); [right=0.0cm of j6](j8); *(a)–[very thick](a0),(a)–[very thick](a2),(a2)–[very thick](a3), (a3)–[very thick](a4),(a0) – [thick] (j1),(a) – [thick] (j2),(a2) – [thick] (j4),(a4) – [thick] (j8); ⟩⟩+⟨⟨[baseline=([yshift=0.8ex]current bounding box.center)]every node=[font=] (a)[myblob]; [left=0.8cm of a] (a0)[myblob]; [right=0.8cm of a] (a2)[myblob]; [above=0.8cm of a] (b1)2; [above=0.8cm of a2] (b2)34; [above=0.8cm of a0] (b0)1; [above=0.8cm of a0](j1); [right=0.2cm of j1](j2); [right=1.2cm of j2](j4); [right=0.4cm of j4](j5); *(a)–[very thick](a0),(a)–[very thick](a2), (a0) – [thick] (j1),(a) – [thick] (j2),(a2) – [thick] (j4),(a2) – [thick] (j5); ⟩⟩ =v̅H12 (p612m)(p12· F3)(p6123m)(p123· F4)u(p61^2m^2) (p612^2m^2) (p6123^2m^2) v̅H12(p612m)(p12· F4)(p6124m)(p12· F3)u(p61^2m^2) (p612^2m^2) (p6124^2m^2) +v̅H12(p612m)(p12· F3· F4)u(p61^2m^2) (p612^2m^2),",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "8.0",
+                                            "matching_string": "⟨⟨T(12),(3),(4)T(12),(4),(3)+T(12),(34)⟩⟩ = ⟨⟨[baseline=([yshift=0.8ex]current bounding box.center)]every node=[font=] (a)[myblob]; [left=0.8cm of a] (a0)[myblob]; [right=0.8cm of a] (a2)[myblob]; [right=0.8cm of a2] (a4)[myblob]; [above=0.8cm of a] (b1)2; [above=0.8cm of a2] (b2)3; [above=0.8cm of a4] (b4)4; [above=0.8cm of a0] (b0)1; [above=0.8cm of a0](j1); [right=0.2cm of j1](j2); [right=1.4cm of j2](j4); [right=0.8cm of j4](j6); [right=0.0cm of j6](j8); *(a)–[very thick](a0),(a)–[very thick](a2),(a2)–[very thick](a3), (a3)–[very thick](a4),(a0) – [thick] (j1),(a) – [thick] (j2),(a2) – [thick] (j4),(a4) – [thick] (j8); ⟩⟩⟨⟨[baseline=([yshift=0.8ex]current bounding box.center)]every node=[font=] (a)[myblob]; [left=0.8cm of a] (a0)[myblob]; [right=0.8cm of a] (a2)[myblob]; [right=0.8cm of a2] (a4)[myblob]; [above=0.8cm of a] (b1)2; [above=0.8cm of a2] (b2)4; [above=0.8cm of a4] (b4)3; [above=0.8cm of a0] (b0)1; [above=0.8cm of a0](j1); [right=0.2cm of j1](j2); [right=1.4cm of j2](j4); [right=0.8cm of j4](j6); [right=0.0cm of j6](j8); *(a)–[very thick](a0),(a)–[very thick](a2),(a2)–[very thick](a3), (a3)–[very thick](a4),(a0) – [thick] (j1),(a) – [thick] (j2),(a2) – [thick] (j4),(a4) – [thick] (j8); ⟩⟩+⟨⟨[baseline=([yshift=0.8ex]current bounding box.center)]every node=[font=] (a)[myblob]; [left=0.8cm of a] (a0)[myblob]; [right=0.8cm of a] (a2)[myblob]; [above=0.8cm of a] (b1)2; [above=0.8cm of a2] (b2)34; [above=0.8cm of a0] (b0)1; [above=0.8cm of a0](j1); [right=0.2cm of j1](j2); [right=1.2cm of j2](j4); [right=0.4cm of j4](j5); *(a)–[very thick](a0),(a)–[very thick](a2), (a0) – [thick] (j1),(a) – [thick] (j2),(a2) – [thick] (j4),(a2) – [thick] (j5); ⟩⟩ =v̅H12 (p612m)(p12· F3)(p6123m)(p123· F4)u(p61^2m^2) (p612^2m^2) (p6123^2m^2) v̅H12(p612m)(p12· F4)(p6124m)(p12· F3)u(p61^2m^2) (p612^2m^2) (p6124^2m^2) +v̅H12(p612m)(p12· F3· F4)u(p61^2m^2) (p612^2m^2),"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "doc/body/sec4/sub3/txl4",
+                                    "block_type": "txl",
+                                    "children": [
+                                        {
+                                            "leaf id": 35,
+                                            "key": "doc/body/sec4/sub3/txl4/txl0",
+                                            "block type": "txl",
+                                            "content": "where",
+                                            "leftover": "where",
+                                            "matches": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 36,
+                                    "key": "doc/body/sec4/sub3/align5",
+                                    "block type": "align",
+                                    "content": "H12 =p6· F12 + 14F1(p1 · F2) .",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "10.65",
+                                            "matching_string": "H12 =p6· F12 + 14F1(p1 · F2) ."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "doc/body/sec4/sub3/txl6",
+                                    "block_type": "txl",
+                                    "children": [
+                                        {
+                                            "leaf id": 37,
+                                            "key": "doc/body/sec4/sub3/txl6/txl0",
+                                            "block type": "txl",
+                                            "content": "Terms involving two propagators yield",
+                                            "leftover": "",
+                                            "matches": [
+                                                {
+                                                    "pdf_id": "11.0",
+                                                    "matching_string": "Terms involving two propagators yield"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 38,
+                                    "key": "doc/body/sec4/sub3/align7",
+                                    "block type": "align",
+                                    "content": "⟨6pteg v̅ H12p61^2m^2[(p12· F3)(p123· F4)(p612^2m^2) + (p12· F4)(p12· F3)(p612^2m^2)+ (p612m)(p12· F34)(p612^2m^2) ]u= v̅ H12p61^2m^2[ (p12· F3)(p123· F4)(p612^2m^2) + (p12· F4)(p12· F3)(p612^2m^2) + (p12· F34)p34(p612^2m^2) +2(p12· F34 · p612)(p612^2m^2) ]u .",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "11.3",
+                                            "matching_string": "⟨6pteg v̅ H12p61^2m^2[(p12· F3)(p123· F4)(p612^2m^2) + (p12· F4)(p12· F3)(p612^2m^2)+ (p612m)(p12· F34)(p612^2m^2) ]u= v̅ H12p61^2m^2[ (p12· F3)(p123· F4)(p612^2m^2) + (p12· F4)(p12· F3)(p612^2m^2) + (p12· F34)p34(p612^2m^2) +2(p12· F34 · p612)(p612^2m^2) ]u ."
+                                        },
+                                        {
+                                            "pdf_id": "6.20",
+                                            "matching_string": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "doc/body/sec4/sub3/txl8",
+                                    "block_type": "txl",
+                                    "children": [
+                                        {
+                                            "leaf id": 39,
+                                            "key": "doc/body/sec4/sub3/txl8/txl0",
+                                            "block type": "txl",
+                                            "content": "The terms contained within the square brackets on the righthand side we rephrase further as follows:",
+                                            "leftover": "",
+                                            "matches": [
+                                                {
+                                                    "pdf_id": "6.21",
+                                                    "matching_string": "as follows:"
+                                                },
+                                                {
+                                                    "pdf_id": "11.20",
+                                                    "matching_string": "The terms contained within the square brackets on the righthand side we rephrase "
+                                                },
+                                                {
+                                                    "pdf_id": "11.21",
+                                                    "matching_string": "further "
+                                                },
+                                                {
+                                                    "pdf_id": "11.15",
+                                                    "matching_string": ""
+                                                },
+                                                {
+                                                    "pdf_id": "11.31",
+                                                    "matching_string": ""
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 40,
+                                    "key": "doc/body/sec4/sub3/align9",
+                                    "block type": "align",
+                                    "content": "2(p12· F3· F4 · p612)(p612^2m^2) + (p12· F3)(p3· F4)(p612^2m^2) + (p12· F3· F4)p34(p612^2m^2) + (p12· F3)(p12· F4)(p612^2m^2) + (p12· F4)(p12· F3)(p612^2m^2),",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "11.22",
+                                            "matching_string": "2(p12· F3· F4 · p612)(p612^2m^2) + (p12· F3)(p3· F4)(p612^2m^2) + (p12· F3· F4)p34(p612^2m^2) + (p12· F3)(p12· F4)(p612^2m^2) + (p12· F4)(p12· F3)(p612^2m^2),"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "doc/body/sec4/sub3/txl10",
+                                    "block_type": "txl",
+                                    "children": [
+                                        {
+                                            "leaf id": 41,
+                                            "key": "doc/body/sec4/sub3/txl10/txl0",
+                                            "block type": "txl",
+                                            "content": "and reexpress by employing the identity",
+                                            "leftover": "",
+                                            "matches": [
+                                                {
+                                                    "pdf_id": "11.32",
+                                                    "matching_string": "and reexpress by employing the identity"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 42,
+                                    "key": "doc/body/sec4/sub3/align11",
+                                    "block type": "align",
+                                    "content": "(p12· F3)(p12· F4)(p612^2m^2) + (p12· F4)(p12· F3)(p612^2m^2) = 2(p12· F3· F4 · p12)(p612^2m^2) .",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "11.33",
+                                            "matching_string": "(p12· F3)(p12· F4)(p612^2m^2) + (p12· F4)(p12· F3)(p612^2m^2) = 2(p12· F3· F4 · p12)(p612^2m^2) ."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "doc/body/sec4/sub3/txl12",
+                                    "block_type": "txl",
+                                    "children": [
+                                        {
+                                            "leaf id": 43,
+                                            "key": "doc/body/sec4/sub3/txl12/txl0",
+                                            "block type": "txl",
+                                            "content": "It leads to the following simplified expression:",
+                                            "leftover": "",
+                                            "matches": [
+                                                {
+                                                    "pdf_id": "11.39",
+                                                    "matching_string": "It leads to the following simplified expression:"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 44,
+                                    "key": "doc/body/sec4/sub3/align13",
+                                    "block type": "align",
+                                    "content": "v̅ H12p61^2m^2[2(p12· F3· F4 · p6)(p612^2m^2) + (p12· F3)(p3· F4)(p612^2m^2) + (p12· F3· F4)p34(p612^2m^2) ]u .",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "6.16",
+                                            "matching_string": "v̅ H12p61^2m^2[2(p12· F3· F4 · p6)(p612^2m^2) + (p12· F3)(p3· F4)(p612^2m^2) + (p12· F3· F4)p34(p612^2m^2) ]u ."
+                                        },
+                                        {
+                                            "pdf_id": "5.54",
+                                            "matching_string": ""
+                                        },
+                                        {
+                                            "pdf_id": "5.55",
+                                            "matching_string": ""
+                                        },
+                                        {
+                                            "pdf_id": "11.48",
+                                            "matching_string": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "doc/body/sec4/sub3/txl14",
+                                    "block_type": "txl",
+                                    "children": [
+                                        {
+                                            "leaf id": 45,
+                                            "key": "doc/body/sec4/sub3/txl14/txl0",
+                                            "block type": "txl",
+                                            "content": "From this expression, we make the following observations. It is manifest that, in the simplified form, all the massdependent contributions are gone in the numerator, and the massive momentumdependent terms only appear in the scalar part. Fully accounting for the onshell conditions allows us a muchsimplified expression. It follows from above examples, that the function H1τ in the evaluation map of the first component of the algebraic generator is unchanged. Other components are reduced to",
+                                            "leftover": "",
+                                            "matches": [
+                                                {
+                                                    "pdf_id": "11.50",
+                                                    "matching_string": "and the massive momentumdependent terms only appear in the scalar part. Fully "
+                                                },
+                                                {
+                                                    "pdf_id": "11.54",
+                                                    "matching_string": "reduced to"
+                                                },
+                                                {
+                                                    "pdf_id": "11.51",
+                                                    "matching_string": "accounting for the onshell conditions allows us a muchsimplified expression. "
+                                                },
+                                                {
+                                                    "pdf_id": "11.53",
+                                                    "matching_string": "From this expression, we make the following observations. It is manifest that, in the simplified form, all the massdependent contributions are gone in the numerator, It follows from above examples, that the function H1τ in the evaluation map of the first component of the algebraic generator is unchanged. Other components are "
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 46,
+                                    "key": "doc/body/sec4/sub3/align15",
+                                    "block type": "align",
+                                    "content": "Hjτ(pρ,pω) =2 pρ· Fjτ· pω+ ∑σ1∈τ(pρ· Fjσ1)( pΘ'L(σ2)· Fσ2), if j>1 .",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "7.36",
+                                            "matching_string": "Hjτ(pρ,pω) =2 pρ· Fjτ· pω+ ∑σ1∈τ(pρ· Fjσ1)( pΘ'L(σ2)· Fσ2), if j>1 ."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "doc/body/sec4/sub3/txl16",
+                                    "block_type": "txl",
+                                    "children": [
+                                        {
+                                            "leaf id": 47,
+                                            "key": "doc/body/sec4/sub3/txl16/txl0",
+                                            "block type": "txl",
+                                            "content": "The expression involves the summation of all possible orderings of τ, denoted as σ1σ2≡τ, here, Θ'L(σ2) represents all the indices in jσ1 that come before the index of σ2 in the canonical ordering. When σ2 is an empty set, Θ'L includes every index in jτ. In this case, Fσ2 reduces to an identity matrix. For example",
+                                            "leftover": "",
+                                            "matches": [
+                                                {
+                                                    "pdf_id": "11.68",
+                                                    "matching_string": "The expression involves the summation of all possible orderings of τ, denoted as "
+                                                },
+                                                {
+                                                    "pdf_id": "11.70",
+                                                    "matching_string": "of σ2 in the canonical ordering. When σ2 is an empty set, Θ'L includes every index "
+                                                },
+                                                {
+                                                    "pdf_id": "7.40",
+                                                    "matching_string": "In "
+                                                },
+                                                {
+                                                    "pdf_id": "11.69",
+                                                    "matching_string": "τ, here, Θ'L(σ2) represents all the indices in jσ1 that come before the index "
+                                                },
+                                                {
+                                                    "pdf_id": "11.71",
+                                                    "matching_string": "in jτ. this case, Fσ2 reduces to an identity matrix. For example"
+                                                },
+                                                {
+                                                    "pdf_id": "7.43",
+                                                    "matching_string": "σ1σ2≡"
+                                                },
+                                                {
+                                                    "pdf_id": "4.3",
+                                                    "matching_string": ""
+                                                },
+                                                {
+                                                    "pdf_id": "7.44",
+                                                    "matching_string": ""
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 48,
+                                    "key": "doc/body/sec4/sub3/align17",
+                                    "block type": "align",
+                                    "content": "Hj(pρ,pω) =2 pρ· Fjτ· pω+ (pρ· Fj)pj,Hjk(pρ,pω) =2 pρ· Fjk· pω+ (pρ· Fjk)pjk+ (pρ· Fj)(pj· Fk ) .",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "7.37",
+                                            "matching_string": "Hj(pρ,pω) =2 pρ· Fjτ· pω+ (pρ· Fj)pj,Hjk(pρ,pω) =2 pρ· Fjk· pω+ (pρ· Fjk)pjk+ (pρ· Fj)(pj· Fk ) ."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "key": "doc/body/sec4/sub4",
+                            "block_type": "sub",
+                            "children": [
+                                {
+                                    "leaf id": 49,
+                                    "key": "doc/body/sec4/sub4/tit",
+                                    "block type": "title",
+                                    "content": "General colorkinematic numerator",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "1.10",
+                                            "matching_string": "General colorkinematic numerator"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "doc/body/sec4/sub4/txl0",
+                                    "block_type": "txl",
+                                    "children": [
+                                        {
+                                            "leaf id": 50,
+                                            "key": "doc/body/sec4/sub4/txl0/txl0",
+                                            "block type": "txl",
+                                            "content": "Armed with the understanding from the above examples, we will now introduce a more general and universal formalism. We have the following simplified evaluation map for numerators:",
+                                            "leftover": "",
+                                            "matches": [
+                                                {
+                                                    "pdf_id": "12.1",
+                                                    "matching_string": "Armed with the understanding from the above examples, we will now introduce a "
+                                                },
+                                                {
+                                                    "pdf_id": "12.3",
+                                                    "matching_string": "map for numerators:"
+                                                },
+                                                {
+                                                    "pdf_id": "12.2",
+                                                    "matching_string": "more general and universal formalism. We have the following simplified evaluation "
+                                                },
+                                                {
+                                                    "pdf_id": "12.6",
+                                                    "matching_string": ""
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 51,
+                                    "key": "doc/body/sec4/sub4/align1",
+                                    "block type": "align",
+                                    "content": "⟨eq:J ⟨⟨T(1τ1),(τ2),…, (τr)⟩⟩≡⟨⟨[baseline=([yshift=0.8ex]current bounding box.center)]every node=[font=] (a)[myblob]; [left=0.8cm of a] (a0)[myblob]; [right=0.8cm of a] (a2)[myblob]; [right=0.8cm of a2] (a3)[myblob]; [right=0.8cm of a3] (a4)[myblob]; [above=0.8cm of a] (b1)τ1; [above=0.8cm of a2] (b2)τ2; [above=0.8cm of a3] (b3)⋯; [above=0.8cm of a4] (b4)τr; [above=0.8cm of a0] (b0)1; [above=0.8cm of a0](j1); [right=0.2cm of j1](j2); [right=0.6cm of j2](j3); [right=0.4cm of j3](j4); [right=0.8cm of j4](j5); [right=0.2cm of j5](j6); [right=0.6cm of j6](j7); [right=0.0cm of j7](j8); [right=0.8cm of j8](j9); *(a)–[very thick](a0),(a)–[very thick](a2),(a2)–[very thick](a3), (a3)–[very thick](a4),(a0) – [thick] (j1),(a) – [thick] (j2),(a)–[thick](j3),(a2) – [thick] (j4),(a2)–[thick](j5),(a4) – [thick] (j8),(a4)–[thick](j9); ⟩⟩ =v̅H1τ1p^2n1m^2Hτ2(pΘL(τ2),pΘR(τ2))p^2n1τ1m^2 ⋯Hτr(pΘL(τr),pΘR(τr))p^2n1τ1…τr1m^2u .",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "6.45",
+                                            "matching_string": "⟨eq:J ⟨⟨T(1τ1),(τ2),…, (τr)⟩⟩≡⟨⟨[baseline=([yshift=0.8ex]current bounding box.center)]every node=[font=] (a)[myblob]; [left=0.8cm of a] (a0)[myblob]; [right=0.8cm of a] (a2)[myblob]; [right=0.8cm of a2] (a3)[myblob]; [right=0.8cm of a3] (a4)[myblob]; [above=0.8cm of a] (b1)τ1; [above=0.8cm of a2] (b2)τ2; [above=0.8cm of a3] (b3)⋯; [above=0.8cm of a4] (b4)τr; [above=0.8cm of a0] (b0)1; [above=0.8cm of a0](j1); [right=0.2cm of j1](j2); [right=0.6cm of j2](j3); [right=0.4cm of j3](j4); [right=0.8cm of j4](j5); [right=0.2cm of j5](j6); [right=0.6cm of j6](j7); [right=0.0cm of j7](j8); [right=0.8cm of j8](j9); *(a)–[very thick](a0),(a)–[very thick](a2),(a2)–[very thick](a3), (a3)–[very thick](a4),(a0) – [thick] (j1),(a) – [thick] (j2),(a)–[thick](j3),(a2) – [thick] (j4),(a2)–[thick](j5),(a4) – [thick] (j8),(a4)–[thick](j9); ⟩⟩ =v̅H1τ1p^2n1m^2Hτ2(pΘL(τ2),pΘR(τ2))p^2n1τ1m^2 ⋯Hτr(pΘL(τr),pΘR(τr))p^2n1τ1…τr1m^2u ."
+                                        },
+                                        {
+                                            "pdf_id": "12.21",
+                                            "matching_string": ""
+                                        },
+                                        {
+                                            "pdf_id": "12.23",
+                                            "matching_string": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "doc/body/sec4/sub4/txl2",
+                                    "block_type": "txl",
+                                    "children": [
+                                        {
+                                            "leaf id": 52,
+                                            "key": "doc/body/sec4/sub4/txl2/txl0",
+                                            "block type": "txl",
+                                            "content": "We obtain this map by analyzing the colorkinematic numerator pattern observed in the above examples provided by eq.~ using the additional onshell conditions. We will also use the convenient musical diagrams to ease the computation of numerators. The musical diagrams take the form",
+                                            "leftover": "",
+                                            "matches": [
+                                                {
+                                                    "pdf_id": "12.16",
+                                                    "matching_string": "We obtain this map by analyzing the colorkinematic numerator pattern observed in "
+                                                },
+                                                {
+                                                    "pdf_id": "12.18",
+                                                    "matching_string": "We will also use the convenient musical diagrams to ease the computation of "
+                                                },
+                                                {
+                                                    "pdf_id": "12.19",
+                                                    "matching_string": "numerators. The musical diagrams take the form"
+                                                },
+                                                {
+                                                    "pdf_id": "12.17",
+                                                    "matching_string": "the above examples provided by eq.~ using the additional onshell conditions. "
+                                                },
+                                                {
+                                                    "pdf_id": "12.20",
+                                                    "matching_string": ""
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 53,
+                                    "key": "doc/body/sec4/sub4/equation*3",
+                                    "block type": "equation*",
+                                    "content": "⟨eq:musicNonzero [baseline=([yshift=0.8ex]current bounding box.center)]every node=[font=] (l1)[]; [below=0.6cm of l1](ls)[]; [above=0.9cm of l1](lg)[]⋮; [right=1.0cm of lg](lg3)[]⋮; [right=3.5cm of lg](lg2)[]⋮; [left=0.5cm of ls](rms)[](ητ1); [right=5.cm of ls](rs); [right=4.3cm of ls](vphi)[myblob2]n; [left=0.5cm of l1](rm1)[](τ2); [right=5.cm of l1](r1)[]; [right=0.5cm of ls](v1)[sb]1; [right=1.9cm of ls](v11)[sb]; [right=2.9cm of ls](v12)[sb]; [right=1.cm of l1](v3)[sb]; [right=3.5cm of l1](v4)[sb]; *(l1) [thick](v3) [scalar,thick](v4)–[thick](r1),(ls)–[thick](v1)–[thick](v11)–[scalar,thick](v12)–[thick](vphi)–[thick](rs);",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "12.22",
+                                            "matching_string": "⟨eq:musicNonzero [baseline=([yshift=0.8ex]current bounding box.center)]every node=[font=] (l1)[]; [below=0.6cm of l1](ls)[]; [above=0.9cm of l1](lg)[]⋮; [right=1.0cm of lg](lg3)[]⋮; [right=3.5cm of lg](lg2)[]⋮; [left=0.5cm of ls](rms)[](ητ1); [right=5.cm of ls](rs); [right=4.3cm of ls](vphi)[myblob2]n; [left=0.5cm of l1](rm1)[](τ2); [right=5.cm of l1](r1)[]; [right=0.5cm of ls](v1)[sb]1; [right=1.9cm of ls](v11)[sb]; [right=2.9cm of ls](v12)[sb]; [right=1.cm of l1](v3)[sb]; [right=3.5cm of l1](v4)[sb]; *(l1) [thick](v3) [scalar,thick](v4)–[thick](r1),(ls)–[thick](v1)–[thick](v11)–[scalar,thick](v12)–[thick](vphi)–[thick](rs);"
+                                        },
+                                        {
+                                            "pdf_id": "12.24",
+                                            "matching_string": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "doc/body/sec4/sub4/txl4",
+                                    "block_type": "txl",
+                                    "children": [
+                                        {
+                                            "leaf id": 54,
+                                            "key": "doc/body/sec4/sub4/txl4/txl0",
+                                            "block type": "txl",
+                                            "content": "In a given diagram, the reference leg indices are located at the bottom line, and we sum all possible positions of the nonreference legs. For a given diagram, each horizontal line contains an argument of an {\\it H} function required for the corresponding numerator. (We use the notation ΘL/R(τi) that refers to the set of all the leftlower/rightlower indices of τi. This definition of ΘL(τi) is consistent with the ΘL function in the definition of gravity KLT momentum kernel used in eq.~).",
+                                            "leftover": "",
+                                            "matches": [
+                                                {
+                                                    "pdf_id": "12.25",
+                                                    "matching_string": "In a given diagram, the reference leg indices are located at the bottom line, and "
+                                                },
+                                                {
+                                                    "pdf_id": "12.26",
+                                                    "matching_string": "we sum all possible positions of the nonreference legs. For a given diagram, each "
+                                                },
+                                                {
+                                                    "pdf_id": "12.28",
+                                                    "matching_string": "numerator. (We use the notation ΘL/R(τi) that refers to the set of all the leftlower/r"
+                                                },
+                                                {
+                                                    "pdf_id": "12.27",
+                                                    "matching_string": "horizontal line contains an argument of an {\\it H} function required for the corresponding "
+                                                },
+                                                {
+                                                    "pdf_id": "12.29",
+                                                    "matching_string": "indices of τi. This definition of ΘL(τi) is consistent with the ΘL "
+                                                },
+                                                {
+                                                    "pdf_id": "12.30",
+                                                    "matching_string": "function in the definition of gravity KLT momentum kernel used in "
+                                                },
+                                                {
+                                                    "pdf_id": "12.0",
+                                                    "matching_string": "ightlower eq.~)."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "doc/body/sec4/sub4/txl5",
+                                    "block_type": "txl",
+                                    "children": [
+                                        {
+                                            "leaf id": 55,
+                                            "key": "doc/body/sec4/sub4/txl5/txl0",
+                                            "block type": "txl",
+                                            "content": "Below, we illustrate using musical diagrams to evaluate abstract generator terms. As an example, we can consider ⟨⟨ T(16),(235),(4)⟩⟩, which appears in the eightpoint colorkinematic numerator.",
+                                            "leftover": "",
+                                            "matches": [
+                                                {
+                                                    "pdf_id": "12.31",
+                                                    "matching_string": "Below, we illustrate using musical diagrams to evaluate abstract generator terms. "
+                                                },
+                                                {
+                                                    "pdf_id": "12.33",
+                                                    "matching_string": "colorkinematic numerator."
+                                                },
+                                                {
+                                                    "pdf_id": "12.32",
+                                                    "matching_string": "As an example, we can consider ⟨⟨ T(16),(235),(4)⟩⟩, which appears in the eightpoint "
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 56,
+                                    "key": "doc/body/sec4/sub4/equation*6",
+                                    "block type": "equation*",
+                                    "content": "[baseline=([yshift=0.8ex]current bounding box.center)]every node=[font=] (l1)[]; [below=0.4cm of l1](ls)[]; [above=0.2cm of l1](ls2)[]; [left=0.5cm of ls2](rms2)[](τ2); [right=1.cm of ls2](v22)[sb]2; [right=1.8cm of ls2](v23)[sb]3; [right=3.2cm of ls2](v25)[sb]5; [right=5.0cm of ls2](rs2); [above=0.8cm of l1](ls3)[]; [left=0.5cm of ls3](rms3)[](τ3); [right=2.5cm of ls3](v34)[sb]4; [right=5.0cm of ls3](rs3); [left=0.5cm of ls](rms)[](ητ1); [right=5.0cm of ls](rs); [right=4.5cm of ls](vphi)[myblob2]8; [right=5.0cm of l1](r1)[]; [right=0.5cm of ls](v1)[sb]1; [right=3.8cm of ls](v4)[sb]6; * (ls)–[thick](v1)–[thick](v4)–[thick](vphi)–[thick](rs),(ls2)–[thick](v22)–[thick](v23)–[thick](v25)–[thick](rs2),(ls3)–[thick](v34)–[thick](rs3);",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "13.9",
+                                            "matching_string": "[baseline=([yshift=0.8ex]current bounding box.center)]every node=[font=] (l1)[]; [below=0.4cm of l1](ls)[]; [above=0.2cm of l1](ls2)[]; [left=0.5cm of ls2](rms2)[](τ2); [right=1.cm of ls2](v22)[sb]2; [right=1.8cm of ls2](v23)[sb]3; [right=3.2cm of ls2](v25)[sb]5; [right=5.0cm of ls2](rs2); [above=0.8cm of l1](ls3)[]; [left=0.5cm of ls3](rms3)[](τ3); [right=2.5cm of ls3](v34)[sb]4; [right=5.0cm of ls3](rs3); [left=0.5cm of ls](rms)[](ητ1); [right=5.0cm of ls](rs); [right=4.5cm of ls](vphi)[myblob2]8; [right=5.0cm of l1](r1)[]; [right=0.5cm of ls](v1)[sb]1; [right=3.8cm of ls](v4)[sb]6; * (ls)–[thick](v1)–[thick](v4)–[thick](vphi)–[thick](rs),(ls2)–[thick](v22)–[thick](v23)–[thick](v25)–[thick](rs2),(ls3)–[thick](v34)–[thick](rs3);"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "doc/body/sec4/sub4/txl7",
+                                    "block_type": "txl",
+                                    "children": [
+                                        {
+                                            "leaf id": 57,
+                                            "key": "doc/body/sec4/sub4/txl7/txl0",
+                                            "block type": "txl",
+                                            "content": "Reading the arguments of the {\\it H} functions (by following the indices of the various horizontal lines), we arrive at the contributions",
+                                            "leftover": "",
+                                            "matches": [
+                                                {
+                                                    "pdf_id": "12.39",
+                                                    "matching_string": "horizontal lines), we arrive at the contributions"
+                                                },
+                                                {
+                                                    "pdf_id": "12.38",
+                                                    "matching_string": "Reading the arguments of the {\\it H} functions (by following the indices of the various "
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 58,
+                                    "key": "doc/body/sec4/sub4/align8",
+                                    "block type": "align",
+                                    "content": "⟨⟨T(16),(235),(4) ⟩⟩ = v̅H16p^281m^2 H235(p1,p68)p^2816m^2H4(p123,p568)p^2816235m^2u,",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "12.40",
+                                            "matching_string": "⟨⟨T(16),(235),(4) ⟩⟩ = v̅H16p^281m^2 H235(p1,p68)p^2816m^2H4(p123,p568)p^2816235m^2u,"
+                                        },
+                                        {
+                                            "pdf_id": "7.41",
+                                            "matching_string": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "doc/body/sec4/sub4/txl9",
+                                    "block_type": "txl",
+                                    "children": [
+                                        {
+                                            "leaf id": 59,
+                                            "key": "doc/body/sec4/sub4/txl9/txl0",
+                                            "block type": "txl",
+                                            "content": "where the H235 function reads:",
+                                            "leftover": "",
+                                            "matches": [
+                                                {
+                                                    "pdf_id": "12.44",
+                                                    "matching_string": "where the H235 function reads:"
+                                                },
+                                                {
+                                                    "pdf_id": "12.45",
+                                                    "matching_string": ""
+                                                },
+                                                {
+                                                    "pdf_id": "12.46",
+                                                    "matching_string": ""
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 60,
+                                    "key": "doc/body/sec4/sub4/align10",
+                                    "block type": "align",
+                                    "content": "H235(p1,p68) =2(p1· F235· p68)+(p1· F25)(p2· F3) +(p1· F235)p235 +(p1· F23)(p23· F5)+(p1· F2)(p2· F35),",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "13.0",
+                                            "matching_string": "H235(p1,p68) =2(p1· F235· p68)+(p1· F25)(p2· F3) +(p1· F235)p235 +(p1· F23)(p23· F5)+(p1· F2)(p2· F35),"
+                                        },
+                                        {
+                                            "pdf_id": "13.13",
+                                            "matching_string": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "doc/body/sec4/sub4/txl11",
+                                    "block_type": "txl",
+                                    "children": [
+                                        {
+                                            "leaf id": 61,
+                                            "key": "doc/body/sec4/sub4/txl11/txl0",
+                                            "block type": "txl",
+                                            "content": "as well as the H16 function,",
+                                            "leftover": "",
+                                            "matches": [
+                                                {
+                                                    "pdf_id": "13.1",
+                                                    "matching_string": "as well as the H16 function,"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 62,
+                                    "key": "doc/body/sec4/sub4/align12",
+                                    "block type": "align",
+                                    "content": "H16= (p8· F16) + 14F1(p1 · F6),",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "13.3",
+                                            "matching_string": "H16= (p8· F16) + 14F1(p1 · F6),"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "doc/body/sec4/sub4/txl13",
+                                    "block_type": "txl",
+                                    "children": [
+                                        {
+                                            "leaf id": 63,
+                                            "key": "doc/body/sec4/sub4/txl13/txl0",
+                                            "block type": "txl",
+                                            "content": "and H4,",
+                                            "leftover": "",
+                                            "matches": [
+                                                {
+                                                    "pdf_id": "13.2",
+                                                    "matching_string": "and H4,"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 64,
+                                    "key": "doc/body/sec4/sub4/align14",
+                                    "block type": "align",
+                                    "content": "H4(p123,p568) =2 (p123· F4· p568)+ (p123· F4)p4 .",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "13.16",
+                                            "matching_string": "H4(p123,p568) =2 (p123· F4· p568)+ (p123· F4)p4 ."
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "doc/body/sec5",
+                    "block_type": "sec",
+                    "children": [
+                        {
+                            "leaf id": 65,
+                            "key": "doc/body/sec5/tit",
+                            "block type": "title",
+                            "content": "Conclusion and Outlook",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "1.11",
+                                    "matching_string": "Conclusion and Outlook"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "doc/body/sec5/txl0",
+                            "block_type": "txl",
+                            "children": [
+                                {
+                                    "leaf id": 66,
+                                    "key": "doc/body/sec5/txl0/txl0",
+                                    "block type": "txl",
+                                    "content": "Using a universal method, we have presented a new and compact construction for a colorkinematic numerator associated with the generalized massive Compton amplitude with a fermion pair. We have verified evaluation maps explicitly until eight points and also presented a more straightforward graphical method for computing such numerators.",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "13.44",
+                                            "matching_string": "Using a universal method, we have presented a new and compact construction for "
+                                        },
+                                        {
+                                            "pdf_id": "13.45",
+                                            "matching_string": "a colorkinematic numerator associated with the generalized massive Compton amplitude "
+                                        },
+                                        {
+                                            "pdf_id": "13.47",
+                                            "matching_string": "points and also presented a more straightforward graphical method for computing "
+                                        },
+                                        {
+                                            "pdf_id": "13.48",
+                                            "matching_string": "such numerators."
+                                        },
+                                        {
+                                            "pdf_id": "13.46",
+                                            "matching_string": "with a fermion pair. We have verified evaluation maps explicitly until eight "
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 67,
+                            "key": "doc/body/sec5/txl1",
+                            "block type": "txl",
+                            "content": "As the formulation relies on the Lorentz group representations of the matter fields, one can apply similar techniques to miscellaneous Compton scattering amplitudes, for instance, those with two massive vectors or other massive particles. An exciting track is to investigate if it is possible to shed new light on gauge and gravity interactions in highspin matter fields at finite spin order. Studying the classical limit for such amplitudes and resolving questions related to consistent factorization limits could potentially aid the development of more efficient computational methods for observing spinning black hole mergers. It is beyond this paper's scope, so we leave these and related questions for future studies.",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "13.49",
+                                    "matching_string": "As the formulation relies on the Lorentz group representations of the matter "
+                                },
+                                {
+                                    "pdf_id": "13.51",
+                                    "matching_string": "for instance, those with two massive vectors or other massive particles. An "
+                                },
+                                {
+                                    "pdf_id": "13.52",
+                                    "matching_string": "exciting track is to investigate if it is possible to shed new light on gauge and gravity "
+                                },
+                                {
+                                    "pdf_id": "13.54",
+                                    "matching_string": "for such amplitudes and resolving questions related to consistent factorization limits "
+                                },
+                                {
+                                    "pdf_id": "13.56",
+                                    "matching_string": "observing spinning black hole mergers. It is beyond this paper's scope, so we leave "
+                                },
+                                {
+                                    "pdf_id": "13.57",
+                                    "matching_string": "these and related questions for future studies."
+                                },
+                                {
+                                    "pdf_id": "13.50",
+                                    "matching_string": "one can apply similar techniques to miscellaneous Compton scattering amplitudes, "
+                                },
+                                {
+                                    "pdf_id": "13.53",
+                                    "matching_string": "interactions in highspin matter fields at finite spin order. Studying the classical limit "
+                                },
+                                {
+                                    "pdf_id": "13.55",
+                                    "matching_string": "could potentially aid the development of more efficient computational methods for "
+                                },
+                                {
+                                    "pdf_id": "13.43",
+                                    "matching_string": "fields, "
+                                },
+                                {
+                                    "pdf_id": "13.58",
+                                    "matching_string": ""
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "doc/body/sec6",
+                    "block_type": "sec",
+                    "children": [
+                        {
+                            "leaf id": 68,
+                            "key": "doc/body/sec6/tit",
+                            "block type": "title",
+                            "content": "Acknowledgements",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "1.12",
+                                    "matching_string": "Acknowledgements"
+                                }
+                            ]
+                        },
+                        {
+                            "leaf id": 69,
+                            "key": "doc/body/sec6/txl0",
+                            "block type": "txl",
+                            "content": "The work of N.E.J.B.B. and G.C. was supported by the DFF grant 102600077B and partially by the Carlsberg Foundation. G.C. has received funding from the Marie SklodowskaCurie grant agreement No. 847523 \"INTERACTIONS\" under the European Union Horizon 2020 research and innovation program. \\bibliographystyleJHEP \\bibliography{KinematicAlgebraV4}",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "14.1",
+                                    "matching_string": "The work of N.E.J.B.B. and G.C. was supported by the DFF grant 102600077B "
+                                },
+                                {
+                                    "pdf_id": "14.2",
+                                    "matching_string": "and partially by the Carlsberg Foundation. G.C. has received funding from the "
+                                },
+                                {
+                                    "pdf_id": "14.3",
+                                    "matching_string": "Marie SklodowskaCurie grant agreement No. 847523 \"INTERACTIONS\" under "
+                                },
+                                {
+                                    "pdf_id": "14.4",
+                                    "matching_string": "the European Union Horizon 2020 research and innovation program. "
+                                },
+                                {
+                                    "pdf_id": "14.0",
+                                    "matching_string": "\\bibliographystyleJHEP \\bibliography{KinematicAlgebraV4}"
+                                },
+                                {
+                                    "pdf_id": "12.37",
+                                    "matching_string": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "leaf id": 70,
+            "key": "doc/bib0",
+            "block type": "bibliography",
+            "content": "H.~Kawai, D.C.~Lewellen and S.H.H.~Tye, {A Relation Between Tree Amplitudes of Closed and Open Strings}, Nucl. Phys. {\\bfseries B269} (1986) 1.",
+            "leftover": "H.~",
+            "matches": [
+                {
+                    "pdf_id": "14.6",
+                    "matching_string": "Kawai, D.C.~Lewellen and S.H.H.~Tye, {A Relation Between Tree Amplitudes of "
+                },
+                {
+                    "pdf_id": "14.7",
+                    "matching_string": "Closed and Open Strings}, Nucl. Phys. {\\bfseries B269} (1986) 1."
+                }
+            ]
+        },
+        {
+            "leaf id": 71,
+            "key": "doc/bib1",
+            "block type": "bibliography",
+            "content": "Z.~Bern, L.J.~Dixon, M.~Perelstein and J.S.~Rozowsky, {Multileg one loop gravity amplitudes from gauge theory}, Nucl. Phys. {\\bfseries B546} (1999) 423 [{\\ttfamily hepth/9811140}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "14.8",
+                    "matching_string": "Bern, L.J.~Dixon, M.~Perelstein and J.S.~Rozowsky, {Multileg one loop gravity "
+                },
+                {
+                    "pdf_id": "12.36",
+                    "matching_string": "(1"
+                },
+                {
+                    "pdf_id": "7.42",
+                    "matching_string": "."
+                },
+                {
+                    "pdf_id": "14.5",
+                    "matching_string": "Z.~amplitudes from gauge theory}, Nucl. Phys. {\\bfseries B546} 999) 423 [{\\ttfamily hepth/9811140}]"
+                }
+            ]
+        },
+        {
+            "leaf id": 72,
+            "key": "doc/bib2",
+            "block type": "bibliography",
+            "content": "Z.~Bern, J.J.M.~Carrasco and H.~Johansson, {New Relations for GaugeTheory Amplitudes}, Phys. Rev. {\\bfseries D78} (2008) 085011 [{\\ttfamily 0805.3993}].",
+            "leftover": "Z.~Amplitudes}, ",
+            "matches": [
+                {
+                    "pdf_id": "14.10",
+                    "matching_string": "Bern, J.J.M.~Carrasco and H.~Johansson, {New Relations for GaugeTheory "
+                },
+                {
+                    "pdf_id": "14.11",
+                    "matching_string": "Phys. Rev. {\\bfseries D78} (2008) 085011 [{\\ttfamily 0805.3993}]."
+                }
+            ]
+        },
+        {
+            "leaf id": 73,
+            "key": "doc/bib3",
+            "block type": "bibliography",
+            "content": "N.E.J.~BjerrumBohr, P.H.~Damgaard and P.~Vanhove, {Minimal Basis for Gauge Theory Amplitudes}, Phys. Rev. Lett. {\\bfseries 103} (2009) 161602 [{\\ttfamily 0907.1425}].",
+            "leftover": "Theory Amplitudes}, ",
+            "matches": [
+                {
+                    "pdf_id": "14.12",
+                    "matching_string": "N.E.J.~BjerrumBohr, P.H.~Damgaard and P.~Vanhove, {Minimal Basis for Gauge "
+                },
+                {
+                    "pdf_id": "12.34",
+                    "matching_string": "(2"
+                },
+                {
+                    "pdf_id": "14.9",
+                    "matching_string": "Phys. Rev. Lett. {\\bfseries 103} 009) 161602 [{\\ttfamily 0907.1425}]."
+                }
+            ]
+        },
+        {
+            "leaf id": 74,
+            "key": "doc/bib4",
+            "block type": "bibliography",
+            "content": "Z.~Bern, J.J.M.~Carrasco and H.~Johansson, {Perturbative Quantum Gravity as a Double Copy of Gauge Theory}, Phys. Rev. Lett. {\\bfseries 105} (2010) 061602 [{\\ttfamily 1004.0476}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "14.14",
+                    "matching_string": "Bern, J.J.M.~Carrasco and H.~Johansson, {Perturbative Quantum Gravity as a "
+                },
+                {
+                    "pdf_id": "12.35",
+                    "matching_string": "(2"
+                },
+                {
+                    "pdf_id": "14.13",
+                    "matching_string": "Z.~Double Copy of Gauge Theory}, Phys. Rev. Lett. {\\bfseries 105} 010) 061602 [{\\ttfamily 1004.0476}]."
+                }
+            ]
+        },
+        {
+            "leaf id": 75,
+            "key": "doc/bib5",
+            "block type": "bibliography",
+            "content": "Z.~Bern, J.J.~Carrasco, M.~Chiodaroli, H.~Johansson and R.~Roiban, {The Duality Between Color and Kinematics and its Applications}, {\\ttfamily 1909.01358}.",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "14.17",
+                    "matching_string": "Between Color and Kinematics and its Applications}, {\\ttfamily 1909.0"
+                },
+                {
+                    "pdf_id": "14.16",
+                    "matching_string": "Bern, J.J.~Carrasco, M.~Chiodaroli, H.~Johansson and R.~Roiban, {The Duality "
+                },
+                {
+                    "pdf_id": "4.58",
+                    "matching_string": "Z.~1358}."
+                }
+            ]
+        },
+        {
+            "leaf id": 76,
+            "key": "doc/bib6",
+            "block type": "bibliography",
+            "content": "Z.~Bern and T.~Dennen, {A Color Dual Form for GaugeTheory Amplitudes}, Phys. Rev. Lett. {\\bfseries 107} (2011) 081601 [{\\ttfamily 1103.0312}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "4.59",
+                    "matching_string": "A "
+                },
+                {
+                    "pdf_id": "14.15",
+                    "matching_string": "Phys. Rev. Lett. {\\bfseries 107} (2011) 081601 [{\\ttfamily 1103.0312}]."
+                },
+                {
+                    "pdf_id": "14.18",
+                    "matching_string": "Z.~Bern and T.~Dennen, {Color Dual Form for GaugeTheory Amplitudes}, "
+                }
+            ]
+        },
+        {
+            "leaf id": 77,
+            "key": "doc/bib7",
+            "block type": "bibliography",
+            "content": "R.~Monteiro and D.~O'Connell, {The Kinematic Algebra From the SelfDual Sector}, JHEP {\\bfseries 07} (2011) 007 [{\\ttfamily 1105.2565}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "14.20",
+                    "matching_string": "Monteiro and D.~O'Connell, {The Kinematic Algebra From the SelfDual "
+                },
+                {
+                    "pdf_id": "13.21",
+                    "matching_string": "(2"
+                },
+                {
+                    "pdf_id": "14.21",
+                    "matching_string": "R.~Sector}, JHEP {\\bfseries 07} 011) 007 [{\\ttfamily 1105.2565}]."
+                }
+            ]
+        },
+        {
+            "leaf id": 78,
+            "key": "doc/bib8",
+            "block type": "bibliography",
+            "content": "N.E.J.~BjerrumBohr, P.H.~Damgaard, R.~Monteiro and D.~O'Connell, {Algebras for Amplitudes}, JHEP {\\bfseries 06} (2012) 061 [{\\ttfamily 1203.0944}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "14.22",
+                    "matching_string": "N.E.J.~BjerrumBohr, P.H.~Damgaard, R.~Monteiro and D.~O'Connell, {Algebras for "
+                },
+                {
+                    "pdf_id": "14.23",
+                    "matching_string": "Amplitudes}, JHEP {\\bfseries 06} (2012) 061 [{\\ttfamily 1203.0944}]."
+                }
+            ]
+        },
+        {
+            "leaf id": 79,
+            "key": "doc/bib9",
+            "block type": "bibliography",
+            "content": "G.~Chen, H.~Johansson, F.~Teng and T.~Wang, {On the kinematic algebra for BCJ numerators beyond the MHV sector}, JHEP {\\bfseries 11} (2019) 055 [{\\ttfamily 1906.10683}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "14.24",
+                    "matching_string": "Chen, H.~Johansson, F.~Teng and T.~Wang, {On the kinematic algebra for BCJ "
+                },
+                {
+                    "pdf_id": "14.25",
+                    "matching_string": "G.~numerators beyond the MHV sector}, JHEP {\\bfseries 11} (2019) 055 [{\\ttfamily 1906.10683}]."
+                }
+            ]
+        },
+        {
+            "leaf id": 80,
+            "key": "doc/bib10",
+            "block type": "bibliography",
+            "content": "G.~Chen, H.~Johansson, F.~Teng and T.~Wang, {NexttoMHV YangMills kinematic algebra}, JHEP {\\bfseries 10} (2021) 042 [{\\ttfamily 2104.12726}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "14.26",
+                    "matching_string": "Chen, H.~Johansson, F.~Teng and T.~Wang, {NexttoMHV YangMills kinematic "
+                },
+                {
+                    "pdf_id": "14.27",
+                    "matching_string": "G.~algebra}, JHEP {\\bfseries 10} (2021) 042 [{\\ttfamily 2104.12726}]."
+                }
+            ]
+        },
+        {
+            "leaf id": 81,
+            "key": "doc/bib11",
+            "block type": "bibliography",
+            "content": "A.~Brandhuber, G.~Chen, G.~Travaglini and C.~Wen, {A new gaugeinvariant double copy for heavymass effective theory}, JHEP {\\bfseries 07} (2021) 047 [{\\ttfamily 2104.11206}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "14.28",
+                    "matching_string": "Brandhuber, G.~Chen, G.~Travaglini and C.~Wen, {A new gaugeinvariant double "
+                },
+                {
+                    "pdf_id": "0.22",
+                    "matching_string": "."
+                },
+                {
+                    "pdf_id": "3.28",
+                    "matching_string": "A.~copy for heavymass effective theory}, JHEP {\\bfseries 07} (2021) 047 [{\\ttfamily 2104.11206}]"
+                },
+                {
+                    "pdf_id": "3.36",
+                    "matching_string": ""
+                }
+            ]
+        },
+        {
+            "leaf id": 82,
+            "key": "doc/bib12",
+            "block type": "bibliography",
+            "content": "A.~Brandhuber, G.~Chen, H.~Johansson, G.~Travaglini and C.~Wen, {Kinematic Hopf Algebra for BernCarrascoJohansson Numerators in HeavyMass Effective Field Theory and YangMills Theory}, Phys. Rev. Lett. {\\bfseries 128} (2022) 121601 [{\\ttfamily 2111.15649}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "14.31",
+                    "matching_string": "Algebra for BernCarrascoJohansson Numerators in HeavyMass Effective Field "
+                },
+                {
+                    "pdf_id": "14.30",
+                    "matching_string": "Brandhuber, G.~Chen, H.~Johansson, G.~Travaglini and C.~Wen, {Kinematic Hopf "
+                },
+                {
+                    "pdf_id": "14.29",
+                    "matching_string": "A.~Theory and YangMills Theory}, Phys. Rev. Lett. {\\bfseries 128} (2022) 121601 [{\\ttfamily 2111.15649}]."
+                }
+            ]
+        },
+        {
+            "leaf id": 83,
+            "key": "doc/bib13",
+            "block type": "bibliography",
+            "content": "A.~Brandhuber, G.R.~Brown, G.~Chen, J.~Gowdy, G.~Travaglini and C.~Wen, {Amplitudes, Hopf algebras and the colourkinematics duality}, JHEP {\\bfseries 12} (2022) 101 [{\\ttfamily 2208.05886}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "15.0",
+                    "matching_string": "Amplitudes, Hopf algebras and the colourkinematics duality}, JHEP {\\bfseries 12} (2022) 101 "
+                },
+                {
+                    "pdf_id": "14.33",
+                    "matching_string": "Brandhuber, G.R.~Brown, G.~Chen, J.~Gowdy, G.~Travaglini and C.~Wen, "
+                },
+                {
+                    "pdf_id": "14.34",
+                    "matching_string": "A.~{[{\\ttfamily 2208.05886}]."
+                }
+            ]
+        },
+        {
+            "leaf id": 84,
+            "key": "doc/bib14",
+            "block type": "bibliography",
+            "content": "H.~Georgi, {An Effective Field Theory for Heavy Quarks at Lowenergies}, Phys. Lett. B {\\bfseries 240} (1990) 447.",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "14.32",
+                    "matching_string": "Theory for Heavy Quarks at Lowenergies}, Phys. Lett. B {\\bfseries 240} (1"
+                },
+                {
+                    "pdf_id": "15.2",
+                    "matching_string": "H.~Georgi, {An Effective Field 990) 447."
+                }
+            ]
+        },
+        {
+            "leaf id": 85,
+            "key": "doc/bib15",
+            "block type": "bibliography",
+            "content": "M.E.~Luke and A.V.~Manohar, {Reparametrization invariance constraints on heavy particle effective field theories}, Phys. Lett. B {\\bfseries 286} (1992) 348 [{\\ttfamily hepph/9205228}].",
+            "leftover": "particle effective field theories}, 992) 348 [{\\ttfamily hepph/9205228}]",
+            "matches": [
+                {
+                    "pdf_id": "15.4",
+                    "matching_string": "M.E.~Luke and A.V.~Manohar, {Reparametrization invariance constraints on heavy "
+                },
+                {
+                    "pdf_id": "15.3",
+                    "matching_string": "Phys. Lett. B {\\bfseries 286} (1"
+                },
+                {
+                    "pdf_id": "15.1",
+                    "matching_string": "."
+                }
+            ]
+        },
+        {
+            "leaf id": 86,
+            "key": "doc/bib16",
+            "block type": "bibliography",
+            "content": "M.~Neubert, {Heavy quark symmetry}, Phys. Rept. {\\bfseries 245} (1994) 259 [{\\ttfamily hepph/9306320}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "15.6",
+                    "matching_string": "M.~Neubert, {Heavy quark symmetry}, Phys. Rept. {\\bfseries 245} (1994) 259 [{\\ttfamily hepph/9306320}]."
+                }
+            ]
+        },
+        {
+            "leaf id": 87,
+            "key": "doc/bib17",
+            "block type": "bibliography",
+            "content": "A.V.~Manohar and M.B.~Wise, {Heavy quark physics}, vol.~10, Cambridge University Press (2000).",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "15.8",
+                    "matching_string": "Press (2000)."
+                },
+                {
+                    "pdf_id": "15.7",
+                    "matching_string": "A.V.~Manohar and M.B.~Wise, {Heavy quark physics}, vol.~10, Cambridge University "
+                }
+            ]
+        },
+        {
+            "leaf id": 88,
+            "key": "doc/bib18",
+            "block type": "bibliography",
+            "content": "P.H.~Damgaard, K.~Haddad and A.~Helset, {Heavy Black Hole Effective Theory}, JHEP {\\bfseries 11} (2019) 070 [{\\ttfamily 1908.10308}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "15.10",
+                    "matching_string": "P.H.~Damgaard, K.~Haddad and A.~Helset, {Heavy Black Hole Effective Theory}, JHEP {\\bfseries 11} (2019) 070 [{\\ttfamily 1908.10308}]."
+                }
+            ]
+        },
+        {
+            "leaf id": 89,
+            "key": "doc/bib19",
+            "block type": "bibliography",
+            "content": "A.~Brandhuber, G.~Chen, G.~Travaglini and C.~Wen, {Classical gravitational scattering from a gaugeinvariant double copy}, JHEP {\\bfseries 10} (2021) 118 [{\\ttfamily 2108.04216}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "15.11",
+                    "matching_string": "Brandhuber, G.~Chen, G.~Travaglini and C.~Wen, {Classical gravitational "
+                },
+                {
+                    "pdf_id": "3.8",
+                    "matching_string": "A.~scattering from a gaugeinvariant double copy}, JHEP {\\bfseries 10} (2021) 118 [{\\ttfamily 2108.04216}]."
+                }
+            ]
+        },
+        {
+            "leaf id": 90,
+            "key": "doc/bib20",
+            "block type": "bibliography",
+            "content": "G.~Chen, G.~Lin and C.~Wen, {Kinematic Hopf algebra for amplitudes and form factors}, Phys. Rev. D {\\bfseries 107} (2023) L081701 [{\\ttfamily 2208.05519}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "15.13",
+                    "matching_string": "Chen, G.~Lin and C.~Wen, {Kinematic Hopf algebra for amplitudes and form "
+                },
+                {
+                    "pdf_id": "15.21",
+                    "matching_string": "(2023) L081701 [{\\ttfamily 2208.05519}]."
+                },
+                {
+                    "pdf_id": "15.12",
+                    "matching_string": "G.~factors}, Phys. Rev. D {\\bfseries 107} "
+                }
+            ]
+        },
+        {
+            "leaf id": 91,
+            "key": "doc/bib21",
+            "block type": "bibliography",
+            "content": "Q.~Cao, J.~Dong, S.~He and Y.Q.~Zhang, {Covariant colorkinematics duality, Hopf algebras, and permutohedra}, Phys. Rev. D {\\bfseries 107} (2023) 026022 [{\\ttfamily 2211.05404}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "16.7",
+                    "matching_string": "Y.Q.~Zhang, {Covariant colorkinematics duality, Hopf algebras, and "
+                },
+                {
+                    "pdf_id": "16.8",
+                    "matching_string": "Q.~Cao, J.~Dong, S.~He and permutohedra}, Phys. Rev. D {\\bfseries 107} (2023) 026022 [{\\ttfamily 2211.05404}]."
+                }
+            ]
+        },
+        {
+            "leaf id": 92,
+            "key": "doc/bib22",
+            "block type": "bibliography",
+            "content": "G.~Chen, L.~Rodina and C.~Wen, {Kinematic Hopf algebra for amplitudes from higherderivative operators}, JHEP {\\bfseries 02} (2024) 096 [{\\ttfamily 2310.11943}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "15.17",
+                    "matching_string": "Chen, L.~Rodina and C.~Wen, {Kinematic Hopf algebra for amplitudes from "
+                },
+                {
+                    "pdf_id": "15.16",
+                    "matching_string": "G.~higherderivative operators}, JHEP {\\bfseries 02} (2024) 096 [{\\ttfamily 2310.11943}]."
+                }
+            ]
+        },
+        {
+            "leaf id": 93,
+            "key": "doc/bib23",
+            "block type": "bibliography",
+            "content": "L.M.~Garozzo, L.~Queimada and O.~Schlotterer, {BerendsGiele currents in BernCarrascoJohansson gauge for F^3 and F^4deformed YangMills amplitudes}, JHEP {\\bfseries 02} (2019) 078 [{\\ttfamily 1809.08103}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "3.35",
+                    "matching_string": "3 "
+                },
+                {
+                    "pdf_id": "15.19",
+                    "matching_string": "L.M.~Garozzo, L.~Queimada and O.~Schlotterer, {BerendsGiele currents in "
+                },
+                {
+                    "pdf_id": "15.20",
+                    "matching_string": "BernCarrascoJohansson gauge for F^and F^4deformed YangMills "
+                },
+                {
+                    "pdf_id": "15.18",
+                    "matching_string": "amplitudes}, JHEP {\\bfseries 02} (2019) 078 [{\\ttfamily 1809.08103}]."
+                }
+            ]
+        },
+        {
+            "leaf id": 94,
+            "key": "doc/bib24",
+            "block type": "bibliography",
+            "content": "A.S.K.~Chen, H.~Elvang and A.~Herderschee, {Emergence of String Monodromy in Effective Field Theory}, {\\ttfamily 2212.13998}.",
+            "leftover": "Effective 3998}.",
+            "matches": [
+                {
+                    "pdf_id": "15.22",
+                    "matching_string": "A.S.K.~Chen, H.~Elvang and A.~Herderschee, {Emergence of String Monodromy in "
+                },
+                {
+                    "pdf_id": "15.23",
+                    "matching_string": "Field Theory}, {\\ttfamily 2212.1"
+                }
+            ]
+        },
+        {
+            "leaf id": 95,
+            "key": "doc/bib25",
+            "block type": "bibliography",
+            "content": "N.H.~Pavao, {Effective observables for electromagnetic duality from novel amplitude decomposition}, Phys. Rev. D {\\bfseries 107} (2023) 065020 [{\\ttfamily 2210.12800}].",
+            "leftover": "decomposition}, ",
+            "matches": [
+                {
+                    "pdf_id": "15.24",
+                    "matching_string": "N.H.~Pavao, {Effective observables for electromagnetic duality from novel amplitude "
+                },
+                {
+                    "pdf_id": "15.25",
+                    "matching_string": "Phys. Rev. D {\\bfseries 107} (2023) 065020 [{\\ttfamily 2210.12800}]."
+                }
+            ]
+        },
+        {
+            "leaf id": 96,
+            "key": "doc/bib26",
+            "block type": "bibliography",
+            "content": "J.J.M.~Carrasco, M.~Lewandowski and N.H.~Pavao, {Doublecopy towards supergravity inflation with \\ensuremath{\\alpha}attractor models}, JHEP {\\bfseries 02} (2023) 015 [{\\ttfamily 2211.04441}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "15.26",
+                    "matching_string": "J.J.M.~Carrasco, M.~Lewandowski and N.H.~Pavao, {Doublecopy towards supergravity "
+                },
+                {
+                    "pdf_id": "4.0",
+                    "matching_string": "inflation with \\ensuremath{\\alpha}attractor models}, JHEP {\\bfseries 02} (2023) 015 [{\\ttfamily 2211.04441}]."
+                }
+            ]
+        },
+        {
+            "leaf id": 97,
+            "key": "doc/bib27",
+            "block type": "bibliography",
+            "content": "A.S.K.~Chen, H.~Elvang and A.~Herderschee, {Bootstrapping the String KawaiLewellenTye Kernel}, Phys. Rev. Lett. {\\bfseries 131} (2023) 031602 [{\\ttfamily 2302.04895}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "15.28",
+                    "matching_string": "A.S.K.~Chen, H.~Elvang and A.~Herderschee, {Bootstrapping the String "
+                },
+                {
+                    "pdf_id": "15.29",
+                    "matching_string": "KawaiLewellenTye Kernel}, Phys. Rev. Lett. {\\bfseries 131} (2023) 031602 [{\\ttfamily 2302.04895}]."
+                }
+            ]
+        },
+        {
+            "leaf id": 98,
+            "key": "doc/bib28",
+            "block type": "bibliography",
+            "content": "Y.~Li, D.~Roest and T.~ter Veldhuis, {Hybrid Goldstone Modes from the Double Copy Bootstrap}, {\\ttfamily 2307.13418}.",
+            "leftover": "Y.~Bootstrap}, {\\ttfamily 2307.13418}.",
+            "matches": [
+                {
+                    "pdf_id": "15.30",
+                    "matching_string": "Li, D.~Roest and T.~ter Veldhuis, {Hybrid Goldstone Modes from the Double Copy "
+                }
+            ]
+        },
+        {
+            "leaf id": 99,
+            "key": "doc/bib29",
+            "block type": "bibliography",
+            "content": "Q.~Bonnefoy, G.~Durieux and J.~Roosmale~Nepveu, {Higherderivative relations between scalars and gluons}, {\\ttfamily 2310.13041}.",
+            "leftover": "Q.~3041}.",
+            "matches": [
+                {
+                    "pdf_id": "15.33",
+                    "matching_string": "between scalars and gluons}, {\\ttfamily 2310.1"
+                },
+                {
+                    "pdf_id": "15.32",
+                    "matching_string": "Bonnefoy, G.~Durieux and J.~Roosmale~Nepveu, {Higherderivative relations "
+                }
+            ]
+        },
+        {
+            "leaf id": 100,
+            "key": "doc/bib30",
+            "block type": "bibliography",
+            "content": "T.V.~Brown, K.~Kampf, U.~Oktem, S.~Paranjape and J.~Trnka, {Scalar BCJ Bootstrap}, {\\ttfamily 2305.05688}.",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "15.34",
+                    "matching_string": "T.V.~Brown, K.~Kampf, U.~Oktem, S.~Paranjape and J.~Trnka, {Scalar BCJ "
+                },
+                {
+                    "pdf_id": "15.35",
+                    "matching_string": "Bootstrap}, {\\ttfamily 2305.05688}."
+                }
+            ]
+        },
+        {
+            "leaf id": 101,
+            "key": "doc/bib31",
+            "block type": "bibliography",
+            "content": "J.J.M.~Carrasco, L.~Rodina and S.~Zekioglu, {Composing effective prediction at five points}, JHEP {\\bfseries 06} (2021) 169 [{\\ttfamily 2104.08370}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "15.36",
+                    "matching_string": "J.J.M.~Carrasco, L.~Rodina and S.~Zekioglu, {Composing effective prediction at "
+                },
+                {
+                    "pdf_id": "16.0",
+                    "matching_string": "five points}, JHEP {\\bfseries 06} (2021) 169 [{\\ttfamily 2104.08370}]."
+                }
+            ]
+        },
+        {
+            "leaf id": 102,
+            "key": "doc/bib32",
+            "block type": "bibliography",
+            "content": "J.J.M.~Carrasco and N.H.~Pavao, {Virtues of a symmetricstructure double copy}, Phys. Rev. D {\\bfseries 107} (2023) 065005 [{\\ttfamily 2211.04431}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "16.1",
+                    "matching_string": "J.J.M.~Carrasco and N.H.~Pavao, {Virtues of a symmetricstructure double "
+                },
+                {
+                    "pdf_id": "15.14",
+                    "matching_string": "Phys. Rev. D {\\bfseries 107} (2023) 065005 [{\\ttfamily 2211.04431}]."
+                },
+                {
+                    "pdf_id": "3.38",
+                    "matching_string": "copy}, "
+                }
+            ]
+        },
+        {
+            "leaf id": 103,
+            "key": "doc/bib33",
+            "block type": "bibliography",
+            "content": "L.~Garozzo and A.~Guevara, {Effective interactions of the open bosonic string via field theory}, {\\ttfamily 2402.19430}.",
+            "leftover": "L.~field theory}, {\\ttfamily 9430}.",
+            "matches": [
+                {
+                    "pdf_id": "16.3",
+                    "matching_string": "Garozzo and A.~Guevara, {Effective interactions of the open bosonic string via "
+                },
+                {
+                    "pdf_id": "16.4",
+                    "matching_string": "2402.1"
+                }
+            ]
+        },
+        {
+            "leaf id": 104,
+            "key": "doc/bib34",
+            "block type": "bibliography",
+            "content": "G.~Chen, L.~Rodina and C.~Wen, {Kinematic Hopf algebra and BCJ numerators at finite α'}, {\\ttfamily 2403.04614}.",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "16.5",
+                    "matching_string": "Chen, L.~Rodina and C.~Wen, {Kinematic Hopf algebra and BCJ numerators at "
+                },
+                {
+                    "pdf_id": "16.6",
+                    "matching_string": "2403.0"
+                },
+                {
+                    "pdf_id": "3.39",
+                    "matching_string": "G.~finite α'}, {\\ttfamily 4614}."
+                }
+            ]
+        },
+        {
+            "leaf id": 105,
+            "key": "doc/bib35",
+            "block type": "bibliography",
+            "content": "Y.t.~Huang, O.~Schlotterer and C.~Wen, {Universality in string interactions}, JHEP {\\bfseries 09} (2016) 155 [{\\ttfamily 1602.01674}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "3.42",
+                    "matching_string": "and C.~Wen, {Universality in string interactions}, JHEP {\\bfseries 09} (2"
+                },
+                {
+                    "pdf_id": "3.37",
+                    "matching_string": "Y.t.~Huang, O.~Schlotterer 016) 155 [{\\ttfamily 1602.01674}]."
+                },
+                {
+                    "pdf_id": "3.43",
+                    "matching_string": ""
+                },
+                {
+                    "pdf_id": "3.41",
+                    "matching_string": ""
+                }
+            ]
+        },
+        {
+            "leaf id": 106,
+            "key": "doc/bib36",
+            "block type": "bibliography",
+            "content": "H.~Johansson and J.~Nohle, {Conformal Gravity from Gauge Theory}, {\\ttfamily 1707.02965}.",
+            "leftover": "H.~2965}.",
+            "matches": [
+                {
+                    "pdf_id": "16.9",
+                    "matching_string": "Johansson and J.~Nohle, {Conformal Gravity from Gauge Theory}, {\\ttfamily 1707.0"
+                }
+            ]
+        },
+        {
+            "leaf id": 107,
+            "key": "doc/bib37",
+            "block type": "bibliography",
+            "content": "T.~Azevedo, M.~Chiodaroli, H.~Johansson and O.~Schlotterer, {Heterotic and bosonic string amplitudes via field theory}, JHEP {\\bfseries 10} (2018) 012 [{\\ttfamily 1803.05452}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "16.10",
+                    "matching_string": "Azevedo, M.~Chiodaroli, H.~Johansson and O.~Schlotterer, {Heterotic and bosonic "
+                },
+                {
+                    "pdf_id": "16.11",
+                    "matching_string": "T.~string amplitudes via field theory}, JHEP {\\bfseries 10} (2018) 012 [{\\ttfamily 1803.05452}]."
+                }
+            ]
+        },
+        {
+            "leaf id": 108,
+            "key": "doc/bib38",
+            "block type": "bibliography",
+            "content": "N.E.J.~BjerrumBohr, A.~Cristofoli, P.H.~Damgaard and H.~Gomez, {ScalarGraviton Amplitudes}, JHEP {\\bfseries 11} (2019) 148 [{\\ttfamily 1908.09755}].",
+            "leftover": "Amplitudes}, JHEP {\\bfseries 11} 019) 148 [{\\ttfamily 1908.09755}]",
+            "matches": [
+                {
+                    "pdf_id": "16.12",
+                    "matching_string": "N.E.J.~BjerrumBohr, A.~Cristofoli, P.H.~Damgaard and H.~Gomez, {ScalarGraviton "
+                },
+                {
+                    "pdf_id": "16.16",
+                    "matching_string": "."
+                },
+                {
+                    "pdf_id": "9.24",
+                    "matching_string": "(2"
+                }
+            ]
+        },
+        {
+            "leaf id": 109,
+            "key": "doc/bib39",
+            "block type": "bibliography",
+            "content": "N.E.J.~BjerrumBohr, T.V.~Brown and H.~Gomez, {Scattering of Gravitons and Spinning Massive States from Compact Numerators}, JHEP {\\bfseries 04} (2021) 234 [{\\ttfamily 2011.10556}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "16.14",
+                    "matching_string": "N.E.J.~BjerrumBohr, T.V.~Brown and H.~Gomez, {Scattering of Gravitons and "
+                },
+                {
+                    "pdf_id": "16.15",
+                    "matching_string": "Spinning Massive States from Compact Numerators}, JHEP {\\bfseries 04} (2021) 234 "
+                },
+                {
+                    "pdf_id": "16.13",
+                    "matching_string": "[{\\ttfamily 2011.10556}]."
+                }
+            ]
+        },
+        {
+            "leaf id": 110,
+            "key": "doc/bib40",
+            "block type": "bibliography",
+            "content": "A.~Edison and F.~Teng, {Efficient Calculation of Crossing Symmetric BCJ Tree Numerators}, JHEP {\\bfseries 12} (2020) 138 [{\\ttfamily 2005.03638}].",
+            "leftover": "A.~Numerators}, ",
+            "matches": [
+                {
+                    "pdf_id": "16.17",
+                    "matching_string": "Edison and F.~Teng, {Efficient Calculation of Crossing Symmetric BCJ Tree "
+                },
+                {
+                    "pdf_id": "16.18",
+                    "matching_string": "JHEP {\\bfseries 12} (2020) 138 [{\\ttfamily 2005.03638}]."
+                }
+            ]
+        },
+        {
+            "leaf id": 111,
+            "key": "doc/bib41",
+            "block type": "bibliography",
+            "content": "G.~Lin and G.~Yang, {Double copy for treelevel form factors I: foundations}, {\\ttfamily 2211.01386}.",
+            "leftover": "G.~Lin and G.~Yang, {Double copy for treelevel form factors I: foundations}, {\\ttfamily 1386}.",
+            "matches": [
+                {
+                    "pdf_id": "16.20",
+                    "matching_string": "2211.0"
+                }
+            ]
+        },
+        {
+            "leaf id": 112,
+            "key": "doc/bib42",
+            "block type": "bibliography",
+            "content": "N.E.J.~BjerrumBohr, G.~Chen and M.~Skowronek, {Classical Spin Gravitational Compton Scattering}, {\\ttfamily 2302.00498}.",
+            "leftover": "0498}.",
+            "matches": [
+                {
+                    "pdf_id": "16.21",
+                    "matching_string": "N.E.J.~BjerrumBohr, G.~Chen and M.~Skowronek, {Classical Spin Gravitational "
+                },
+                {
+                    "pdf_id": "16.22",
+                    "matching_string": "Compton Scattering}, {\\ttfamily 2302.0"
+                }
+            ]
+        },
+        {
+            "leaf id": 113,
+            "key": "doc/bib43",
+            "block type": "bibliography",
+            "content": "N.E.J.~BjerrumBohr, G.~Chen and M.~Skowronek, {Covariant Compton Amplitudes in Gravity with Classical Spin}, {\\ttfamily 2309.11249}.",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "16.23",
+                    "matching_string": "N.E.J.~BjerrumBohr, G.~Chen and M.~Skowronek, {Covariant Compton Amplitudes "
+                },
+                {
+                    "pdf_id": "16.24",
+                    "matching_string": "in Gravity with Classical Spin}, {\\ttfamily 2309.1"
+                },
+                {
+                    "pdf_id": "15.37",
+                    "matching_string": "1249}."
+                }
+            ]
+        },
+        {
+            "leaf id": 114,
+            "key": "doc/bib44",
+            "block type": "bibliography",
+            "content": "N.E.J.~BjerrumBohr, J.F.~Donoghue and P.~Vanhove, {Onshell Techniques and Universal Results in Quantum Gravity}, JHEP {\\bfseries 02} (2014) 111 [{\\ttfamily 1309.0804}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "16.25",
+                    "matching_string": "N.E.J.~BjerrumBohr, J.F.~Donoghue and P.~Vanhove, {Onshell Techniques and "
+                },
+                {
+                    "pdf_id": "9.25",
+                    "matching_string": "(2"
+                },
+                {
+                    "pdf_id": "15.27",
+                    "matching_string": "JHEP {\\bfseries 02} 014) 111 [{\\ttfamily 1309.0804}]."
+                },
+                {
+                    "pdf_id": "16.26",
+                    "matching_string": "Universal Results in Quantum Gravity}, "
+                }
+            ]
+        },
+        {
+            "leaf id": 115,
+            "key": "doc/bib45",
+            "block type": "bibliography",
+            "content": "N.E.J.~BjerrumBohr, P.H.~Damgaard, G.~Festuccia, L.~Plante and P.~Vanhove, {General Relativity from Scattering Amplitudes}, Phys. Rev. Lett. {\\bfseries 121} (2018) 171601 [{\\ttfamily 1806.04920}].",
+            "leftover": "{[{\\ttfamily 1806.04920}]",
+            "matches": [
+                {
+                    "pdf_id": "16.28",
+                    "matching_string": "General Relativity from Scattering Amplitudes}, Phys. Rev. Lett. {\\bfseries 121} (2018) 171601 "
+                },
+                {
+                    "pdf_id": "16.27",
+                    "matching_string": "N.E.J.~BjerrumBohr, P.H.~Damgaard, G.~Festuccia, L.~Plante and P.~Vanhove, "
+                },
+                {
+                    "pdf_id": "16.29",
+                    "matching_string": "."
+                }
+            ]
+        },
+        {
+            "leaf id": 116,
+            "key": "doc/bib46",
+            "block type": "bibliography",
+            "content": "C.~Cheung, I.Z.~Rothstein and M.P.~Solon, {From Scattering Amplitudes to Classical Potentials in the PostMinkowskian Expansion}, Phys. Rev. Lett. {\\bfseries 121} (2018) 251101 [{\\ttfamily 1808.02489}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "16.31",
+                    "matching_string": "Potentials in the PostMinkowskian Expansion}, Phys. Rev. Lett. {\\bfseries 121} (2018) 251101 "
+                },
+                {
+                    "pdf_id": "16.30",
+                    "matching_string": "Cheung, I.Z.~Rothstein and M.P.~Solon, {From Scattering Amplitudes to Classical "
+                },
+                {
+                    "pdf_id": "16.32",
+                    "matching_string": "C.~[{\\ttfamily 1808.02489}]."
+                }
+            ]
+        },
+        {
+            "leaf id": 117,
+            "key": "doc/bib47",
+            "block type": "bibliography",
+            "content": "Z.~Bern, C.~Cheung, R.~Roiban, C.H.~Shen, M.P.~Solon and M.~Zeng, {Scattering Amplitudes and the Conservative Hamiltonian for Binary Systems at Third PostMinkowskian Order}, Phys. Rev. Lett. {\\bfseries 122} (2019) 201603 [{\\ttfamily 1901.04424}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "16.34",
+                    "matching_string": "Amplitudes and the Conservative Hamiltonian for Binary Systems at Third "
+                },
+                {
+                    "pdf_id": "16.33",
+                    "matching_string": "Bern, C.~Cheung, R.~Roiban, C.H.~Shen, M.P.~Solon and M.~Zeng, {Scattering "
+                },
+                {
+                    "pdf_id": "4.7",
+                    "matching_string": "Z.~PostMinkowskian Order}, Phys. Rev. Lett. {\\bfseries 122} (2019) 201603 [{\\ttfamily 1901.04424}]."
+                },
+                {
+                    "pdf_id": "16.35",
+                    "matching_string": ""
+                }
+            ]
+        },
+        {
+            "leaf id": 118,
+            "key": "doc/bib48",
+            "block type": "bibliography",
+            "content": "N.E.J.~BjerrumBohr, P.H.~Damgaard, L.~Plant\\'e and P.~Vanhove, {The Amplitude for Classical Gravitational Scattering at Third PostMinkowskian Order}, {\\ttfamily 2105.05218}.",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "17.0",
+                    "matching_string": "Classical Gravitational Scattering at Third PostMinkowskian Order}, {\\ttfamily 2105.0"
+                },
+                {
+                    "pdf_id": "16.36",
+                    "matching_string": "N.E.J.~BjerrumBohr, P.H.~Damgaard, L.~Plant\\'e and P.~Vanhove, {The Amplitude for "
+                },
+                {
+                    "pdf_id": "4.4",
+                    "matching_string": "5218}."
+                }
+            ]
+        },
+        {
+            "leaf id": 119,
+            "key": "doc/bib49",
+            "block type": "bibliography",
+            "content": "N.E.J.~BjerrumBohr, L.~Plant\\'e and P.~Vanhove, {PostMinkowskian radial action from soft limits and velocity cuts}, JHEP {\\bfseries 03} (2022) 071 [{\\ttfamily 2111.02976}].",
+            "leftover": "from soft limits ",
+            "matches": [
+                {
+                    "pdf_id": "17.1",
+                    "matching_string": "N.E.J.~BjerrumBohr, L.~Plant\\'e and P.~Vanhove, {PostMinkowskian radial action "
+                },
+                {
+                    "pdf_id": "17.15",
+                    "matching_string": "and velocity cuts}, JHEP {\\bfseries 03} (2022) 071 [{\\ttfamily 2111.02976}]."
+                }
+            ]
+        },
+        {
+            "leaf id": 120,
+            "key": "doc/bib50",
+            "block type": "bibliography",
+            "content": "N.E.J.~BjerrumBohr, L.~Plant\\'e and P.~Vanhove, {Effective Field Theory and Applications: Weak Field Observables from Scattering Amplitudes in Quantum Field Theory}, {\\ttfamily 2212.08957}.",
+            "leftover": "Theory}, {\\ttfamily 8957}.",
+            "matches": [
+                {
+                    "pdf_id": "17.4",
+                    "matching_string": "Applications: Weak Field Observables from Scattering Amplitudes in Quantum Field "
+                },
+                {
+                    "pdf_id": "17.3",
+                    "matching_string": "N.E.J.~BjerrumBohr, L.~Plant\\'e and P.~Vanhove, {Effective Field Theory and "
+                },
+                {
+                    "pdf_id": "17.5",
+                    "matching_string": "2212.0"
+                }
+            ]
+        },
+        {
+            "leaf id": 121,
+            "key": "doc/bib51",
+            "block type": "bibliography",
+            "content": "N.E.J.~BjerrumBohr, P.H.~Damgaard, B.~Feng and T.~Sondergaard, {Gravity and YangMills Amplitude Relations}, Phys. Rev. D {\\bfseries 82} (2010) 107702 [{\\ttfamily 1005.4367}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "17.6",
+                    "matching_string": "N.E.J.~BjerrumBohr, P.H.~Damgaard, B.~Feng and T.~Sondergaard, {Gravity and "
+                },
+                {
+                    "pdf_id": "17.2",
+                    "matching_string": "YangMills Amplitude Relations}, Phys. Rev. D {\\bfseries 82} (2010) 107702 [{\\ttfamily 1005.4367}]."
+                },
+                {
+                    "pdf_id": "17.7",
+                    "matching_string": ""
+                }
+            ]
+        },
+        {
+            "leaf id": 122,
+            "key": "doc/bib52",
+            "block type": "bibliography",
+            "content": "N.E.J.~BjerrumBohr, P.H.~Damgaard, T.~Sondergaard and P.~Vanhove, {The Momentum Kernel of Gauge and Gravity Theories}, JHEP {\\bfseries 01} (2011) 001 [{\\ttfamily 1010.3933}].",
+            "leftover": "[{\\ttfamily 1010.3933}]",
+            "matches": [
+                {
+                    "pdf_id": "17.9",
+                    "matching_string": "Momentum Kernel of Gauge and Gravity Theories}, JHEP {\\bfseries 01} (2011) 001 "
+                },
+                {
+                    "pdf_id": "17.8",
+                    "matching_string": "N.E.J.~BjerrumBohr, P.H.~Damgaard, T.~Sondergaard and P.~Vanhove, {The "
+                },
+                {
+                    "pdf_id": "17.10",
+                    "matching_string": "."
+                }
+            ]
+        },
+        {
+            "leaf id": 123,
+            "key": "doc/bib53",
+            "block type": "bibliography",
+            "content": "N.E.J.~BjerrumBohr, P.H.~Damgaard, T.~Sondergaard and P.~Vanhove, {Monodromy and Jacobilike Relations for ColorOrdered Amplitudes}, JHEP {\\bfseries 06} (2010) 003 [{\\ttfamily 1003.2403}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "17.11",
+                    "matching_string": "N.E.J.~BjerrumBohr, P.H.~Damgaard, T.~Sondergaard and P.~Vanhove, {Monodromy "
+                },
+                {
+                    "pdf_id": "17.12",
+                    "matching_string": "and Jacobilike Relations for ColorOrdered Amplitudes}, JHEP {\\bfseries 06} (2010) 003 "
+                },
+                {
+                    "pdf_id": "10.56",
+                    "matching_string": "[{\\ttfamily 1003.2403}]."
+                },
+                {
+                    "pdf_id": "10.57",
+                    "matching_string": ""
+                }
+            ]
+        },
+        {
+            "leaf id": 124,
+            "key": "doc/bib54",
+            "block type": "bibliography",
+            "content": "N.E.J.~BjerrumBohr, P.H.~Damgaard, B.~Feng and T.~Sondergaard, {Proof of Gravity and YangMills Amplitude Relations}, JHEP {\\bfseries 09} (2010) 067 [{\\ttfamily 1007.3111}].",
+            "leftover": "and YangMills Amplitude Relations}, JHEP {\\bfseries 09} 010) 067 [{\\ttfamily 1007.3111}]",
+            "matches": [
+                {
+                    "pdf_id": "17.14",
+                    "matching_string": "N.E.J.~BjerrumBohr, P.H.~Damgaard, B.~Feng and T.~Sondergaard, {Proof of Gravity "
+                },
+                {
+                    "pdf_id": "10.72",
+                    "matching_string": "(2"
+                },
+                {
+                    "pdf_id": "17.13",
+                    "matching_string": "."
+                }
+            ]
+        },
+        {
+            "leaf id": 125,
+            "key": "doc/bib55",
+            "block type": "bibliography",
+            "content": "N.E.J.~BjerrumBohr, P.H.~Damgaard, B.~Feng and T.~Sondergaard, {New Identities among Gauge Theory Amplitudes}, Phys. Lett. B {\\bfseries 691} (2010) 268 [{\\ttfamily 1006.3214}].",
+            "leftover": "",
+            "matches": [
+                {
+                    "pdf_id": "17.16",
+                    "matching_string": "N.E.J.~BjerrumBohr, P.H.~Damgaard, B.~Feng and T.~Sondergaard, {New Identities "
+                },
+                {
+                    "pdf_id": "10.73",
+                    "matching_string": "(2"
+                },
+                {
+                    "pdf_id": "17.17",
+                    "matching_string": "among Gauge Theory Amplitudes}, Phys. Lett. B {\\bfseries 691} 010) 268 [{\\ttfamily 1006.3214}]."
+                }
+            ]
+        },
+        {
+            "leaf id": 126,
+            "key": "doc/bib56",
+            "block type": "bibliography",
+            "content": "J.J.M.~Carrasco, C.R.~Mafra and O.~Schlotterer, {Abelian Ztheory: NLSM amplitudes and α'corrections from the open string}, JHEP {\\bfseries 06} (2017) 093 [{\\ttfamily 1608.02569}].",
+            "leftover": "and α'corrections from the open string}, JHEP {\\bfseries 06} 017) 093 [{\\ttfamily 1608.02569}].",
+            "matches": [
+                {
+                    "pdf_id": "17.18",
+                    "matching_string": "J.J.M.~Carrasco, C.R.~Mafra and O.~Schlotterer, {Abelian Ztheory: NLSM amplitudes "
+                },
+                {
+                    "pdf_id": "11.16",
+                    "matching_string": "(2"
+                }
+            ]
+        },
+        {
+            "leaf id": 127,
+            "key": "doc/bib57",
+            "block type": "bibliography",
+            "content": "H.~Frost, C.R.~Mafra and L.~Mason, {A Lie bracket for the momentum kernel}, {\\ttfamily 2012.00519}.",
+            "leftover": "H.~kernel}, {\\ttfamily 0519}.",
+            "matches": [
+                {
+                    "pdf_id": "17.21",
+                    "matching_string": "2012.0"
+                },
+                {
+                    "pdf_id": "17.20",
+                    "matching_string": "Frost, C.R.~Mafra and L.~Mason, {A Lie bracket for the momentum "
+                }
+            ]
+        },
+        {
+            "leaf id": 128,
+            "key": "doc/bib58",
+            "block type": "bibliography",
+            "content": "G.~Chen, https://github.com/amplitudegravity/kinematichopfalgebra, 2022.",
+            "leftover": "G.~",
+            "matches": [
+                {
+                    "pdf_id": "17.22",
+                    "matching_string": "Chen, https://github.com/amplitudegravity/kinematichopfalgebra, 2022."
+                }
+            ]
+        }
+    ]
+}

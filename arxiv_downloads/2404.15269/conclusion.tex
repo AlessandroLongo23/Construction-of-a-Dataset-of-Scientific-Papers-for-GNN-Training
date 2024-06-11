@@ -1,0 +1,7 @@
+\section{Conclusion}
+We study aligning LLM-based agents using user edits that arise naturally in applications such as writing assistants. We conjecture that user edits are driven by a latent user preference that can be captured by textual descriptions. We introduce the~\framework~framework that focuses on learning descriptions of user preferences from user edit data and then generating an agent response accordingly. We propose a simple yet effective retrieval-based algorithm~\algname~that infers user preference by querying the LLM, retrieves relevant examples in the history, and aggregates induced preferences in retrieved examples to generate a response for the given context. We introduce two interactive environments with a GPT-4 simulated user to study learning from edits, which can be of independent interest. In this work, we focus on aligning an LLM agent with a frozen LLM, in part, due to the challenge of scaling fine-tuning based approaches with the number of users. However, for settings where computational cost is not a barrier, applying fine-tuning approaches would be an interesting future work direction. Another promising future work direction is to learn user preference based on different levels of edits -- words, sentences, paragraphs -- to generate a satisfactory response.\looseness=-1
+
+
+
+
+

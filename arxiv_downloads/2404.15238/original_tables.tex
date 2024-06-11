@@ -1,0 +1,202 @@
+\begin{table}[htbp!]
+\centering
+\begin{tabular}{ p{6cm}|p{4cm}|p{2cm}}
+ \toprule
+ \textbf{Model} & \textbf{Avg Entailment Score} & \textbf{\% Entail} \\
+ \midrule
+ Llama-2-7b-chat-hf & 62.5 & 63.2\\
+ \midrule 
+ Llama-2-70b-chat-hf & 65.1 & 65.5 \\
+ \midrule
+ Mistral-7B-Instruct-v0.2 & 64.5 & 65.2\\
+ \midrule
+ Mixtral-8x7B-Instruct-v0.1 & 66.9 & 67.6 \\
+ \midrule
+ gpt-3.5-turbo-1106 & 62.6 & 62.8 \\
+ \midrule
+ gpt-4-turbo-1106 & 66.1 & 66.5 \\
+ \midrule
+ \textbf{mixtral-sft-v0.3(Ours)} & 67.5 & 67.9 \\
+ \midrule
+ \textbf{mixtral-dpo-v0.1(Ours)} & \textbf{68.7} & \textbf{69.3}\\
+ \midrule
+ \textbf{llama7b-sft-v0.3(Ours)} & 64.7 & 64.7 \\
+ % \midrule
+ % mixtral-knowledge-augmentation & 92.5 & 93.2 \\
+ \bottomrule
+\end{tabular}
+\caption{\label{tab: grounded eval} Comparison of LLMs on our indirect evaluation benchmark. \textbf{Avg Entailment Score} refers to the average entailment score predicted by the reward model, and \textbf{\% Entail} indicates the percentage of model responses that are classified as "entail" based on the reward model, with a classification threshold of 0.5. The first score is the average entailment score derived from the logits, and the second score is the \% of responses with entailment scores $>$ 0.5. 
+ % \ryan{TODO: also breakdown by support?} \ryan{What do you mean by "win-rate", shall we include some human evaluation?} \wyshi{compare the GPT-4 generated answer VS the golden gronde truth answer, ask another GPT-4 to say which one is more culturally-aware}
+ \ryan{The average entailment score and percentage entailment do not seem to be very different. Maybe we should keep only one of them for simplicity?}
+}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{l|c|c|c|c|c|c}
+\toprule
+& \multicolumn{2}{c|}{High Support} & \multicolumn{2}{c|}{Mid Support} & \multicolumn{2}{c}{Low Support} \\
+\cmidrule{2-7}
+& Avg & \% Entail & Avg & \% Entail & Avg & \% Entail \\
+\midrule
+Llama-2 7b & 71.2 & 72.9 & 66.0 & 65.7 & 61.2 & 62.0 \\
+\midrule
+Llama-2 70b & 74.9 & \textbf{78.6} & 66.2 & 65.7 & 64.2 & 64.5 \\
+\midrule
+Mistral 7B & 72.9 & 75.7 & 67.2 & 68.6 & 63.4 & 63.7 \\
+\midrule
+Mixtral 8x7B & 73.9 & 74.3 & 67.4 & 68.0 & 66.3 & 67.0 \\
+\midrule
+ChatGPT & 71.4 & 72.9 & 66.4 & 67.4 & 61.8 & 61.1 \\
+\midrule
+GPT-4 & \textbf{75.8} & 75.7 & 67.9 & 67.4 & 65.0 & 65.6 \\
+\textbf{Llama7b-SFT-0.3 (Ours)} & 75.7 & 75.7 & 67.1 & 67.4 & 63.8 & 63.3 \\
+\midrule
+\midrule
+\textbf{Mixtral-SFT-0.3 (Ours)} & 73.3 & 70.0 & 70.3 & \textbf{72.0} & 66.6 & 67.0 \\
+\midrule
+
+\textbf{Mixtral-DPO-0.1 (Ours)} & 72.4 & 72.9 & \textbf{70.5} & 70.9 & \textbf{68.1} & \textbf{68.7} \\
+% \midrule
+
+% Mixtral-Augmented & 93.7 & 94.3 & 93.3 & 94.9 & 92.2 & 92.7 \\
+\bottomrule
+\end{tabular}
+\caption{\label{tab: grounded eval by support} Comparison of LLMs on our indirect evaluation benchmark broken down by support.
+\ryan{Out of the 1169 filtered test samples, we have 924 with low support, 175 with mid support, and 70 with high support}
+}
+\end{table}
+\begin{table}[h]
+\centering
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{p{2cm}|p{3cm}|p{2cm}|p{1.5cm}|p{2cm}|p{2cm}|p{4cm}|p{2cm}|p{4cm}|p{2cm}|p{1cm}|p{2cm}}
+ \toprule
+ \textbf{Cultural group} & \textbf{Context} & \textbf{Goal} & \textbf{Relation} & \textbf{Actor} & \textbf{Recipient} & \textbf{Actor's behavior} & \textbf{Recipient's behavior} & \textbf{Other description} & \textbf{Topic} & \textbf{Agreement} & \textbf{support num} \\
+ \midrule
+ American&	in France		&&&		people	&&	experience culture shock, express surprise, and feel confused due to differences in lifestyle, food, and social norms &&		includes specific examples like electricity bills and driving habits &	cultural adaptation & 0.9 & [180, 190)\\\midrule
+
+ American	& in the United States and grocery stores &	&&		people&	&	refer to chickpeas as 'chickpeas' or 'garbanzo beans', often using the term interchangeably&&		the term 'chickpeas' has been adopted from Hispanic language &	Cultural Traditions and Festivals & 1&[5,20) \\\midrule
+ % American & in public & & & people & & dress casually, often in comfortable clothing, with a preference for sweatpants and following dress codes & &&Dress Codes& highly agree\\
+ % \midrule 
+ % Latin American &	Quinceanera celebrations &	mark a significant milestone in a girl's life&	celebratory and coming-of-age&	families and individuals	girls turning 15&&	celebrate a girl's 15th birthday with traditional rituals, including religious ceremonies, family gatherings, and gift-giving&&		costs can be high and the celebration can last for several days&	Cultural Traditions and Festivals & highly agree
+ Italian American &	primarily in the United States	&&&		individuals and communities	&&	identify as Italian American, often with varying levels of connection to Italian heritage and culture	&&	discussions around appropriateness and cultural preservation&	Community and Identity &	1	&[5, 20)
+ \\
+ \midrule 
+ Californians &	in California and its various regions	&&&		people	&	&experience a mix of high living costs, attraction to the state, and a preference for living there despite cheaper alternatives&	&	California is perceived as wealthier, with varying expenses and a need for affordable housing	& Miscellaneous &	0.7&	[20, 30)\\
+ \midrule 
+
+ Alabamian &	in Alabama and during road trips	&&&		people&&		enjoy outdoor activities and unique experiences like visiting In and Out and riding in the back of a truck &&&			Entertainment and Leisure	&	1	&[5, 20) \\\midrule
+ % \midrule 
+Norwegian&	in Norway, particularly in the north &	to avoid mistaking drugs for candies and maintain hygiene &	parent to child&	people, including children and parents&	children &	follow a strict candy consumption schedule, eating candy only on Saturdays and avoiding unwrapped candies	&&	candy is considered a treat and is typically bought on Saturdays&	Food and Dining &	0.8&	[20, 30)\\
+\midrule
+Chinese	&in China, particularly in urban areas &	to make payments and transfer money&	customer to bank or store&	people and businesses&	banks and stores&	heavily rely on digital and mobile payment methods like WeChat Pay and Alipay, often using facial recognition&	enable payments and receive payments&&		Finance and Economy& 1	&[20, 30)\\
+\midrule
+
+Rwandan&	in Rwanda and among Rwandan communities&&&			people&&		speak Kinyarwanda, Swahili, and English, with Kinyarwanda being the primary language&	&&		Communication and Language& 1	&[20, 30)\\
+\midrule
+South African &	when paying for items	&&&		people	&&	express frustration over having to calculate prices and taxes	&&	prefer straightforward pricing without additional calculations	pricing expectations& Consumer Behavior&	0.1	&[210, 220) \\
+\midrule
+
+Australian &	in Australia, particularly in restaurants and bars&	express gratitude&	customer to service staff&	customers&	service staff&	tipping is not common or expected due to fair wages and good service&	receive tip&	tipping is not a common practice in Australia, but can be seen in some high-end establishments&	Social Norms and Etiquette&	0.5	& [50, 60) \\\midrule
+Argentinian&	in the northern regions including Jujuy, Salta, and the north&&&			people&	&	enjoy spicy food, particularly in local cuisine&			&&	Food and Dining  & 0.7	&[5, 20)	\\%\midrule
+ \bottomrule
+\end{tabular}
+}
+\caption{Selected qualitative examples in \dataname. } %\diyi{you can skip some columns to show these examples.. like no need to include "goal, relation, receipient" if they do not occur very often, and put the very detailed table to appendix}
+\label{tab:data examples}
+\end{table}
+\begin{table}[h]
+\centering
+\begin{tabular}{p{4cm}|p{2cm}|p{2cm}|p{2cm}}
+ \toprule
+ \textbf{Statistics} & \textbf{time} &\textbf{\# gpus} & \textbf{number} \\
+ \midrule
+ Input: total comments & - & - & 7M after keyword filtering 7M %6907283
+ \\
+ \midrule 
+ Cultural relevance classifier & 2 hours &  &   output=2.6M\\
+ \midrule
+ Cultural behavior extractor & 4 days &  & input=528K, 493442 after \\
+ \midrule
+ Clustering &  &  & 13321 \\
+ \midrule
+ Cluster summarizer &  &  & 13321 \\
+\midrule 
+ Agreement calculator & & 0 & 13321 \\
+\midrule
+ Toxicity filtering &  & 0 & 11300 \\
+\bottomrule
+\end{tabular}
+\caption{Running time on Reddit. \label{tab:running time and number for Reddit}}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{lcccccc}
+\toprule
+& \multicolumn{2}{c}{High Support (70)} & \multicolumn{2}{c}{Mid Support} & \multicolumn{2}{c}{Low Support} \\
+% \cmidrule{2-7}
+% & Weighted & Macro & Weighted & Macro & Weighted & Macro \\
+\midrule
+% \midrule
+Llama-2 7b & %\textbf{97.2} 
+& 48.8 %& \textbf{96.5} 
+& 50.4 
+% & \textbf{95.3} 
+& 34.6 \\
+\midrule
+Llama-2 70b & 90.2 & \textbf{67.2} & 89.4 & 46.1 & 86.8 & 44.4 \\
+\midrule
+Mistral 7B & 84.6 & 42.3 & 82.7 & 40.7 & 80.6 & 38.1 \\
+\midrule
+Mixtral 8x7B & 87.8 & 41.0 & 85.5 & 42.1 & 84.3 & 41.4 \\
+\midrule
+ChatGPT & 88.9 & 63.2 & 87.4 & \textbf{65.7} & 86.6 & \textbf{65.5} \\
+\midrule
+GPT-4 & 76.2 & 56.7 & 76.6 & 59.7 & 73.6 & 58.9 \\
+\bottomrule
+\end{tabular}
+\caption{Comparison of different LLMs' performance on direct evaluation broken down by support. We report separately the weighted and macro f1 scores on cultural behavior indicators with different supports. High Support indicates that the support is greater than 50, Mid Support includes clusters with support smaller than 50 but greater than 20, and Low Support refers to clusters with support smaller than 20. %\diyi{the results here seems very unexpected... seems GPT-4 is the worst? do we have any intuitions of why? } 
+% \ryan{I think we should remove the weighted F1-Score and report only the Macro F1. The labels are very skewed (90\% of the labels are positive), so a model can get a high weighted f1 by labeling everything as positive. GPT4 achieves the overall second-best performance if we look at the macro f1.}
+}
+% \wyshi{let's remove weighted}
+\label{tab:direct_eval}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Model} & \multicolumn{1}{c}{\textbf{High} (70)} & \multicolumn{1}{c}{\textbf{Mid} (175)} & \multicolumn{1}{c}{\textbf{Low} (924)} & \multicolumn{1}{c}{\textbf{All} (1169)} \\
+% \cmidrule{2-5}
+% & Avg & \% Entail & Avg & \% Entail & Avg & \% Entail \\
+\midrule
+\midrule
+Llama-2-7B-chat  & 71.2 & 66.0 & 61.2 & 62.5\\
+\midrule
+Llama-2-70B-chat  & 74.9 & 66.2 & 64.2 & 65.1 \\
+\midrule
+Mistral-7B-Instruct  & 72.9 & 67.2 & 63.4 & 64.5\\
+\midrule
+Mixtral-8x7B-Instruct  & 73.9 & 67.4 & \textbf{66.3} & \textbf{66.9}\\
+\midrule
+GPT-3.5  & 71.4 & 66.4 & 61.8 & 62.6\\
+\midrule
+GPT-4  & \textbf{75.8} & \textbf{67.9} & 65.0 & 66.1\\
+\midrule
+\midrule
+\textbf{Llama2-7B-SFT (Ours)}  & \textbf{75.7} & 67.1 & 63.8 & 64.7\\
+\midrule
+ \textbf{Mixtral-8X7B-SFT (Ours)}  & 73.3 & 70.3 & 66.6 & 67.5 \\
+\midrule
+
+\textbf{Mixtral-8x7B-DPO (Ours)}   & 72.4 & \textbf{70.5} & \textbf{68.1} & \textbf{68.7}\\
+% \midrule
+
+% Mixtral-Augmented & 93.7 & 94.3 & 93.3 & 94.9 & 92.2 & 92.7 \\
+\bottomrule
+\end{tabular}
+\caption{\label{tab: grounded eval by support} LLMs' cultural awareness, evaluated by knowledge entailment scores on our grounded evaluation benchmark by support. \textbf{High support}: cluster size $> 50$ (70 examples). \textbf{Mid}: cluster size between 20 and 50 (175 examples). \textbf{Low}: cluster size $\leq 20$ (924 examples).  
+% \ryan{Out of the 1169 filtered test samples, we have 924 with low support, 175 with mid support, and 70 with high support}
+}
+\end{table}

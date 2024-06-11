@@ -1,0 +1,814 @@
+%apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (0) allowed
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{63}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{https://doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Aaij}\ \emph
+  {et~al.}(2018{\natexlab{a}})\citenamefont {Aaij} \emph
+  {et~al.}}]{LHCb:2017rdd}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Aaij}} \emph {et~al.} (\bibinfo {collaboration} {LHCb}),\ }\bibfield
+  {title} {\bibinfo {title} {{Evidence for the rare decay $\Sigma^+ \to p \mu^+
+  \mu^-$}},\ }\href {https://doi.org/10.1103/PhysRevLett.120.221803} {\bibfield
+   {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo
+  {volume} {120}},\ \bibinfo {pages} {221803} (\bibinfo {year}
+  {2018}{\natexlab{a}})},\ \Eprint {https://arxiv.org/abs/1712.08606}
+  {arXiv:1712.08606 [hep-ex]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Li}(2017)}]{Li:2016tlt}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.-B.}\ \bibnamefont
+  {Li}},\ }\bibfield  {title} {\bibinfo {title} {{Prospects for rare and
+  forbidden hyperon decays at BESIII}},\ }\href
+  {https://doi.org/10.1007/s11467-017-0691-9} {\bibfield  {journal} {\bibinfo
+  {journal} {Front. Phys. (Beijing)}\ }\textbf {\bibinfo {volume} {12}},\
+  \bibinfo {pages} {121301} (\bibinfo {year} {2017})},\ \bibinfo {note}
+  {[Erratum: Front.Phys.(Beijing) 14, 64001 (2019)]},\ \Eprint
+  {https://arxiv.org/abs/1612.01775} {arXiv:1612.01775 [hep-ex]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Alves~Junior}\ \emph {et~al.}(2019)\citenamefont
+  {Alves~Junior} \emph {et~al.}}]{AlvesJunior:2018ldo}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~A.}\ \bibnamefont
+  {Alves~Junior}} \emph {et~al.},\ }\bibfield  {title} {\bibinfo {title}
+  {{Prospects for measurements with strange hadrons at LHCb}},\ }\href
+  {https://doi.org/10.1007/JHEP05(2019)048} {\bibfield  {journal} {\bibinfo
+  {journal} {JHEP}\ }\textbf {\bibinfo {volume} {05}},\ \bibinfo {pages}
+  {048}},\ \Eprint {https://arxiv.org/abs/1808.03477} {arXiv:1808.03477
+  [hep-ex]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Aaij}\ \emph
+  {et~al.}(2018{\natexlab{b}})\citenamefont {Aaij} \emph
+  {et~al.}}]{LHCb:2018roe}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Aaij}} \emph {et~al.} (\bibinfo {collaboration} {LHCb}),\ }\bibfield
+  {title} {\bibinfo {title} {{Physics case for an LHCb Upgrade II -
+  Opportunities in flavour physics, and beyond, in the HL-LHC era}},\
+  }\href@noop {} {\  (\bibinfo {year} {2018}{\natexlab{b}})},\ \Eprint
+  {https://arxiv.org/abs/1808.08865} {arXiv:1808.08865 [hep-ex]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Cerri}\ \emph {et~al.}(2019)\citenamefont {Cerri}
+  \emph {et~al.}}]{Cerri:2018ypt}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Cerri}} \emph {et~al.},\ }\bibfield  {title} {\bibinfo {title} {{Report from
+  Working Group 4}: {Opportunities in Flavour Physics at the HL-LHC and
+  HE-LHC}},\ }\href {https://doi.org/10.23731/CYRM-2019-007.867} {\bibfield
+  {journal} {\bibinfo  {journal} {CERN Yellow Rep. Monogr.}\ }\textbf {\bibinfo
+  {volume} {7}},\ \bibinfo {pages} {867} (\bibinfo {year} {2019})},\ \Eprint
+  {https://arxiv.org/abs/1812.07638} {arXiv:1812.07638 [hep-ph]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Goudzovski}\ \emph {et~al.}(2023)\citenamefont
+  {Goudzovski} \emph {et~al.}}]{Goudzovski:2022vbt}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {Goudzovski}} \emph {et~al.},\ }\bibfield  {title} {\bibinfo {title} {{New
+  physics searches at kaon and hyperon factories}},\ }\href
+  {https://doi.org/10.1088/1361-6633/ac9cee} {\bibfield  {journal} {\bibinfo
+  {journal} {Rept. Prog. Phys.}\ }\textbf {\bibinfo {volume} {86}},\ \bibinfo
+  {pages} {016201} (\bibinfo {year} {2023})},\ \Eprint
+  {https://arxiv.org/abs/2201.07805} {arXiv:2201.07805 [hep-ph]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Anzivino}\ \emph {et~al.}(2023)\citenamefont
+  {Anzivino} \emph {et~al.}}]{Anzivino:2023bhp}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Anzivino}} \emph {et~al.},\ }\bibfield  {title} {\bibinfo {title} {{Workshop
+  summary -- Kaons@CERN 2023}},\ }in\ \href@noop {} {\emph {\bibinfo
+  {booktitle} {{Kaons@CERN 2023}}}}\ (\bibinfo {year} {2023})\ \Eprint
+  {https://arxiv.org/abs/2311.02923} {arXiv:2311.02923 [hep-ph]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {He}\ \emph {et~al.}(2005)\citenamefont {He},
+  \citenamefont {Tandean},\ and\ \citenamefont {Valencia}}]{He:2005yn}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {X.-G.}\ \bibnamefont
+  {He}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Tandean}},\ and\
+  \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Valencia}},\ }\bibfield
+  {title} {\bibinfo {title} {{The decay $\Sigma^+\to p\ell^+\ell^-$ within the
+  standard model}},\ }\href {https://doi.org/10.1103/PhysRevD.72.074003}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo
+  {volume} {72}},\ \bibinfo {pages} {074003} (\bibinfo {year} {2005})},\
+  \Eprint {https://arxiv.org/abs/hep-ph/0506067} {arXiv:hep-ph/0506067}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Shifman}\ \emph {et~al.}(1978)\citenamefont
+  {Shifman}, \citenamefont {Vainshtein},\ and\ \citenamefont
+  {Zakharov}}]{Shifman:1976de}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~A.}\ \bibnamefont
+  {Shifman}}, \bibinfo {author} {\bibfnamefont {A.~I.}\ \bibnamefont
+  {Vainshtein}},\ and\ \bibinfo {author} {\bibfnamefont {V.~I.}\ \bibnamefont
+  {Zakharov}},\ }\bibfield  {title} {\bibinfo {title} {{On the Weak Radiative
+  Decays (Effects of Strong Interactions at Short Distances)}},\ }\href
+  {https://doi.org/10.1103/PhysRevD.18.2583} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {18}},\ \bibinfo
+  {pages} {2583} (\bibinfo {year} {1978})},\ \bibinfo {note} {[Erratum:
+  Phys.Rev.D 19, 2815 (1979)]}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Buchalla}\ \emph {et~al.}(1996)\citenamefont
+  {Buchalla}, \citenamefont {Buras},\ and\ \citenamefont
+  {Lautenbacher}}]{Buchalla:1995vs}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Buchalla}}, \bibinfo {author} {\bibfnamefont {A.~J.}\ \bibnamefont
+  {Buras}},\ and\ \bibinfo {author} {\bibfnamefont {M.~E.}\ \bibnamefont
+  {Lautenbacher}},\ }\bibfield  {title} {\bibinfo {title} {{Weak decays beyond
+  leading logarithms}},\ }\href {https://doi.org/10.1103/RevModPhys.68.1125}
+  {\bibfield  {journal} {\bibinfo  {journal} {Rev. Mod. Phys.}\ }\textbf
+  {\bibinfo {volume} {68}},\ \bibinfo {pages} {1125} (\bibinfo {year}
+  {1996})},\ \Eprint {https://arxiv.org/abs/hep-ph/9512380}
+  {arXiv:hep-ph/9512380} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ablikim}\ \emph
+  {et~al.}(2023{\natexlab{a}})\citenamefont {Ablikim} \emph
+  {et~al.}}]{BESIII:2023fhs}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Ablikim}} \emph {et~al.} (\bibinfo {collaboration} {BESIII}),\ }\bibfield
+  {title} {\bibinfo {title} {{Precision Measurement of the Decay $\Sigma^+\to
+  p\gamma$ in the Process $J/\psi\to\Sigma^+\Sigma^-$}},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.130.211901} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {130}},\
+  \bibinfo {pages} {211901} (\bibinfo {year} {2023}{\natexlab{a}})},\ \Eprint
+  {https://arxiv.org/abs/2302.13568} {arXiv:2302.13568 [hep-ex]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Ablikim}\ \emph {et~al.}(2020)\citenamefont {Ablikim}
+  \emph {et~al.}}]{BESIII:2020fqg}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Ablikim}} \emph {et~al.} (\bibinfo {collaboration} {BESIII}),\ }\bibfield
+  {title} {\bibinfo {title} {{$\Sigma^{+}$ and $\bar{\Sigma}^-$ Polarization in
+  the $J/\psi$ and $\psi(3686)$ Decays}},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.125.052004} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {125}},\
+  \bibinfo {pages} {052004} (\bibinfo {year} {2020})},\ \Eprint
+  {https://arxiv.org/abs/2004.07701} {arXiv:2004.07701 [hep-ex]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Ablikim}\ \emph
+  {et~al.}(2023{\natexlab{b}})\citenamefont {Ablikim} \emph
+  {et~al.}}]{BESIII:2023sgt}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Ablikim}} \emph {et~al.} (\bibinfo {collaboration} {BESIII}),\ }\bibfield
+  {title} {\bibinfo {title} {{Test of $CP$ Symmetry in Hyperon to Neutron
+  Decays}},\ }\href {https://doi.org/10.1103/PhysRevLett.131.191802} {\bibfield
+   {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo
+  {volume} {131}},\ \bibinfo {pages} {191802} (\bibinfo {year}
+  {2023}{\natexlab{b}})},\ \Eprint {https://arxiv.org/abs/2304.14655}
+  {arXiv:2304.14655 [hep-ex]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Inami}\ and\ \citenamefont
+  {Lim}(1981)}]{Inami:1980fz}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Inami}}\ and\ \bibinfo {author} {\bibfnamefont {C.~S.}\ \bibnamefont
+  {Lim}},\ }\bibfield  {title} {\bibinfo {title} {{Effects of Superheavy Quarks
+  and Leptons in Low-Energy Weak Processes $K_L\to\mu\bar\mu$,
+  $K^+\to\pi^+\nu\bar\nu$ and $K^0\leftrightarrow\bar K^0$}},\ }\href
+  {https://doi.org/10.1143/PTP.65.297} {\bibfield  {journal} {\bibinfo
+  {journal} {Prog. Theor. Phys.}\ }\textbf {\bibinfo {volume} {65}},\ \bibinfo
+  {pages} {297} (\bibinfo {year} {1981})},\ \bibinfo {note} {[Erratum:
+  Prog.Theor.Phys. 65, 1772 (1981)]}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Tandean}(2019)}]{Tandean:2019tkm}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Tandean}},\ }\bibfield  {title} {\bibinfo {title} {{Rare hyperon decays with
+  missing energy}},\ }\href {https://doi.org/10.1007/JHEP04(2019)104}
+  {\bibfield  {journal} {\bibinfo  {journal} {JHEP}\ }\textbf {\bibinfo
+  {volume} {04}},\ \bibinfo {pages} {104}},\ \Eprint
+  {https://arxiv.org/abs/1901.10447} {arXiv:1901.10447 [hep-ph]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Cabibbo}\ \emph {et~al.}(2003)\citenamefont
+  {Cabibbo}, \citenamefont {Swallow},\ and\ \citenamefont
+  {Winston}}]{Cabibbo:2003cu}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Cabibbo}}, \bibinfo {author} {\bibfnamefont {E.~C.}\ \bibnamefont
+  {Swallow}},\ and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Winston}},\ }\bibfield  {title} {\bibinfo {title} {{Semileptonic hyperon
+  decays}},\ }\href {https://doi.org/10.1146/annurev.nucl.53.013103.155258}
+  {\bibfield  {journal} {\bibinfo  {journal} {Ann. Rev. Nucl. Part. Sci.}\
+  }\textbf {\bibinfo {volume} {53}},\ \bibinfo {pages} {39} (\bibinfo {year}
+  {2003})},\ \Eprint {https://arxiv.org/abs/hep-ph/0307298}
+  {arXiv:hep-ph/0307298} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Workman}\ and\ \citenamefont
+  {Others}(2022)}]{Workman:2022ynf}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~L.}\ \bibnamefont
+  {Workman}}\ and\ \bibinfo {author} {\bibnamefont {Others}} (\bibinfo
+  {collaboration} {Particle Data Group}),\ }\bibfield  {title} {\bibinfo
+  {title} {{Review of Particle Physics}},\ }\href
+  {https://doi.org/10.1093/ptep/ptac097} {\bibfield  {journal} {\bibinfo
+  {journal} {PTEP}\ }\textbf {\bibinfo {volume} {2022}},\ \bibinfo {pages}
+  {083C01} (\bibinfo {year} {2022})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Neshatpour}\ and\ \citenamefont
+  {Mahmoudi}(2022)}]{Neshatpour:2022fak}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Neshatpour}}\ and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Mahmoudi}},\ }\bibfield  {title} {\bibinfo {title} {{Flavour Physics
+  Phenomenology with SuperIso}},\ }\href {https://doi.org/10.22323/1.409.0010}
+  {\bibfield  {journal} {\bibinfo  {journal} {PoS}\ }\textbf {\bibinfo {volume}
+  {CompTools2021}},\ \bibinfo {pages} {010} (\bibinfo {year} {2022})},\ \Eprint
+  {https://arxiv.org/abs/2207.04956} {arXiv:2207.04956 [hep-ph]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Nielsen}\ \emph {et~al.}(1996)\citenamefont
+  {Nielsen}, \citenamefont {Barreiro}, \citenamefont {Escobar},\ and\
+  \citenamefont {Rosenfeld}}]{Nielsen:1995dp}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Nielsen}}, \bibinfo {author} {\bibfnamefont {L.~A.}\ \bibnamefont
+  {Barreiro}}, \bibinfo {author} {\bibfnamefont {C.~O.}\ \bibnamefont
+  {Escobar}},\ and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Rosenfeld}},\ }\bibfield  {title} {\bibinfo {title} {{A QCD sum rule
+  approach to the $s\to d\gamma$ contribution to the $\Omega^-\to\Xi^-\gamma$
+  radiative decay}},\ }\href {https://doi.org/10.1103/PhysRevD.53.3620}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo
+  {volume} {53}},\ \bibinfo {pages} {3620} (\bibinfo {year} {1996})},\ \Eprint
+  {https://arxiv.org/abs/hep-ph/9509297} {arXiv:hep-ph/9509297} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Tandean}(2000)}]{Tandean:1999mg}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Tandean}},\ }\bibfield  {title} {\bibinfo {title} {{New physics and short
+  distance $s\to d\gamma$ transition in $\Omega^-\to\Xi^-\gamma$ decay}},\
+  }\href {https://doi.org/10.1103/PhysRevD.61.114022} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {61}},\
+  \bibinfo {pages} {114022} (\bibinfo {year} {2000})},\ \Eprint
+  {https://arxiv.org/abs/hep-ph/9912497} {arXiv:hep-ph/9912497} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Donoghue}\ \emph {et~al.}(2022)\citenamefont
+  {Donoghue}, \citenamefont {Golowich},\ and\ \citenamefont
+  {Holstein}}]{Donoghue:2022wrw}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~F.}\ \bibnamefont
+  {Donoghue}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Golowich}},\
+  and\ \bibinfo {author} {\bibfnamefont {B.~R.}\ \bibnamefont {Holstein}},\
+  }\href {https://doi.org/10.1017/9781009291033} {\emph {\bibinfo {title}
+  {{Dynamics of the Standard Model}: {Second edition}}}}\ (\bibinfo
+  {publisher} {Cambridge University Press},\ \bibinfo {year}
+  {2022})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ang}\ \emph {et~al.}(1969)\citenamefont {Ang} \emph
+  {et~al.}}]{Ang:1969hg}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Ang}} \emph {et~al.},\ }\bibfield  {title} {\bibinfo {title} {{Radiative
+  $\Sigma^\pm$ decays and search for neutral currents}},\ }\href
+  {https://doi.org/10.1007/BF01397536} {\bibfield  {journal} {\bibinfo
+  {journal} {Z. Phys.}\ }\textbf {\bibinfo {volume} {228}},\ \bibinfo {pages}
+  {151} (\bibinfo {year} {1969})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Park}\ \emph {et~al.}(2005)\citenamefont {Park} \emph
+  {et~al.}}]{HyperCP:2005mvo}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Park}} \emph {et~al.} (\bibinfo {collaboration} {HyperCP}),\ }\bibfield
+  {title} {\bibinfo {title} {{Evidence for the Decay $\Sigma^+\to
+  p\mu^+\mu^-$}},\ }\href {https://doi.org/10.1103/PhysRevLett.94.021801}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf
+  {\bibinfo {volume} {94}},\ \bibinfo {pages} {021801} (\bibinfo {year}
+  {2005})},\ \Eprint {https://arxiv.org/abs/hep-ex/0501014}
+  {arXiv:hep-ex/0501014} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Behrends}(1958)}]{Behrends:1958zz}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~E.}\ \bibnamefont
+  {Behrends}},\ }\bibfield  {title} {\bibinfo {title} {{Photon Decay of
+  Hyperons}},\ }\href {https://doi.org/10.1103/PhysRev.111.1691} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume}
+  {111}},\ \bibinfo {pages} {1691} (\bibinfo {year} {1958})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Lyagin}\ and\ \citenamefont
+  {Ginzburg}(1962)}]{Lyagin:1962}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.~V.}\ \bibnamefont
+  {Lyagin}}\ and\ \bibinfo {author} {\bibfnamefont {E.~K.}\ \bibnamefont
+  {Ginzburg}},\ }\bibfield  {title} {\bibinfo {title} {{On $\Sigma^+\to
+  pe^+e^-$ and $\Sigma^+\to p\mu^+\mu^-$ Decays}},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Sov. Phys. JETP}\ }\textbf {\bibinfo {volume}
+  {14}},\ \bibinfo {pages} {653} (\bibinfo {year} {1962})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Bergstrom}\ \emph {et~al.}(1988)\citenamefont
+  {Bergstrom}, \citenamefont {Safadi},\ and\ \citenamefont
+  {Singer}}]{Bergstrom:1987wr}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Bergstrom}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Safadi}},\
+  and\ \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Singer}},\
+  }\bibfield  {title} {\bibinfo {title} {{Phenomenology of $\Sigma^+ \to p
+  \ell^+ \ell^-$ and the structure of the weak non-leptonic Hamiltonian}},\
+  }\href {https://doi.org/10.1007/BF01579914} {\bibfield  {journal} {\bibinfo
+  {journal} {Z. Phys. C}\ }\textbf {\bibinfo {volume} {37}},\ \bibinfo {pages}
+  {281} (\bibinfo {year} {1988})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Gershwin}\ \emph {et~al.}(1969)\citenamefont
+  {Gershwin}, \citenamefont {Alston-Garnjost}, \citenamefont {Bangerter},
+  \citenamefont {Barbaro-Galtieri}, \citenamefont {Mast}, \citenamefont
+  {Solmitz},\ and\ \citenamefont {Tripp}}]{Gershwin:1969fpe}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.~K.}\ \bibnamefont
+  {Gershwin}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Alston-Garnjost}}, \bibinfo {author} {\bibfnamefont {R.~O.}\ \bibnamefont
+  {Bangerter}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Barbaro-Galtieri}}, \bibinfo {author} {\bibfnamefont {T.~S.}\ \bibnamefont
+  {Mast}}, \bibinfo {author} {\bibfnamefont {F.~T.}\ \bibnamefont {Solmitz}},\
+  and\ \bibinfo {author} {\bibfnamefont {R.~D.}\ \bibnamefont {Tripp}},\
+  }\bibfield  {title} {\bibinfo {title} {{Asymmetry parameter and branching
+  ratio of $\Sigma^+\to p\gamma$}},\ }\href
+  {https://doi.org/10.1103/PhysRev.188.2077} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume} {188}},\ \bibinfo {pages}
+  {2077} (\bibinfo {year} {1969})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Manz}\ \emph {et~al.}(1980)\citenamefont {Manz},
+  \citenamefont {Reucroft}, \citenamefont {Settles}, \citenamefont {Wolf},
+  \citenamefont {Marraffino}, \citenamefont {Roos}, \citenamefont {Waters},\
+  and\ \citenamefont {Webster}}]{Manz:1980td}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Manz}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Reucroft}},
+  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Settles}}, \bibinfo
+  {author} {\bibfnamefont {G.}~\bibnamefont {Wolf}}, \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Marraffino}}, \bibinfo {author}
+  {\bibfnamefont {C.}~\bibnamefont {Roos}}, \bibinfo {author} {\bibfnamefont
+  {J.}~\bibnamefont {Waters}},\ and\ \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Webster}},\ }\bibfield  {title} {\bibinfo {title} {{A new
+  measurement of $\Sigma^+\to p\gamma$ decay properties}},\ }\href
+  {https://doi.org/10.1016/0370-2693(80)90248-8} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Lett. B}\ }\textbf {\bibinfo {volume} {96}},\
+  \bibinfo {pages} {217} (\bibinfo {year} {1980})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kobayashi}\ \emph {et~al.}(1987)\citenamefont
+  {Kobayashi}, \citenamefont {Haba}, \citenamefont {Homma}, \citenamefont
+  {Kawai}, \citenamefont {Miyake}, \citenamefont {Nakamura}, \citenamefont
+  {Sasao},\ and\ \citenamefont {Sugimoto}}]{Kobayashi:1987yv}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Kobayashi}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Haba}},
+  \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Homma}}, \bibinfo
+  {author} {\bibfnamefont {H.}~\bibnamefont {Kawai}}, \bibinfo {author}
+  {\bibfnamefont {K.}~\bibnamefont {Miyake}}, \bibinfo {author} {\bibfnamefont
+  {T.~S.}\ \bibnamefont {Nakamura}}, \bibinfo {author} {\bibfnamefont
+  {N.}~\bibnamefont {Sasao}},\ and\ \bibinfo {author} {\bibfnamefont
+  {Y.}~\bibnamefont {Sugimoto}},\ }\bibfield  {title} {\bibinfo {title} {{New
+  measurement of the asymmetry parameter for the $\Sigma^+\to p\gamma$
+  decay}},\ }\href {https://doi.org/10.1103/PhysRevLett.59.868} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo
+  {volume} {59}},\ \bibinfo {pages} {868} (\bibinfo {year} {1987})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Foucher}\ \emph {et~al.}(1992)\citenamefont {Foucher}
+  \emph {et~al.}}]{E761:1992atm}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Foucher}} \emph {et~al.} (\bibinfo {collaboration} {E761}),\ }\bibfield
+  {title} {\bibinfo {title} {{Measurement of the asymmetry parameter in the
+  hyperon radiative decay $\Sigma^+\to p\gamma$}},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.68.3004} {\bibfield  {journal} {\bibinfo
+   {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {68}},\ \bibinfo
+  {pages} {3004} (\bibinfo {year} {1992})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Aaij}\ \emph {et~al.}(2022)\citenamefont {Aaij} \emph
+  {et~al.}}]{LHCb:2021byf}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Aaij}} \emph {et~al.} (\bibinfo {collaboration} {LHCb}),\ }\bibfield
+  {title} {\bibinfo {title} {{Measurement of the photon polarization in
+  $\Lambda_{b}^{0}\to\Lambda\gamma$ decays}},\ }\href
+  {https://doi.org/10.1103/PhysRevD.105.L051104} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {105}},\
+  \bibinfo {pages} {L051104} (\bibinfo {year} {2022})},\ \Eprint
+  {https://arxiv.org/abs/2111.10194} {arXiv:2111.10194 [hep-ex]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Bangerter}(1969)}]{Bangerter:1969fta}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~O.}\ \bibnamefont
+  {Bangerter}},\ }\emph {\bibinfo {title} {{Nonleptonic decay of Sigma
+  hyperons}}},\ \href@noop {} {Ph.D. thesis},\ \bibinfo  {school} {Calif. U.
+  Berkeley} (\bibinfo {year} {1969})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Harris}\ \emph {et~al.}(1970)\citenamefont {Harris},
+  \citenamefont {Overseth}, \citenamefont {Pondrom},\ and\ \citenamefont
+  {Dettmann}}]{Harris:1970kq}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Harris}}, \bibinfo {author} {\bibfnamefont {O.~E.}\ \bibnamefont
+  {Overseth}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Pondrom}},\
+  and\ \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Dettmann}},\
+  }\bibfield  {title} {\bibinfo {title} {{Proton Polarization in $\Sigma^+\to
+  p\pi^0$}},\ }\href {https://doi.org/10.1103/PhysRevLett.24.165} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo
+  {volume} {24}},\ \bibinfo {pages} {165} (\bibinfo {year} {1970})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Bellamy}\ \emph {et~al.}(1972)\citenamefont {Bellamy}
+  \emph {et~al.}}]{Bellamy:1972fa}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~H.}\ \bibnamefont
+  {Bellamy}} \emph {et~al.},\ }\bibfield  {title} {\bibinfo {title}
+  {{Polarisation in the reaction $\pi^+ p\to K^+ \Sigma^+$ at 1.11 GeV/$c$}},\
+  }\href {https://doi.org/10.1016/0370-2693(72)90801-5} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Lett. B}\ }\textbf {\bibinfo {volume} {39}},\
+  \bibinfo {pages} {299} (\bibinfo {year} {1972})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Lipman}\ \emph {et~al.}(1973)\citenamefont {Lipman}
+  \emph {et~al.}}]{Lipman:1973mz}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.~H.}\ \bibnamefont
+  {Lipman}} \emph {et~al.},\ }\bibfield  {title} {\bibinfo {title} {{A test of
+  the $\Delta I=1/2$ rule and the Lee-Sugawara relation in the decay
+  $\Sigma^+\to p\pi^0$}},\ }\href
+  {https://doi.org/10.1016/0370-2693(73)90551-0} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Lett. B}\ }\textbf {\bibinfo {volume} {43}},\
+  \bibinfo {pages} {89} (\bibinfo {year} {1973})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Erben}\ \emph
+  {et~al.}(2023{\natexlab{a}})\citenamefont {Erben}, \citenamefont {G\"ulpers},
+  \citenamefont {Hansen}, \citenamefont {Hodgson},\ and\ \citenamefont
+  {Portelli}}]{Erben:2022tdu}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Erben}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {G\"ulpers}},
+  \bibinfo {author} {\bibfnamefont {M.~T.}\ \bibnamefont {Hansen}}, \bibinfo
+  {author} {\bibfnamefont {R.}~\bibnamefont {Hodgson}},\ and\ \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {Portelli}},\ }\bibfield  {title} {\bibinfo
+  {title} {{Prospects for a lattice calculation of the rare decay $\Sigma^+\to
+  p\ell^+\ell^-$}},\ }\href {https://doi.org/10.1007/JHEP04(2023)108}
+  {\bibfield  {journal} {\bibinfo  {journal} {JHEP}\ }\textbf {\bibinfo
+  {volume} {04}},\ \bibinfo {pages} {108}},\ \Eprint
+  {https://arxiv.org/abs/2209.15460} {arXiv:2209.15460 [hep-lat]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Erben}\ \emph
+  {et~al.}(2023{\natexlab{b}})\citenamefont {Erben}, \citenamefont {G\"ulpers},
+  \citenamefont {Hansen}, \citenamefont {Hodgson},\ and\ \citenamefont
+  {Portelli}}]{Erben:2022igb}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Erben}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {G\"ulpers}},
+  \bibinfo {author} {\bibfnamefont {M.~T.}\ \bibnamefont {Hansen}}, \bibinfo
+  {author} {\bibfnamefont {R.}~\bibnamefont {Hodgson}},\ and\ \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {Portelli}},\ }\bibfield  {title} {\bibinfo
+  {title} {{Progress on the exploratory calculation of the rare Hyperon decay
+  $\Sigma^+ \to p \ell^+ \ell^-$}},\ }\href
+  {https://doi.org/10.22323/1.430.0315} {\bibfield  {journal} {\bibinfo
+  {journal} {PoS}\ }\textbf {\bibinfo {volume} {LATTICE2022}},\ \bibinfo
+  {pages} {315} (\bibinfo {year} {2023}{\natexlab{b}})},\ \Eprint
+  {https://arxiv.org/abs/2212.09595} {arXiv:2212.09595 [hep-lat]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {He}\ \emph {et~al.}(2018)\citenamefont {He},
+  \citenamefont {Tandean},\ and\ \citenamefont {Valencia}}]{He:2018yzu}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {X.-G.}\ \bibnamefont
+  {He}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Tandean}},\ and\
+  \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Valencia}},\ }\bibfield
+  {title} {\bibinfo {title} {{Decay rate and asymmetries of $\Sigma^+\to
+  p\mu^+\mu^-$}},\ }\href {https://doi.org/10.1007/JHEP10(2018)040} {\bibfield
+  {journal} {\bibinfo  {journal} {JHEP}\ }\textbf {\bibinfo {volume} {10}},\
+  \bibinfo {pages} {040}},\ \Eprint {https://arxiv.org/abs/1806.08350}
+  {arXiv:1806.08350 [hep-ph]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Aaij}\ \emph {et~al.}(2015)\citenamefont {Aaij} \emph
+  {et~al.}}]{LHCb:2015tgy}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Aaij}} \emph {et~al.} (\bibinfo {collaboration} {LHCb}),\ }\bibfield
+  {title} {\bibinfo {title} {{Differential branching fraction and angular
+  analysis of $\Lambda^{0}_{b} \to \Lambda \mu^+\mu^-$ decays}},\ }\href
+  {https://doi.org/10.1007/JHEP06(2015)115} {\bibfield  {journal} {\bibinfo
+  {journal} {JHEP}\ }\textbf {\bibinfo {volume} {06}},\ \bibinfo {pages}
+  {115}},\ \bibinfo {note} {[Erratum: JHEP 09, 145 (2018)]},\ \Eprint
+  {https://arxiv.org/abs/1503.07138} {arXiv:1503.07138 [hep-ex]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Geng}\ \emph {et~al.}(2022)\citenamefont {Geng},
+  \citenamefont {Camalich},\ and\ \citenamefont {Shi}}]{Geng:2021fog}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.-S.}\ \bibnamefont
+  {Geng}}, \bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont {Camalich}},\
+  and\ \bibinfo {author} {\bibfnamefont {R.-X.}\ \bibnamefont {Shi}},\
+  }\bibfield  {title} {\bibinfo {title} {{New physics in $s\to d$ semileptonic
+  transitions: rare hyperon vs. kaon decays}},\ }\href
+  {https://doi.org/10.1007/JHEP02(2022)178} {\bibfield  {journal} {\bibinfo
+  {journal} {JHEP}\ }\textbf {\bibinfo {volume} {02}},\ \bibinfo {pages}
+  {178}},\ \Eprint {https://arxiv.org/abs/2112.11979} {arXiv:2112.11979
+  [hep-ph]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Isidori}\ \emph {et~al.}(2004)\citenamefont
+  {Isidori}, \citenamefont {Smith},\ and\ \citenamefont
+  {Unterdorfer}}]{Isidori:2004rb}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Isidori}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Smith}},\
+  and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Unterdorfer}},\
+  }\bibfield  {title} {\bibinfo {title} {{The rare decay $K_{\rm L}\to \pi^0
+  \mu^+ \mu^-$ within the SM}},\ }\href
+  {https://doi.org/10.1140/epjc/s2004-01879-0} {\bibfield  {journal} {\bibinfo
+  {journal} {Eur. Phys. J. C}\ }\textbf {\bibinfo {volume} {36}},\ \bibinfo
+  {pages} {57} (\bibinfo {year} {2004})},\ \Eprint
+  {https://arxiv.org/abs/hep-ph/0404127} {arXiv:hep-ph/0404127} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Mahmoudi}(2009)}]{Mahmoudi:2009zz}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Mahmoudi}},\ }\bibfield  {title} {\bibinfo {title} {{SuperIso v3.0, flavor
+  physics observables calculations: Extension to NMSSM}},\ }\href
+  {https://doi.org/10.1016/j.cpc.2009.05.001} {\bibfield  {journal} {\bibinfo
+  {journal} {Comput. Phys. Commun.}\ }\textbf {\bibinfo {volume} {180}},\
+  \bibinfo {pages} {1718} (\bibinfo {year} {2009})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Neshatpour}\ and\ \citenamefont
+  {Mahmoudi}(2021)}]{Neshatpour:2021nbn}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Neshatpour}}\ and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Mahmoudi}},\ }\bibfield  {title} {\bibinfo {title} {{Flavour Physics with
+  SuperIso}},\ }\href {https://doi.org/10.22323/1.392.0036} {\bibfield
+  {journal} {\bibinfo  {journal} {PoS}\ }\textbf {\bibinfo {volume}
+  {TOOLS2020}},\ \bibinfo {pages} {036} (\bibinfo {year} {2021})},\ \Eprint
+  {https://arxiv.org/abs/2105.03428} {arXiv:2105.03428 [hep-ph]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Mertens}\ and\ \citenamefont
+  {Smith}(2011)}]{Mertens:2011ts}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Mertens}}\ and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Smith}},\ }\bibfield  {title} {\bibinfo {title} {{The $s\to d\gamma$ decay
+  in and beyond the Standard Model}},\ }\href
+  {https://doi.org/10.1007/JHEP08(2011)069} {\bibfield  {journal} {\bibinfo
+  {journal} {JHEP}\ }\textbf {\bibinfo {volume} {08}},\ \bibinfo {pages}
+  {069}},\ \Eprint {https://arxiv.org/abs/1103.5992} {arXiv:1103.5992 [hep-ph]}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Chobanova}\ \emph {et~al.}(2018)\citenamefont
+  {Chobanova}, \citenamefont {D'Ambrosio}, \citenamefont {Kitahara},
+  \citenamefont {Lucio~Martinez}, \citenamefont {Martinez~Santos},
+  \citenamefont {Fernandez},\ and\ \citenamefont
+  {Yamamoto}}]{Chobanova:2017rkj}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Chobanova}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {D'Ambrosio}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Kitahara}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Lucio~Martinez}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Martinez~Santos}}, \bibinfo {author} {\bibfnamefont {I.~S.}\ \bibnamefont
+  {Fernandez}},\ and\ \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Yamamoto}},\ }\bibfield  {title} {\bibinfo {title} {{Probing SUSY effects in
+  $K_S^0\rightarrow\mu^+\mu^-$}},\ }\href
+  {https://doi.org/10.1007/JHEP05(2018)024} {\bibfield  {journal} {\bibinfo
+  {journal} {JHEP}\ }\textbf {\bibinfo {volume} {05}},\ \bibinfo {pages}
+  {024}},\ \Eprint {https://arxiv.org/abs/1711.11030} {arXiv:1711.11030
+  [hep-ph]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Gorbahn}\ and\ \citenamefont
+  {Haisch}(2006)}]{Gorbahn:2006bm}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Gorbahn}}\ and\ \bibinfo {author} {\bibfnamefont {U.}~\bibnamefont
+  {Haisch}},\ }\bibfield  {title} {\bibinfo {title} {{Charm Quark Contribution
+  to $K_L\to\mu^+\mu^-$ at Next-to-Next-to-Leading Order}},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.97.122002} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {97}},\
+  \bibinfo {pages} {122002} (\bibinfo {year} {2006})},\ \Eprint
+  {https://arxiv.org/abs/hep-ph/0605203} {arXiv:hep-ph/0605203} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Buchalla}\ \emph {et~al.}(2003)\citenamefont
+  {Buchalla}, \citenamefont {D'Ambrosio},\ and\ \citenamefont
+  {Isidori}}]{Buchalla:2003sj}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Buchalla}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {D'Ambrosio}},\ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Isidori}},\ }\bibfield  {title} {\bibinfo {title} {{Extracting short
+  distance physics from $K_{L,S}\to\pi^0 e^+ e^-$ decays}},\ }\href
+  {https://doi.org/10.1016/j.nuclphysb.2003.09.010} {\bibfield  {journal}
+  {\bibinfo  {journal} {Nucl. Phys. B}\ }\textbf {\bibinfo {volume} {672}},\
+  \bibinfo {pages} {387} (\bibinfo {year} {2003})},\ \Eprint
+  {https://arxiv.org/abs/hep-ph/0308008} {arXiv:hep-ph/0308008} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Mescia}\ \emph {et~al.}(2006)\citenamefont {Mescia},
+  \citenamefont {Smith},\ and\ \citenamefont {Trine}}]{Mescia:2006jd}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Mescia}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Smith}},\ and\
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Trine}},\ }\bibfield
+  {title} {\bibinfo {title} {{$K_L\to\pi^0e^+e^-$ and $K_L\to\pi^0\mu^+\mu^-$:
+  a binary star on the stage of flavor physics}},\ }\href
+  {https://doi.org/10.1088/1126-6708/2006/08/088} {\bibfield  {journal}
+  {\bibinfo  {journal} {JHEP}\ }\textbf {\bibinfo {volume} {08}},\ \bibinfo
+  {pages} {088}},\ \Eprint {https://arxiv.org/abs/hep-ph/0606081}
+  {arXiv:hep-ph/0606081} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {D'Ambrosio}\ \emph {et~al.}(2022)\citenamefont
+  {D'Ambrosio}, \citenamefont {Iyer}, \citenamefont {Mahmoudi},\ and\
+  \citenamefont {Neshatpour}}]{DAmbrosio:2022kvb}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {D'Ambrosio}}, \bibinfo {author} {\bibfnamefont {A.~M.}\ \bibnamefont
+  {Iyer}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Mahmoudi}},\
+  and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Neshatpour}},\
+  }\bibfield  {title} {\bibinfo {title} {{Anatomy of kaon decays and prospects
+  for lepton flavour universality violation}},\ }\href
+  {https://doi.org/10.1007/JHEP09(2022)148} {\bibfield  {journal} {\bibinfo
+  {journal} {JHEP}\ }\textbf {\bibinfo {volume} {09}},\ \bibinfo {pages}
+  {148}},\ \Eprint {https://arxiv.org/abs/2206.14748} {arXiv:2206.14748
+  [hep-ph]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ecker}\ \emph {et~al.}(1987)\citenamefont {Ecker},
+  \citenamefont {Pich},\ and\ \citenamefont {de~Rafael}}]{Ecker:1987qi}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Ecker}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Pich}},\ and\
+  \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {de~Rafael}},\ }\bibfield
+  {title} {\bibinfo {title} {{$K\to\pi\ell^+\ell^-$ decays in the effective
+  chiral lagrangian of the standard model}},\ }\href
+  {https://doi.org/10.1016/0550-3213(87)90491-3} {\bibfield  {journal}
+  {\bibinfo  {journal} {Nucl. Phys. B}\ }\textbf {\bibinfo {volume} {291}},\
+  \bibinfo {pages} {692} (\bibinfo {year} {1987})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {D'Ambrosio}\ \emph {et~al.}(1998)\citenamefont
+  {D'Ambrosio}, \citenamefont {Ecker}, \citenamefont {Isidori},\ and\
+  \citenamefont {Portoles}}]{DAmbrosio:1998gur}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {D'Ambrosio}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Ecker}},
+  \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Isidori}},\ and\ \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Portoles}},\ }\bibfield  {title}
+  {\bibinfo {title} {{The decays $K\to\pi\ell^+\ell^-$ beyond leading order in
+  the chiral expansion}},\ }\href
+  {https://doi.org/10.1088/1126-6708/1998/08/004} {\bibfield  {journal}
+  {\bibinfo  {journal} {JHEP}\ }\textbf {\bibinfo {volume} {08}},\ \bibinfo
+  {pages} {004}},\ \Eprint {https://arxiv.org/abs/hep-ph/9808289}
+  {arXiv:hep-ph/9808289} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {D'Ambrosio}\ \emph {et~al.}(2019)\citenamefont
+  {D'Ambrosio}, \citenamefont {Greynat},\ and\ \citenamefont
+  {Knecht}}]{DAmbrosio:2018ytt}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {D'Ambrosio}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Greynat}},\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Knecht}},\ }\bibfield  {title} {\bibinfo {title} {{On the amplitudes for the
+  CP-conserving $K^\pm(K_S)\to\pi^\pm(\pi^0)\ell^+\ell^-$ rare decay modes}},\
+  }\href {https://doi.org/10.1007/JHEP02(2019)049} {\bibfield  {journal}
+  {\bibinfo  {journal} {JHEP}\ }\textbf {\bibinfo {volume} {02}},\ \bibinfo
+  {pages} {049}},\ \Eprint {https://arxiv.org/abs/1812.00735} {arXiv:1812.00735
+  [hep-ph]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Cirigliano}\ \emph {et~al.}(2012)\citenamefont
+  {Cirigliano}, \citenamefont {Ecker}, \citenamefont {Neufeld}, \citenamefont
+  {Pich},\ and\ \citenamefont {Portoles}}]{Cirigliano:2011ny}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Cirigliano}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Ecker}},
+  \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Neufeld}}, \bibinfo
+  {author} {\bibfnamefont {A.}~\bibnamefont {Pich}},\ and\ \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Portoles}},\ }\bibfield  {title} {\bibinfo
+  {title} {{Kaon Decays in the Standard Model}},\ }\href
+  {https://doi.org/10.1103/RevModPhys.84.399} {\bibfield  {journal} {\bibinfo
+  {journal} {Rev. Mod. Phys.}\ }\textbf {\bibinfo {volume} {84}},\ \bibinfo
+  {pages} {399} (\bibinfo {year} {2012})},\ \Eprint
+  {https://arxiv.org/abs/1107.6001} {arXiv:1107.6001 [hep-ph]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1107.6001;%%
+\bibitem [{\citenamefont {Batley}\ \emph {et~al.}(2003)\citenamefont {Batley}
+  \emph {et~al.}}]{Batley:2003mu}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~R.}\ \bibnamefont
+  {Batley}} \emph {et~al.} (\bibinfo {collaboration} {NA48/1}),\ }\bibfield
+  {title} {\bibinfo {title} {{Observation of the rare decay $K_S \to\pi^0 e^+
+  e^-$}},\ }\href {https://doi.org/10.1016/j.physletb.2003.10.001} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Lett.}\ }\textbf {\bibinfo {volume}
+  {B576}},\ \bibinfo {pages} {43} (\bibinfo {year} {2003})},\ \Eprint
+  {https://arxiv.org/abs/hep-ex/0309075} {arXiv:hep-ex/0309075 [hep-ex]}
+  \BibitemShut {NoStop}%
+%%CITATION = HEP-EX/0309075;%%
+\bibitem [{\citenamefont {Batley}\ \emph {et~al.}(2004)\citenamefont {Batley}
+  \emph {et~al.}}]{Batley:2004wg}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~R.}\ \bibnamefont
+  {Batley}} \emph {et~al.} (\bibinfo {collaboration} {NA48/1}),\ }\bibfield
+  {title} {\bibinfo {title} {{Observation of the rare decay $K_S\to \pi^0 \mu^+
+  \mu^-$}},\ }\href {https://doi.org/10.1016/j.physletb.2004.08.058} {\bibfield
+   {journal} {\bibinfo  {journal} {Phys. Lett.}\ }\textbf {\bibinfo {volume}
+  {B599}},\ \bibinfo {pages} {197} (\bibinfo {year} {2004})},\ \Eprint
+  {https://arxiv.org/abs/hep-ex/0409011} {arXiv:hep-ex/0409011 [hep-ex]}
+  \BibitemShut {NoStop}%
+%%CITATION = HEP-EX/0409011;%%
+\bibitem [{\citenamefont {Batley}\ \emph {et~al.}(2009)\citenamefont {Batley}
+  \emph {et~al.}}]{NA482:2009pfe}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~R.}\ \bibnamefont
+  {Batley}} \emph {et~al.} (\bibinfo {collaboration} {NA48/2}),\ }\bibfield
+  {title} {\bibinfo {title} {{Precise measurement of the $K^\pm\to\pi^\pm
+  e^+e^-$ decay}},\ }\href {https://doi.org/10.1016/j.physletb.2009.05.040}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Lett. B}\ }\textbf
+  {\bibinfo {volume} {677}},\ \bibinfo {pages} {246} (\bibinfo {year}
+  {2009})},\ \Eprint {https://arxiv.org/abs/0903.3130} {arXiv:0903.3130
+  [hep-ex]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Cortina~Gil}\ \emph {et~al.}(2022)\citenamefont
+  {Cortina~Gil} \emph {et~al.}}]{NA62:2022qes}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {Cortina~Gil}} \emph {et~al.} (\bibinfo {collaboration} {NA62}),\ }\bibfield
+  {title} {\bibinfo {title} {{A measurement of the $K^{+} \to \pi^{+} \mu^{+}
+  \mu^{-}$ decay}},\ }\href {https://doi.org/10.1007/JHEP11(2022)011}
+  {\bibfield  {journal} {\bibinfo  {journal} {JHEP}\ }\textbf {\bibinfo
+  {volume} {11}},\ \bibinfo {pages} {011}},\ \bibinfo {note} {[Addendum: JHEP
+  06, 040 (2023)]},\ \Eprint {https://arxiv.org/abs/2209.05076}
+  {arXiv:2209.05076 [hep-ex]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Chen}\ \emph {et~al.}(2003)\citenamefont {Chen},
+  \citenamefont {Geng},\ and\ \citenamefont {Ho}}]{Chen:2003nz}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.-H.}\ \bibnamefont
+  {Chen}}, \bibinfo {author} {\bibfnamefont {C.~Q.}\ \bibnamefont {Geng}},\
+  and\ \bibinfo {author} {\bibfnamefont {I.-L.}\ \bibnamefont {Ho}},\
+  }\bibfield  {title} {\bibinfo {title} {{Forward backward asymmetry in
+  $K^+\to\pi^+l^+l^-$}},\ }\href {https://doi.org/10.1103/PhysRevD.67.074029}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo
+  {volume} {67}},\ \bibinfo {pages} {074029} (\bibinfo {year} {2003})},\
+  \Eprint {https://arxiv.org/abs/hep-ph/0302207} {arXiv:hep-ph/0302207}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Crivellin}\ \emph {et~al.}(2016)\citenamefont
+  {Crivellin}, \citenamefont {D'Ambrosio}, \citenamefont {Hoferichter},\ and\
+  \citenamefont {Tunstall}}]{Crivellin:2016vjc}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Crivellin}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {D'Ambrosio}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Hoferichter}},\ and\ \bibinfo {author} {\bibfnamefont {L.~C.}\ \bibnamefont
+  {Tunstall}},\ }\bibfield  {title} {\bibinfo {title} {{Violation of lepton
+  flavor and lepton flavor universality in rare kaon decays}},\ }\href
+  {https://doi.org/10.1103/PhysRevD.93.074038} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {93}},\ \bibinfo
+  {pages} {074038} (\bibinfo {year} {2016})},\ \Eprint
+  {https://arxiv.org/abs/1601.009701.166} {arXiv:1601.009701.166 [hep-ph]}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {He}\ and\ \citenamefont
+  {Valencia}(2000)}]{He:1999ik}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {X.-G.}\ \bibnamefont
+  {He}}\ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Valencia}},\
+  }\bibfield  {title} {\bibinfo {title} {{Constraints on $s\to d\gamma$ from
+  radiative hyperon and kaon decays}},\ }\href
+  {https://doi.org/10.1103/PhysRevD.61.075003} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {61}},\ \bibinfo
+  {pages} {075003} (\bibinfo {year} {2000})},\ \Eprint
+  {https://arxiv.org/abs/hep-ph/9908298} {arXiv:hep-ph/9908298} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Aaij}\ \emph {et~al.}(2020)\citenamefont {Aaij} \emph
+  {et~al.}}]{LHCb:2020ycd}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Aaij}} \emph {et~al.} (\bibinfo {collaboration} {LHCb}),\ }\bibfield
+  {title} {\bibinfo {title} {{Constraints on the $K^0_S \rightarrow \mu^+
+  \mu^-$ Branching Fraction}},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.125.231801} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {125}},\
+  \bibinfo {pages} {231801} (\bibinfo {year} {2020})},\ \Eprint
+  {https://arxiv.org/abs/2001.10354} {arXiv:2001.10354 [hep-ex]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Alavi-Harati}\ \emph {et~al.}(2000)\citenamefont
+  {Alavi-Harati} \emph {et~al.}}]{AlaviHarati:2000hs}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Alavi-Harati}} \emph {et~al.} (\bibinfo {collaboration} {KTEV}),\ }\bibfield
+   {title} {\bibinfo {title} {{Search for the Decay $K_L \to \pi^0 \mu^+
+  \mu^-$}},\ }\href {https://doi.org/10.1103/PhysRevLett.84.5279} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo
+  {volume} {84}},\ \bibinfo {pages} {5279} (\bibinfo {year} {2000})},\ \Eprint
+  {https://arxiv.org/abs/hep-ex/0001006} {arXiv:hep-ex/0001006 [hep-ex]}
+  \BibitemShut {NoStop}%
+%%CITATION = HEP-EX/0001006;%%
+\bibitem [{\citenamefont {Alavi-Harati}\ \emph {et~al.}(2004)\citenamefont
+  {Alavi-Harati} \emph {et~al.}}]{AlaviHarati:2003mr}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Alavi-Harati}} \emph {et~al.} (\bibinfo {collaboration} {KTeV}),\ }\bibfield
+   {title} {\bibinfo {title} {{Search for the Rare Decay $K_L\to\pi^0 e^+
+  e^-$}},\ }\href {https://doi.org/10.1103/PhysRevLett.93.021805} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo
+  {volume} {93}},\ \bibinfo {pages} {021805} (\bibinfo {year} {2004})},\
+  \Eprint {https://arxiv.org/abs/hep-ex/0309072} {arXiv:hep-ex/0309072
+  [hep-ex]} \BibitemShut {NoStop}%
+%%CITATION = HEP-EX/0309072;%%
+\end{thebibliography}%

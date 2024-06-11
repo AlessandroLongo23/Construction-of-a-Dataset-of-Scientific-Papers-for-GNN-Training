@@ -1,0 +1,78 @@
+
+\begin{table}[t!]
+\centering \small
+
+\setlength{\tabcolsep}{14pt}
+\caption{Expense of different methods: number of BPE tokens in terms of input, output and total. Each number is the average across 3 runs (unit is $\cdot 10^5$). }
+\begin{tabular}{l c c c c c c }
+\toprule
+    \textbf{Method} & \multicolumn{3}{c}{\textbf{Summarization}} & \multicolumn{3}{c}{\textbf{Email Writing}} \\
+    & Input & Output & Total & Input & Output & Total \\
+\midrule
+    Oracle Preference & 1.14 & 0.53 & 1.67 & 0.91 & 0.71 & 1.62 \\
+\midrule
+    No Learning &  1.06 & 0.44 & 1.50 & 0.85 & 0.80 & 1.65 \\
+    E-then-e LPI & 1.16 & 0.83 & 1.99 & 0.94 & 0.79 & 1.73 \\
+    Continual LPI & 8.14 & 0.75 & 8.89 & 7.89 & 0.73 & 8.63 \\
+\midrule
+    ICL-edit-5-MPNET & 7.35 & 0.65 & 8.00 & 11.05 & 1.06 & 12.12 \\
+    ICL-edit-5-BERT & 7.32 & 0.64 & 7.96 & 10.51 & 1.03 & 11.55 \\
+\midrule
+    CIPHER-1-MPNET & 2.02 & 0.72 & 2.74 & 1.21 & 0.73 & 1.94 \\
+    CIPHER-5-MPNET & 2.27 & 0.73 & 3.00 & 1.44 & 0.64 & 2.09 \\
+    CIPHER-1-BERT & 2.10 & 0.71 & 2.81 & 1.27 & 0.73 & 1.99 \\
+    CIPHER-5-BERT & 2.32 & 0.71 & 3.03 & 1.48 & 0.73 & 2.22 \\
+\bottomrule
+\end{tabular}
+    \label{tab:expense_breakdown}
+\end{table}
+
+\begin{table}[h!]
+    \centering \small
+    \caption{Summary of failure cases on summarization task with \textit{CIPHER-5-MPNET}.}   
+    \begin{tabular}{p{0.2\textwidth} p{0.25\textwidth} p{0.45\textwidth}}
+        \toprule
+        \textbf{Type of Failures} & \textbf{Summary} & \textbf{Examples}\\
+        \midrule
+        Preference inference based on an output-revision pair ($f_t$) \newline \textit{(the most common failure type)}
+            & 1) Not totally wrong but insufficient, i.e. the inferred preference only captures a few aspects of user's latent preference. This is most common for news articles and Reddit posts, for which the user shows nuanced preference for several aspects.
+            & The dominant missing aspect is \textit{brief} or \textit{short sentences} across different context, although the agent can infer keywords such as \textit{concise}. For news article context, the agent tends to infer the preference keyword \textit{whimsical}. The agent has difficulty to infer subtle aspects, including \textit{invoke personal reflection}, \textit{immersive}, \textit{positive}, \textit{parallel structure},  \textit{inquisitive}, and \textit{skillful foreshadowing}.\vspace{5pt}
+            \\ 
+            & 2) Sometimes fail to infer some important aspects, even though the user edits clearly show such preference.
+            & The agent often could not infer \textit{second-person narrative}. For \textit{question answering style}, the agent occasionally only learns \textit{consistent format}.
+            
+            \\
+        \midrule
+        Consolidation of induced preferences from retrieved interactions ($\tilde{f}_t$) 
+            & Overall, this step can capture the majority preference relatively well, although it tends to result in a more general preference compared to the retrieved ones.
+            & When both specific phrase \textit{second-person narrative} and general phrase \textit{narrative} or \textit{narration} occur in retrieved examples, the agent often chooses to give a final preference not including the second-person perspective aspect. \\
+        \midrule
+        Retrieval of historical examples relevant to the given context 
+            & The retrieval part in general works reasonably well, with more than half of the retrieved example being truly relevant to the given context. Note that one incorrect retrieved example typically does not affect the performance, as we instruct the agent to only use the most represented preference keywords among all five retrieved examples.
+            & The agent sometimes retrieves wrong examples for Wikipedia context when its topic very relates to other context, e.g. wrongly retrieving past examples on news articles and movie reviews when the topic in the given Wikipedia context relates to these domains.
+        \\
+        \bottomrule
+
+    \end{tabular}
+\label{tab:failures}
+\end{table}
+
+\begin{table}[!h]
+    \centering
+     \caption{We report retrieval accuracy as the percentage of total retrieved document representations across all time steps and seeds that are of the same document source type as the context document for which they were retrieved. We use 3 seeds. We retrieve 600 examples for $k=1$ and 2970 examples for $k=5$.}
+    \label{tab:retrieval_acc}
+    \setlength{\tabcolsep}{0.01\linewidth}
+    \begin{tabular}{lcc}
+        \toprule
+        \textbf{Method} & \textbf{Summarization} & \textbf{Email Writing} \\
+        \midrule
+        \algname-1-B & 72.00 &  25.83 \\ 
+        \algname-1-M & \textbf{82.00} & \textbf{26.33} \\ 
+        \midrule
+        \algname-5-B & 65.79 & \textbf{26.57} \\ 
+        \algname-5-M & \textbf{76.33} & 25.45\\         
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+

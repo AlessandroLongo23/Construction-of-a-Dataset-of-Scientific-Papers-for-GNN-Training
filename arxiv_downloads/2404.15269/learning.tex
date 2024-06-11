@@ -1,0 +1,52 @@
+\section{Learning User Preference through Retrieval and Aggregation}
+
+In this section, we present our method,~\algname~(\textbf{C}onsolidates \textbf{I}nduced \textbf{P}references based on \textbf{H}istorical \textbf{E}dits with \textbf{R}etrieval), that learns user preference based on user edits.
+
+\pref{alg:cipher} shows \algname~which implements the \framework~framework. \algname~maintains a preference history $\Dcal_t = \{(x_\ell, \tilde{f}_\ell)\}_{\ell=1}^{t-1}$ of past contexts $x_\ell$ along with a preference $\tilde{f}_\ell$ inferred by the agent. \algname~assumes access to a \emph{context representation function} $\phi:\Xcal \rightarrow \RR^d$ that can map a context to a vector representation. For a given round $t$ with context $x_t$, the agent first retrieves the $k$-closest contexts from the interaction history $\Dcal_t$. We use cosine similarity for computing proximity, although other metrics such as Euclidean distance, or Hamming distance when $\phi$ outputs a binary vector, can be used. Given the retrieved contexts and their inferred preferences $\{(x_{z_i}, \tilde{f}_{z_i})\}_{i=1}^k$, we query the underlying LLM to summarize the inferred preferences $\{\tilde{f}_{z_i}\}_{i=1}^k$ into a single preference $f_t$. In the beginning, when $t \le k$, we retrieve all the past $t$ contexts. In particular, for $t=1$ we have $f_1$ as an empty string as the agent has no prior knowledge of this user's preference.\footnote{In practice, one can initialize with a publicly available preference history.}
+
+The agent uses the inferred preference $f_t$ to generate the response. This is done by concatenating the context $x_t$ with an agent prompt such as ``\emph{This user has a preference of <$f_t$> which must be used when generating the response}'', where <$f_t$> indicates where we insert the inferred preference $f_t$. We list the actual template used in our experiments in~\pref{tab:agent_prompt_template} in~\pref{app:addition_details}.
+
+Given the user edits $y'_t$, if the user edits are minimal, i.e., $\cost(y_t, y'_t) \le \delta$ for a hyperparameter $\delta$, then we 
+set the inferred preference for this round as $\tilde{f}_t = f_t$
+ as using $f_t$ for generating a response resulted in minimal edits. However, if $\cost(y_t, y'_t) > \delta$, then we query the LLM a third time to generate the inferred preference $\tilde{f}_t$ that explains why the user edited $y_t$ to $y'_t$.  We call this the \emph{Latent Preference Induction} (LPI) step. In both cases, we append $(x_t, f_t)$ to the preference history.
+ 
+ Note that we cannot query the LLM for the inferred preference in the first case where the user edit cost $c_t$ is small, i.e., $c_t \le \delta$. In this case, querying the LLM to infer the preference to explain the edits in $y'_t$ given $y_t$, will result in the LLM outputting that the agent has no preference. This is incorrect as it merely shows that the preference $f_t$ used to generate $y_t$ was sufficiently good to include most of the true user preference $f^\star_t$.
+
+ \paragraph{Computational Cost of \algname.} In a given round, \algname~adds a maximum of 3 LLM calls on top of the cost of calling the underlying inference algorithm of the agent in~\pref{line:generate}. \algname~further reduces the memory storage by only storing the representation of contexts in the preference string instead of the input itself. Finally, \algname~only adds a small prompt to the context $x_t$, before calling the agent's inference algorithm. This only slightly increases the length of the prompt, thereby, reducing the query cost associated with LLMs that scales with the number of input tokens.
+
+ 
+ 
+
+
+
+
+
+\begin{algorithm}[h!]
+\caption{\algname$(\phi, k, \delta)$. A context representation function $\phi: \Xcal \rightarrow \RR^d$, the retrieval hyperparameter $k$, and tolerance hyperparameter $\delta \ge 0$.}
+    \begin{algorithmic}[1]
+        \State $\Dcal = \emptyset$
+        \For{$t=1, 2, \cdots, T$}
+        \State User (and the world) presents a context $x_t$
+        \State Retrieve the top-$k$ examples $\{\phi(x_{z_i}), \tilde{f}_{z_i}\}_{i=1}^k$ in $\Dcal$ with maximum cosine similarity to $\phi(x_t)$
+        \State If $k > 1$, then query the LLM to aggregate these preferences $\{\tilde{f}_{z_i}\}_{i=1}^k$ into $f_t$, else $f_t = \tilde{f}_{z_1}$\label{line:merge_preferences}
+        \State Agent generates a text response $y_t$ based on  $x_t$ and $f_t$ \label{line:generate}
+        \State User edits the response to $y'_t$ using their latent preference $f^\star_t$
+        \State Agent incurs a cost $c_t = \cost(y_t, y'_t)$
+        \If{$c_t \le \delta$}
+        \State $\tilde{f}_t = f_t$
+        \Else
+        \State Query the LLM to generate a preference $\tilde{f}_t$ that best explains user edits in $(y_t, y'_t)$\label{line:infer_preference}
+        \EndIf
+        \State $\Dcal \leftarrow \Dcal \cup \{(\phi(x_t), \tilde{f}_t)\}$
+        \EndFor
+        \State Return $\sum_{t=1}^T c_t$
+    \end{algorithmic}
+    \label{alg:cipher}
+\end{algorithm}
+
+
+
+
+
+
+

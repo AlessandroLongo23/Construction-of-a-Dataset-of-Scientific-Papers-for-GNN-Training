@@ -1,0 +1,47 @@
+\section{Interactive Learning from User Edits and the \framework~Framework}
+
+We first describe LLM agents and the general learning framework from user edits. We then describe our specialized \framework~framework for learning descriptive user preference, and discuss associated learning challenges. \looseness=-1
+
+\paragraph{LLM and Language Agents.} We assume access to a language agent that internally relies on an LLM. We make no assumption about the language agent except that it can take  input $x_t$ as a piece of content and an additional prompt (which can be in-context learning examples or learned preferences) and generate a response $y_t$ . The language agent may simply perform greedy decoding on the LLM, or may perform complex planning using the given LLM to generate a response.
+
+\begin{protocol}
+\caption{\textbf{Interactive Learning from User Edits}.}
+\label{proto:learning_from_edits}
+    \begin{algorithmic}[1]
+        \For{$t=1, 2, \cdots, T$}
+        \State User and the world provide a context $x_t$
+        \State \protocolfill{Agent generates a response $y_t$ given the context $x_t$}
+        \State User edits the response to $y'_t$
+        \State Agent receives a cost of $c_t = \cost(y_t, y'_t)$
+        \EndFor
+        \State Evaluate the agent and learning algorithm on $\sum_{t=1}^T c_t$
+    \end{algorithmic}
+\end{protocol}
+
+\paragraph{Interactive Learning from User Edits.} In an application such as a writing assistant, a user interacts with the language agent over $T$ rounds. \pref{proto:learning_from_edits} shows such learning protocol. In the $t^{th}$ round, the user and the world provide a context $x_t \in \Xcal$ where $\Xcal$ is the space of all possible contexts. This context will include the user prompt in text, along with additional information provided by the user or the world, and may include multimodal data as well such as images. Given the context $x_t$, the language agent generates a response $y_t \in \Ycal$ in text, where $\Ycal$ is the space of all texts. The user edits the response $y_t$ to $y'_t$. If the user does not perform any edits, we treat this as setting $y'_t=y_t$. The agent receives a cost of $c_t = \cost(y_t, y'_t)$ for this round, which measures the user's efforts on making edits. The goal of the agent is to minimize the sum of costs across all rounds $\sum_{t=1}^T c_t$. 
+
+In our experiments, we use $\cost$ as Levenshtein edit distance~\citep{Levenshtein1965BinaryCC} in the token space which computes the minimum number of total token addition, token deletion, and token substitution necessary to convert $y_t$ to $y'_t$. In general, a higher edit distance implies that the user has made more edits and spent more efforts. We note that our framework is general enough to accommodate situations where the user tries different prompts with the same demand. We treat each call to the language agent as a different round with a different context (as the context includes the user prompt).
+
+
+\paragraph{\framework~Framework.} We describe our \framework~framework in~\pref{proto:framework} which is a specialization of the general learning setup described above in~\pref{proto:learning_from_edits}. In \framework, in the $t^{th}$ round, the agent infers the preference of the user as $f_t$, and uses it to generate a response. We assume that in this round and for the given context $x_t$, the user has a \emph{latent} preference $f^\star_t$ that drives the user to perform all edits. Furthermore, we assume that if the agent was able to infer this \emph{latent} preference ($f_t = f^\star_t$), then it will lead to minimal possible edits.\footnote{The edit cost in practice may not always be 0, as the language agent could be incapable of adeptly using the correct preference, or the user may perform edits that are inconsistent with their preference.} To remove the dependence on performance due to the choice of the base LLM agent, we compare with an oracle agent that has access to $f^\star_t$ at the start of each round. We assume that the LLM remains frozen across all methods in this work.
+
+
+
+\begin{protocol}[h!]
+\caption{\textbf{\framework}: \textbf{PRE}ference \textbf{L}earning from \textbf{U}ser's \textbf{D}irect \textbf{E}dits}
+    \begin{algorithmic}[1]
+        \For{$t=1, 2, \cdots, T$}
+        \State User presents a text context $x_t$
+        \State \protocolfill{Agent infers a preference $f_t$ using the history $\left\{(x_\ell, y_\ell, y'_\ell)\right\}_{\ell=1}^{t-1}$ and context $x_t$} 
+        \State \protocolfill{Agent uses $f_t$ and $x_t$ to generate a response $y_t$}
+        \State User edits the response to $y'_t$ using their \emph{latent} preference $f^\star_t$
+        \State Agent incurs a cost $c_t = \Delta(y_t, y'_t)$
+        \EndFor
+        \State Return $\sum_{t=1}^T c_t$
+    \end{algorithmic}
+    \label{proto:framework}
+\end{protocol}
+
+
+\paragraph{Challenges of Learning User Preference.} Learning user preference from edits is challenging. In practice, user preference are multifaceted and complex. Furthermore, user's preference can also significantly vary based on the context. The feedback in the form of user edits emerges naturally but is inherently implicit, lacking direct expressions of the actual preference and carrying subtleties that may lead to diverse interpretations. The combination of preference variability and the implicit nature of feedback poses considerable challenges for agents in accurately learning and integrating these preferences.\looseness=-1
+
