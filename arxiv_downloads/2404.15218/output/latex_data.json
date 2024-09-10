@@ -1,0 +1,135 @@
+{
+    "key": "doc",
+    "block_type": "document",
+    "children": [
+        {
+            "key": "doc/body",
+            "block_type": "body",
+            "children": [
+                {
+                    "key": "doc/body/sec0",
+                    "block_type": "sec",
+                    "children": [
+                        {
+                            "leaf id": 0,
+                            "key": "doc/body/sec0/tit",
+                            "block type": "title",
+                            "content": "First section",
+                            "leftover": "",
+                            "matches": [
+                                {
+                                    "pdf_id": "0.0",
+                                    "matching_string": "First section"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "doc/body/sec0/sub0",
+                            "block_type": "sub",
+                            "children": [
+                                {
+                                    "leaf id": 1,
+                                    "key": "doc/body/sec0/sub0/tit",
+                                    "block type": "title",
+                                    "content": "First subsection",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "0.1",
+                                            "matching_string": "First subsection"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 2,
+                                    "key": "doc/body/sec0/sub0/txl0",
+                                    "block type": "txl",
+                                    "content": "Content of the first subsection.",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "0.2",
+                                            "matching_string": "Content of the first subsection."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "key": "doc/body/sec0/sub1",
+                            "block_type": "sub",
+                            "children": [
+                                {
+                                    "leaf id": 3,
+                                    "key": "doc/body/sec0/sub1/tit",
+                                    "block type": "title",
+                                    "content": "Second subsection",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "0.3",
+                                            "matching_string": "Second subsection"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 4,
+                                    "key": "doc/body/sec0/sub1/txl0",
+                                    "block type": "txl",
+                                    "content": "Another piece of content of the second subsection.",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "0.4",
+                                            "matching_string": "Another piece of content of the second subsection."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "leaf id": 5,
+                                    "key": "doc/body/sec0/sub1/itemize1",
+                                    "block type": "itemize",
+                                    "content": "First item in the second subsection. Second item. Third and last item.",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "0.5",
+                                            "matching_string": "First item in the second subsection. "
+                                        },
+                                        {
+                                            "pdf_id": "0.7",
+                                            "matching_string": "Third and last item."
+                                        },
+                                        {
+                                            "pdf_id": "0.6",
+                                            "matching_string": "Second item. "
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "key": "doc/body/sec0/sub2",
+                            "block_type": "sub",
+                            "children": [
+                                {
+                                    "leaf id": 6,
+                                    "key": "doc/body/sec0/sub2/tit",
+                                    "block type": "title",
+                                    "content": "Third subsection",
+                                    "leftover": "",
+                                    "matches": [
+                                        {
+                                            "pdf_id": "0.8",
+                                            "matching_string": "Third subsection"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

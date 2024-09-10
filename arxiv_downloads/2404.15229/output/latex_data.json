@@ -7,201 +7,70 @@
             "key": "doc/tit",
             "block type": "title",
             "content": "MultiTier NonTerrestrial Networking for Disaster Communications: A Layered Clustering Approach Afet Haberleşmesi İçin Çok Katmanlı Karasal Olmayan Ağlanma: Katmanlı Kümeleme Yaklaşımı",
-            "leftover": "Yaklaşımı",
-            "matches": [
-                {
-                    "pdf_id": "0.1",
-                    "matching_string": "Communications: A Layered Clustering Approach "
-                },
-                {
-                    "pdf_id": "0.0",
-                    "matching_string": "MultiTier NonTerrestrial Networking for Disaster "
-                },
-                {
-                    "pdf_id": "0.2",
-                    "matching_string": "Afet Haberleşmesi İçin Çok Katmanlı Karasal "
-                },
-                {
-                    "pdf_id": "0.3",
-                    "matching_string": "Olmayan Ağlanma: Katmanlı Kümeleme "
-                }
-            ]
+            "leftover": "MultiTier NonTerrestrial Networking for Disaster Communications: A Layered Clustering Approach Afet Haberleşmesi İçin Çok Katmanlı Karasal Olmayan Ağlanma: Katmanlı Kümeleme Yaklaşımı",
+            "matches": []
         },
         {
             "leaf id": 1,
             "key": "doc/aut0",
             "block type": "author",
             "content": "{\\IEEEauthorblockN{Metin Ozturk^1,2, Berk Çiloğlu^1,2, Görkem Berkay Koç^1,2, Halim Yanikomeroglu^2} \\IEEEauthorblockA{^1Electrical and Electronics Engineering, Ankara Yıldırım Beyazıt University, Ankara, Türkiye \\IEEEauthorblockA{^2NonTerrestrial Networks (NTN) Lab, Systems and Computer Engineering, Carleton University, Ottawa, Canada} \\thanks{This research has been sponsored in part by The Scientific and Technological Research Council of Türkiye (TUBITAK).}}}",
-            "leftover": "{\\IEEEauthorblockN{Yanikomeroglu^2} \\IEEEauthorblockA{^\\IEEEauthorblockA{^Canada} \\thanks{Technological UBITAK).}}}",
-            "matches": [
-                {
-                    "pdf_id": "0.4",
-                    "matching_string": "2NonTerrestrial Networks (NTN) Lab, Systems and Computer Engineering, Carleton University, Ottawa, "
-                },
-                {
-                    "pdf_id": "0.6",
-                    "matching_string": "1Electrical and Electronics Engineering, Ankara Yıldırım Beyazıt University, Ankara, Türkiye "
-                },
-                {
-                    "pdf_id": "0.113",
-                    "matching_string": "This research has been sponsored in part by The Scientific and "
-                },
-                {
-                    "pdf_id": "0.5",
-                    "matching_string": "Metin Ozturk^1,2, Berk Çiloğlu^1,2, Görkem Berkay Koç^1,2, Halim "
-                },
-                {
-                    "pdf_id": "0.115",
-                    "matching_string": "Research Council of Türkiye (T"
-                }
-            ]
+            "leftover": "{\\IEEEauthorblockN{Metin Ozturk^1,2, Berk Çiloğlu^1,2, Görkem Berkay Koç^1,2, Halim Yanikomeroglu^2} \\IEEEauthorblockA{^1Electrical and Electronics Engineering, Ankara Yıldırım Beyazıt University, Ankara, Türkiye \\IEEEauthorblockA{^2NonTerrestrial Networks (NTN) Lab, Systems and Computer Engineering, Carleton University, Ottawa, Canada} \\thanks{This research has been sponsored in part by The Scientific and Technological Research Council of Türkiye (TUBITAK).}}}",
+            "matches": []
         },
         {
             "leaf id": 2,
             "key": "doc/abs",
             "block type": "abstract",
             "content": "It is crucial to deploy temporary nonterrestrial networks (NTN) in disaster situations where terrestrial networks are no longer operable. Deploying uncrewed aerial vehicle base stations (UAVBSs) can provide a radio access network (RAN); however, the backhaul link may also be damaged and unserviceable in such disaster conditions. In this regard, highaltitude platform stations (HAPS) spark attention as they can be deployed as super macro base stations (SMBS) and data centers. Therefore, in this study, we investigate a threelayer heterogeneous network with different topologies to prolong the lifespan of the temporary network by using UAVBSs for RAN services and HAPSSMBS as a backhaul. Furthermore, a twolayer clustering algorithm is proposed to handle the UAVBS adhoc networking effectively.",
-            "leftover": "",
-            "matches": [
-                {
-                    "pdf_id": "0.39",
-                    "matching_string": "networks (NTN) in disaster situations where terrestrial networks "
-                },
-                {
-                    "pdf_id": "0.41",
-                    "matching_string": "stations (UAVBSs) can provide a radio access network (RAN); "
-                },
-                {
-                    "pdf_id": "0.42",
-                    "matching_string": "however, the backhaul link may also be damaged and unserviceable "
-                },
-                {
-                    "pdf_id": "0.44",
-                    "matching_string": "platform stations (HAPS) spark attention as they can be deployed "
-                },
-                {
-                    "pdf_id": "0.45",
-                    "matching_string": "as super macro base stations (SMBS) and data centers. Therefore, "
-                },
-                {
-                    "pdf_id": "0.46",
-                    "matching_string": "in this study, we investigate a threelayer heterogeneous network "
-                },
-                {
-                    "pdf_id": "0.47",
-                    "matching_string": "with different topologies to prolong the lifespan of the temporary "
-                },
-                {
-                    "pdf_id": "0.48",
-                    "matching_string": "network by using UAVBSs for RAN services and HAPSSMBS "
-                },
-                {
-                    "pdf_id": "0.49",
-                    "matching_string": "as a backhaul. Furthermore, a twolayer clustering algorithm is "
-                },
-                {
-                    "pdf_id": "0.50",
-                    "matching_string": "proposed to handle the UAVBS adhoc networking effectively."
-                },
-                {
-                    "pdf_id": "0.38",
-                    "matching_string": "It is crucial to deploy temporary nonterrestrial "
-                },
-                {
-                    "pdf_id": "0.40",
-                    "matching_string": "are no longer operable. Deploying uncrewed aerial vehicle base "
-                },
-                {
-                    "pdf_id": "0.43",
-                    "matching_string": "in such disaster conditions. In this regard, highaltitude "
-                }
-            ]
+            "leftover": "It is crucial to deploy temporary nonterrestrial networks (NTN) in disaster situations where terrestrial networks are no longer operable. Deploying uncrewed aerial vehicle base stations (UAVBSs) can provide a radio access network (RAN); however, the backhaul link may also be damaged and unserviceable in such disaster conditions. In this regard, highaltitude platform stations (HAPS) spark attention as they can be deployed as super macro base stations (SMBS) and data centers. Therefore, in this study, we investigate a threelayer heterogeneous network with different topologies to prolong the lifespan of the temporary network by using UAVBSs for RAN services and HAPSSMBS as a backhaul. Furthermore, a twolayer clustering algorithm is proposed to handle the UAVBS adhoc networking effectively.",
+            "matches": []
         },
         {
             "key": "doc/body",
             "block_type": "body",
             "children": [
                 {
-                    "leaf id": 3,
                     "key": "doc/body/IEEEkeywords0",
-                    "block type": "IEEEkeywords",
-                    "content": "backhaul, disaster, HAPS, resilience, UAV",
-                    "leftover": "",
-                    "matches": [
+                    "block_type": "IEEEkeywords",
+                    "children": [
                         {
-                            "pdf_id": "0.51",
-                            "matching_string": "backhaul, disaster, HAPS, resilience, UAV"
+                            "leaf id": 3,
+                            "key": "doc/body/IEEEkeywords0/txl0",
+                            "block type": "txl",
+                            "content": "backhaul, disaster, HAPS, resilience, UAV",
+                            "leftover": "backhaul, disaster, HAPS, resilience, UAV",
+                            "matches": []
                         }
                     ]
                 },
                 {
-                    "leaf id": 4,
                     "key": "doc/body/ozet1",
-                    "block type": "ozet",
-                    "content": "Karasal ağların artık çalışmayı durdurduğu afet durumlarında, geçici bir karasal olmayan ağların konuşlandırılması önemlidir. İnsansız hava aracı baz istasyonlarının (İHABİ'ler) konuşlandırılması bir radyo erişim ağı (RAN) sağlayabilir ancak ana taşıyıcı bağlantısı da bu tür afet koşullarında hasar görmüş olabilir ve hizmet veremeyebilir. Bu bağlamda, yüksekirtifa platform istasyonu (HAPS), süper makro baz istasyonu (SMBS) ve veri merkezi olarak konuşlandırılabileceği için dikkatleri üstüne çeker. Bu nedenle, bu çalışmada, RAN hizmetleri için İHABİ ve ana taşıyıcı olarak HAPSSMBS kullanarak geçici ağın ömrünü uzatmak için farklı topolojilere sahip üç katmanlı heterojen bir ağı araştırıyoruz. Ayrıca, afet senaryolarında, İHABİ'lerin adhoc ağ haberleşmesini etkin bir şekilde ele almak için iki katmanlı bir kümeleme algoritması önerilmiştir.",
-                    "leftover": "",
-                    "matches": [
+                    "block_type": "ozet",
+                    "children": [
                         {
-                            "pdf_id": "0.58",
-                            "matching_string": "platform istasyonu (HAPS), süper makro baz istasyonu (SMBS) "
-                        },
-                        {
-                            "pdf_id": "0.61",
-                            "matching_string": "ömrünü uzatmak için farklı topolojilere sahip üç katmanlı "
-                        },
-                        {
-                            "pdf_id": "0.64",
-                            "matching_string": "iki katmanlı bir kümeleme algoritması "
-                        },
-                        {
-                            "pdf_id": "0.57",
-                            "matching_string": "olabilir ve hizmet veremeyebilir. Bu bağlamda, yüksekirtifa "
-                        },
-                        {
-                            "pdf_id": "0.59",
-                            "matching_string": "ve veri merkezi olarak konuşlandırılabileceği için dikkatleri "
-                        },
-                        {
-                            "pdf_id": "0.60",
-                            "matching_string": "üstüne çeker. Bu nedenle, bu çalışmada, RAN hizmetleri için İHABİ ve ana taşıyıcı olarak HAPSSMBS kullanarak geçici "
-                        },
-                        {
-                            "pdf_id": "0.54",
-                            "matching_string": "önemlidir. İnsansız hava aracı baz istasyonlarının (İHABİ'ler) "
-                        },
-                        {
-                            "pdf_id": "0.56",
-                            "matching_string": "ana taşıyıcı bağlantısı da bu tür afet koşullarında hasar "
-                        },
-                        {
-                            "pdf_id": "0.62",
-                            "matching_string": "heterojen bir ağı araştırıyoruz. Ayrıca, afet senaryolarında, "
-                        },
-                        {
-                            "pdf_id": "0.52",
-                            "matching_string": "Karasal ağların artık çalışmayı durdurduğu afet durumlarında, "
-                        },
-                        {
-                            "pdf_id": "0.63",
-                            "matching_string": "lerin adhoc ağ haberleşmesini etkin bir şekilde ele almak için "
-                        },
-                        {
-                            "pdf_id": "0.53",
-                            "matching_string": "geçici bir karasal olmayan ağların konuşlandırılması konuşlandırılması bir radyo erişim ağı (RAN) sağlayabilir ancak görmüş ağın İHABİ'önerilmiştir."
-                        },
-                        {
-                            "pdf_id": "0.55",
-                            "matching_string": ""
+                            "leaf id": 4,
+                            "key": "doc/body/ozet1/txl0",
+                            "block type": "txl",
+                            "content": "Karasal ağların artık çalışmayı durdurduğu afet durumlarında, geçici bir karasal olmayan ağların konuşlandırılması önemlidir. İnsansız hava aracı baz istasyonlarının (İHABİ'ler) konuşlandırılması bir radyo erişim ağı (RAN) sağlayabilir ancak ana taşıyıcı bağlantısı da bu tür afet koşullarında hasar görmüş olabilir ve hizmet veremeyebilir. Bu bağlamda, yüksekirtifa platform istasyonu (HAPS), süper makro baz istasyonu (SMBS) ve veri merkezi olarak konuşlandırılabileceği için dikkatleri üstüne çeker. Bu nedenle, bu çalışmada, RAN hizmetleri için İHABİ ve ana taşıyıcı olarak HAPSSMBS kullanarak geçici ağın ömrünü uzatmak için farklı topolojilere sahip üç katmanlı heterojen bir ağı araştırıyoruz. Ayrıca, afet senaryolarında, İHABİ'lerin adhoc ağ haberleşmesini etkin bir şekilde ele almak için iki katmanlı bir kümeleme algoritması önerilmiştir.",
+                            "leftover": "Karasal ağların artık çalışmayı durdurduğu afet durumlarında, geçici bir karasal olmayan ağların konuşlandırılması önemlidir. İnsansız hava aracı baz istasyonlarının (İHABİ'ler) konuşlandırılması bir radyo erişim ağı (RAN) sağlayabilir ancak ana taşıyıcı bağlantısı da bu tür afet koşullarında hasar görmüş olabilir ve hizmet veremeyebilir. Bu bağlamda, yüksekirtifa platform istasyonu (HAPS), süper makro baz istasyonu (SMBS) ve veri merkezi olarak konuşlandırılabileceği için dikkatleri üstüne çeker. Bu nedenle, bu çalışmada, RAN hizmetleri için İHABİ ve ana taşıyıcı olarak HAPSSMBS kullanarak geçici ağın ömrünü uzatmak için farklı topolojilere sahip üç katmanlı heterojen bir ağı araştırıyoruz. Ayrıca, afet senaryolarında, İHABİ'lerin adhoc ağ haberleşmesini etkin bir şekilde ele almak için iki katmanlı bir kümeleme algoritması önerilmiştir.",
+                            "matches": []
                         }
                     ]
                 },
                 {
-                    "leaf id": 5,
                     "key": "doc/body/IEEEanahtar2",
-                    "block type": "IEEEanahtar",
-                    "content": "afet, ana taşıyıcı, esneklik, HAPS, İHA",
-                    "leftover": "afet, ana taşıyıcı, esneklik, HAPS, İHA",
-                    "matches": []
+                    "block_type": "IEEEanahtar",
+                    "children": [
+                        {
+                            "leaf id": 5,
+                            "key": "doc/body/IEEEanahtar2/txl0",
+                            "block type": "txl",
+                            "content": "afet, ana taşıyıcı, esneklik, HAPS, İHA",
+                            "leftover": "afet, ana taşıyıcı, esneklik, HAPS, İHA",
+                            "matches": []
+                        }
+                    ]
                 },
                 {
                     "key": "doc/body/sec3",
@@ -212,350 +81,48 @@
                             "key": "doc/body/sec3/tit",
                             "block type": "title",
                             "content": "Introduction",
-                            "leftover": "",
-                            "matches": [
-                                {
-                                    "pdf_id": "0.66",
-                                    "matching_string": "Introduction"
-                                }
-                            ]
+                            "leftover": "Introduction",
+                            "matches": []
                         },
                         {
                             "leaf id": 7,
                             "key": "doc/body/sec3/txl0",
                             "block type": "txl",
                             "content": "In times of natural disasters and humanitarian crises, ensuring effective communication channels is crucial for coordinating search and rescue~(SAR) efforts, disseminating vital information, and providing essential services to people in affected regions. Since traditional communication infrastructures are often vulnerable to damage or complete collapse during such events, the use of uncrewed aerial vehicles~(UAVs), as nonterrestrial networks~(NTN) element, emerges as a promising solution to meet communication needs. This is achieved by deploying base stations~(BSs) on UAVs, which are referred to as UAVBSs. UAVs can be regarded as an ideal choice for SAR missions, disaster management, and emergency response operations due to their speed, flexibility, and mobility, and they can be easily deployed and positioned anywhere, even in hardtoreach areas, providing communication connectivity.",
-                            "leftover": "",
-                            "matches": [
-                                {
-                                    "pdf_id": "0.67",
-                                    "matching_string": "In times of natural disasters and humanitarian crises, ensuring "
-                                },
-                                {
-                                    "pdf_id": "0.70",
-                                    "matching_string": "and providing essential services to people in affected "
-                                },
-                                {
-                                    "pdf_id": "0.71",
-                                    "matching_string": "regions. Since traditional communication infrastructures are "
-                                },
-                                {
-                                    "pdf_id": "0.72",
-                                    "matching_string": "often vulnerable to damage or complete collapse during such "
-                                },
-                                {
-                                    "pdf_id": "0.77",
-                                    "matching_string": "to as UAVBSs. UAVs can be regarded as an ideal choice for "
-                                },
-                                {
-                                    "pdf_id": "0.78",
-                                    "matching_string": "SAR missions, disaster management, and emergency response "
-                                },
-                                {
-                                    "pdf_id": "0.80",
-                                    "matching_string": "they can be easily deployed and positioned anywhere, even in "
-                                },
-                                {
-                                    "pdf_id": "0.81",
-                                    "matching_string": "hardtoreach areas, providing communication connectivity."
-                                },
-                                {
-                                    "pdf_id": "0.68",
-                                    "matching_string": "effective communication channels is crucial for coordinating "
-                                },
-                                {
-                                    "pdf_id": "0.73",
-                                    "matching_string": "events, the use of uncrewed aerial vehicles~(UAVs), as nonterrestrial "
-                                },
-                                {
-                                    "pdf_id": "0.76",
-                                    "matching_string": "by deploying base stations~(BSs) on UAVs, which are referred "
-                                },
-                                {
-                                    "pdf_id": "0.69",
-                                    "matching_string": "search and rescue~(SAR) efforts, disseminating vital information, "
-                                },
-                                {
-                                    "pdf_id": "0.79",
-                                    "matching_string": "operations due to their speed, flexibility, and mobility, and "
-                                },
-                                {
-                                    "pdf_id": "0.75",
-                                    "matching_string": "solution to meet communication needs. This is achieved "
-                                },
-                                {
-                                    "pdf_id": "0.74",
-                                    "matching_string": "networks~(NTN) element, emerges as a promising "
-                                }
-                            ]
+                            "leftover": "In times of natural disasters and humanitarian crises, ensuring effective communication channels is crucial for coordinating search and rescue~(SAR) efforts, disseminating vital information, and providing essential services to people in affected regions. Since traditional communication infrastructures are often vulnerable to damage or complete collapse during such events, the use of uncrewed aerial vehicles~(UAVs), as nonterrestrial networks~(NTN) element, emerges as a promising solution to meet communication needs. This is achieved by deploying base stations~(BSs) on UAVs, which are referred to as UAVBSs. UAVs can be regarded as an ideal choice for SAR missions, disaster management, and emergency response operations due to their speed, flexibility, and mobility, and they can be easily deployed and positioned anywhere, even in hardtoreach areas, providing communication connectivity.",
+                            "matches": []
                         },
                         {
                             "leaf id": 8,
                             "key": "doc/body/sec3/txl1",
                             "block type": "txl",
                             "content": "Nonetheless, on the flip side of the coin, UAVs need proper backhauling strategy in the event of aforementioned disasters, as the terrestrial network components may be damaged and/or fully collapsed. At this point, the use of high altitude platform stations (HAPS), another NTN element, can be considered as a viable solution, given that they provide high capacity, ubiquitous connectivity, and a powerful data center to the network due to the super macro BS~(SMBS)International Telecommunication Union (ITU) makes reference HAPSSMBS as highaltitude IMT BS (HIBS). it contains. HAPS is located in the stratosphere, at an altitude of approximately 20 km above the Earth's surface. This strategic positioning allows HAPS to provide highquality communication services to a large geographical area without repositioning.",
-                            "leftover": "",
-                            "matches": [
-                                {
-                                    "pdf_id": "0.82",
-                                    "matching_string": "Nonetheless, on the flip side of the coin, UAVs need proper "
-                                },
-                                {
-                                    "pdf_id": "0.84",
-                                    "matching_string": "as the terrestrial network components may be damaged and/or "
-                                },
-                                {
-                                    "pdf_id": "0.85",
-                                    "matching_string": "fully collapsed. At this point, the use of high altitude platform "
-                                },
-                                {
-                                    "pdf_id": "0.87",
-                                    "matching_string": "a viable solution, given that they provide high capacity, ubiquitous "
-                                },
-                                {
-                                    "pdf_id": "0.90",
-                                    "matching_string": "is located in the stratosphere, at an altitude of approximately "
-                                },
-                                {
-                                    "pdf_id": "0.91",
-                                    "matching_string": "20 km above the Earth's surface. This strategic positioning "
-                                },
-                                {
-                                    "pdf_id": "0.92",
-                                    "matching_string": "allows HAPS to provide highquality communication services "
-                                },
-                                {
-                                    "pdf_id": "0.83",
-                                    "matching_string": "backhauling strategy in the event of aforementioned disasters, "
-                                },
-                                {
-                                    "pdf_id": "0.88",
-                                    "matching_string": "connectivity, and a powerful data center to the network "
-                                },
-                                {
-                                    "pdf_id": "0.116",
-                                    "matching_string": "as highaltitude IMT BS (H"
-                                },
-                                {
-                                    "pdf_id": "0.86",
-                                    "matching_string": "stations (HAPS), another NTN element, can be considered as "
-                                },
-                                {
-                                    "pdf_id": "0.114",
-                                    "matching_string": "Telecommunication Union (ITU) makes reference HAPSSMBS IBS). it contains. HAPS "
-                                },
-                                {
-                                    "pdf_id": "0.89",
-                                    "matching_string": "due to the super macro BS~(SMBS)International to a large geographical area without repositioning."
-                                },
-                                {
-                                    "pdf_id": "0.93",
-                                    "matching_string": ""
-                                }
-                            ]
+                            "leftover": "Nonetheless, on the flip side of the coin, UAVs need proper backhauling strategy in the event of aforementioned disasters, as the terrestrial network components may be damaged and/or fully collapsed. At this point, the use of high altitude platform stations (HAPS), another NTN element, can be considered as a viable solution, given that they provide high capacity, ubiquitous connectivity, and a powerful data center to the network due to the super macro BS~(SMBS)International Telecommunication Union (ITU) makes reference HAPSSMBS as highaltitude IMT BS (HIBS). it contains. HAPS is located in the stratosphere, at an altitude of approximately 20 km above the Earth's surface. This strategic positioning allows HAPS to provide highquality communication services to a large geographical area without repositioning.",
+                            "matches": []
                         },
                         {
                             "leaf id": 9,
                             "key": "doc/body/sec3/txl2",
                             "block type": "txl",
                             "content": "Although extensive research has been conducted on the use of terrestrial BSs for backhauling UAVs during disaster scenarios, studies on the use of HAPSSMBS for backhauling purposes in such cases are still in their infancy. The study in analyzed the network coverage based on highaltitude platformsassisted backhaul and lowaltitude platforms direct backhaul strategies in postdisaster areas. The authors in studied on the UAVBSs through HAPSassisted backhauling within a cellfree scheme. A framework for planning and evaluating aerial platformbased wireless backhaul networks was proposed in, wherein a number of variables such as altitude, platform type, deployment strategy, energy management, and security were considered. The study in focused on collecting internet of things~(IoT) data in a disaster scenario using UAVs and HAPSSMBS.",
-                            "leftover": "",
-                            "matches": [
-                                {
-                                    "pdf_id": "0.95",
-                                    "matching_string": "use of terrestrial BSs for backhauling UAVs during disaster "
-                                },
-                                {
-                                    "pdf_id": "0.96",
-                                    "matching_string": "scenarios, studies on the use of HAPSSMBS for backhauling "
-                                },
-                                {
-                                    "pdf_id": "0.101",
-                                    "matching_string": "studied on the UAVBSs through HAPSassisted backhauling "
-                                },
-                                {
-                                    "pdf_id": "0.102",
-                                    "matching_string": "within a cellfree scheme. A framework for planning and "
-                                },
-                                {
-                                    "pdf_id": "0.103",
-                                    "matching_string": "evaluating aerial platformbased wireless backhaul networks "
-                                },
-                                {
-                                    "pdf_id": "0.105",
-                                    "matching_string": "altitude, platform type, deployment strategy, energy management, "
-                                },
-                                {
-                                    "pdf_id": "0.108",
-                                    "matching_string": "using UAVs and HAPSSMBS."
-                                },
-                                {
-                                    "pdf_id": "0.94",
-                                    "matching_string": "Although extensive research has been conducted on the "
-                                },
-                                {
-                                    "pdf_id": "0.99",
-                                    "matching_string": "platformsassisted backhaul and lowaltitude platforms direct "
-                                },
-                                {
-                                    "pdf_id": "0.100",
-                                    "matching_string": "backhaul strategies in postdisaster areas. The authors in "
-                                },
-                                {
-                                    "pdf_id": "0.104",
-                                    "matching_string": "was proposed in, wherein a number of variables such as "
-                                },
-                                {
-                                    "pdf_id": "0.106",
-                                    "matching_string": "and security were considered. The study in focused "
-                                },
-                                {
-                                    "pdf_id": "0.107",
-                                    "matching_string": "on collecting internet of things~(IoT) data in a disaster scenario "
-                                },
-                                {
-                                    "pdf_id": "0.97",
-                                    "matching_string": "purposes in such cases are still in their infancy. The study "
-                                },
-                                {
-                                    "pdf_id": "0.98",
-                                    "matching_string": "in analyzed the network coverage based on highaltitude "
-                                }
-                            ]
+                            "leftover": "Although extensive research has been conducted on the use of terrestrial BSs for backhauling UAVs during disaster scenarios, studies on the use of HAPSSMBS for backhauling purposes in such cases are still in their infancy. The study in analyzed the network coverage based on highaltitude platformsassisted backhaul and lowaltitude platforms direct backhaul strategies in postdisaster areas. The authors in studied on the UAVBSs through HAPSassisted backhauling within a cellfree scheme. A framework for planning and evaluating aerial platformbased wireless backhaul networks was proposed in, wherein a number of variables such as altitude, platform type, deployment strategy, energy management, and security were considered. The study in focused on collecting internet of things~(IoT) data in a disaster scenario using UAVs and HAPSSMBS.",
+                            "matches": []
                         },
                         {
                             "leaf id": 10,
                             "key": "doc/body/sec3/txl3",
                             "block type": "txl",
-                            "content": "This current study is one of the leading works to mention that HAPSSMBS can create a backhaul link for UAVs in the context of disaster scenario. In particular, a threelayer network is proposed, wherein the user equipments~(UEs) are on the first layer (i.e., ground), UAVBSs are on the second layer (i.e., 100200 meters above the ground) providing radio access network~(RAN) services, and HAPSSMBS is on the third layer (i.e., around 20 km from the ground) providing backhaul services to the UAVBSs. In addition, a twolayer clustering algorithm is proposed, such that UEs, who gather in hotspots, form clusters on the first layer, and the UAVBSs on the second layer are positioned according to the results of this clustering. Then, a further clustering operation is also performed on the UAVBSs for the backhaul link. More specifically, the cluster head UAV, referred to as HUAV, collects data from other UAVs in the form of adhoc networking and transmit to HAPSSMBS. In other words, only HUAVpositioned at a predesignated location that has a grid power connection as well as uninterrupted power supplyhas a backhaul link to prolong the network lifespan, because the energy consumption of nonhead UAVs~(referred to as NHUAVs) for the backhaul connection is eliminated in our proposed topology.",
-                            "leftover": "network~(",
-                            "matches": [
-                                {
-                                    "pdf_id": "0.109",
-                                    "matching_string": "This current study is one of the leading works to mention "
-                                },
-                                {
-                                    "pdf_id": "0.110",
-                                    "matching_string": "that HAPSSMBS can create a backhaul link for UAVs in the "
-                                },
-                                {
-                                    "pdf_id": "1.1",
-                                    "matching_string": "(i.e., 100200 meters above the ground) providing radio access "
-                                },
-                                {
-                                    "pdf_id": "1.6",
-                                    "matching_string": "layer (i.e., around 20 km from the ground) providing backhaul "
-                                },
-                                {
-                                    "pdf_id": "1.7",
-                                    "matching_string": "services to the UAVBSs. In addition, a twolayer clustering "
-                                },
-                                {
-                                    "pdf_id": "1.8",
-                                    "matching_string": "algorithm is proposed, such that UEs, who gather in hotspots, "
-                                },
-                                {
-                                    "pdf_id": "1.9",
-                                    "matching_string": "form clusters on the first layer, and the UAVBSs on the second "
-                                },
-                                {
-                                    "pdf_id": "1.10",
-                                    "matching_string": "layer are positioned according to the results of this clustering. "
-                                },
-                                {
-                                    "pdf_id": "1.11",
-                                    "matching_string": "Then, a further clustering operation is also performed on "
-                                },
-                                {
-                                    "pdf_id": "1.12",
-                                    "matching_string": "the UAVBSs for the backhaul link. More specifically, the "
-                                },
-                                {
-                                    "pdf_id": "1.20",
-                                    "matching_string": "cluster head UAV, referred to as HUAV, collects data from "
-                                },
-                                {
-                                    "pdf_id": "1.22",
-                                    "matching_string": "other UAVs in the form of adhoc networking and transmit "
-                                },
-                                {
-                                    "pdf_id": "1.24",
-                                    "matching_string": "a predesignated location that has a grid power connection as "
-                                },
-                                {
-                                    "pdf_id": "1.26",
-                                    "matching_string": "prolong the network lifespan, because the energy consumption "
-                                },
-                                {
-                                    "pdf_id": "1.28",
-                                    "matching_string": "connection is eliminated in our proposed topology."
-                                },
-                                {
-                                    "pdf_id": "0.111",
-                                    "matching_string": "context of disaster scenario. In particular, a threelayer network "
-                                },
-                                {
-                                    "pdf_id": "1.0",
-                                    "matching_string": "first layer (i.e., ground), UAVBSs are on the second layer "
-                                },
-                                {
-                                    "pdf_id": "1.4",
-                                    "matching_string": "RAN) services, and HAPSSMBS is on the third "
-                                },
-                                {
-                                    "pdf_id": "1.23",
-                                    "matching_string": "to HAPSSMBS. In other words, only HUAVpositioned at "
-                                },
-                                {
-                                    "pdf_id": "1.25",
-                                    "matching_string": "well as uninterrupted power supplyhas a backhaul link to "
-                                },
-                                {
-                                    "pdf_id": "1.27",
-                                    "matching_string": "of nonhead UAVs~(referred to as NHUAVs) for the backhaul "
-                                },
-                                {
-                                    "pdf_id": "0.112",
-                                    "matching_string": "is proposed, wherein the user equipments~(UEs) are on the "
-                                }
-                            ]
+                            "content": "This current study is one of the leading works to mention that HAPSSMBS can create a backhaul link for UAVs in the context of disaster scenario. In particular, a threelayer network is proposed, wherein the user equipments~(UEs) are on the first layer (i.e., ground), UAVBSs are on the second layer (i.e., 100200 meters above the ground) providing radio access network~(RAN) services, and HAPSSMBS is on the third layer (i.e., around 20 km from the ground) providing backhaul services to the UAVBSs. In addition, a twolayer clustering algorithm is proposed, such that UEs, who gather in hotspots, form clusters on the first layer, and the UAVBSs on the second layer are positioned according to the results of this clustering. Then, a further clustering operation is also performed on the UAVBSs for the backhaul link. More specifically, the cluster head UAV, referred to as HUAV, collects data from other UAVs in the form of adhoc}networking and transmit to HAPSSMBS. In other words, only HUAVpositioned at a predesignated location that has a grid power connection as well as uninterrupted power supplyhas a backhaul link to prolong the network lifespan, because the energy consumption of nonhead UAVs~(referred to as NHUAVs) for the backhaul connection is eliminated in our proposed topology.",
+                            "leftover": "This current study is one of the leading works to mention that HAPSSMBS can create a backhaul link for UAVs in the context of disaster scenario. In particular, a threelayer network is proposed, wherein the user equipments~(UEs) are on the first layer (i.e., ground), UAVBSs are on the second layer (i.e., 100200 meters above the ground) providing radio access network~(RAN) services, and HAPSSMBS is on the third layer (i.e., around 20 km from the ground) providing backhaul services to the UAVBSs. In addition, a twolayer clustering algorithm is proposed, such that UEs, who gather in hotspots, form clusters on the first layer, and the UAVBSs on the second layer are positioned according to the results of this clustering. Then, a further clustering operation is also performed on the UAVBSs for the backhaul link. More specifically, the cluster head UAV, referred to as HUAV, collects data from other UAVs in the form of adhoc}networking and transmit to HAPSSMBS. In other words, only HUAVpositioned at a predesignated location that has a grid power connection as well as uninterrupted power supplyhas a backhaul link to prolong the network lifespan, because the energy consumption of nonhead UAVs~(referred to as NHUAVs) for the backhaul connection is eliminated in our proposed topology.",
+                            "matches": []
                         },
                         {
                             "leaf id": 11,
                             "key": "doc/body/sec3/txl4",
                             "block type": "txl",
                             "content": "As we consider a disaster scenario where providing connectivity is of paramount importance, we do not target to minimize the overall energy consumption of the network; instead, we aim to maximize the network lifespan to provide communication services for a longer time by minimizing the energy consumption of network components that rely solely on battery energy sources.",
-                            "leftover": "",
-                            "matches": [
-                                {
-                                    "pdf_id": "1.29",
-                                    "matching_string": "As we consider a disaster scenario where providing connectivity "
-                                },
-                                {
-                                    "pdf_id": "1.30",
-                                    "matching_string": "is of paramount importance, we do not target to "
-                                },
-                                {
-                                    "pdf_id": "1.31",
-                                    "matching_string": "minimize the overall energy consumption of the network; "
-                                },
-                                {
-                                    "pdf_id": "1.32",
-                                    "matching_string": "instead, we aim to maximize the network lifespan to provide "
-                                },
-                                {
-                                    "pdf_id": "1.33",
-                                    "matching_string": "communication services for a longer time by minimizing the "
-                                },
-                                {
-                                    "pdf_id": "1.34",
-                                    "matching_string": "energy consumption of network components that rely solely "
-                                },
-                                {
-                                    "pdf_id": "1.35",
-                                    "matching_string": "on battery energy sources."
-                                }
-                            ]
+                            "leftover": "As we consider a disaster scenario where providing connectivity is of paramount importance, we do not target to minimize the overall energy consumption of the network; instead, we aim to maximize the network lifespan to provide communication services for a longer time by minimizing the energy consumption of network components that rely solely on battery energy sources.",
+                            "matches": []
                         }
                     ]
                 },
@@ -568,28 +135,20 @@
                             "key": "doc/body/sec4/tit",
                             "block type": "title",
                             "content": "System Model",
-                            "leftover": "",
-                            "matches": [
-                                {
-                                    "pdf_id": "1.37",
-                                    "matching_string": "System Model"
-                                }
-                            ]
+                            "leftover": "System Model",
+                            "matches": []
                         },
                         {
-                            "leaf id": 13,
                             "key": "doc/body/sec4/figure*0",
-                            "block type": "figure*",
-                            "content": "hbt!] \\centering \\shorthandoff{=} \\includegraphics[width=.6\\linewidth,trim={1cm 0cm 1cm 1cm},clip]{Figures/systemmodel.pdf} \\shorthandoff{=} A city model is formed during a disaster, infrastructures have collapsed and communication is provided by UAVs, HAPS is backhauling the UAVs, and UEs are clustered in places such as gathering areas.",
-                            "leftover": "hbt!] \\centering \\shorthandoff{=} \\includegraphics[width=.6\\linewidth,trim={1cm 0cm 1cm 1cm},clip]{Figures/systemmodel.pdf} \\shorthandoff{=} ",
-                            "matches": [
+                            "block_type": "figure*",
+                            "children": [
                                 {
-                                    "pdf_id": "2.1",
-                                    "matching_string": "and UEs are clustered in places such as gathering areas."
-                                },
-                                {
-                                    "pdf_id": "2.0",
-                                    "matching_string": "A city model is formed during a disaster, infrastructures have collapsed and communication is provided by UAVs, HAPS is backhauling the UAVs, "
+                                    "leaf id": 13,
+                                    "key": "doc/body/sec4/figure*0/cpt0",
+                                    "block type": "cpt",
+                                    "content": "A city model is formed during a disaster, infrastructures have collapsed and communication is provided by UAVs, HAPS is backhauling the UAVs, and UEs are clustered in places such as gathering areas.",
+                                    "leftover": "A city model is formed during a disaster, infrastructures have collapsed and communication is provided by UAVs, HAPS is backhauling the UAVs, and UEs are clustered in places such as gathering areas.",
+                                    "matches": []
                                 }
                             ]
                         },
@@ -602,66 +161,16 @@
                                     "key": "doc/body/sec4/sub1/tit",
                                     "block type": "title",
                                     "content": "Network Model",
-                                    "leftover": "",
-                                    "matches": [
-                                        {
-                                            "pdf_id": "1.36",
-                                            "matching_string": "Network Model"
-                                        }
-                                    ]
+                                    "leftover": "Network Model",
+                                    "matches": []
                                 },
                                 {
                                     "leaf id": 15,
                                     "key": "doc/body/sec4/sub1/txl0",
                                     "block type": "txl",
-                                    "content": "A threetier vertical heterogeneous network~(VHetNet) including n ∈ UAVBSs, with j=1, 2, ..., n storing the indices of UAVs, and a single HAPSSMBS is considered as a network model. The environment area is 3 km × 3 km. There are also e ∈ users/UEs, with i=1, 2, ..., e storing the indices for the users/UEs, distributed around the environment by forming clusters. HAPS is located 20 km above the center of the environment, while the UAVs are distributed around the environment with an altitude of 150 m. There are also landing spots, powered by grid and generators, in some parts of the city. The system model is illustrated in Fig.~.",
-                                    "leftover": "Fig.~.",
-                                    "matches": [
-                                        {
-                                            "pdf_id": "1.57",
-                                            "matching_string": "indices of UAVs, and a single HAPSSMBS is considered as a "
-                                        },
-                                        {
-                                            "pdf_id": "1.65",
-                                            "matching_string": "by forming clusters. HAPS is located 20 km above the center "
-                                        },
-                                        {
-                                            "pdf_id": "1.67",
-                                            "matching_string": "of the environment, while the UAVs are distributed around the "
-                                        },
-                                        {
-                                            "pdf_id": "1.69",
-                                            "matching_string": "environment with an altitude of 150 m. There are also landing "
-                                        },
-                                        {
-                                            "pdf_id": "1.71",
-                                            "matching_string": "spots, powered by grid and generators, in some parts of the "
-                                        },
-                                        {
-                                            "pdf_id": "1.59",
-                                            "matching_string": "network model. The environment area is 3 km × 3 km. There "
-                                        },
-                                        {
-                                            "pdf_id": "1.63",
-                                            "matching_string": "indices for the users/UEs, distributed around the environment "
-                                        },
-                                        {
-                                            "pdf_id": "1.73",
-                                            "matching_string": "city. The system model is illustrated in "
-                                        },
-                                        {
-                                            "pdf_id": "1.53",
-                                            "matching_string": "A threetier vertical heterogeneous network~(VHetNet) including "
-                                        },
-                                        {
-                                            "pdf_id": "1.60",
-                                            "matching_string": "are also e ∈ users/UEs, with i=1, 2, ..., e storing the "
-                                        },
-                                        {
-                                            "pdf_id": "1.54",
-                                            "matching_string": "n ∈ UAVBSs, with j=1, 2, ..., n storing the "
-                                        }
-                                    ]
+                                    "content": "A threetier vertical heterogeneous network~(VHetNet) including n ∈ℕ UAVBSs, with j=1, 2, ..., n storing the indices of UAVs, and a single HAPSSMBS is considered as a network model. The environment area is 3 km × 3 km. There are also e ∈ℕ users/UEs, with i=1, 2, ..., e storing the indices for the users/UEs, distributed around the environment by forming clusters. HAPS is located 20 km above the center of the environment, while the UAVs are distributed around the environment with an altitude of 150 m. There are also landing spots, powered by grid and generators, in some parts of the city. The system model is illustrated in Fig..",
+                                    "leftover": "A threetier vertical heterogeneous network~(VHetNet) including n ∈ℕ UAVBSs, with j=1, 2, ..., n storing the indices of UAVs, and a single HAPSSMBS is considered as a network model. The environment area is 3 km × 3 km. There are also e ∈ℕ users/UEs, with i=1, 2, ..., e storing the indices for the users/UEs, distributed around the environment by forming clusters. HAPS is located 20 km above the center of the environment, while the UAVs are distributed around the environment with an altitude of 150 m. There are also landing spots, powered by grid and generators, in some parts of the city. The system model is illustrated in Fig..",
+                                    "matches": []
                                 }
                             ]
                         },
@@ -674,165 +183,40 @@
                                     "key": "doc/body/sec4/sub2/tit",
                                     "block type": "title",
                                     "content": "Energy Consumption Model",
-                                    "leftover": "",
-                                    "matches": [
-                                        {
-                                            "pdf_id": "1.74",
-                                            "matching_string": "Energy Consumption Model"
-                                        }
-                                    ]
+                                    "leftover": "Energy Consumption Model",
+                                    "matches": []
                                 },
                                 {
                                     "leaf id": 17,
                                     "key": "doc/body/sec4/sub2/txl0",
                                     "block type": "txl",
                                     "content": "We are mainly interested in the energy consumption of the UAVs in the network as they are mostly batterypowered and can create a bottleneck in the communication service time. The total energy consumption of a UAV, ET, is usually modeled by the accumulation of the energy consumption values due to communication, EC, and flight, such as hovering and mobility. In our scenario, we aim to investigate the dynamics of the total energy consumption of the UAV network; since the communication energy consumption is the predominant factor, and the flight energy consumption remains consistent across all comparisons, we solely focus on the communication~energy.",
-                                    "leftover": "mobility. ",
-                                    "matches": [
-                                        {
-                                            "pdf_id": "1.75",
-                                            "matching_string": "We are mainly interested in the energy consumption of the "
-                                        },
-                                        {
-                                            "pdf_id": "1.76",
-                                            "matching_string": "UAVs in the network as they are mostly batterypowered and "
-                                        },
-                                        {
-                                            "pdf_id": "1.78",
-                                            "matching_string": "total energy consumption of a UAV, ET, is usually modeled "
-                                        },
-                                        {
-                                            "pdf_id": "1.79",
-                                            "matching_string": "by the accumulation of the energy consumption values due to "
-                                        },
-                                        {
-                                            "pdf_id": "1.82",
-                                            "matching_string": "the total energy consumption of the UAV network; since the "
-                                        },
-                                        {
-                                            "pdf_id": "1.83",
-                                            "matching_string": "communication energy consumption is the predominant factor, "
-                                        },
-                                        {
-                                            "pdf_id": "1.84",
-                                            "matching_string": "and the flight energy consumption remains consistent across all "
-                                        },
-                                        {
-                                            "pdf_id": "1.77",
-                                            "matching_string": "can create a bottleneck in the communication service time. The "
-                                        },
-                                        {
-                                            "pdf_id": "1.80",
-                                            "matching_string": "communication, EC, and flight, such as hovering and "
-                                        },
-                                        {
-                                            "pdf_id": "1.85",
-                                            "matching_string": "comparisons, we solely focus on the communication~energy."
-                                        },
-                                        {
-                                            "pdf_id": "1.81",
-                                            "matching_string": "In our scenario, we aim to investigate the dynamics of "
-                                        }
-                                    ]
+                                    "leftover": "We are mainly interested in the energy consumption of the UAVs in the network as they are mostly batterypowered and can create a bottleneck in the communication service time. The total energy consumption of a UAV, ET, is usually modeled by the accumulation of the energy consumption values due to communication, EC, and flight, such as hovering and mobility. In our scenario, we aim to investigate the dynamics of the total energy consumption of the UAV network; since the communication energy consumption is the predominant factor, and the flight energy consumption remains consistent across all comparisons, we solely focus on the communication~energy.",
+                                    "matches": []
                                 },
                                 {
                                     "leaf id": 18,
                                     "key": "doc/body/sec4/sub2/txl1",
                                     "block type": "txl",
-                                    "content": "The variable EC is a function of transmit power and load of a BS, as stated in, that is, EC = f(Ptx,λ), where Ptx is the transmit power and λ is the load of the BS, while f: ^+ →^+ is a function. A power control strategy is adopted in this work, such that the received power, Prx, is fixed to the receiver sensitivity of the UEs and then Ptx is determined accordingly (i.e., by considering the path loss, L, and Prx). In other words, Ptx is a function of both Prx and L; i.e., Ptx=f(Prx,L). Moreover, L is a usually a distancedependent variable, such that L=f(d), thereby Ptx can also said to be distancedependent, that is, Ptx = f(d). Therefore, at the abstract level of energy consumption calculation, EC is a function of d and λ, that is, EC = f(d,λ). Thus, we define a metric called energy score, Es, to represent the abstract level energy consumption of a UAVBS as",
-                                    "leftover": "f: ^+ ",
-                                    "matches": [
-                                        {
-                                            "pdf_id": "1.2",
-                                            "matching_string": "adopted in this work, such that the received power, Prx, is "
-                                        },
-                                        {
-                                            "pdf_id": "1.3",
-                                            "matching_string": "fixed to the receiver sensitivity of the UEs and then Ptx is "
-                                        },
-                                        {
-                                            "pdf_id": "1.5",
-                                            "matching_string": "determined accordingly (i.e., by considering the path loss, L, "
-                                        },
-                                        {
-                                            "pdf_id": "1.13",
-                                            "matching_string": "and Prx). In other words, Ptx is a function of both Prx and "
-                                        },
-                                        {
-                                            "pdf_id": "1.17",
-                                            "matching_string": "at the abstract level of energy consumption calculation, EC is "
-                                        },
-                                        {
-                                            "pdf_id": "1.19",
-                                            "matching_string": "a metric called energy score, Es, to represent the abstract level "
-                                        },
-                                        {
-                                            "pdf_id": "1.21",
-                                            "matching_string": "energy consumption of a UAVBS as"
-                                        },
-                                        {
-                                            "pdf_id": "1.88",
-                                            "matching_string": "is the transmit power and λ is the load of the BS, while "
-                                        },
-                                        {
-                                            "pdf_id": "1.18",
-                                            "matching_string": "a function of d and λ, that is, EC = f(d,λ). Thus, we define "
-                                        },
-                                        {
-                                            "pdf_id": "1.86",
-                                            "matching_string": "The variable EC is a function of transmit power and load "
-                                        },
-                                        {
-                                            "pdf_id": "1.14",
-                                            "matching_string": "L; i.e., Ptx=f(Prx,L). Moreover, L is a usually a distancedependent "
-                                        },
-                                        {
-                                            "pdf_id": "1.16",
-                                            "matching_string": "said to be distancedependent, that is, Ptx = f(d). Therefore, "
-                                        },
-                                        {
-                                            "pdf_id": "1.87",
-                                            "matching_string": "of a BS, as stated in, that is, EC = f(Ptx,λ), where Ptx "
-                                        },
-                                        {
-                                            "pdf_id": "1.15",
-                                            "matching_string": "variable, such that L=f(d), thereby Ptx can also "
-                                        },
-                                        {
-                                            "pdf_id": "1.89",
-                                            "matching_string": "→^+ is a function. A power control strategy is "
-                                        }
-                                    ]
+                                    "content": "The variable EC is a function of transmit power and load of a BS, as stated in, that is, EC = f(Ptx,λ), where Ptx is the transmit power and λ is the load of the BS, while f: ℝ^+ →ℝ^+ is a function. A power control strategy is adopted in this work, such that the received power, Prx, is fixed to the receiver sensitivity of the UEs and then Ptx is determined accordingly (i.e., by considering the path loss, L, and Prx). In other words, Ptx is a function of both Prx and L; i.e., Ptx=f(Prx,L). Moreover, L is a usually a distancedependent variable, such that L=f(d), thereby Ptx can also said to be distancedependent, that is, Ptx = f(d). Therefore, at the abstract level of energy consumption calculation, EC is a function of d and λ, that is, EC = f(d,λ). Thus, we define a metric called energy score, Es, to represent the abstract level energy consumption of a UAVBS as",
+                                    "leftover": "The variable EC is a function of transmit power and load of a BS, as stated in, that is, EC = f(Ptx,λ), where Ptx is the transmit power and λ is the load of the BS, while f: ℝ^+ →ℝ^+ is a function. A power control strategy is adopted in this work, such that the received power, Prx, is fixed to the receiver sensitivity of the UEs and then Ptx is determined accordingly (i.e., by considering the path loss, L, and Prx). In other words, Ptx is a function of both Prx and L; i.e., Ptx=f(Prx,L). Moreover, L is a usually a distancedependent variable, such that L=f(d), thereby Ptx can also said to be distancedependent, that is, Ptx = f(d). Therefore, at the abstract level of energy consumption calculation, EC is a function of d and λ, that is, EC = f(d,λ). Thus, we define a metric called energy score, Es, to represent the abstract level energy consumption of a UAVBS as",
+                                    "matches": []
                                 },
                                 {
                                     "leaf id": 19,
                                     "key": "doc/body/sec4/sub2/equation2",
                                     "block type": "equation",
                                     "content": "Es = λd,",
-                                    "leftover": "",
-                                    "matches": [
-                                        {
-                                            "pdf_id": "1.38",
-                                            "matching_string": "Es = λd,"
-                                        },
-                                        {
-                                            "pdf_id": "0.65",
-                                            "matching_string": ""
-                                        }
-                                    ]
+                                    "leftover": "Es = λd,",
+                                    "matches": []
                                 },
                                 {
                                     "leaf id": 20,
                                     "key": "doc/body/sec4/sub2/txl3",
                                     "block type": "txl",
                                     "content": "where d is the distance between the UAVBS and a receiver.",
-                                    "leftover": "",
-                                    "matches": [
-                                        {
-                                            "pdf_id": "1.39",
-                                            "matching_string": "where d is the distance between the UAVBS and a receiver."
-                                        }
-                                    ]
+                                    "leftover": "where d is the distance between the UAVBS and a receiver.",
+                                    "matches": []
                                 }
                             ]
                         }
@@ -847,222 +231,48 @@
                             "key": "doc/body/sec5/tit",
                             "block type": "title",
                             "content": "MultiTier NonTerrestrial Networking for Disaster Communications",
-                            "leftover": "",
-                            "matches": [
-                                {
-                                    "pdf_id": "1.41",
-                                    "matching_string": "Disaster Communications"
-                                },
-                                {
-                                    "pdf_id": "1.40",
-                                    "matching_string": "MultiTier NonTerrestrial Networking for "
-                                }
-                            ]
+                            "leftover": "MultiTier NonTerrestrial Networking for Disaster Communications",
+                            "matches": []
                         },
                         {
                             "leaf id": 22,
                             "key": "doc/body/sec5/txl0",
                             "block type": "txl",
                             "content": "We propose a twolayer clustering algorithm for positioning the UAVBSs and the backhauling between the UAVBSs and HAPSSMBS. The firstlayer clustering performed for positioning the UAVBSs. For that, UEs are arranged into groups, concentrated in hotspots, followed by employing a kmeans algorithm to determine the centroids of these UE groups. In particular, the twodimensional coordinates of the UEs are fed into the kmeans algorithm to find the centroid positions, which are then used as the twodimensional positioning of UAVBSs (the altitude of the UAVBSs is fixed to 150 m).",
-                            "leftover": "",
-                            "matches": [
-                                {
-                                    "pdf_id": "1.43",
-                                    "matching_string": "the UAVBSs and the backhauling between the UAVBSs and "
-                                },
-                                {
-                                    "pdf_id": "1.45",
-                                    "matching_string": "the UAVBSs. For that, UEs are arranged into groups, "
-                                },
-                                {
-                                    "pdf_id": "1.47",
-                                    "matching_string": "algorithm to determine the centroids of these UE groups. In "
-                                },
-                                {
-                                    "pdf_id": "1.48",
-                                    "matching_string": "particular, the twodimensional coordinates of the UEs are "
-                                },
-                                {
-                                    "pdf_id": "1.49",
-                                    "matching_string": "fed into the kmeans algorithm to find the centroid positions, "
-                                },
-                                {
-                                    "pdf_id": "1.51",
-                                    "matching_string": "UAVBSs (the altitude of the UAVBSs is fixed to 150 m)."
-                                },
-                                {
-                                    "pdf_id": "1.46",
-                                    "matching_string": "concentrated in hotspots, followed by employing a kmeans "
-                                },
-                                {
-                                    "pdf_id": "1.50",
-                                    "matching_string": "which are then used as the twodimensional positioning of "
-                                },
-                                {
-                                    "pdf_id": "1.42",
-                                    "matching_string": "We propose a twolayer clustering algorithm for positioning "
-                                },
-                                {
-                                    "pdf_id": "1.44",
-                                    "matching_string": "HAPSSMBS. The firstlayer clustering performed for positioning "
-                                }
-                            ]
+                            "leftover": "We propose a twolayer clustering algorithm for positioning the UAVBSs and the backhauling between the UAVBSs and HAPSSMBS. The firstlayer clustering performed for positioning the UAVBSs. For that, UEs are arranged into groups, concentrated in hotspots, followed by employing a kmeans algorithm to determine the centroids of these UE groups. In particular, the twodimensional coordinates of the UEs are fed into the kmeans algorithm to find the centroid positions, which are then used as the twodimensional positioning of UAVBSs (the altitude of the UAVBSs is fixed to 150 m).",
+                            "matches": []
                         },
                         {
                             "leaf id": 23,
                             "key": "doc/body/sec5/txl1",
                             "block type": "txl",
                             "content": "The secondlayer clustering is then applied to find the communication topology for backhauling. Unlike the firstlayer clustering, this time the twodimensional coordinates of the UAVBSs (obtained in the firstlayer clustering) are fed into another kmeans algorithm to compute the centroid positions. After that, the UAVBS that has the closest proximity to the centroid is assigned as HUAV, and the rest of the UAVBSs serve as NHUAVs. The UAVBSs then form an adhoc network in such a way that the NHUAVs are transferring their data to the HUAV, which has the capability of connecting to HAPSSMBS via a backhauling link. As mentioned earlier, some landing spots, with grid and generator power supplies as well as a clear lineofsight with the majority of the area that they are planned to serve, are deployed around the city. Therefore, the HUAV is positioned at the nearest landing spot for continuous energy supply to prevent its battery from depleting fast as it is responsible to transmit all the data of the affected region. The effects of the distance between the landing spots and optimal position of UAVBSs on the energy efficiency are deeply investigated in, which can be used as a complementary source to this present work.",
-                            "leftover": "",
-                            "matches": [
-                                {
-                                    "pdf_id": "1.52",
-                                    "matching_string": "The secondlayer clustering is then applied to find the "
-                                },
-                                {
-                                    "pdf_id": "1.58",
-                                    "matching_string": "the UAVBSs (obtained in the firstlayer clustering) are fed into "
-                                },
-                                {
-                                    "pdf_id": "1.61",
-                                    "matching_string": "another kmeans algorithm to compute the centroid positions. "
-                                },
-                                {
-                                    "pdf_id": "1.62",
-                                    "matching_string": "After that, the UAVBS that has the closest proximity to the "
-                                },
-                                {
-                                    "pdf_id": "1.66",
-                                    "matching_string": "serve as NHUAVs. The UAVBSs then form an adhoc "
-                                },
-                                {
-                                    "pdf_id": "1.68",
-                                    "matching_string": "network in such a way that the NHUAVs are transferring their "
-                                },
-                                {
-                                    "pdf_id": "1.70",
-                                    "matching_string": "data to the HUAV, which has the capability of connecting to "
-                                },
-                                {
-                                    "pdf_id": "1.72",
-                                    "matching_string": "HAPSSMBS via a backhauling link. As mentioned earlier, "
-                                },
-                                {
-                                    "pdf_id": "1.90",
-                                    "matching_string": "some landing spots, with grid and generator power supplies "
-                                },
-                                {
-                                    "pdf_id": "1.91",
-                                    "matching_string": "as well as a clear lineofsight with the majority of the area "
-                                },
-                                {
-                                    "pdf_id": "1.92",
-                                    "matching_string": "that they are planned to serve, are deployed around the city. "
-                                },
-                                {
-                                    "pdf_id": "1.93",
-                                    "matching_string": "Therefore, the HUAV is positioned at the nearest landing "
-                                },
-                                {
-                                    "pdf_id": "1.94",
-                                    "matching_string": "spot for continuous energy supply to prevent its battery from "
-                                },
-                                {
-                                    "pdf_id": "1.96",
-                                    "matching_string": "the affected region. The effects of the distance between the "
-                                },
-                                {
-                                    "pdf_id": "1.97",
-                                    "matching_string": "landing spots and optimal position of UAVBSs on the energy "
-                                },
-                                {
-                                    "pdf_id": "1.99",
-                                    "matching_string": "as a complementary source to this present work."
-                                },
-                                {
-                                    "pdf_id": "1.55",
-                                    "matching_string": "communication topology for backhauling. Unlike the firstlayer "
-                                },
-                                {
-                                    "pdf_id": "1.64",
-                                    "matching_string": "centroid is assigned as HUAV, and the rest of the UAVBSs "
-                                },
-                                {
-                                    "pdf_id": "1.95",
-                                    "matching_string": "depleting fast as it is responsible to transmit all the data of "
-                                },
-                                {
-                                    "pdf_id": "1.56",
-                                    "matching_string": "clustering, this time the twodimensional coordinates of "
-                                },
-                                {
-                                    "pdf_id": "1.98",
-                                    "matching_string": "efficiency are deeply investigated in, which can be used "
-                                }
-                            ]
+                            "leftover": "The secondlayer clustering is then applied to find the communication topology for backhauling. Unlike the firstlayer clustering, this time the twodimensional coordinates of the UAVBSs (obtained in the firstlayer clustering) are fed into another kmeans algorithm to compute the centroid positions. After that, the UAVBS that has the closest proximity to the centroid is assigned as HUAV, and the rest of the UAVBSs serve as NHUAVs. The UAVBSs then form an adhoc network in such a way that the NHUAVs are transferring their data to the HUAV, which has the capability of connecting to HAPSSMBS via a backhauling link. As mentioned earlier, some landing spots, with grid and generator power supplies as well as a clear lineofsight with the majority of the area that they are planned to serve, are deployed around the city. Therefore, the HUAV is positioned at the nearest landing spot for continuous energy supply to prevent its battery from depleting fast as it is responsible to transmit all the data of the affected region. The effects of the distance between the landing spots and optimal position of UAVBSs on the energy efficiency are deeply investigated in, which can be used as a complementary source to this present work.",
+                            "matches": []
                         },
                         {
                             "leaf id": 24,
                             "key": "doc/body/sec5/txl2",
                             "block type": "txl",
-                            "content": "Using the logic in~, the energy score of the proposed method can be computed as",
-                            "leftover": "",
-                            "matches": [
-                                {
-                                    "pdf_id": "1.101",
-                                    "matching_string": "method can be computed as"
-                                },
-                                {
-                                    "pdf_id": "1.100",
-                                    "matching_string": "Using the logic in~, the energy score of the proposed "
-                                }
-                            ]
+                            "content": "Using the logic in, the energy score of the proposed method can be computed as",
+                            "leftover": "Using the logic in, the energy score of the proposed method can be computed as",
+                            "matches": []
                         },
                         {
                             "leaf id": 25,
                             "key": "doc/body/sec5/equation3",
                             "block type": "equation",
                             "content": "Ep = ∑j=1^n1 (λj dj,e+λk dj,H),",
-                            "leftover": "",
-                            "matches": [
-                                {
-                                    "pdf_id": "1.102",
-                                    "matching_string": "Ep = ∑j=1^n1 (λj dj,e+λk dj,H),"
-                                }
-                            ]
+                            "leftover": "Ep = ∑j=1^n1 (λj dj,e+λk dj,H),",
+                            "matches": []
                         },
                         {
                             "leaf id": 26,
                             "key": "doc/body/sec5/txl4",
                             "block type": "txl",
-                            "content": "where dj,e is the average distance between the UAVBS j and all the UEs, and λj is total load of UAVBS j while dj,H is the distance between UAVBS j and the HUAV. Since the HUAV has a continuous power supply on the landing spot and this study focuses on prolonging the service time of the UAVs, the energy score of the HUAV is excluded in~.",
-                            "leftover": "in~.",
-                            "matches": [
-                                {
-                                    "pdf_id": "1.106",
-                                    "matching_string": "where dj,e is the average distance between the UAVBS j and "
-                                },
-                                {
-                                    "pdf_id": "2.4",
-                                    "matching_string": "HUAV has a continuous power supply on the landing spot "
-                                },
-                                {
-                                    "pdf_id": "2.6",
-                                    "matching_string": "and this study focuses on prolonging the service time of the "
-                                },
-                                {
-                                    "pdf_id": "2.8",
-                                    "matching_string": "UAVs, the energy score of the HUAV is excluded "
-                                },
-                                {
-                                    "pdf_id": "1.107",
-                                    "matching_string": "all the UEs, and λj is total load of UAVBS j while dj,H is "
-                                },
-                                {
-                                    "pdf_id": "2.2",
-                                    "matching_string": "the distance between UAVBS j and the HUAV. Since the "
-                                }
-                            ]
+                            "content": "where dj,e is the average distance between the UAVBS j and all the UEs, and λj is total load of UAVBS j while dj,H is the distance between UAVBS j and the HUAV. Since the HUAV has a continuous power supply on the landing spot and this study focuses on prolonging the service time of the UAVs, the energy score of the HUAV is excluded in.",
+                            "leftover": "where dj,e is the average distance between the UAVBS j and all the UEs, and λj is total load of UAVBS j while dj,H is the distance between UAVBS j and the HUAV. Since the HUAV has a continuous power supply on the landing spot and this study focuses on prolonging the service time of the UAVs, the energy score of the HUAV is excluded in.",
+                            "matches": []
                         }
                     ]
                 },
@@ -1075,13 +285,8 @@
                             "key": "doc/body/sec6/tit",
                             "block type": "title",
                             "content": "Performance Evaluation",
-                            "leftover": "",
-                            "matches": [
-                                {
-                                    "pdf_id": "2.11",
-                                    "matching_string": "Performance Evaluation"
-                                }
-                            ]
+                            "leftover": "Performance Evaluation",
+                            "matches": []
                         },
                         {
                             "key": "doc/body/sec6/sub0",
@@ -1092,121 +297,40 @@
                                     "key": "doc/body/sec6/sub0/tit",
                                     "block type": "title",
                                     "content": "Benchmarking",
-                                    "leftover": "",
-                                    "matches": [
-                                        {
-                                            "pdf_id": "2.10",
-                                            "matching_string": "Benchmarking"
-                                        }
-                                    ]
+                                    "leftover": "Benchmarking",
+                                    "matches": []
                                 },
                                 {
                                     "leaf id": 29,
                                     "key": "doc/body/sec6/sub0/txl0",
                                     "block type": "txl",
-                                    "content": "In addition to the abovementioned proposed topology, referred to as doublelayer clustering approach with adhoc networking (DLCAHN) hereafter, two different benchmark topologies are also considered. The first benchmark is that UAVBSs are positioned in the same way as DLCAHN (i.e., with the kmeans clustering); however, this time each UAVBS connects with HAPSSMBS for backhauling purposes. This benchmark is referred to as singlelayer clustering~(SLC) approach. In the second benchmark, referred to as circular UAV positioning (CUP), the UAVBSs are distributed in a circular manner around the environment, and each UAVBS establishes a backhaul connection with HAPSSMBS.",
-                                    "leftover": "",
-                                    "matches": [
-                                        {
-                                            "pdf_id": "2.15",
-                                            "matching_string": "In addition to the abovementioned proposed topology, "
-                                        },
-                                        {
-                                            "pdf_id": "2.17",
-                                            "matching_string": "referred to as doublelayer clustering approach with adhoc "
-                                        },
-                                        {
-                                            "pdf_id": "2.19",
-                                            "matching_string": "networking (DLCAHN) hereafter, two different benchmark "
-                                        },
-                                        {
-                                            "pdf_id": "2.21",
-                                            "matching_string": "topologies are also considered. The first benchmark is that "
-                                        },
-                                        {
-                                            "pdf_id": "2.23",
-                                            "matching_string": "UAVBSs are positioned in the same way as DLCAHN (i.e., "
-                                        },
-                                        {
-                                            "pdf_id": "2.27",
-                                            "matching_string": "connects with HAPSSMBS for backhauling purposes. "
-                                        },
-                                        {
-                                            "pdf_id": "2.30",
-                                            "matching_string": "approach. In the second benchmark, referred to as circular "
-                                        },
-                                        {
-                                            "pdf_id": "2.31",
-                                            "matching_string": "UAV positioning (CUP), the UAVBSs are distributed in a "
-                                        },
-                                        {
-                                            "pdf_id": "2.32",
-                                            "matching_string": "circular manner around the environment, and each UAVBS "
-                                        },
-                                        {
-                                            "pdf_id": "2.33",
-                                            "matching_string": "establishes a backhaul connection with HAPSSMBS."
-                                        },
-                                        {
-                                            "pdf_id": "2.25",
-                                            "matching_string": "with the kmeans clustering); however, this time each UAVBS "
-                                        },
-                                        {
-                                            "pdf_id": "2.29",
-                                            "matching_string": "This benchmark is referred to as singlelayer clustering~(SLC) "
-                                        }
-                                    ]
+                                    "content": "In addition to the abovementioned proposed topology, referred to as doublelayer clustering approach with adhoc networking (DLCAHN)}hereafter, two different benchmark topologies are also considered. The first benchmark is that UAVBSs are positioned in the same way as DLCAHN (i.e., with the kmeans clustering); however, this time each UAVBS connects with HAPSSMBS for backhauling purposes. This benchmark is referred to as singlelayer clustering~(SLC)}approach. In the second benchmark, referred to as circular UAV positioning (CUP), the UAVBSs are distributed in a circular manner around the environment, and each UAVBS establishes a backhaul connection with HAPSSMBS.",
+                                    "leftover": "In addition to the abovementioned proposed topology, referred to as doublelayer clustering approach with adhoc networking (DLCAHN)}hereafter, two different benchmark topologies are also considered. The first benchmark is that UAVBSs are positioned in the same way as DLCAHN (i.e., with the kmeans clustering); however, this time each UAVBS connects with HAPSSMBS for backhauling purposes. This benchmark is referred to as singlelayer clustering~(SLC)}approach. In the second benchmark, referred to as circular UAV positioning (CUP), the UAVBSs are distributed in a circular manner around the environment, and each UAVBS establishes a backhaul connection with HAPSSMBS.",
+                                    "matches": []
                                 },
                                 {
                                     "leaf id": 30,
                                     "key": "doc/body/sec6/sub0/txl1",
                                     "block type": "txl",
                                     "content": "For both benchmark methods (i.e., ESLC for SLC and ECUP for CUP) the total energy score is obtained as",
-                                    "leftover": "",
-                                    "matches": [
-                                        {
-                                            "pdf_id": "2.34",
-                                            "matching_string": "For both benchmark methods (i.e., ESLC for SLC and ECUP "
-                                        },
-                                        {
-                                            "pdf_id": "2.35",
-                                            "matching_string": "for CUP) the total energy score is obtained as"
-                                        }
-                                    ]
+                                    "leftover": "For both benchmark methods (i.e., ESLC for SLC and ECUP for CUP) the total energy score is obtained as",
+                                    "matches": []
                                 },
                                 {
                                     "leaf id": 31,
                                     "key": "doc/body/sec6/sub0/equation2",
                                     "block type": "equation",
                                     "content": "Eb = ∑j=1^n1 λj ( dj,e+ dj,S),",
-                                    "leftover": "",
-                                    "matches": [
-                                        {
-                                            "pdf_id": "2.36",
-                                            "matching_string": "Eb = ∑j=1^n1 λj ( dj,e+ dj,S),"
-                                        }
-                                    ]
+                                    "leftover": "Eb = ∑j=1^n1 λj ( dj,e+ dj,S),",
+                                    "matches": []
                                 },
                                 {
                                     "leaf id": 32,
                                     "key": "doc/body/sec6/sub0/txl3",
                                     "block type": "txl",
                                     "content": "where b ∈SLC,CUP and dj,S is the distance between UAVBS j and HAPSSMBS. The network is evaluated for varying UE densities (users/m^2 ratios), denoted by δ.",
-                                    "leftover": "",
-                                    "matches": [
-                                        {
-                                            "pdf_id": "2.41",
-                                            "matching_string": "j and HAPSSMBS. The network is evaluated for varying "
-                                        },
-                                        {
-                                            "pdf_id": "2.40",
-                                            "matching_string": "where b ∈SLC,CUP and dj,S is the distance between UAVBS "
-                                        },
-                                        {
-                                            "pdf_id": "2.42",
-                                            "matching_string": "UE densities (users/m^2 ratios), denoted by δ."
-                                        }
-                                    ]
+                                    "leftover": "where b ∈SLC,CUP and dj,S is the distance between UAVBS j and HAPSSMBS. The network is evaluated for varying UE densities (users/m^2 ratios), denoted by δ.",
+                                    "matches": []
                                 }
                             ]
                         },
@@ -1219,24 +343,20 @@
                                     "key": "doc/body/sec6/sub1/tit",
                                     "block type": "title",
                                     "content": "Results and Discussions",
-                                    "leftover": "",
-                                    "matches": [
-                                        {
-                                            "pdf_id": "2.43",
-                                            "matching_string": "Results and Discussions"
-                                        }
-                                    ]
+                                    "leftover": "Results and Discussions",
+                                    "matches": []
                                 },
                                 {
-                                    "leaf id": 34,
                                     "key": "doc/body/sec6/sub1/figure0",
-                                    "block type": "figure",
-                                    "content": "b!] \\centering \\shorthandoff{=} \\includegraphics[width=.75\\linewidth]{Figures/Energyepsconvertedto.pdf} \\shorthandoff{=} Energy score with respect to the user density.",
-                                    "leftover": "b!] \\centering \\shorthandoff{=} \\includegraphics[width=.75\\linewidth]{Figures/Energyepsconvertedto.pdf} \\shorthandoff{=} ",
-                                    "matches": [
+                                    "block_type": "figure",
+                                    "children": [
                                         {
-                                            "pdf_id": "2.46",
-                                            "matching_string": "Energy score with respect to the user density."
+                                            "leaf id": 34,
+                                            "key": "doc/body/sec6/sub1/figure0/cpt0",
+                                            "block type": "cpt",
+                                            "content": "Energy score with respect to the user density.",
+                                            "leftover": "Energy score with respect to the user density.",
+                                            "matches": []
                                         }
                                     ]
                                 },
@@ -1244,150 +364,29 @@
                                     "leaf id": 35,
                                     "key": "doc/body/sec6/sub1/txl1",
                                     "block type": "txl",
-                                    "content": "Fig.~ demonstrates the energy scores for all scenarios across various δ values. As expected, the energy score soars with δ for each method as λ rises with increasing δ, which in turn boosts the total energy score as given in~ and . While SLC and CUP show similar behaviors, DLCAHN is separated from them with a considerably lower energy score. The reason for this is that the NHUAVs do not have backhauling link to HAPSSMB and they only transmit their data to HUAV, which is in a much closer proximity to them compared to HAPSSMBS. For SLC and CUP, on the other hand, all the UAVBSs need to transmit their data to HAPSSMBS, and considering, their energy scores soar significantly. SLC and CUP appear almost on top of each other in Fig.~, but there is a difference of 0.41% between them in terms of the total energy score. In SLC, since UAVBSs are positioned at the centroid point determined as a result of the clustering, the distance is minimized and they consume less energy than CUP.",
-                                    "leftover": "",
-                                    "matches": [
-                                        {
-                                            "pdf_id": "2.3",
-                                            "matching_string": "with δ for each method as λ rises with increasing δ, which in "
-                                        },
-                                        {
-                                            "pdf_id": "2.7",
-                                            "matching_string": "SLC and CUP show similar behaviors, DLCAHN is separated "
-                                        },
-                                        {
-                                            "pdf_id": "2.9",
-                                            "matching_string": "from them with a considerably lower energy score. The reason "
-                                        },
-                                        {
-                                            "pdf_id": "2.12",
-                                            "matching_string": "for this is that the NHUAVs do not have backhauling link "
-                                        },
-                                        {
-                                            "pdf_id": "2.13",
-                                            "matching_string": "to HAPSSMB and they only transmit their data to HUAV, "
-                                        },
-                                        {
-                                            "pdf_id": "2.14",
-                                            "matching_string": "which is in a much closer proximity to them compared to "
-                                        },
-                                        {
-                                            "pdf_id": "2.18",
-                                            "matching_string": "UAVBSs need to transmit their data to HAPSSMBS, and "
-                                        },
-                                        {
-                                            "pdf_id": "2.24",
-                                            "matching_string": "there is a difference of 0.41% between them in terms of the "
-                                        },
-                                        {
-                                            "pdf_id": "2.26",
-                                            "matching_string": "total energy score. In SLC, since UAVBSs are positioned at "
-                                        },
-                                        {
-                                            "pdf_id": "2.28",
-                                            "matching_string": "the centroid point determined as a result of the clustering, the "
-                                        },
-                                        {
-                                            "pdf_id": "2.45",
-                                            "matching_string": "across various δ values. As expected, the energy score soars "
-                                        },
-                                        {
-                                            "pdf_id": "3.2",
-                                            "matching_string": "distance is minimized and they consume less energy than CUP."
-                                        },
-                                        {
-                                            "pdf_id": "2.16",
-                                            "matching_string": "HAPSSMBS. For SLC and CUP, on the other hand, all the "
-                                        },
-                                        {
-                                            "pdf_id": "2.22",
-                                            "matching_string": "and CUP appear almost on top of each other in Fig.~, but "
-                                        },
-                                        {
-                                            "pdf_id": "2.44",
-                                            "matching_string": "demonstrates the energy scores for all scenarios "
-                                        },
-                                        {
-                                            "pdf_id": "2.5",
-                                            "matching_string": "turn boosts the total energy score as given in~ and . While "
-                                        },
-                                        {
-                                            "pdf_id": "2.20",
-                                            "matching_string": "Fig.~ considering, their energy scores soar significantly. SLC "
-                                        }
-                                    ]
+                                    "content": "Fig. demonstrates the energy scores for all scenarios across various δ values. As expected, the energy score soars with δ for each method as λ rises with increasing δ, which in turn boosts the total energy score as given in and . While SLC and CUP show similar behaviors, DLCAHN is separated from them with a considerably lower energy score. The reason for this is that the NHUAVs do not have backhauling link to HAPSSMB and they only transmit their data to HUAV, which is in a much closer proximity to them compared to HAPSSMBS. For SLC and CUP, on the other hand, all the UAVBSs need to transmit their data to HAPSSMBS, and considering, their energy scores soar significantly. SLC and CUP appear almost on top of each other in Fig., but there is a difference of 0.41% between them in terms of the total energy score. In SLC, since UAVBSs are positioned at the centroid point determined as a result of the clustering, the distance is minimized and they consume less energy than CUP.",
+                                    "leftover": "Fig. demonstrates the energy scores for all scenarios across various δ values. As expected, the energy score soars with δ for each method as λ rises with increasing δ, which in turn boosts the total energy score as given in and . While SLC and CUP show similar behaviors, DLCAHN is separated from them with a considerably lower energy score. The reason for this is that the NHUAVs do not have backhauling link to HAPSSMB and they only transmit their data to HUAV, which is in a much closer proximity to them compared to HAPSSMBS. For SLC and CUP, on the other hand, all the UAVBSs need to transmit their data to HAPSSMBS, and considering, their energy scores soar significantly. SLC and CUP appear almost on top of each other in Fig., but there is a difference of 0.41% between them in terms of the total energy score. In SLC, since UAVBSs are positioned at the centroid point determined as a result of the clustering, the distance is minimized and they consume less energy than CUP.",
+                                    "matches": []
                                 },
                                 {
                                     "leaf id": 36,
                                     "key": "doc/body/sec6/sub1/txl2",
                                     "block type": "txl",
-                                    "content": "Fig.~ displays the energy scores with respect to the number of UAVBSs. The generic trend that is common to all the methods is that the energy score increases with the number of UAVBSs (or the number of clusters in the firstlayer clustering). Note that the energy score of DLCAHN is increasing despite appearing constant due to visualization scaling. Considering and, this outcome is anticipated because the energy score scales with the number of UAVBSs. However, DLCAHN not only results in lower energy scores but also keeps the level of rise with the increasing number of UAVBSs under control compared to SLC and CUP, which demonstrate a dramatic surge in the energy score as a response to the increasing number of UAVBSs.",
-                                    "leftover": "",
-                                    "matches": [
-                                        {
-                                            "pdf_id": "3.4",
-                                            "matching_string": "number of UAVBSs. The generic trend that is common to "
-                                        },
-                                        {
-                                            "pdf_id": "3.6",
-                                            "matching_string": "number of UAVBSs (or the number of clusters in the firstlayer "
-                                        },
-                                        {
-                                            "pdf_id": "3.8",
-                                            "matching_string": "is increasing despite appearing constant due to visualization "
-                                        },
-                                        {
-                                            "pdf_id": "3.10",
-                                            "matching_string": "because the energy score scales with the number of UAVBSs. "
-                                        },
-                                        {
-                                            "pdf_id": "3.11",
-                                            "matching_string": "However, DLCAHN not only results in lower energy scores "
-                                        },
-                                        {
-                                            "pdf_id": "3.13",
-                                            "matching_string": "of UAVBSs under control compared to SLC and CUP, which "
-                                        },
-                                        {
-                                            "pdf_id": "3.14",
-                                            "matching_string": "demonstrate a dramatic surge in the energy score as a response "
-                                        },
-                                        {
-                                            "pdf_id": "3.7",
-                                            "matching_string": "clustering). Note that the energy score of DLCAHN "
-                                        },
-                                        {
-                                            "pdf_id": "3.9",
-                                            "matching_string": "scaling. Considering and, this outcome is anticipated "
-                                        },
-                                        {
-                                            "pdf_id": "3.3",
-                                            "matching_string": "Fig.~ displays the energy scores with respect to the all the methods is that the energy score increases with the but also keeps the level of rise with the increasing number to the increasing number of UAVBSs."
-                                        },
-                                        {
-                                            "pdf_id": "3.5",
-                                            "matching_string": ""
-                                        },
-                                        {
-                                            "pdf_id": "3.12",
-                                            "matching_string": ""
-                                        },
-                                        {
-                                            "pdf_id": "3.15",
-                                            "matching_string": ""
-                                        }
-                                    ]
+                                    "content": "Fig. displays the energy scores with respect to the number of UAVBSs. The generic trend that is common to all the methods is that the energy score increases with the number of UAVBSs (or the number of clusters in the firstlayer clustering). Note that the energy score of DLCAHN is increasing despite appearing constant due to visualization scaling. Considering and, this outcome is anticipated because the energy score scales with the number of UAVBSs. However, DLCAHN not only results in lower energy scores but also keeps the level of rise with the increasing number of UAVBSs under control compared to SLC and CUP, which demonstrate a dramatic surge in the energy score as a response to the increasing number of UAVBSs.",
+                                    "leftover": "Fig. displays the energy scores with respect to the number of UAVBSs. The generic trend that is common to all the methods is that the energy score increases with the number of UAVBSs (or the number of clusters in the firstlayer clustering). Note that the energy score of DLCAHN is increasing despite appearing constant due to visualization scaling. Considering and, this outcome is anticipated because the energy score scales with the number of UAVBSs. However, DLCAHN not only results in lower energy scores but also keeps the level of rise with the increasing number of UAVBSs under control compared to SLC and CUP, which demonstrate a dramatic surge in the energy score as a response to the increasing number of UAVBSs.",
+                                    "matches": []
                                 },
                                 {
-                                    "leaf id": 37,
                                     "key": "doc/body/sec6/sub1/figure3",
-                                    "block type": "figure",
-                                    "content": "t!] \\centering \\shorthandoff{=} \\includegraphics[width=.74\\linewidth]{Figures/Energy2epsconvertedto.pdf} \\shorthandoff{=} Energy score for varying number of n in the firstlayer clustering.",
-                                    "leftover": "t!] \\centering \\shorthandoff{=} \\includegraphics[width=.74\\linewidth]{Figures/Energy2epsconvertedto.pdf} \\shorthandoff{=} ",
-                                    "matches": [
+                                    "block_type": "figure",
+                                    "children": [
                                         {
-                                            "pdf_id": "3.0",
-                                            "matching_string": "Energy score for varying number of n in the firstlayer clustering."
+                                            "leaf id": 37,
+                                            "key": "doc/body/sec6/sub1/figure3/cpt0",
+                                            "block type": "cpt",
+                                            "content": "Energy score for varying number of n in the firstlayer clustering.",
+                                            "leftover": "Energy score for varying number of n in the firstlayer clustering.",
+                                            "matches": []
                                         }
                                     ]
                                 },
@@ -1396,101 +395,28 @@
                                     "key": "doc/body/sec6/sub1/txl4",
                                     "block type": "txl",
                                     "content": "This is attributed to the distance variable, d, in, since when the number of UAVBSs increases the distance between them decreases, preventing the overall sum in going up sharply as SLC and CUP.",
-                                    "leftover": "This is attributed to the ",
-                                    "matches": [
-                                        {
-                                            "pdf_id": "3.17",
-                                            "matching_string": "increases the distance between them decreases, preventing "
-                                        },
-                                        {
-                                            "pdf_id": "3.18",
-                                            "matching_string": "the overall sum in going up sharply as SLC and CUP."
-                                        },
-                                        {
-                                            "pdf_id": "3.16",
-                                            "matching_string": "distance variable, d, in, since when the number of UAVBSs "
-                                        }
-                                    ]
+                                    "leftover": "This is attributed to the distance variable, d, in, since when the number of UAVBSs increases the distance between them decreases, preventing the overall sum in going up sharply as SLC and CUP.",
+                                    "matches": []
                                 },
                                 {
                                     "leaf id": 39,
                                     "key": "doc/body/sec6/sub1/txl5",
                                     "block type": "txl",
-                                    "content": "Fig.~ illustrates the energy score metric with respect to k values in the secondlayer clustering. To make a fair comparison between the benchmarks, the HUAVs selected for DLCAHN are omitted in the energy score calculations for all the methods. SLCinc and CUPinc in Fig.~ represent the case where omitting the HUAVs in the energy calculations is not practiced. As seen, SLCinc and CUPinc results are flat as the secondlayer clustering is not applied to them. Considering all three methods, it is clear to see that there are decreases in the energy score. The reason behind this is that the number of HUAVs increases with k, and since the energy scores of HUAVs are not included, the overall energy consumption approaches to zero. In other words, when the number of cluster increases, the UAVBSs without grid and/or generator power supply decreases, thereby the issue of service time disappears.",
-                                    "leftover": "Fig.~ ",
-                                    "matches": [
-                                        {
-                                            "pdf_id": "3.20",
-                                            "matching_string": "to k values in the secondlayer clustering. To make a fair "
-                                        },
-                                        {
-                                            "pdf_id": "3.21",
-                                            "matching_string": "comparison between the benchmarks, the HUAVs selected for "
-                                        },
-                                        {
-                                            "pdf_id": "3.24",
-                                            "matching_string": "where omitting the HUAVs in the energy calculations is not "
-                                        },
-                                        {
-                                            "pdf_id": "3.25",
-                                            "matching_string": "practiced. As seen, SLCinc and CUPinc results are flat as the "
-                                        },
-                                        {
-                                            "pdf_id": "3.26",
-                                            "matching_string": "secondlayer clustering is not applied to them. Considering all "
-                                        },
-                                        {
-                                            "pdf_id": "3.29",
-                                            "matching_string": "of HUAVs increases with k, and since the energy scores "
-                                        },
-                                        {
-                                            "pdf_id": "3.30",
-                                            "matching_string": "of HUAVs are not included, the overall energy consumption "
-                                        },
-                                        {
-                                            "pdf_id": "3.31",
-                                            "matching_string": "approaches to zero. In other words, when the number of cluster "
-                                        },
-                                        {
-                                            "pdf_id": "3.32",
-                                            "matching_string": "increases, the UAVBSs without grid and/or generator power "
-                                        },
-                                        {
-                                            "pdf_id": "3.33",
-                                            "matching_string": "supply decreases, thereby the issue of service time disappears."
-                                        },
-                                        {
-                                            "pdf_id": "3.22",
-                                            "matching_string": "DLCAHN are omitted in the energy score calculations for all "
-                                        },
-                                        {
-                                            "pdf_id": "3.27",
-                                            "matching_string": "three methods, it is clear to see that there are decreases in "
-                                        },
-                                        {
-                                            "pdf_id": "3.28",
-                                            "matching_string": "the energy score. The reason behind this is that the number "
-                                        },
-                                        {
-                                            "pdf_id": "3.19",
-                                            "matching_string": "illustrates the energy score metric with respect "
-                                        },
-                                        {
-                                            "pdf_id": "3.23",
-                                            "matching_string": "the methods. SLCinc and CUPinc in Fig.~ represent the case "
-                                        }
-                                    ]
+                                    "content": "Fig. illustrates the energy score metric with respect to k values in the secondlayer clustering. To make a fair comparison between the benchmarks, the HUAVs selected for DLCAHN are omitted in the energy score calculations for all the methods. SLCinc}and CUPinc}in Fig. represent the case where omitting the HUAVs in the energy calculations is not practiced. As seen, SLCinc}and CUPinc}results are flat as the secondlayer clustering is not applied to them. Considering all three methods, it is clear to see that there are decreases in the energy score. The reason behind this is that the number of HUAVs increases with k, and since the energy scores of HUAVs are not included, the overall energy consumption approaches to zero. In other words, when the number of cluster increases, the UAVBSs without grid and/or generator power supply decreases, thereby the issue of service time disappears.",
+                                    "leftover": "Fig. illustrates the energy score metric with respect to k values in the secondlayer clustering. To make a fair comparison between the benchmarks, the HUAVs selected for DLCAHN are omitted in the energy score calculations for all the methods. SLCinc}and CUPinc}in Fig. represent the case where omitting the HUAVs in the energy calculations is not practiced. As seen, SLCinc}and CUPinc}results are flat as the secondlayer clustering is not applied to them. Considering all three methods, it is clear to see that there are decreases in the energy score. The reason behind this is that the number of HUAVs increases with k, and since the energy scores of HUAVs are not included, the overall energy consumption approaches to zero. In other words, when the number of cluster increases, the UAVBSs without grid and/or generator power supply decreases, thereby the issue of service time disappears.",
+                                    "matches": []
                                 },
                                 {
-                                    "leaf id": 40,
                                     "key": "doc/body/sec6/sub1/figure6",
-                                    "block type": "figure",
-                                    "content": "h!] \\centering \\shorthandoff{=} \\includegraphics[width=.74\\linewidth]{Figures/Energy3epsconvertedto.pdf} \\shorthandoff{=} Energy score for different k values in the secondlayer clustering.",
-                                    "leftover": "h!] \\centering \\shorthandoff{=} \\includegraphics[width=.74\\linewidth]{Figures/Energy3epsconvertedto.pdf} \\shorthandoff{=} ",
-                                    "matches": [
+                                    "block_type": "figure",
+                                    "children": [
                                         {
-                                            "pdf_id": "3.1",
-                                            "matching_string": "Energy score for different k values in the secondlayer clustering."
+                                            "leaf id": 40,
+                                            "key": "doc/body/sec6/sub1/figure6/cpt0",
+                                            "block type": "cpt",
+                                            "content": "Energy score for different k values in the secondlayer clustering.",
+                                            "leftover": "Energy score for different k values in the secondlayer clustering.",
+                                            "matches": []
                                         }
                                     ]
                                 }
@@ -1507,70 +433,16 @@
                             "key": "doc/body/sec7/tit",
                             "block type": "title",
                             "content": "Conclusion",
-                            "leftover": "",
-                            "matches": [
-                                {
-                                    "pdf_id": "3.39",
-                                    "matching_string": "Conclusion"
-                                }
-                            ]
+                            "leftover": "Conclusion",
+                            "matches": []
                         },
                         {
                             "leaf id": 42,
                             "key": "doc/body/sec7/txl0",
                             "block type": "txl",
-                            "content": "In this study, we analyzed the concept of using HAPSSMBS as a backhaul link for the network of UAVBSs in disaster circumstances. We proposed a twolayer clustering algorithm aimed at enhancing network survival time and effectively managing communication under unfavorable network conditions. The firstlayer clustering is utilized for positioning the UAVBSs, which are employed for RAN services, while the secondlayer clustering is used for backhauling purposes. The results obtained confirm that our threelayer network with a twolayer clustering approach has the potential to extend communication service time during disaster scenarios, providing rapid recovery and network resilience. \\bibliographystyle{IEEEtran} \\bibliography{output}",
-                            "leftover": "\\bibliographystyle{IEEEtran} \\bibliography{output}",
-                            "matches": [
-                                {
-                                    "pdf_id": "3.34",
-                                    "matching_string": "In this study, we analyzed the concept of using HAPSSMBS "
-                                },
-                                {
-                                    "pdf_id": "3.36",
-                                    "matching_string": "disaster circumstances. We proposed a twolayer clustering "
-                                },
-                                {
-                                    "pdf_id": "3.37",
-                                    "matching_string": "algorithm aimed at enhancing network survival time and effectively "
-                                },
-                                {
-                                    "pdf_id": "3.40",
-                                    "matching_string": "conditions. The firstlayer clustering is utilized for positioning "
-                                },
-                                {
-                                    "pdf_id": "3.41",
-                                    "matching_string": "the UAVBSs, which are employed for RAN services, while "
-                                },
-                                {
-                                    "pdf_id": "3.43",
-                                    "matching_string": "The results obtained confirm that our threelayer network "
-                                },
-                                {
-                                    "pdf_id": "3.44",
-                                    "matching_string": "with a twolayer clustering approach has the potential to "
-                                },
-                                {
-                                    "pdf_id": "3.45",
-                                    "matching_string": "extend communication service time during disaster scenarios, "
-                                },
-                                {
-                                    "pdf_id": "3.46",
-                                    "matching_string": "providing rapid recovery and network resilience. "
-                                },
-                                {
-                                    "pdf_id": "3.35",
-                                    "matching_string": "as a backhaul link for the network of UAVBSs in "
-                                },
-                                {
-                                    "pdf_id": "3.38",
-                                    "matching_string": "managing communication under unfavorable network "
-                                },
-                                {
-                                    "pdf_id": "3.42",
-                                    "matching_string": "the secondlayer clustering is used for backhauling purposes. "
-                                }
-                            ]
+                            "content": "In this study, we analyzed the concept of using HAPSSMBS as a backhaul link for the network of UAVBSs in disaster circumstances. We proposed a twolayer clustering algorithm aimed at enhancing network survival time and effectively managing communication under unfavorable network conditions. The firstlayer clustering is utilized for positioning the UAVBSs, which are employed for RAN services, while the secondlayer clustering is used for backhauling purposes. The results obtained confirm that our threelayer network with a twolayer clustering approach has the potential to extend communication service time during disaster scenarios, providing rapid recovery and network resilience. \\bibliographystyleIEEEtran \\bibliographyoutput",
+                            "leftover": "In this study, we analyzed the concept of using HAPSSMBS as a backhaul link for the network of UAVBSs in disaster circumstances. We proposed a twolayer clustering algorithm aimed at enhancing network survival time and effectively managing communication under unfavorable network conditions. The firstlayer clustering is utilized for positioning the UAVBSs, which are employed for RAN services, while the secondlayer clustering is used for backhauling purposes. The results obtained confirm that our threelayer network with a twolayer clustering approach has the potential to extend communication service time during disaster scenarios, providing rapid recovery and network resilience. \\bibliographystyleIEEEtran \\bibliographyoutput",
+                            "matches": []
                         }
                     ]
                 }
@@ -1581,254 +453,80 @@
             "key": "doc/bib0",
             "block type": "bibliography",
             "content": "C.~Luo, W.~Miao, H.~Ullah, S.~McClean, G.~Parr, and G.~Min, ''Unmanned aerial vehicles for disaster management,'' Geological disaster monitoring based on sensor networks, pp. 83107, 2019.",
-            "leftover": "",
-            "matches": [
-                {
-                    "pdf_id": "3.49",
-                    "matching_string": "aerial vehicles for disaster management,'' Geological disaster "
-                },
-                {
-                    "pdf_id": "3.50",
-                    "matching_string": "monitoring based on sensor networks, pp. 83107, 2019."
-                },
-                {
-                    "pdf_id": "3.48",
-                    "matching_string": "Luo, W.~Miao, H.~Ullah, S.~McClean, G.~Parr, and G.~Min, ''Unmanned "
-                },
-                {
-                    "pdf_id": "3.47",
-                    "matching_string": "C.~"
-                }
-            ]
+            "leftover": "C.~Luo, W.~Miao, H.~Ullah, S.~McClean, G.~Parr, and G.~Min, ''Unmanned aerial vehicles for disaster management,'' Geological disaster monitoring based on sensor networks, pp. 83107, 2019.",
+            "matches": []
         },
         {
             "leaf id": 44,
             "key": "doc/bib1",
             "block type": "bibliography",
             "content": "\\BIBentryALTinterwordspacing ''{The ITUR Framework for IMT2030},'' ITUR Working Party 5D, International Telecommunication Union (ITU), Tech. Rep., July 2023. [Online]. Available: https://www.itu.int/en/ITUR/studygroups/rsg5/rwp5d/imt2030/Pages/default.aspx \\BIBentrySTDinterwordspacing",
-            "leftover": "\\BIBentryALTinterwordspacing sg5/\\BIBentrySTDinterwordspacing",
-            "matches": [
-                {
-                    "pdf_id": "3.52",
-                    "matching_string": "5D, International Telecommunication Union (ITU), Tech. Rep., July "
-                },
-                {
-                    "pdf_id": "3.53",
-                    "matching_string": "2023. [Online]. Available: https://www.itu.int/en/ITUR/studygroups/r"
-                },
-                {
-                    "pdf_id": "3.51",
-                    "matching_string": "''{The ITUR Framework for IMT2030},'' ITUR Working Party "
-                },
-                {
-                    "pdf_id": "3.54",
-                    "matching_string": "rwp5d/imt2030/Pages/default.aspx "
-                }
-            ]
+            "leftover": "\\BIBentryALTinterwordspacing ''{The ITUR Framework for IMT2030},'' ITUR Working Party 5D, International Telecommunication Union (ITU), Tech. Rep., July 2023. [Online]. Available: https://www.itu.int/en/ITUR/studygroups/rsg5/rwp5d/imt2030/Pages/default.aspx \\BIBentrySTDinterwordspacing",
+            "matches": []
         },
         {
             "leaf id": 45,
             "key": "doc/bib2",
             "block type": "bibliography",
             "content": "M.~S. Alam, G.~K. Kurt, H.~Yanikomeroglu, P.~Zhu, and N.~D. Dao, ''High altitude platform station based super macro base station constellations,'' IEEE Communications Magazine, vol.~59, no.~1, pp. 103109, 2021.",
-            "leftover": "M.~103109, ",
-            "matches": [
-                {
-                    "pdf_id": "3.56",
-                    "matching_string": "Dao, ''High altitude platform station based super macro base station "
-                },
-                {
-                    "pdf_id": "3.55",
-                    "matching_string": "S. Alam, G.~K. Kurt, H.~Yanikomeroglu, P.~Zhu, and N.~D. "
-                },
-                {
-                    "pdf_id": "3.57",
-                    "matching_string": "constellations,'' IEEE Communications Magazine, vol.~59, no.~1, pp. "
-                },
-                {
-                    "pdf_id": "3.58",
-                    "matching_string": "2021."
-                }
-            ]
+            "leftover": "M.~S. Alam, G.~K. Kurt, H.~Yanikomeroglu, P.~Zhu, and N.~D. Dao, ''High altitude platform station based super macro base station constellations,'' IEEE Communications Magazine, vol.~59, no.~1, pp. 103109, 2021.",
+            "matches": []
         },
         {
             "leaf id": 46,
             "key": "doc/bib3",
             "block type": "bibliography",
             "content": "G.~Karabulut~Kurt, M.~G. Khoshkholgh, S.~Alfattani, A.~Ibrahim, T.~S.~J. Darwish, M.~S. Alam, H.~Yanikomeroglu, and A.~Yongacoglu, ''A vision and framework for the high altitude platform station (HAPS) networks of the future,'' IEEE Communications Surveys & Tutorials, vol.~23, no.~2, pp. 729779, Secondquarter 2021.",
-            "leftover": "",
-            "matches": [
-                {
-                    "pdf_id": "3.61",
-                    "matching_string": "and framework for the high altitude platform station (HAPS) networks "
-                },
-                {
-                    "pdf_id": "3.62",
-                    "matching_string": "of the future,'' IEEE Communications Surveys & Tutorials, vol.~23, no.~2, "
-                },
-                {
-                    "pdf_id": "3.60",
-                    "matching_string": "Darwish, M.~S. Alam, H.~Yanikomeroglu, and A.~Yongacoglu, ''A vision "
-                },
-                {
-                    "pdf_id": "3.63",
-                    "matching_string": "pp. 729779, Secondquarter 2021."
-                },
-                {
-                    "pdf_id": "3.59",
-                    "matching_string": "G.~Karabulut~Kurt, M.~G. Khoshkholgh, S.~Alfattani, A.~Ibrahim, T.~S.~J. "
-                }
-            ]
+            "leftover": "G.~Karabulut~Kurt, M.~G. Khoshkholgh, S.~Alfattani, A.~Ibrahim, T.~S.~J. Darwish, M.~S. Alam, H.~Yanikomeroglu, and A.~Yongacoglu, ''A vision and framework for the high altitude platform station (HAPS) networks of the future,'' IEEE Communications Surveys & Tutorials, vol.~23, no.~2, pp. 729779, Secondquarter 2021.",
+            "matches": []
         },
         {
             "leaf id": 47,
             "key": "doc/bib4",
             "block type": "bibliography",
             "content": "Y.~Zhao, F.~Zhou, L.~Feng, W.~Li, Y.~Sun, and M.~A. Imran, ''Backhaulconstrained coverage analysis of integrated high and low altitude platforms aerial communication system in postdisaster areas,'' IEEE Communications Letters, vol.~27, no.~6, pp. 16291633, 2023.",
-            "leftover": "Y.~",
-            "matches": [
-                {
-                    "pdf_id": "3.65",
-                    "matching_string": "coverage analysis of integrated high and low altitude "
-                },
-                {
-                    "pdf_id": "3.66",
-                    "matching_string": "platforms aerial communication system in postdisaster areas,'' IEEE "
-                },
-                {
-                    "pdf_id": "3.64",
-                    "matching_string": "Zhao, F.~Zhou, L.~Feng, W.~Li, Y.~Sun, and M.~A. Imran, ''Backhaulconstrained "
-                },
-                {
-                    "pdf_id": "3.67",
-                    "matching_string": "Communications Letters, vol.~27, no.~6, pp. 16291633, 2023."
-                }
-            ]
+            "leftover": "Y.~Zhao, F.~Zhou, L.~Feng, W.~Li, Y.~Sun, and M.~A. Imran, ''Backhaulconstrained coverage analysis of integrated high and low altitude platforms aerial communication system in postdisaster areas,'' IEEE Communications Letters, vol.~27, no.~6, pp. 16291633, 2023.",
+            "matches": []
         },
         {
             "leaf id": 48,
             "key": "doc/bib5",
             "block type": "bibliography",
             "content": "O.~Abbasi and H.~Yanikomeroglu, ''A cellfree scheme for UAV base stations with HAPSassisted backhauling in terahertz band,'' in ICC 2022  IEEE International Conference on Communications, 2022, pp. 249254.",
-            "leftover": "",
-            "matches": [
-                {
-                    "pdf_id": "3.69",
-                    "matching_string": "with HAPSassisted backhauling in terahertz band,'' in ICC 2022  "
-                },
-                {
-                    "pdf_id": "3.70",
-                    "matching_string": "IEEE International Conference on Communications, 2022, pp. "
-                },
-                {
-                    "pdf_id": "3.68",
-                    "matching_string": "Abbasi and H.~Yanikomeroglu, ''A cellfree scheme for UAV base "
-                },
-                {
-                    "pdf_id": "3.71",
-                    "matching_string": "O.~stations 249254."
-                }
-            ]
+            "leftover": "O.~Abbasi and H.~Yanikomeroglu, ''A cellfree scheme for UAV base stations with HAPSassisted backhauling in terahertz band,'' in ICC 2022  IEEE International Conference on Communications, 2022, pp. 249254.",
+            "matches": []
         },
         {
             "leaf id": 49,
             "key": "doc/bib6",
             "block type": "bibliography",
             "content": "S.~Song, M.~Choi, Y.~Goh, J.~Yun, W.~Yoo, W.~Yang, J.~Jung, and J.M. Chung, ''Analysis of wireless backhaul networks based on aerial platform technology for 6G systems.'' Computers, Materials & Continua, vol.~62, no.~2, 2020.",
-            "leftover": "S.~no.~",
-            "matches": [
-                {
-                    "pdf_id": "3.73",
-                    "matching_string": "Chung, ''Analysis of wireless backhaul networks based on aerial platform "
-                },
-                {
-                    "pdf_id": "3.74",
-                    "matching_string": "technology for 6G systems.'' Computers, Materials & Continua, vol.~62, "
-                },
-                {
-                    "pdf_id": "3.72",
-                    "matching_string": "Song, M.~Choi, Y.~Goh, J.~Yun, W.~Yoo, W.~Yang, J.~Jung, and J.M. "
-                },
-                {
-                    "pdf_id": "3.75",
-                    "matching_string": "2, 2020."
-                }
-            ]
+            "leftover": "S.~Song, M.~Choi, Y.~Goh, J.~Yun, W.~Yoo, W.~Yang, J.~Jung, and J.M. Chung, ''Analysis of wireless backhaul networks based on aerial platform technology for 6G systems.'' Computers, Materials & Continua, vol.~62, no.~2, 2020.",
+            "matches": []
         },
         {
             "leaf id": 50,
             "key": "doc/bib7",
             "block type": "bibliography",
-            "content": "A.~Andreadis, G.~Giambene, and R.~Zambon, ''Role of {UAVs} and HAPS for {IoTbased} monitoring in emergency scenarios,'' in 2023 International Conference on Information and Communication Technologies for Disaster Management (ICTDM), 2023, pp. 18.",
-            "leftover": "A.~18.",
-            "matches": [
-                {
-                    "pdf_id": "3.78",
-                    "matching_string": "Conference on Information and Communication Technologies for Disaster "
-                },
-                {
-                    "pdf_id": "3.77",
-                    "matching_string": "for {IoTbased} monitoring in emergency scenarios,'' in 2023 International "
-                },
-                {
-                    "pdf_id": "3.76",
-                    "matching_string": "Andreadis, G.~Giambene, and R.~Zambon, ''Role of {UAVs} and HAPS "
-                },
-                {
-                    "pdf_id": "3.79",
-                    "matching_string": "Management (ICTDM), 2023, pp. "
-                }
-            ]
+            "content": "A.~Andreadis, G.~Giambene, and R.~Zambon, ''Role of UAVs and HAPS for {IoTbased} monitoring in emergency scenarios,'' in 2023 International Conference on Information and Communication Technologies for Disaster Management (ICTDM), 2023, pp. 18.",
+            "leftover": "A.~Andreadis, G.~Giambene, and R.~Zambon, ''Role of UAVs and HAPS for {IoTbased} monitoring in emergency scenarios,'' in 2023 International Conference on Information and Communication Technologies for Disaster Management (ICTDM), 2023, pp. 18.",
+            "matches": []
         },
         {
             "leaf id": 51,
             "key": "doc/bib8",
             "block type": "bibliography",
             "content": "H.~Qi, Z.~Hu, H.~Huang, X.~Wen, and Z.~Lu, ''Energy efficient 3D UAV control for persistent communication service and fairness: A deep reinforcement learning approach,'' IEEE Access, vol.~8, pp. 53\\,17253\\,184, 2020.",
-            "leftover": "H.~53\\,17253\\,",
-            "matches": [
-                {
-                    "pdf_id": "3.81",
-                    "matching_string": "UAV control for persistent communication service and fairness: A "
-                },
-                {
-                    "pdf_id": "3.82",
-                    "matching_string": "deep reinforcement learning approach,'' IEEE Access, vol.~8, pp. "
-                },
-                {
-                    "pdf_id": "3.80",
-                    "matching_string": "Qi, Z.~Hu, H.~Huang, X.~Wen, and Z.~Lu, ''Energy efficient 3D "
-                },
-                {
-                    "pdf_id": "3.83",
-                    "matching_string": "184, 2020."
-                }
-            ]
+            "leftover": "H.~Qi, Z.~Hu, H.~Huang, X.~Wen, and Z.~Lu, ''Energy efficient 3D UAV control for persistent communication service and fairness: A deep reinforcement learning approach,'' IEEE Access, vol.~8, pp. 53\\,17253\\,184, 2020.",
+            "matches": []
         },
         {
             "leaf id": 52,
             "key": "doc/bib9",
             "block type": "bibliography",
             "content": "A.~I. Abubakar, M.~S. Mollel, O.~Onireti, M.~Ozturk, I.~Ahmad, S.~M. Asad, Y.~Sambo, A.~Zoha, S.~Hussain, and M.~A. Imran, ''Coverage and throughput analysis of an energy efficient UAV base station positioning scheme,'' Computer Networks, p. 109854, 2023.",
-            "leftover": "A.~",
-            "matches": [
-                {
-                    "pdf_id": "3.86",
-                    "matching_string": "throughput analysis of an energy efficient UAV base station positioning "
-                },
-                {
-                    "pdf_id": "3.87",
-                    "matching_string": "scheme,'' Computer Networks, p. 109854, 2023."
-                },
-                {
-                    "pdf_id": "3.84",
-                    "matching_string": "I. Abubakar, M.~S. Mollel, O.~Onireti, M.~Ozturk, I.~Ahmad, S.~M. "
-                },
-                {
-                    "pdf_id": "3.85",
-                    "matching_string": "Asad, Y.~Sambo, A.~Zoha, S.~Hussain, and M.~A. Imran, ''Coverage and "
-                }
-            ]
+            "leftover": "A.~I. Abubakar, M.~S. Mollel, O.~Onireti, M.~Ozturk, I.~Ahmad, S.~M. Asad, Y.~Sambo, A.~Zoha, S.~Hussain, and M.~A. Imran, ''Coverage and throughput analysis of an energy efficient UAV base station positioning scheme,'' Computer Networks, p. 109854, 2023.",
+            "matches": []
         }
     ]
 }

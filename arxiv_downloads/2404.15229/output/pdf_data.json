@@ -10,13 +10,13 @@
         ],
         "prefix": "",
         "content": "MultiTier NonTerrestrial Networking for Disaster ",
-        "suffix": "Communications:",
+        "suffix": "Communications: A Layered Clustering",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 0,
-                0.8333333333333334,
+                1.0,
                 0,
                 49
             ]
@@ -31,17 +31,17 @@
             544.1543859999999,
             761.6036752000001
         ],
-        "prefix": "",
+        "prefix": "Networking for Disaster ",
         "content": "Communications: A Layered Clustering Approach ",
-        "suffix": "Afet",
+        "suffix": "Afet Haberle¸smesi ˙Için Çok",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 0,
-                1.0,
-                49,
-                95
+                0.43823823451690086,
+                0,
+                46
             ]
         ]
     },
@@ -54,15 +54,15 @@
             524.4029943999999,
             738.7776752000001
         ],
-        "prefix": "",
+        "prefix": "Layered Clustering Approach ",
         "content": "Afet Haberle¸smesi ˙Için Çok Katmanlı Karasal ",
-        "suffix": "Olmayan",
+        "suffix": "Olmayan A˘glanma: Katmanlı Kümeleme",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 0,
-                0.45948169813740136,
+                0.1959584552022883,
                 0,
                 44
             ]
@@ -77,7 +77,7 @@
             550.2635478999998,
             706.0516752000002
         ],
-        "prefix": "",
+        "prefix": "Çok Katmanlı Karasal ",
         "content": "Olmayan A˘glanma: Katmanlı Kümeleme Yakla¸sımı ",
         "suffix": "",
         "equation hit": false,
@@ -85,9 +85,9 @@
         "matches": [
             [
                 0,
-                0.3382684915959203,
-                0,
-                35
+                0.5367879441171443,
+                44,
+                79
             ]
         ]
     },
@@ -100,7 +100,7 @@
             530.2235117999999,
             640.1158828000001
         ],
-        "prefix": "",
+        "prefix": "University, Ankara, Türkiye ",
         "content": "2NonTerrestrial Networks (NTN) Lab, Systems and Computer Engineering, Carleton University, Ottawa, Canada ",
         "suffix": "",
         "equation hit": false,
@@ -108,7 +108,7 @@
         "matches": [
             [
                 1,
-                0.9230769230769231,
+                0.8979924650732152,
                 232,
                 331
             ]
@@ -125,13 +125,13 @@
         ],
         "prefix": "",
         "content": "Metin Ozturk1,2, Berk Çilo˘glu1,2, Görkem Berkay Koç1,2, Halim Yanikomeroglu2 ",
-        "suffix": "1Electrical",
+        "suffix": "1Electrical and Electronics Engineering,",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 1,
-                0.435974165965309,
+                0.5434690356912317,
                 19,
                 84
             ]
@@ -146,17 +146,17 @@
             490.2436842,
             652.4448828000001
         ],
-        "prefix": "",
+        "prefix": "Koç1,2, Halim Yanikomeroglu2 ",
         "content": "1Electrical and Electronics Engineering, Ankara Yıldırım Beyazıt University, Ankara, Türkiye ",
-        "suffix": "2NonTerrestrial",
+        "suffix": "2NonTerrestrial Networks (NTN) Lab,",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 1,
-                0.9090909090909091,
-                120,
-                213
+                0.49566665839680557,
+                55,
+                148
             ]
         ]
     },
@@ -171,13 +171,13 @@
         ],
         "prefix": "",
         "content": "Abstract—It is crucial to deploy temporary nonterrestrial ",
-        "suffix": "networks",
+        "suffix": "networks (NTN) in disaster",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 2,
-                0.7777777777777778,
+                0.8162013408577768,
                 0,
                 49
             ]
@@ -192,17 +192,17 @@
             291.6612000000003,
             576.8714224000001
         ],
-        "prefix": "",
+        "prefix": "deploy temporary nonterrestrial ",
         "content": "networks (NTN) in disaster situations where terrestrial networks ",
-        "suffix": "are",
+        "suffix": "are no longer operable.",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 2,
-                1.0,
-                49,
-                114
+                0.8125,
+                0,
+                65
             ]
         ]
     },
@@ -215,15 +215,15 @@
             291.6612000000003,
             566.9084224000002
         ],
-        "prefix": "",
+        "prefix": "where terrestrial networks ",
         "content": "are no longer operable. Deploying uncrewed aerial vehicle base ",
-        "suffix": "stations",
+        "suffix": "stations (UAVBSs) can provide",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 2,
-                0.9,
+                0.8235294117647058,
                 0,
                 63
             ]
@@ -238,17 +238,17 @@
             291.6612000000002,
             556.9464224000002
         ],
-        "prefix": "",
+        "prefix": "aerial vehicle base ",
         "content": "stations (UAVBSs) can provide a radio access network (RAN); ",
-        "suffix": "however,",
+        "suffix": "however, the backhaul link",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 2,
-                1.0,
-                112,
-                172
+                0.8333333333333334,
+                0,
+                60
             ]
         ]
     },
@@ -261,17 +261,17 @@
             291.6612000000003,
             546.9834224000002
         ],
-        "prefix": "",
+        "prefix": "access network (RAN); ",
         "content": "however, the backhaul link may also be damaged and unser",
-        "suffix": "viceable",
+        "suffix": "viceable in such disaster",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 2,
-                1.0,
-                112,
-                177
+                0.7647058823529411,
+                0,
+                65
             ]
         ]
     },
@@ -284,15 +284,15 @@
             291.6612000000003,
             537.0204224000003
         ],
-        "prefix": "unser",
+        "prefix": "be damaged and unser",
         "content": "viceable in such disaster conditions. In this regard, highaltitude ",
-        "suffix": "platform",
+        "suffix": "platform stations (HAPS) spark",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 2,
-                0.8,
+                0.7647058823529411,
                 0,
                 58
             ]
@@ -307,17 +307,17 @@
             291.6612000000003,
             527.0584224000003
         ],
-        "prefix": "",
+        "prefix": "this regard, highaltitude ",
         "content": "platform stations (HAPS) spark attention as they can be deployed ",
-        "suffix": "as",
+        "suffix": "as super macro base",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 2,
-                0.9166666723546695,
-                170,
-                235
+                0.8333333333333334,
+                0,
+                65
             ]
         ]
     },
@@ -330,17 +330,17 @@
             291.6612000000003,
             517.0954224000002
         ],
-        "prefix": "",
+        "prefix": "can be deployed ",
         "content": "as super macro base stations (SMBS) and data centers. Therefore, ",
-        "suffix": "in",
+        "suffix": "in this study, we",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 2,
-                1.0,
-                170,
-                235
+                0.8333333333333334,
+                0,
+                65
             ]
         ]
     },
@@ -353,17 +353,17 @@
             291.66120000000035,
             507.13242240000017
         ],
-        "prefix": "",
+        "prefix": "data centers. Therefore, ",
         "content": "in this study, we investigate a threelayer heterogeneous network ",
-        "suffix": "with",
+        "suffix": "with different topologies to",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 2,
-                1.0,
-                170,
-                235
+                0.7531116917729915,
+                0,
+                65
             ]
         ]
     },
@@ -376,17 +376,17 @@
             291.66120000000024,
             497.1704224000002
         ],
-        "prefix": "",
+        "prefix": "threelayer heterogeneous network ",
         "content": "with different topologies to prolong the lifespan of the temporary ",
-        "suffix": "network",
+        "suffix": "network by using UAVBSs",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 2,
-                1.0,
-                170,
-                237
+                0.8235294117647058,
+                0,
+                67
             ]
         ]
     },
@@ -399,17 +399,17 @@
             291.6612000000002,
             487.20742240000015
         ],
-        "prefix": "",
+        "prefix": "of the temporary ",
         "content": "network by using UAVBSs for RAN services and HAPSSMBS ",
-        "suffix": "as",
+        "suffix": "as a backhaul. Furthermore,",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 2,
-                1.0,
-                170,
-                224
+                0.8125,
+                0,
+                54
             ]
         ]
     },
@@ -422,17 +422,17 @@
             291.6612000000002,
             477.24542240000017
         ],
-        "prefix": "",
+        "prefix": "services and HAPSSMBS ",
         "content": "as a backhaul. Furthermore, a twolayer clustering algorithm is ",
-        "suffix": "proposed",
+        "suffix": "proposed to handle the",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 2,
-                1.0,
-                170,
-                233
+                0.8125,
+                0,
+                63
             ]
         ]
     },
@@ -445,7 +445,7 @@
             285.47438400000027,
             467.28242240000014
         ],
-        "prefix": "",
+        "prefix": "clustering algorithm is ",
         "content": "proposed to handle the UAVBS adhoc networking effectively. ",
         "suffix": "",
         "equation hit": false,
@@ -453,9 +453,9 @@
         "matches": [
             [
                 2,
-                1.0,
-                170,
-                228
+                0.7272727272727273,
+                0,
+                58
             ]
         ]
     },
@@ -493,13 +493,13 @@
         ],
         "prefix": "",
         "content": "Özetçe —Karasal a˘gların artık çalı¸smayı durdurdu˘gu afet du",
-        "suffix": "rumlarında,",
+        "suffix": "rumlarında, geçici bir karasal",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 4,
-                0.2086012270340046,
+                0.3668809816272037,
                 0,
                 62
             ]
@@ -514,9 +514,9 @@
             291.6564608000001,
             434.65442240000016
         ],
-        "prefix": "du",
+        "prefix": "çalı¸smayı durdurdu˘gu afet du",
         "content": "rumlarında, geçici bir karasal olmayan a˘gların konu¸slandırılması ",
-        "suffix": "önemlidir.",
+        "suffix": "önemlidir. ˙Insansız hava aracı",
         "equation hit": false,
         "assigned": true,
         "matches": [
@@ -537,17 +537,17 @@
             291.66037440000014,
             426.49142240000015
         ],
-        "prefix": "",
+        "prefix": "olmayan a˘gların konu¸slandırılması ",
         "content": "önemlidir. ˙Insansız hava aracı baz istasyonlarının (˙IHAB˙I'ler) ",
-        "suffix": "konu¸slandırılması",
+        "suffix": "konu¸slandırılması bir radyo eri¸sim",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 4,
-                0.3993578286657052,
-                115,
-                178
+                0.30844453590121423,
+                53,
+                116
             ]
         ]
     },
@@ -560,17 +560,17 @@
             291.6613712000002,
             414.70842240000013
         ],
-        "prefix": "",
+        "prefix": "baz istasyonlarının (˙IHAB˙I'ler) ",
         "content": "konu¸slandırılması bir radyo eri¸sim a˘gı (RAN) sa˘glayabilir ancak ",
-        "suffix": "ana",
+        "suffix": "ana ta¸sıyıcı ba˘glantısı da",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 4,
-                null,
-                null,
-                null
+                0.14064867871282316,
+                71,
+                117
             ]
         ]
     },
@@ -583,17 +583,17 @@
             291.6576528000003,
             404.74542240000017
         ],
-        "prefix": "",
+        "prefix": "(RAN) sa˘glayabilir ancak ",
         "content": "ana ta¸sıyıcı ba˘glantısı da bu tür afet ko¸sullarında hasar görmü¸s ",
-        "suffix": "olabilir",
+        "suffix": "olabilir ve hizmet veremeyebilir.",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 4,
-                0.300214314960537,
-                179,
-                237
+                0.15447833881634432,
+                71,
+                129
             ]
         ]
     },
@@ -606,15 +606,15 @@
             291.65971680000024,
             394.7834224000001
         ],
-        "prefix": "",
+        "prefix": "ko¸sullarında hasar görmü¸s ",
         "content": "olabilir ve hizmet veremeyebilir. Bu ba˘glamda, yüksekirtifa ",
-        "suffix": "platform",
+        "suffix": "platform istasyonu (HAPS), süper",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 4,
-                0.5964310490190492,
+                0.5408754937747601,
                 307,
                 367
             ]
@@ -629,17 +629,17 @@
             291.6612000000003,
             384.7124224000001
         ],
-        "prefix": "",
+        "prefix": "Bu ba˘glamda, yüksekirtifa ",
         "content": "platform istasyonu (HAPS), süper makro baz istasyonu (SMBS) ",
-        "suffix": "ve",
+        "suffix": "ve veri merkezi olarak",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 4,
-                0.9091094062153645,
-                367,
-                427
+                0.7472202466552967,
+                307,
+                367
             ]
         ]
     },
@@ -652,7 +652,7 @@
             291.6570304000002,
             374.85742240000013
         ],
-        "prefix": "",
+        "prefix": "baz istasyonu (SMBS) ",
         "content": "ve veri merkezi olarak konu¸slandırılabilece˘gi için dikkatleri ",
         "suffix": "",
         "equation hit": false,
@@ -660,7 +660,7 @@
         "matches": [
             [
                 4,
-                0.5803477955720477,
+                0.4485510968503108,
                 307,
                 369
             ]
@@ -700,15 +700,15 @@
         ],
         "prefix": "",
         "content": "a˘gın ömrünü uzatmak için farklı topolojilere sahip üç katmanlı ",
-        "suffix": "heterojen",
+        "suffix": "heterojen bir a˘gı ara¸stırıyoruz.",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 4,
-                0.7272727272727273,
-                550,
-                608
+                0.5625000000781346,
+                312,
+                370
             ]
         ]
     },
@@ -721,17 +721,17 @@
             291.6603408000002,
             336.78442240000015
         ],
-        "prefix": "",
+        "prefix": "sahip üç katmanlı ",
         "content": "heterojen bir a˘gı ara¸stırıyoruz. Ayrıca, afet senaryolarında, ˙IHA",
-        "suffix": "B˙I'lerin",
+        "suffix": "B˙I'lerin adhoc a˘g haberle¸smesini",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 4,
-                0.3352665725680802,
-                191,
-                253
+                0.15017385343454034,
+                83,
+                145
             ]
         ]
     },
@@ -744,17 +744,17 @@
             291.6570256000002,
             326.8004224000002
         ],
-        "prefix": "˙IHA",
+        "prefix": "Ayrıca, afet senaryolarında, ˙IHA",
         "content": "B˙I'lerin adhoc a˘g haberle¸smesini etkin bir ¸sekilde ele almak için ",
-        "suffix": "iki",
+        "suffix": "iki katmanlı bir kümeleme",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 4,
-                0.264906952516298,
-                135,
-                198
+                0.5098410819372384,
+                380,
+                443
             ]
         ]
     },
@@ -767,7 +767,7 @@
             242.57016000000027,
             314.91042240000013
         ],
-        "prefix": "",
+        "prefix": "ele almak için ",
         "content": "iki katmanlı bir kümeleme algoritması önerilmi¸stir. ",
         "suffix": "",
         "equation hit": false,
@@ -775,9 +775,9 @@
         "matches": [
             [
                 4,
-                0.7142857142857143,
-                681,
-                719
+                0.40000000000228975,
+                380,
+                418
             ]
         ]
     },
@@ -793,14 +793,14 @@
         "prefix": "",
         "content": "Anahtar Kelimeler—afet, ana ta¸sıyıcı, esneklik, HAPS, ˙IHA ",
         "suffix": "",
-        "equation hit": "",
+        "equation hit": false,
         "assigned": true,
         "matches": [
             [
-                19,
+                5,
+                0.33678794411714424,
                 0,
-                null,
-                null
+                36
             ]
         ]
     },
@@ -838,7 +838,7 @@
         ],
         "prefix": "",
         "content": "In times of natural disasters and humanitarian crises, ensur",
-        "suffix": "ing",
+        "suffix": "ing effective communication channels",
         "equation hit": false,
         "assigned": true,
         "matches": [
@@ -859,15 +859,15 @@
             291.6595200000003,
             257.2636784000002
         ],
-        "prefix": "ensur",
+        "prefix": "and humanitarian crises, ensur",
         "content": "ing effective communication channels is crucial for coordinat",
-        "suffix": "ing",
+        "suffix": "ing search and rescue",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 7,
-                0.875,
+                0.6428571428571429,
                 0,
                 61
             ]
@@ -882,15 +882,15 @@
             291.6595200000003,
             245.30867840000016
         ],
-        "prefix": "coordinat",
+        "prefix": "is crucial for coordinat",
         "content": "ing search and rescue (SAR) efforts, disseminating vital infor",
-        "suffix": "mation,",
+        "suffix": "mation, and providing essential",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 7,
-                0.6367879441171442,
+                0.5854924650732152,
                 0,
                 66
             ]
@@ -905,17 +905,17 @@
             291.6595200000003,
             233.35367840000015
         ],
-        "prefix": "infor",
+        "prefix": "efforts, disseminating vital infor",
         "content": "mation, and providing essential services to people in affected ",
-        "suffix": "regions.",
+        "suffix": "regions. Since traditional communication",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 7,
-                1.0,
-                127,
-                182
+                0.6959584552022883,
+                0,
+                55
             ]
         ]
     },
@@ -928,17 +928,17 @@
             291.6595200000004,
             221.39867840000014
         ],
-        "prefix": "",
+        "prefix": "people in affected ",
         "content": "regions. Since traditional communication infrastructures are ",
-        "suffix": "often",
+        "suffix": "often vulnerable to damage",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 7,
-                1.0,
-                127,
-                188
+                0.7692307692307693,
+                0,
+                61
             ]
         ]
     },
@@ -951,17 +951,17 @@
             291.6595200000003,
             209.44267840000015
         ],
-        "prefix": "",
+        "prefix": "communication infrastructures are ",
         "content": "often vulnerable to damage or complete collapse during such ",
-        "suffix": "events,",
+        "suffix": "events, the use of",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 7,
-                1.0,
-                127,
-                187
+                0.8125,
+                0,
+                60
             ]
         ]
     },
@@ -974,17 +974,17 @@
             291.6595200000003,
             197.48767840000014
         ],
-        "prefix": "",
+        "prefix": "collapse during such ",
         "content": "events, the use of uncrewed aerial vehicles (UAVs), as non",
-        "suffix": "terrestrial",
+        "suffix": "terrestrial networks (NTN) element,",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 7,
-                0.7607163128337675,
-                66,
-                136
+                0.5408754934634936,
+                0,
+                70
             ]
         ]
     },
@@ -997,17 +997,17 @@
             291.6595200000003,
             185.53267840000012
         ],
-        "prefix": "non",
+        "prefix": "vehicles (UAVs), as non",
         "content": "terrestrial networks (NTN) element, emerges as a promising ",
-        "suffix": "solution",
+        "suffix": "solution to meet communication",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 7,
-                null,
-                null,
-                null
+                0.4735212894233971,
+                10,
+                47
             ]
         ]
     },
@@ -1020,17 +1020,17 @@
             291.6595200000003,
             173.5776784000001
         ],
-        "prefix": "",
+        "prefix": "as a promising ",
         "content": "solution to meet communication needs [1]. This is achieved ",
-        "suffix": "by",
+        "suffix": "by deploying base stations",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 7,
-                0.5657391054680391,
-                47,
-                102
+                0.5053535059599925,
+                10,
+                65
             ]
         ]
     },
@@ -1043,7 +1043,7 @@
             291.6595200000003,
             161.6226784000001
         ],
-        "prefix": "",
+        "prefix": "This is achieved ",
         "content": "by deploying base stations (BSs) on UAVs, which are referred ",
         "suffix": "",
         "equation hit": false,
@@ -1051,9 +1051,9 @@
         "matches": [
             [
                 7,
-                0.7607163128337675,
-                168,
-                229
+                0.5525542058816346,
+                10,
+                71
             ]
         ]
     },
@@ -1068,15 +1068,15 @@
         ],
         "prefix": "",
         "content": "to as UAVBSs. UAVs can be regarded as an ideal choice for ",
-        "suffix": "SAR",
+        "suffix": "SAR missions, disaster management,",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 7,
                 1.0,
-                360,
-                418
+                10,
+                68
             ]
         ]
     },
@@ -1089,17 +1089,17 @@
             554.6725200000003,
             575.5966784000001
         ],
-        "prefix": "",
+        "prefix": "ideal choice for ",
         "content": "SAR missions, disaster management, and emergency response ",
-        "suffix": "operations",
+        "suffix": "operations due to their",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 7,
-                1.0,
-                360,
-                418
+                0.7405628172265316,
+                10,
+                68
             ]
         ]
     },
@@ -1112,17 +1112,17 @@
             554.6725200000002,
             563.6416784
         ],
-        "prefix": "",
+        "prefix": "and emergency response ",
         "content": "operations due to their speed, flexibility, and mobility [1], and ",
-        "suffix": "they",
+        "suffix": "they can be easily",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 7,
-                0.6019275133457025,
-                102,
-                164
+                0.5883894222955485,
+                10,
+                72
             ]
         ]
     },
@@ -1135,17 +1135,17 @@
             554.6725200000003,
             551.6866784
         ],
-        "prefix": "",
+        "prefix": "mobility [1], and ",
         "content": "they can be easily deployed and positioned anywhere, even in ",
-        "suffix": "hardtoreach",
+        "suffix": "hardtoreach areas, providing communication",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 7,
-                1.0,
-                422,
-                483
+                0.7346183422304683,
+                10,
+                71
             ]
         ]
     },
@@ -1158,7 +1158,7 @@
             545.6065540000002,
             539.7316784
         ],
-        "prefix": "",
+        "prefix": "anywhere, even in ",
         "content": "hardtoreach areas, providing communication connectivity. ",
         "suffix": "",
         "equation hit": false,
@@ -1166,9 +1166,9 @@
         "matches": [
             [
                 7,
-                1.0,
-                422,
-                478
+                0.5459849301464303,
+                10,
+                66
             ]
         ]
     },
@@ -1183,13 +1183,13 @@
         ],
         "prefix": "",
         "content": "Nonetheless, on the flip side of the coin, UAVs need proper ",
-        "suffix": "backhauling",
+        "suffix": "backhauling strategy in the",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 8,
-                1.0,
+                0.8678883845988222,
                 0,
                 60
             ]
@@ -1204,15 +1204,15 @@
             554.6725200000003,
             515.0036783999999
         ],
-        "prefix": "",
+        "prefix": "UAVs need proper ",
         "content": "backhauling strategy in the event of aforementioned disasters, ",
-        "suffix": "as",
+        "suffix": "as the terrestrial network",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 8,
-                0.8891643057974074,
+                0.773768710647509,
                 0,
                 63
             ]
@@ -1227,17 +1227,17 @@
             554.6725200000002,
             503.04867839999986
         ],
-        "prefix": "",
+        "prefix": "of aforementioned disasters, ",
         "content": "as the terrestrial network components may be damaged and/or ",
-        "suffix": "fully",
+        "suffix": "fully collapsed. At this",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 8,
-                1.0,
-                63,
-                123
+                0.7065191010845617,
+                0,
+                60
             ]
         ]
     },
@@ -1250,17 +1250,17 @@
             554.6725200000002,
             491.09367839999993
         ],
-        "prefix": "",
+        "prefix": "be damaged and/or ",
         "content": "fully collapsed. At this point, the use of high altitude platform ",
-        "suffix": "stations",
+        "suffix": "stations (HAPS), another NTN",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 8,
-                1.0,
-                63,
-                129
+                0.8,
+                0,
+                66
             ]
         ]
     },
@@ -1273,15 +1273,15 @@
             554.6725200000003,
             479.1386783999999
         ],
-        "prefix": "",
+        "prefix": "high altitude platform ",
         "content": "stations (HAPS), another NTN element, can be considered as ",
-        "suffix": "a",
+        "suffix": "a viable solution, given",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 8,
-                0.9101008178671129,
+                0.8235294117647058,
                 0,
                 59
             ]
@@ -1296,17 +1296,17 @@
             554.6725200000002,
             467.18367839999996
         ],
-        "prefix": "",
+        "prefix": "be considered as ",
         "content": "a viable solution, given that they provide high capacity, ubiq",
-        "suffix": "uitous",
+        "suffix": "uitous connectivity, and a",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 8,
-                1.0,
-                122,
-                191
+                0.7551303124139936,
+                0,
+                69
             ]
         ]
     },
@@ -1319,17 +1319,17 @@
             554.6725200000003,
             455.2286783999999
         ],
-        "prefix": "ubiq",
+        "prefix": "provide high capacity, ubiq",
         "content": "uitous connectivity, and a powerful data center to the network ",
-        "suffix": "due",
+        "suffix": "due to the super",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 8,
-                0.819191726958022,
-                59,
-                115
+                0.7647058823529411,
+                0,
+                56
             ]
         ]
     },
@@ -1342,9 +1342,9 @@
             554.6750518000001,
             444.5454591999999
         ],
-        "prefix": "",
+        "prefix": "to the network ",
         "content": "due to the super macro BS (SMBS)1 it contains [3]. HAPS ",
-        "suffix": "is",
+        "suffix": "is located in the",
         "equation hit": false,
         "assigned": true,
         "matches": [
@@ -1365,17 +1365,17 @@
             554.6725200000003,
             431.3176784
         ],
-        "prefix": "",
+        "prefix": "contains [3]. HAPS ",
         "content": "is located in the stratosphere, at an altitude of approximately ",
-        "suffix": "20",
+        "suffix": "20 km above the",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 8,
-                1.0,
-                328,
-                392
+                0.7777787056500439,
+                150,
+                214
             ]
         ]
     },
@@ -1388,17 +1388,17 @@
             554.6725200000002,
             419.36267839999994
         ],
-        "prefix": "",
+        "prefix": "altitude of approximately ",
         "content": "20 km above the Earth's surface. This strategic positioning ",
-        "suffix": "allows",
+        "suffix": "allows HAPS to provide",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 8,
-                1.0,
-                328,
-                388
+                0.7647064782408,
+                150,
+                210
             ]
         ]
     },
@@ -1411,17 +1411,17 @@
             554.6725200000003,
             407.4076784
         ],
-        "prefix": "",
+        "prefix": "This strategic positioning ",
         "content": "allows HAPS to provide highquality communication services ",
-        "suffix": "to",
+        "suffix": "to a large geographical",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 8,
-                1.0,
-                328,
-                386
+                0.7142864378638285,
+                150,
+                208
             ]
         ]
     },
@@ -1434,7 +1434,7 @@
             525.1134858000001,
             395.45267839999997
         ],
-        "prefix": "",
+        "prefix": "highquality communication services ",
         "content": "to a large geographical area without repositioning [4]. ",
         "suffix": "",
         "equation hit": false,
@@ -1442,9 +1442,9 @@
         "matches": [
             [
                 8,
-                null,
-                null,
-                null
+                0.41666751084113324,
+                150,
+                187
             ]
         ]
     },
@@ -1459,13 +1459,13 @@
         ],
         "prefix": "",
         "content": "Although extensive research has been conducted on the ",
-        "suffix": "use",
+        "suffix": "use of terrestrial BSs",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 9,
-                0.8888888888888888,
+                1.0,
                 0,
                 54
             ]
@@ -1480,17 +1480,17 @@
             554.6725200000002,
             370.7246784
         ],
-        "prefix": "",
+        "prefix": "conducted on the ",
         "content": "use of terrestrial BSs for backhauling UAVs during disaster ",
-        "suffix": "scenarios,",
+        "suffix": "scenarios, studies on the",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 9,
-                1.0,
-                54,
-                114
+                0.6878124158377512,
+                0,
+                60
             ]
         ]
     },
@@ -1503,17 +1503,17 @@
             554.6725200000003,
             358.7696784
         ],
-        "prefix": "",
+        "prefix": "UAVs during disaster ",
         "content": "scenarios, studies on the use of HAPSSMBS for backhauling ",
-        "suffix": "purposes",
+        "suffix": "purposes in such cases",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 9,
-                1.0,
-                54,
-                112
+                0.8125,
+                0,
+                58
             ]
         ]
     },
@@ -1526,15 +1526,15 @@
             554.6725200000002,
             346.81467840000005
         ],
-        "prefix": "",
+        "prefix": "HAPSSMBS for backhauling ",
         "content": "purposes in such cases are still in their infancy. The study ",
-        "suffix": "in",
+        "suffix": "in [5] analyzed the",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 9,
-                1.0,
+                0.7005005228827389,
                 0,
                 61
             ]
@@ -1549,15 +1549,15 @@
             554.6725200000003,
             334.8596784
         ],
-        "prefix": "",
+        "prefix": "infancy. The study ",
         "content": "in [5] analyzed the network coverage based on highaltitude ",
-        "suffix": "platformsassisted",
+        "suffix": "platformsassisted backhaul and lowaltitude",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 9,
-                0.7606530659712634,
+                0.7254081662320395,
                 0,
                 55
             ]
@@ -1572,17 +1572,17 @@
             554.6725200000003,
             322.9036784
         ],
-        "prefix": "",
+        "prefix": "based on highaltitude ",
         "content": "platformsassisted backhaul and lowaltitude platforms direct ",
-        "suffix": "backhaul",
+        "suffix": "backhaul strategies in postdisaster",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 9,
-                1.0,
-                116,
-                176
+                0.7692307692307693,
+                0,
+                60
             ]
         ]
     },
@@ -1595,17 +1595,17 @@
             554.6725200000002,
             310.94867840000006
         ],
-        "prefix": "",
+        "prefix": "lowaltitude platforms direct ",
         "content": "backhaul strategies in postdisaster areas. The authors in [6] ",
-        "suffix": "studied",
+        "suffix": "studied on the UAVBSs",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 9,
-                0.8,
-                116,
-                174
+                0.7254081662320396,
+                0,
+                58
             ]
         ]
     },
@@ -1618,17 +1618,17 @@
             554.6725200000002,
             298.9936784
         ],
-        "prefix": "",
+        "prefix": "authors in [6] ",
         "content": "studied on the UAVBSs through HAPSassisted backhauling ",
-        "suffix": "within",
+        "suffix": "within a cellfree scheme.",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 9,
-                1.0,
-                288,
-                343
+                0.7857142857142857,
+                0,
+                55
             ]
         ]
     },
@@ -1641,17 +1641,17 @@
             554.6725200000003,
             287.0386784000001
         ],
-        "prefix": "",
+        "prefix": "through HAPSassisted backhauling ",
         "content": "within a cellfree scheme. A framework for planning and ",
-        "suffix": "evaluating",
+        "suffix": "evaluating aerial platformbased wireless",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 9,
-                1.0,
-                288,
-                343
+                0.8125,
+                0,
+                55
             ]
         ]
     },
@@ -1664,17 +1664,17 @@
             554.6725200000003,
             275.08367840000005
         ],
-        "prefix": "",
+        "prefix": "for planning and ",
         "content": "evaluating aerial platformbased wireless backhaul networks ",
-        "suffix": "was",
+        "suffix": "was proposed in [7],",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 9,
-                1.0,
-                288,
-                347
+                0.5727368313491953,
+                0,
+                59
             ]
         ]
     },
@@ -1687,17 +1687,17 @@
             554.6725200000003,
             263.12867840000007
         ],
-        "prefix": "",
+        "prefix": "wireless backhaul networks ",
         "content": "was proposed in [7], wherein a number of variables such as ",
-        "suffix": "altitude,",
+        "suffix": "altitude, platform type, deployment",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 9,
-                0.6325484738575715,
-                116,
-                171
+                0.643322640007812,
+                0,
+                55
             ]
         ]
     },
@@ -1710,17 +1710,17 @@
             554.6725200000002,
             251.17267840000008
         ],
-        "prefix": "",
+        "prefix": "variables such as ",
         "content": "altitude, platform type, deployment strategy, energy manage",
-        "suffix": "ment,",
+        "suffix": "ment, and security were",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 9,
-                1.0,
-                343,
-                408
+                0.7692307692307693,
+                0,
+                65
             ]
         ]
     },
@@ -1733,17 +1733,17 @@
             554.6725200000003,
             239.21767840000007
         ],
-        "prefix": "manage",
+        "prefix": "deployment strategy, energy manage",
         "content": "ment, and security were considered. The study in [8] focused ",
-        "suffix": "on",
+        "suffix": "on collecting internet of",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 9,
-                0.6915140063197018,
-                116,
-                167
+                0.6827370976301549,
+                0,
+                51
             ]
         ]
     },
@@ -1756,17 +1756,17 @@
             554.6725200000003,
             227.26267840000006
         ],
-        "prefix": "",
+        "prefix": "in [8] focused ",
         "content": "on collecting internet of things (IoT) data in a disaster scenario ",
-        "suffix": "using",
+        "suffix": "using UAVs and HAPSSMBS.",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 9,
-                0.7206061108593418,
-                116,
-                183
+                0.7035726021669181,
+                0,
+                67
             ]
         ]
     },
@@ -1779,7 +1779,7 @@
             431.6144848000002,
             215.30767840000004
         ],
-        "prefix": "",
+        "prefix": "a disaster scenario ",
         "content": "using UAVs and HAPSSMBS. ",
         "suffix": "",
         "equation hit": false,
@@ -1787,9 +1787,9 @@
         "matches": [
             [
                 9,
-                1.0,
-                461,
-                485
+                0.5714285714285714,
+                0,
+                24
             ]
         ]
     },
@@ -1804,13 +1804,13 @@
         ],
         "prefix": "",
         "content": "This current study is one of the leading works to mention ",
-        "suffix": "that",
+        "suffix": "that HAPSSMBS can create",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 10,
-                0.9172281622499238,
+                1.0,
                 0,
                 58
             ]
@@ -1825,15 +1825,15 @@
             554.6725200000003,
             190.57967840000006
         ],
-        "prefix": "",
+        "prefix": "works to mention ",
         "content": "that HAPSSMBS can create a backhaul link for UAVs in the ",
-        "suffix": "context",
+        "suffix": "context of disaster scenario.",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 10,
-                1.0,
+                0.8333333333333334,
                 0,
                 57
             ]
@@ -1848,15 +1848,15 @@
             554.6725200000003,
             178.62467840000005
         ],
-        "prefix": "",
+        "prefix": "UAVs in the ",
         "content": "context of disaster scenario. In particular, a threelayer network ",
-        "suffix": "is",
+        "suffix": "is proposed, wherein the",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 10,
-                0.9000001370959086,
+                0.7504211216874428,
                 0,
                 66
             ]
@@ -1871,7 +1871,7 @@
             554.6725200000003,
             166.66967840000004
         ],
-        "prefix": "",
+        "prefix": "a threelayer network ",
         "content": "is proposed, wherein the user equipments (UEs) are on the ",
         "suffix": "",
         "equation hit": false,
@@ -1879,7 +1879,7 @@
         "matches": [
             [
                 10,
-                0.7607163128337675,
+                0.5977056743693888,
                 0,
                 58
             ]
@@ -1903,8 +1903,8 @@
             [
                 1,
                 0.9166666666666666,
-                155,
-                218
+                90,
+                153
             ]
         ]
     },
@@ -1920,14 +1920,14 @@
         "prefix": "",
         "content": "1International Telecommunication Union (ITU) makes reference HAPS",
         "suffix": "",
-        "equation hit": false,
+        "equation hit": 25,
         "assigned": true,
         "matches": [
             [
                 8,
-                0.6456915833323664,
-                46,
-                125
+                0.6373626373626373,
+                null,
+                null
             ]
         ]
     },
@@ -1971,9 +1971,9 @@
         "matches": [
             [
                 8,
-                0.4444451271347059,
-                160,
-                185
+                0.44454576466283935,
+                101,
+                126
             ]
         ]
     },
@@ -1988,13 +1988,13 @@
         ],
         "prefix": "",
         "content": "first layer (i.e., ground), UAVBSs are on the second layer ",
-        "suffix": "(i.e.,",
+        "suffix": "(i.e., 100200 meters above",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 10,
-                0.8,
+                1.0,
                 58,
                 117
             ]
@@ -2009,17 +2009,17 @@
             291.65952000000016,
             778.8346784
         ],
-        "prefix": "",
+        "prefix": "the second layer ",
         "content": "(i.e., 100200 meters above the ground) providing radio access ",
-        "suffix": "network",
+        "suffix": "network (RAN) services, and",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 10,
-                0.9279446069363844,
-                183,
-                245
+                0.671267080064822,
+                58,
+                120
             ]
         ]
     },
@@ -2034,15 +2034,15 @@
         ],
         "prefix": "",
         "content": "adopted in this work, such that the received power, Prx, is ",
-        "suffix": "fixed",
+        "suffix": "fixed to the receiver",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 18,
                 1.0,
-                224,
-                284
+                226,
+                286
             ]
         ]
     },
@@ -2055,17 +2055,17 @@
             554.6740541999999,
             779.0538555999993
         ],
-        "prefix": "",
+        "prefix": "power, Prx, is ",
         "content": "fixed to the receiver sensitivity of the UEs and then Ptx is ",
-        "suffix": "determined",
+        "suffix": "determined accordingly (i.e., by",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 18,
-                1.0,
-                224,
-                285
+                0.8571428571439474,
+                226,
+                287
             ]
         ]
     },
@@ -2078,15 +2078,15 @@
             291.65952000000004,
             766.8796784
         ],
-        "prefix": "",
+        "prefix": "providing radio access ",
         "content": "network (RAN) services, and HAPSSMBS is on the third ",
-        "suffix": "layer",
+        "suffix": "layer (i.e., around 20",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 10,
-                0.6369761769999168,
+                0.684565155105215,
                 67,
                 111
             ]
@@ -2101,17 +2101,17 @@
             554.6736499999998,
             767.0988555999993
         ],
-        "prefix": "",
+        "prefix": "then Ptx is ",
         "content": "determined accordingly (i.e., by considering the path loss, L, ",
-        "suffix": "and",
+        "suffix": "and Prx). In other",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 18,
-                0.9168732293480555,
-                224,
-                287
+                0.8333340160235948,
+                226,
+                289
             ]
         ]
     },
@@ -2124,17 +2124,17 @@
             291.65952000000016,
             754.9246784
         ],
-        "prefix": "",
+        "prefix": "on the third ",
         "content": "layer (i.e., around 20 km from the ground) providing backhaul ",
-        "suffix": "services",
+        "suffix": "services to the UAVBSs.",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 10,
-                1.0,
-                236,
-                298
+                0.926659508405928,
+                67,
+                129
             ]
         ]
     },
@@ -2147,17 +2147,17 @@
             291.65952000000004,
             742.9696783999999
         ],
-        "prefix": "",
+        "prefix": "ground) providing backhaul ",
         "content": "services to the UAVBSs. In addition, a twolayer clustering ",
-        "suffix": "algorithm",
+        "suffix": "algorithm is proposed, such",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 10,
-                1.0,
-                236,
-                295
+                0.7504211216874428,
+                67,
+                126
             ]
         ]
     },
@@ -2170,17 +2170,17 @@
             291.6595200000001,
             731.0146783999999
         ],
-        "prefix": "",
+        "prefix": "a twolayer clustering ",
         "content": "algorithm is proposed, such that UEs, who gather in hotspots, ",
-        "suffix": "form",
+        "suffix": "form clusters on the",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 10,
-                0.9642300599738758,
-                236,
-                298
+                0.6478559262251798,
+                67,
+                129
             ]
         ]
     },
@@ -2193,17 +2193,17 @@
             291.65952000000016,
             719.0586783999998
         ],
-        "prefix": "",
+        "prefix": "gather in hotspots, ",
         "content": "form clusters on the first layer, and the UAVBSs on the second ",
-        "suffix": "layer",
+        "suffix": "layer are positioned according",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 10,
-                1.0,
-                236,
-                299
+                0.7898283129999518,
+                67,
+                130
             ]
         ]
     },
@@ -2216,17 +2216,17 @@
             291.65952000000016,
             707.1036783999998
         ],
-        "prefix": "",
+        "prefix": "on the second ",
         "content": "layer are positioned according to the results of this clustering. ",
-        "suffix": "Then,",
+        "suffix": "Then, a further clustering",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 10,
-                1.0,
-                236,
-                302
+                0.9180312152772137,
+                67,
+                133
             ]
         ]
     },
@@ -2239,17 +2239,17 @@
             291.6595200000001,
             695.1486783999998
         ],
-        "prefix": "",
+        "prefix": "of this clustering. ",
         "content": "Then, a further clustering operation is also performed on ",
-        "suffix": "the",
+        "suffix": "the UAVBSs for the",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 10,
-                0.9000074851829888,
-                236,
-                294
+                0.6886154339710829,
+                67,
+                125
             ]
         ]
     },
@@ -2262,17 +2262,17 @@
             291.6595200000001,
             683.1936783999997
         ],
-        "prefix": "",
+        "prefix": "also performed on ",
         "content": "the UAVBSs for the backhaul link. More specifically, the ",
-        "suffix": "cluster",
+        "suffix": "cluster head UAV, referred",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 10,
-                1.0,
-                236,
-                293
+                0.7175101139511038,
+                67,
+                124
             ]
         ]
     },
@@ -2285,17 +2285,17 @@
             554.6739944,
             755.1438555999993
         ],
-        "prefix": "",
+        "prefix": "path loss, L, ",
         "content": "and Prx). In other words, Ptx is a function of both Prx and ",
-        "suffix": "L;",
+        "suffix": "L; i.e., Ptx =",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 18,
-                1.0,
-                224,
-                284
+                0.7210511062023611,
+                226,
+                286
             ]
         ]
     },
@@ -2308,17 +2308,17 @@
             554.6784382000001,
             743.1878555999992
         ],
-        "prefix": "",
+        "prefix": "both Prx and ",
         "content": "L; i.e., Ptx = f (Prx, L). Moreover, L is a usually a distance",
-        "suffix": "dependent",
+        "suffix": "dependent variable, such that",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 18,
-                0.6959584552022883,
-                110,
-                178
+                0.555339372097179,
+                226,
+                294
             ]
         ]
     },
@@ -2331,17 +2331,17 @@
             554.6743734000001,
             731.2328555999992
         ],
-        "prefix": "distance",
+        "prefix": "a usually a distance",
         "content": "dependent variable, such that L = f (d), thereby Ptx can also ",
-        "suffix": "said",
+        "suffix": "said to be distancedependent,",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 18,
-                0.4383456230306851,
-                53,
-                102
+                0.5938600613092929,
+                226,
+                275
             ]
         ]
     },
@@ -2354,17 +2354,17 @@
             554.6693678,
             719.2778555999992
         ],
-        "prefix": "",
+        "prefix": "Ptx can also ",
         "content": "said to be distancedependent, that is, Ptx = f (d). Therefore, ",
-        "suffix": "at",
+        "suffix": "at the abstract level",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 18,
-                0.7206061108593418,
-                159,
-                221
+                0.6511563125927937,
+                226,
+                288
             ]
         ]
     },
@@ -2377,17 +2377,17 @@
             554.6740542000001,
             707.3228555999991
         ],
-        "prefix": "",
+        "prefix": "f (d). Therefore, ",
         "content": "at the abstract level of energy consumption calculation, EC is ",
-        "suffix": "a",
+        "suffix": "a function of d",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 18,
-                0.9293754691044026,
-                403,
-                466
+                0.7222222222229937,
+                226,
+                289
             ]
         ]
     },
@@ -2400,17 +2400,17 @@
             554.6771884000002,
             695.3678555999991
         ],
-        "prefix": "",
+        "prefix": "calculation, EC is ",
         "content": "a function of d and λ, that is, EC = f (d, λ). Thus, we define ",
-        "suffix": "a",
+        "suffix": "a metric called energy",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 18,
-                0.7982155245095246,
-                346,
-                407
+                0.7244299498236076,
+                226,
+                287
             ]
         ]
     },
@@ -2423,17 +2423,17 @@
             554.6706434000002,
             683.422818199999
         ],
-        "prefix": "",
+        "prefix": "Thus, we define ",
         "content": "a metric called energy score, Es, to represent the abstract level ",
-        "suffix": "energy",
+        "suffix": "energy consumption of a",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 18,
-                1.0,
-                464,
-                530
+                0.7777777777785493,
+                226,
+                292
             ]
         ]
     },
@@ -2446,17 +2446,17 @@
             291.6595200000001,
             671.2386783999997
         ],
-        "prefix": "",
+        "prefix": "More specifically, the ",
         "content": "cluster head UAV, referred to as HUAV, collects data from ",
-        "suffix": "other",
+        "suffix": "other UAVs in the",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 10,
-                0.9165531816930816,
-                236,
-                294
+                0.6873671214968239,
+                67,
+                125
             ]
         ]
     },
@@ -2469,7 +2469,7 @@
             454.8173802000001,
             671.237678399999
         ],
-        "prefix": "",
+        "prefix": "the abstract level ",
         "content": "energy consumption of a UAVBS as ",
         "suffix": "",
         "equation hit": false,
@@ -2477,9 +2477,9 @@
         "matches": [
             [
                 18,
-                1.0,
-                464,
-                496
+                0.6667679868850616,
+                226,
+                258
             ]
         ]
     },
@@ -2492,17 +2492,17 @@
             291.65565180000004,
             659.5128181999996
         ],
-        "prefix": "",
+        "prefix": "collects data from ",
         "content": "other UAVs in the form of adhoc networking and transmit ",
-        "suffix": "to",
+        "suffix": "to HAPSSMBS. In other",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 10,
-                0.9213941166578739,
-                236,
-                292
+                0.6831334474536305,
+                67,
+                123
             ]
         ]
     },
@@ -2515,15 +2515,15 @@
             291.65952000000016,
             647.3276783999996
         ],
-        "prefix": "",
+        "prefix": "networking and transmit ",
         "content": "to HAPSSMBS. In other words, only HUAV—positioned at ",
-        "suffix": "a",
+        "suffix": "a predesignated location that",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 10,
-                0.6449964439795342,
+                0.585913586760658,
                 67,
                 119
             ]
@@ -2538,17 +2538,17 @@
             291.65952000000016,
             635.3726783999996
         ],
-        "prefix": "",
+        "prefix": "only HUAV—positioned at ",
         "content": "a predesignated location that has a grid power connection as ",
-        "suffix": "well",
+        "suffix": "well as uninterrupted power",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 10,
-                1.0,
-                288,
-                349
+                0.7225965526110603,
+                67,
+                128
             ]
         ]
     },
@@ -2561,15 +2561,15 @@
             291.65952000000016,
             623.4176783999995
         ],
-        "prefix": "",
+        "prefix": "power connection as ",
         "content": "well as uninterrupted power supply—has a backhaul link to ",
-        "suffix": "prolong",
+        "suffix": "prolong the network lifespan,",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 10,
-                0.6698072219246766,
+                0.6102716110688545,
                 67,
                 124
             ]
@@ -2584,17 +2584,17 @@
             291.65952000000016,
             611.4626783999995
         ],
-        "prefix": "",
+        "prefix": "backhaul link to ",
         "content": "prolong the network lifespan, because the energy consumption ",
-        "suffix": "of",
+        "suffix": "of nonhead UAVs (referred",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 10,
-                1.0,
-                345,
-                406
+                0.585913586760658,
+                67,
+                128
             ]
         ]
     },
@@ -2607,15 +2607,15 @@
             291.6595200000002,
             599.5076783999995
         ],
-        "prefix": "",
+        "prefix": "the energy consumption ",
         "content": "of nonhead UAVs (referred to as NHUAVs) for the backhaul ",
-        "suffix": "connection",
+        "suffix": "connection is eliminated in",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 10,
-                0.6973232867642869,
+                0.7075421601301604,
                 67,
                 124
             ]
@@ -2630,7 +2630,7 @@
             248.77052700000013,
             587.5516783999994
         ],
-        "prefix": "",
+        "prefix": "for the backhaul ",
         "content": "connection is eliminated in our proposed topology. ",
         "suffix": "",
         "equation hit": false,
@@ -2638,9 +2638,9 @@
         "matches": [
             [
                 10,
-                1.0,
-                402,
-                452
+                0.6974410100884076,
+                67,
+                117
             ]
         ]
     },
@@ -2655,7 +2655,7 @@
         ],
         "prefix": "",
         "content": "As we consider a disaster scenario where providing con",
-        "suffix": "nectivity",
+        "suffix": "nectivity is of paramount",
         "equation hit": false,
         "assigned": true,
         "matches": [
@@ -2676,15 +2676,15 @@
             291.6595200000002,
             563.6086783999995
         ],
-        "prefix": "con",
+        "prefix": "scenario where providing con",
         "content": "nectivity is of paramount importance, we do not target to ",
-        "suffix": "minimize",
+        "suffix": "minimize the overall energy",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 11,
-                0.9090909090909091,
+                0.706278702764652,
                 0,
                 48
             ]
@@ -2699,15 +2699,15 @@
             291.6595200000002,
             551.6536783999994
         ],
-        "prefix": "",
+        "prefix": "not target to ",
         "content": "minimize the overall energy consumption of the network; ",
-        "suffix": "instead,",
+        "suffix": "instead, we aim to",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 11,
-                1.0,
+                0.7423556855491075,
                 0,
                 56
             ]
@@ -2722,15 +2722,15 @@
             291.65952000000027,
             539.6986783999994
         ],
-        "prefix": "",
+        "prefix": "of the network; ",
         "content": "instead, we aim to maximize the network lifespan to provide ",
-        "suffix": "communication",
+        "suffix": "communication services for a",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 11,
-                1.0,
+                0.8235294117647058,
                 0,
                 60
             ]
@@ -2745,15 +2745,15 @@
             291.6595200000002,
             527.7436783999993
         ],
-        "prefix": "",
+        "prefix": "lifespan to provide ",
         "content": "communication services for a longer time by minimizing the ",
-        "suffix": "energy",
+        "suffix": "energy consumption of network",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 11,
-                0.9006737946999085,
+                0.8125,
                 0,
                 59
             ]
@@ -2768,15 +2768,15 @@
             291.6595200000001,
             515.7886783999993
         ],
-        "prefix": "",
+        "prefix": "by minimizing the ",
         "content": "energy consumption of network components that rely solely ",
-        "suffix": "on",
+        "suffix": "on battery energy sources.",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 11,
-                1.0,
+                0.8,
                 0,
                 58
             ]
@@ -2791,7 +2791,7 @@
             147.98886540000004,
             503.83367839999937
         ],
-        "prefix": "",
+        "prefix": "that rely solely ",
         "content": "on battery energy sources. ",
         "suffix": "",
         "equation hit": false,
@@ -2799,7 +2799,7 @@
         "matches": [
             [
                 11,
-                1.0,
+                0.5714285714285714,
                 0,
                 26
             ]
@@ -2863,7 +2863,7 @@
         "prefix": "",
         "content": "Es = λd, (1) ",
         "suffix": "",
-        "equation hit": "Es = λd,",
+        "equation hit": 19,
         "assigned": true,
         "matches": [
             [
@@ -2908,13 +2908,13 @@
         ],
         "prefix": "",
         "content": "III. MULTITIER NONTERRESTRIAL NETWORKING FOR ",
-        "suffix": "DISASTER",
+        "suffix": "DISASTER COMMUNICATIONS",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 21,
-                0.6666666666666666,
+                0.8571428571428571,
                 0,
                 40
             ]
@@ -2929,7 +2929,7 @@
             492.51969410000004,
             601.312678399999
         ],
-        "prefix": "",
+        "prefix": "NONTERRESTRIAL NETWORKING FOR ",
         "content": "DISASTER COMMUNICATIONS ",
         "suffix": "",
         "equation hit": false,
@@ -2937,9 +2937,9 @@
         "matches": [
             [
                 21,
-                1.0,
-                40,
-                63
+                0.4,
+                0,
+                23
             ]
         ]
     },
@@ -2954,13 +2954,13 @@
         ],
         "prefix": "",
         "content": "We propose a twolayer clustering algorithm for positioning ",
-        "suffix": "the",
+        "suffix": "the UAVBSs and the",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 22,
-                0.9562811844125149,
+                0.8681388757949423,
                 0,
                 59
             ]
@@ -2975,17 +2975,17 @@
             554.6725200000002,
             573.5976783999989
         ],
-        "prefix": "",
+        "prefix": "algorithm for positioning ",
         "content": "the UAVBSs and the backhauling between the UAVBSs and ",
-        "suffix": "HAPSSMBS.",
+        "suffix": "HAPSSMBS. The firstlayer clustering",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 22,
-                1.0,
-                59,
-                113
+                0.8125,
+                0,
+                54
             ]
         ]
     },
@@ -2998,15 +2998,15 @@
             554.6725200000001,
             561.6426783999989
         ],
-        "prefix": "",
+        "prefix": "the UAVBSs and ",
         "content": "HAPSSMBS. The firstlayer clustering performed for posi",
-        "suffix": "tioning",
+        "suffix": "tioning the UAVBSs. For",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 22,
-                1.0,
+                0.7692307692307693,
                 0,
                 62
             ]
@@ -3021,17 +3021,17 @@
             554.6725200000001,
             549.6876783999988
         ],
-        "prefix": "posi",
+        "prefix": "clustering performed for posi",
         "content": "tioning the UAVBSs. For that, UEs are arranged into groups, ",
-        "suffix": "concentrated",
+        "suffix": "concentrated in hotspots, followed",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 22,
-                1.0,
-                121,
-                173
+                0.7647058823529411,
+                0,
+                52
             ]
         ]
     },
@@ -3044,17 +3044,17 @@
             554.6739888,
             537.9518555999988
         ],
-        "prefix": "",
+        "prefix": "arranged into groups, ",
         "content": "concentrated in hotspots, followed by employing a kmeans ",
-        "suffix": "algorithm",
+        "suffix": "algorithm to determine the",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 22,
-                0.8888888888888888,
-                121,
-                178
+                0.7333415606536058,
+                0,
+                57
             ]
         ]
     },
@@ -3067,17 +3067,17 @@
             554.67252,
             525.7766783999988
         ],
-        "prefix": "",
+        "prefix": "employing a kmeans ",
         "content": "algorithm to determine the centroids of these UE groups. In ",
-        "suffix": "particular,",
+        "suffix": "particular, the twodimensional coordinates",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 22,
-                1.0,
-                178,
-                238
+                0.8235294117647058,
+                0,
+                60
             ]
         ]
     },
@@ -3090,17 +3090,17 @@
             554.6725200000001,
             513.8216783999987
         ],
-        "prefix": "",
+        "prefix": "UE groups. In ",
         "content": "particular, the twodimensional coordinates of the UEs are ",
-        "suffix": "fed",
+        "suffix": "fed into the kmeans",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 22,
-                1.0,
-                178,
-                236
+                0.8,
+                0,
+                58
             ]
         ]
     },
@@ -3113,17 +3113,17 @@
             554.6777177999999,
             502.0858555999988
         ],
-        "prefix": "",
+        "prefix": "the UEs are ",
         "content": "fed into the kmeans algorithm to find the centroid positions, ",
-        "suffix": "which",
+        "suffix": "which are then used",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 22,
-                1.0,
-                178,
-                240
+                0.8235294117647058,
+                0,
+                62
             ]
         ]
     },
@@ -3136,17 +3136,17 @@
             554.67252,
             489.9116783999988
         ],
-        "prefix": "",
+        "prefix": "the centroid positions, ",
         "content": "which are then used as the twodimensional positioning of ",
-        "suffix": "UAVBSs",
+        "suffix": "UAVBSs (the altitude of",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 22,
-                0.9,
-                121,
-                178
+                0.8235294117647058,
+                0,
+                57
             ]
         ]
     },
@@ -3159,7 +3159,7 @@
             543.4446697999999,
             477.95667839999885
         ],
-        "prefix": "",
+        "prefix": "twodimensional positioning of ",
         "content": "UAVBSs (the altitude of the UAVBSs is fixed to 150 m). ",
         "suffix": "",
         "equation hit": false,
@@ -3167,9 +3167,9 @@
         "matches": [
             [
                 22,
-                1.0,
-                235,
-                289
+                0.8,
+                0,
+                54
             ]
         ]
     },
@@ -3184,7 +3184,7 @@
         ],
         "prefix": "",
         "content": "The secondlayer clustering is then applied to find the ",
-        "suffix": "communication",
+        "suffix": "communication topology for backhauling.",
         "equation hit": false,
         "assigned": true,
         "matches": [
@@ -3207,13 +3207,13 @@
         ],
         "prefix": "",
         "content": "A threetier vertical heterogeneous network (VHetNet) in",
-        "suffix": "cluding",
+        "suffix": "cluding n ∈ N",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 15,
-                0.6709849301464303,
+                0.6704197625609571,
                 0,
                 63
             ]
@@ -3228,17 +3228,17 @@
             291.6631684000001,
             444.57459999999935
         ],
-        "prefix": "in",
+        "prefix": "heterogeneous network (VHetNet) in",
         "content": "cluding n ∈ N UAVBSs, with j = {1, 2, ..., n} storing the ",
-        "suffix": "indices",
+        "suffix": "indices of UAVs, and",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 15,
-                0.5492732357670367,
+                0.5170357471758762,
                 0,
-                44
+                45
             ]
         ]
     },
@@ -3251,15 +3251,15 @@
             554.67252,
             453.9346783999988
         ],
-        "prefix": "",
+        "prefix": "to find the ",
         "content": "communication topology for backhauling. Unlike the first",
-        "suffix": "layer",
+        "suffix": "layer clustering, this time",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 23,
-                1.0,
+                0.7692307692307693,
                 0,
                 62
             ]
@@ -3274,15 +3274,15 @@
             554.67252,
             441.9796783999989
         ],
-        "prefix": "first",
+        "prefix": "backhauling. Unlike the first",
         "content": "layer clustering, this time the twodimensional coordinates of ",
-        "suffix": "the",
+        "suffix": "the UAVBSs (obtained in",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 23,
-                0.7777777777777778,
+                0.6926303124139936,
                 0,
                 56
             ]
@@ -3297,17 +3297,17 @@
             291.65952000000016,
             430.4676783999994
         ],
-        "prefix": "",
+        "prefix": "n} storing the ",
         "content": "indices of UAVs, and a single HAPSSMBS is considered as a ",
-        "suffix": "network",
+        "suffix": "network model. The environment",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 15,
-                1.0,
-                107,
-                165
+                0.7780048206354703,
+                0,
+                58
             ]
         ]
     },
@@ -3320,17 +3320,17 @@
             554.67252,
             430.02467839999883
         ],
-        "prefix": "",
+        "prefix": "twodimensional coordinates of ",
         "content": "the UAVBSs (obtained in the firstlayer clustering) are fed into ",
-        "suffix": "another",
+        "suffix": "another kmeans algorithm to",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 23,
-                1.0,
-                118,
-                182
+                0.7780048206354703,
+                0,
+                64
             ]
         ]
     },
@@ -3343,17 +3343,17 @@
             291.6610472000001,
             418.7318555999994
         ],
-        "prefix": "",
+        "prefix": "considered as a ",
         "content": "network model. The environment area is 3 km × 3 km. There ",
-        "suffix": "are",
+        "suffix": "are also e ∈",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 15,
-                1.0,
-                107,
-                165
+                0.8421052631578947,
+                0,
+                58
             ]
         ]
     },
@@ -3366,17 +3366,17 @@
             291.6564302000001,
             408.7095999999994
         ],
-        "prefix": "",
+        "prefix": "3 km. There ",
         "content": "are also e ∈ N users/UEs, with i = {1, 2, ..., e} storing the ",
-        "suffix": "indices",
+        "suffix": "indices for the users/UEs,",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 15,
-                0.6398186418844618,
-                44,
-                100
+                0.6584354099847749,
+                0,
+                57
             ]
         ]
     },
@@ -3389,17 +3389,17 @@
             554.6735571999999,
             418.2888555999989
         ],
-        "prefix": "",
+        "prefix": "are fed into ",
         "content": "another kmeans algorithm to compute the centroid positions. ",
-        "suffix": "After",
+        "suffix": "After that, the UAVBS",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 23,
-                1.0,
-                118,
-                178
+                0.8,
+                0,
+                60
             ]
         ]
     },
@@ -3412,17 +3412,17 @@
             554.67252,
             406.11467839999887
         ],
-        "prefix": "",
+        "prefix": "the centroid positions. ",
         "content": "After that, the UAVBS that has the closest proximity to the ",
-        "suffix": "centroid",
+        "suffix": "centroid is assigned as",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 23,
-                1.0,
-                118,
-                178
+                0.7781521081666158,
+                0,
+                60
             ]
         ]
     },
@@ -3435,17 +3435,17 @@
             291.6595200000002,
             394.6026783999994
         ],
-        "prefix": "",
+        "prefix": "e} storing the ",
         "content": "indices for the users/UEs, distributed around the environment ",
-        "suffix": "by",
+        "suffix": "by forming clusters. HAPS",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 15,
-                0.9,
-                163,
-                225
+                0.8125,
+                0,
+                62
             ]
         ]
     },
@@ -3458,17 +3458,17 @@
             554.6725199999998,
             394.15867839999885
         ],
-        "prefix": "",
+        "prefix": "proximity to the ",
         "content": "centroid is assigned as HUAV, and the rest of the UAV",
-        "suffix": "BSs",
+        "suffix": "BSs serve as NHUAVs.",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 23,
-                1.0,
-                56,
-                113
+                0.8235294117647058,
+                0,
+                57
             ]
         ]
     },
@@ -3481,17 +3481,17 @@
             291.6595200000002,
             382.64667839999936
         ],
-        "prefix": "",
+        "prefix": "around the environment ",
         "content": "by forming clusters. HAPS is located 20 km above the center ",
-        "suffix": "of",
+        "suffix": "of the environment, while",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 15,
-                0.9172281622499238,
-                283,
-                343
+                0.8333333333333334,
+                0,
+                60
             ]
         ]
     },
@@ -3504,17 +3504,17 @@
             554.67252,
             382.2036783999989
         ],
-        "prefix": "UAV",
+        "prefix": "rest of the UAV",
         "content": "BSs serve as NHUAVs. The UAVBSs then form an adhoc ",
-        "suffix": "network",
+        "suffix": "network in such a",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 23,
-                1.0,
-                175,
-                222
+                0.706278702764652,
+                0,
+                47
             ]
         ]
     },
@@ -3527,17 +3527,17 @@
             291.65952000000027,
             370.69167839999943
         ],
-        "prefix": "",
+        "prefix": "above the center ",
         "content": "of the environment, while the UAVs are distributed around the ",
-        "suffix": "environment",
+        "suffix": "environment with an altitude",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 15,
-                1.0,
-                283,
-                345
+                0.8235294117647058,
+                0,
+                62
             ]
         ]
     },
@@ -3550,17 +3550,17 @@
             554.67252,
             370.2486783999989
         ],
-        "prefix": "",
+        "prefix": "form an adhoc ",
         "content": "network in such a way that the NHUAVs are transferring their ",
-        "suffix": "data",
+        "suffix": "data to the HUAV,",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 23,
-                0.9279446069363844,
-                175,
-                236
+                0.8333333333333334,
+                0,
+                61
             ]
         ]
     },
@@ -3573,17 +3573,17 @@
             291.6595200000002,
             358.7366783999994
         ],
-        "prefix": "",
+        "prefix": "distributed around the ",
         "content": "environment with an altitude of 150 m. There are also landing ",
-        "suffix": "spots,",
+        "suffix": "spots, powered by grid",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 15,
-                1.0,
-                283,
-                345
+                0.8333333333333334,
+                0,
+                62
             ]
         ]
     },
@@ -3596,17 +3596,17 @@
             554.67252,
             358.29367839999895
         ],
-        "prefix": "",
+        "prefix": "are transferring their ",
         "content": "data to the HUAV, which has the capability of connecting to ",
-        "suffix": "HAPSSMBS",
+        "suffix": "HAPSSMBS via a backhauling",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 23,
-                1.0,
-                175,
-                235
+                0.8333333333333334,
+                0,
+                60
             ]
         ]
     },
@@ -3619,17 +3619,17 @@
             291.65952000000016,
             346.78167839999946
         ],
-        "prefix": "",
+        "prefix": "are also landing ",
         "content": "spots, powered by grid and generators, in some parts of the ",
-        "suffix": "city.",
+        "suffix": "city. The system model",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 15,
-                1.0,
-                283,
-                343
+                0.8333333333333334,
+                0,
+                60
             ]
         ]
     },
@@ -3642,17 +3642,17 @@
             554.67252,
             346.3386783999989
         ],
-        "prefix": "",
+        "prefix": "of connecting to ",
         "content": "HAPSSMBS via a backhauling link. As mentioned earlier, ",
-        "suffix": "some",
+        "suffix": "some landing spots, with",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 23,
-                1.0,
-                175,
-                230
+                0.7388056665749265,
+                0,
+                55
             ]
         ]
     },
@@ -3665,7 +3665,7 @@
             230.8577722000001,
             334.8266783999994
         ],
-        "prefix": "",
+        "prefix": "parts of the ",
         "content": "city. The system model is illustrated in Fig. 1. ",
         "suffix": "",
         "equation hit": false,
@@ -3673,9 +3673,9 @@
         "matches": [
             [
                 15,
-                0.7777777777777778,
-                163,
-                204
+                0.5833333333333334,
+                0,
+                41
             ]
         ]
     },
@@ -3713,7 +3713,7 @@
         ],
         "prefix": "",
         "content": "We are mainly interested in the energy consumption of the ",
-        "suffix": "UAVs",
+        "suffix": "UAVs in the network",
         "equation hit": false,
         "assigned": true,
         "matches": [
@@ -3734,15 +3734,15 @@
             291.6595200000002,
             288.70567839999944
         ],
-        "prefix": "",
+        "prefix": "consumption of the ",
         "content": "UAVs in the network as they are mostly batterypowered and ",
-        "suffix": "can",
+        "suffix": "can create a bottleneck",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 17,
-                1.0,
+                0.8235294117647058,
                 0,
                 58
             ]
@@ -3757,15 +3757,15 @@
             291.65952000000027,
             276.7506783999994
         ],
-        "prefix": "",
+        "prefix": "mostly batterypowered and ",
         "content": "can create a bottleneck in the communication service time. The ",
-        "suffix": "total",
+        "suffix": "total energy consumption of",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 17,
-                0.9090909090909091,
+                0.5882352941176471,
                 0,
                 63
             ]
@@ -3780,15 +3780,15 @@
             291.65677320000003,
             265.01485559999946
         ],
-        "prefix": "",
+        "prefix": "service time. The ",
         "content": "total energy consumption of a UAV, ET, is usually modeled ",
-        "suffix": "by",
+        "suffix": "by the accumulation of",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 17,
-                1.0,
+                0.9543017741263782,
                 63,
                 121
             ]
@@ -3803,15 +3803,15 @@
             291.65952000000016,
             252.83967839999946
         ],
-        "prefix": "",
+        "prefix": "is usually modeled ",
         "content": "by the accumulation of the energy consumption values due to ",
-        "suffix": "communication,",
+        "suffix": "communication, EC, and flight,",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 17,
-                1.0,
+                0.7653593527375436,
                 63,
                 123
             ]
@@ -3826,17 +3826,17 @@
             291.66405840000016,
             241.10385559999943
         ],
-        "prefix": "",
+        "prefix": "values due to ",
         "content": "communication, EC, and flight, such as hovering and mobil",
-        "suffix": "ity",
+        "suffix": "ity [9]. In our",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 17,
-                0.8888888888888888,
-                0,
-                52
+                0.5146399472929171,
+                63,
+                115
             ]
         ]
     },
@@ -3849,17 +3849,17 @@
             291.6595200000002,
             228.92967839999943
         ],
-        "prefix": "mobil",
+        "prefix": "as hovering and mobil",
         "content": "ity [9]. In our scenario, we aim to investigate the dynamics of ",
-        "suffix": "the",
+        "suffix": "the total energy consumption",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 17,
-                0.6691342457979602,
-                10,
-                65
+                0.6306634303355859,
+                73,
+                128
             ]
         ]
     },
@@ -3872,17 +3872,17 @@
             291.65952000000016,
             216.97467839999942
         ],
-        "prefix": "",
+        "prefix": "the dynamics of ",
         "content": "the total energy consumption of the UAV network; since the ",
-        "suffix": "communication",
+        "suffix": "communication energy consumption is",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 17,
-                1.0,
-                180,
-                239
+                0.8451693788924378,
+                73,
+                132
             ]
         ]
     },
@@ -3895,17 +3895,17 @@
             291.65952000000027,
             205.0196783999994
         ],
-        "prefix": "",
+        "prefix": "network; since the ",
         "content": "communication energy consumption is the predominant factor, ",
-        "suffix": "and",
+        "suffix": "and the flight energy",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 17,
-                1.0,
-                180,
-                240
+                0.7589175927572406,
+                73,
+                133
             ]
         ]
     },
@@ -3918,17 +3918,17 @@
             291.6595200000002,
             193.06367839999942
         ],
-        "prefix": "",
+        "prefix": "the predominant factor, ",
         "content": "and the flight energy consumption remains consistent across all ",
-        "suffix": "comparisons,",
+        "suffix": "comparisons, we solely focus",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 17,
-                1.0,
-                180,
-                244
+                0.8354924650732152,
+                73,
+                137
             ]
         ]
     },
@@ -3941,7 +3941,7 @@
             287.7541808000002,
             181.1086783999994
         ],
-        "prefix": "",
+        "prefix": "consistent across all ",
         "content": "comparisons, we solely focus on the communication energy. ",
         "suffix": "",
         "equation hit": false,
@@ -3949,9 +3949,9 @@
         "matches": [
             [
                 17,
-                0.8258163324640792,
-                65,
-                122
+                0.5102971460647017,
+                73,
+                130
             ]
         ]
     },
@@ -3966,7 +3966,7 @@
         ],
         "prefix": "",
         "content": "The variable EC is a function of transmit power and load ",
-        "suffix": "of",
+        "suffix": "of a BS, as",
         "equation hit": false,
         "assigned": true,
         "matches": [
@@ -3987,15 +3987,15 @@
             291.1626164,
             157.38485559999938
         ],
-        "prefix": "",
+        "prefix": "power and load ",
         "content": "of a BS, as stated in [9], that is, EC = f (Ptx, λ), where Ptx ",
-        "suffix": "is",
+        "suffix": "is the transmit power",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 18,
-                0.61013226529015,
+                0.592565590458732,
                 0,
                 57
             ]
@@ -4010,17 +4010,17 @@
             291.6565196,
             145.42985559999937
         ],
-        "prefix": "",
+        "prefix": "λ), where Ptx ",
         "content": "is the transmit power and λ is the load of the BS, while ",
-        "suffix": "f",
+        "suffix": "f : R+ →",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 18,
-                0.9285714285714286,
-                114,
-                171
+                0.6611565080074214,
+                0,
+                57
             ]
         ]
     },
@@ -4033,7 +4033,7 @@
             291.65685700000006,
             135.40759999999938
         ],
-        "prefix": "",
+        "prefix": "the BS, while ",
         "content": "f : R+ → R+ is a function. A power control strategy is ",
         "suffix": "",
         "equation hit": false,
@@ -4041,9 +4041,9 @@
         "matches": [
             [
                 18,
-                0.583923815486144,
-                6,
-                53
+                0.4805384786460333,
+                7,
+                55
             ]
         ]
     },
@@ -4056,17 +4056,17 @@
             554.67252,
             334.383678399999
         ],
-        "prefix": "",
+        "prefix": "As mentioned earlier, ",
         "content": "some landing spots, with grid and generator power supplies ",
-        "suffix": "as",
+        "suffix": "as well as a",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 23,
-                0.9000335462627902,
-                175,
-                234
+                0.7500209664142439,
+                0,
+                59
             ]
         ]
     },
@@ -4079,17 +4079,17 @@
             554.67252,
             322.42767839999897
         ],
-        "prefix": "",
+        "prefix": "generator power supplies ",
         "content": "as well as a clear lineofsight with the majority of the area ",
-        "suffix": "that",
+        "suffix": "that they are planned",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 23,
-                1.0,
-                175,
-                236
+                0.8421052631578947,
+                0,
+                61
             ]
         ]
     },
@@ -4102,17 +4102,17 @@
             554.6725200000001,
             310.4726783999989
         ],
-        "prefix": "",
+        "prefix": "of the area ",
         "content": "that they are planned to serve, are deployed around the city. ",
-        "suffix": "Therefore,",
+        "suffix": "Therefore, the HUAV is",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 23,
-                1.0,
-                175,
-                237
+                0.7783949442521245,
+                0,
+                62
             ]
         ]
     },
@@ -4125,17 +4125,17 @@
             554.67252,
             298.517678399999
         ],
-        "prefix": "",
+        "prefix": "around the city. ",
         "content": "Therefore, the HUAV is positioned at the nearest landing ",
-        "suffix": "spot",
+        "suffix": "spot for continuous energy",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 23,
-                1.0,
-                175,
-                232
+                0.7551303124139936,
+                0,
+                57
             ]
         ]
     },
@@ -4148,17 +4148,17 @@
             554.6725199999998,
             286.56267839999896
         ],
-        "prefix": "",
+        "prefix": "the nearest landing ",
         "content": "spot for continuous energy supply to prevent its battery from ",
-        "suffix": "depleting",
+        "suffix": "depleting fast as it",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 23,
-                1.0,
-                175,
-                237
+                0.8235294117647058,
+                0,
+                62
             ]
         ]
     },
@@ -4171,17 +4171,17 @@
             554.67252,
             274.60767839999903
         ],
-        "prefix": "",
+        "prefix": "its battery from ",
         "content": "depleting fast as it is responsible to transmit all the data of ",
-        "suffix": "the",
+        "suffix": "the affected region. The",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 23,
-                0.9230769230769231,
-                56,
-                120
+                0.8012173768499173,
+                0,
+                64
             ]
         ]
     },
@@ -4194,17 +4194,17 @@
             554.6725200000001,
             262.652678399999
         ],
-        "prefix": "",
+        "prefix": "the data of ",
         "content": "the affected region. The effects of the distance between the ",
-        "suffix": "landing",
+        "suffix": "landing spots and optimal",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 23,
-                1.0,
-                239,
-                300
+                0.8235294117647058,
+                0,
+                61
             ]
         ]
     },
@@ -4217,17 +4217,17 @@
             554.67252,
             250.696678399999
         ],
-        "prefix": "",
+        "prefix": "distance between the ",
         "content": "landing spots and optimal position of UAVBSs on the energy ",
-        "suffix": "efficiency",
+        "suffix": "efficiency are deeply investigated",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 23,
-                1.0,
-                239,
-                298
+                0.8235294117647058,
+                0,
+                59
             ]
         ]
     },
@@ -4240,15 +4240,15 @@
             554.67252,
             238.741678399999
         ],
-        "prefix": "",
+        "prefix": "on the energy ",
         "content": "efficiency are deeply investigated in [10], which can be used ",
-        "suffix": "as",
+        "suffix": "as a complementary source",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 23,
-                0.6019275133457025,
+                0.6235072311193571,
                 0,
                 57
             ]
@@ -4263,7 +4263,7 @@
             502.50834639999994,
             226.78667839999898
         ],
-        "prefix": "",
+        "prefix": "can be used ",
         "content": "as a complementary source to this present work. ",
         "suffix": "",
         "equation hit": false,
@@ -4271,9 +4271,9 @@
         "matches": [
             [
                 23,
-                1.0,
-                296,
-                343
+                0.7272727272727273,
+                0,
+                47
             ]
         ]
     },
@@ -4296,7 +4296,7 @@
                 24,
                 0.6852608466790358,
                 0,
-                54
+                53
             ]
         ]
     },
@@ -4318,8 +4318,8 @@
             [
                 24,
                 1.0,
-                54,
-                79
+                0,
+                25
             ]
         ]
     },
@@ -4335,7 +4335,7 @@
         "prefix": "",
         "content": "Ep = n1Ỽ j=1 (λjdj,e + λkdj,H), (2) ",
         "suffix": "",
-        "equation hit": "Ep = ∑j=1^n1 (λj dj,e+λk dj,H),",
+        "equation hit": 19,
         "assigned": true,
         "matches": [
             [
@@ -4350,22 +4350,22 @@
         "page": 1,
         "index": 103,
         "bbox": [
-            303.615,
-            134.5530828,
-            554.6739944000001,
-            145.4298556
+            396.45899999999983,
+            171.12243999999896,
+            411.58157909999983,
+            185.70988279999898
         ],
         "prefix": "",
-        "content": "where dj,e is the average distance between the UAVBS j and ",
-        "suffix": "all",
-        "equation hit": false,
+        "content": "n1Ỽ ",
+        "suffix": "",
+        "equation hit": 19,
         "assigned": true,
         "matches": [
             [
-                26,
-                1.0,
-                0,
-                59
+                25,
+                null,
+                null,
+                null
             ]
         ]
     },
@@ -4373,12 +4373,81 @@
         "page": 1,
         "index": 104,
         "bbox": [
+            397.12699999999984,
+            154.52808279999897,
+            410.9146016999998,
+            161.50188279999898
+        ],
+        "prefix": "",
+        "content": "j=1 ",
+        "suffix": "",
+        "equation hit": 19,
+        "assigned": true,
+        "matches": [
+            [
+                25,
+                null,
+                null,
+                null
+            ]
+        ]
+    },
+    {
+        "page": 1,
+        "index": 105,
+        "bbox": [
+            411.5819999999998,
+            164.6356592,
+            554.6743915999999,
+            175.6658556
+        ],
+        "prefix": "",
+        "content": "(λjdj,e + λkdj,H), (2) ",
+        "suffix": "",
+        "equation hit": 25,
+        "assigned": true,
+        "matches": [
+            [
+                25,
+                null,
+                null,
+                null
+            ]
+        ]
+    },
+    {
+        "page": 1,
+        "index": 106,
+        "bbox": [
+            303.615,
+            134.5530828,
+            554.6739944000001,
+            145.4298556
+        ],
+        "prefix": "",
+        "content": "where dj,e is the average distance between the UAVBS j and ",
+        "suffix": "all the UEs, and",
+        "equation hit": false,
+        "assigned": true,
+        "matches": [
+            [
+                26,
+                0.9604924650732152,
+                0,
+                59
+            ]
+        ]
+    },
+    {
+        "page": 1,
+        "index": 107,
+        "bbox": [
             303.615,
             122.4446592,
             554.6740542,
             133.4748556
         ],
-        "prefix": "",
+        "prefix": "UAVBS j and ",
         "content": "all the UEs, and λj is total load of UAVBS j while dj,H is ",
         "suffix": "",
         "equation hit": false,
@@ -4386,7 +4455,7 @@
         "matches": [
             [
                 26,
-                1.0,
+                0.8333333333333334,
                 0,
                 59
             ]
@@ -4403,15 +4472,15 @@
         ],
         "prefix": "",
         "content": "Figure 1. A city model is formed during a disaster, infrastructures have collapsed and communication is provided by UAVs, HAPS is backhauling the UAVs, ",
-        "suffix": "and",
+        "suffix": "and UEs are clustered",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 13,
-                0.8400018159971904,
-                141,
-                283
+                0.9285714285714286,
+                0,
+                142
             ]
         ]
     },
@@ -4424,7 +4493,7 @@
             225.23733660000016,
             525.8675584
         ],
-        "prefix": "",
+        "prefix": "backhauling the UAVs, ",
         "content": "and UEs are clustered in places such as gathering areas. ",
         "suffix": "",
         "equation hit": false,
@@ -4432,9 +4501,9 @@
         "matches": [
             [
                 13,
-                1.0,
-                283,
-                339
+                0.7692307692307693,
+                0,
+                56
             ]
         ]
     },
@@ -4449,15 +4518,15 @@
         ],
         "prefix": "",
         "content": "the distance between UAVBS j and the HUAV. Since the ",
-        "suffix": "HUAV",
+        "suffix": "HUAV has a continuous",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 26,
-                0.9090909090909091,
-                0,
-                53
+                1.0,
+                59,
+                112
             ]
         ]
     },
@@ -4472,15 +4541,15 @@
         ],
         "prefix": "",
         "content": "with δ for each method as λ rises with increasing δ, which in ",
-        "suffix": "turn",
+        "suffix": "turn boosts the total",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 35,
-                1.0,
-                116,
-                178
+                0.9628164377159673,
+                115,
+                177
             ]
         ]
     },
@@ -4493,17 +4562,17 @@
             291.6595200000001,
             483.2636784
         ],
-        "prefix": "",
+        "prefix": "HUAV. Since the ",
         "content": "HUAV has a continuous power supply on the landing spot ",
-        "suffix": "and",
+        "suffix": "and this study focuses",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 26,
-                1.0,
-                112,
-                167
+                0.8004725940532712,
+                59,
+                114
             ]
         ]
     },
@@ -4516,17 +4585,17 @@
             554.6725200000002,
             483.2636784
         ],
-        "prefix": "",
+        "prefix": "δ, which in ",
         "content": "turn boosts the total energy score as given in (2) and (3). While ",
-        "suffix": "SLC",
+        "suffix": "SLC and CUP show",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 35,
-                0.5400497918554835,
-                6,
-                66
+                0.5789073795778135,
+                115,
+                174
             ]
         ]
     },
@@ -4539,17 +4608,17 @@
             291.65952000000016,
             471.3076784
         ],
-        "prefix": "",
+        "prefix": "the landing spot ",
         "content": "and this study focuses on prolonging the service time of the ",
-        "suffix": "UAVs,",
+        "suffix": "UAVs, the energy score",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 26,
-                1.0,
-                112,
-                173
+                0.8334168577329432,
+                59,
+                120
             ]
         ]
     },
@@ -4562,17 +4631,17 @@
             554.6725200000002,
             471.3076784
         ],
-        "prefix": "",
+        "prefix": "and (3). While ",
         "content": "SLC and CUP show similar behaviors, DLCAHN is separated ",
-        "suffix": "from",
+        "suffix": "from them with a",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 35,
-                1.0,
-                176,
-                232
+                0.6470751953058176,
+                115,
+                171
             ]
         ]
     },
@@ -4585,7 +4654,7 @@
             276.9347972000001,
             459.35267840000006
         ],
-        "prefix": "",
+        "prefix": "time of the ",
         "content": "UAVs, the energy score of the HUAV is excluded in (2). ",
         "suffix": "",
         "equation hit": false,
@@ -4593,9 +4662,9 @@
         "matches": [
             [
                 26,
-                0.75,
-                112,
-                159
+                0.5770878485386998,
+                59,
+                106
             ]
         ]
     },
@@ -4608,17 +4677,17 @@
             554.6725200000002,
             459.35267840000006
         ],
-        "prefix": "",
+        "prefix": "DLCAHN is separated ",
         "content": "from them with a considerably lower energy score. The reason ",
-        "suffix": "for",
+        "suffix": "for this is that",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 35,
-                0.910755967171703,
-                176,
-                237
+                0.76471785108053,
+                115,
+                176
             ]
         ]
     },
@@ -4677,17 +4746,17 @@
             554.6725200000001,
             447.3976784
         ],
-        "prefix": "",
+        "prefix": "score. The reason ",
         "content": "for this is that the NHUAVs do not have backhauling link ",
-        "suffix": "to",
+        "suffix": "to HAPSSMB and they",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 35,
-                0.9208155890306554,
-                176,
-                233
+                0.7693320254860998,
+                115,
+                172
             ]
         ]
     },
@@ -4700,17 +4769,17 @@
             554.6725200000001,
             435.4426784000001
         ],
-        "prefix": "",
+        "prefix": "have backhauling link ",
         "content": "to HAPSSMB and they only transmit their data to HUAV, ",
-        "suffix": "which",
+        "suffix": "which is in a",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 35,
-                1.0,
-                176,
-                230
+                0.588687110232335,
+                115,
+                169
             ]
         ]
     },
@@ -4723,17 +4792,17 @@
             554.6725200000002,
             423.48767840000005
         ],
-        "prefix": "",
+        "prefix": "data to HUAV, ",
         "content": "which is in a much closer proximity to them compared to ",
-        "suffix": "HAPSSMBS.",
+        "suffix": "HAPSSMBS. For SLC and",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 35,
-                1.0,
-                176,
-                232
+                0.6680698363476015,
+                115,
+                171
             ]
         ]
     },
@@ -4748,13 +4817,13 @@
         ],
         "prefix": "",
         "content": "In addition to the abovementioned proposed topology, ",
-        "suffix": "referred",
+        "suffix": "referred to as doublelayer",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 29,
-                0.9028912700185537,
+                1.0,
                 0,
                 53
             ]
@@ -4769,15 +4838,15 @@
             554.6725200000001,
             411.53167840000003
         ],
-        "prefix": "",
+        "prefix": "them compared to ",
         "content": "HAPSSMBS. For SLC and CUP, on the other hand, all the ",
-        "suffix": "UAVBSs",
+        "suffix": "UAVBSs need to transmit",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 35,
-                0.9166666666666666,
+                0.7777890815760561,
                 115,
                 169
             ]
@@ -4792,15 +4861,15 @@
             291.65687460000015,
             399.70981820000003
         ],
-        "prefix": "",
+        "prefix": "abovementioned proposed topology, ",
         "content": "referred to as doublelayer clustering approach with adhoc ",
-        "suffix": "networking",
+        "suffix": "networking (DLCAHN) hereafter, two",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 29,
-                1.0,
+                0.7254081662320396,
                 0,
                 58
             ]
@@ -4815,17 +4884,17 @@
             554.6725200000002,
             399.5766784000001
         ],
-        "prefix": "",
+        "prefix": "hand, all the ",
         "content": "UAVBSs need to transmit their data to HAPSSMBS, and ",
-        "suffix": "considering",
+        "suffix": "considering (3), their energy",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 35,
-                0.9,
-                230,
-                282
+                0.5114045873870404,
+                115,
+                167
             ]
         ]
     },
@@ -4838,15 +4907,15 @@
             291.6562574000001,
             387.75481820000005
         ],
-        "prefix": "",
+        "prefix": "approach with adhoc ",
         "content": "networking (DLCAHN) hereafter, two different benchmark ",
-        "suffix": "topologies",
+        "suffix": "topologies are also considered.",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 29,
-                1.0,
+                0.6861807614080452,
                 0,
                 55
             ]
@@ -4861,17 +4930,17 @@
             554.6725200000001,
             387.62167840000006
         ],
-        "prefix": "",
+        "prefix": "to HAPSSMBS, and ",
         "content": "considering (3), their energy scores soar significantly. SLC ",
-        "suffix": "and",
+        "suffix": "and CUP appear almost",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 35,
-                null,
-                null,
-                null
+                0.5625077131127554,
+                128,
+                172
             ]
         ]
     },
@@ -4884,15 +4953,15 @@
             291.6595200000001,
             375.5706784
         ],
-        "prefix": "",
+        "prefix": "two different benchmark ",
         "content": "topologies are also considered. The first benchmark is that ",
-        "suffix": "UAVBSs",
+        "suffix": "UAVBSs are positioned in",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 29,
-                0.9135335283236612,
+                0.7879081662320396,
                 0,
                 60
             ]
@@ -4907,17 +4976,17 @@
             554.6725200000001,
             375.66667840000014
         ],
-        "prefix": "",
+        "prefix": "soar significantly. SLC ",
         "content": "and CUP appear almost on top of each other in Fig. 2, but ",
-        "suffix": "there",
+        "suffix": "there is a difference",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 35,
-                0.7405628172265316,
-                172,
-                229
+                0.6684001425487764,
+                128,
+                184
             ]
         ]
     },
@@ -4930,15 +4999,15 @@
             291.6595200000002,
             363.6156784000001
         ],
-        "prefix": "",
+        "prefix": "benchmark is that ",
         "content": "UAVBSs are positioned in the same way as DLCAHN (i.e., ",
-        "suffix": "with",
+        "suffix": "with the kmeans clustering);",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 29,
-                0.9244858183760564,
+                0.8421052631578947,
                 0,
                 55
             ]
@@ -4953,17 +5022,17 @@
             554.6725200000002,
             363.7116784000001
         ],
-        "prefix": "",
+        "prefix": "Fig. 2, but ",
         "content": "there is a difference of 0.41% between them in terms of the ",
-        "suffix": "total",
+        "suffix": "total energy score. In",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 35,
-                1.0,
-                344,
-                404
+                0.8500061704902043,
+                128,
+                188
             ]
         ]
     },
@@ -4976,15 +5045,15 @@
             291.6555938000001,
             351.87885560000007
         ],
-        "prefix": "",
+        "prefix": "as DLCAHN (i.e., ",
         "content": "with the kmeans clustering); however, this time each UAV",
-        "suffix": "BS",
+        "suffix": "BS connects with HAPSSMBS",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 29,
-                1.0,
+                0.7058823529411765,
                 0,
                 59
             ]
@@ -4999,17 +5068,17 @@
             554.6725200000002,
             351.75667840000017
         ],
-        "prefix": "",
+        "prefix": "terms of the ",
         "content": "total energy score. In SLC, since UAVBSs are positioned at ",
-        "suffix": "the",
+        "suffix": "the centroid point determined",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 35,
-                0.9097034497271895,
-                344,
-                403
+                0.7727552189664465,
+                128,
+                187
             ]
         ]
     },
@@ -5022,17 +5091,17 @@
             291.6595200000001,
             339.70467840000003
         ],
-        "prefix": "UAV",
+        "prefix": "this time each UAV",
         "content": "BS connects with HAPSSMBS for backhauling purposes. ",
-        "suffix": "This",
+        "suffix": "This benchmark is referred",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 29,
-                1.0,
-                59,
-                108
+                0.6431490551027474,
+                0,
+                49
             ]
         ]
     },
@@ -5045,7 +5114,7 @@
             554.6725200000002,
             339.80067840000015
         ],
-        "prefix": "",
+        "prefix": "are positioned at ",
         "content": "the centroid point determined as a result of the clustering, the ",
         "suffix": "",
         "equation hit": false,
@@ -5053,9 +5122,9 @@
         "matches": [
             [
                 35,
-                1.0,
-                344,
-                409
+                0.7142945292717204,
+                128,
+                193
             ]
         ]
     },
@@ -5068,17 +5137,17 @@
             291.6632134000001,
             327.9788182000001
         ],
-        "prefix": "",
+        "prefix": "for backhauling purposes. ",
         "content": "This benchmark is referred to as singlelayer clustering (SLC) ",
-        "suffix": "approach.",
+        "suffix": "approach. In the second",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 29,
-                0.6698072219246766,
+                0.60136059765579,
                 0,
-                62
+                45
             ]
         ]
     },
@@ -5091,17 +5160,17 @@
             291.66088099999996,
             316.0238182000001
         ],
-        "prefix": "",
+        "prefix": "singlelayer clustering (SLC) ",
         "content": "approach. In the second benchmark, referred to as circular ",
-        "suffix": "UAV",
+        "suffix": "UAV positioning (CUP), the",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 29,
-                1.0,
-                121,
-                180
+                0.6865814135213912,
+                17,
+                76
             ]
         ]
     },
@@ -5114,17 +5183,17 @@
             291.6603428000001,
             304.0688182000001
         ],
-        "prefix": "",
+        "prefix": "to as circular ",
         "content": "UAV positioning (CUP), the UAVBSs are distributed in a ",
-        "suffix": "circular",
+        "suffix": "circular manner around the",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 29,
-                1.0,
-                121,
-                176
+                0.7863458494806731,
+                17,
+                72
             ]
         ]
     },
@@ -5137,17 +5206,17 @@
             291.6595200000001,
             291.8836784000001
         ],
-        "prefix": "",
+        "prefix": "distributed in a ",
         "content": "circular manner around the environment, and each UAVBS ",
-        "suffix": "establishes",
+        "suffix": "establishes a backhaul connection",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 29,
-                1.0,
-                121,
-                176
+                0.7578586294114296,
+                17,
+                72
             ]
         ]
     },
@@ -5160,7 +5229,7 @@
             260.8750860000001,
             279.9286784000001
         ],
-        "prefix": "",
+        "prefix": "and each UAVBS ",
         "content": "establishes a backhaul connection with HAPSSMBS. ",
         "suffix": "",
         "equation hit": false,
@@ -5168,9 +5237,9 @@
         "matches": [
             [
                 29,
-                1.0,
-                121,
-                169
+                0.5964310490190492,
+                17,
+                65
             ]
         ]
     },
@@ -5232,7 +5301,7 @@
         "prefix": "",
         "content": "Eb = n1Ỽ j=1 λj(dj,e + dj,S), (3) ",
         "suffix": "",
-        "equation hit": "Eb = ∑j=1^n1 λj ( dj,e+ dj,S),",
+        "equation hit": 19,
         "assigned": true,
         "matches": [
             [
@@ -5247,22 +5316,22 @@
         "page": 2,
         "index": 37,
         "bbox": [
-            40.601999999999975,
-            191.25265919999998,
-            291.65704420000003,
-            202.28285559999998
+            138.55899999999994,
+            225.51544000000007,
+            153.68257909999997,
+            240.1028828000001
         ],
         "prefix": "",
-        "content": "where b ∈ {SLC, CUP} and dj,S is the distance between UAV",
-        "suffix": "BS",
-        "equation hit": false,
+        "content": "n1Ỽ ",
+        "suffix": "",
+        "equation hit": 19,
         "assigned": true,
         "matches": [
             [
-                32,
-                0.8009329513875191,
-                0,
-                56
+                31,
+                null,
+                null,
+                null
             ]
         ]
     },
@@ -5270,22 +5339,22 @@
         "page": 2,
         "index": 38,
         "bbox": [
-            40.60200000000003,
-            180.14607839999996,
-            291.6599888000001,
-            190.32785559999996
+            139.22699999999995,
+            208.92108280000008,
+            153.01460169999996,
+            215.8948828000001
         ],
-        "prefix": "UAV",
-        "content": "BS j and HAPSSMBS. The network is evaluated for varying ",
-        "suffix": "UE",
-        "equation hit": false,
+        "prefix": "",
+        "content": "j=1 ",
+        "suffix": "",
+        "equation hit": 19,
         "assigned": true,
         "matches": [
             [
-                32,
-                1.0,
-                56,
-                109
+                31,
+                null,
+                null,
+                null
             ]
         ]
     },
@@ -5293,12 +5362,81 @@
         "page": 2,
         "index": 39,
         "bbox": [
+            155.34199999999993,
+            219.0286592,
+            291.66039159999997,
+            230.05885560000007
+        ],
+        "prefix": "",
+        "content": "λj(dj,e + dj,S), (3) ",
+        "suffix": "",
+        "equation hit": 31,
+        "assigned": true,
+        "matches": [
+            [
+                31,
+                null,
+                null,
+                null
+            ]
+        ]
+    },
+    {
+        "page": 2,
+        "index": 40,
+        "bbox": [
+            40.601999999999975,
+            191.25265919999998,
+            291.65704420000003,
+            202.28285559999998
+        ],
+        "prefix": "",
+        "content": "where b ∈ {SLC, CUP} and dj,S is the distance between UAV",
+        "suffix": "BS j and HAPSSMBS.",
+        "equation hit": false,
+        "assigned": true,
+        "matches": [
+            [
+                32,
+                0.8360624305544274,
+                0,
+                56
+            ]
+        ]
+    },
+    {
+        "page": 2,
+        "index": 41,
+        "bbox": [
+            40.60200000000003,
+            180.14607839999996,
+            291.6599888000001,
+            190.32785559999996
+        ],
+        "prefix": "the distance between UAV",
+        "content": "BS j and HAPSSMBS. The network is evaluated for varying ",
+        "suffix": "UE densities (users/m2 ratios),",
+        "equation hit": false,
+        "assigned": true,
+        "matches": [
+            [
+                32,
+                0.7035726021669181,
+                0,
+                53
+            ]
+        ]
+    },
+    {
+        "page": 2,
+        "index": 42,
+        "bbox": [
             40.60200000000003,
             168.19107839999995,
             225.19665,
             179.57888279999997
         ],
-        "prefix": "",
+        "prefix": "evaluated for varying ",
         "content": "UE densities (users/m2 ratios), denoted by δ. ",
         "suffix": "",
         "equation hit": false,
@@ -5306,7 +5444,7 @@
         "matches": [
             [
                 32,
-                0.8186532712412714,
+                0.6139899534309535,
                 0,
                 46
             ]
@@ -5314,7 +5452,7 @@
     },
     {
         "page": 2,
-        "index": 40,
+        "index": 43,
         "bbox": [
             40.602000000000004,
             150.45221819999998,
@@ -5337,7 +5475,7 @@
     },
     {
         "page": 2,
-        "index": 41,
+        "index": 44,
         "bbox": [
             50.56400000000001,
             135.24807839999997,
@@ -5346,28 +5484,28 @@
         ],
         "prefix": "",
         "content": "Fig. 2 demonstrates the energy scores for all scenarios ",
-        "suffix": "across",
+        "suffix": "across various δ values.",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 35,
-                0.6606530659712633,
-                6,
-                55
+                0.8928100507471256,
+                0,
+                54
             ]
         ]
     },
     {
         "page": 2,
-        "index": 42,
+        "index": 45,
         "bbox": [
             40.602000000000004,
             123.29307839999998,
             291.6581998000001,
             133.47485559999998
         ],
-        "prefix": "",
+        "prefix": "for all scenarios ",
         "content": "across various δ values. As expected, the energy score soars ",
         "suffix": "",
         "equation hit": false,
@@ -5375,15 +5513,15 @@
         "matches": [
             [
                 35,
-                1.0,
-                55,
-                116
+                0.7692307692307693,
+                0,
+                61
             ]
         ]
     },
     {
         "page": 2,
-        "index": 43,
+        "index": 46,
         "bbox": [
             336.728,
             125.44945840000001,
@@ -5398,9 +5536,9 @@
         "matches": [
             [
                 34,
-                0.7000911881965555,
-                121,
-                167
+                0.8,
+                0,
+                46
             ]
         ]
     },
@@ -5421,9 +5559,9 @@
         "matches": [
             [
                 37,
-                0.7693009139973502,
-                122,
-                188
+                0.8461538461538461,
+                0,
+                66
             ]
         ]
     },
@@ -5444,9 +5582,9 @@
         "matches": [
             [
                 40,
-                0.7500759901637961,
-                122,
-                188
+                0.8333333333333334,
+                0,
+                66
             ]
         ]
     },
@@ -5461,15 +5599,15 @@
         ],
         "prefix": "",
         "content": "distance is minimized and they consume less energy than CUP. ",
-        "suffix": "Fig.",
+        "suffix": "Fig. 3 displays the",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 35,
-                0.9090909090909091,
-                283,
-                343
+                0.7142857142857143,
+                13,
+                73
             ]
         ]
     },
@@ -5482,17 +5620,17 @@
             291.65892000000014,
             583.8806784
         ],
-        "prefix": "",
+        "prefix": "energy than CUP. ",
         "content": "Fig. 3 displays the energy scores with respect to the ",
-        "suffix": "number",
+        "suffix": "number of UAVBSs. The",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 36,
-                null,
-                null,
-                null
+                0.6224082800351005,
+                0,
+                59
             ]
         ]
     },
@@ -5505,17 +5643,17 @@
             291.6595200000001,
             571.9256783999999
         ],
-        "prefix": "",
+        "prefix": "respect to the ",
         "content": "number of UAVBSs. The generic trend that is common to ",
-        "suffix": "all",
+        "suffix": "all the methods is",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 36,
-                1.0,
-                53,
-                107
+                0.9441051216686978,
+                52,
+                106
             ]
         ]
     },
@@ -5528,17 +5666,17 @@
             291.65952000000016,
             559.9706783999999
         ],
-        "prefix": "",
+        "prefix": "is common to ",
         "content": "all the methods is that the energy score increases with the ",
-        "suffix": "number",
+        "suffix": "number of UAVBSs (or",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 36,
-                null,
-                null,
-                null
+                0.8240167225305525,
+                52,
+                112
             ]
         ]
     },
@@ -5551,17 +5689,17 @@
             291.6595200000001,
             548.0146783999999
         ],
-        "prefix": "",
+        "prefix": "increases with the ",
         "content": "number of UAVBSs (or the number of clusters in the first",
-        "suffix": "layer",
+        "suffix": "layer clustering). Note that",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 36,
-                1.0,
-                113,
-                175
+                0.8612897069115586,
+                52,
+                114
             ]
         ]
     },
@@ -5574,17 +5712,17 @@
             291.6595200000001,
             536.0596783999998
         ],
-        "prefix": "first",
+        "prefix": "clusters in the first",
         "content": "layer clustering). Note that the energy score of DLCAHN ",
-        "suffix": "is",
+        "suffix": "is increasing despite appearing",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 36,
-                0.7082159850453787,
-                113,
-                163
+                0.7484006313052547,
+                52,
+                102
             ]
         ]
     },
@@ -5597,17 +5735,17 @@
             291.6595200000001,
             524.1046783999998
         ],
-        "prefix": "",
+        "prefix": "score of DLCAHN ",
         "content": "is increasing despite appearing constant due to visualization ",
-        "suffix": "scaling.",
+        "suffix": "scaling. Considering (2) and",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 36,
-                1.0,
-                163,
-                225
+                0.5687750398445395,
+                52,
+                114
             ]
         ]
     },
@@ -5620,17 +5758,17 @@
             291.6595200000001,
             512.1496783999997
         ],
-        "prefix": "",
+        "prefix": "due to visualization ",
         "content": "scaling. Considering (2) and (3), this outcome is anticipated ",
-        "suffix": "because",
+        "suffix": "because the energy score",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 36,
-                0.4235070832186582,
-                113,
-                167
+                0.4315888950070397,
+                52,
+                106
             ]
         ]
     },
@@ -5643,17 +5781,17 @@
             291.6595200000002,
             500.1946783999998
         ],
-        "prefix": "",
+        "prefix": "outcome is anticipated ",
         "content": "because the energy score scales with the number of UAVBSs. ",
-        "suffix": "However,",
+        "suffix": "However, DLCAHN not only",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 36,
-                1.0,
-                217,
-                276
+                0.7657832728758078,
+                52,
+                111
             ]
         ]
     },
@@ -5666,17 +5804,17 @@
             291.6595200000001,
             488.2396783999998
         ],
-        "prefix": "",
+        "prefix": "number of UAVBSs. ",
         "content": "However, DLCAHN not only results in lower energy scores ",
-        "suffix": "but",
+        "suffix": "but also keeps the",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 36,
-                1.0,
-                217,
-                273
+                0.6937750398445395,
+                52,
+                108
             ]
         ]
     },
@@ -5689,17 +5827,17 @@
             291.6595200000002,
             476.28367839999976
         ],
-        "prefix": "",
+        "prefix": "lower energy scores ",
         "content": "but also keeps the level of rise with the increasing number ",
-        "suffix": "of",
+        "suffix": "of UAVBSs under control",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 36,
-                null,
-                null,
-                null
+                0.8612897069115586,
+                52,
+                112
             ]
         ]
     },
@@ -5712,17 +5850,17 @@
             291.6595200000001,
             464.32867839999983
         ],
-        "prefix": "",
+        "prefix": "the increasing number ",
         "content": "of UAVBSs under control compared to SLC and CUP, which ",
-        "suffix": "demonstrate",
+        "suffix": "demonstrate a dramatic surge",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 36,
-                1.0,
-                277,
-                332
+                0.8451693788924378,
+                52,
+                107
             ]
         ]
     },
@@ -5735,17 +5873,17 @@
             291.65952000000016,
             452.3736783999998
         ],
-        "prefix": "",
+        "prefix": "and CUP, which ",
         "content": "demonstrate a dramatic surge in the energy score as a response ",
-        "suffix": "to",
+        "suffix": "to the increasing number",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 36,
-                1.0,
-                277,
-                340
+                0.7787953132715963,
+                52,
+                115
             ]
         ]
     },
@@ -5758,17 +5896,17 @@
             291.65952000000016,
             440.41867839999986
         ],
-        "prefix": "",
+        "prefix": "as a response ",
         "content": "to the increasing number of UAVBSs. This is attributed to the ",
-        "suffix": "distance",
+        "suffix": "distance variable, d, in",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 36,
-                null,
-                null,
-                null
+                0.2222222222222222,
+                0,
+                28
             ]
         ]
     },
@@ -5781,15 +5919,15 @@
             291.6590290000001,
             428.68285559999987
         ],
-        "prefix": "",
+        "prefix": "attributed to the ",
         "content": "distance variable, d, in (2), since when the number of UAV",
-        "suffix": "BSs",
+        "suffix": "BSs increases the distance",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 38,
-                0.6852608466790358,
+                0.7901738977860239,
                 26,
                 84
             ]
@@ -5804,17 +5942,17 @@
             291.6595200000001,
             416.5086783999999
         ],
-        "prefix": "UAV",
+        "prefix": "the number of UAV",
         "content": "BSs increases the distance between them decreases, preventing ",
-        "suffix": "the",
+        "suffix": "the overall sum in",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 38,
-                1.0,
-                84,
-                142
+                0.7482086773432286,
+                26,
+                84
             ]
         ]
     },
@@ -5827,7 +5965,7 @@
             278.1801222000001,
             404.5526783999999
         ],
-        "prefix": "",
+        "prefix": "them decreases, preventing ",
         "content": "the overall sum in (2) going up sharply as SLC and CUP. ",
         "suffix": "",
         "equation hit": false,
@@ -5835,9 +5973,9 @@
         "matches": [
             [
                 38,
-                0.7975291877824187,
-                84,
-                135
+                0.5939509202755034,
+                26,
+                77
             ]
         ]
     },
@@ -5852,15 +5990,15 @@
         ],
         "prefix": "",
         "content": "Fig. 4 illustrates the energy score metric with respect ",
-        "suffix": "to",
+        "suffix": "to k values in",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 39,
-                0.6606530659712633,
-                6,
-                55
+                0.8441853923756981,
+                0,
+                54
             ]
         ]
     },
@@ -5873,17 +6011,17 @@
             291.6558864000001,
             381.05885559999984
         ],
-        "prefix": "",
+        "prefix": "metric with respect ",
         "content": "to k values in the secondlayer clustering. To make a fair ",
-        "suffix": "comparison",
+        "suffix": "comparison between the benchmarks,",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 39,
-                1.0,
-                55,
-                113
+                0.8333333333333334,
+                0,
+                58
             ]
         ]
     },
@@ -5896,17 +6034,17 @@
             291.6595200000001,
             368.88467839999987
         ],
-        "prefix": "",
+        "prefix": "make a fair ",
         "content": "comparison between the benchmarks, the HUAVs selected for ",
-        "suffix": "DLCAHN",
+        "suffix": "DLCAHN are omitted in",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 39,
-                1.0,
-                55,
-                113
+                0.7366524712245243,
+                0,
+                58
             ]
         ]
     },
@@ -5919,17 +6057,17 @@
             291.65952000000016,
             356.92967839999983
         ],
-        "prefix": "",
+        "prefix": "HUAVs selected for ",
         "content": "DLCAHN are omitted in the energy score calculations for all ",
-        "suffix": "the",
+        "suffix": "the methods. SLCinc and",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 39,
-                0.9165531816930816,
-                55,
-                115
+                0.7088110040216391,
+                0,
+                60
             ]
         ]
     },
@@ -5942,17 +6080,17 @@
             291.65935160000004,
             345.2038181999999
         ],
-        "prefix": "",
+        "prefix": "calculations for all ",
         "content": "the methods. SLCinc and CUPinc in Fig. 4 represent the case ",
-        "suffix": "where",
+        "suffix": "where omitting the HUAVs",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 39,
-                0.6973232867642869,
-                6,
-                65
+                0.5033909876763923,
+                0,
+                58
             ]
         ]
     },
@@ -5965,17 +6103,17 @@
             291.65952,
             333.01967839999986
         ],
-        "prefix": "",
+        "prefix": "represent the case ",
         "content": "where omitting the HUAVs in the energy calculations is not ",
-        "suffix": "practiced.",
+        "suffix": "practiced. As seen, SLCinc",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 39,
-                1.0,
-                174,
-                233
+                0.7647058823529411,
+                0,
+                59
             ]
         ]
     },
@@ -5988,17 +6126,17 @@
             291.6595622,
             321.2938181999999
         ],
-        "prefix": "",
+        "prefix": "calculations is not ",
         "content": "practiced. As seen, SLCinc and CUPinc results are flat as the ",
-        "suffix": "secondlayer",
+        "suffix": "secondlayer clustering is not",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 39,
-                1.0,
-                174,
-                236
+                0.5843486932331996,
+                0,
+                62
             ]
         ]
     },
@@ -6011,17 +6149,17 @@
             291.6595200000001,
             309.1086783999999
         ],
-        "prefix": "",
+        "prefix": "flat as the ",
         "content": "secondlayer clustering is not applied to them. Considering all ",
-        "suffix": "three",
+        "suffix": "three methods, it is",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 39,
-                1.0,
-                174,
-                237
+                0.7501549220110416,
+                0,
+                63
             ]
         ]
     },
@@ -6034,17 +6172,17 @@
             291.6595200000001,
             297.1536783999999
         ],
-        "prefix": "",
+        "prefix": "them. Considering all ",
         "content": "three methods, it is clear to see that there are decreases in ",
-        "suffix": "the",
+        "suffix": "the energy score. The",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 39,
-                0.9334873294797394,
-                114,
-                176
+                0.7898283129999518,
+                0,
+                62
             ]
         ]
     },
@@ -6057,17 +6195,17 @@
             291.65952000000016,
             285.19867839999995
         ],
-        "prefix": "",
+        "prefix": "are decreases in ",
         "content": "the energy score. The reason behind this is that the number ",
-        "suffix": "of",
+        "suffix": "of HUAVs increases with",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 39,
-                0.9166666666666666,
-                114,
-                174
+                0.8333333333333334,
+                0,
+                60
             ]
         ]
     },
@@ -6080,17 +6218,17 @@
             291.66353200000003,
             273.46285559999995
         ],
-        "prefix": "",
+        "prefix": "that the number ",
         "content": "of HUAVs increases with k, and since the energy scores ",
-        "suffix": "of",
+        "suffix": "of HUAVs are not",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 39,
-                0.9425344946519494,
-                296,
-                351
+                0.8235294117647058,
+                0,
+                55
             ]
         ]
     },
@@ -6103,17 +6241,17 @@
             291.65952000000016,
             261.2886783999999
         ],
-        "prefix": "",
+        "prefix": "the energy scores ",
         "content": "of HUAVs are not included, the overall energy consumption ",
-        "suffix": "approaches",
+        "suffix": "approaches to zero. In",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 39,
-                1.0,
-                296,
-                354
+                0.8125,
+                0,
+                58
             ]
         ]
     },
@@ -6126,17 +6264,17 @@
             291.6595200000001,
             249.3336783999999
         ],
-        "prefix": "",
+        "prefix": "overall energy consumption ",
         "content": "approaches to zero. In other words, when the number of cluster ",
-        "suffix": "increases,",
+        "suffix": "increases, the UAVBSs without",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 39,
-                1.0,
-                296,
-                359
+                0.8333333333333334,
+                0,
+                63
             ]
         ]
     },
@@ -6149,17 +6287,17 @@
             291.65952000000016,
             237.37767839999992
         ],
-        "prefix": "",
+        "prefix": "number of cluster ",
         "content": "increases, the UAVBSs without grid and/or generator power ",
-        "suffix": "supply",
+        "suffix": "supply decreases, thereby the",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 39,
-                1.0,
-                296,
-                354
+                0.8125,
+                0,
+                58
             ]
         ]
     },
@@ -6172,7 +6310,7 @@
             291.65952000000016,
             225.4226783999999
         ],
-        "prefix": "",
+        "prefix": "and/or generator power ",
         "content": "supply decreases, thereby the issue of service time disappears. ",
         "suffix": "",
         "equation hit": false,
@@ -6180,9 +6318,9 @@
         "matches": [
             [
                 39,
-                1.0,
-                296,
-                359
+                0.6923076923076923,
+                0,
+                63
             ]
         ]
     },
@@ -6197,7 +6335,7 @@
         ],
         "prefix": "",
         "content": "In this study, we analyzed the concept of using HAPS",
-        "suffix": "SMBS",
+        "suffix": "SMBS as a backhaul",
         "equation hit": false,
         "assigned": true,
         "matches": [
@@ -6218,15 +6356,15 @@
             291.6595200000001,
             169.1216783999999
         ],
-        "prefix": "HAPS",
+        "prefix": "concept of using HAPS",
         "content": "SMBS as a backhaul link for the network of UAVBSs in ",
-        "suffix": "disaster",
+        "suffix": "disaster circumstances. We proposed",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 42,
-                0.8333333333333334,
+                0.7777777777777778,
                 0,
                 48
             ]
@@ -6241,17 +6379,17 @@
             291.6595200000001,
             157.1656783999999
         ],
-        "prefix": "",
+        "prefix": "of UAVBSs in ",
         "content": "disaster circumstances. We proposed a twolayer clustering ",
-        "suffix": "algorithm",
+        "suffix": "algorithm aimed at enhancing",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 42,
-                1.0,
-                48,
-                106
+                0.7857142857142857,
+                0,
+                58
             ]
         ]
     },
@@ -6264,17 +6402,17 @@
             291.6595200000002,
             145.2106783999999
         ],
-        "prefix": "",
+        "prefix": "a twolayer clustering ",
         "content": "algorithm aimed at enhancing network survival time and ef",
-        "suffix": "fectively",
+        "suffix": "fectively managing communication under",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 42,
-                1.0,
-                48,
-                115
+                0.8,
+                0,
+                67
             ]
         ]
     },
@@ -6287,7 +6425,7 @@
             291.65952000000016,
             133.2556783999999
         ],
-        "prefix": "ef",
+        "prefix": "survival time and ef",
         "content": "fectively managing communication under unfavorable network ",
         "suffix": "",
         "equation hit": false,
@@ -6295,7 +6433,7 @@
         "matches": [
             [
                 42,
-                0.8333333333333334,
+                0.5555555555555556,
                 0,
                 49
             ]
@@ -6335,15 +6473,15 @@
         ],
         "prefix": "",
         "content": "conditions. The firstlayer clustering is utilized for positioning ",
-        "suffix": "the",
+        "suffix": "the UAVBSs, which are",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 42,
-                0.9039261425818458,
-                97,
-                163
+                1.0,
+                49,
+                115
             ]
         ]
     },
@@ -6356,17 +6494,17 @@
             554.6725200000002,
             581.2166784
         ],
-        "prefix": "",
+        "prefix": "utilized for positioning ",
         "content": "the UAVBSs, which are employed for RAN services, while ",
-        "suffix": "the",
+        "suffix": "the secondlayer clustering is",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 42,
-                0.9001503439192977,
-                97,
-                152
+                0.7584584552022883,
+                49,
+                104
             ]
         ]
     },
@@ -6379,17 +6517,17 @@
             554.6725200000001,
             569.2616783999999
         ],
-        "prefix": "",
+        "prefix": "RAN services, while ",
         "content": "the secondlayer clustering is used for backhauling purposes. ",
-        "suffix": "The",
+        "suffix": "The results obtained confirm",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 42,
-                0.8888888888888888,
-                0,
-                61
+                0.7423556855491075,
+                49,
+                110
             ]
         ]
     },
@@ -6402,17 +6540,17 @@
             554.6725200000002,
             557.3066783999999
         ],
-        "prefix": "",
+        "prefix": "for backhauling purposes. ",
         "content": "The results obtained confirm that our threelayer network ",
-        "suffix": "with",
+        "suffix": "with a twolayer clustering",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 42,
-                1.0,
-                158,
-                215
+                0.7423556855491075,
+                49,
+                106
             ]
         ]
     },
@@ -6425,17 +6563,17 @@
             554.6725200000002,
             545.3506783999999
         ],
-        "prefix": "",
+        "prefix": "our threelayer network ",
         "content": "with a twolayer clustering approach has the potential to ",
-        "suffix": "extend",
+        "suffix": "extend communication service time",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 42,
-                1.0,
-                158,
-                215
+                0.8264456350092768,
+                49,
+                106
             ]
         ]
     },
@@ -6448,17 +6586,17 @@
             554.6725200000002,
             533.3956783999998
         ],
-        "prefix": "",
+        "prefix": "the potential to ",
         "content": "extend communication service time during disaster scenarios, ",
-        "suffix": "providing",
+        "suffix": "providing rapid recovery and",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 42,
-                1.0,
-                158,
-                219
+                0.7239525202311866,
+                49,
+                110
             ]
         ]
     },
@@ -6471,7 +6609,7 @@
             502.2692440000001,
             521.4406783999998
         ],
-        "prefix": "",
+        "prefix": "during disaster scenarios, ",
         "content": "providing rapid recovery and network resilience. ",
         "suffix": "",
         "equation hit": false,
@@ -6479,9 +6617,9 @@
         "matches": [
             [
                 42,
-                1.0,
-                158,
-                207
+                0.5705928092485125,
+                49,
+                98
             ]
         ]
     },
@@ -6497,12 +6635,12 @@
         "prefix": "",
         "content": "REFERENCES ",
         "suffix": "",
-        "equation hit": "Eb = ∑j=1^n1 λj ( dj,e+ dj,S),",
+        "equation hit": 19,
         "assigned": true,
         "matches": [
             [
-                43,
-                0.15384615384615385,
+                48,
+                0.16326530612244897,
                 null,
                 null
             ]
@@ -6519,13 +6657,13 @@
         ],
         "prefix": "",
         "content": "[1] C. Luo, W. Miao, H. Ullah, S. McClean, G. Parr, and G. Min, ''Un",
-        "suffix": "manned",
+        "suffix": "manned aerial vehicles for",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 43,
-                0.44936376225151764,
+                0.38195919791379,
                 3,
                 71
             ]
@@ -6540,15 +6678,15 @@
             554.672903,
             477.6208706999998
         ],
-        "prefix": "''Un",
+        "prefix": "and G. Min, ''Un",
         "content": "manned aerial vehicles for disaster management,'' Geological disaster ",
-        "suffix": "monitoring",
+        "suffix": "monitoring based on sensor",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 43,
-                1.0,
+                0.9180312152772137,
                 71,
                 134
             ]
@@ -6563,7 +6701,7 @@
             508.77330499999994,
             468.6548706999998
         ],
-        "prefix": "",
+        "prefix": "management,'' Geological disaster ",
         "content": "monitoring based on sensor networks, pp. 83–107, 2019. ",
         "suffix": "",
         "equation hit": false,
@@ -6571,7 +6709,7 @@
         "matches": [
             [
                 43,
-                0.7075421601301604,
+                0.4473693771284659,
                 71,
                 124
             ]
@@ -6588,13 +6726,13 @@
         ],
         "prefix": "",
         "content": "[2] ''The ITUR Framework for IMT2030,'' ITUR Working Party ",
-        "suffix": "5D,",
+        "suffix": "5D, International Telecommunication Union",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 44,
-                0.6516326649281583,
+                0.7879727986091933,
                 29,
                 86
             ]
@@ -6609,17 +6747,17 @@
             554.6736509,
             450.5385583999998
         ],
-        "prefix": "",
+        "prefix": "ITUR Working Party ",
         "content": "5D, International Telecommunication Union (ITU), Tech. Rep., July ",
-        "suffix": "2023.",
+        "suffix": "2023. [Online]. Available: https://www.itu.int/en/ITUR/studygroups/",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 44,
-                1.0,
-                86,
-                152
+                0.842081714833541,
+                29,
+                95
             ]
         ]
     },
@@ -6632,7 +6770,7 @@
             554.6736509,
             441.57255839999976
         ],
-        "prefix": "",
+        "prefix": "Tech. Rep., July ",
         "content": "2023. [Online]. Available: https://www.itu.int/en/ITUR/studygroups/ ",
         "suffix": "rsg5/rwp5d/imt2030/Pages/default.aspx",
         "equation hit": false,
@@ -6640,9 +6778,9 @@
         "matches": [
             [
                 44,
-                1.0,
-                86,
-                154
+                0.8183939720585721,
+                29,
+                97
             ]
         ]
     },
@@ -6655,7 +6793,7 @@
             451.67604859999994,
             432.6055583999998
         ],
-        "prefix": "",
+        "prefix": "[Online]. Available: https://www.itu.int/en/ITUR/studygroups/ ",
         "content": "rsg5/rwp5d/imt2030/Pages/default.aspx ",
         "suffix": "",
         "equation hit": false,
@@ -6663,7 +6801,7 @@
         "matches": [
             [
                 44,
-                0.7279799068619072,
+                0.25042112168744285,
                 33,
                 66
             ]
@@ -6680,13 +6818,13 @@
         ],
         "prefix": "",
         "content": "[3] M. S. Alam, G. K. Kurt, H. Yanikomeroglu, P. Zhu, and N. D. ",
-        "suffix": "Dao,",
+        "suffix": "Dao, ''High altitude platform",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 45,
-                0.4021768865708778,
+                0.6016326649281584,
                 3,
                 60
             ]
@@ -6701,17 +6839,17 @@
             554.6736509000001,
             414.67355839999976
         ],
-        "prefix": "",
+        "prefix": "and N. D. ",
         "content": "Dao, ''High altitude platform station based super macro base station ",
-        "suffix": "constellations,''",
+        "suffix": "constellations,'' IEEE Communications Magazine,",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 45,
-                1.0,
-                60,
-                129
+                0.8088357600616549,
+                3,
+                72
             ]
         ]
     },
@@ -6724,15 +6862,15 @@
             554.6710926,
             405.8898706999998
         ],
-        "prefix": "",
+        "prefix": "macro base station ",
         "content": "constellations,'' IEEE Communications Magazine, vol. 59, no. 1, pp. ",
-        "suffix": "103–109,",
+        "suffix": "103–109, 2021.",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 45,
-                0.5648237563113878,
+                0.39658801345121014,
                 3,
                 71
             ]
@@ -6747,7 +6885,7 @@
             372.4851349999999,
             396.74055839999977
         ],
-        "prefix": "",
+        "prefix": "no. 1, pp. ",
         "content": "103–109, 2021. ",
         "suffix": "",
         "equation hit": false,
@@ -6755,7 +6893,7 @@
         "matches": [
             [
                 45,
-                0.12262648039048078,
+                0.02255588053943545,
                 11,
                 16
             ]
@@ -6772,15 +6910,15 @@
         ],
         "prefix": "",
         "content": "[4] G. Karabulut Kurt, M. G. Khoshkholgh, S. Alfattani, A. Ibrahim, T. S. J. ",
-        "suffix": "Darwish,",
+        "suffix": "Darwish, M. S. Alam,",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 46,
-                null,
-                null,
-                null
+                0.19751949230448804,
+                13,
+                73
             ]
         ]
     },
@@ -6793,15 +6931,15 @@
             554.6736509,
             378.8075583999998
         ],
-        "prefix": "",
+        "prefix": "T. S. J. ",
         "content": "Darwish, M. S. Alam, H. Yanikomeroglu, and A. Yongacoglu, ''A vision ",
-        "suffix": "and",
+        "suffix": "and framework for the",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 46,
-                0.6299708556527072,
+                0.5917393873557303,
                 73,
                 142
             ]
@@ -6816,17 +6954,17 @@
             554.6736509000001,
             369.84155839999977
         ],
-        "prefix": "",
+        "prefix": "Yongacoglu, ''A vision ",
         "content": "and framework for the high altitude platform station (HAPS) networks ",
-        "suffix": "of",
+        "suffix": "of the future,'' IEEE",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 46,
-                1.0,
-                142,
-                211
+                0.7001239376088333,
+                73,
+                142
             ]
         ]
     },
@@ -6839,17 +6977,17 @@
             554.6746896999999,
             361.0588706999998
         ],
-        "prefix": "",
+        "prefix": "station (HAPS) networks ",
         "content": "of the future,'' IEEE Communications Surveys & Tutorials, vol. 23, no. 2, ",
-        "suffix": "pp.",
+        "suffix": "pp. 729–779, Secondquarter 2021.",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 46,
-                0.7856201014942514,
-                142,
-                216
+                0.503972357751113,
+                73,
+                147
             ]
         ]
     },
@@ -6862,7 +7000,7 @@
             434.06212759999994,
             351.9085583999998
         ],
-        "prefix": "",
+        "prefix": "23, no. 2, ",
         "content": "pp. 729–779, Secondquarter 2021. ",
         "suffix": "",
         "equation hit": false,
@@ -6870,9 +7008,9 @@
         "matches": [
             [
                 46,
-                0.4735758882342885,
-                73,
-                104
+                0.21696986029286058,
+                13,
+                44
             ]
         ]
     },
@@ -6887,13 +7025,13 @@
         ],
         "prefix": "",
         "content": "[5] Y. Zhao, F. Zhou, L. Feng, W. Li, Y. Sun, and M. A. Imran, ''Backhaul",
-        "suffix": "constrained",
+        "suffix": "constrained coverage analysis of",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 47,
-                0.47995466434865564,
+                0.4113897122988477,
                 3,
                 81
             ]
@@ -6908,15 +7046,15 @@
             554.6736509000001,
             333.9755583999998
         ],
-        "prefix": "''Backhaul",
+        "prefix": "M. A. Imran, ''Backhaul",
         "content": "constrained coverage analysis of integrated high and low altitude ",
-        "suffix": "platforms",
+        "suffix": "platforms aerial communication system",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 47,
-                1.0,
+                0.8891159317465814,
                 81,
                 135
             ]
@@ -6931,15 +7069,15 @@
             554.6742365999999,
             325.1928706999998
         ],
-        "prefix": "",
+        "prefix": "and low altitude ",
         "content": "platforms aerial communication system in postdisaster areas,'' IEEE ",
-        "suffix": "Communications",
+        "suffix": "Communications Letters, vol. 27,",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 47,
-                1.0,
+                0.7104211818720331,
                 81,
                 149
             ]
@@ -6954,7 +7092,7 @@
             525.9403308,
             316.2268706999998
         ],
-        "prefix": "",
+        "prefix": "postdisaster areas,'' IEEE ",
         "content": "Communications Letters, vol. 27, no. 6, pp. 1629–1633, 2023. ",
         "suffix": "",
         "equation hit": false,
@@ -6962,7 +7100,7 @@
         "matches": [
             [
                 47,
-                0.4580940760596709,
+                0.30375540013601166,
                 3,
                 62
             ]
@@ -6979,15 +7117,15 @@
         ],
         "prefix": "",
         "content": "[6] O. Abbasi and H. Yanikomeroglu, ''A cellfree scheme for UAV base ",
-        "suffix": "stations",
+        "suffix": "stations with HAPSassisted backhauling",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 48,
-                0.7475374212950178,
-                3,
-                65
+                0.7896145177458481,
+                19,
+                74
             ]
         ]
     },
@@ -7000,17 +7138,17 @@
             554.6730610999999,
             298.2938706999998
         ],
-        "prefix": "",
+        "prefix": "for UAV base ",
         "content": "stations with HAPSassisted backhauling in terahertz band,'' in ICC 2022 ",
-        "suffix": "",
+        "suffix": " IEEE International Conference",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 48,
-                1.0,
-                74,
-                138
+                0.6301303124139936,
+                31,
+                83
             ]
         ]
     },
@@ -7023,7 +7161,7 @@
             554.6717299,
             289.3278706999998
         ],
-        "prefix": "",
+        "prefix": "in ICC 2022 ",
         "content": " IEEE International Conference on Communications, 2022, pp. 249– ",
         "suffix": "254.",
         "equation hit": false,
@@ -7031,9 +7169,9 @@
         "matches": [
             [
                 48,
-                0.7777777777777778,
-                74,
-                133
+                0.4235070832186582,
+                36,
+                90
             ]
         ]
     },
@@ -7046,7 +7184,7 @@
             335.82267499999995,
             280.1775583999998
         ],
-        "prefix": "",
+        "prefix": "2022, pp. 249– ",
         "content": "254. ",
         "suffix": "",
         "equation hit": false,
@@ -7071,13 +7209,13 @@
         ],
         "prefix": "",
         "content": "[7] S. Song, M. Choi, Y. Goh, J. Yun, W. Yoo, W. Yang, J. Jung, and J.M. ",
-        "suffix": "Chung,",
+        "suffix": "Chung, ''Analysis of wireless",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 49,
-                0.3813534009467596,
+                0.551904775749518,
                 3,
                 69
             ]
@@ -7092,17 +7230,17 @@
             554.6736509000001,
             262.2445583999998
         ],
-        "prefix": "",
+        "prefix": "Jung, and J.M. ",
         "content": "Chung, ''Analysis of wireless backhaul networks based on aerial platform ",
-        "suffix": "technology",
+        "suffix": "technology for 6G systems.''",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 49,
-                1.0,
-                69,
-                142
+                0.7611565080074214,
+                3,
+                76
             ]
         ]
     },
@@ -7115,17 +7253,17 @@
             554.6760476999999,
             253.46187069999976
         ],
-        "prefix": "",
+        "prefix": "on aerial platform ",
         "content": "technology for 6G systems.'' Computers, Materials & Continua, vol. 62, ",
-        "suffix": "no.",
+        "suffix": "no. 2, 2020.",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 49,
-                0.782411878155694,
-                69,
-                140
+                0.5988087975372943,
+                3,
+                74
             ]
         ]
     },
@@ -7138,7 +7276,7 @@
             361.3269949999999,
             244.31255839999977
         ],
-        "prefix": "",
+        "prefix": "Continua, vol. 62, ",
         "content": "no. 2, 2020. ",
         "suffix": "",
         "equation hit": false,
@@ -7146,7 +7284,7 @@
         "matches": [
             [
                 49,
-                0.5355102199042111,
+                0.20385502669140498,
                 7,
                 15
             ]
@@ -7163,15 +7301,15 @@
         ],
         "prefix": "",
         "content": "[8] A. Andreadis, G. Giambene, and R. Zambon, ''Role of UAVs and HAPS ",
-        "suffix": "for",
+        "suffix": "for IoTbased monitoring in",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 50,
-                0.511716963769334,
+                0.6005579779188301,
                 3,
-                68
+                66
             ]
         ]
     },
@@ -7184,17 +7322,17 @@
             554.6755240999998,
             226.56287069999973
         ],
-        "prefix": "",
+        "prefix": "UAVs and HAPS ",
         "content": "for IoTbased monitoring in emergency scenarios,'' in 2023 International ",
-        "suffix": "Conference",
+        "suffix": "Conference on Information and",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 50,
-                0.7367879441171443,
-                68,
-                142
+                0.6709849301464303,
+                3,
+                77
             ]
         ]
     },
@@ -7207,17 +7345,17 @@
             554.6736509000001,
             217.59687069999973
         ],
-        "prefix": "",
+        "prefix": "in 2023 International ",
         "content": "Conference on Information and Communication Technologies for Dis",
-        "suffix": "aster",
+        "suffix": "aster Management (ICTDM), 2023,",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 50,
-                1.0,
-                142,
-                212
+                0.7578586294114296,
+                3,
+                73
             ]
         ]
     },
@@ -7230,7 +7368,7 @@
             469.21715499999993,
             208.6298706999997
         ],
-        "prefix": "Dis",
+        "prefix": "Communication Technologies for Dis",
         "content": "aster Management (ICTDM), 2023, pp. 1–8. ",
         "suffix": "",
         "equation hit": false,
@@ -7238,7 +7376,7 @@
         "matches": [
             [
                 50,
-                0.5758163324640792,
+                0.38392092364985725,
                 3,
                 33
             ]
@@ -7255,13 +7393,13 @@
         ],
         "prefix": "",
         "content": "[9] H. Qi, Z. Hu, H. Huang, X. Wen, and Z. Lu, ''Energy efficient 3",
-        "suffix": "D",
+        "suffix": "D UAV control for",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 51,
-                0.531332546974304,
+                0.6016326649281584,
                 3,
                 65
             ]
@@ -7276,17 +7414,17 @@
             554.6736509000001,
             190.5135583999997
         ],
-        "prefix": "3",
+        "prefix": "Lu, ''Energy efficient 3",
         "content": "D UAV control for persistent communication service and fairness: A ",
-        "suffix": "deep",
+        "suffix": "deep reinforcement learning approach,''",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 51,
-                1.0,
-                65,
-                130
+                0.6358992104538894,
+                3,
+                68
             ]
         ]
     },
@@ -7299,17 +7437,17 @@
             554.6719361999999,
             181.73087069999968
         ],
-        "prefix": "",
+        "prefix": "and fairness: A ",
         "content": "deep reinforcement learning approach,'' IEEE Access, vol. 8, pp. 53 172– ",
-        "suffix": "53",
+        "suffix": "53 184, 2020.",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 51,
-                0.6338775549760528,
-                65,
-                130
+                0.48220825064897094,
+                3,
+                68
             ]
         ]
     },
@@ -7322,7 +7460,7 @@
             365.8460416999999,
             172.5815583999997
         ],
-        "prefix": "",
+        "prefix": "pp. 53 172– ",
         "content": "53 184, 2020. ",
         "suffix": "",
         "equation hit": false,
@@ -7330,7 +7468,7 @@
         "matches": [
             [
                 51,
-                0.4559598137238141,
+                0.20385502669140498,
                 14,
                 24
             ]
@@ -7347,13 +7485,13 @@
         ],
         "prefix": "",
         "content": "[10] A. I. Abubakar, M. S. Mollel, O. Onireti, M. Ozturk, I. Ahmad, S. M. ",
-        "suffix": "Asad,",
+        "suffix": "Asad, Y. Sambo, A.",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 52,
-                0.4149489973922375,
+                0.29679915569872634,
                 3,
                 69
             ]
@@ -7368,17 +7506,17 @@
             554.6736509,
             154.64855839999967
         ],
-        "prefix": "",
+        "prefix": "Ahmad, S. M. ",
         "content": "Asad, Y. Sambo, A. Zoha, S. Hussain, and M. A. Imran, ''Coverage and ",
-        "suffix": "throughput",
+        "suffix": "throughput analysis of an",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 52,
-                0.5891326649281583,
-                3,
-                72
+                0.6833024226619621,
+                69,
+                138
             ]
         ]
     },
@@ -7391,17 +7529,17 @@
             554.6736509,
             145.68255839999966
         ],
-        "prefix": "",
+        "prefix": "Imran, ''Coverage and ",
         "content": "throughput analysis of an energy efficient UAV base station positioning ",
-        "suffix": "scheme,''",
+        "suffix": "scheme,'' Computer Networks, p.",
         "equation hit": false,
         "assigned": true,
         "matches": [
             [
                 52,
-                1.0,
-                138,
-                210
+                0.6842896546943672,
+                69,
+                141
             ]
         ]
     },
@@ -7414,7 +7552,7 @@
             478.49425499999995,
             136.89887069999963
         ],
-        "prefix": "",
+        "prefix": "base station positioning ",
         "content": "scheme,'' Computer Networks, p. 109854, 2023. ",
         "suffix": "",
         "equation hit": false,
@@ -7422,9 +7560,9 @@
         "matches": [
             [
                 52,
-                1.0,
-                138,
-                183
+                0.5557226043547753,
+                69,
+                114
             ]
         ]
     }

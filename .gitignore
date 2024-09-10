@@ -3,6 +3,8 @@ __pycache__
 .venv
 .vscode
 
+500K_valid
+
 arxiv_downloads/2404.15221
 arxiv_downloads/2404.15222
 arxiv_downloads/2404.15223
@@ -28,6 +30,7 @@ arxiv_downloads/2404.15263
 arxiv_downloads/2404.15264
 arxiv_downloads/2404.15263
 
+neural_network
 node_modules
 stesura
 unarXive_230324_open_subset
@@ -36,7 +39,4 @@ package-lock.json
 package.json
 unarXive_230324_open_subset.tar.xz
 nn_drawer.py
-
-app.py
-index.html
-neural_network.html
+best_par_combination mine.json

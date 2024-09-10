@@ -1,0 +1,241 @@
+[
+    {
+        "page": 0,
+        "index": 0,
+        "bbox": [
+            110.854,
+            700.7962124,
+            245.43711104,
+            718.0116124
+        ],
+        "prefix": "",
+        "content": "1 First section ",
+        "suffix": "",
+        "equation hit": false,
+        "assigned": true,
+        "matches": [
+            [
+                0,
+                0.6666666666666666,
+                0,
+                13
+            ]
+        ]
+    },
+    {
+        "page": 0,
+        "index": 1,
+        "bbox": [
+            110.854,
+            671.5818372,
+            259.85937168,
+            685.9280372000001
+        ],
+        "prefix": "",
+        "content": "1.1 First subsection ",
+        "suffix": "",
+        "equation hit": false,
+        "assigned": true,
+        "matches": [
+            [
+                1,
+                0.5,
+                0,
+                16
+            ]
+        ]
+    },
+    {
+        "page": 0,
+        "index": 2,
+        "bbox": [
+            110.854,
+            649.8786911999999,
+            269.40864448,
+            661.8338911999999
+        ],
+        "prefix": "",
+        "content": "Content of the first subsection. ",
+        "suffix": "",
+        "equation hit": false,
+        "assigned": true,
+        "matches": [
+            [
+                2,
+                1.0,
+                0,
+                32
+            ]
+        ]
+    },
+    {
+        "page": 0,
+        "index": 3,
+        "bbox": [
+            110.854,
+            614.7528371999999,
+            275.50103354,
+            629.0990372
+        ],
+        "prefix": "",
+        "content": "1.2 Second subsection ",
+        "suffix": "",
+        "equation hit": false,
+        "assigned": true,
+        "matches": [
+            [
+                3,
+                0.5,
+                0,
+                17
+            ]
+        ]
+    },
+    {
+        "page": 0,
+        "index": 4,
+        "bbox": [
+            110.854,
+            593.0496911999999,
+            368.25662912,
+            605.0048911999999
+        ],
+        "prefix": "",
+        "content": "Another piece of content of the second subsection. ",
+        "suffix": "",
+        "equation hit": false,
+        "assigned": true,
+        "matches": [
+            [
+                4,
+                1.0,
+                0,
+                50
+            ]
+        ]
+    },
+    {
+        "page": 0,
+        "index": 5,
+        "bbox": [
+            128.415,
+            568.6416911999999,
+            322.96421984,
+            583.6363812479999
+        ],
+        "prefix": "",
+        "content": "Ỽ First item in the second subsection. ",
+        "suffix": "",
+        "equation hit": false,
+        "assigned": true,
+        "matches": [
+            [
+                5,
+                0.8571428571428571,
+                0,
+                37
+            ]
+        ]
+    },
+    {
+        "page": 0,
+        "index": 6,
+        "bbox": [
+            128.415,
+            544.2326911999999,
+            205.8008688,
+            559.2273812479999
+        ],
+        "prefix": "",
+        "content": "Ỽ Second item. ",
+        "suffix": "",
+        "equation hit": false,
+        "assigned": true,
+        "matches": [
+            [
+                5,
+                0.6666666666666666,
+                0,
+                13
+            ]
+        ]
+    },
+    {
+        "page": 0,
+        "index": 7,
+        "bbox": [
+            128.415,
+            519.8246911999998,
+            244.23922784,
+            534.8193812479999
+        ],
+        "prefix": "",
+        "content": "Ỽ Third and last item. ",
+        "suffix": "",
+        "equation hit": false,
+        "assigned": true,
+        "matches": [
+            [
+                5,
+                0.7213061319425267,
+                13,
+                33
+            ]
+        ]
+    },
+    {
+        "page": 0,
+        "index": 8,
+        "bbox": [
+            110.854,
+            484.6988371999999,
+            266.22764986000004,
+            499.0450371999999
+        ],
+        "prefix": "",
+        "content": "1.3 Third subsection ",
+        "suffix": "",
+        "equation hit": false,
+        "assigned": true,
+        "matches": [
+            [
+                6,
+                0.5,
+                0,
+                16
+            ]
+        ]
+    },
+    {
+        "page": 0,
+        "index": 9,
+        "bbox": [
+            110.854,
+            462.99569119999995,
+            249.5701856,
+            474.95089119999994
+        ],
+        "prefix": "",
+        "content": "Third subsection's content. ",
+        "suffix": "",
+        "equation hit": false,
+        "assigned": false,
+        "matches": []
+    },
+    {
+        "page": 0,
+        "index": 10,
+        "bbox": [
+            302.199,
+            137.43369119999994,
+            308.05226592,
+            149.38889119999993
+        ],
+        "prefix": "",
+        "content": "1 ",
+        "suffix": "",
+        "equation hit": false,
+        "assigned": false,
+        "matches": []
+    }
+]

@@ -1,0 +1,96 @@
+{
+    "operations": [
+        [
+            "accurate",
+            0.9,
+            0.4,
+            true
+        ],
+        [
+            "accurate",
+            0.75,
+            0.35,
+            true
+        ],
+        [
+            "best_guess",
+            0.6,
+            0.3,
+            true
+        ],
+        [
+            "accurate",
+            0.4,
+            0.3,
+            true
+        ],
+        [
+            "best_guess",
+            0.3,
+            0.3,
+            true
+        ],
+        [
+            "accurate",
+            0.1,
+            0.3,
+            true
+        ],
+        [
+            "equation"
+        ],
+        [
+            "accurate",
+            0.9,
+            0.4,
+            false
+        ],
+        [
+            "accurate",
+            0.75,
+            0.35,
+            false
+        ],
+        [
+            "best_guess",
+            0.6,
+            0.3,
+            false
+        ],
+        [
+            "accurate",
+            0.4,
+            0.3,
+            false
+        ],
+        [
+            "best_guess",
+            0.3,
+            0.3,
+            false
+        ],
+        [
+            "accurate",
+            0.1,
+            0.3,
+            false
+        ],
+        [
+            "best_guess",
+            0,
+            0.33,
+            false
+        ],
+        [
+            "leftover"
+        ]
+    ],
+    "num_nearest_lines": 6,
+    "num_nearest_blocks": 2,
+    "context_words": 1,
+    "siblings_offset": 3,
+    "cousins_offset": 20,
+    "equation_dist_threshold": 10,
+    "lcs_max_distance": 32,
+    "accuracy": 0.8896962130094003
+}

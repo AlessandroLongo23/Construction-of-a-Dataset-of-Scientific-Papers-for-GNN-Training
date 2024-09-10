@@ -321,7 +321,7 @@ Given these initial pseudo-labels, we iteratively improve their quality using Ha
 \label{sec:methods-dst}
 
 We prompt the LLM with a text-to-code prompt for inferring the latent dialogue state as an API call.
-\autoref{fig:direct-dst-prompt}  in \autoref{app:prompt-examples} gives an example of our prompt.
+\autoref{fig:direct-dst-prompt} in \autoref{app:prompt-examples} gives an example of our prompt.
 We generate a prompt enumerating the intents available in the schema $\schema$ as APIs callable by our agent.
 Following \citet{hu_-context_2022}, we predict the appropriate function call conditioned on the prior system response $r_{t-1}$, the current user utterance $u_t$, and the previous belief state prediction $\hat{b}_{t-1}$. 
 We then extract a dialogue state \textit{change} $\Delta \hat{b}_t$ from the arguments to the call, and compute the next dialogue state as $\hat{b}_t = \Delta \hat{b}_t + \hat{b}_{t-1}$.

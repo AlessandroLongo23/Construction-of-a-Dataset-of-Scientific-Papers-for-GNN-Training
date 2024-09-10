@@ -26,6 +26,7 @@ class PDFElement:
         self.assigned = False
         self.matches = []
         self.equation_hit = False
+        self.equation_group = None
         self.eq_neighbours = []
         self.parent = None
         self.children = []
@@ -81,8 +82,7 @@ class PDFData:
         }
 
         self.extract_pages()
-        self.export_to_json()
-        print('PDF file processing done')
+        # print('PDF file processing done')
 
     def extract_pages(self):
         with open(self.input_file_path, 'rb') as f:
@@ -91,7 +91,7 @@ class PDFData:
             resource_manager = PDFResourceManager()
 
             laparams_containers = LAParams(
-                all_texts=True,
+                all_texts=False,
                 detect_vertical=False,
                 char_margin=50,
                 word_margin=0.1,
@@ -103,7 +103,7 @@ class PDFData:
             interpreter_containers = PDFPageInterpreter(resource_manager, device_containers)
 
             laparams_elements = LAParams(
-                all_texts=True,
+                all_texts=False,
                 detect_vertical=False,
                 char_margin=50,
                 word_margin=0.1,
@@ -117,34 +117,50 @@ class PDFData:
             for page_index, page in enumerate(tqdm(list(PDFPage.create_pages(document)), desc=f"Extracting PDF pages", leave=False)):
                 interpreter_containers.process_page(page)
                 layout_containers = device_containers.get_result()
-                for index, element in enumerate(layout_containers):
-                    el = PDFElement(element, page_index, index)
+                index = 0
+                for element in layout_containers: 
                     if isinstance(element, LTTextBox) and element.bbox[0] > 20:
+                        el = PDFElement(element, page_index, index)
                         self.elements['containers'].append(el)
+                        index += 1
 
                 interpreter_elements.process_page(page)
                 layout_elements = device_elements.get_result()
-                for index, element in enumerate(layout_elements):
-                    el = PDFElement(element, page_index, index)
+                index = 0
+                for element in layout_elements:
                     if isinstance(element, LTFigure):
+                        el = PDFElement(element, page_index, index)
                         self.elements['figures'].append(el)
+                        index += 1
 
-                    elif isinstance(element, LTTextBox) and element.bbox[0] > 20:
-                        self.elements['text_boxes'].append(el)
-                        for container in self.elements['containers']:
-                            if container.contains(el) and el.content in container.content:
-                                el.parent = container
-                                container.children.append(el)
-                                el.prefix, el.content, el.suffix = self.calc_context(el.content, container.content)
+                    elif isinstance(element, LTTextBox):
+                        if element.bbox[0] > 20:
+                            el = PDFElement(element, page_index, index)
+                            self.elements['text_boxes'].append(el)
+                            for container in self.elements['containers']:
+                                if container.contains(el) and el.content in container.content:
+                                    el.parent = container
+                                    container.children.append(el)
+                            index += 1
 
                     elif isinstance(element, LTRect):
+                        el = PDFElement(element, page_index, index)
                         self.elements['rects'].append(el)
+                        index += 1
 
                     elif isinstance(element, LTComponent):
+                        el = PDFElement(element, page_index, index)
                         self.elements['components'].append(el)
+                        index += 1
 
-    def calc_context(self, content, container):
-        context_words = 1
+            self.num_pages = page_index + 1
+
+    def calculate_context(self, context_words):
+        for pdf_line in self.elements['text_boxes']:
+            if pdf_line.parent is not None:
+                pdf_line.prefix, pdf_line.content, pdf_line.suffix = self.calc_context(pdf_line.content, pdf_line.parent.content, context_words)
+
+    def calc_context(self, content, container, context_words):
         start_index = container.find(content)
         end_index = start_index + len(content)
 
@@ -164,7 +180,7 @@ class PDFData:
 
         return prefix, content, suffix
 
-    def export_to_json(self):
+    def export_to_json(self, pdf_lines, name):
         def element_to_dict(el, index):
             return {
                 'page': el.page_index,
@@ -181,7 +197,7 @@ class PDFData:
             }
 
         page_groups = defaultdict(list)
-        for el in self.elements['text_boxes']:
+        for el in pdf_lines:
             page_groups[el.page_index].append(el)
 
         data = []
@@ -189,7 +205,7 @@ class PDFData:
             for index, el in enumerate(elements):
                 data.append(element_to_dict(el, index))
 
-        output_file_path = os.path.join(self.folder_path, 'output', 'pdf_data.json')
+        output_file_path = os.path.join(self.folder_path, 'output', name + '.json')
 
         with open(output_file_path, 'w', encoding='utf-8') as json_file:
             json.dump(data, json_file, indent=4, ensure_ascii=False)

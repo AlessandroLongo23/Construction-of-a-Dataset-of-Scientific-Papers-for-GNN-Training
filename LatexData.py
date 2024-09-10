@@ -74,7 +74,7 @@ class LatexData:
 
         self.process_leaves()
         
-        print('Latex file processing done')
+        # print('Latex file processing done')
 
     def regroup_in_one_file(self):
         def add_style_files():
@@ -174,8 +174,9 @@ class LatexData:
                     self.tex_content = self.tex_content[:start_index] + content + ' ' + self.tex_content[close_index:]
 
     def remove_useless_commands(self):
+        text = self.tex_content
         special_characters_pattern = r'\\[ \'\`\"\^\"\~c\=.uv.Hv]*\{\w\}|\\[\`]\w' 
-        self.tex_content = re.sub(special_characters_pattern, lambda match: LatexNodes2Text().latex_to_text(match.group(0)), self.tex_content)
+        text = re.sub(special_characters_pattern, lambda match: LatexNodes2Text().latex_to_text(match.group(0)), text)
 
         patterns = [
             '\\noindent ', 
@@ -187,62 +188,62 @@ class LatexData:
             '\\maketitle', 
             '\\hskip', 
             '\\vskip', 
+            '\\smallskip ', 
             '\\relax'
         ]
         for pattern in patterns:
-            self.tex_content = self.tex_content.replace(pattern, '')
+            text = text.replace(pattern, '')
 
-        for pattern in ['textbf', 'texttt', 'textit', 'textsf', 'underline']:
+        patterns = [
+            'textbf', 
+            'texttt', 
+            'textit', 
+            'textsf', 
+            'underline', 
+            'centerline',
+        ]
+        for pattern in patterns:
             while True:
-                match = re.search(r'\\' + pattern + r'\{', self.tex_content)
+                match = re.search(r'\\' + pattern + r'\{', text)
                 if match is None: break
 
-                open_index, close_index = self.extract_brackets_content(self.tex_content, match.end() - 1)
-                
-                self.tex_content = self.tex_content[:match.start()] + self.tex_content[open_index + 1:close_index - 1] + self.tex_content[close_index:]
-        
+                open_index, close_index = self.extract_brackets_content(text, match.end() - 1)
+                if text[close_index] == ' ': close_index += 1
+                text = text[:match.start()] + text[open_index + 1:close_index - 1] + text[close_index:]
+
         citation_patterns = [
-            'cite',
             'citet',
-            'citep',
-            'citealt',
-            'citealp',
-            'citealpnum',
-            'citeauthor',
-            'citeauthor*',
-            'citeyear',
-            'citeyearpar',
-            'citefullauthor',
-            'citetext',
-            'citenum',
-            'citeonline',
+            'autoref', 
         ]
         for citation_pattern in citation_patterns:
             while True:
-                match = re.search(r'~\\' + citation_pattern + r'\{', self.tex_content)
+                match = re.search(r'~\\' + citation_pattern + r'\{', text)
                 if match is None: break
 
-                _, close_index = self.extract_brackets_content(self.tex_content, match.end() - 1)
-                self.tex_content = self.tex_content[:match.start()] + self.tex_content[close_index:]
+                _, close_index = self.extract_brackets_content(text, match.end() - 1)
+                if text[close_index] == ' ': close_index += 1
+                text = text[:match.start()] + text[close_index:]
 
             while True:
-                match = re.search(r'\\' + citation_pattern + r'\{', self.tex_content)
+                match = re.search(r'\\' + citation_pattern + r'\{', text)
                 if match is None: break
 
-                _, close_index = self.extract_brackets_content(self.tex_content, match.end() - 1)
-                self.tex_content = self.tex_content[:match.start()] + self.tex_content[close_index:]
+                _, close_index = self.extract_brackets_content(text, match.end() - 1)
+                if text[close_index] == ' ': close_index += 1
+                text = text[:match.start()] + text[close_index:]
 
-        for keyword in ['label', 'autoref', 'cref', 'tableref', 'figureref', 'eqref', 'pageref', 'ref']:
-            pattern = r'\\' + keyword + r'\{'
-            while True:
-                match = re.search(pattern, self.tex_content)
-                if not match: break
+        # pattern = r'\$\\eqref\{'
+        # while True:
+        #     match = re.search(pattern, text)
+        #     if not match: break
 
-                _, close_index = self.extract_brackets_content(self.tex_content, match.end() - 1)
-                self.tex_content = self.tex_content[:match.start()] + self.tex_content[close_index:]
+        #     _, close_index = self.extract_brackets_content(text, match.end() - 1, "}$")
+        #     text = text[:match.start()] + text[close_index:]
 
         for pattern in ['widetext', 'minipage', 'wrapfigure']:
-            self.tex_content = re.sub(r'\\begin\{' + pattern + r'\}(.*?)\\end\{' + pattern + r'\}', lambda match: match.group(1), self.tex_content, flags=re.DOTALL)
+            text = re.sub(r'\\begin\{' + pattern + r'\}(.*?)\\end\{' + pattern + r'\}', lambda match: match.group(1), text, flags=re.DOTALL)
+
+        self.tex_content = text
 
     def extract_title(self):
         title_match = re.search(r'\\title\{', self.tex_content, re.DOTALL)
@@ -327,7 +328,6 @@ class LatexData:
                 self.content_tree.insert(this_key, f"{this_key}/tit", 'title', block_title)
 
             equation_block_types = ['algorithmic', 'equation', 'align', 'gather', 'cases', 'frm']
-
             if leaf is False and not any(block_type in parent_key.split('/')[-1] for block_type in equation_block_types):
                 self.extract_children(this_key, block_content)
             tex_content = tex_content.replace(block_container, '')
@@ -429,7 +429,7 @@ class LatexData:
         if corresponding_element == 'begend':
             open_index, close_index = self.extract_brackets_content(tex_content, block_start_index)
             block_type = tex_content[open_index + 1:close_index - 1]
-            end_pattern = r'\\end\{' + block_type[:-1] + r'\*\}' if block_type[-1] == '*' else r'\\end\{' + block_type + r'\}'
+            end_pattern = r'\\end\{' + block_type[:-1] + r'\*\}' if block_type[-1] == "*" else r'\\end\{' + block_type + r'\}'
             begend_close = re.search(end_pattern, tex_content)
 
             if begend_close is None:
@@ -437,13 +437,13 @@ class LatexData:
                 return [None] * 5
             
             container = tex_content[block_start_index:begend_close.end()]
-            content = tex_content[close_index + 1:begend_close.start()]
+            content = tex_content[close_index:begend_close.start()]
             
             if content.startswith('['):
                 _, close_index = self.extract_brackets_content(content, 0, '[', ']')
                 content = content[close_index:]
 
-            leaf = any(block_type in block_type for block_type in ['algorithmic', 'equation', 'align', 'gather', 'cases'])
+            leaf = any(equation_block_type in block_type for equation_block_type in ['algorithmic', 'equation', 'align', 'gather', 'cases', 'tabular'])
             return block_type, None, container, content, leaf
 
         if corresponding_element == 'text_line':
@@ -493,6 +493,7 @@ class LatexData:
             'text', 'textit', 'texttt',
             'emph',
             'mathrm', 'mathbf',
+            'resizebox'
         ]
         
         text = leaf.content
@@ -508,18 +509,6 @@ class LatexData:
         inst_pattern = r'\\inst\{([\d,]+)\}'
         text = re.sub(inst_pattern, lambda match: match.group(1), text)
 
-        patterns = [
-            (r'\\and', ', '),
-            (r'\n', ' '),
-            (r'\\newblock', ''),
-            (r'\\\\', ' '),
-            (r'\\newline', ' '),
-            (r'\\hline', ' '),
-            (r'frac', ''),
-        ]
-        for pattern in patterns:
-            text = re.sub(pattern[0], pattern[1], text)
-
         symbols_replacements = [
             ('\\_', '_'),
             ('\\{', '{'),
@@ -530,17 +519,79 @@ class LatexData:
             ('\\%', '%'),
             ('\\"', '"'),
             ('\\iid', 'i.i.d.'),
+            ('\"', "''"),
         ]
         for symbol_replacement in symbols_replacements:
             text = text.replace(symbol_replacement[0], symbol_replacement[1])
-
-        # for pattern in [r'{\\em (.*?)}', r'{\\it (.*?)}', r'{([A-Z]+)}']:
-        #     text = re.sub(pattern, lambda match: match.group(1), text)
 
         for pattern in [r'\$(.*?)\$', r'\\\((.*?)\\\)']:
             text = re.sub(pattern, lambda match: LatexNodes2Text().latex_to_text(match.group(0)), text)
 
         text = re.sub(r'\\u[0-9a-fA-F]{4}', lambda match: LatexNodes2Text().latex_to_text(match.group(0)), text)
+
+        patterns = [
+            (r'\\and', ', '),
+            (r'\n', ' '),
+            (r'\\newblock', ''),
+            (r'\\\\', ' '),
+            (r'\\newline', ' '),
+            (r'\\centering', ''),
+            (r'\\toprule', ''),
+            (r'\\midrule', ''),
+            (r'\\bottomrule', ''),
+            (r'\\hline', ' '),
+            (r'frac', ''),
+            (r'\\hfil', ''),
+            (r'\\hskip', ''),
+            (r'\\vskip', ''),
+            (r'\\linewidth', ''),
+            (r'\\textwidth', ''),
+            (r'\\cmark', '✓'),
+            (r'\\xmark', '✗'),
+            (r'\\dag', '†'),
+            (r'\\ddag', '‡'),
+            (r'\\textdagger', '†'),
+            (r'\\textdaggerdbl', '‡'),
+            (r'\\degree', '◦'),
+        ]
+        for pattern in patterns:
+            text = re.sub(pattern[0], pattern[1], text)
+
+        citation_patterns = [
+            'cite',
+            'citep',
+            'citealt',
+            'citealp',
+            'citealpnum',
+            'citeauthor',
+            'citeyear',
+            'citeyearpar',
+            'citefullauthor',
+            'citetext',
+            'citenum',
+            'citeonline',
+            'label', 
+            'cref', 
+            'tableref', 
+            'figureref', 
+            'eqref', 
+            'pageref', 
+            'ref'
+        ]
+        for citation_pattern in citation_patterns:
+            while True:
+                match = re.search(r'~\\' + citation_pattern + r'\{', text)
+                if match is None: break
+
+                _, close_index = self.extract_brackets_content(text, match.end() - 1)
+                text = text[:match.start()] + text[close_index:]
+
+            while True:
+                match = re.search(r'\\' + citation_pattern + r'\{', text)
+                if match is None: break
+
+                _, close_index = self.extract_brackets_content(text, match.end() - 1)
+                text = text[:match.start()] + text[close_index:]
 
         while True:
             href_match = re.search(r'\\href', text)
@@ -564,6 +615,14 @@ class LatexData:
         equation_block_types = ['algorithmic', 'equation', 'align', 'gather', 'cases', 'frm']
         if any(block_type in leaf.block_type for block_type in equation_block_types):
             text = LatexNodes2Text().latex_to_text(text)
+
+        patterns = [
+            # r'{\\em (.*?)}', 
+            # r'{\\it (.*?)}', 
+            r'{([a-zA-Z]+)}'
+        ]
+        for pattern in patterns:
+            text = re.sub(pattern, lambda match: match.group(1), text)
 
         return text
     
@@ -595,9 +654,6 @@ class LatexData:
                     i += len(open_bracket)
                 else:
                     i += 1
-
-        if start is None or end is None:
-            print(text)
 
         return start, end
 
